@@ -1,189 +1,33 @@
 MESSAGE FROM GameState.__init__(): 
 Initialized Game State!
-The current game round is 24
-The current game time is 622.5 seconds
-The game round start times are given by [0, 6.0, 30.5, 55.5, 82.0, 115.0, 147.5, 173.5, 203.0, 226.0, 251.0, 265.0, 282.5, 303.0, 324.5, 340.0, 363.0, 397.0, 438.0, 465.5, 504.0, 524.0, 543.5, 575.5, 591.0, 654.0, 699.0, 735.5, 766.0, 796.0, 846.5, 884.5] 
+The current game round is 18
+The current game time is 327.0 seconds
+The game round start times are given by [0, 6, 27, 47, 68, 94, 118, 138, 158, 176, 193, 200, 211, 223, 240, 249, 261, 291, 327, 350, 383, 389, 402, 429, 438, 495, 528, 552, 573, 593, 636, 642] 
 
-MESSAGE FROM GameState.fastForward: 
-Advancing game to time 623.0
 MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 750 at time 622.8
-Recorded cash and eco values (750,2000) at time 622.8
-----------
-Advancing game to time 624.0
+Awarded payment 1200.0 at time 330.0
+Recorded cash and eco values (1200.0,1200.0) at time 330.0
+Awarded payment 1200.0 at time 336.0
+Recorded cash and eco values (1200.0,1200.0) at time 336.0
+Awarded payment 1200.0 at time 342.0
+Recorded cash and eco values (1200.0,1200.0) at time 342.0
+Awarded payment 1200.0 at time 348.0
+Recorded cash and eco values (1200.0,1200.0) at time 348.0
+Awarded payment 1200.0 at time 354.0
+Recorded cash and eco values (1200.0,1200.0) at time 354.0
+Awarded payment 1200.0 at time 360.0
+Recorded cash and eco values (1200.0,1200.0) at time 360.0
+Awarded payment 1200.0 at time 366.0
+Recorded cash and eco values (1200.0,1200.0) at time 366.0
+Awarded payment 1200.0 at time 372.0
+Recorded cash and eco values (1200.0,1200.0) at time 372.0
+Awarded payment 1200.0 at time 378.0
+Recorded cash and eco values (1200.0,1200.0) at time 378.0
+Modified the eco send to Zero
 MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 623.39
-Recorded cash and eco values (910,2000) at time 623.39
-Awarded payment 2000 at time 624.0
-Recorded cash and eco values (2910,2000) at time 624.0
-----------
-Advancing game to time 625.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 626.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 625.44
-Recorded cash and eco values (3070,2000) at time 625.44
-----------
-Advancing game to time 627.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 626.33
-Recorded cash and eco values (3230,2000) at time 626.33
-----------
-Advancing game to time 628.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 629.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 628.39
-Recorded cash and eco values (3390,2000) at time 628.39
-----------
-Advancing game to time 630.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 629.28
-Recorded cash and eco values (3550,2000) at time 629.28
-Awarded payment 2000 at time 630.0
-Recorded cash and eco values (5550,2000) at time 630.0
-----------
-Advancing game to time 631.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 632.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 631.33
-Recorded cash and eco values (5710,2000) at time 631.33
-----------
-Advancing game to time 633.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 632.22
-Recorded cash and eco values (5870,2000) at time 632.22
-----------
-Advancing game to time 634.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 750 at time 633.4
-Recorded cash and eco values (6620,2000) at time 633.4
-----------
-Advancing game to time 635.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 634.28
-Recorded cash and eco values (6780,2000) at time 634.28
-----------
-Advancing game to time 636.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 635.17
-Recorded cash and eco values (6940,2000) at time 635.17
-Awarded payment 2000 at time 636.0
-Recorded cash and eco values (8940,2000) at time 636.0
-----------
-Advancing game to time 637.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 638.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 637.22
-Recorded cash and eco values (9100,2000) at time 637.22
-----------
-Advancing game to time 639.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 638.11
-Recorded cash and eco values (9260,2000) at time 638.11
-----------
-Advancing game to time 640.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 641.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 640.17
-Recorded cash and eco values (9420,2000) at time 640.17
-----------
-Advancing game to time 642.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 160 at time 641.06
-Recorded cash and eco values (9580,2000) at time 641.06
-Awarded payment 2000 at time 642.0
-Recorded cash and eco values (11580,2000) at time 642.0
-----------
-Advancing game to time 643.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 644.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 645.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 646.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 647.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 648.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 2000 at time 648.0
-We have 13580 cash! That's enough to perform the next buy, which costs 13320.0 and has a buffer of 0!
-Selling the farm at index 0
-Selling the farm at index 1
-Upgrading path 2 of the farm at index 2
-The new farm has upgrades (2,0,5)
-The new farm is a MWS! Building the companion farm.
-Completed the buy operation! The buy queue now has 7 items remaining in it
-Recorded cash and eco values (260.0,2000) at time 648.0
-----------
-Advancing game to time 649.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 650.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 651.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 652.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 653.0
-MESSAGE FROM GameState.advanceGameState: 
-----------
-Advancing game to time 654.0
-MESSAGE FROM GameState.advanceGameState: 
-Awarded payment 2000 at time 654.0
-We have 2260.0 cash! That's enough to perform the next buy, which costs 1050 and has a buffer of 0!
-Purchasing farm!
-Completed the buy operation! The buy queue now has 6 items remaining in it
-We have 1210.0 cash! That's enough to perform the next buy, which costs 600 and has a buffer of 0!
-Upgrading path 0 of the farm at index 3
-The new farm has upgrades (1,0,0)
-Completed the buy operation! The buy queue now has 5 items remaining in it
-We have 610.0 cash! That's enough to perform the next buy, which costs 550 and has a buffer of 0!
-Upgrading path 0 of the farm at index 3
-The new farm has upgrades (2,0,0)
-Completed the buy operation! The buy queue now has 4 items remaining in it
-Recorded cash and eco values (60.0,2000) at time 654.0
-Awarded payment 160 at time 654.0
-Recorded cash and eco values (220.0,2000) at time 654.0
-Awarded payment 10000 at time 654.0
-We have 10220.0 cash! That's enough to perform the next buy, which costs 2700 and has a buffer of 0!
-Upgrading path 0 of the farm at index 3
-The new farm has upgrades (3,0,0)
-Completed the buy operation! The buy queue now has 3 items remaining in it
-We have 7520.0 cash! That's enough to perform the next buy, which costs 200 and has a buffer of 0!
-Upgrading path 1 of the farm at index 3
-The new farm has upgrades (3,1,0)
-Completed the buy operation! The buy queue now has 2 items remaining in it
-We have 7320.0 cash! That's enough to perform the next buy, which costs 700 and has a buffer of 0!
-Upgrading path 1 of the farm at index 3
-The new farm has upgrades (3,2,0)
-Completed the buy operation! The buy queue now has 1 items remaining in it
-Recorded cash and eco values (6620.0,2000) at time 654.0
-----------
-Advanced game state to round 25
-The current time is 654.0
-The next round starts at time 699.0
-Our new cash and eco is given by (6620.0,2000) 
-
 MESSAGE FROM GameState.viewCashEcoHistory():
 Graphing history of cash and eco!
-Graphing round 25, which starts at time 654.0
+Graphing round 19, which starts at time 350
+Graphing round 20, which starts at time 383
 Successfully generated graph! 
 
