@@ -8,13 +8,16 @@ MESSAGE FROM GameState.fastForward:
 Advancing game to time 623.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 750 at time 622.8
+We have 750 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (750,2000) at time 622.8
 ----------
 Advancing game to time 624.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 623.39
+We have 910 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (910,2000) at time 623.39
 Awarded payment 2000 at time 624.0
+We have 2910 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (2910,2000) at time 624.0
 ----------
 Advancing game to time 625.0
@@ -23,11 +26,13 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 626.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 625.44
+We have 3070 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (3070,2000) at time 625.44
 ----------
 Advancing game to time 627.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 626.33
+We have 3230 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (3230,2000) at time 626.33
 ----------
 Advancing game to time 628.0
@@ -36,13 +41,16 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 629.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 628.39
+We have 3390 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (3390,2000) at time 628.39
 ----------
 Advancing game to time 630.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 629.28
+We have 3550 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (3550,2000) at time 629.28
 Awarded payment 2000 at time 630.0
+We have 5550 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (5550,2000) at time 630.0
 ----------
 Advancing game to time 631.0
@@ -51,28 +59,34 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 632.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 631.33
+We have 5710 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (5710,2000) at time 631.33
 ----------
 Advancing game to time 633.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 632.22
+We have 5870 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (5870,2000) at time 632.22
 ----------
 Advancing game to time 634.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 750 at time 633.4
+We have 6620 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6620,2000) at time 633.4
 ----------
 Advancing game to time 635.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 634.28
+We have 6780 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6780,2000) at time 634.28
 ----------
 Advancing game to time 636.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 635.17
+We have 6940 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6940,2000) at time 635.17
 Awarded payment 2000 at time 636.0
+We have 8940 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (8940,2000) at time 636.0
 ----------
 Advancing game to time 637.0
@@ -81,11 +95,13 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 638.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 637.22
+We have 9100 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9100,2000) at time 637.22
 ----------
 Advancing game to time 639.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 638.11
+We have 9260 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9260,2000) at time 638.11
 ----------
 Advancing game to time 640.0
@@ -94,13 +110,16 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 641.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 640.17
+We have 9420 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9420,2000) at time 640.17
 ----------
 Advancing game to time 642.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 641.06
+We have 9580 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9580,2000) at time 641.06
 Awarded payment 2000 at time 642.0
+We have 11580 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (11580,2000) at time 642.0
 ----------
 Advancing game to time 643.0
@@ -121,6 +140,7 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 648.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 2000 at time 648.0
+We have 13580 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
 We have 13580 cash! That's enough to perform the next buy, which costs 13320.0 and has a buffer of 0!
 Selling the farm at index 0
 Selling the farm at index 1
@@ -128,6 +148,7 @@ Upgrading path 2 of the farm at index 2
 The new farm has upgrades (2,0,5)
 The new farm is a MWS! Building the companion farm.
 Completed the buy operation! The buy queue now has 15 items remaining in it
+We have 260.0 cash, but the next buy costs 1050 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (260.0,2000) at time 648.0
 ----------
 Advancing game to time 649.0
@@ -148,33 +169,42 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 654.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 2000 at time 654.0
+We have 2260.0 cash, but the next buy costs 1050 and has a buffer of 0 and needs to be made on or after time 0!
 We have 2260.0 cash! That's enough to perform the next buy, which costs 1050 and has a buffer of 0!
 Purchasing farm!
 Completed the buy operation! The buy queue now has 14 items remaining in it
+We have 1210.0 cash, but the next buy costs 600 and has a buffer of 0 and needs to be made on or after time 0!
 We have 1210.0 cash! That's enough to perform the next buy, which costs 600 and has a buffer of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (1,0,0)
 Completed the buy operation! The buy queue now has 13 items remaining in it
+We have 610.0 cash, but the next buy costs 550 and has a buffer of 0 and needs to be made on or after time 0!
 We have 610.0 cash! That's enough to perform the next buy, which costs 550 and has a buffer of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (2,0,0)
 Completed the buy operation! The buy queue now has 12 items remaining in it
+We have 60.0 cash, but the next buy costs 2700 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (60.0,2000) at time 654.0
 Awarded payment 160 at time 654.0
+We have 220.0 cash, but the next buy costs 2700 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (220.0,2000) at time 654.0
 Awarded payment 10000 at time 654.0
+We have 10220.0 cash, but the next buy costs 2700 and has a buffer of 0 and needs to be made on or after time 0!
 We have 10220.0 cash! That's enough to perform the next buy, which costs 2700 and has a buffer of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (3,0,0)
 Completed the buy operation! The buy queue now has 11 items remaining in it
+We have 7520.0 cash, but the next buy costs 200 and has a buffer of 0 and needs to be made on or after time 0!
 We have 7520.0 cash! That's enough to perform the next buy, which costs 200 and has a buffer of 0!
 Upgrading path 1 of the farm at index 3
 The new farm has upgrades (3,1,0)
 Completed the buy operation! The buy queue now has 10 items remaining in it
+We have 7320.0 cash, but the next buy costs 700 and has a buffer of 0 and needs to be made on or after time 0!
 We have 7320.0 cash! That's enough to perform the next buy, which costs 700 and has a buffer of 0!
 Upgrading path 1 of the farm at index 3
 The new farm has upgrades (3,2,0)
 Completed the buy operation! The buy queue now has 9 items remaining in it
+We have 6620.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6620.0,2000) at time 654.0
 ----------
 Advancing game to time 655.0
@@ -183,8 +213,10 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 656.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 655.61
+We have 6780.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6780.0,2000) at time 655.61
 Awarded payment 50 at time 655.81
+We have 6830.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6830.0,2000) at time 655.81
 ----------
 Advancing game to time 657.0
@@ -193,61 +225,76 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 658.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 657.22
+We have 6990.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6990.0,2000) at time 657.22
 Awarded payment 50 at time 657.62
+We have 7040.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (7040.0,2000) at time 657.62
 ----------
 Advancing game to time 659.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 658.83
+We have 7200.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (7200.0,2000) at time 658.83
 ----------
 Advancing game to time 660.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 659.44
+We have 7250.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (7250.0,2000) at time 659.44
 Awarded payment 2000 at time 660.0
+We have 9250.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9250.0,2000) at time 660.0
 ----------
 Advancing game to time 661.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 660.44
+We have 9410.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9410.0,2000) at time 660.44
 ----------
 Advancing game to time 662.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 661.25
+We have 9460.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9460.0,2000) at time 661.25
 ----------
 Advancing game to time 663.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 662.06
+We have 9620.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9620.0,2000) at time 662.06
 ----------
 Advancing game to time 664.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 663.06
+We have 9670.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9670.0,2000) at time 663.06
 Awarded payment 160 at time 663.67
+We have 9830.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9830.0,2000) at time 663.67
 ----------
 Advancing game to time 665.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 664.88
+We have 9880.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9880.0,2000) at time 664.88
 ----------
 Advancing game to time 666.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 665.28
+We have 10040.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (10040.0,2000) at time 665.28
 Awarded payment 2000 at time 666.0
+We have 12040.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12040.0,2000) at time 666.0
 ----------
 Advancing game to time 667.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 666.69
+We have 12090.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12090.0,2000) at time 666.69
 Awarded payment 160 at time 666.89
+We have 12250.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12250.0,2000) at time 666.89
 ----------
 Advancing game to time 668.0
@@ -256,8 +303,10 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 669.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 668.5
+We have 12410.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12410.0,2000) at time 668.5
 Awarded payment 50 at time 668.5
+We have 12460.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12460.0,2000) at time 668.5
 ----------
 Advancing game to time 670.0
@@ -266,70 +315,87 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 671.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 670.11
+We have 12620.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12620.0,2000) at time 670.11
 Awarded payment 50 at time 670.31
+We have 12670.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12670.0,2000) at time 670.31
 ----------
 Advancing game to time 672.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 671.72
+We have 12830.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12830.0,2000) at time 671.72
 Awarded payment 2000 at time 672.0
+We have 14830.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (14830.0,2000) at time 672.0
 ----------
 Advancing game to time 673.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 672.12
+We have 14880.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (14880.0,2000) at time 672.12
 ----------
 Advancing game to time 674.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 673.33
+We have 15040.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15040.0,2000) at time 673.33
 Awarded payment 50 at time 673.94
+We have 15090.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15090.0,2000) at time 673.94
 ----------
 Advancing game to time 675.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 674.94
+We have 15250.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15250.0,2000) at time 674.94
 ----------
 Advancing game to time 676.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 675.75
+We have 15300.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15300.0,2000) at time 675.75
 ----------
 Advancing game to time 677.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 676.56
+We have 15460.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15460.0,2000) at time 676.56
 ----------
 Advancing game to time 678.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 50 at time 677.56
+We have 15510.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15510.0,2000) at time 677.56
 Awarded payment 2000 at time 678.0
+We have 17510.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 We have 17510.0 cash! That's enough to perform the next buy, which costs 16000 and has a buffer of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (4,2,0)
 Completed the buy operation! The buy queue now has 8 items remaining in it
+We have 1510.0 cash, but the next buy costs 1050 and has a buffer of 0 and needs to be made on or after time 0!
 We have 1510.0 cash! That's enough to perform the next buy, which costs 1050 and has a buffer of 0!
 Purchasing farm!
 Completed the buy operation! The buy queue now has 7 items remaining in it
+We have 460.0 cash, but the next buy costs 600 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (460.0,2000) at time 678.0
 ----------
 Advancing game to time 679.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 678.17
+We have 620.0 cash, but the next buy costs 600 and has a buffer of 0 and needs to be made on or after time 0!
 We have 620.0 cash! That's enough to perform the next buy, which costs 600 and has a buffer of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (1,0,0)
 Completed the buy operation! The buy queue now has 6 items remaining in it
+We have 20.0 cash, but the next buy costs 550 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (20.0,2000) at time 678.17
 ----------
 Advancing game to time 680.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 679.78
+We have 180.0 cash, but the next buy costs 550 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (180.0,2000) at time 679.78
 ----------
 Advancing game to time 681.0
@@ -338,6 +404,7 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 682.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 681.39
+We have 340.0 cash, but the next buy costs 550 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (340.0,2000) at time 681.39
 ----------
 Advancing game to time 683.0
@@ -346,10 +413,12 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 684.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 2000 at time 684.0
+We have 2340.0 cash, but the next buy costs 550 and has a buffer of 0 and needs to be made on or after time 0!
 We have 2340.0 cash! That's enough to perform the next buy, which costs 550 and has a buffer of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (2,0,0)
 Completed the buy operation! The buy queue now has 5 items remaining in it
+We have 1790.0 cash, but the next buy costs 2700 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (1790.0,2000) at time 684.0
 ----------
 Advancing game to time 685.0
@@ -370,18 +439,22 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 690.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 2000 at time 690.0
+We have 3790.0 cash, but the next buy costs 2700 and has a buffer of 0 and needs to be made on or after time 0!
 We have 3790.0 cash! That's enough to perform the next buy, which costs 2700 and has a buffer of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (3,0,0)
 Completed the buy operation! The buy queue now has 4 items remaining in it
+We have 1090.0 cash, but the next buy costs 200 and has a buffer of 0 and needs to be made on or after time 0!
 We have 1090.0 cash! That's enough to perform the next buy, which costs 200 and has a buffer of 0!
 Upgrading path 1 of the farm at index 4
 The new farm has upgrades (3,1,0)
 Completed the buy operation! The buy queue now has 3 items remaining in it
+We have 890.0 cash, but the next buy costs 700 and has a buffer of 0 and needs to be made on or after time 0!
 We have 890.0 cash! That's enough to perform the next buy, which costs 700 and has a buffer of 0!
 Upgrading path 1 of the farm at index 4
 The new farm has upgrades (3,2,0)
 Completed the buy operation! The buy queue now has 2 items remaining in it
+We have 190.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (190.0,2000) at time 690.0
 ----------
 Advancing game to time 691.0
@@ -402,6 +475,7 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 696.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 2000 at time 696.0
+We have 2190.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (2190.0,2000) at time 696.0
 ----------
 Advancing game to time 697.0
@@ -413,12 +487,16 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 699.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 699.0
+We have 2350.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (2350.0,2000) at time 699.0
 Awarded payment 10000 at time 699.0
+We have 12350.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (12350.0,2000) at time 699.0
 Awarded payment 750 at time 699.0
+We have 13100.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (13100.0,2000) at time 699.0
 Awarded payment 50 at time 699.0
+We have 13150.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (13150.0,2000) at time 699.0
 ----------
 Advancing game to time 700.0
@@ -427,66 +505,84 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 701.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 700.11
+We have 13310.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (13310.0,2000) at time 700.11
 Awarded payment 50 at time 700.25
+We have 13360.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (13360.0,2000) at time 700.25
 ----------
 Advancing game to time 702.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 701.22
+We have 13520.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (13520.0,2000) at time 701.22
 Awarded payment 50 at time 701.5
+We have 13570.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (13570.0,2000) at time 701.5
 Awarded payment 2000 at time 702.0
+We have 15570.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15570.0,2000) at time 702.0
 ----------
 Advancing game to time 703.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 702.33
+We have 15730.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15730.0,2000) at time 702.33
 Awarded payment 50 at time 702.75
+We have 15780.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (15780.0,2000) at time 702.75
 Awarded payment 750 at time 703.0
+We have 16530.0 cash, but the next buy costs 16000 and has a buffer of 0 and needs to be made on or after time 0!
 We have 16530.0 cash! That's enough to perform the next buy, which costs 16000 and has a buffer of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (4,2,0)
 Completed the buy operation! The buy queue now has 1 items remaining in it
+We have 530.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (530.0,2000) at time 703.0
 ----------
 Advancing game to time 704.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 703.44
+We have 690.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (690.0,2000) at time 703.44
 ----------
 Advancing game to time 705.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 704.56
+We have 850.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (850.0,2000) at time 704.56
 ----------
 Advancing game to time 706.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 705.67
+We have 1010.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (1010.0,2000) at time 705.67
 ----------
 Advancing game to time 707.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 706.78
+We have 1170.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (1170.0,2000) at time 706.78
 Awarded payment 750 at time 707.0
+We have 1920.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (1920.0,2000) at time 707.0
 Awarded payment 750 at time 707.0
+We have 2670.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (2670.0,2000) at time 707.0
 ----------
 Advancing game to time 708.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 707.89
+We have 2830.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (2830.0,2000) at time 707.89
 Awarded payment 2000 at time 708.0
+We have 4830.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (4830.0,2000) at time 708.0
 ----------
 Advancing game to time 709.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 709.0
+We have 4990.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (4990.0,2000) at time 709.0
 ----------
 Advancing game to time 710.0
@@ -495,51 +591,64 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 711.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 710.11
+We have 5150.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (5150.0,2000) at time 710.11
 Awarded payment 750 at time 711.0
+We have 5900.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (5900.0,2000) at time 711.0
 Awarded payment 750 at time 711.0
+We have 6650.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6650.0,2000) at time 711.0
 ----------
 Advancing game to time 712.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 711.22
+We have 6810.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6810.0,2000) at time 711.22
 ----------
 Advancing game to time 713.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 712.33
+We have 6970.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (6970.0,2000) at time 712.33
 ----------
 Advancing game to time 714.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 713.44
+We have 7130.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (7130.0,2000) at time 713.44
 Awarded payment 2000 at time 714.0
+We have 9130.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9130.0,2000) at time 714.0
 ----------
 Advancing game to time 715.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 714.56
+We have 9290.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (9290.0,2000) at time 714.56
 Awarded payment 750 at time 715.0
+We have 10040.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (10040.0,2000) at time 715.0
 Awarded payment 750 at time 715.0
+We have 10790.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (10790.0,2000) at time 715.0
 ----------
 Advancing game to time 716.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 715.67
+We have 10950.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (10950.0,2000) at time 715.67
 ----------
 Advancing game to time 717.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 716.78
+We have 11110.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (11110.0,2000) at time 716.78
 ----------
 Advancing game to time 718.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 160 at time 717.89
+We have 11270.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 Recorded cash and eco values (11270.0,2000) at time 717.89
 ----------
 Advancing game to time 719.0
@@ -548,6 +657,7 @@ MESSAGE FROM GameState.advanceGameState:
 Advancing game to time 720.0
 MESSAGE FROM GameState.advanceGameState: 
 Awarded payment 2000 at time 720.0
+We have 13270.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
 We have 13270.0 cash! That's enough to perform the next buy, which costs 13080.0 and has a buffer of 0!
 Selling the farm at index 2
 Upgrading path 0 of the farm at index 3
