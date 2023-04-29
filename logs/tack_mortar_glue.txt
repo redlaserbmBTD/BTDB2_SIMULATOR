@@ -2,7 +2,7 @@ MESSAGE FROM GameState.__init__():
 Initialized Game State!
 The current game round is 0
 The current game time is 0.0 seconds
-The game round start times are given by [0, 6.0, 27.0, 47.0, 68.0, 94.0, 118.0, 138.0, 158.0, 176.0, 193.0, 200.0, 211.0, 223.0, 240.0, 249.0, 261.0, 291.0, 327.0, 350.0, 383.0, 389.0, 402.0, 429.0, 438.0, 495.0, 528.0, 552.0, 573.0, 593.0, 636.0, 642.0] 
+The game round start times are given by [0, 6.0, 32.25, 59.75, 89.0, 125.5, 162.25, 191.25, 225.5, 251.0, 280.0, 297.5, 318.25, 343.0, 366.75, 385.5, 414.0, 450.0, 493.5, 523.25, 564.5, 591.5, 614.25, 648.75, 667.5, 733.5, 784.5, 827.25, 862.5, 897.5, 951.75, 1005.75] 
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 1.0
@@ -29,9 +29,14 @@ Advancing game to time 6.0
 MESSAGE FROM GameState.advanceGameState: 
 Warning! An eco change is coming at time 6.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
-Awarded eco payment 250 at time 250
-Determined the minimum buy time of the next purchase to be 24.9
-Recorded cash and eco values (900,250) at time 6.0
+Awarded eco payment 250 at time 6.0
+Determined the minimum buy time of the next purchase to be 6.0
+We have 900 cash, but the next buy costs 605 and has a buffer of 0 and needs to be made on or after time 6.0!
+We have 900 cash! That's enough to perform the next buy, which costs 605 and has a buffer of 0!
+Completed the buy operation! The buy queue now has 4 items remaining in it
+Determined the minimum buy time of the next purchase to be 0
+We have 295 cash, but the next buy costs 750 and has a buffer of 0 and needs to be made on or after time 0!
+Recorded cash and eco values (295,250) at time 6.0
 Modified the eco send to Grouped Reds
 ----------
 Advancing game to time 7.0
@@ -57,8 +62,9 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 12.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 256.75 at time 256.75
-Recorded cash and eco values (1006.75,256.75) at time 12.0
+Awarded eco payment 256.75 at time 12.0
+We have 401.75 cash, but the next buy costs 750.0 and has a buffer of 0 and needs to be made on or after time 0!
+Recorded cash and eco values (401.75,256.75) at time 12.0
 ----------
 Advancing game to time 13.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -83,8 +89,9 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 18.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 263.5 at time 263.5
-Recorded cash and eco values (1120.25,263.5) at time 18.0
+Awarded eco payment 263.5 at time 18.0
+We have 515.25 cash, but the next buy costs 750.0 and has a buffer of 0 and needs to be made on or after time 0!
+Recorded cash and eco values (515.25,263.5) at time 18.0
 ----------
 Advancing game to time 19.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -109,8 +116,9 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 24.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 270.25 at time 270.25
-Recorded cash and eco values (1240.5,270.25) at time 24.0
+Awarded eco payment 270.25 at time 24.0
+We have 635.5 cash, but the next buy costs 750.0 and has a buffer of 0 and needs to be made on or after time 0!
+Recorded cash and eco values (635.5,270.25) at time 24.0
 ----------
 Advancing game to time 25.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -122,9 +130,7 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 27.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 27.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
-Modified the eco send to Spaced Greens
 ----------
 Advancing game to time 28.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -137,13 +143,12 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 30.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 275.97 at time 275.97
-We have 1394.49 cash, but the next buy costs 600.0 and has a buffer of 0 and needs to be made on or after time 24.9!
-We have 1394.49 cash! That's enough to perform the next buy, which costs 600.0 and has a buffer of 0!
-Completed the buy operation! The buy queue now has 7 items remaining in it
-Determined the minimum buy time of the next purchase to be 0
-We have 794.49 cash, but the next buy costs 1205.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (794.49,275.97) at time 30.0
+Awarded eco payment 277.0 at time 30.0
+We have 762.5 cash, but the next buy costs 750.0 and has a buffer of 0 and needs to be made on or after time 0!
+We have 762.5 cash! That's enough to perform the next buy, which costs 750.0 and has a buffer of 0!
+Completed the buy operation! The buy queue now has 3 items remaining in it
+Determined the minimum buy time of the next purchase to be 89.0
+Recorded cash and eco values (12.5,277.0) at time 30.0
 ----------
 Advancing game to time 31.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -168,9 +173,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 36.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 280.67 at time 280.67
-We have 981.21 cash, but the next buy costs 1205.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (981.21,280.67) at time 36.0
+Awarded eco payment 277.0 at time 36.0
+Recorded cash and eco values (277.0,277.0) at time 36.0
 ----------
 Advancing game to time 37.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -195,9 +199,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 42.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 285.37 at time 285.37
-We have 1172.62 cash, but the next buy costs 1205.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (1172.62,285.37) at time 42.0
+Awarded eco payment 283.75 at time 42.0
+Recorded cash and eco values (410.75,283.75) at time 42.0
 ----------
 Advancing game to time 43.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -217,20 +220,13 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 47.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 47.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
-Modified the eco send to Spaced Yellows
 ----------
 Advancing game to time 48.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 290.33 at time 290.33
-We have 1363.77 cash, but the next buy costs 1205.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 1363.77 cash! That's enough to perform the next buy, which costs 1205.0 and has a buffer of 0!
-Completed the buy operation! The buy queue now has 6 items remaining in it
-Determined the minimum buy time of the next purchase to be 0
-We have 158.77 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (158.77,290.33) at time 48.0
+Awarded eco payment 290.5 at time 48.0
+Recorded cash and eco values (551.25,290.5) at time 48.0
 ----------
 Advancing game to time 49.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -255,9 +251,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 54.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 296.59 at time 296.59
-We have 330.08 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (330.08,296.59) at time 54.0
+Awarded eco payment 297.25 at time 54.0
+Recorded cash and eco values (698.5,297.25) at time 54.0
 ----------
 Advancing game to time 55.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -281,10 +276,15 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 60.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! An eco change is coming at time 59.75. Adjusting the target time.
 Sorted the payouts in order of increasing time!
-Awarded eco payment 302.86 at time 302.86
-We have 507.66 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (507.66,302.86) at time 60.0
+Modified the eco send to Spaced Yellows
+----------
+Advancing game to time 60.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 303.98 at time 60.0
+Recorded cash and eco values (853.51,303.98) at time 60.0
 ----------
 Advancing game to time 61.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -309,9 +309,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 66.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 309.12 at time 309.12
-We have 691.5 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (691.5,309.12) at time 66.0
+Awarded eco payment 310.24 at time 66.0
+Recorded cash and eco values (1038.47,310.24) at time 66.0
 ----------
 Advancing game to time 67.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -319,9 +318,7 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 68.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 68.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
-Modified the eco send to Spaced Pinks
 ----------
 Advancing game to time 69.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -338,9 +335,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 72.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 317.43 at time 317.43
-We have 842.72 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (842.72,317.43) at time 72.0
+Awarded eco payment 316.51 at time 72.0
+Recorded cash and eco values (1229.7,316.51) at time 72.0
 ----------
 Advancing game to time 73.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -365,9 +361,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 78.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 326.76 at time 326.76
-We have 982.82 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (982.82,326.76) at time 78.0
+Awarded eco payment 322.77 at time 78.0
+Recorded cash and eco values (1427.19,322.77) at time 78.0
 ----------
 Advancing game to time 79.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -392,14 +387,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 84.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 336.1 at time 336.1
-We have 1132.25 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 1132.25 cash! That's enough to perform the next buy, which costs 1050.0 and has a buffer of 0!
-Purchasing farm!
-Completed the buy operation! The buy queue now has 5 items remaining in it
-Determined the minimum buy time of the next purchase to be 0
-We have 82.25 cash, but the next buy costs 150.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (82.25,336.1) at time 84.0
+Awarded eco payment 329.04 at time 84.0
+Recorded cash and eco values (1630.95,329.04) at time 84.0
 ----------
 Advancing game to time 85.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -419,18 +408,19 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 89.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! An eco change is coming at time 89.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
+Modified the eco send to Spaced Pinks
 ----------
 Advancing game to time 90.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 338.65 at time 338.65
-We have 338.65 cash, but the next buy costs 150.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 338.65 cash! That's enough to perform the next buy, which costs 150.0 and has a buffer of 0!
-Completed the buy operation! The buy queue now has 4 items remaining in it
-Determined the minimum buy time of the next purchase to be 0
-We have 188.65 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (188.65,338.65) at time 90.0
+Awarded eco payment 335.81 at time 90.0
+We have 1831.25 cash, but the next buy costs 550.0 and has a buffer of 0 and needs to be made on or after time 89.0!
+We have 1831.25 cash! That's enough to perform the next buy, which costs 550.0 and has a buffer of 0!
+Completed the buy operation! The buy queue now has 2 items remaining in it
+Determined the minimum buy time of the next purchase to be 125.5
+Recorded cash and eco values (1281.25,335.81) at time 90.0
 ----------
 Advancing game to time 91.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -447,9 +437,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 94.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 94.0
-We have 104.21 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (104.21,344.88) at time 94.0
 ----------
 Advancing game to time 95.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -458,9 +445,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 96.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 347.99 at time 347.99
-We have 389.97 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (389.97,347.99) at time 96.0
+Awarded eco payment 345.14 at time 96.0
+Recorded cash and eco values (1439.73,345.14) at time 96.0
 ----------
 Advancing game to time 97.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -481,16 +467,12 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 101.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 100.67
-We have 284.79 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (284.79,355.25) at time 100.67
 ----------
 Advancing game to time 102.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 357.32 at time 357.32
-We have 600.63 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (600.63,357.32) at time 102.0
+Awarded eco payment 354.48 at time 102.0
+Recorded cash and eco values (1607.54,354.48) at time 102.0
 ----------
 Advancing game to time 103.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -515,12 +497,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 108.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 107.33
-We have 474.7 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (474.7,365.62) at time 107.33
-Awarded eco payment 366.65 at time 366.65
-We have 820.61 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (820.61,366.65) at time 108.0
+Awarded eco payment 363.81 at time 108.0
+Recorded cash and eco values (1784.68,363.81) at time 108.0
 ----------
 Advancing game to time 109.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -545,19 +523,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 114.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 375.99 at time 375.99
-We have 1009.93 cash, but the next buy costs 600.0 and has a buffer of 250 and needs to be made on or after time 0!
-We have 1009.93 cash! That's enough to perform the next buy, which costs 600.0 and has a buffer of 250!
-Upgrading path 0 of the farm at index 0
-The new farm has upgrades (1,0,0)
-Completed the buy operation! The buy queue now has 3 items remaining in it
-Determined the minimum buy time of the next purchase to be 0
-We have 409.93 cash, but the next buy costs 400.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 409.93 cash! That's enough to perform the next buy, which costs 400.0 and has a buffer of 0!
-Completed the buy operation! The buy queue now has 2 items remaining in it
-Determined the minimum buy time of the next purchase to be 0
-We have 9.93 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (9.93,375.99) at time 114.0
+Awarded eco payment 373.14 at time 114.0
+Recorded cash and eco values (1971.16,373.14) at time 114.0
 ----------
 Advancing game to time 115.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -574,9 +541,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 118.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 118.0
-We have 40.0 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (40.0,375.99) at time 118.0
 ----------
 Advancing game to time 119.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -585,9 +549,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 120.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 376.43 at time 376.43
-We have 376.43 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (376.43,376.43) at time 120.0
+Awarded eco payment 382.48 at time 120.0
+Recorded cash and eco values (2166.97,382.48) at time 120.0
 ----------
 Advancing game to time 121.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -596,9 +559,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 122.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 121.2
-We have 379.1 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (379.1,378.3) at time 121.2
 ----------
 Advancing game to time 123.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -611,16 +571,22 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 125.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 124.4
-We have 319.54 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (319.54,383.27) at time 124.4
+----------
+Advancing game to time 126.0
+MESSAGE FROM GameState.advanceGameState: 
+Warning! An eco change is coming at time 125.5. Adjusting the target time.
+Sorted the payouts in order of increasing time!
+Modified the eco send to Grouped Greens
 ----------
 Advancing game to time 126.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 385.76 at time 385.76
-We have 655.53 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (655.53,385.76) at time 126.0
+Awarded eco payment 392.78 at time 126.0
+We have 2344.89 cash, but the next buy costs 600.0 and has a buffer of 0 and needs to be made on or after time 125.5!
+We have 2344.89 cash! That's enough to perform the next buy, which costs 600.0 and has a buffer of 0!
+Completed the buy operation! The buy queue now has 1 items remaining in it
+Determined the minimum buy time of the next purchase to be 191.25
+Recorded cash and eco values (1744.89,392.78) at time 126.0
 ----------
 Advancing game to time 127.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -629,9 +595,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 128.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 127.6
-We have 645.75 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (645.75,388.25) at time 127.6
 ----------
 Advancing game to time 129.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -644,22 +607,12 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 131.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 130.8
-We have 586.19 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-Recorded cash and eco values (586.19,393.23) at time 130.8
 ----------
 Advancing game to time 132.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 395.1 at time 395.1
-We have 943.96 cash, but the next buy costs 550.0 and has a buffer of 250 and needs to be made on or after time 0!
-We have 943.96 cash! That's enough to perform the next buy, which costs 550.0 and has a buffer of 250!
-Upgrading path 0 of the farm at index 0
-The new farm has upgrades (2,0,0)
-Completed the buy operation! The buy queue now has 1 items remaining in it
-Determined the minimum buy time of the next purchase to be 0
-We have 393.96 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (393.96,395.1) at time 132.0
+Awarded eco payment 413.78 at time 132.0
+Recorded cash and eco values (1633.67,413.78) at time 132.0
 ----------
 Advancing game to time 133.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -684,11 +637,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 138.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 404.43 at time 404.43
-Recorded cash and eco values (611.72,404.43) at time 138.0
-Awarded direct payment 40 at time 138.0
-We have 651.72 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (651.72,404.43) at time 138.0
+Awarded eco payment 434.78 at time 138.0
+Recorded cash and eco values (1543.45,434.78) at time 138.0
 ----------
 Advancing game to time 139.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -701,9 +651,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 141.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 140.29
-We have 620.61 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (620.61,407.98) at time 140.29
 ----------
 Advancing game to time 142.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -712,23 +659,16 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 143.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 142.57
-We have 589.5 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (589.5,411.54) at time 142.57
 ----------
 Advancing game to time 144.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 413.76 at time 413.76
-We have 958.81 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (958.81,413.76) at time 144.0
+Awarded eco payment 455.78 at time 144.0
+Recorded cash and eco values (1474.23,455.78) at time 144.0
 ----------
 Advancing game to time 145.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 144.86
-We have 972.15 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (972.15,415.1) at time 144.86
 ----------
 Advancing game to time 146.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -741,9 +681,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 148.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 147.14
-We have 941.04 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (941.04,418.65) at time 147.14
 ----------
 Advancing game to time 149.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -752,12 +689,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 150.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 149.43
-We have 909.92 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (909.92,422.21) at time 149.43
-Awarded eco payment 423.1 at time 423.1
-We have 1315.24 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (1315.24,423.1) at time 150.0
+Awarded eco payment 476.78 at time 150.0
+Recorded cash and eco values (1426.01,476.78) at time 150.0
 ----------
 Advancing game to time 151.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -766,9 +699,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 152.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 151.71
-We have 1301.91 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (1301.91,425.76) at time 151.71
 ----------
 Advancing game to time 153.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -785,9 +715,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 156.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 432.43 at time 432.43
-We have 1601.0 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (1601.0,432.43) at time 156.0
+Awarded eco payment 497.78 at time 156.0
+Recorded cash and eco values (1398.79,497.78) at time 156.0
 ----------
 Advancing game to time 157.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -795,12 +724,7 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 158.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 158.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 158.0
-We have 1578.78 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (1578.78,435.54) at time 158.0
-Modified the eco send to Zero
 ----------
 Advancing game to time 159.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -809,9 +733,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 160.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 160.0
-We have 1618.78 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (1618.78,435.54) at time 160.0
 ----------
 Advancing game to time 161.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -820,11 +741,14 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 162.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 435.54 at time 435.54
-Recorded cash and eco values (2054.32,435.54) at time 162.0
-Awarded direct payment 40 at time 162.0
-We have 2094.32 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (2094.32,435.54) at time 162.0
+Awarded eco payment 518.78 at time 162.0
+Recorded cash and eco values (1392.57,518.78) at time 162.0
+----------
+Advancing game to time 163.0
+MESSAGE FROM GameState.advanceGameState: 
+Warning! An eco change is coming at time 162.25. Adjusting the target time.
+Sorted the payouts in order of increasing time!
+Modified the eco send to Spaced Blacks
 ----------
 Advancing game to time 163.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -833,9 +757,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 164.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 164.0
-We have 2134.32 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (2134.32,435.54) at time 164.0
 ----------
 Advancing game to time 165.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -844,9 +765,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 166.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 166.0
-We have 2174.32 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (2174.32,435.54) at time 166.0
 ----------
 Advancing game to time 167.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -855,11 +773,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 168.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 435.54 at time 435.54
-Recorded cash and eco values (2609.86,435.54) at time 168.0
-Awarded direct payment 40 at time 168.0
-We have 2649.86 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (2649.86,435.54) at time 168.0
+Awarded eco payment 531.92 at time 168.0
+Recorded cash and eco values (1649.62,531.92) at time 168.0
 ----------
 Advancing game to time 169.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -868,9 +783,6 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 170.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 170.0
-We have 2689.86 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-Recorded cash and eco values (2689.86,435.54) at time 170.0
 ----------
 Advancing game to time 171.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -887,13 +799,8 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 174.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded eco payment 435.54 at time 435.54
-We have 3125.4 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 3125.4 cash! That's enough to perform the next buy, which costs 2700.0 and has a buffer of 0!
-Upgrading path 0 of the farm at index 0
-The new farm has upgrades (3,0,0)
-Completed the buy operation! The buy queue now has 0 items remaining in it
-Recorded cash and eco values (425.4,435.54) at time 174.0
+Awarded eco payment 544.72 at time 174.0
+Recorded cash and eco values (1930.35,544.72) at time 174.0
 ----------
 Advancing game to time 175.0
 MESSAGE FROM GameState.advanceGameState: 
@@ -902,24 +809,246 @@ Sorted the payouts in order of increasing time!
 Advancing game to time 176.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
-Awarded direct payment 40 at time 176.0
-Recorded cash and eco values (465.4,435.54) at time 176.0
 ----------
-Advanced game state to round 9
-The current time is 176.0
-The next round starts at time 193.0
-Our new cash and eco is given by (465.4,435.54) 
+Advancing game to time 177.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 178.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 179.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 180.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 557.52 at time 180.0
+Recorded cash and eco values (2223.87,557.52) at time 180.0
+----------
+Advancing game to time 181.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 182.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 183.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 184.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 185.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 186.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 570.32 at time 186.0
+Recorded cash and eco values (2530.19,570.32) at time 186.0
+----------
+Advancing game to time 187.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 188.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 189.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 190.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 191.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 192.0
+MESSAGE FROM GameState.advanceGameState: 
+Warning! An eco change is coming at time 191.25. Adjusting the target time.
+Sorted the payouts in order of increasing time!
+Modified the eco send to Grouped Yellows
+----------
+Advancing game to time 192.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 586.52 at time 192.0
+We have 2760.71 cash, but the next buy costs 1000.0 and has a buffer of 0 and needs to be made on or after time 191.25!
+We have 2760.71 cash! That's enough to perform the next buy, which costs 1000.0 and has a buffer of 0!
+Completed the buy operation! The buy queue now has 0 items remaining in it
+Recorded cash and eco values (1760.71,586.52) at time 192.0
+----------
+Advancing game to time 193.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 194.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 195.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 196.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 197.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 198.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 626.52 at time 198.0
+Recorded cash and eco values (1387.24,626.52) at time 198.0
+----------
+Advancing game to time 199.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 200.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 201.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 202.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 203.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 204.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 666.52 at time 204.0
+Recorded cash and eco values (1053.76,666.52) at time 204.0
+----------
+Advancing game to time 205.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 206.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 207.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 208.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 209.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 210.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 702.01 at time 210.0
+Recorded cash and eco values (755.77,702.01) at time 210.0
+----------
+Advancing game to time 211.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 212.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 213.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 214.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 215.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 216.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 725.57 at time 216.0
+Recorded cash and eco values (725.57,725.57) at time 216.0
+----------
+Advancing game to time 217.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 218.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 219.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 220.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 221.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 222.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+Awarded eco payment 747.93 at time 222.0
+Recorded cash and eco values (747.93,747.93) at time 222.0
+----------
+Advancing game to time 223.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 224.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 225.0
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 225.5
+MESSAGE FROM GameState.advanceGameState: 
+Sorted the payouts in order of increasing time!
+----------
+Advanced game state to round 8
+The current time is 225.5
+The next round starts at time 251.0
+Our new cash and eco is given by (164.59,771.26) 
 
 MESSAGE FROM GameState.viewCashEcoHistory():
 Graphing history of cash and eco!
 Graphing round 1, which starts at time 6.0
-Graphing round 2, which starts at time 27.0
-Graphing round 3, which starts at time 47.0
-Graphing round 4, which starts at time 68.0
-Graphing round 5, which starts at time 94.0
-Graphing round 6, which starts at time 118.0
-Graphing round 7, which starts at time 138.0
-Graphing round 8, which starts at time 158.0
-Graphing round 9, which starts at time 176.0
+Graphing round 2, which starts at time 32.25
+Graphing round 3, which starts at time 59.75
+Graphing round 4, which starts at time 89.0
+Graphing round 5, which starts at time 125.5
+Graphing round 6, which starts at time 162.25
+Graphing round 7, which starts at time 191.25
+Graphing round 8, which starts at time 225.5
 Successfully generated graph! 
 
