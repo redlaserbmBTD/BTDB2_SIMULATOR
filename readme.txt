@@ -1,10 +1,22 @@
-Hi there! The purpose of this readme is to explain to front-end users/practioners how to use the code!
+------------
+INTRODUCTION
+------------
 
---------------
-RECENT UPDATES
---------------
+Hi there! Welcome to the Bloons TD Battles 2 Eco Simulator! I'm redlaserbm, the code's main developer. The goal of this project is to develop a program that can quickly and accurate simulate eco/farm/alt-eco strategies within b2 so that players can more quickly theory craft and optimize their strategies in-game. Note, however, that this project is all back-end code, with no fancy UI of any sorts associated with it. With this in mind, the following readme is primarily aimed at:
 
-- Introduced support for sniper farms
+1. Front-end developers who want to develop a UI for the project so that the common man can operate the simulator with ease.
+2. Technical audiences with a strong math/coding background who wish to utilize the code for advanced purposes that the common player is unlikely to encounter.
+
+------------------
+OPERATING THE CODE
+------------------
+
+Users new to the code should view the "Simulation Examples" section in main.ipynb. In general, the procedure for initializing a game state looks like this:
+
+1. Set the round lengths by creating an instance of Rounds(stall_factor). stall_factor is a variable from 0 to 1 indicating the level of stall in the game (higher means more stall).
+2. Define the buy queue and eco queue for your game state. These queues are lists containing the eco flowchart and flowchart of purchases you intend to follow as you progress through the game.
+3. Declare the initial state of the game. How much cash do you have? Eco? Current round? etc.
+4. Create an instance game_state of GameState using the info defined above, and then use game_state.fastForward(target_round = X) to simulate what would happen if the game were to progress to round X according to your strategy.
 
 --------------------------------------------
 FARM/ALT-ECO OBJECTS IN THE GameState CLASS:
@@ -26,7 +38,9 @@ ECO QUEUE:
 
 The eco queue works by arranging a sequence of items consisting of an eco send paired with a time, and switching the eco send the player is using to the next one in the queue once the player reaches the associated time.
 
-KNOWN LIMITATIONS:
+-----------------
+KNOWN LIMITATIONS
+-----------------
 
 1. Eco simulation - 
 The simulator assumes for simplicity that eco works as a continuous "stream" rather than as sending discrete sets of bloons into the eco queue like in the game. This means the sim cannot account for the initial eco bonus gotten from eco'ing into an empty queue and the eco penalty that occurs when the player stop eco'ing from a full queue.
@@ -34,5 +48,8 @@ The simulator assumes for simplicity that eco works as a continuous "stream" rat
 2. Farms - 
 If a bank is declared in the initial game state with a purchase time set prior to the simulation's starting time, the simulator currently does not compute the payments the bank would receive in the time between purchase time and initial time. 
 
+3. Elite Sniper - 
+If a game state is initialized with an elite sniper, the code assumes the first crate may be issued 20 seconds (initial cooldown) after the purchase time. In practice, the elite sniper inherits the cooldown of the supply drop that it is upgraded from.
+
 3. Round lengths -
-The round length data is based on old data collected from spoonoil and ninjayas back in October 2022. This data only goes up to the conclusion of R30 and may be outdated. I *also* assume that the minimum time for a round is the amount of time it takes for all natural bloons to appear plus 4 seconds. There may be inaccuracies in the data collected arising from these assumptions. Within an instance of GameState(), you can access the variable stall_factor to control round lengths and even change round lengths mid-game by using the changeStallFactor method.
+The round length data is based on old data collected from spoonoil and ninjayas back in October 2022. This data only goes up to the conclusion of R30 and may be outdated. I *also* assume that the minimum time for a round is the amount of time it takes for all natural bloons to appear plus 4 seconds. There may be inaccuracies in the data collected arising from these assumptions.
