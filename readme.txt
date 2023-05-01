@@ -11,7 +11,7 @@ Hi there! Welcome to the Bloons TD Battles 2 Eco Simulator! I'm redlaserbm, the 
 OPERATING THE CODE
 ------------------
 
-Users new to the code should view the "Simulation Examples" section in main.ipynb. In general, the procedure for initializing a game state looks like this:
+Users new to the code should view the "Simulation Examples" section in main.ipynb. In general, the procedure for simulating a game looks like this:
 
 1. Set the round lengths by creating an instance of Rounds(stall_factor). stall_factor is a variable from 0 to 1 indicating the level of stall in the game (higher means more stall).
 2. Define the buy queue and eco queue for your game state. These queues are lists containing the eco flowchart and flowchart of purchases you intend to follow as you progress through the game.
