@@ -51,5 +51,5 @@ If a bank is declared in the initial game state with a purchase time set prior t
 3. Elite Sniper - 
 If a game state is initialized with an elite sniper, the code assumes the first crate may be issued 20 seconds (initial cooldown) after the purchase time. In practice, the elite sniper inherits the cooldown of the supply drop that it is upgraded from.
 
-3. Round lengths -
+4. Round lengths -
 The round length data is based on old data collected from spoonoil and ninjayas back in October 2022. This data only goes up to the conclusion of R30 and may be outdated. I *also* assume that the minimum time for a round is the amount of time it takes for all natural bloons to appear plus 4 seconds. There may be inaccuracies in the data collected arising from these assumptions.
