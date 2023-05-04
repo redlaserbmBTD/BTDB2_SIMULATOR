@@ -47,7 +47,8 @@ KNOWN LIMITATIONS
 -----------------
 
 1. Eco simulation - 
-The simulator assumes for simplicity that eco works as a continuous "stream" rather than as sending discrete sets of bloons into the eco queue like in the game. This means the sim cannot account for the initial eco bonus gotten from eco'ing into an empty queue and the eco penalty that occurs when the player stop eco'ing from a full queue.
+- The simulator assumes for simplicity that eco works as a continuous "stream" rather than as sending discrete sets of bloons into the eco queue like in the game. This means the sim cannot account for the initial eco bonus gotten from eco'ing into an empty queue and the eco penalty that occurs when the player stop eco'ing from a full queue.
+- advanceGameState only checks the eco_queue just before terminating. If it's run every second, this is *okay* since it means that it checks every second that we can go from one eco send to the next, but end users may desire finer control over this aspect.
 
 2. Farms - 
 If a bank is declared in the initial game state with a purchase time set prior to the simulation's starting time, the simulator currently does not compute the payments the bank would receive in the time between purchase time and initial time. 
