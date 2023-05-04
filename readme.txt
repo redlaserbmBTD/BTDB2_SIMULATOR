@@ -18,25 +18,29 @@ Users new to the code should view the "Simulation Examples" section in main.ipyn
 3. Declare the initial state of the game. How much cash do you have? Eco? Current round? etc.
 4. Create an instance game_state of GameState using the info defined above, and then use game_state.fastForward(target_round = X) to simulate what would happen if the game were to progress to round X according to your strategy.
 
---------------------------------------------
-FARM/ALT-ECO OBJECTS IN THE GameState CLASS:
---------------------------------------------
+----------------------------
+DESCRIPTION OF THE ALGORITHM
+----------------------------
 
-FARMS IN THE GameState CLASS:
-Information about farms is stored in the class variable "farms". The farms object is a dictionary with integer keys starting at 0 representing ordinally when the farm was bought, starting from 0. Thus, if there are three farms in the game state, the third one will have index 2. Note that when a farm is sold, the indexing of other farms will note index. Thus, if we have three farms, sell the second one (index 1) and then buy a new farm, the new farm will have index 3, and the game state will have farms corresponding to indices 0,2,3. This structure helps substantially simplify the process of simulating compound purchases.
+The following is a high-level description of how the eco sim operates. Simulation is governed by the "GameState" class, which in essence is an instance of a game of Battles 2 boiled down to the essential details needed for accurate eco/farm simulation. The primary driver of that simulation is a method within the GameState class called "advanceGameState". This method works as follows: Given a game's current state of time, cash, eco, and farms, and a designated target time, advanceGameState computes the cash, eco, and farms the player will have at the target time. To do this, the code goes through the general procedure:
 
-SNIPER FARMS:
-Sniper farms are also stored as a dictionary object, this time in the class variable "supply_drops". The values in this dictionary are just the purchase times of the snipers. A separate variable "elite_sniper" is an integer which states which key in "supply_drops" corresponds to the elite sniper (it has value None if there is none).
+- Determine from each income source (eco, farm 1, farm 2, etc.) the times that those income sources will pay out to the player and how much will be paid out.
+- After all those payout times are determined, sort them in increasing order.
+- Finally, one-by-one administer each payment to the player.
 
-BUY QUEUE:
+While advanceGameState awards payments, it checks whether there is enough money to make purchases or whether sufficient time has passed to change eco sends. A limitation of advanceGameState is that it cannot compute payouts correctly if anything about the player's income sources changes midway through the simulation from the current time to the target time --- say they change eco sends, buy a farm, sell a farm, etc. To counter this, we simply terminate advanceGameState and re-run it in case this occurs. We also define a method "fastForward" which repeatedly runs advanceGameState until the game state is advanced to the target time.
 
-The buy queue works by arranging a sequence of purchases in order, and performing each purchase in the queue as soon as it becomes possible to do so. The code will always check whether you have enough money first, but the user can optionally specify how much extra money beyond the purchase cost they want to save before making the purchase --- this is called "buffer" --- or a minimum time before which the purchase cannot be made.
+In practice, it is ideal to run advanceGameState repeatedly over small intervals of time, because if advanceGameState is run over a long period of time and has to terminate early, then the computation time spent on payments beyond the early termination time will be wasted. By default, we have fastForward repeatedly run advanceGameState over one second intervals until the target time is reached.
 
-Purchases can include a sequence of multiple operations. A purchase could be as simple as buying defense, or it could be as complex as selling one farm to buy an upgrade for another.
+~~ THE BUY QUEUE & ECO QUEUE ~~
 
-ECO QUEUE:
+The buy queue in essence is the player's flowchart of purchases they intend to make throughout the game. An item in the buy queue is not necessarily just one purchase but possibly a combination of purchases and sells --- i.e. selling a Central Market into a Banana Central. The eco queue in essence is the strategy of eco'ing the player intends to follow throughout the game --- i.e. eco Grouped Reds on Rounds 1-2, then eco Grouped Blues on Rounds 3-4, etc. 
 
-The eco queue works by arranging a sequence of items consisting of an eco send paired with a time, and switching the eco send the player is using to the next one in the queue once the player reaches the associated time.
+After all payouts in a given time have been issued --- in rare cases, multiple income sources may pay out at the same time --- advanceGameState will check whether the first item in the buy queue can be carried out by computing the hypothetical cash (and loan amount, if the player has an outstanding IMF loan) the player would have in hand if they were to perform the transaction now. If the purchase sequence can be performed, advanceGameState performs it, and then terminates early. advanceGameState will also check whether time has progressed enough for the player to switch eco sends. Again, the process is terminated early in the event of an eco change.
+
+~~ DATA VISUALIZATION ~~
+
+Whenever advanceGameState terminates or awards a payment to a player, it records the cash and eco the player has at the time of payment and also records the time of that payment too. By repeatedly running advanceGameState as we do using the fastForward method, the simulation effectively records the player's cash and eco at least every second, and possibly even more frequently when there are payment or the user specifies a tighter interval to run advanceGameState repeatedly along.
 
 -----------------
 KNOWN LIMITATIONS
