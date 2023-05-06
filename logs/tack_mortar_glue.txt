@@ -7,6 +7,7 @@ The game round start times are given by [0, 6.0, 32.25, 59.75, 89.0, 125.5, 162.
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 1.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! Time 5.4 is too early to call Grouped Reds. Adjusting the queue time to 6.0
 Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 2.0
@@ -27,7 +28,6 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 6.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 6.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
 Awarded eco payment 250 at time 6.0
 Determined the minimum buy time of the next purchase to be 6.0
@@ -41,6 +41,7 @@ Modified the eco send to Grouped Reds
 ----------
 Advancing game to time 7.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! Time 56.99999999999999 is too early to call Spaced Yellows. Adjusting the queue time to 59.75
 Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 8.0
@@ -276,12 +277,12 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 60.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 59.75. Adjusting the target time.
 Sorted the payouts in order of increasing time!
 Modified the eco send to Spaced Yellows
 ----------
 Advancing game to time 60.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! Time 86.075 is too early to call Spaced Pinks. Adjusting the queue time to 89.0
 Sorted the payouts in order of increasing time!
 Awarded eco payment 303.98 at time 60.0
 Recorded cash and eco values (853.51,303.98) at time 60.0
@@ -408,12 +409,12 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 89.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 89.0. Adjusting the target time.
 Sorted the payouts in order of increasing time!
 Modified the eco send to Spaced Pinks
 ----------
 Advancing game to time 90.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! Time 121.85000000000001 is too early to call Grouped Greens. Adjusting the queue time to 125.5
 Sorted the payouts in order of increasing time!
 Awarded eco payment 335.81 at time 90.0
 We have 1831.25 cash, but the next buy costs 550.0 and has a buffer of 0 and needs to be made on or after time 89.0!
@@ -574,12 +575,12 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 126.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 125.5. Adjusting the target time.
 Sorted the payouts in order of increasing time!
 Modified the eco send to Grouped Greens
 ----------
 Advancing game to time 126.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! Time 158.57500000000002 is too early to call Spaced Blacks. Adjusting the queue time to 162.25
 Sorted the payouts in order of increasing time!
 Awarded eco payment 392.78 at time 126.0
 We have 2344.89 cash, but the next buy costs 600.0 and has a buffer of 0 and needs to be made on or after time 125.5!
@@ -746,12 +747,12 @@ Recorded cash and eco values (1392.57,518.78) at time 162.0
 ----------
 Advancing game to time 163.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 162.25. Adjusting the target time.
 Sorted the payouts in order of increasing time!
 Modified the eco send to Spaced Blacks
 ----------
 Advancing game to time 163.0
 MESSAGE FROM GameState.advanceGameState: 
+Warning! Time 188.35 is too early to call Grouped Yellows. Adjusting the queue time to 191.25
 Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 164.0
@@ -876,7 +877,6 @@ Sorted the payouts in order of increasing time!
 ----------
 Advancing game to time 192.0
 MESSAGE FROM GameState.advanceGameState: 
-Warning! An eco change is coming at time 191.25. Adjusting the target time.
 Sorted the payouts in order of increasing time!
 Modified the eco send to Grouped Yellows
 ----------
