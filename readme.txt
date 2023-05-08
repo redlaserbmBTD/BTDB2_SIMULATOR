@@ -42,6 +42,14 @@ After all payouts in a given time have been issued --- in rare cases, multiple i
 
 Whenever advanceGameState terminates or awards a payment to a player, it records the cash and eco the player has at the time of payment and also records the time of that payment too. By repeatedly running advanceGameState as we do using the fastForward method, the simulation effectively records the player's cash and eco at least every second, and possibly even more frequently when there are payment or the user specifies a tighter interval to run advanceGameState repeatedly along.
 
+~~ ECO SAFEGUARDING ~~
+
+To prevent the player from using unavailable eco sends, the code has built in safeguards. The safeguarding is performed entirely by the "ecoQueueCorrection" method within the GameState class. Here is how it works:
+
+The safeguard looks at the very first send in the eco queue and determines whether the time associated with it is valid or not. If the time is too late, then the send is discarded from the eco queue. If it is too early, the code will modify the time to the earliest time that it is available. If this change results in the second item in the eco queue being listed at a time before the first item, then the first item is discarded. Otherwise, we keep the send and check whether the new time is (still) before the current time in the Game State. If it is, then we exercise the first item in the eco queue.
+
+If the safeguard discards or exercises a send in the eco queue, it will restart the above procedure for the next send, continuing either until the queue is empty, or the first item in the eco queue is determined to be valid (not too late or too early, but *just* right!)
+
 -----------------
 KNOWN LIMITATIONS
 -----------------
