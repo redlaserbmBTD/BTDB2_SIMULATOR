@@ -1,4 +1,4 @@
-# BTDB2_SIMULATOR
+# Welcome!
 
 Hi there! I'm redlaserbm, the main developer of the BTDB2 Eco simulator. To get started with using the code, please read through this README file! 
 
