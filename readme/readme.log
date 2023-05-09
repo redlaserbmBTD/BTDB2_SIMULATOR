@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  8 MAY 2023 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,8 +965,7 @@ tex.def
 File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box70
-)
-No file readme.aux.
+) (readme.aux)
 \openout1 = `readme.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
@@ -987,6 +986,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1022,6 +1022,7 @@ LaTeX Font Info:    ... okay on input line 77.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 77.
+(readme.out) (readme.out)
 \@outlinefile=\write4
 \openout4 = `readme.out'.
 
@@ -1086,10 +1087,6 @@ Overfull \hbox (2.6733pt too wide) in paragraph at lines 98--99
 [1
 
 {C:/Users/bmost/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-LaTeX Warning: Reference `awarding payments' on page 2 undefined on input line 
-108.
-
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 121.
 
@@ -1098,37 +1095,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
  during the
  []
 
-[2] [3] [4]
-
-LaTeX Warning: Reference `computation of farm payouts' on page 5 undefined on i
-nput line 211.
-
-[5]
-
-LaTeX Warning: Reference `loan payment formula' on page 6 undefined on input li
-ne 227.
-
-[6] [7] (readme.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+[2] [3] [4] [5] [6] [7] (readme.aux)
 
 Package rerunfilecheck Warning: File `readme.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `readme.out':
-(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             Before: E231285AC3C5944CF95F8D1EBB23C2E8;2691
 (rerunfilecheck)             After:  8790E2E6EA8A7AFEC58F6741628AFB86;2675.
  ) 
 Here is how much of TeX's memory you used:
- 36062 strings out of 475389
- 842953 string characters out of 2777000
- 1269572 words of memory out of 3000000
- 56832 multiletter control sequences out of 15000+600000
+ 36085 strings out of 475389
+ 843517 string characters out of 2777000
+ 1269569 words of memory out of 3000000
+ 56849 multiletter control sequences out of 15000+600000
  479841 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,103p,1537b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1144,9 +1125,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
 bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><
 C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 t12.pfb>
-Output written on readme.pdf (7 pages, 146815 bytes).
+Output written on readme.pdf (7 pages, 152790 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

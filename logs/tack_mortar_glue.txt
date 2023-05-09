@@ -35,7 +35,7 @@ We have 900 cash, but the next buy costs 605 and has a buffer of 0 and needs to 
 We have 900 cash! That's enough to perform the next buy, which costs 605 and has a buffer of 0!
 Completed the buy operation! The buy queue now has 4 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 295 cash, but the next buy costs 750 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (295,250) at time 6.0
 Modified the eco send to Grouped Reds
 ----------
@@ -64,7 +64,7 @@ Advancing game to time 12.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded eco payment 256.75 at time 12.0
-We have 401.75 cash, but the next buy costs 750.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (401.75,256.75) at time 12.0
 ----------
 Advancing game to time 13.0
@@ -91,7 +91,7 @@ Advancing game to time 18.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded eco payment 263.5 at time 18.0
-We have 515.25 cash, but the next buy costs 750.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (515.25,263.5) at time 18.0
 ----------
 Advancing game to time 19.0
@@ -118,7 +118,7 @@ Advancing game to time 24.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded eco payment 270.25 at time 24.0
-We have 635.5 cash, but the next buy costs 750.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (635.5,270.25) at time 24.0
 ----------
 Advancing game to time 25.0

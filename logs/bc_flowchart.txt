@@ -16,10 +16,10 @@ Awarded direct payment 160 at time 467.44
 Recorded cash and eco values (160,2000) at time 467.44
 Awarded direct payment 160 at time 467.44
 Determined the minimum buy time of the next purchase to be 0
-We have 320 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (320,2000) at time 467.44
 Awarded eco payment 2000 at time 468.0
-We have 2320 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2320,2000) at time 468.0
 ----------
 Advancing game to time 469.0
@@ -30,7 +30,7 @@ Advancing game to time 470.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 750 at time 469.8
-We have 3070 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3070,2000) at time 469.8
 ----------
 Advancing game to time 471.0
@@ -39,7 +39,7 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 470.39
 Recorded cash and eco values (3230,2000) at time 470.39
 Awarded direct payment 160 at time 470.39
-We have 3390 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3390,2000) at time 470.39
 ----------
 Advancing game to time 472.0
@@ -56,10 +56,10 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 473.33
 Recorded cash and eco values (3550,2000) at time 473.33
 Awarded direct payment 160 at time 473.33
-We have 3710 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3710,2000) at time 473.33
 Awarded eco payment 2000 at time 474.0
-We have 5710 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5710,2000) at time 474.0
 ----------
 Advancing game to time 475.0
@@ -76,7 +76,7 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 476.28
 Recorded cash and eco values (5870,2000) at time 476.28
 Awarded direct payment 160 at time 476.28
-We have 6030 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (6030,2000) at time 476.28
 ----------
 Advancing game to time 478.0
@@ -93,17 +93,17 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 479.22
 Recorded cash and eco values (6190,2000) at time 479.22
 Awarded direct payment 160 at time 479.22
-We have 6350 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (6350,2000) at time 479.22
 Awarded eco payment 2000 at time 480.0
-We have 8350 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (8350,2000) at time 480.0
 ----------
 Advancing game to time 481.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 750 at time 480.4
-We have 9100 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9100,2000) at time 480.4
 ----------
 Advancing game to time 482.0
@@ -116,7 +116,7 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 482.17
 Recorded cash and eco values (9260,2000) at time 482.17
 Awarded direct payment 160 at time 482.17
-We have 9420 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9420,2000) at time 482.17
 ----------
 Advancing game to time 484.0
@@ -133,10 +133,10 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 485.11
 Recorded cash and eco values (9580,2000) at time 485.11
 Awarded direct payment 160 at time 485.11
-We have 9740 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9740,2000) at time 485.11
 Awarded eco payment 2000 at time 486.0
-We have 11740 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11740,2000) at time 486.0
 ----------
 Advancing game to time 487.0
@@ -153,7 +153,7 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 488.06
 Recorded cash and eco values (11900,2000) at time 488.06
 Awarded direct payment 160 at time 488.06
-We have 12060 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (12060,2000) at time 488.06
 ----------
 Advancing game to time 490.0
@@ -176,7 +176,7 @@ Upgrading path 2 of the farm at index 2
 The new farm has upgrades (2,0,5)
 Completed the buy operation! The buy queue now has 15 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 740.0 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (740.0,2000) at time 492.0
 ----------
 Advancing game to time 493.0
@@ -226,7 +226,7 @@ Upgrading path 1 of the farm at index 3
 The new farm has upgrades (3,2,0)
 Completed the buy operation! The buy queue now has 9 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 5100.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5100.0,2000) at time 495.0
 ----------
 Advancing game to time 496.0
@@ -237,99 +237,99 @@ Advancing game to time 497.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 496.61
-We have 5260.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5260.0,2000) at time 496.61
 Awarded direct payment 50 at time 496.81
-We have 5310.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5310.0,2000) at time 496.81
 ----------
 Advancing game to time 498.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 498.0
-We have 7310.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7310.0,2000) at time 498.0
 ----------
 Advancing game to time 499.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 498.22
-We have 7470.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7470.0,2000) at time 498.22
 Awarded direct payment 50 at time 498.62
-We have 7520.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7520.0,2000) at time 498.62
 ----------
 Advancing game to time 500.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 499.83
-We have 7680.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7680.0,2000) at time 499.83
 ----------
 Advancing game to time 501.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 500.44
-We have 7730.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7730.0,2000) at time 500.44
 ----------
 Advancing game to time 502.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 501.44
-We have 7890.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7890.0,2000) at time 501.44
 ----------
 Advancing game to time 503.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 502.25
-We have 7940.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7940.0,2000) at time 502.25
 ----------
 Advancing game to time 504.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 503.06
-We have 8100.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (8100.0,2000) at time 503.06
 Awarded eco payment 2000 at time 504.0
-We have 10100.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10100.0,2000) at time 504.0
 ----------
 Advancing game to time 505.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 504.06
-We have 10150.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10150.0,2000) at time 504.06
 Awarded direct payment 160 at time 504.67
-We have 10310.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10310.0,2000) at time 504.67
 ----------
 Advancing game to time 506.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 505.88
-We have 10360.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10360.0,2000) at time 505.88
 ----------
 Advancing game to time 507.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 506.28
-We have 10520.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10520.0,2000) at time 506.28
 ----------
 Advancing game to time 508.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 507.69
-We have 10570.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10570.0,2000) at time 507.69
 Awarded direct payment 160 at time 507.89
-We have 10730.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10730.0,2000) at time 507.89
 ----------
 Advancing game to time 509.0
@@ -342,10 +342,10 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 509.5
 Recorded cash and eco values (10890.0,2000) at time 509.5
 Awarded direct payment 50 at time 509.5
-We have 10940.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10940.0,2000) at time 509.5
 Awarded eco payment 2000 at time 510.0
-We have 12940.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (12940.0,2000) at time 510.0
 ----------
 Advancing game to time 511.0
@@ -356,65 +356,65 @@ Advancing game to time 512.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 511.11
-We have 13100.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13100.0,2000) at time 511.11
 Awarded direct payment 50 at time 511.31
-We have 13150.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13150.0,2000) at time 511.31
 ----------
 Advancing game to time 513.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 512.72
-We have 13310.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13310.0,2000) at time 512.72
 ----------
 Advancing game to time 514.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 513.12
-We have 13360.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13360.0,2000) at time 513.12
 ----------
 Advancing game to time 515.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 514.33
-We have 13520.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13520.0,2000) at time 514.33
 Awarded direct payment 50 at time 514.94
-We have 13570.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13570.0,2000) at time 514.94
 ----------
 Advancing game to time 516.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 515.94
-We have 13730.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13730.0,2000) at time 515.94
 Awarded eco payment 2000 at time 516.0
-We have 15730.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15730.0,2000) at time 516.0
 ----------
 Advancing game to time 517.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 516.75
-We have 15780.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15780.0,2000) at time 516.75
 ----------
 Advancing game to time 518.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 517.56
-We have 15940.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15940.0,2000) at time 517.56
 ----------
 Advancing game to time 519.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 518.56
-We have 15990.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15990.0,2000) at time 518.56
 ----------
 Advancing game to time 520.0
@@ -427,14 +427,14 @@ Upgrading path 0 of the farm at index 3
 The new farm has upgrades (4,2,0)
 Completed the buy operation! The buy queue now has 8 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 150.0 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (150.0,2000) at time 519.17
 ----------
 Advancing game to time 521.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 520.78
-We have 310.0 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (310.0,2000) at time 520.78
 ----------
 Advancing game to time 522.0
@@ -458,14 +458,14 @@ Upgrading path 0 of the farm at index 4
 The new farm has upgrades (2,0,0)
 Completed the buy operation! The buy queue now has 5 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 110.0 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (110.0,2000) at time 522.0
 ----------
 Advancing game to time 523.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 522.39
-We have 270.0 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (270.0,2000) at time 522.39
 ----------
 Advancing game to time 524.0
@@ -512,7 +512,7 @@ Upgrading path 1 of the farm at index 4
 The new farm has upgrades (3,2,0)
 Completed the buy operation! The buy queue now has 2 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 9620.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9620.0,2000) at time 528.0
 ----------
 Advancing game to time 529.0
@@ -523,86 +523,86 @@ Advancing game to time 530.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 529.11
-We have 9780.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9780.0,2000) at time 529.11
 Awarded direct payment 50 at time 529.25
-We have 9830.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9830.0,2000) at time 529.25
 ----------
 Advancing game to time 531.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 530.22
-We have 9990.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9990.0,2000) at time 530.22
 Awarded direct payment 50 at time 530.5
-We have 10040.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10040.0,2000) at time 530.5
 ----------
 Advancing game to time 532.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 531.33
-We have 10200.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10200.0,2000) at time 531.33
 Awarded direct payment 50 at time 531.75
-We have 10250.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10250.0,2000) at time 531.75
 Awarded direct payment 750 at time 532.0
-We have 11000.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11000.0,2000) at time 532.0
 ----------
 Advancing game to time 533.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 532.44
-We have 11160.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11160.0,2000) at time 532.44
 Awarded direct payment 50 at time 533.0
-We have 11210.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11210.0,2000) at time 533.0
 ----------
 Advancing game to time 534.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 533.56
-We have 11370.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11370.0,2000) at time 533.56
 Awarded eco payment 2000 at time 534.0
-We have 13370.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13370.0,2000) at time 534.0
 ----------
 Advancing game to time 535.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 534.25
-We have 13420.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13420.0,2000) at time 534.25
 Awarded direct payment 160 at time 534.67
-We have 13580.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13580.0,2000) at time 534.67
 ----------
 Advancing game to time 536.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 535.5
-We have 13630.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13630.0,2000) at time 535.5
 Awarded direct payment 160 at time 535.78
-We have 13790.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13790.0,2000) at time 535.78
 Awarded direct payment 750 at time 536.0
-We have 14540.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14540.0,2000) at time 536.0
 ----------
 Advancing game to time 537.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 50 at time 536.75
-We have 14590.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14590.0,2000) at time 536.75
 Awarded direct payment 160 at time 536.89
-We have 14750.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14750.0,2000) at time 536.89
 ----------
 Advancing game to time 538.0
@@ -611,7 +611,7 @@ Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 538.0
 Recorded cash and eco values (14910.0,2000) at time 538.0
 Awarded direct payment 50 at time 538.0
-We have 14960.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14960.0,2000) at time 538.0
 ----------
 Advancing game to time 539.0
@@ -622,10 +622,10 @@ Advancing game to time 540.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 539.11
-We have 15120.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15120.0,2000) at time 539.11
 Awarded direct payment 50 at time 539.25
-We have 15170.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15170.0,2000) at time 539.25
 Awarded eco payment 2000 at time 540.0
 Recorded cash and eco values (17170.0,2000) at time 540.0
@@ -636,62 +636,62 @@ Upgrading path 0 of the farm at index 4
 The new farm has upgrades (4,2,0)
 Completed the buy operation! The buy queue now has 1 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 1920.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (1920.0,2000) at time 540.0
 ----------
 Advancing game to time 541.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 540.22
-We have 2080.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2080.0,2000) at time 540.22
 ----------
 Advancing game to time 542.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 541.33
-We have 2240.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2240.0,2000) at time 541.33
 ----------
 Advancing game to time 543.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 542.44
-We have 2400.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2400.0,2000) at time 542.44
 ----------
 Advancing game to time 544.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 543.56
-We have 2560.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2560.0,2000) at time 543.56
 Awarded direct payment 750 at time 544.0
-We have 3310.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3310.0,2000) at time 544.0
 ----------
 Advancing game to time 545.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 544.67
-We have 3470.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3470.0,2000) at time 544.67
 ----------
 Advancing game to time 546.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 545.78
-We have 3630.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3630.0,2000) at time 545.78
 Awarded eco payment 2000 at time 546.0
-We have 5630.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5630.0,2000) at time 546.0
 ----------
 Advancing game to time 547.0
 MESSAGE FROM GameState.advanceGameState: 
 Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 546.89
-We have 5790.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
+WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5790.0,2000) at time 546.89
 ----------
 Advancing game to time 548.0
