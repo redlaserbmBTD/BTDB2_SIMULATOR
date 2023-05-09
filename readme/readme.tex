@@ -1,0 +1,241 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}  
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+%\usepackage[backend=bibtex]{biblatex}
+\usepackage[]{footmisc}
+\usepackage{titlesec, hyperref, mathrsfs, graphicx, verbatim, algpseudocode, enumitem, subcaption}
+\usepackage[square, numbers]{natbib}
+\usepackage{mathtools}
+\usepackage{soul}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+
+\usepackage{algorithm}
+% \usepackage{algorithmic}
+
+
+\pgfplotsset{my style/.append style={axis x line=middle, axis y line=
+middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
+\graphicspath{ {./Images/} }
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+% \titleformat{\chapter}{\normalsize\scshape\center}{\thesection}{1em}{}
+% \titleformat{\section}{\normalsize\scshape\center}{\thesubsection}{1em}{}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\makeatletter
+\renewcommand\@makefntext[1]{%
+    \parindent 1em%
+    \@thefnmark.~#1}
+\makeatother
+\allowdisplaybreaks
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{6pt}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix, arrows, decorations.pathmorphing}
+\usepackage{tikz-cd}
+
+\newcommand{\sigfi}{$\sigma$-field }
+\newcommand{\eps}{\varepsilon}
+\def\a{\alpha}
+\def\b{\beta}
+\def\e{\epsilon}
+\newcommand{\Du}[1]{\overline{D}#1}
+\newcommand{\Dl}[1]{\underline{D}#1}
+\newcommand{\Dh}[1]{D_h #1}
+\newcommand{\Ah}[1]{A_h #1}
+\newcommand{\norm}[1]{||#1||}
+\newcommand{\Bnorm}[1]{\Big|\Big|#1\Big|\Big|}
+\newcommand{\inpr}[1]{\langle #1 \rangle}
+\newcommand{\seq}[1]{\{ #1 \}}
+\newcommand{\chr}[1]{1_{\{#1\}}}
+\newcommand{\cvr}[1]{\langle #1\rangle}
+\newcommand{\cad}{cádlág}
+\newcommand{\aseq}{\overset{\mathrm{a.s.}}{=}}
+\newcommand{\peq}{\overset{\mathrm{P}}{=}}
+
+\newtheorem{definition}{Definition}[section]
+
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{assumption}[definition]{Assumption}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{exercise}[definition]{Exercise}
+\newtheorem{question}[definition]{Question}
+\newtheorem{hypothesis}[definition]{Hypothesis}
+\theoremstyle{remark}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\newtheorem{solution}{Solution}
+\theoremstyle{plain}
+
+\begin{document}
+\title{BTDB2 Eco Simulator Documentation}
+\author{redlaserbm}
+\date{April 2023}
+\maketitle
+
+\section{Introduction}
+
+Hi there! Welcome to the Bloons TD Battles 2 Eco Simulator! I'm redlaserbm, the code's main developer. The goal of this project is to develop a program that can quickly and accurate simulate eco/farm/alt-eco strategies within b2 so that players can more quickly theory craft and optimize their strategies in-game. Note, however, that this project is all back-end code, with no fancy UI of any sorts associated with it. With this in mind, the following readme is primarily aimed at:
+
+\begin{enumerate}
+    \item Front-end developers who want to develop a UI for the project so that the common man can operate the simulator with ease.
+    \item Technical audiences with a strong math/coding background who wish to utilize the code for advanced purposes that the common player is unlikely to encounter.
+\end{enumerate}
+
+
+\section{Operating the Code}
+
+Users unfamiliar with coding should use the lightweight version of this simulator on  You can find a version of this simulator on spoonoil's website \url{https://b2.lol}. That version does not have all features implemented yet but should cover use cases for most users. Advanced users wishing to perform more complex simulations should view the "Simulation Examples" section in \texttt{main.ipynb} to get started. In general, the procedure for simulating a game looks like this:
+
+\begin{enumerate}
+    \item Set the round lengths by creating an instance of \texttt{Rounds(stall\_factor)}. \texttt{stall\_factor} is a float from 0 to 1 indicating the level of stall in the game (higher value means more stall).
+    \item Define the buy queue and eco queue for your game state. These queues are lists containing the eco flowchart and flowchart of purchases you intend to follow as you progress through the game.
+    \item Declare the initial state of the game. How much cash do you have? Eco? Current round? etc.
+    \item Create an instance \texttt{game\_state} of \texttt{GameState} using the info defined above, and then use \texttt{game\_state.fastForward(target\_round = X)} to simulate what would happen if the game were to progress to round X according to your strategy.
+\end{enumerate}
+
+\section{Advancing the Game State}
+
+To simulate a game state along the time interval $(t_0,t]$, where $t_0$ is the initialized time of the game state, 
+
+The method \texttt{advanceGameState()} attempts to simulate the game from the associated class's current time until a designated target time. However, this method can only perform accurate simulation provided that nothing about the player's sources of income changes --- see Section \ref{awarding payments} for more information. If something does change, it terminates early. To work around this issue, the method \texttt{fastForward()} repeatedly runs \texttt{advanceGameState()} over small intervals until a designated target time is reached. In the following subsections, we describe how the simulation works, first by describing the functionality of \texttt{advanceGameState()}, and then motivating the \texttt{fastForward()} method.
+
+\subsection{Computing Payments}
+
+\texttt{advanceGameState()} begins its simulation by first computing the times and that each income source (eco, farms, boat farms, etc.) pays out and the amount of money that will be granted at each time. The payouts are collected in a list called \texttt{payout\_times}, and once all payouts projected to occur in the simulation are to occur, the list is sorted by time, with earlier payouts coming first.
+
+In most cases, the exact amount of money to be paid out can be determined during this process, and entries in \texttt{payout\_times} thus usually consist of a dictionary with three keys, \texttt{Payout Type, Payout Time, Payout Amount}. However, this is not possible with bank interest or eco payouts. In all cases, however, \texttt{payout\_times} is a list of dictionary objects, each with a payout time and instructions to compute the payout amount (if the amount hasn't already been computed).
+
+\subsubsection{Computation of Farm Payouts}\label{computation of farm payouts}
+
+Different farms pay out at different times, so to compute farm payouts, we iterate on a for loop through each farm, computing the payouts it will give and at what time. For each farm in the for loop, we run a while loop whose general functionality is described by the pseudo-code below to compute its payments over the course of the simulation:
+
+\begin{algorithm}
+\caption{Calculate the payout of a Monkey Farm}
+\begin{algorithmic}
+\State \texttt{round = self.current\_round}
+\While{\texttt{round} $\leq$ \texttt{target\_round}}
+    \State \texttt{j = Smallest j such that the farm's jth payment will appear during the round (and after \texttt{self.current\_round})}
+    \State \texttt{k = \# of payments the farm will give during the round}
+    \For{$i = j, j+1, \ldots, k$}
+        \State \texttt{farm\_time = time of farm's ith payout in the round}
+        \If{\texttt{self.current\_round < farm\_time <= target\_time}}
+            \State \texttt{payout\_entry = (farm\_time, farm\_payout)}
+            \State \texttt{payout\_times.append(payout\_entry)}
+        \Else
+            \State \texttt{BREAK FROM WHILE LOOP}
+        \EndIf
+    \EndFor
+    \State \texttt{round += 1}
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+Generally speaking, for each round the simulation covers, we compute the times of all payouts the farm will give in that round. The while loop continues until it detects a farm payout that is to occur after the end of the simulation. It is important to note here that in practice, \texttt{advanceGameState()} will be run repeatedly over small intervals, thus it is important to reduce redundant computations as much as possible. The computation of $j$ prevents the code from repeatedly trying to add the same payment over and over again to the list of payouts. 
+
+An analogous version of $j$ to prevent repeated attempts of adding payments that are too late to the payout list is not necessary because the code automatically breaks the while loop upon detection of such a payout, but what \textit{is} necessary is a system to prevent a farm awarding its $k$th payout in a round when it cannot do so because of being purchased mid-round. This is the reasoning behind the variable $k$. 
+
+\subsubsection{Computation of Boat Farm Payouts}
+
+A substantial simplification relative to the algorithm for farms can be made for boat farms because all boat farms award payment at the start of a round. An important consideration that must be made, however, is that Trade Empire buffs the payouts of merchantmen \& Favored Trades by $5\%*(\text{number of non-T5 boat farms})$
+
+\begin{algorithm}
+\caption{Calculate the payout from all Boat Farms}
+\begin{algorithmic}
+\State \texttt{multiplier = computeTempireBuff()}
+\State \texttt{boat\_payout = 0}
+\For{\texttt{boat\_farm in boat\_farms}}
+    \State \texttt{boat\_payout += multiplier*boat\_farm.payout}
+\EndFor
+
+\State \texttt{round = self.current\_round}
+\While{\texttt{round} $\leq$ \texttt{target\_round}}
+    \State \texttt{payout\_entry = (self.rounds.getTimeFromRound(round), boat\_payout)}
+    \State \texttt{payout\_times.append(payout\_entry)}   
+    \State \texttt{round += 1}
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Awarding Payments}\label{awarding payments}
+
+Once the list \texttt{payout\_times} with a sorted list of payments, the code runs a for loop through the payments, awarding them one-by-one until they all have been granted. This is \textit{generally} how the code operates, except that the code cannot accurately finish simulation if the player makes \textit{any} transactions that impact their income. Suppose for instance that in a simulation from the start of Round 12 to the end of Round 14, the player upgrades their $200$ Monkey Farm to a $300$ farm. Then, in order for the code to accurately simulate the game from the time of this upgrade purchase to the end of Round 14, we must go back and recompute the payouts that this farm will give. Our solution to this problem is to simply terminate \texttt{advanceGameState} upon the time of purchase and re-run it again. To implement this solution, we check after every payment in \texttt{payout\_times} whether the player has enough money to make a purchase --- if multiple payments occur at exactly the same time, we process all payments first before runnning this check. If they do, we make the purchase and terminate \texttt{advanceGameState} early. We also must account for times when the player wishes to change eco sends. To resolve this issue, we check prior to simulation whether an change in eco sends is to occur before the target time. If yes, then we choose to terminate \texttt{advanceGameState} at the time of the eco change and update the eco send the player uses at the end.
+
+To sumarize, the general procedure goes like this:
+
+\begin{enumerate}
+    \item Determine the impact of eco'ing on the player's cash and eco in the time between the previous payment (or the current game state time, if this is the first payment) and the payment we are about to process.
+    \item (Compute the payout, if necessary.) Award the payment to the player.
+    \item If the next payout is to occur at a future time --- this will almost always be the case --- check whether the player can make a purchase in their buy queue. If they can, perform the purchase, and terminate \texttt{advanceGameState} early.
+\end{enumerate}
+
+\subsubsection{Awarding Eco Payments}
+
+Eco payments are one of the few sources of income whose payout amount cannot be computed ahead of time during the payout computation process. Assume that the player has an eco send $S = (S_{cost}, S_{eco})$ which on average costs $S_{cost}$ every 6 seconds to use and gives $S_{eco}$ eco every $6$ seconds. Next, suppose that there are two payments to occur at times $t_1$ and $t_2$ respectively with $t_1 < t_2$. Let $C_i,E_i$ denote the cash and eco at time $t_i$. Then, since $t_1 + 6 \geq t_2$, we have
+\begin{align}
+    C_2 &= C_1 - \min\Big(\frac{C}{S_{cost}}, \frac{t_2-t_1}{6}\Big)S_{cost} \\
+    E_2 &= E_1 + \min\Big(\frac{C}{S_{cost}}, \frac{t_2-t_1}{6}\Big)S_{eco}
+\end{align}
+
+\subsubsection{Loan Payments}
+
+The accurate awarding of payments is no longer straightforward if the player has outstanding loans as a consequence of activating IMF Loan. Assume that the player has $C_1$ cash and $L_1$ dollars of outstanding debt from IMF Loans and is about to receive a payment of $P$ dollars. Then, the updated cash and loan amounts $C_2$ and $L_2$ the player will have after this payment is received is given by
+\begin{align}\label{loan payment formula}
+    C_2 &= \begin{cases}
+    C_1 + P/2 & \text{if } P/2 \leq L_1 \\
+    C_1 + P - L_1 & \text{if } P/2 > L_1
+    \end{cases} \\
+    L_2 &= \begin{cases}
+    L_1 - P/2 & \text{if } P/2 \leq L_1 \\
+    0 & \text{if } P/2 > L_1
+    \end{cases}
+\end{align}
+
+\subsection{The Buy Queue}
+
+\textcolor{red}{(I will expand on this subsection more later.)} The buy queue \texttt{self.buy\_queue} in the \texttt{GameState} class is a list whose entries describe purchases the player wishes to make over the course of the simulation. To account for the possibility of compound purchases, such as selling into Monkey Wall Street, each element in the buy queue is itself a list in fact. After all purchases in a given time are made, the code checks whether the first item in the buy queue can be performed. If it can be done, it will be done, and \texttt{advanceGameState()} will terminate early in this case.
+
+In general, in the presence of IMF Loans, the order in which transactions are performed *does* matter.
+
+\subsection{Simulation in Practice}
+
+The early termination feature of \texttt{advanceGameState} is necessary for accuracy but is inconvenient for the user because regardless of how far one instance running of \texttt{advanceGameState} progress, they want the code, when it runs, to advance to precisely the target time that they specify!  This motivates the existence of the \texttt{fastForward} method, which repeatedly runs \texttt{advanceGameState} until the target time is reached.
+
+Something we must be careful about when repeatedly running \texttt{advanceGameState} is the possibility of wasted computation time. For example, if we simulate a game state from the start of Round 12 to the end of Round 14 and purchase occurs say a few seconds into Round 12, then \textit{all} of the computation time spent on payments occurring after that purchase will be wasted. To prevent a substantial amount of computations from being discarded, we run the code in small intervals. Note that as a consequence that we must take care to ensure that \texttt{advanceGameState} does not perform redundant computations, or else running the method many times like this repeatedly will slow down runtime --- see Section \ref{computation of farm payouts} for an example of such care being taken.
+
+An added bonus of running the code repeatedly is that, since cash and eco are logged every time the simulation terminates, the resulting log of the player's cash and eco over time will be more detailed than just one pass of the method.
+
+\section{Feature Requests / Features to add}
+
+\subsection{Simplifying Code Structure}
+
+Currently, the entirety of the code is contained in \texttt{main.ipynb}. It'd be nice if the examples section of this notebook was moved to a different file.
+
+\subsection{Optimizing the buy queue}
+
+Currently, the code, when checking whether a purchase in the buy queue can be made, re-computes the cost of this operation from scratch each time it checks. However, if the impact of the purchase to the player's cash and loans does not vary over time, we can save computation time by computing the cost once, storing it, and then reaccessing it on subsequent checks.
+
+An exhaustive list of time-dependent payouts include the following:
+\begin{enumerate}
+    \item Sell operations when the player has debt: The amount of cash the player will actually get from the payment depends on his loan value as evidenced by equation \ref{loan payment formula}. Whenever the player receives a direct payment, we must recompute the impact the sell operation would have on his cash \& eco because of the possibility of switching from one case to the other in the computation of resulting cash.
+    \item Bank withdrawals: As time passes the bank will accumulate more and more money
+\end{enumerate}
+
+\subsection{Robust Logging}
+
+The \texttt{GameState} class is equipped with a robust logging feature which, after the player runs a simulation, allows the player to see what payments were given and from what sources.
+
+However, we also need a nice logging feature that works for when comparing *multiple* strategies against each other.
+
+\subsection{More Detailed Stats}
+
+When comparing strategies, it'd be nice if users could see more than just cash and eco over time.
+
+\end{document}
