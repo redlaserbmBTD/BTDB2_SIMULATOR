@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 01:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./readme.tex
-(readme.tex
+**./documentation.tex
+(documentation.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-30>
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -965,27 +965,27 @@ tex.def
 File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box70
-) (readme.aux)
-\openout1 = `readme.aux'.
+) (documentation.aux)
+\openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1021,10 +1021,10 @@ LaTeX Font Info:    ... okay on input line 77.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 77.
-(readme.out) (readme.out)
+Package hyperref Info: Link coloring OFF on input line 79.
+(documentation.out) (documentation.out)
 \@outlinefile=\write4
-\openout4 = `readme.out'.
+\openout4 = `documentation.out'.
 
 
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
@@ -1060,20 +1060,20 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 77.
+ on input line 79.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
 
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
 
 
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 82
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84
 .
 
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -1082,53 +1082,84 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [1
 
 {C:/Users/bmost/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (2.6733pt too wide) in paragraph at lines 110--111
-[]\OT1/cmr/m/n/12 Set the round lengths by cre-at-ing an in-stance of \OT1/cmtt
-/m/n/12 Rounds(stall[]factor)\OT1/cmr/m/n/12 . \OT1/cmtt/m/n/12 stall[]factor
- []
-
-[2]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 143.
+put line 111.
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 [] \OT1/cmtt/m/n/12 j = Smallest j such that the farm's jth payment will appear
  during the
  []
 
-[3] [4] [5] [6] [7] [8] (readme.aux)
+[2] [3] [4]
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+199.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 199.
 
-Package rerunfilecheck Warning: File `readme.out' has changed.
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 199.
+
+[5] [6] [7] (documentation.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+Package rerunfilecheck Warning: File `documentation.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `readme.out':
-(rerunfilecheck)             Before: D44EAC20F73FD06529F7B3ADFC303542;2994
-(rerunfilecheck)             After:  57FD5A72C1961CC59B3EAB788319947B;3095.
+Package rerunfilecheck Info: Checksums for `documentation.out':
+(rerunfilecheck)             Before: D6671A8C7AC8313B9496908FE752DAB7;3311
+(rerunfilecheck)             After:  6A08A59492FC83579A2999C63F8BB3B7;2310.
  ) 
 Here is how much of TeX's memory you used:
- 36102 strings out of 475389
- 843690 string characters out of 2777000
- 1269571 words of memory out of 3000000
- 56852 multiletter control sequences out of 15000+600000
- 479841 words of font info for 71 fonts, out of 8000000 for 9000
+ 36110 strings out of 475389
+ 844072 string characters out of 2777000
+ 1268579 words of memory out of 3000000
+ 56868 multiletter control sequences out of 15000+600000
+ 480177 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,103p,1537b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bmost/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bmost/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bmost/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bmost/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
-bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><
-C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
-t12.pfb>
-Output written on readme.pdf (8 pages, 158705 bytes).
+ 99i,16n,103p,1544b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+pdfTeX warning (dest): name{subsection.3.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+<C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bmost/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bmost/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bmost/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bm
+ost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
+/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt1
+2.pfb>
+Output written on documentation.pdf (7 pages, 154605 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

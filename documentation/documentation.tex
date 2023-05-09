@@ -1,3 +1,5 @@
+
+
 \documentclass[12pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsfonts, amssymb, amsthm}  
@@ -82,48 +84,14 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 
 \section{Introduction}
 
-Hi there! Welcome to the Bloons TD Battles 2 Eco Simulator! I'm redlaserbm, the code's main developer. The goal of this project is to develop a program that can quickly and accurate simulate eco/farm/alt-eco strategies within b2 so that players can more quickly theory craft and optimize their strategies in-game. Note, however, that this project is all back-end code, with no fancy UI of any sorts associated with it. With this in mind, the following readme is primarily aimed at:
-
+Hi there! Welcome to the Bloons TD Battles 2 Eco Simulator! I'm redlaserbm, the code's main developer. The goal of this project is to develop a program that can quickly and accurate simulate eco/farm/alt-eco strategies within b2 so that players can more quickly theory craft and optimize their strategies in-game. This document contains a high-level explanation for how the code works, and is written with the following audience in mind:
 \begin{enumerate}
     \item Front-end developers who want to develop a UI for the project so that the common man can operate the simulator with ease.
-    \item Technical audiences with a strong math/coding background who wish to utilize the code for advanced purposes that the common player is unlikely to encounter.
+    \item Back-end developers who wish to rapidly get up to speed on how the code functions and ultimately contribute lines of code.
+    \item Practitioners with a strong math/coding background who wish to utilize the code for advanced purposes that the common player is unlikely to encounter.
 \end{enumerate}
 
-
-\section{Operating the Code}
-
-\subsection{Installation}
-
-Users unfamiliar with coding who just need essential functionality should use the lightweight version of this simulator on spoonoil's website \url{https://b2.lol}. Newbies unfamiliar with coding who nonetheless want to operate the back-end code should follow the steps below to get the code up and running:
-\begin{enumerate}
-	\item Download the latest Anaconda distribution to your computer \href{https://www.anaconda.com/download/}{\textcolor{blue}{here}}. The Anaconda distribution is sufficient to run Python code on your computer
-	\item Access the repository \href{https://github.com/redlaserbmBTD/BTDB2_SIMULATOR}{\textcolor{blue}{here}}. Use GitHub Desktop to clone the repository to your desktop. 
-	\item One of the programs bundled with the Anaconda distribution is jupyter notebook. Launch jupyter notebook, navigate to where you cloned the repository, and open \texttt{examples.ipynb}
-	\item You are now ready to operate the code!
-\end{enumerate} 
-
-\subsection{Operation}
-
-In general, the procedure for simulating a game looks like this:
-
-\begin{enumerate}
-    \item Set the round lengths by creating an instance of \texttt{Rounds(stall\_factor)}. \texttt{stall\_factor} is a float from 0 to 1 indicating the level of stall in the game (higher value means more stall).
-    \item Define the buy queue and eco queue for your game state. These queues are lists containing the eco flowchart and flowchart of purchases you intend to follow as you progress through the game.
-    \item Declare the initial state of the game. How much cash do you have? Eco? Current round? etc.
-    \item Create an instance \texttt{game\_state} of \texttt{GameState} using the info defined above, and then use \texttt{game\_state.fastForward(target\_round = X)} to simulate what would happen if the game were to progress to round X according to your strategy.
-\end{enumerate}
-
-\subsection{Features}
-
-\begin{enumerate}
-	\item \textbf{Simultaneous simulation of eco, farms, and alt-eco}: When given an eco send to use and some arrangement of farms and alt-eco, the simulator accurately tracks the progression of the player's cash and eco over time. The results of the simulator are nearly true to the game.
-	\item \textbf{Easy operation}: Simply input your initial cash and eco, the round to start on, and the purchases you intend to make and the eco flowchart you intend to follow over the course of the match. The code runs in one click and delivers results in seconds.
-	\item \textbf{Complete Farm support}: The simulator supports IMF Loans and Monkeyopolis. Also, the simulator supports compound purchases, such as selling into Monkey Wall Street.
-	\item \textbf{Strategy Comparison}: You can compare multiple different strategies, see how cash and eco progresses over time for each one, and decide what strategy you like better with the \texttt{compareStrategies()} function.
-	\item \textbf{Advanced Optimization Potential}: The code's fast run time means that it operates well when used in black-box optimization problems.
-\end{enumerate}
-
-\section{Advancing the Game State}
+\section{Advancing the Game State}\label{advancing the game state}
 
 To simulate a game state along the time interval $(t_0,t]$, where $t_0$ is the initialized time of the game state, 
 
@@ -222,9 +190,59 @@ The accurate awarding of payments is no longer straightforward if the player has
 
 \subsection{The Buy Queue}
 
-\textcolor{red}{(I will expand on this subsection more later.)} The buy queue \texttt{self.buy\_queue} in the \texttt{GameState} class is a list whose entries describe purchases the player wishes to make over the course of the simulation. To account for the possibility of compound purchases, such as selling into Monkey Wall Street, each element in the buy queue is itself a list in fact. After all purchases in a given time are made, the code checks whether the first item in the buy queue can be performed. If it can be done, it will be done, and \texttt{advanceGameState()} will terminate early in this case.
+The \textit{buy queue} represents the list of purchases the player intends to make over the course of the simulation. Generally, this represents the farming flowchart the player will adopt, but it also can encompass buying/selling defense and alt-eco. The buy queue is stored in the \texttt{GameState} class as \texttt{self.buy\_queue}, which is structured as follows:
+\begin{align*}
+\texttt{self.buy\_queue: List: List: } & \texttt{dict: \{ }\\
+& \texttt{'Type': str, } \\
+& \texttt{ \ldots } \\
+& \texttt{\}}
+\end{align*}
 
-In general, in the presence of IMF Loans, the order in which transactions are performed *does* matter.
+That is, each element in the buy queue is a list of lists, containing \texttt{dict} objects that carry instructions on what transactions to perform and in what order to perform them. The complete list of entries in the \texttt{dict} object may vary, but all contain a key called \texttt{'Type'} which gives instructions for the code on how to read the queue. End users need not be concerned with the structure of the \texttt{dict} object but rather the functions they can use which create these dict objects. For a complete list of such functions, go to the section "Functions For Simulation" in \texttt{main.ipynb}. 
+
+\subsubsection{Compound Transactions in the Buy Queue}
+
+In most cases, the elements of the buy queue will just be lists of length one, so only one action is performed, but being able to specify multiple actions at once is useful because sometimes players may want to sell into more powerful upgrades and wait until they have the money to do so. An example of this is as follows: Suppose the player has $2 \times 320 + 1 \times 203 + 1 \times 204$ farms and wants to sell into a $205$ farm. This transaction would consist of 4 actions:
+\begin{enumerate}
+	\item Sell a $320$ farm
+	\item Sell the other $320$ farm
+	\item Sell the $203$ farm
+	\item Upgrade the only remaining farm to $205$
+\end{enumerate}
+If listed separately, the simulator would perform each of the first three actions as soon as they become listed first into the buy queue. However, this is clearly not desirable, as the player would want to hold on the farms as long as possible to get their payments first \textit{before} selling into the Monkey Wall Street. 
+
+It's worth remarking here that the order that actions are listed within elements of the buy queue matters! If for example, in the above scenario, we tried to buy the Monkey Wall Street first and then sell the other farms, the code as expected prevents a proper sell-in into the MWS, selling the other farms only after MWS is finally afforded.
+
+From here on out, we'll refer to items in the buy queue as \textbf{transactions}. If a transaction has multiple actions listed, we'll refer to it as a \textbf{compound transaction}.
+
+\subsubsection{Multiple Transactions in the Buy Queue}
+
+If the player receives a large lump sum payment, perhaps from a Monkey Wall Street or a bank withdrawal, it is possible that the player could perform multiple transactions within the buy queue. Our solution to this is the following pseudo-code:
+
+\begin{algorithm}
+\caption{Process transactions in the buy queue as soon as the player can afford them}
+\begin{algorithmic}
+\State\texttt{flag = False}
+\While{\texttt{len(self.buy\_queue)} $>$ \texttt{0}}
+	\State\texttt{flag = True}
+    \State \texttt{h\_cash, h\_loan = hypothetical cash and loan amounts after transaction 1}
+    \If{\texttt{h\_cash} $\geq$ \texttt{self.buffer}}:
+    	\State\texttt{self.cash = h\_cash}
+    	\State\texttt{self.loan = h\_loan}
+    	\State\texttt{Update game parameters}
+    	\State \texttt{self.buy\_queue.pop(0)}
+   	\Else
+   		\State{\texttt{BREAK WHILE LOOP}}
+   	\EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+The \texttt{flag} is used to signal to the code whether a transaction took place. If it did, then after breaking the while loop we terminate \texttt{advanceGameState} early in line with the discussion of section \ref{advancing the game state}.
+
+\subsection{The Eco Queue}
+
+The eco queue represents the strategy of eco sends the player intends to use over the course of the simulation. The eco queue functions similarly to the buy queue, except that unlike in the buy queue, whether or not a player can switch eco sends is dictated not by money, but by time.
 
 \subsection{Simulation in Practice}
 
@@ -233,35 +251,5 @@ The early termination feature of \texttt{advanceGameState} is necessary for accu
 Something we must be careful about when repeatedly running \texttt{advanceGameState} is the possibility of wasted computation time. For example, if we simulate a game state from the start of Round 12 to the end of Round 14 and purchase occurs say a few seconds into Round 12, then \textit{all} of the computation time spent on payments occurring after that purchase will be wasted. To prevent a substantial amount of computations from being discarded, we run the code in small intervals. Note that as a consequence that we must take care to ensure that \texttt{advanceGameState} does not perform redundant computations, or else running the method many times like this repeatedly will slow down runtime --- see Section \ref{computation of farm payouts} for an example of such care being taken.
 
 An added bonus of running the code repeatedly is that, since cash and eco are logged every time the simulation terminates, the resulting log of the player's cash and eco over time will be more detailed than just one pass of the method.
-
-\section{Feature Requests / Features to add}
-
-\subsection{Alt Ecos}
-
-Still need to add support for druid and heli alt-ecos. (Expected date of implementation: May 10th).
-
-\subsection{Simplifying Code Structure}
-
-Currently, the entirety of the code is contained in \texttt{main.ipynb}. It'd be nice if the examples section of this notebook was moved to a different file.
-
-\subsection{Optimizing the buy queue}
-
-Currently, the code, when checking whether a purchase in the buy queue can be made, re-computes the cost of this operation from scratch each time it checks. However, if the impact of the purchase to the player's cash and loans does not vary over time, we can save computation time by computing the cost once, storing it, and then reaccessing it on subsequent checks.
-
-An exhaustive list of time-dependent payouts include the following:
-\begin{enumerate}
-    \item Sell operations when the player has debt: The amount of cash the player will actually get from the payment depends on his loan value as evidenced by equation \ref{loan payment formula}. Whenever the player receives a direct payment, we must recompute the impact the sell operation would have on his cash \& eco because of the possibility of switching from one case to the other in the computation of resulting cash.
-    \item Bank withdrawals: As time passes the bank will accumulate more and more money
-\end{enumerate}
-
-\subsection{Robust Logging}
-
-The \texttt{GameState} class is equipped with a robust logging feature which, after the player runs a simulation, allows the player to see what payments were given and from what sources.
-
-However, we also need a nice logging feature that works for when comparing *multiple* strategies against each other.
-
-\subsection{More Detailed Stats}
-
-When comparing strategies, it'd be nice if users could see more than just cash and eco over time.
 
 \end{document}
