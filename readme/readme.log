@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 00:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 01:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1079,37 +1079,32 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 82
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (2.6733pt too wide) in paragraph at lines 98--99
+[1
+
+{C:/Users/bmost/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (2.6733pt too wide) in paragraph at lines 110--111
 []\OT1/cmr/m/n/12 Set the round lengths by cre-at-ing an in-stance of \OT1/cmtt
 /m/n/12 Rounds(stall[]factor)\OT1/cmr/m/n/12 . \OT1/cmtt/m/n/12 stall[]factor
  []
 
-[1
-
-{C:/Users/bmost/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+[2]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 121.
+put line 143.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 [] \OT1/cmtt/m/n/12 j = Smallest j such that the farm's jth payment will appear
  during the
  []
 
-[2] [3] [4] [5] [6] [7] (readme.aux)
-
-Package rerunfilecheck Warning: File `readme.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `readme.out':
-(rerunfilecheck)             Before: E231285AC3C5944CF95F8D1EBB23C2E8;2691
-(rerunfilecheck)             After:  8790E2E6EA8A7AFEC58F6741628AFB86;2675.
+[3] [4] [5] [6] [7] (readme.aux)
+Package rerunfilecheck Info: File `readme.out' has not changed.
+(rerunfilecheck)             Checksum: D44EAC20F73FD06529F7B3ADFC303542;2994.
  ) 
 Here is how much of TeX's memory you used:
- 36085 strings out of 475389
- 843517 string characters out of 2777000
- 1269569 words of memory out of 3000000
- 56849 multiletter control sequences out of 15000+600000
+ 36100 strings out of 475389
+ 843670 string characters out of 2777000
+ 1269571 words of memory out of 3000000
+ 56852 multiletter control sequences out of 15000+600000
  479841 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,103p,1537b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1125,9 +1120,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
 bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><
 C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 t12.pfb>
-Output written on readme.pdf (7 pages, 152790 bytes).
+Output written on readme.pdf (7 pages, 157346 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

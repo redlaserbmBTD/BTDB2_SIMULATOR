@@ -92,13 +92,35 @@ Hi there! Welcome to the Bloons TD Battles 2 Eco Simulator! I'm redlaserbm, the 
 
 \section{Operating the Code}
 
-Users unfamiliar with coding should use the lightweight version of this simulator on  You can find a version of this simulator on spoonoil's website \url{https://b2.lol}. That version does not have all features implemented yet but should cover use cases for most users. Advanced users wishing to perform more complex simulations should view the "Simulation Examples" section in \texttt{main.ipynb} to get started. In general, the procedure for simulating a game looks like this:
+\subsection{Installation}
+
+Users unfamiliar with coding who just need essential functionality should use the lightweight version of this simulator on spoonoil's website \url{https://b2.lol}. Newbies unfamiliar with coding who nonetheless want to operate the back-end code should follow the steps below to get the code up and running:
+\begin{enumerate}
+	\item Download the latest Anaconda distribution to your computer \href{https://www.anaconda.com/download/}{\textcolor{blue}{here}}. The Anaconda distribution is sufficient to run Python code on your computer
+	\item Access the repository \href{https://github.com/redlaserbmBTD/BTDB2_SIMULATOR}{\textcolor{blue}{here}}. Use GitHub Desktop to clone the repository to your desktop. 
+	\item One of the programs bundled with the Anaconda distribution is jupyter notebook. Launch jupyter notebook, navigate to where you cloned the repository, and open \texttt{examples.ipynb}
+	\item You are now ready to operate the code!
+\end{enumerate} 
+
+\subsection{Operation}
+
+In general, the procedure for simulating a game looks like this:
 
 \begin{enumerate}
     \item Set the round lengths by creating an instance of \texttt{Rounds(stall\_factor)}. \texttt{stall\_factor} is a float from 0 to 1 indicating the level of stall in the game (higher value means more stall).
     \item Define the buy queue and eco queue for your game state. These queues are lists containing the eco flowchart and flowchart of purchases you intend to follow as you progress through the game.
     \item Declare the initial state of the game. How much cash do you have? Eco? Current round? etc.
     \item Create an instance \texttt{game\_state} of \texttt{GameState} using the info defined above, and then use \texttt{game\_state.fastForward(target\_round = X)} to simulate what would happen if the game were to progress to round X according to your strategy.
+\end{enumerate}
+
+\subsection{Features}
+
+\begin{enumerate}
+	\item \textbf{Simultaneous simulation of eco, farms, and alt-eco}: When given an eco send to use and some arrangement of farms and alt-eco, the simulator accurately tracks the progression of the player's cash and eco over time. The results of the simulator are nearly true to the game.
+	\item \textbf{Easy operation}: Simply input your initial cash and eco, the round to start on, and the purchases you intend to make and the eco flowchart you intend to follow over the course of the match. The code runs in one click and delivers results in seconds.
+	\item \textbf{Complete Farm support}: The simulator supports IMF Loans and Monkeyopolis. Also, the simulator supports compound purchases, such as selling into Monkey Wall Street.
+	\item \textbf{Strategy Comparison}: You can compare multiple different strategies, see how cash and eco progresses over time for each one, and decide what strategy you like better with the \texttt{compareStrategies()} function.
+	\item \textbf{Advanced Optimization Potential}: The code's fast run time means that it operates well when used in black-box optimization problems.
 \end{enumerate}
 
 \section{Advancing the Game State}
