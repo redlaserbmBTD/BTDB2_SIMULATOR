@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 01:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 01:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1096,13 +1096,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
  during the
  []
 
-[3] [4] [5] [6] [7] (readme.aux)
-Package rerunfilecheck Info: File `readme.out' has not changed.
-(rerunfilecheck)             Checksum: D44EAC20F73FD06529F7B3ADFC303542;2994.
+[3] [4] [5] [6] [7] [8] (readme.aux)
+
+Package rerunfilecheck Warning: File `readme.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `readme.out':
+(rerunfilecheck)             Before: D44EAC20F73FD06529F7B3ADFC303542;2994
+(rerunfilecheck)             After:  57FD5A72C1961CC59B3EAB788319947B;3095.
  ) 
 Here is how much of TeX's memory you used:
- 36100 strings out of 475389
- 843670 string characters out of 2777000
+ 36102 strings out of 475389
+ 843690 string characters out of 2777000
  1269571 words of memory out of 3000000
  56852 multiletter control sequences out of 15000+600000
  479841 words of font info for 71 fonts, out of 8000000 for 9000
@@ -1120,9 +1126,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
 bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><
 C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 t12.pfb>
-Output written on readme.pdf (7 pages, 157346 bytes).
+Output written on readme.pdf (8 pages, 158705 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
