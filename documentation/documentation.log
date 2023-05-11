@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  9 MAY 2023 13:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.15)  11 MAY 2023 01:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -191,8 +191,9 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+(C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
 keys.sty
@@ -376,13 +377,13 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitdp@description=\count293
 )
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
 
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 \caption@tempdima=\dimen170
 \captionmargin=\dimen171
 \caption@leftmargin=\dimen172
@@ -397,9 +398,7 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count295
 Package caption Info: hyperref package is loaded.
 )
-Package caption Info: New subtype `subfigure' on input line 239.
 \c@subfigure=\count296
-Package caption Info: New subtype `subtable' on input line 239.
 \c@subtable=\count297
 ) (C:\Users\bmost\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -1092,74 +1091,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
 [2] [3] [4]
 LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-199.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 199.
+205.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 205.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 199.
+(Font)              for symbol `textbraceleft' on input line 205.
 
-[5] [6] [7] (documentation.aux)
+[5] [6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8] [9] [10] (documentation.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `documentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `documentation.out':
-(rerunfilecheck)             Before: D6671A8C7AC8313B9496908FE752DAB7;3311
-(rerunfilecheck)             After:  6A08A59492FC83579A2999C63F8BB3B7;2310.
+Package rerunfilecheck Info: File `documentation.out' has not changed.
+(rerunfilecheck)             Checksum: 545CFA484BDBD01E1BBB5D597ECAB648;3192.
  ) 
 Here is how much of TeX's memory you used:
- 36110 strings out of 475389
- 844072 string characters out of 2777000
- 1268579 words of memory out of 3000000
- 56868 multiletter control sequences out of 15000+600000
+ 36092 strings out of 475389
+ 843777 string characters out of 2777000
+ 1267171 words of memory out of 3000000
+ 56840 multiletter control sequences out of 15000+600000
  480177 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,103p,1544b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{subsection.3.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-<C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmex10.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bmost/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bmost/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bmost/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bm
-ost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
-/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt1
-2.pfb>
-Output written on documentation.pdf (7 pages, 154605 bytes).
+<C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/bmost/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bmost/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bmost/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bmost/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bmost/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><
+C:/Users/bmost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
+t12.pfb>
+Output written on documentation.pdf (10 pages, 168663 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

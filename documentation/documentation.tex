@@ -154,6 +154,10 @@ A substantial simplification relative to the algorithm for farms can be made for
 \end{algorithmic}
 \end{algorithm}
 
+\subsection{Computation of Supply Drop Payments}
+
+For simplicity sake, we assume that   supply drop/elite sniper actives are \textit{always} used as soon as they possibly can. This is optimal except when the player does not yet have an elite sniper. (A solution to this shortcoming 
+
 \subsection{Awarding Payments}\label{awarding payments}
 
 Once the list \texttt{payout\_times} with a sorted list of payments, the code runs a for loop through the payments, awarding them one-by-one until they all have been granted. This is \textit{generally} how the code operates, except that the code cannot accurately finish simulation if the player makes \textit{any} transactions that impact their income. Suppose for instance that in a simulation from the start of Round 12 to the end of Round 14, the player upgrades their $200$ Monkey Farm to a $300$ farm. Then, in order for the code to accurately simulate the game from the time of this upgrade purchase to the end of Round 14, we must go back and recompute the payouts that this farm will give. Our solution to this problem is to simply terminate \texttt{advanceGameState} upon the time of purchase and re-run it again. To implement this solution, we check after every payment in \texttt{payout\_times} whether the player has enough money to make a purchase --- if multiple payments occur at exactly the same time, we process all payments first before runnning this check. If they do, we make the purchase and terminate \texttt{advanceGameState} early. We also must account for times when the player wishes to change eco sends. To resolve this issue, we check prior to simulation whether an change in eco sends is to occur before the target time. If yes, then we choose to terminate \texttt{advanceGameState} at the time of the eco change and update the eco send the player uses at the end.
@@ -174,7 +178,7 @@ Eco payments are one of the few sources of income whose payout amount cannot be 
     E_2 &= E_1 + \min\Big(\frac{C}{S_{cost}}, \frac{t_2-t_1}{6}\Big)S_{eco}
 \end{align}
 
-\subsubsection{Loan Payments}
+\subsubsection{Loan Payments}\label{loan payments}
 
 The accurate awarding of payments is no longer straightforward if the player has outstanding loans as a consequence of activating IMF Loan. Assume that the player has $C_1$ cash and $L_1$ dollars of outstanding debt from IMF Loans and is about to receive a payment of $P$ dollars. Then, the updated cash and loan amounts $C_2$ and $L_2$ the player will have after this payment is received is given by
 \begin{align}\label{loan payment formula}
@@ -187,6 +191,8 @@ The accurate awarding of payments is no longer straightforward if the player has
     0 & \text{if } P/2 > L_1
     \end{cases}
 \end{align}
+
+The global function \texttt{impact(cash, loan, payment)} is used to compute the resulting cash and loan amounts had from receiving a payment possibly in the presence of outstanding debt.
 
 \subsection{The Buy Queue}
 
@@ -251,5 +257,66 @@ The early termination feature of \texttt{advanceGameState} is necessary for accu
 Something we must be careful about when repeatedly running \texttt{advanceGameState} is the possibility of wasted computation time. For example, if we simulate a game state from the start of Round 12 to the end of Round 14 and purchase occurs say a few seconds into Round 12, then \textit{all} of the computation time spent on payments occurring after that purchase will be wasted. To prevent a substantial amount of computations from being discarded, we run the code in small intervals. Note that as a consequence that we must take care to ensure that \texttt{advanceGameState} does not perform redundant computations, or else running the method many times like this repeatedly will slow down runtime --- see Section \ref{computation of farm payouts} for an example of such care being taken.
 
 An added bonus of running the code repeatedly is that, since cash and eco are logged every time the simulation terminates, the resulting log of the player's cash and eco over time will be more detailed than just one pass of the method.
+
+\section{Farms}
+
+Farms are stored in the \texttt{GameState} class as \texttt{self.farms}, which takes the following data structure
+\begin{align*}
+\texttt{self.farms:} & \texttt{ dict: \{ } \\
+& \texttt{0: MonkeyFarm object, } \\
+& \texttt{ \ldots } \\
+& \texttt{n-1: MonkeyFarm object, } \\
+& \texttt{\}}
+\end{align*}
+Notice here that the keys are nonnegative integers, which suggests at first that \texttt{self.farms} ought to just be a list of MonkeyFarm objects, seeing that the dict structure used doesn't appear to provide any advantages over a list. In practice, the dictionary structure functions a \textit{lot} smoother than a list structure. To see why, consider an example game scenario where we have the arrangement of farms given by table \ref{farm layout pre-MWS buy}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c}
+        Index & Type \\ \hline
+        $0$ & $(3,2,0)$ \\
+        $1$ & $(3,2,0)$ \\
+        $2$ & $(2,0,3)$ \\
+        $3$ & $(2,0,4)$
+    \end{tabular}
+    \caption{Caption}
+    \label{farm layout pre-MWS buy}
+\end{table}
+Naturally, to sell into Monkey Wall Street, we would want to sell farms $0,1,2$, and then upgrade farm $3$ to a $(2,0,5)$ farm. However, as soon as one farm is deleted, the indices of other farms may be shifted as well. Under a list structure, this would \textit{actually} look like selling the farm at index $0$ three times and then finally upgrading the farm at index $0$ to $(2,0,5)$. Although counter-intuitive, this alone doesn't necessarily disqualify the list approach from consideration. However, we also need to check ahead of time that we can actually sell into MWS. For this example, under the list structure, this involves checking the sell values of farms $0,1,2$ and the upgrade cost of farm $3$. Assuming well-written code to accommodate the list structure, in order for an end user to operate the code correctly in this case, they would have to determine ahead of time that the farm indices to check sell values on is $0,1,2$ and the index to check upgrade cost on $3$ (easy enough) \textit{and} know that every action has to actually occur on index $0$ all the way through (far from easy).
+
+On the other hand, this issue does not occur with the dictionary structure, as the deletion of elements does not cause indices to shift. Thus, the indices we check sell values on correspond to the indices used for sell operations and the index we check upgrade cost on corresponds to the index used for the buy operation.
+
+\subsection{Labeling Farms (and other Alt-Eco's!)}
+
+The trade-off of using a dictionary with integer keys is that we must determine the key each farm in the simulation is associated with. The code is written so that:
+\begin{enumerate}
+\item The code uses \texttt{self.key} to assign keys to farms. This is initialized as the maximum key value among all initialized farms (or $0$ if there are none).
+\item Whenever a farm is purchased, it is assigned the key \texttt{self.key}, then \texttt{self.key} is incremented by $1$.
+\end{enumerate}
+When a best-practice of initializing $n$ with the keys $0,1,\ldots, n-1$ is adopted, this means that index $i$ represents the $i+1$th farm to be purchased in the game.
+
+\textbf{This same labelling structure is also used for alt-ecos}. Again, the idea is that we want to avoid problems associated with the index shifting that occurs when deleting items from a list.
+
+\subsection{Banks}
+
+In most cases, farms simply function by paying out some fixed amount of money some fixed amount of times per round. Banks function similarly, except:
+\begin{enumerate}
+	\item Payments go into the bank's account rather than the player's hands
+	\item At the start of each round, each bank deposits $400$ dollars and awards $20\%$ interest right before awarding its regularly scheduled first payment of the round. 
+\end{enumerate}
+To resolve the matter, we introduce the \texttt{MonkeyFarm} class variables \texttt{self.account\_value} and \texttt{self.max\_account\_value} and the buy queue action \texttt{withdrawBank(ind)}. To accurately simulate the above two bank-exclusive behaviors, we do the following:
+\begin{enumerate}
+	\item In \texttt{GameState.advanceGameState()}, whenever we detect that the farm is a bank, we add the farm's payments to its bank account rather than \texttt{GameState.cash}. The player can take out this money by placing \texttt{withdrawBank(ind)} in the buy queue.
+	\item In \texttt{GameState.advanceGameState()}, upon the start of a new round, the code appends a payout entry of type \texttt{"Bank Interest"}. This payout is written in the code so that, before (and after) sorting, it occurs before the bank's first regular payment of the round. 
+\end{enumerate}
+
+\subsection{IMF Loans}
+The $x4x$ bank is just like $x3x$ except that it comes with a feature to take out a loan. To track when the loan can be used we introduce the class variable \texttt{self.min\_use\_time}. Generally, a farm will be initialized with this set to \texttt{None}, but if upgraded to $x4x$, then we set it equal to \texttt{purchase\_time + 20}. To use the loan we introduce the buy queue action \texttt{activateIMF(ind)}. Because of how loans work, instead of trying to track the amount of money owed to each bank, we can just act like for simplicity that all loans come from the same bank and use the variable \texttt{GameState.loan} to track the player's outstanding debt. We refer the reader back to section \ref{loan payments} for an explanation on how the code handles payments when the player has debt.
+
+\subsection{Monkeyopolis}
+
+When the player upgrades an IMF loan to a Monkeyopolis it is now optimal to use the ability as soon as it becomes available, and we assume in the code that the player does just that. In $x4x$ farms, \texttt{self.min\_use\_time} is used to check whether the player can IMF Loan when that action arises in the buy queue. However, in an $x5x$ farm, this is repurposed to compute recurring payouts from said farm during the payout computation and awarding process of \texttt{GameState.advanceGameState()}.
+
+A key takeaway here is that so-called \textit{optional payouts}, like the IMF Loan, are handled in the buy queue, while \textit{automatic payouts}, like the Monkeyopolis payouts, are handled in the payout computation and awarding process.
 
 \end{document}
