@@ -1,12 +1,16 @@
-# %% [markdown]
+#!/usr/bin/env python
+# coding: utf-8
+
 # # Preliminaries
 
-# %%
+# In[7]:
+
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# %% [markdown]
+
 # ## TODO:
 # 
 # Features to add in the future, (listed in no particular order):
@@ -21,13 +25,13 @@ import matplotlib.pyplot as plt
 # 2. Bar graph showing how much money each farm has made
 # 3. Selling power over time
 
-# %% [markdown]
 # ## Round Length Info
 
-# %% [markdown]
 # We get for each round the time it takes for naturals to send and also the maximum amount of time each round can be stalled beyond the last natural bloon appearing on screen. The minimum stall time for each round is 4 seconds.
 
-# %%
+# In[8]:
+
+
 filepath = r"nat_send_lengths.csv"
 file = pd.read_csv(filepath)
 nat_send_lens = list(file['Nat Send Len'])
@@ -40,10 +44,12 @@ max_stall_times = []
 for i in range(len(round_starts_stall)-1):
     max_stall_times.append((round_starts_stall[i+1] - round_starts_stall[i]) - nat_send_lens[i])
 
-# %% [markdown]
+
 # ## Eco Send Info
 
-# %%
+# In[9]:
+
+
 #The formatting of the tuples is (eco_cost, eco_gain)
 eco_send_info = {
     'Zero': (0,0),
@@ -100,7 +106,7 @@ eco_send_availability = {
     
 }
 
-# %% [markdown]
+
 # ## Monkey Farm Info
 # 
 # To build the MonkeyFarm class, we need the following global info for farms:
@@ -110,7 +116,9 @@ eco_send_availability = {
 # 
 # Unforunately, the recording of data necessary for farms is quite involved!
 
-# %%
+# In[10]:
+
+
 farm_upgrades_costs = [[600,550,2700,16000,68000],[200,700,5500,7500,50000],[250,200,3000,13000,43500]]
 
 farm_bank_capacity = [0,0,0,14000,20000,30000]
@@ -369,25 +377,28 @@ farm_payout_values = {
     
 }
 
-# %% [markdown]
+
 # # Boat Farm Info
 # 
 # Thankfully this information is not *as* intensive to collect!
 
-# %%
+# In[11]:
+
+
 boat_upgrades_costs = [5400, 19000]
 boat_payout_values = [300, 1000, 3000]
 boat_sell_values = [1960, 6560, 21760]
 
-# %% [markdown]
+
 # # Rounds Class
 
-# %% [markdown]
 # The rounds class is designed to handle the conversion of round info to times and vice versa. That is, the class is capable of answering the following two questions:
 # 1. Given some time, what round of the game are we on, and how much of the round has elapsed?
 # 2. Given some round, how much time has elapsed in the game so far?
 
-# %%
+# In[12]:
+
+
 class Rounds():
     def __init__(self, stall_factor):
         #Compute the round times given the stall factor
@@ -439,13 +450,14 @@ class Rounds():
     
     
 
-# %% [markdown]
+
 # # Game State Class
 
-# %% [markdown]
 # The game state class is an instance of battles 2 in action! 
 
-# %%
+# In[13]:
+
+
 def impact(cash, loan, amount):
     #If the amount is positive (like a payment), half of the payment should be directed to the outstanding loan
     #If the amount is negative (like a purhcase), then we can treat it "normally"
@@ -466,13 +478,16 @@ def writeLog(lines, filename = 'log', path = './logs/'):
             f.write(line)
             f.write('\n')
 
-# %%
+
+# In[39]:
+
+
 class GameState():
     def __init__(self, initial_state):
         
-        ############################
-        #INITIALIZING THE GAME STATE
-        ############################
+        ###########################
+        #PART 1: INITIAL PARAMETERS
+        ###########################
         
         #To ensure the code runs properly, we'll create a log file to track cash and eco as they evolve over time
         self.logs = []
@@ -486,14 +501,8 @@ class GameState():
         self.send_name = initial_state.get('Eco Send')
         if self.send_name is None:
             self.send_name = 'Zero'
-        
-        try:
-            self.eco_cost = eco_send_info[self.send_name][0]
-            self.eco_gain = eco_send_info[self.send_name][1]
-        except:
-            self.send_name = 'Zero'
-            self.eco_cost = 0
-            self.eco_gain = 0
+        self.eco_cost = eco_send_info[self.send_name][0]
+        self.eco_gain = eco_send_info[self.send_name][1]
         
         #~~~~~~~~~~~~~~~~~
         #ROUND LENGTH INFO
@@ -524,7 +533,7 @@ class GameState():
         #FARMS & ALT-ECO
         #~~~~~~~~~~~~~~~
         
-        #Process the initial info given about farms/alt-eco:
+        #Now that round length info is initialized, let's process the initial info given about farms/alt-eco:
         
         #Info for whether T5 Farms are up or not
         self.T5_exists = [False, False, False]
@@ -548,6 +557,13 @@ class GameState():
                         self.T5_exists[i] = True
                     elif self.farms[key].upgrades[i] == 5 and self.T5_exists[i] == True:
                         self.farms[key].upgrades[i] = 4
+        
+        #Next, supply drops!
+        self.supply_drops = initial_state.get('Supply Drops')
+        if self.supply_drops is not None:
+            self.elite_sniper = self.supply_drops['Elite Sniper Index']
+            self.sniper_key = len(self.supply_drops) - 2
+            #self.supply_drops.pop('Elite Sniper Index')
 
         #Next, boat farms!
         self.boat_farms = initial_state.get('Boat Farms')
@@ -566,28 +582,7 @@ class GameState():
                 elif boat_farm['Upgrade'] == 5 and self.Tempire_exists[i] == True:
                     boat_farm['Upgrade'] = 4
 
-        #Next, druid farms!
-        self.druid_farms = initial_state.get('Druid Farms')
-        if self.druid_farms is not None:
-            self.sotf = self.druid_farms['Spirit of the Forest Index']
-            self.druid_key = len(self.druid_farms) - 2
-        else:
-            self.sotf = None
-            self.druid_key = 0
-        
-        if self.sotf is not None:
-            self.sotf_min_use_time = self.druid_farms[self.sotf] + 20
-        else:
-            self.sotf_min_use_time = None
-
-        #Next, supply drops!
-        self.supply_drops = initial_state.get('Supply Drops')
-        if self.supply_drops is not None:
-            self.elite_sniper = self.supply_drops['Elite Sniper Index']
-            self.sniper_key = len(self.supply_drops) - 2
-        else:
-            self.elite_sniper = None
-            self.sniper_key = 0
+                
         
         #~~~~~~~~~~~~~~~~
         #THE QUEUE SYSTEM
@@ -605,10 +600,6 @@ class GameState():
         #For repeated supply drop buys
         self.supply_drop_max_buy_time = -1
         self.supply_drop_buffer = 0
-
-        #For repeated druid farm buys
-        self.druid_farm_max_buy_time = -1
-        self.druid_farm_buffer = 0
 
         #~~~~~~~~~~
         #FAIL-SAFES
@@ -787,36 +778,6 @@ class GameState():
             }
             payout_times.append(payout_entry)
             eco_time += 6
-
-        #Next, let's do druid farms!
-        if self.druid_farms is not None:
-            for key in self.druid_farms.keys():
-                druid_farm = self.druid_farms[key]
-                if key != self.sotf:
-                    #Determine the earliest druid farm activation that could occur within the interval of interest (self.current_time,target_time]
-                    use_index = max(1,np.floor(1 + (self.current_time - druid_farm - 20)/40)+1)
-                    druid_farm_time = druid_farm + 20 + 40*(use_index-1)
-                    while druid_farm_time <= target_time:
-                        payout_entry = {
-                            'Time': druid_farm_time,
-                            'Payout Type': 'Direct',
-                            'Payout': 1000
-                        }
-                        payout_times.append(payout_entry)
-                        druid_farm_time += 40
-                elif key == self.sotf:
-                    #Spirit of the Forest has a start of round payment of 3000 dollars and an "optional" active that is used 
-                    #At the start of each round, append a payout entry with the SOTF payout
-                    self.inc = 1
-                    while self.rounds.getTimeFromRound(self.current_round + self.inc) <= target_time:
-                        payout_entry = {
-                            'Time': self.rounds.getTimeFromRound(self.current_round + self.inc),
-                            'Payout Type': 'Direct',
-                            'Payout': 3000
-                        }
-                        payout_times.append(payout_entry)
-                        self.inc += 1
-
 
         #Next, let's do supply drops
         if self.supply_drops is not None:
@@ -1048,6 +1009,16 @@ class GameState():
             elif payout_times[i]['Time'] < payout_times[i+1]['Time']:
                 try_to_buy = True
             
+            # There is an option in the buy queue to trigger the action of repeatedly buying supply drops.
+            # This while loop processes *those* purchases independently of the buy queue
+            if payout['Time'] <= self.supply_drop_max_buy_time:
+                while self.cash >= 9850 + self.supply_drop_buffer:
+                    buy_time = payout['Time'] #Lazy code, but it works
+                    self.cash -= 9850
+                    self.supply_drops[self.sniper_key] = payout['Time']
+                    self.sniper_key += 1
+                    self.logs.append("Purchased a supply drop! (Automated purchase)")
+            
             # DEVELOPER'S NOTE: It is possible for the queue to be empty but for there to still be purchases to be performed
             while len(self.buy_queue) > 0 and try_to_buy == True:
                 
@@ -1080,19 +1051,6 @@ class GameState():
                             farm = self.farms[ind]
                             if farm.min_use_time is not None and farm.min_use_time > self.min_buy_time:
                                 self.min_buy_time = farm.min_use_time
-                            elif farm.min_use_time is None:
-                                #If the farm doesn't have a min_use_time designated, it can't be an IMF farm!
-                                self.min_buy_time = float('inf')
-                                break
-                        
-                        #If the dict_obj is a SOTF use, force self.min_buy_time to be at least be the self.sotf_min_use_time
-                        if dict_obj['Type'] == 'Use Spirit of the Forest':
-                            if self.sotf_min_use_time is not None and self.sotf_min_use_time > self.min_buy_time:
-                                self.min_buy_time = self.sotf_min_use_time
-                            elif self.sotf_min_use_time is None:
-                                #Do not attempt to use SOTF if we don't have SOTF
-                                self.min_buy_time = float('inf')
-                                break
                         
                     self.logs.append("Determined the minimum buy time of the next purchase to be %s"%(self.min_buy_time))
                             
@@ -1142,7 +1100,6 @@ class GameState():
                     elif dict_obj['Type'] == 'Activate IMF':
                         #WARNING: The farm in question must actually be an IMF Loan for us to use this ability!
                         #If it isn't, set a flag to False and break the loop.
-                        #DEVELOPER'S NOTE: A farm that has a min_use_time is not necessarily an IMF loan, it could also be an Monkeyopolis
                         if farm.upgrades[1] != 4:
                             self.logs.append("WARNING! Tried to take out a loan from a farm that is not an IMF!")
                             self.valid_action_flag = False
@@ -1173,21 +1130,6 @@ class GameState():
                         boat_farm = self.boat_farms[ind]
                         h_cash, h_loan = impact(h_cash, h_loan, boat_sell_values[boat_farm['Upgrade']-3])
 
-                    # DRUID FARM RELATED MATTERS
-                    elif dict_obj['Type'] == 'Buy Druid Farm':
-                        h_cash, h_loan = impact(h_cash, h_loan, -4775)
-                    elif dict_obj['Type'] == 'Sell Druid Farm':
-                        h_cash, h_loan = impact(h_cash, h_loan, 3342.5)
-                    elif dict_obj['Type'] == 'Buy Spirit of the Forest':
-                        #WARNING: There can only be one sotf at a time!
-                        if self.sotf is not None:
-                            self.valid_action_flag = False
-                            break
-                        h_cash, h_loan = impact(h_cash, h_loan, -35000)
-                    elif dict_obj['Type'] == 'Use Spirit of the Forest':
-                        #Whether or not SOTF is off cooldown is governed by the min_buy_time check
-                        h_cash, h_loan = impact(h_cash, h_loan, 750)
-                    
                     # SUPPLY DROP RELATED MATTERS
                     elif dict_obj['Type'] == 'Buy Supply Drop':
                         h_cash, h_loan = impact(h_cash, h_loan, -9850)
@@ -1347,33 +1289,6 @@ class GameState():
                                 self.Tempire_exists = False
                             self.boat_farms.pop(ind)
 
-                        # DRUID FARMS
-                        elif dict_obj['Type'] == 'Buy Druid Farm':
-                            self.druid_farms[self.druid_key] = payout['Time']
-                            self.druid_key += 1
-                            self.logs.append("Purchased a druid farm!")
-                        elif dict_obj['Type'] == 'Sell Druid Farm':
-                            ind = dict_obj['Index']
-                            self.logs.append("Selling the druid farm at index %s"%(ind))
-                            #If the druid we're selling is actually SOTF...
-                            if self.sotf is not None and ind == self.sotf:
-                                self.logs.append("The druid farm being sold is a Spirit of the Forest!")
-                                self.sotf = None
-                                self.sotf_min_use_time = None
-                        elif dict_obj['Type'] == 'Buy Spirit of the Forest':
-                            ind = dict_obj['Index']
-                            self.sotf = ind
-                            self.logs.append("Upgrading the druid farm at index %s into a Spirit of the Forest!"%(ind))
-                            #Determine the minimum time that the SOTF active could be used
-                            i = np.floor((20 + payout['Time'] - self.druid_farms[ind])/40) + 1
-                            self.sotf_min_use_time = payout['Time'] + 20 + 40*(i-1)
-                        elif dict_obj['Type'] == 'Use Spirit of the Forest':
-                            self.logs.append("Using the Spirit of the Forest active (index %s)"%(self.sotf))
-                            self.sotf_min_use_time = payout['Time'] + 40
-                        elif dict_obj['Type'] == 'Repeatedly Buy Druid Farms':
-                            self.druid_farm_max_buy_time = dict_obj['Maximum Buy Time']
-                            self.druid_farm_buffer = dict_obj['Buffer']
-                            self.logs.append("Triggered automated druid farm purchases until time %s"%(self.supply_drop_max_buy_time))
 
                         # SUPPLY DROP RELATED MATTERS
                         elif dict_obj['Type'] == 'Buy Supply Drop':
@@ -1411,29 +1326,6 @@ class GameState():
                     #self.logs.append("We can't afford the buy! Terminating the buy queue while loop")
                     break
             
-            #~~~~~~~~~~~~~~~~~~~~
-            # Automated Purchases
-            #~~~~~~~~~~~~~~~~~~~~
-            # There is an option in the buy queue to trigger the action of repeatedly buying supply drops or druid farms.
-            # These while loops process *those* transactions independently of the buy queue
-            # WARNING: Unusual results will occur if you attempt to implement automated purchases of multiple alt eco's at the same time.
-            # WARNING: Because automated purchases are processed after checking the buy queue, unexpected results may occur if items in the buy queue do not have a min_buy_time designated.
-
-            if payout['Time'] <= self.supply_drop_max_buy_time and try_to_buy == True:
-                while self.cash >= 9850 + self.supply_drop_buffer:
-                    buy_time = payout['Time'] #Lazy code, but it works
-                    self.cash -= 9850
-                    self.supply_drops[self.sniper_key] = payout['Time']
-                    self.sniper_key += 1
-                    self.logs.append("Purchased a supply drop! (Automated purchase)")
-
-            if payout['Time'] <= self.druid_farm_max_buy_time and try_to_buy == True:
-                while self.cash >= 4775 + self.druid_farm_buffer:
-                    buy_time = payout['Time'] #Lazy code, but it works
-                    self.cash -= 4775
-                    self.druid_farm[self.druid_key] = payout['Time']
-                    self.druid_key += 1
-                    self.logs.append("Purchased a druid farm!")
             
             #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             #Record the cash & eco history and advance the game time
@@ -1485,16 +1377,20 @@ class GameState():
         
         
 
-# %% [markdown]
+
 # # The Monkey Farm Class
 
-# %% [markdown]
-# The payout of farms (for the most part) can be described by a payout amount and a payout frequency.
+# The payout of farms (for the most part) can be described by a payout amount and a payout frequency. There are three exceptions to this:
+# 1. Monkey Wall Street - The MWS has an additional start-of-round payment of 10000 dollars on top of its usual payment schedule. To account for this start-of-round bonus, we will do the following: Whenever a farm is upgraded to xx5, we will create an additional farm with payout frequency 1 and payout amount 10000. This "companion" farm will be marked with the self.MWS_bonus flag. If the player decides to sell their farm, we will search for this companion farm and delete it also.
+# 
+# 2. Monkey banks - Monkey banks operate on entirely different rules. For now, because they are not commonly used in meta gameplay, I will ignore them for the time being.
+# 3. Banana Central - Banana central contains a buff which causes all BRF's to be worth 20% more. In order to accurately track this buff, we must set a variable within the *Game State* class that applies this buff when BC is bought (and removes it when it's sold). 
 
-# %% [markdown]
 # Now it's time to define the MonkeyFarm class!
 
-# %%
+# In[15]:
+
+
 class MonkeyFarm():
     def __init__(self, initial_state):
         
@@ -1531,13 +1427,14 @@ class MonkeyFarm():
         if self.upgrades[1] >= 4:
             self.min_use_time = self.purchase_time + 20
 
-# %% [markdown]
+
 # # Functions For Simulation
 
-# %% [markdown]
 # To begin, we define "actions" that the player can perform in the simulation
 
-# %%
+# In[16]:
+
+
 ##############
 # MONKEY FARMS
 ##############
@@ -1630,57 +1527,6 @@ def initBoatFarm(purchase_time = None, upgrade = 3):
         'Upgrade': upgrade,
     }
 
-#############
-# DRUID FARMS
-#############
-
-def buyDruidFarm(buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Druid Farm',
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
-    }
-
-def buySOTF(index, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Spirit of the Forest',
-        'Index': index, 
-        'Buffer': buffer, 
-        'Minimum Buy Time': min_buy_time
-    }
-
-def sellDruidFarm(index, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Sell Druid Farm',
-        'Index': index,
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
-    }
-
-def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), buffer = 0):
-    return {
-        'Type': 'Repeatedly Buy Druid Farms',
-        'Minimum Buy Time': min_buy_time,
-        'Maximum Buy Time': max_buy_time,
-        'Buffer': buffer
-    }
-
-def useSOTF(min_buy_time = 0):
-    #Look, I know this is confusing, but minimum buy time really is the minimum time that we use SOTF in this case!
-    return {
-        'Type': 'Use Spirit of the Forest',
-        'Minimum Buy Time': min_buy_time
-    }
-
-# WARNING: This function is for declaring druid farms in the initial game state. 
-# Do NOT use it to add druid farms during simulation
-def initDruidFarms(purchase_times, sotf = None):
-    dictionary = {}
-    for i in range(len(purchase_times)):
-        dictionary[i] = purchase_times[i]
-    dictionary['Spirit of the Forest Index'] = sotf
-    return dictionary
-
 ##############
 # SUPPLY DROPS
 ##############
@@ -1725,10 +1571,12 @@ def initSupplyDrops(purchase_times, elite_sniper = None):
     dictionary['Elite Sniper Index'] = elite_sniper
     return dictionary
 
-# %% [markdown]
+
 # The goal of a simulator like this is to compare different strategies and see which one is better. To this end, we define a function capable of simulating multiple game states at once and comparing them.
 
-# %%
+# In[17]:
+
+
 def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None, target_round = 30, display_farms = True):
     
     # Log file in case we need to check outputs
@@ -1851,5 +1699,4 @@ def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None,
     fig.tight_layout()
     display(df)
     logs.append("Successfully generated graph! \n")
-
 
