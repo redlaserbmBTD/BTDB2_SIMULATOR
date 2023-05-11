@@ -22,9 +22,12 @@ Users unfamiliar with coding who just need essential functionality should use th
 4. **Strategy Comparison:** You can compare multiple different strategies, see how cash and eco progresses over time for each one, and decide what strategy you like better with the compareStrategies() function.
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
+# Update Log
+ - (May 11, 2023 v0.9.1) Added druid farm support. Currently untested!
+
 # Feature Requests
 
-- Druid and Heli alt-ecos
+- Heli alt-eco
 - Ability to change the stall factor mid simulation
 - Robust logging when comparing different strategies
 - Optimization of the buy queue to prevent redundant computations
