@@ -27,7 +27,12 @@ Users unfamiliar with coding who just need essential functionality should use th
 
 # Feature Requests
 
-- Heli alt-eco
+- More robust data visualization, including...
+   - When buys, upgrades, and sells happen
+   - When eco changes
+   - Better round lines display
+   - Exact data at the end of the graph (or otherwise formally outputted)
 - Ability to change the stall factor mid simulation
 - Robust logging when comparing different strategies
 - Optimization of the buy queue to prevent redundant computations
+- Heli alt-eco
