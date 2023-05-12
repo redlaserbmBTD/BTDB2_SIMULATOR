@@ -5,488 +5,1473 @@ The current game time is 466.5 seconds
 The game round start times are given by [0, 6.0, 27.0, 47.0, 68.0, 94.0, 118.0, 138.0, 158.0, 176.0, 193.0, 200.0, 211.0, 223.0, 240.0, 249.0, 261.0, 291.0, 327.0, 350.0, 383.0, 389.0, 402.0, 429.0, 438.0, 495.0, 528.0, 552.0, 573.0, 593.0, 636.0, 642.0] 
 
 MESSAGE FROM GameState.fastForward: 
-Advancing game to time 467.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 466.6
 ----------
-Advancing game to time 468.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 466.7
+----------
+Advancing game to time 466.8
+----------
+Advancing game to time 466.9
+----------
+Advancing game to time 467.0
+----------
+Advancing game to time 467.1
+----------
+Advancing game to time 467.2
+----------
+Advancing game to time 467.3
+----------
+Advancing game to time 467.4
+----------
+Advancing game to time 467.5
 Awarded direct payment 160 at time 467.44
 Recorded cash and eco values (160,2000) at time 467.44
 Awarded direct payment 160 at time 467.44
 Determined the minimum buy time of the next purchase to be 0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (320,2000) at time 467.44
+----------
+Advancing game to time 467.6
+----------
+Advancing game to time 467.7
+----------
+Advancing game to time 467.8
+----------
+Advancing game to time 467.9
+----------
+Advancing game to time 468.0
 Awarded eco payment 2000 at time 468.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2320,2000) at time 468.0
 ----------
-Advancing game to time 469.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 468.1
 ----------
-Advancing game to time 470.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 468.2
+----------
+Advancing game to time 468.3
+----------
+Advancing game to time 468.4
+----------
+Advancing game to time 468.5
+----------
+Advancing game to time 468.6
+----------
+Advancing game to time 468.7
+----------
+Advancing game to time 468.8
+----------
+Advancing game to time 468.9
+----------
+Advancing game to time 469.0
+----------
+Advancing game to time 469.1
+----------
+Advancing game to time 469.2
+----------
+Advancing game to time 469.3
+----------
+Advancing game to time 469.4
+----------
+Advancing game to time 469.5
+----------
+Advancing game to time 469.6
+----------
+Advancing game to time 469.7
+----------
+Advancing game to time 469.8
 Awarded direct payment 750 at time 469.8
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3070,2000) at time 469.8
 ----------
-Advancing game to time 471.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 469.9
+----------
+Advancing game to time 470.0
+----------
+Advancing game to time 470.1
+----------
+Advancing game to time 470.2
+----------
+Advancing game to time 470.3
+----------
+Advancing game to time 470.4
 Awarded direct payment 160 at time 470.39
 Recorded cash and eco values (3230,2000) at time 470.39
 Awarded direct payment 160 at time 470.39
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3390,2000) at time 470.39
 ----------
+Advancing game to time 470.5
+----------
+Advancing game to time 470.6
+----------
+Advancing game to time 470.7
+----------
+Advancing game to time 470.8
+----------
+Advancing game to time 470.9
+----------
+Advancing game to time 471.0
+----------
+Advancing game to time 471.1
+----------
+Advancing game to time 471.2
+----------
+Advancing game to time 471.3
+----------
+Advancing game to time 471.4
+----------
+Advancing game to time 471.5
+----------
+Advancing game to time 471.6
+----------
+Advancing game to time 471.7
+----------
+Advancing game to time 471.8
+----------
+Advancing game to time 471.9
+----------
 Advancing game to time 472.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 472.1
+----------
+Advancing game to time 472.2
+----------
+Advancing game to time 472.3
+----------
+Advancing game to time 472.4
+----------
+Advancing game to time 472.5
+----------
+Advancing game to time 472.6
+----------
+Advancing game to time 472.7
+----------
+Advancing game to time 472.8
+----------
+Advancing game to time 472.9
 ----------
 Advancing game to time 473.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 ----------
-Advancing game to time 474.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 473.1
+----------
+Advancing game to time 473.2
+----------
+Advancing game to time 473.3
+----------
+Advancing game to time 473.4
 Awarded direct payment 160 at time 473.33
 Recorded cash and eco values (3550,2000) at time 473.33
 Awarded direct payment 160 at time 473.33
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3710,2000) at time 473.33
+----------
+Advancing game to time 473.5
+----------
+Advancing game to time 473.6
+----------
+Advancing game to time 473.7
+----------
+Advancing game to time 473.8
+----------
+Advancing game to time 473.9
+----------
+Advancing game to time 474.0
 Awarded eco payment 2000 at time 474.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5710,2000) at time 474.0
 ----------
+Advancing game to time 474.1
+----------
+Advancing game to time 474.2
+----------
+Advancing game to time 474.3
+----------
+Advancing game to time 474.4
+----------
+Advancing game to time 474.5
+----------
+Advancing game to time 474.6
+----------
+Advancing game to time 474.7
+----------
+Advancing game to time 474.8
+----------
+Advancing game to time 474.9
+----------
 Advancing game to time 475.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 475.1
+----------
+Advancing game to time 475.2
+----------
+Advancing game to time 475.3
+----------
+Advancing game to time 475.4
+----------
+Advancing game to time 475.5
+----------
+Advancing game to time 475.6
+----------
+Advancing game to time 475.7
+----------
+Advancing game to time 475.8
+----------
+Advancing game to time 475.9
 ----------
 Advancing game to time 476.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 ----------
-Advancing game to time 477.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 476.1
+----------
+Advancing game to time 476.2
+----------
+Advancing game to time 476.3
 Awarded direct payment 160 at time 476.28
 Recorded cash and eco values (5870,2000) at time 476.28
 Awarded direct payment 160 at time 476.28
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (6030,2000) at time 476.28
 ----------
+Advancing game to time 476.4
+----------
+Advancing game to time 476.5
+----------
+Advancing game to time 476.6
+----------
+Advancing game to time 476.7
+----------
+Advancing game to time 476.8
+----------
+Advancing game to time 476.9
+----------
+Advancing game to time 477.0
+----------
+Advancing game to time 477.1
+----------
+Advancing game to time 477.2
+----------
+Advancing game to time 477.3
+----------
+Advancing game to time 477.4
+----------
+Advancing game to time 477.5
+----------
+Advancing game to time 477.6
+----------
+Advancing game to time 477.7
+----------
+Advancing game to time 477.8
+----------
+Advancing game to time 477.9
+----------
 Advancing game to time 478.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 478.1
+----------
+Advancing game to time 478.2
+----------
+Advancing game to time 478.3
+----------
+Advancing game to time 478.4
+----------
+Advancing game to time 478.5
+----------
+Advancing game to time 478.6
+----------
+Advancing game to time 478.7
+----------
+Advancing game to time 478.8
+----------
+Advancing game to time 478.9
 ----------
 Advancing game to time 479.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 ----------
-Advancing game to time 480.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 479.1
+----------
+Advancing game to time 479.2
+----------
+Advancing game to time 479.3
 Awarded direct payment 160 at time 479.22
 Recorded cash and eco values (6190,2000) at time 479.22
 Awarded direct payment 160 at time 479.22
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (6350,2000) at time 479.22
+----------
+Advancing game to time 479.4
+----------
+Advancing game to time 479.5
+----------
+Advancing game to time 479.6
+----------
+Advancing game to time 479.7
+----------
+Advancing game to time 479.8
+----------
+Advancing game to time 479.9
+----------
+Advancing game to time 480.0
 Awarded eco payment 2000 at time 480.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (8350,2000) at time 480.0
 ----------
-Advancing game to time 481.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 480.1
+----------
+Advancing game to time 480.2
+----------
+Advancing game to time 480.3
+----------
+Advancing game to time 480.4
 Awarded direct payment 750 at time 480.4
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9100,2000) at time 480.4
 ----------
-Advancing game to time 482.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 480.5
 ----------
-Advancing game to time 483.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 480.6
+----------
+Advancing game to time 480.7
+----------
+Advancing game to time 480.8
+----------
+Advancing game to time 480.9
+----------
+Advancing game to time 481.0
+----------
+Advancing game to time 481.1
+----------
+Advancing game to time 481.2
+----------
+Advancing game to time 481.3
+----------
+Advancing game to time 481.4
+----------
+Advancing game to time 481.5
+----------
+Advancing game to time 481.6
+----------
+Advancing game to time 481.7
+----------
+Advancing game to time 481.8
+----------
+Advancing game to time 481.9
+----------
+Advancing game to time 482.0
+----------
+Advancing game to time 482.1
+----------
+Advancing game to time 482.2
 Awarded direct payment 160 at time 482.17
 Recorded cash and eco values (9260,2000) at time 482.17
 Awarded direct payment 160 at time 482.17
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9420,2000) at time 482.17
 ----------
+Advancing game to time 482.3
+----------
+Advancing game to time 482.4
+----------
+Advancing game to time 482.5
+----------
+Advancing game to time 482.6
+----------
+Advancing game to time 482.7
+----------
+Advancing game to time 482.8
+----------
+Advancing game to time 482.9
+----------
+Advancing game to time 483.0
+----------
+Advancing game to time 483.1
+----------
+Advancing game to time 483.2
+----------
+Advancing game to time 483.3
+----------
+Advancing game to time 483.4
+----------
+Advancing game to time 483.5
+----------
+Advancing game to time 483.6
+----------
+Advancing game to time 483.7
+----------
+Advancing game to time 483.8
+----------
+Advancing game to time 483.9
+----------
 Advancing game to time 484.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 484.1
+----------
+Advancing game to time 484.2
+----------
+Advancing game to time 484.3
+----------
+Advancing game to time 484.4
+----------
+Advancing game to time 484.5
+----------
+Advancing game to time 484.6
+----------
+Advancing game to time 484.7
+----------
+Advancing game to time 484.8
+----------
+Advancing game to time 484.9
 ----------
 Advancing game to time 485.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 ----------
-Advancing game to time 486.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 485.1
+----------
+Advancing game to time 485.2
 Awarded direct payment 160 at time 485.11
 Recorded cash and eco values (9580,2000) at time 485.11
 Awarded direct payment 160 at time 485.11
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9740,2000) at time 485.11
+----------
+Advancing game to time 485.3
+----------
+Advancing game to time 485.4
+----------
+Advancing game to time 485.5
+----------
+Advancing game to time 485.6
+----------
+Advancing game to time 485.7
+----------
+Advancing game to time 485.8
+----------
+Advancing game to time 485.9
+----------
+Advancing game to time 486.0
 Awarded eco payment 2000 at time 486.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11740,2000) at time 486.0
 ----------
+Advancing game to time 486.1
+----------
+Advancing game to time 486.2
+----------
+Advancing game to time 486.3
+----------
+Advancing game to time 486.4
+----------
+Advancing game to time 486.5
+----------
+Advancing game to time 486.6
+----------
+Advancing game to time 486.7
+----------
+Advancing game to time 486.8
+----------
+Advancing game to time 486.9
+----------
 Advancing game to time 487.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 487.1
+----------
+Advancing game to time 487.2
+----------
+Advancing game to time 487.3
+----------
+Advancing game to time 487.4
+----------
+Advancing game to time 487.5
+----------
+Advancing game to time 487.6
+----------
+Advancing game to time 487.7
+----------
+Advancing game to time 487.8
+----------
+Advancing game to time 487.9
 ----------
 Advancing game to time 488.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 ----------
-Advancing game to time 489.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 488.1
 Awarded direct payment 160 at time 488.06
 Recorded cash and eco values (11900,2000) at time 488.06
 Awarded direct payment 160 at time 488.06
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (12060,2000) at time 488.06
 ----------
+Advancing game to time 488.2
+----------
+Advancing game to time 488.3
+----------
+Advancing game to time 488.4
+----------
+Advancing game to time 488.5
+----------
+Advancing game to time 488.6
+----------
+Advancing game to time 488.7
+----------
+Advancing game to time 488.8
+----------
+Advancing game to time 488.9
+----------
+Advancing game to time 489.0
+----------
+Advancing game to time 489.1
+----------
+Advancing game to time 489.2
+----------
+Advancing game to time 489.3
+----------
+Advancing game to time 489.4
+----------
+Advancing game to time 489.5
+----------
+Advancing game to time 489.6
+----------
+Advancing game to time 489.7
+----------
+Advancing game to time 489.8
+----------
+Advancing game to time 489.9
+----------
 Advancing game to time 490.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 490.1
+----------
+Advancing game to time 490.2
+----------
+Advancing game to time 490.3
+----------
+Advancing game to time 490.4
+----------
+Advancing game to time 490.5
+----------
+Advancing game to time 490.6
+----------
+Advancing game to time 490.7
+----------
+Advancing game to time 490.8
+----------
+Advancing game to time 490.9
 ----------
 Advancing game to time 491.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 491.1
+----------
+Advancing game to time 491.2
+----------
+Advancing game to time 491.3
+----------
+Advancing game to time 491.4
+----------
+Advancing game to time 491.5
+----------
+Advancing game to time 491.6
+----------
+Advancing game to time 491.7
+----------
+Advancing game to time 491.8
+----------
+Advancing game to time 491.9
 ----------
 Advancing game to time 492.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 492.0
-We have 14060 cash, but the next buy costs 13320.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 14060 cash! That's enough to perform the next buy, which costs 13320.0 and has a buffer of 0!
+We have 14060 cash! We can do the next buy, which costs 13320.0 and has a buffer of 0 and a minimum buy time of 0!
 Selling the farm at index 0
 Selling the farm at index 1
 Upgrading path 2 of the farm at index 2
 The new farm has upgrades (2,0,5)
 Completed the buy operation! The buy queue now has 15 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (740.0,2000) at time 492.0
 ----------
+Advancing game to time 492.1
+----------
+Advancing game to time 492.2
+----------
+Advancing game to time 492.3
+----------
+Advancing game to time 492.4
+----------
+Advancing game to time 492.5
+----------
+Advancing game to time 492.6
+----------
+Advancing game to time 492.7
+----------
+Advancing game to time 492.8
+----------
+Advancing game to time 492.9
+----------
 Advancing game to time 493.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 493.1
+----------
+Advancing game to time 493.2
+----------
+Advancing game to time 493.3
+----------
+Advancing game to time 493.4
+----------
+Advancing game to time 493.5
+----------
+Advancing game to time 493.6
+----------
+Advancing game to time 493.7
+----------
+Advancing game to time 493.8
+----------
+Advancing game to time 493.9
 ----------
 Advancing game to time 494.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 494.1
+----------
+Advancing game to time 494.2
+----------
+Advancing game to time 494.3
+----------
+Advancing game to time 494.4
+----------
+Advancing game to time 494.5
+----------
+Advancing game to time 494.6
+----------
+Advancing game to time 494.7
+----------
+Advancing game to time 494.8
+----------
+Advancing game to time 494.9
 ----------
 Advancing game to time 495.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded direct payment 10160 at time 495.0
-We have 10900.0 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 10900.0 cash! That's enough to perform the next buy, which costs 1050.0 and has a buffer of 0!
+We have 10900.0 cash! We can do the next buy, which costs 1050.0 and has a buffer of 0 and a minimum buy time of 0!
 Purchasing farm!
 Completed the buy operation! The buy queue now has 14 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 9850.0 cash, but the next buy costs 600.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 9850.0 cash! That's enough to perform the next buy, which costs 600.0 and has a buffer of 0!
+We have 9850.0 cash! We can do the next buy, which costs 600.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (1,0,0)
 Completed the buy operation! The buy queue now has 13 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 9250.0 cash, but the next buy costs 550.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 9250.0 cash! That's enough to perform the next buy, which costs 550.0 and has a buffer of 0!
+We have 9250.0 cash! We can do the next buy, which costs 550.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (2,0,0)
 Completed the buy operation! The buy queue now has 12 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 8700.0 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 8700.0 cash! That's enough to perform the next buy, which costs 2700.0 and has a buffer of 0!
+We have 8700.0 cash! We can do the next buy, which costs 2700.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (3,0,0)
 Completed the buy operation! The buy queue now has 11 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 6000.0 cash, but the next buy costs 200.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 6000.0 cash! That's enough to perform the next buy, which costs 200.0 and has a buffer of 0!
+We have 6000.0 cash! We can do the next buy, which costs 200.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 1 of the farm at index 3
 The new farm has upgrades (3,1,0)
 Completed the buy operation! The buy queue now has 10 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 5800.0 cash, but the next buy costs 700.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 5800.0 cash! That's enough to perform the next buy, which costs 700.0 and has a buffer of 0!
+We have 5800.0 cash! We can do the next buy, which costs 700.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 1 of the farm at index 3
 The new farm has upgrades (3,2,0)
 Completed the buy operation! The buy queue now has 9 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5100.0,2000) at time 495.0
 ----------
-Advancing game to time 496.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 495.1
 ----------
-Advancing game to time 497.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 495.2
+----------
+Advancing game to time 495.3
+----------
+Advancing game to time 495.4
+----------
+Advancing game to time 495.5
+----------
+Advancing game to time 495.6
+----------
+Advancing game to time 495.7
+----------
+Advancing game to time 495.8
+----------
+Advancing game to time 495.9
+----------
+Advancing game to time 496.0
+----------
+Advancing game to time 496.1
+----------
+Advancing game to time 496.2
+----------
+Advancing game to time 496.3
+----------
+Advancing game to time 496.4
+----------
+Advancing game to time 496.5
+----------
+Advancing game to time 496.6
+----------
+Advancing game to time 496.7
 Awarded direct payment 160 at time 496.61
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5260.0,2000) at time 496.61
+----------
+Advancing game to time 496.8
+----------
+Advancing game to time 496.9
 Awarded direct payment 50 at time 496.81
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5310.0,2000) at time 496.81
 ----------
+Advancing game to time 497.0
+----------
+Advancing game to time 497.1
+----------
+Advancing game to time 497.2
+----------
+Advancing game to time 497.3
+----------
+Advancing game to time 497.4
+----------
+Advancing game to time 497.5
+----------
+Advancing game to time 497.6
+----------
+Advancing game to time 497.7
+----------
+Advancing game to time 497.8
+----------
+Advancing game to time 497.9
+----------
 Advancing game to time 498.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 498.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7310.0,2000) at time 498.0
 ----------
-Advancing game to time 499.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 498.1
+----------
+Advancing game to time 498.2
+----------
+Advancing game to time 498.3
 Awarded direct payment 160 at time 498.22
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7470.0,2000) at time 498.22
+----------
+Advancing game to time 498.4
+----------
+Advancing game to time 498.5
+----------
+Advancing game to time 498.6
+----------
+Advancing game to time 498.7
 Awarded direct payment 50 at time 498.62
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7520.0,2000) at time 498.62
 ----------
-Advancing game to time 500.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 498.8
+----------
+Advancing game to time 498.9
+----------
+Advancing game to time 499.0
+----------
+Advancing game to time 499.1
+----------
+Advancing game to time 499.2
+----------
+Advancing game to time 499.3
+----------
+Advancing game to time 499.4
+----------
+Advancing game to time 499.5
+----------
+Advancing game to time 499.6
+----------
+Advancing game to time 499.7
+----------
+Advancing game to time 499.8
+----------
+Advancing game to time 499.9
 Awarded direct payment 160 at time 499.83
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7680.0,2000) at time 499.83
 ----------
-Advancing game to time 501.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 500.0
+----------
+Advancing game to time 500.1
+----------
+Advancing game to time 500.2
+----------
+Advancing game to time 500.3
+----------
+Advancing game to time 500.4
+----------
+Advancing game to time 500.5
 Awarded direct payment 50 at time 500.44
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7730.0,2000) at time 500.44
 ----------
-Advancing game to time 502.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 500.6
+----------
+Advancing game to time 500.7
+----------
+Advancing game to time 500.8
+----------
+Advancing game to time 500.9
+----------
+Advancing game to time 501.0
+----------
+Advancing game to time 501.1
+----------
+Advancing game to time 501.2
+----------
+Advancing game to time 501.3
+----------
+Advancing game to time 501.4
+----------
+Advancing game to time 501.5
 Awarded direct payment 160 at time 501.44
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7890.0,2000) at time 501.44
 ----------
-Advancing game to time 503.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 501.6
+----------
+Advancing game to time 501.7
+----------
+Advancing game to time 501.8
+----------
+Advancing game to time 501.9
+----------
+Advancing game to time 502.0
+----------
+Advancing game to time 502.1
+----------
+Advancing game to time 502.2
+----------
+Advancing game to time 502.3
 Awarded direct payment 50 at time 502.25
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (7940.0,2000) at time 502.25
 ----------
-Advancing game to time 504.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 502.4
+----------
+Advancing game to time 502.5
+----------
+Advancing game to time 502.6
+----------
+Advancing game to time 502.7
+----------
+Advancing game to time 502.8
+----------
+Advancing game to time 502.9
+----------
+Advancing game to time 503.0
+----------
+Advancing game to time 503.1
 Awarded direct payment 160 at time 503.06
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (8100.0,2000) at time 503.06
+----------
+Advancing game to time 503.2
+----------
+Advancing game to time 503.3
+----------
+Advancing game to time 503.4
+----------
+Advancing game to time 503.5
+----------
+Advancing game to time 503.6
+----------
+Advancing game to time 503.7
+----------
+Advancing game to time 503.8
+----------
+Advancing game to time 503.9
+----------
+Advancing game to time 504.0
 Awarded eco payment 2000 at time 504.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10100.0,2000) at time 504.0
 ----------
-Advancing game to time 505.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 504.1
 Awarded direct payment 50 at time 504.06
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10150.0,2000) at time 504.06
+----------
+Advancing game to time 504.2
+----------
+Advancing game to time 504.3
+----------
+Advancing game to time 504.4
+----------
+Advancing game to time 504.5
+----------
+Advancing game to time 504.6
+----------
+Advancing game to time 504.7
 Awarded direct payment 160 at time 504.67
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10310.0,2000) at time 504.67
 ----------
-Advancing game to time 506.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 504.8
+----------
+Advancing game to time 504.9
+----------
+Advancing game to time 505.0
+----------
+Advancing game to time 505.1
+----------
+Advancing game to time 505.2
+----------
+Advancing game to time 505.3
+----------
+Advancing game to time 505.4
+----------
+Advancing game to time 505.5
+----------
+Advancing game to time 505.6
+----------
+Advancing game to time 505.7
+----------
+Advancing game to time 505.8
+----------
+Advancing game to time 505.9
 Awarded direct payment 50 at time 505.88
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10360.0,2000) at time 505.88
 ----------
-Advancing game to time 507.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 506.0
+----------
+Advancing game to time 506.1
+----------
+Advancing game to time 506.2
+----------
+Advancing game to time 506.3
 Awarded direct payment 160 at time 506.28
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10520.0,2000) at time 506.28
 ----------
-Advancing game to time 508.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 506.4
+----------
+Advancing game to time 506.5
+----------
+Advancing game to time 506.6
+----------
+Advancing game to time 506.7
+----------
+Advancing game to time 506.8
+----------
+Advancing game to time 506.9
+----------
+Advancing game to time 507.0
+----------
+Advancing game to time 507.1
+----------
+Advancing game to time 507.2
+----------
+Advancing game to time 507.3
+----------
+Advancing game to time 507.4
+----------
+Advancing game to time 507.5
+----------
+Advancing game to time 507.6
+----------
+Advancing game to time 507.7
 Awarded direct payment 50 at time 507.69
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10570.0,2000) at time 507.69
+----------
+Advancing game to time 507.8
+----------
+Advancing game to time 507.9
 Awarded direct payment 160 at time 507.89
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10730.0,2000) at time 507.89
 ----------
-Advancing game to time 509.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 508.0
 ----------
-Advancing game to time 510.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 508.1
+----------
+Advancing game to time 508.2
+----------
+Advancing game to time 508.3
+----------
+Advancing game to time 508.4
+----------
+Advancing game to time 508.5
+----------
+Advancing game to time 508.6
+----------
+Advancing game to time 508.7
+----------
+Advancing game to time 508.8
+----------
+Advancing game to time 508.9
+----------
+Advancing game to time 509.0
+----------
+Advancing game to time 509.1
+----------
+Advancing game to time 509.2
+----------
+Advancing game to time 509.3
+----------
+Advancing game to time 509.4
+----------
+Advancing game to time 509.5
 Awarded direct payment 160 at time 509.5
 Recorded cash and eco values (10890.0,2000) at time 509.5
 Awarded direct payment 50 at time 509.5
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10940.0,2000) at time 509.5
+----------
+Advancing game to time 509.6
+----------
+Advancing game to time 509.7
+----------
+Advancing game to time 509.8
+----------
+Advancing game to time 509.9
+----------
+Advancing game to time 510.0
 Awarded eco payment 2000 at time 510.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (12940.0,2000) at time 510.0
 ----------
-Advancing game to time 511.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 510.1
 ----------
-Advancing game to time 512.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 510.2
+----------
+Advancing game to time 510.3
+----------
+Advancing game to time 510.4
+----------
+Advancing game to time 510.5
+----------
+Advancing game to time 510.6
+----------
+Advancing game to time 510.7
+----------
+Advancing game to time 510.8
+----------
+Advancing game to time 510.9
+----------
+Advancing game to time 511.0
+----------
+Advancing game to time 511.1
+----------
+Advancing game to time 511.2
 Awarded direct payment 160 at time 511.11
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13100.0,2000) at time 511.11
+----------
+Advancing game to time 511.3
+----------
+Advancing game to time 511.4
 Awarded direct payment 50 at time 511.31
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13150.0,2000) at time 511.31
 ----------
-Advancing game to time 513.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 511.5
+----------
+Advancing game to time 511.6
+----------
+Advancing game to time 511.7
+----------
+Advancing game to time 511.8
+----------
+Advancing game to time 511.9
+----------
+Advancing game to time 512.0
+----------
+Advancing game to time 512.1
+----------
+Advancing game to time 512.2
+----------
+Advancing game to time 512.3
+----------
+Advancing game to time 512.4
+----------
+Advancing game to time 512.45
+----------
+Advancing game to time 512.5
+----------
+Advancing game to time 512.6
+----------
+Advancing game to time 512.7
+----------
+Advancing game to time 512.8
 Awarded direct payment 160 at time 512.72
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13310.0,2000) at time 512.72
 ----------
-Advancing game to time 514.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 512.9
+----------
+Advancing game to time 512.95
+----------
+Advancing game to time 513.0
+----------
+Advancing game to time 513.1
+----------
+Advancing game to time 513.2
 Awarded direct payment 50 at time 513.12
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13360.0,2000) at time 513.12
 ----------
-Advancing game to time 515.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 513.3
+----------
+Advancing game to time 513.4
+----------
+Advancing game to time 513.45
+----------
+Advancing game to time 513.5
+----------
+Advancing game to time 513.6
+----------
+Advancing game to time 513.7
+----------
+Advancing game to time 513.8
+----------
+Advancing game to time 513.9
+----------
+Advancing game to time 513.95
+----------
+Advancing game to time 514.0
+----------
+Advancing game to time 514.1
+----------
+Advancing game to time 514.2
+----------
+Advancing game to time 514.3
+----------
+Advancing game to time 514.4
 Awarded direct payment 160 at time 514.33
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13520.0,2000) at time 514.33
+----------
+Advancing game to time 514.45
+----------
+Advancing game to time 514.5
+----------
+Advancing game to time 514.6
+----------
+Advancing game to time 514.7
+----------
+Advancing game to time 514.8
+----------
+Advancing game to time 514.9
+----------
+Advancing game to time 514.95
 Awarded direct payment 50 at time 514.94
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13570.0,2000) at time 514.94
 ----------
-Advancing game to time 516.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 515.0
+----------
+Advancing game to time 515.1
+----------
+Advancing game to time 515.2
+----------
+Advancing game to time 515.3
+----------
+Advancing game to time 515.4
+----------
+Advancing game to time 515.45
+----------
+Advancing game to time 515.5
+----------
+Advancing game to time 515.6
+----------
+Advancing game to time 515.7
+----------
+Advancing game to time 515.8
+----------
+Advancing game to time 515.9
+----------
+Advancing game to time 515.95
 Awarded direct payment 160 at time 515.94
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13730.0,2000) at time 515.94
+----------
+Advancing game to time 516.0
 Awarded eco payment 2000 at time 516.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15730.0,2000) at time 516.0
 ----------
-Advancing game to time 517.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 516.1
+----------
+Advancing game to time 516.2
+----------
+Advancing game to time 516.3
+----------
+Advancing game to time 516.4
+----------
+Advancing game to time 516.45
+----------
+Advancing game to time 516.5
+----------
+Advancing game to time 516.6
+----------
+Advancing game to time 516.7
+----------
+Advancing game to time 516.8
 Awarded direct payment 50 at time 516.75
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15780.0,2000) at time 516.75
 ----------
-Advancing game to time 518.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 516.9
+----------
+Advancing game to time 516.95
+----------
+Advancing game to time 517.0
+----------
+Advancing game to time 517.1
+----------
+Advancing game to time 517.2
+----------
+Advancing game to time 517.3
+----------
+Advancing game to time 517.4
+----------
+Advancing game to time 517.45
+----------
+Advancing game to time 517.5
+----------
+Advancing game to time 517.6
 Awarded direct payment 160 at time 517.56
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15940.0,2000) at time 517.56
 ----------
-Advancing game to time 519.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 517.7
+----------
+Advancing game to time 517.8
+----------
+Advancing game to time 517.9
+----------
+Advancing game to time 517.95
+----------
+Advancing game to time 518.0
+----------
+Advancing game to time 518.1
+----------
+Advancing game to time 518.2
+----------
+Advancing game to time 518.3
+----------
+Advancing game to time 518.4
+----------
+Advancing game to time 518.45
+----------
+Advancing game to time 518.5
+----------
+Advancing game to time 518.6
 Awarded direct payment 50 at time 518.56
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (15990.0,2000) at time 518.56
 ----------
-Advancing game to time 520.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 518.7
+----------
+Advancing game to time 518.8
+----------
+Advancing game to time 518.9
+----------
+Advancing game to time 518.95
+----------
+Advancing game to time 519.0
+----------
+Advancing game to time 519.1
+----------
+Advancing game to time 519.2
 Awarded direct payment 160 at time 519.17
-We have 16150.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 16150.0 cash! That's enough to perform the next buy, which costs 16000.0 and has a buffer of 0!
+We have 16150.0 cash! We can do the next buy, which costs 16000.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (4,2,0)
 Completed the buy operation! The buy queue now has 8 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (150.0,2000) at time 519.17
 ----------
-Advancing game to time 521.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 519.3
+----------
+Advancing game to time 519.4
+----------
+Advancing game to time 519.45
+----------
+Advancing game to time 519.5
+----------
+Advancing game to time 519.6
+----------
+Advancing game to time 519.7
+----------
+Advancing game to time 519.8
+----------
+Advancing game to time 519.9
+----------
+Advancing game to time 519.95
+----------
+Advancing game to time 520.0
+----------
+Advancing game to time 520.1
+----------
+Advancing game to time 520.2
+----------
+Advancing game to time 520.3
+----------
+Advancing game to time 520.4
+----------
+Advancing game to time 520.45
+----------
+Advancing game to time 520.5
+----------
+Advancing game to time 520.6
+----------
+Advancing game to time 520.7
+----------
+Advancing game to time 520.8
 Awarded direct payment 160 at time 520.78
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (310.0,2000) at time 520.78
 ----------
+Advancing game to time 520.9
+----------
+Advancing game to time 520.95
+----------
+Advancing game to time 521.0
+----------
+Advancing game to time 521.1
+----------
+Advancing game to time 521.2
+----------
+Advancing game to time 521.3
+----------
+Advancing game to time 521.4
+----------
+Advancing game to time 521.45
+----------
+Advancing game to time 521.5
+----------
+Advancing game to time 521.6
+----------
+Advancing game to time 521.7
+----------
+Advancing game to time 521.8
+----------
+Advancing game to time 521.9
+----------
+Advancing game to time 521.95
+----------
 Advancing game to time 522.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 522.0
-We have 2310.0 cash, but the next buy costs 1050.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 2310.0 cash! That's enough to perform the next buy, which costs 1050.0 and has a buffer of 0!
+We have 2310.0 cash! We can do the next buy, which costs 1050.0 and has a buffer of 0 and a minimum buy time of 0!
 Purchasing farm!
 Completed the buy operation! The buy queue now has 7 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 1260.0 cash, but the next buy costs 600.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 1260.0 cash! That's enough to perform the next buy, which costs 600.0 and has a buffer of 0!
+We have 1260.0 cash! We can do the next buy, which costs 600.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (1,0,0)
 Completed the buy operation! The buy queue now has 6 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 660.0 cash, but the next buy costs 550.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 660.0 cash! That's enough to perform the next buy, which costs 550.0 and has a buffer of 0!
+We have 660.0 cash! We can do the next buy, which costs 550.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (2,0,0)
 Completed the buy operation! The buy queue now has 5 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (110.0,2000) at time 522.0
 ----------
-Advancing game to time 523.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 522.1
+----------
+Advancing game to time 522.2
+----------
+Advancing game to time 522.3
+----------
+Advancing game to time 522.4
 Awarded direct payment 160 at time 522.39
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (270.0,2000) at time 522.39
 ----------
+Advancing game to time 522.45
+----------
+Advancing game to time 522.5
+----------
+Advancing game to time 522.6
+----------
+Advancing game to time 522.7
+----------
+Advancing game to time 522.8
+----------
+Advancing game to time 522.9
+----------
+Advancing game to time 522.95
+----------
+Advancing game to time 523.0
+----------
+Advancing game to time 523.1
+----------
+Advancing game to time 523.2
+----------
+Advancing game to time 523.3
+----------
+Advancing game to time 523.4
+----------
+Advancing game to time 523.45
+----------
+Advancing game to time 523.5
+----------
+Advancing game to time 523.6
+----------
+Advancing game to time 523.7
+----------
+Advancing game to time 523.8
+----------
+Advancing game to time 523.9
+----------
+Advancing game to time 523.95
+----------
 Advancing game to time 524.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 524.1
+----------
+Advancing game to time 524.2
+----------
+Advancing game to time 524.3
+----------
+Advancing game to time 524.4
+----------
+Advancing game to time 524.45
+----------
+Advancing game to time 524.5
+----------
+Advancing game to time 524.6
+----------
+Advancing game to time 524.7
+----------
+Advancing game to time 524.8
+----------
+Advancing game to time 524.9
+----------
+Advancing game to time 524.95
 ----------
 Advancing game to time 525.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 525.1
+----------
+Advancing game to time 525.2
+----------
+Advancing game to time 525.3
+----------
+Advancing game to time 525.4
+----------
+Advancing game to time 525.45
+----------
+Advancing game to time 525.5
+----------
+Advancing game to time 525.6
+----------
+Advancing game to time 525.7
+----------
+Advancing game to time 525.8
+----------
+Advancing game to time 525.9
+----------
+Advancing game to time 525.95
 ----------
 Advancing game to time 526.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 526.1
+----------
+Advancing game to time 526.2
+----------
+Advancing game to time 526.3
+----------
+Advancing game to time 526.4
+----------
+Advancing game to time 526.45
+----------
+Advancing game to time 526.5
+----------
+Advancing game to time 526.6
+----------
+Advancing game to time 526.7
+----------
+Advancing game to time 526.8
+----------
+Advancing game to time 526.9
+----------
+Advancing game to time 526.95
 ----------
 Advancing game to time 527.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 527.1
+----------
+Advancing game to time 527.2
+----------
+Advancing game to time 527.3
+----------
+Advancing game to time 527.4
+----------
+Advancing game to time 527.45
+----------
+Advancing game to time 527.5
+----------
+Advancing game to time 527.6
+----------
+Advancing game to time 527.7
+----------
+Advancing game to time 527.8
+----------
+Advancing game to time 527.9
+----------
+Advancing game to time 527.95
 ----------
 Advancing game to time 528.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 528.0
 Recorded cash and eco values (2270.0,2000) at time 528.0
 Awarded direct payment 10160 at time 528.0
@@ -494,225 +1479,669 @@ Recorded cash and eco values (12430.0,2000) at time 528.0
 Awarded direct payment 750 at time 528.0
 Recorded cash and eco values (13180.0,2000) at time 528.0
 Awarded direct payment 40 at time 528.0
-We have 13220.0 cash, but the next buy costs 2700.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 13220.0 cash! That's enough to perform the next buy, which costs 2700.0 and has a buffer of 0!
+We have 13220.0 cash! We can do the next buy, which costs 2700.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (3,0,0)
 Completed the buy operation! The buy queue now has 4 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 10520.0 cash, but the next buy costs 200.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 10520.0 cash! That's enough to perform the next buy, which costs 200.0 and has a buffer of 0!
+We have 10520.0 cash! We can do the next buy, which costs 200.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 1 of the farm at index 4
 The new farm has upgrades (3,1,0)
 Completed the buy operation! The buy queue now has 3 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-We have 10320.0 cash, but the next buy costs 700.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 10320.0 cash! That's enough to perform the next buy, which costs 700.0 and has a buffer of 0!
+We have 10320.0 cash! We can do the next buy, which costs 700.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 1 of the farm at index 4
 The new farm has upgrades (3,2,0)
 Completed the buy operation! The buy queue now has 2 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9620.0,2000) at time 528.0
 ----------
-Advancing game to time 529.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 528.1
 ----------
-Advancing game to time 530.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 528.2
+----------
+Advancing game to time 528.3
+----------
+Advancing game to time 528.4
+----------
+Advancing game to time 528.45
+----------
+Advancing game to time 528.5
+----------
+Advancing game to time 528.6
+----------
+Advancing game to time 528.7
+----------
+Advancing game to time 528.8
+----------
+Advancing game to time 528.9
+----------
+Advancing game to time 528.95
+----------
+Advancing game to time 529.0
+----------
+Advancing game to time 529.1
+----------
+Advancing game to time 529.2
 Awarded direct payment 160 at time 529.11
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9780.0,2000) at time 529.11
+----------
+Advancing game to time 529.3
 Awarded direct payment 50 at time 529.25
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9830.0,2000) at time 529.25
 ----------
-Advancing game to time 531.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 529.4
+----------
+Advancing game to time 529.45
+----------
+Advancing game to time 529.5
+----------
+Advancing game to time 529.6
+----------
+Advancing game to time 529.7
+----------
+Advancing game to time 529.8
+----------
+Advancing game to time 529.9
+----------
+Advancing game to time 529.95
+----------
+Advancing game to time 530.0
+----------
+Advancing game to time 530.1
+----------
+Advancing game to time 530.2
+----------
+Advancing game to time 530.3
 Awarded direct payment 160 at time 530.22
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (9990.0,2000) at time 530.22
+----------
+Advancing game to time 530.4
+----------
+Advancing game to time 530.45
+----------
+Advancing game to time 530.5
 Awarded direct payment 50 at time 530.5
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10040.0,2000) at time 530.5
 ----------
-Advancing game to time 532.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 530.6
+----------
+Advancing game to time 530.7
+----------
+Advancing game to time 530.8
+----------
+Advancing game to time 530.9
+----------
+Advancing game to time 530.95
+----------
+Advancing game to time 531.0
+----------
+Advancing game to time 531.1
+----------
+Advancing game to time 531.2
+----------
+Advancing game to time 531.3
+----------
+Advancing game to time 531.4
 Awarded direct payment 160 at time 531.33
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10200.0,2000) at time 531.33
+----------
+Advancing game to time 531.45
+----------
+Advancing game to time 531.5
+----------
+Advancing game to time 531.6
+----------
+Advancing game to time 531.7
+----------
+Advancing game to time 531.8
 Awarded direct payment 50 at time 531.75
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (10250.0,2000) at time 531.75
+----------
+Advancing game to time 531.9
+----------
+Advancing game to time 531.95
+----------
+Advancing game to time 532.0
 Awarded direct payment 750 at time 532.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11000.0,2000) at time 532.0
 ----------
-Advancing game to time 533.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 532.1
+----------
+Advancing game to time 532.2
+----------
+Advancing game to time 532.3
+----------
+Advancing game to time 532.4
+----------
+Advancing game to time 532.45
 Awarded direct payment 160 at time 532.44
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11160.0,2000) at time 532.44
+----------
+Advancing game to time 532.5
+----------
+Advancing game to time 532.6
+----------
+Advancing game to time 532.7
+----------
+Advancing game to time 532.8
+----------
+Advancing game to time 532.9
+----------
+Advancing game to time 532.95
+----------
+Advancing game to time 533.0
 Awarded direct payment 50 at time 533.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11210.0,2000) at time 533.0
 ----------
-Advancing game to time 534.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 533.1
+----------
+Advancing game to time 533.2
+----------
+Advancing game to time 533.3
+----------
+Advancing game to time 533.4
+----------
+Advancing game to time 533.45
+----------
+Advancing game to time 533.5
+----------
+Advancing game to time 533.6
 Awarded direct payment 160 at time 533.56
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (11370.0,2000) at time 533.56
+----------
+Advancing game to time 533.7
+----------
+Advancing game to time 533.8
+----------
+Advancing game to time 533.9
+----------
+Advancing game to time 533.95
+----------
+Advancing game to time 534.0
 Awarded eco payment 2000 at time 534.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13370.0,2000) at time 534.0
 ----------
-Advancing game to time 535.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 534.1
+----------
+Advancing game to time 534.2
+----------
+Advancing game to time 534.3
 Awarded direct payment 50 at time 534.25
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13420.0,2000) at time 534.25
+----------
+Advancing game to time 534.4
+----------
+Advancing game to time 534.45
+----------
+Advancing game to time 534.5
+----------
+Advancing game to time 534.6
+----------
+Advancing game to time 534.7
 Awarded direct payment 160 at time 534.67
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13580.0,2000) at time 534.67
 ----------
-Advancing game to time 536.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 534.8
+----------
+Advancing game to time 534.9
+----------
+Advancing game to time 534.95
+----------
+Advancing game to time 535.0
+----------
+Advancing game to time 535.1
+----------
+Advancing game to time 535.2
+----------
+Advancing game to time 535.3
+----------
+Advancing game to time 535.4
+----------
+Advancing game to time 535.45
+----------
+Advancing game to time 535.5
 Awarded direct payment 50 at time 535.5
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13630.0,2000) at time 535.5
+----------
+Advancing game to time 535.6
+----------
+Advancing game to time 535.7
+----------
+Advancing game to time 535.8
 Awarded direct payment 160 at time 535.78
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (13790.0,2000) at time 535.78
+----------
+Advancing game to time 535.9
+----------
+Advancing game to time 535.95
+----------
+Advancing game to time 536.0
 Awarded direct payment 750 at time 536.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14540.0,2000) at time 536.0
 ----------
-Advancing game to time 537.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 536.1
+----------
+Advancing game to time 536.2
+----------
+Advancing game to time 536.3
+----------
+Advancing game to time 536.4
+----------
+Advancing game to time 536.45
+----------
+Advancing game to time 536.5
+----------
+Advancing game to time 536.6
+----------
+Advancing game to time 536.7
+----------
+Advancing game to time 536.8
 Awarded direct payment 50 at time 536.75
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14590.0,2000) at time 536.75
+----------
+Advancing game to time 536.9
 Awarded direct payment 160 at time 536.89
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14750.0,2000) at time 536.89
 ----------
+Advancing game to time 536.95
+----------
+Advancing game to time 537.0
+----------
+Advancing game to time 537.1
+----------
+Advancing game to time 537.2
+----------
+Advancing game to time 537.3
+----------
+Advancing game to time 537.4
+----------
+Advancing game to time 537.45
+----------
+Advancing game to time 537.5
+----------
+Advancing game to time 537.6
+----------
+Advancing game to time 537.7
+----------
+Advancing game to time 537.8
+----------
+Advancing game to time 537.9
+----------
+Advancing game to time 537.95
+----------
 Advancing game to time 538.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded direct payment 160 at time 538.0
 Recorded cash and eco values (14910.0,2000) at time 538.0
 Awarded direct payment 50 at time 538.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (14960.0,2000) at time 538.0
 ----------
+Advancing game to time 538.1
+----------
+Advancing game to time 538.2
+----------
+Advancing game to time 538.3
+----------
+Advancing game to time 538.4
+----------
+Advancing game to time 538.45
+----------
+Advancing game to time 538.5
+----------
+Advancing game to time 538.6
+----------
+Advancing game to time 538.7
+----------
+Advancing game to time 538.8
+----------
+Advancing game to time 538.9
+----------
+Advancing game to time 538.95
+----------
 Advancing game to time 539.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 539.1
+----------
+Advancing game to time 539.2
+Awarded direct payment 160 at time 539.11
+Recorded cash and eco values (15120.0,2000) at time 539.11
+----------
+Advancing game to time 539.3
+Awarded direct payment 50 at time 539.25
+Recorded cash and eco values (15170.0,2000) at time 539.25
+----------
+Advancing game to time 539.4
+----------
+Advancing game to time 539.45
+----------
+Advancing game to time 539.5
+----------
+Advancing game to time 539.6
+----------
+Advancing game to time 539.7
+----------
+Advancing game to time 539.8
+----------
+Advancing game to time 539.9
+----------
+Advancing game to time 539.95
 ----------
 Advancing game to time 540.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
-Awarded direct payment 160 at time 539.11
-WARNING! Reached negative cash while attempting the transaction!
-Recorded cash and eco values (15120.0,2000) at time 539.11
-Awarded direct payment 50 at time 539.25
-WARNING! Reached negative cash while attempting the transaction!
-Recorded cash and eco values (15170.0,2000) at time 539.25
 Awarded eco payment 2000 at time 540.0
 Recorded cash and eco values (17170.0,2000) at time 540.0
 Awarded direct payment 750 at time 540.0
-We have 17920.0 cash, but the next buy costs 16000.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 17920.0 cash! That's enough to perform the next buy, which costs 16000.0 and has a buffer of 0!
+We have 17920.0 cash! We can do the next buy, which costs 16000.0 and has a buffer of 0 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 4
 The new farm has upgrades (4,2,0)
 Completed the buy operation! The buy queue now has 1 items remaining in it
 Determined the minimum buy time of the next purchase to be 0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (1920.0,2000) at time 540.0
 ----------
-Advancing game to time 541.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 540.1
+----------
+Advancing game to time 540.2
+----------
+Advancing game to time 540.3
 Awarded direct payment 160 at time 540.22
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2080.0,2000) at time 540.22
 ----------
-Advancing game to time 542.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 540.4
+----------
+Advancing game to time 540.45
+----------
+Advancing game to time 540.5
+----------
+Advancing game to time 540.6
+----------
+Advancing game to time 540.7
+----------
+Advancing game to time 540.8
+----------
+Advancing game to time 540.9
+----------
+Advancing game to time 540.95
+----------
+Advancing game to time 541.0
+----------
+Advancing game to time 541.1
+----------
+Advancing game to time 541.2
+----------
+Advancing game to time 541.3
+----------
+Advancing game to time 541.4
 Awarded direct payment 160 at time 541.33
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2240.0,2000) at time 541.33
 ----------
-Advancing game to time 543.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 541.45
+----------
+Advancing game to time 541.5
+----------
+Advancing game to time 541.6
+----------
+Advancing game to time 541.7
+----------
+Advancing game to time 541.8
+----------
+Advancing game to time 541.9
+----------
+Advancing game to time 541.95
+----------
+Advancing game to time 542.0
+----------
+Advancing game to time 542.1
+----------
+Advancing game to time 542.2
+----------
+Advancing game to time 542.3
+----------
+Advancing game to time 542.4
+----------
+Advancing game to time 542.45
 Awarded direct payment 160 at time 542.44
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2400.0,2000) at time 542.44
 ----------
-Advancing game to time 544.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 542.5
+----------
+Advancing game to time 542.6
+----------
+Advancing game to time 542.7
+----------
+Advancing game to time 542.8
+----------
+Advancing game to time 542.9
+----------
+Advancing game to time 542.95
+----------
+Advancing game to time 543.0
+----------
+Advancing game to time 543.1
+----------
+Advancing game to time 543.2
+----------
+Advancing game to time 543.3
+----------
+Advancing game to time 543.4
+----------
+Advancing game to time 543.45
+----------
+Advancing game to time 543.5
+----------
+Advancing game to time 543.6
 Awarded direct payment 160 at time 543.56
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (2560.0,2000) at time 543.56
+----------
+Advancing game to time 543.7
+----------
+Advancing game to time 543.8
+----------
+Advancing game to time 543.9
+----------
+Advancing game to time 543.95
+----------
+Advancing game to time 544.0
 Awarded direct payment 750 at time 544.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3310.0,2000) at time 544.0
 ----------
-Advancing game to time 545.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 544.1
+----------
+Advancing game to time 544.2
+----------
+Advancing game to time 544.3
+----------
+Advancing game to time 544.4
+----------
+Advancing game to time 544.45
+----------
+Advancing game to time 544.5
+----------
+Advancing game to time 544.6
+----------
+Advancing game to time 544.7
 Awarded direct payment 160 at time 544.67
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3470.0,2000) at time 544.67
 ----------
-Advancing game to time 546.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 544.8
+----------
+Advancing game to time 544.9
+----------
+Advancing game to time 544.95
+----------
+Advancing game to time 545.0
+----------
+Advancing game to time 545.1
+----------
+Advancing game to time 545.2
+----------
+Advancing game to time 545.3
+----------
+Advancing game to time 545.4
+----------
+Advancing game to time 545.45
+----------
+Advancing game to time 545.5
+----------
+Advancing game to time 545.6
+----------
+Advancing game to time 545.7
+----------
+Advancing game to time 545.8
 Awarded direct payment 160 at time 545.78
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (3630.0,2000) at time 545.78
+----------
+Advancing game to time 545.9
+----------
+Advancing game to time 545.95
+----------
+Advancing game to time 546.0
 Awarded eco payment 2000 at time 546.0
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5630.0,2000) at time 546.0
 ----------
-Advancing game to time 547.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 546.1
+----------
+Advancing game to time 546.2
+----------
+Advancing game to time 546.3
+----------
+Advancing game to time 546.4
+----------
+Advancing game to time 546.45
+----------
+Advancing game to time 546.5
+----------
+Advancing game to time 546.6
+----------
+Advancing game to time 546.7
+----------
+Advancing game to time 546.8
+----------
+Advancing game to time 546.9
 Awarded direct payment 160 at time 546.89
-WARNING! Reached negative cash while attempting the transaction!
 Recorded cash and eco values (5790.0,2000) at time 546.89
 ----------
+Advancing game to time 546.95
+----------
+Advancing game to time 547.0
+----------
+Advancing game to time 547.1
+----------
+Advancing game to time 547.2
+----------
+Advancing game to time 547.3
+----------
+Advancing game to time 547.4
+----------
+Advancing game to time 547.45
+----------
+Advancing game to time 547.5
+----------
+Advancing game to time 547.6
+----------
+Advancing game to time 547.7
+----------
+Advancing game to time 547.8
+----------
+Advancing game to time 547.9
+----------
+Advancing game to time 547.95
+----------
 Advancing game to time 548.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 548.1
+----------
+Advancing game to time 548.2
+----------
+Advancing game to time 548.3
+----------
+Advancing game to time 548.4
+----------
+Advancing game to time 548.45
+----------
+Advancing game to time 548.5
+----------
+Advancing game to time 548.6
+----------
+Advancing game to time 548.7
+----------
+Advancing game to time 548.8
+----------
+Advancing game to time 548.9
+----------
+Advancing game to time 548.95
 ----------
 Advancing game to time 549.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 549.1
+----------
+Advancing game to time 549.2
+----------
+Advancing game to time 549.3
+----------
+Advancing game to time 549.4
+----------
+Advancing game to time 549.45
+----------
+Advancing game to time 549.5
+----------
+Advancing game to time 549.6
+----------
+Advancing game to time 549.7
+----------
+Advancing game to time 549.8
+----------
+Advancing game to time 549.9
+----------
+Advancing game to time 549.95
 ----------
 Advancing game to time 550.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 550.1
+----------
+Advancing game to time 550.2
+----------
+Advancing game to time 550.3
+----------
+Advancing game to time 550.4
+----------
+Advancing game to time 550.45
+----------
+Advancing game to time 550.5
+----------
+Advancing game to time 550.6
+----------
+Advancing game to time 550.7
+----------
+Advancing game to time 550.8
+----------
+Advancing game to time 550.9
+----------
+Advancing game to time 550.95
 ----------
 Advancing game to time 551.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 551.1
+----------
+Advancing game to time 551.2
+----------
+Advancing game to time 551.3
+----------
+Advancing game to time 551.4
+----------
+Advancing game to time 551.45
+----------
+Advancing game to time 551.5
+----------
+Advancing game to time 551.6
+----------
+Advancing game to time 551.7
+----------
+Advancing game to time 551.8
+----------
+Advancing game to time 551.9
+----------
+Advancing game to time 551.95
 ----------
 Advancing game to time 552.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 552.0
 Recorded cash and eco values (7790.0,2000) at time 552.0
 Awarded direct payment 10160 at time 552.0
@@ -720,8 +2149,7 @@ Recorded cash and eco values (17950.0,2000) at time 552.0
 Awarded direct payment 750 at time 552.0
 Recorded cash and eco values (18700.0,2000) at time 552.0
 Awarded direct payment 750 at time 552.0
-We have 19450.0 cash, but the next buy costs 13080.0 and has a buffer of 0 and needs to be made on or after time 0!
-We have 19450.0 cash! That's enough to perform the next buy, which costs 13080.0 and has a buffer of 0!
+We have 19450.0 cash! We can do the next buy, which costs 13080.0 and has a buffer of 0 and a minimum buy time of 0!
 Selling the farm at index 2
 Upgrading path 0 of the farm at index 3
 The new farm has upgrades (5,2,0)
@@ -729,109 +2157,529 @@ The new farm is a Banana Central!
 Completed the buy operation! The buy queue now has 0 items remaining in it
 Recorded cash and eco values (6370.0,2000) at time 552.0
 ----------
+Advancing game to time 552.1
+----------
+Advancing game to time 552.2
+----------
+Advancing game to time 552.3
+----------
+Advancing game to time 552.4
+----------
+Advancing game to time 552.45
+----------
+Advancing game to time 552.5
+----------
+Advancing game to time 552.6
+----------
+Advancing game to time 552.7
+----------
+Advancing game to time 552.8
+----------
+Advancing game to time 552.9
+----------
+Advancing game to time 552.95
+----------
 Advancing game to time 553.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 553.1
+----------
+Advancing game to time 553.2
+----------
+Advancing game to time 553.3
+----------
+Advancing game to time 553.4
+----------
+Advancing game to time 553.45
+----------
+Advancing game to time 553.5
+----------
+Advancing game to time 553.6
+----------
+Advancing game to time 553.7
+----------
+Advancing game to time 553.8
+----------
+Advancing game to time 553.9
+----------
+Advancing game to time 553.95
 ----------
 Advancing game to time 554.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 554.1
+----------
+Advancing game to time 554.2
+----------
+Advancing game to time 554.3
+----------
+Advancing game to time 554.4
+----------
+Advancing game to time 554.45
+----------
+Advancing game to time 554.5
+----------
+Advancing game to time 554.6
+----------
+Advancing game to time 554.7
+----------
+Advancing game to time 554.8
+----------
+Advancing game to time 554.9
+----------
+Advancing game to time 554.95
 ----------
 Advancing game to time 555.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 ----------
-Advancing game to time 556.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 555.1
+----------
+Advancing game to time 555.2
+----------
+Advancing game to time 555.3
+----------
+Advancing game to time 555.4
 Awarded direct payment 3750 at time 555.4
 Recorded cash and eco values (10120.0,2000) at time 555.4
 Awarded direct payment 937.5 at time 555.4
 Recorded cash and eco values (11057.5,2000) at time 555.4
 ----------
+Advancing game to time 555.45
+----------
+Advancing game to time 555.5
+----------
+Advancing game to time 555.6
+----------
+Advancing game to time 555.7
+----------
+Advancing game to time 555.8
+----------
+Advancing game to time 555.9
+----------
+Advancing game to time 555.95
+----------
+Advancing game to time 556.0
+----------
+Advancing game to time 556.1
+----------
+Advancing game to time 556.2
+----------
+Advancing game to time 556.3
+----------
+Advancing game to time 556.4
+----------
+Advancing game to time 556.45
+----------
+Advancing game to time 556.5
+----------
+Advancing game to time 556.6
+----------
+Advancing game to time 556.7
+----------
+Advancing game to time 556.8
+----------
+Advancing game to time 556.9
+----------
+Advancing game to time 556.95
+----------
 Advancing game to time 557.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 557.1
+----------
+Advancing game to time 557.2
+----------
+Advancing game to time 557.3
+----------
+Advancing game to time 557.4
+----------
+Advancing game to time 557.45
+----------
+Advancing game to time 557.5
+----------
+Advancing game to time 557.6
+----------
+Advancing game to time 557.7
+----------
+Advancing game to time 557.8
+----------
+Advancing game to time 557.9
+----------
+Advancing game to time 557.95
 ----------
 Advancing game to time 558.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 558.0
 Recorded cash and eco values (13057.5,2000) at time 558.0
 ----------
-Advancing game to time 559.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 558.1
+----------
+Advancing game to time 558.2
+----------
+Advancing game to time 558.3
+----------
+Advancing game to time 558.4
+----------
+Advancing game to time 558.45
+----------
+Advancing game to time 558.5
+----------
+Advancing game to time 558.6
+----------
+Advancing game to time 558.7
+----------
+Advancing game to time 558.8
 Awarded direct payment 3750 at time 558.8
 Recorded cash and eco values (16807.5,2000) at time 558.8
 Awarded direct payment 937.5 at time 558.8
 Recorded cash and eco values (17745.0,2000) at time 558.8
 ----------
+Advancing game to time 558.9
+----------
+Advancing game to time 558.95
+----------
+Advancing game to time 559.0
+----------
+Advancing game to time 559.1
+----------
+Advancing game to time 559.2
+----------
+Advancing game to time 559.3
+----------
+Advancing game to time 559.4
+----------
+Advancing game to time 559.45
+----------
+Advancing game to time 559.5
+----------
+Advancing game to time 559.6
+----------
+Advancing game to time 559.7
+----------
+Advancing game to time 559.8
+----------
+Advancing game to time 559.9
+----------
+Advancing game to time 559.95
+----------
 Advancing game to time 560.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 560.1
+----------
+Advancing game to time 560.2
+----------
+Advancing game to time 560.3
+----------
+Advancing game to time 560.4
+----------
+Advancing game to time 560.45
+----------
+Advancing game to time 560.5
+----------
+Advancing game to time 560.6
+----------
+Advancing game to time 560.7
+----------
+Advancing game to time 560.8
+----------
+Advancing game to time 560.9
+----------
+Advancing game to time 560.95
 ----------
 Advancing game to time 561.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 561.1
+----------
+Advancing game to time 561.2
+----------
+Advancing game to time 561.3
+----------
+Advancing game to time 561.4
+----------
+Advancing game to time 561.45
+----------
+Advancing game to time 561.5
+----------
+Advancing game to time 561.6
+----------
+Advancing game to time 561.7
+----------
+Advancing game to time 561.8
+----------
+Advancing game to time 561.9
+----------
+Advancing game to time 561.95
 ----------
 Advancing game to time 562.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 ----------
-Advancing game to time 563.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 562.1
+----------
+Advancing game to time 562.2
 Awarded direct payment 3750 at time 562.2
 Recorded cash and eco values (21495.0,2000) at time 562.2
 Awarded direct payment 937.5 at time 562.2
 Recorded cash and eco values (22432.5,2000) at time 562.2
 ----------
+Advancing game to time 562.3
+----------
+Advancing game to time 562.4
+----------
+Advancing game to time 562.45
+----------
+Advancing game to time 562.5
+----------
+Advancing game to time 562.6
+----------
+Advancing game to time 562.7
+----------
+Advancing game to time 562.8
+----------
+Advancing game to time 562.9
+----------
+Advancing game to time 562.95
+----------
+Advancing game to time 563.0
+----------
+Advancing game to time 563.1
+----------
+Advancing game to time 563.2
+----------
+Advancing game to time 563.3
+----------
+Advancing game to time 563.4
+----------
+Advancing game to time 563.45
+----------
+Advancing game to time 563.5
+----------
+Advancing game to time 563.6
+----------
+Advancing game to time 563.7
+----------
+Advancing game to time 563.8
+----------
+Advancing game to time 563.9
+----------
+Advancing game to time 563.95
+----------
 Advancing game to time 564.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 564.0
 Recorded cash and eco values (24432.5,2000) at time 564.0
 ----------
-Advancing game to time 565.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 564.1
 ----------
-Advancing game to time 566.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+Advancing game to time 564.2
+----------
+Advancing game to time 564.3
+----------
+Advancing game to time 564.4
+----------
+Advancing game to time 564.45
+----------
+Advancing game to time 564.5
+----------
+Advancing game to time 564.6
+----------
+Advancing game to time 564.7
+----------
+Advancing game to time 564.8
+----------
+Advancing game to time 564.9
+----------
+Advancing game to time 564.95
+----------
+Advancing game to time 565.0
+----------
+Advancing game to time 565.1
+----------
+Advancing game to time 565.2
+----------
+Advancing game to time 565.3
+----------
+Advancing game to time 565.4
+----------
+Advancing game to time 565.45
+----------
+Advancing game to time 565.5
+----------
+Advancing game to time 565.6
 Awarded direct payment 937.5 at time 565.6
 Recorded cash and eco values (25370.0,2000) at time 565.6
 ----------
+Advancing game to time 565.7
+----------
+Advancing game to time 565.8
+----------
+Advancing game to time 565.9
+----------
+Advancing game to time 565.95
+----------
+Advancing game to time 566.0
+----------
+Advancing game to time 566.1
+----------
+Advancing game to time 566.2
+----------
+Advancing game to time 566.3
+----------
+Advancing game to time 566.4
+----------
+Advancing game to time 566.45
+----------
+Advancing game to time 566.5
+----------
+Advancing game to time 566.6
+----------
+Advancing game to time 566.7
+----------
+Advancing game to time 566.8
+----------
+Advancing game to time 566.9
+----------
+Advancing game to time 566.95
+----------
 Advancing game to time 567.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 567.1
+----------
+Advancing game to time 567.2
+----------
+Advancing game to time 567.3
+----------
+Advancing game to time 567.4
+----------
+Advancing game to time 567.45
+----------
+Advancing game to time 567.5
+----------
+Advancing game to time 567.6
+----------
+Advancing game to time 567.7
+----------
+Advancing game to time 567.8
+----------
+Advancing game to time 567.9
+----------
+Advancing game to time 567.95
 ----------
 Advancing game to time 568.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 568.1
+----------
+Advancing game to time 568.2
+----------
+Advancing game to time 568.3
+----------
+Advancing game to time 568.4
+----------
+Advancing game to time 568.45
+----------
+Advancing game to time 568.5
+----------
+Advancing game to time 568.6
+----------
+Advancing game to time 568.7
+----------
+Advancing game to time 568.8
+----------
+Advancing game to time 568.9
+----------
+Advancing game to time 568.95
 ----------
 Advancing game to time 569.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 569.1
+----------
+Advancing game to time 569.2
+----------
+Advancing game to time 569.3
+----------
+Advancing game to time 569.4
+----------
+Advancing game to time 569.45
+----------
+Advancing game to time 569.5
+----------
+Advancing game to time 569.6
+----------
+Advancing game to time 569.7
+----------
+Advancing game to time 569.8
+----------
+Advancing game to time 569.9
+----------
+Advancing game to time 569.95
 ----------
 Advancing game to time 570.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded eco payment 2000 at time 570.0
 Recorded cash and eco values (27370.0,2000) at time 570.0
 ----------
+Advancing game to time 570.1
+----------
+Advancing game to time 570.2
+----------
+Advancing game to time 570.3
+----------
+Advancing game to time 570.4
+----------
+Advancing game to time 570.45
+----------
+Advancing game to time 570.5
+----------
+Advancing game to time 570.6
+----------
+Advancing game to time 570.7
+----------
+Advancing game to time 570.8
+----------
+Advancing game to time 570.9
+----------
+Advancing game to time 570.95
+----------
 Advancing game to time 571.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 571.1
+----------
+Advancing game to time 571.2
+----------
+Advancing game to time 571.3
+----------
+Advancing game to time 571.4
+----------
+Advancing game to time 571.45
+----------
+Advancing game to time 571.5
+----------
+Advancing game to time 571.6
+----------
+Advancing game to time 571.7
+----------
+Advancing game to time 571.8
+----------
+Advancing game to time 571.9
+----------
+Advancing game to time 571.95
 ----------
 Advancing game to time 572.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
+----------
+Advancing game to time 572.1
+----------
+Advancing game to time 572.2
+----------
+Advancing game to time 572.3
+----------
+Advancing game to time 572.4
+----------
+Advancing game to time 572.45
+----------
+Advancing game to time 572.5
+----------
+Advancing game to time 572.6
+----------
+Advancing game to time 572.7
+----------
+Advancing game to time 572.8
+----------
+Advancing game to time 572.9
+----------
+Advancing game to time 572.95
 ----------
 Advancing game to time 573.0
-MESSAGE FROM GameState.advanceGameState: 
-Sorted the payouts in order of increasing time!
 Awarded direct payment 3750 at time 573.0
 Recorded cash and eco values (31120.0,2000) at time 573.0
 Awarded direct payment 937.5 at time 573.0
@@ -844,9 +2692,5 @@ Our new cash and eco is given by (32057.5,2000)
 
 MESSAGE FROM GameState.viewCashEcoHistory():
 Graphing history of cash and eco!
-Graphing round 25, which starts at time 495.0
-Graphing round 26, which starts at time 528.0
-Graphing round 27, which starts at time 552.0
-Graphing round 28, which starts at time 573.0
 Successfully generated graph! 
 

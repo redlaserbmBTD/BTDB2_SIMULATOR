@@ -515,10 +515,18 @@ class GameState():
             self.current_time = initial_state.get('Game Time')
             self.current_round = self.rounds.getRoundFromTime(self.current_time)
         
+        #~~~~~~~
+        #LOGGING
+        #~~~~~~~
+
         #As the Game State evolves, I'll use these arrays to track how cash and eco have changed over time
         self.time_states = [self.current_time]
         self.cash_states = [self.cash] 
         self.eco_states = [self.eco]
+
+        #These lists will hold tuples (time, message)
+        self.buy_messages = []
+        self.eco_messages = []
         
         #~~~~~~~~~~~~~~~
         #FARMS & ALT-ECO
@@ -631,28 +639,57 @@ class GameState():
         self.logs.append("The current game time is %s seconds"%(self.current_time))
         self.logs.append("The game round start times are given by %s \n"%(self.rounds.round_starts))
         
-    def viewCashEcoHistory(self):
+    def viewCashEcoHistory(self, dim = (15,18)):
         self.logs.append("MESSAGE FROM GameState.viewCashEcoHistory():")
         self.logs.append("Graphing history of cash and eco!")
+
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #Graph the cash and eco values over time
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
         fig, ax = plt.subplots(2)
-        fig.set_size_inches(6,9)
+        fig.set_size_inches(dim[0],dim[1])
         ax[0].plot(self.time_states, self.cash_states, label = "Cash")
         ax[1].plot(self.time_states, self.eco_states, label = "Eco")
         
-        #For easy reference, let's also mark on these graphs where the rounds start
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #Mark where the rounds start
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
         cash_min = min(self.cash_states)
         eco_min = min(self.eco_states)
         
         cash_max = max(self.cash_states)
         eco_max = max(self.eco_states)
+
         round_to_graph = self.rounds.getRoundFromTime(self.time_states[0]) + 1
         while self.rounds.round_starts[round_to_graph] <= self.time_states[-1]:
-            self.logs.append("Graphing round %s, which starts at time %s"%(str(round_to_graph),str(self.rounds.round_starts[round_to_graph])))
-            ax[0].plot([self.rounds.round_starts[round_to_graph], self.rounds.round_starts[round_to_graph]],[cash_min, cash_max], label = "R" + str(round_to_graph) + " start")
-            ax[1].plot([self.rounds.round_starts[round_to_graph], self.rounds.round_starts[round_to_graph]],[eco_min, eco_max], label = "R" + str(round_to_graph) + " start")
+            ax[0].plot([self.rounds.round_starts[round_to_graph], self.rounds.round_starts[round_to_graph]],[cash_min-1, cash_max+1], label = "R" + str(round_to_graph) + " start", linestyle='dotted', color = 'k')
+            ax[1].plot([self.rounds.round_starts[round_to_graph], self.rounds.round_starts[round_to_graph]],[eco_min-1, eco_max+1], label = "R" + str(round_to_graph) + " start", linestyle='dotted', color = 'k')
             round_to_graph += 1
-        
+
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #Mark where purchases in the buy queue and eco queue occurred
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        for message in self.buy_messages:
+            if message[2] == 'Eco':
+                line_color = 'b'
+            elif message[2] == 'Buy':
+                line_color = 'r'
+
+            if len(message[1]) > 30:
+                thing_to_say = message[1][0:22] + '...'
+            else:
+                thing_to_say = message[1]
+            
+            ax[0].plot([message[0],message[0]],[cash_min-1, cash_max+1], label = thing_to_say, linestyle = 'dashed', color = line_color)
+            ax[1].plot([message[0],message[0]],[eco_min-1, eco_max+1], label = thing_to_say, linestyle = 'dashed', color = line_color)
+
+        #~~~~~~~~~~~~~~~~
+        #Label the graphs
+        #~~~~~~~~~~~~~~~~
+
         ax[0].set_title("Cash vs Time")
         ax[1].set_title("Eco vs Time")
         
@@ -661,8 +698,8 @@ class GameState():
         
         ax[1].set_xlabel("Time (seconds)")
         
-        ax[0].legend(loc='upper left')
-        ax[1].legend(loc='upper left')
+        ax[0].legend(bbox_to_anchor = (1.02, 1))
+        ax[1].legend(bbox_to_anchor = (1.02, 1))
         
         fig.tight_layout()
         self.logs.append("Successfully generated graph! \n")
@@ -718,7 +755,7 @@ class GameState():
         self.send_name = send_name
         self.logs.append("Modified the eco send to %s"%(send_name))
         
-    def fastForward(self, target_time = None, target_round = None, interval = 1):
+    def fastForward(self, target_time = None, target_round = None, interval = 0.1):
         self.logs.append("MESSAGE FROM GameState.fastForward: ")
         
         # If a target round is given, compute the target_time from that
@@ -730,8 +767,8 @@ class GameState():
             target_time = self.current_time
         
         while self.current_time < target_time:
-            intermediate_time = min(np.floor((self.current_time + interval)/interval)*interval,target_time)
-            self.logs.append("Advancing game to time %s"%(intermediate_time))
+            intermediate_time = min(max(np.floor(self.current_time/interval + 1)*interval,self.current_time + interval/2),target_time)
+            self.logs.append("Advancing game to time %s"%(np.round(intermediate_time,3)))
             self.advanceGameState(target_time = intermediate_time)
             self.logs.append("----------")
         
@@ -741,7 +778,7 @@ class GameState():
         self.logs.append("Our new cash and eco is given by (%s,%s) \n"%(np.round(self.cash,2),np.round(self.eco,2)))
             
     def advanceGameState(self, target_time = None, target_round = None):
-        self.logs.append("MESSAGE FROM GameState.advanceGameState: ")
+        #self.logs.append("MESSAGE FROM GameState.advanceGameState: ")
         # Advance the game to the time target_time, 
         # computing the new money and eco amounts at target_time
         
@@ -757,6 +794,7 @@ class GameState():
         if eco_send_availability[self.send_name][1] < self.current_round:
             self.logs.append("Warning! The current eco send is no longer available! Switching to the zero send.")
             self.changeEcoSend('Zero')
+            self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
 
         # FAIL-SAFE: Prevent advanceGameState from using an eco send after it becomes unavailable by terminating early in this case.
         if eco_send_availability[self.send_name][1] + 1 <= self.rounds.getRoundFromTime(target_time):
@@ -969,7 +1007,7 @@ class GameState():
 
         #Now that we determined all the payouts, sort the payout times by the order they occur in
         payout_times = sorted(payout_times, key=lambda x: x['Time']) 
-        self.logs.append("Sorted the payouts in order of increasing time!")
+        #self.logs.append("Sorted the payouts in order of increasing time!")
         
         ##############################
         #PART 2: COMPUTATION OF WEALTH
@@ -1047,6 +1085,8 @@ class GameState():
                 try_to_buy = True
             elif payout_times[i]['Time'] < payout_times[i+1]['Time']:
                 try_to_buy = True
+
+            buy_message_list = []
             
             # DEVELOPER'S NOTE: It is possible for the queue to be empty but for there to still be purchases to be performed
             while len(self.buy_queue) > 0 and try_to_buy == True:
@@ -1102,10 +1142,12 @@ class GameState():
                     break
                 
                 #Next, let's compute the cash and loan values we would have if the transaction was performed
+                #We will also take the opportunity here to form the message that gets sent to the graph for viewCashEcoHistory
                 
+
                 self.valid_action_flag = True
                 for dict_obj in purchase_info:
-                    
+
                     # DEFENSE RELATED MATTERS
                     if dict_obj['Type'] == 'Buy Defense':
                         h_cash, h_loan = impact(h_cash, h_loan, -1*dict_obj['Cost'])
@@ -1202,7 +1244,7 @@ class GameState():
                         
                     #If at any point while performing these operations our cash becomes negative, then prevent the transaction from occurring:
                     if h_cash < 0:
-                        self.logs.append("WARNING! Reached negative cash while attempting the transaction!")
+                        #self.logs.append("WARNING! Reached negative cash while attempting the transaction!")
                         self.valid_action_flag = False
                         break
 
@@ -1221,17 +1263,19 @@ class GameState():
                 # Note at this point we have already checked whether we have reached the minimum time for the buy and also
                 # we have already checked whether the buy item is valid. We now just need to check whether we have enough money!
                 
-                self.logs.append("We have %s cash, but the next buy costs %s and has a buffer of %s and needs to be made on or after time %s!"%(np.round(self.cash,2), np.round(self.cash - h_cash,2),np.round(self.buffer,2), self.min_buy_time))
+                #self.logs.append("We have %s cash, but the next buy costs %s and has a buffer of %s and needs to be made on or after time %s!"%(np.round(self.cash,2), np.round(self.cash - h_cash,2),np.round(self.buffer,2), self.min_buy_time))
                 if h_cash >= self.buffer:
                     #If we do, perform the buy!
                     buy_time = payout['Time']
-                    self.logs.append("We have %s cash! That's enough to perform the next buy, which costs %s and has a buffer of %s!"%(np.round(self.cash,2), np.round(self.cash - h_cash,2),np.round(self.buffer,2)))
-                    
+                    self.logs.append("We have %s cash! We can do the next buy, which costs %s and has a buffer of %s and a minimum buy time of %s!"%(np.round(self.cash,2), np.round(self.cash - h_cash,2),np.round(self.buffer,2),np.round(self.min_buy_time,2)))
+
                     #Make the adjustments to the cash and loan amounts
                     self.cash = h_cash
                     self.loan = h_loan
                     
                     for dict_obj in purchase_info:
+
+                        buy_message_list.append(dict_obj['Message'])
                         
                         #FARM RELATED MATTERS
                         if dict_obj['Type'] == 'Buy Farm':
@@ -1411,9 +1455,15 @@ class GameState():
                     #self.logs.append("We can't afford the buy! Terminating the buy queue while loop")
                     break
             
+            #...so that players can see where in the graphs their purchases are occuring
+            if len(buy_message_list) > 0:
+                buy_message = ', '.join(buy_message_list)
+                self.buy_messages.append((buy_time, buy_message, 'Buy'))
+            
             #~~~~~~~~~~~~~~~~~~~~
             # Automated Purchases
             #~~~~~~~~~~~~~~~~~~~~
+
             # There is an option in the buy queue to trigger the action of repeatedly buying supply drops or druid farms.
             # These while loops process *those* transactions independently of the buy queue
             # WARNING: Unusual results will occur if you attempt to implement automated purchases of multiple alt eco's at the same time.
@@ -1476,6 +1526,7 @@ class GameState():
         #Update the eco send, if necessary
         if len(self.eco_queue) > 0 and target_time >= self.eco_queue[0][0]:
             self.changeEcoSend(self.eco_queue[0][1])
+            self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
             self.eco_queue.pop(0)
         
         #self.logs.append("Advanced game state to round " + str(self.current_round))
@@ -1546,7 +1597,8 @@ def buyFarm(buffer = 0, min_buy_time = 0):
     return {
         'Type': 'Buy Farm',
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Buy Farm'
     }
 
 def upgradeFarm(index, path, buffer = 0, min_buy_time = 0):
@@ -1555,7 +1607,8 @@ def upgradeFarm(index, path, buffer = 0, min_buy_time = 0):
         'Index': index,
         'Path': path,
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Upgrade farm %s at path %s'%(index, path) 
     }
 
 def sellFarm(index, min_buy_time = 0):
@@ -1563,29 +1616,33 @@ def sellFarm(index, min_buy_time = 0):
     return {
         'Type': 'Sell Farm',
         'Index': index,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Sell farm %s'%(index)
     }
 
-def buyDefense(cost, buffer = 0, min_buy_time = 0):
+def buyDefense(cost, buffer = 0, min_buy_time = 0, message = 'Buy Defense'):
     return {
         'Type': 'Buy Defense',
         'Cost': cost,
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': message
     }
 
 def withdrawBank(index, min_buy_time = 0):
     return {
         'Type': 'Withdraw Bank',
         'Index': index,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Withdraw from farm %s'%(index)
     }
 
 def activateIMF(index, min_buy_time = 0):
     return {
         'Type': 'Activate IMF',
         'Index': index,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Take out loan from farm %s'%(index)
     }
 
 # WARNING: This function is for declaring farms in the initial game state. 
@@ -1605,7 +1662,8 @@ def buyBoatFarm(buffer = 0, min_buy_time = 0):
     return {
         'Type': 'Buy Boat Farm',
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Buy boat farm'
     }
 
 def upgradeBoatFarm(index, buffer = 0, min_buy_time = 0):
@@ -1613,7 +1671,8 @@ def upgradeBoatFarm(index, buffer = 0, min_buy_time = 0):
         'Type': 'Upgrade Boat Farm',
         'Index': index,
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Upgrade boat farm at index %s'%(index)
     }
 
 def sellBoatFarm(index, min_buy_time = 0):
@@ -1621,7 +1680,8 @@ def sellBoatFarm(index, min_buy_time = 0):
     return {
         'Type': 'Sell Boat Farm',
         'Index': index,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Sell boat farm %s'%(index)
     }
 
 def initBoatFarm(purchase_time = None, upgrade = 3):
@@ -1638,7 +1698,8 @@ def buyDruidFarm(buffer = 0, min_buy_time = 0):
     return {
         'Type': 'Buy Druid Farm',
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Buy druid farm'
     }
 
 def buySOTF(index, buffer = 0, min_buy_time = 0):
@@ -1646,7 +1707,8 @@ def buySOTF(index, buffer = 0, min_buy_time = 0):
         'Type': 'Buy Spirit of the Forest',
         'Index': index, 
         'Buffer': buffer, 
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Upgrade druid farm %s to SOTF'%(index)
     }
 
 def sellDruidFarm(index, buffer = 0, min_buy_time = 0):
@@ -1654,7 +1716,8 @@ def sellDruidFarm(index, buffer = 0, min_buy_time = 0):
         'Type': 'Sell Druid Farm',
         'Index': index,
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Sell druid farm %s'%(index)
     }
 
 def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), buffer = 0):
@@ -1662,14 +1725,16 @@ def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), buffe
         'Type': 'Repeatedly Buy Druid Farms',
         'Minimum Buy Time': min_buy_time,
         'Maximum Buy Time': max_buy_time,
-        'Buffer': buffer
+        'Buffer': buffer,
+        'Message': 'Trigger repeated druid farm buys until time %s'%(max_buy_time)
     }
 
 def useSOTF(min_buy_time = 0):
     #Look, I know this is confusing, but minimum buy time really is the minimum time that we use SOTF in this case!
     return {
         'Type': 'Use Spirit of the Forest',
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Use SOTF active'
     }
 
 # WARNING: This function is for declaring druid farms in the initial game state. 
@@ -1689,7 +1754,8 @@ def buySupplyDrop(buffer = 0, min_buy_time = 0):
     return {
         'Type': 'Buy Supply Drop',
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Buy supply drop'
     }
 
 def buyEliteSniper(index, buffer = 0, min_buy_time = 0):
@@ -1697,7 +1763,8 @@ def buyEliteSniper(index, buffer = 0, min_buy_time = 0):
         'Type': 'Buy Elite Sniper',
         'Index': index,
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Upgrade supply drop %s to e-sniper'%(index)
     }
 
 def sellSupplyDrop(index, buffer = 0, min_buy_time = 0):
@@ -1705,7 +1772,8 @@ def sellSupplyDrop(index, buffer = 0, min_buy_time = 0):
         'Type': 'Sell Supply Drop',
         'Index': index,
         'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Sell supply drop %s'%(index)
     }
 
 def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), buffer = 0):
@@ -1713,7 +1781,8 @@ def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), buff
         'Type': 'Repeatedly Buy Supply Drops',
         'Minimum Buy Time': min_buy_time,
         'Maximum Buy Time': max_buy_time,
-        'Buffer': buffer
+        'Buffer': buffer,
+        'Message': 'Trigger repeated supply drop buys until time %s'%(max_buy_time)
     }
 
 # WARNING: This function is for declaring supply drops in the initial game state. 
