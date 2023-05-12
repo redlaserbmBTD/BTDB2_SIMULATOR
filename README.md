@@ -24,10 +24,10 @@ Users unfamiliar with coding who just need essential functionality should use th
 
 # Update Log
 - (May 12, 2023 - v0.9.2) 
-   - Graphs from GameState.viewCashEcoHistory() are now more informative.
-   - GameState.viewCashEcoHistory(dim=(w,h)) lets you set the width and height of the graphs
-   - Fixed a bug which would cause the code to get stuck in an infinite loop if Game.fastForward() if the argument interval was set to a small number.
-   - Game.fastForward() now by default has interval = 0.1. This will lead to sharper graphs and surprisngly does not appear to slow down the code much.
+   - Graphs from `GameState.viewCashEcoHistory()` are now more informative.
+   - `GameState.viewCashEcoHistory(dim=(w,h))` lets you set the width and height of the graphs.
+   - Fixed a bug which would cause the code to get stuck in an infinite loop if `GameState.fastForward()` if the argument interval was set to a small number.
+   - `GameState.fastForward()` now by default uses `interval = 0.1`. This will lead to sharper graphs and surprisngly does not appear to slow down the code much.
 - (May 11, 2023 - v0.9.1) 
    - Added druid farm support. Currently untested!
 
