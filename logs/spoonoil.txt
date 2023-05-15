@@ -2,7 +2,7 @@ MESSAGE FROM GameState.__init__():
 Initialized Game State!
 The current game round is 0
 The current game time is 0.0 seconds
-The game round start times are given by [0, 6, 34, 64, 96, 136, 177, 209, 248, 276, 309, 330, 354, 383, 409, 431, 465, 503, 549, 581, 625, 659, 685, 722, 744, 813, 870, 919, 959, 999, 1057, 1127] 
+The game round start times are given by [0, 6.0, 34.0, 64.0, 96.0, 136.0, 177.0, 209.0, 248.0, 276.0, 309.0, 330.0, 354.0, 383.0, 409.0, 431.0, 465.0, 503.0, 549.0, 581.0, 625.0, 659.0, 685.0, 722.0, 744.0, 813.0, 870.0, 919.0, 959.0, 999.0, 1057.0, 1127.0] 
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 0.1
@@ -6718,7 +6718,7 @@ Recorded cash and eco values (10097.1,824.15) at time 309.0
 ----------
 Advanced game state to round 10
 The current time is 309.0
-The next round starts at time 330
+The next round starts at time 330.0
 Our new cash and eco is given by (10097.1,824.15) 
 
 MESSAGE FROM GameState.viewCashEcoHistory():

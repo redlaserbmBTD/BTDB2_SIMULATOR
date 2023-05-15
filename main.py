@@ -389,17 +389,40 @@ boat_sell_values = [1960, 6560, 21760]
 
 # %%
 class Rounds():
-    def __init__(self, stall_factor):
-        #Compute the round times given the stall factor
-        self.logs = []
-        self.stall_factor = stall_factor
+    def __init__(self, stall_factor_info):
         
+        #Logging system
+        self.logs = []
+
+        #FAIL-SAFES
+
+        #Backwards compatability with the old system:
+        if type(stall_factor_info) == float:
+            stall_factor_info = [(0,stall_factor_info)]
+
+        #If the users fails to specify stall factor info for round 0...
+        if stall_factor_info[0][0] > 0:
+            stall_factor_info[0] = (0,stall_factor_info[0][1])
+
+        #Compute the round times given the stall factor info
         val = 0
         self.round_starts = [0]
+
+        ind_of_interest = 0
+        stall_factor = stall_factor_info[ind_of_interest][1]
         for i in range(len(nat_send_lens)):
-            round_len = nat_send_lens[i] + (1-self.stall_factor)*4 + self.stall_factor*max_stall_times[i]
+
+            #If we have reached a round where the stall factor changes, change the stall factor
+            if len(stall_factor_info) >= ind_of_interest + 2 and i >= stall_factor_info[ind_of_interest+1][0]:
+                ind_of_interest += 1
+                stall_factor = stall_factor_info[ind_of_interest][1]
+                #print("Changed stall factor to %s"%(stall_factor))
+
+            #Determine the round length based on the current stall factor
+            round_len = nat_send_lens[i] + (1-stall_factor)*4 + stall_factor*max_stall_times[i]
             val += round_len
             self.round_starts.append(val)
+            
             
     def getRoundFromTime(self, time):
         ind = 0
@@ -754,9 +777,18 @@ class GameState():
         self.eco_gain = eco_send_info[send_name][1]
         self.send_name = send_name
         self.logs.append("Modified the eco send to %s"%(send_name))
+
+    def showWarnings(self,warnings):
+        for index in warnings:
+            print(self.logs[index])
         
     def fastForward(self, target_time = None, target_round = None, interval = 0.1):
         self.logs.append("MESSAGE FROM GameState.fastForward: ")
+
+        #Collect a list of indices corresponding to log messages the player should know about.
+        #Useful for when the user inputs incorrect data or gets unexpected results.
+        self.warnings = []
+        self.valid_action_flag = True #To prevent the code from repeatedly trying to perform a transaction that obviously can't happen
         
         # If a target round is given, compute the target_time from that
         if target_round is not None:
@@ -771,6 +803,9 @@ class GameState():
             self.logs.append("Advancing game to time %s"%(np.round(intermediate_time,3)))
             self.advanceGameState(target_time = intermediate_time)
             self.logs.append("----------")
+
+        #FOR SPOONOIL: Show warning messages for fail-safes triggered during simulation
+        self.showWarnings(self.warnings)
         
         self.logs.append("Advanced game state to round " + str(self.current_round))
         self.logs.append("The current time is " + str(self.current_time))
@@ -792,7 +827,8 @@ class GameState():
 
         # FAIL-SAFE: Check whether the current eco send is valid. If it is not, change the eco send to zero.
         if eco_send_availability[self.send_name][1] < self.current_round:
-            self.logs.append("Warning! The current eco send is no longer available! Switching to the zero send.")
+            self.logs.append("Warning! The eco send %s is no longer available! Switching to the zero send."%(self.send_name))
+            self.warnings.append(len(self.logs) - 1)
             self.changeEcoSend('Zero')
             self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
 
@@ -804,6 +840,7 @@ class GameState():
         # FAIL-SAFE: Only try to update if we are trying to go into the future. Do NOT try to go back in time!
         if target_time <= self.current_time:
             self.logs.append("Warning! The target time is in the past! Terminating advanceGameState()")
+            self.warnings.append(len(self.logs) - 1)
             return None
         
         ############################################
@@ -1088,8 +1125,8 @@ class GameState():
 
             buy_message_list = []
             
-            # DEVELOPER'S NOTE: It is possible for the queue to be empty but for there to still be purchases to be performed
-            while len(self.buy_queue) > 0 and try_to_buy == True:
+            # DEVELOPER'S NOTE: It is possible for the queue to be empty but for there to still be purchases to be performed (via automated purchases)
+            while len(self.buy_queue) > 0 and try_to_buy == True and self.valid_action_flag == True:
                 
                 # To begin, pull out the first item in the buy queue and determine the hypothetical cash and loan amounts 
                 # if this transaction was performed, as well as the minimum buy time for the transaction.
@@ -1122,7 +1159,9 @@ class GameState():
                                 self.min_buy_time = farm.min_use_time
                             elif farm.min_use_time is None:
                                 #If the farm doesn't have a min_use_time designated, it can't be an IMF farm!
-                                self.min_buy_time = float('inf')
+                                self.logs.append("Warning! Buy queue entry includes attempt to take out a loan from a farm that is not an IMF Loan! Aborting buy queue!")
+                                self.warnings.append(len(self.logs)-1)
+                                self.valid_action_flag = False
                                 break
                         
                         #If the dict_obj is a SOTF use, force self.min_buy_time to be at least be the self.sotf_min_use_time
@@ -1131,7 +1170,9 @@ class GameState():
                                 self.min_buy_time = self.sotf_min_use_time
                             elif self.sotf_min_use_time is None:
                                 #Do not attempt to use SOTF if we don't have SOTF
-                                self.min_buy_time = float('inf')
+                                self.logs.append("Warning! Buy queue entry includes attempt to use Spirit of the Forest when it is not in play! Aborting buy queue!")
+                                self.warnings.append(len(self.logs)-1)
+                                self.valid_action_flag = False
                                 break
                         
                     self.logs.append("Determined the minimum buy time of the next purchase to be %s"%(self.min_buy_time))
@@ -1144,8 +1185,6 @@ class GameState():
                 #Next, let's compute the cash and loan values we would have if the transaction was performed
                 #We will also take the opportunity here to form the message that gets sent to the graph for viewCashEcoHistory
                 
-
-                self.valid_action_flag = True
                 for dict_obj in purchase_info:
 
                     # DEFENSE RELATED MATTERS
@@ -1161,7 +1200,8 @@ class GameState():
                         farm = self.farms[ind]
                         #The following code prevents from the player from having multiple T5's in play
                         if farm.upgrades[path]+1 == 5 and self.T5_exists[path] == True:
-                            self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed!")
+                            self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
                             self.valid_action_flag = False
                             break
                         h_cash, h_loan = impact(h_cash, h_loan, -1*farm_upgrades_costs[path][farm.upgrades[path]])
@@ -1175,7 +1215,8 @@ class GameState():
                         ind = dict_obj['Index']
                         farm = self.farms[ind]
                         if farm.upgrades[1] < 3:
-                            self.logs.append("WARNING! Tried to Withdraw from a farm that is not a bank!")
+                            self.logs.append("WARNING! Tried to Withdraw from a farm that is not a bank! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
                             self.valid_action_flag = False
                             break
                         
@@ -1186,7 +1227,8 @@ class GameState():
                         #If it isn't, set a flag to False and break the loop.
                         #DEVELOPER'S NOTE: A farm that has a min_use_time is not necessarily an IMF loan, it could also be an Monkeyopolis
                         if farm.upgrades[1] != 4:
-                            self.logs.append("WARNING! Tried to take out a loan from a farm that is not an IMF!")
+                            self.logs.append("WARNING! Tried to take out a loan from a farm that is not an IMF! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
                             self.valid_action_flag = False
                             break
                             
@@ -1205,7 +1247,8 @@ class GameState():
                         boat_farm = self.boat_farms[ind]
                         #The following code prevents from the player from having multiple Trade Empires in play
                         if boat_farm['Upgrade']+1 == 5 and self.Tempire_exists == True:
-                            self.logs.append("WARNING! Tried to purchase a Trade Empire when one already exists!")
+                            self.logs.append("WARNING! Tried to purchase a Trade Empire when one already exists! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
                             self.valid_action_flag = False
                             break
                         upgrade_cost = boat_upgrades_costs[boat_farm['Upgrade']-3]
@@ -1219,10 +1262,15 @@ class GameState():
                     elif dict_obj['Type'] == 'Buy Druid Farm':
                         h_cash, h_loan = impact(h_cash, h_loan, -4775)
                     elif dict_obj['Type'] == 'Sell Druid Farm':
-                        h_cash, h_loan = impact(h_cash, h_loan, 3342.5)
+                        if dict_obj['Index'] == self.sotf:
+                            h_cash, h_loan = impact(h_cash, h_loan, 27842.5)
+                        else:
+                            h_cash, h_loan = impact(h_cash, h_loan, 3342.5)
                     elif dict_obj['Type'] == 'Buy Spirit of the Forest':
                         #WARNING: There can only be one sotf at a time!
                         if self.sotf is not None:
+                            self.logs.append("WARNING! Tried to purchase a Spirit of the Forest when one already exists! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
                             self.valid_action_flag = False
                             break
                         h_cash, h_loan = impact(h_cash, h_loan, -35000)
@@ -1234,10 +1282,15 @@ class GameState():
                     elif dict_obj['Type'] == 'Buy Supply Drop':
                         h_cash, h_loan = impact(h_cash, h_loan, -9850)
                     elif dict_obj['Type'] == 'Sell Supply Drop':
-                        h_cash, h_loan = impact(h_cash, h_loan, 6895)
+                        if dict_obj['Index'] == self.elite_sniper:
+                            h_cash, h_loan = impact(h_cash, h_loan, 16695)
+                        else:
+                            h_cash, h_loan = impact(h_cash, h_loan, 6895)
                     elif dict_obj['Type'] == 'Buy Elite Sniper':
                         #WARNING: There can only be one e-sniper at a time!
                         if self.elite_sniper is not None:
+                            self.logs.append("WARNING! Tried to purchase an Elite Sniper when one already exists! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
                             self.valid_action_flag = False
                             break
                         h_cash, h_loan = impact(h_cash, h_loan, -14000)
@@ -1245,7 +1298,6 @@ class GameState():
                     #If at any point while performing these operations our cash becomes negative, then prevent the transaction from occurring:
                     if h_cash < 0:
                         #self.logs.append("WARNING! Reached negative cash while attempting the transaction!")
-                        self.valid_action_flag = False
                         break
 
                     #Read the buffer associated with the buy if any
