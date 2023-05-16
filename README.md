@@ -23,6 +23,11 @@ Users unfamiliar with coding who just need essential functionality should use th
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
+- (May 16, 2023 - v0.9.3)
+   - New syntax for initializing `Rounds()` class which allows the user specify rounds with various levels of stall throughout the game simulation
+   - Fixed an issue which would cause the simulation to incorrectly compute the money gained from selling Elite Sniper and Spirit of the Forest
+   - The simulation now prints logs messages of importance to the player when a safe-guard is triggered.
+   - When the code terminates the buy queue as a consequence of attempting to perform a disallowed action (such as buying multiple T5's), the code now abandons running the buy queue entirely, speeding up simulation time in this edge case.
 - (May 12, 2023 - v0.9.2) 
    - Graphs from `GameState.viewCashEcoHistory()` are now more informative.
    - `GameState.viewCashEcoHistory(dim=(w,h))` lets you set the width and height of the graphs.
@@ -33,12 +38,6 @@ Users unfamiliar with coding who just need essential functionality should use th
 
 # Feature Requests
 
-- More robust data visualization, including...
-   - When buys, upgrades, and sells happen
-   - When eco changes
-   - Better round lines display
-   - Exact data at the end of the graph (or otherwise formally outputted)
-- Ability to change the stall factor mid simulation
 - Robust logging when comparing different strategies
 - Optimization of the buy queue to prevent redundant computations
 - Heli alt-eco
