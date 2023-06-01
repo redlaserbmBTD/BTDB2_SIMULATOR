@@ -68,7 +68,7 @@ eco_send_info = {
     'Grouped Leads': (1500,45),
     'Spaced Rainbows': (1199.8,51.42),
     'Grouped Rainbows': (3750,90),
-    'Spaced Ceramics': (1000,26.667),
+    'Spaced Ceramics': (1200,45),
     'Grouped Ceramics': (10000,45)
 }
 
@@ -1585,8 +1585,6 @@ class GameState():
         #self.logs.append("The current time is " + str(self.current_time))
         #self.logs.append("The next round starts at time " + str(self.rounds.round_starts[self.current_round+1]))
         #self.logs.append("Our new cash and eco is given by (%s,%s) \n"%(np.round(self.cash,2),np.round(self.eco,2)))
-        
-        
 
 # %% [markdown]
 # # The Monkey Farm Class
