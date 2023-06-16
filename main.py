@@ -1041,6 +1041,13 @@ class GameState():
                 payout_times.append(payout_entry)
                 self.inc += 1
 
+        #This special payout prevents the code from waiting possibly several seconds to carry out purchases in the buy queue that can obviously be afforded
+        payout_entry = {
+            'Time': target_time,
+            'Payout Type': 'Direct',
+            'Payout': 0
+        }
+        payout_times.append(payout_entry)
 
         #Now that we determined all the payouts, sort the payout times by the order they occur in
         payout_times = sorted(payout_times, key=lambda x: x['Time']) 
@@ -1297,7 +1304,7 @@ class GameState():
                         
                     #If at any point while performing these operations our cash becomes negative, then prevent the transaction from occurring:
                     if h_cash < 0:
-                        #self.logs.append("WARNING! Reached negative cash while attempting the transaction!")
+                        self.logs.append("WARNING! Reached negative cash while attempting the transaction!")
                         break
 
                     #Read the buffer associated with the buy if any
