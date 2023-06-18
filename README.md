@@ -14,6 +14,74 @@ Users unfamiliar with coding who just need essential functionality should use th
 3. One of the programs bundled with the Anaconda distribution is jupyter notebook. Launch jupyter notebook, navigate to where you cloned the repository, and open examples.ipynb
 4. You are now ready to operate the code!
 
+## Running a simulation in code
+
+To begin running a simulation, first start by initilizaing the rounds class.
+
+```python
+rounds = Rounds(0.0)
+```
+The number inside is the *stall factor* of the game. This number may vary from 0 to 1, and a higher number means longer rounds. Next, if you have any farms presently in play, go ahead and declare those like so:
+
+```python
+farms = {
+    0: initFarm(0, upgrades = [4,2,0]), 
+    1: initFarm(0, upgrades = [2,0,4]),
+    2: initFarm(rounds.getTimeFromRound(19.999), upgrades = [2,0,4])
+}
+```
+The indexes of the farm dictionary should nonnegative integers. The first argument of `InitFarm` specifies the purchase time of the farm. Our next step is to initialize the eco and buy queues, which determine our strategy for eco'ing and the purchases we intend to make over the course of the simuation. For 
+
+```python
+buy_queue = [
+    
+    #Sell into MWS
+    [sellFarm(0), sellFarm(1), upgradeFarm(2,2)], 
+    
+    #Buy a 420 Farm
+    [buyFarm()],
+    [upgradeFarm(3,0)],
+    [upgradeFarm(3,0)],
+    [upgradeFarm(3,0)],
+    [upgradeFarm(3,1)],
+    [upgradeFarm(3,1)],
+    [upgradeFarm(3,0)],
+    
+    #Buy another 420 Farm
+    [buyFarm()],
+    [upgradeFarm(4,0)],
+    [upgradeFarm(4,0)],
+    [upgradeFarm(4,0)],
+    [upgradeFarm(4,1)],
+    [upgradeFarm(4,1)],
+    [upgradeFarm(4,0)],
+    
+    #Sell into BC
+    [sellFarm(2),upgradeFarm(3,0)]
+]
+```
+The buy queue is a list of lists. That is, each item in the buy queue is a list which specifies a set of transactions to perform simultaneously. In those cases this list will only contain one element, but there are moments where it is useful to specify multiple at once. Finally, let's collect all components of our initial game state into a dictionary:
+
+```python
+initial_state_game = {
+    'Cash': 0,
+    'Eco': 2000,
+    'Eco Send': 'Zero',
+    'Rounds': rounds,
+    'Game Round': 24.5,
+    'Farms': farms,
+    'Buy Queue': buy_queue
+}
+```
+To simulate, we do something like the following:
+```python
+game_state = GameState(initial_state_game)
+game_state.fastForward(target_round = 28)
+game_state.viewCashEcoHistory()
+print("Current Cash and Eco: (%s,%s)"%(np.round(game_state.cash,0),np.round(game_state.eco,0)))
+```
+The 2nd last class method displays a graph of eco and cash over time, along with a labellings of when rounds start, changes in eco are made, and when purchases are made.
+
 # Code Features
 
 1. **Simultaneous simulation of eco, farms, and alt-eco:** When given an eco send to use and some arrangement of farms and alt-eco, the simulator accurately tracks the progression of the player's cash and eco over time. The results of the simulator are nearly true to the game.
