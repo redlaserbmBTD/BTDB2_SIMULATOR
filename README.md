@@ -127,6 +127,10 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 
 # Feature Requests
 
+- (High priority) Restructure the code:
+   - While usage of the code for simulation purposes is relatively easy, reading the code to understand how it does what it does is *not*. The goal is to clean up the code so that potential collaborators may be more inclined to contribute.
+- (High priority) Implementation of more accurate eco system:
+   - This simulator currently makes the simpifying assumption that eco works as a continuous stream of income generation rather than how it actually functions in the game, which is as discrete "packs" which award eco in chunks. This simplifying assumption causes the sim to underestimate eco values compared to actual game scenarios.
 - Robust logging when comparing different strategies
 - Optimization of the buy queue to prevent redundant computations
 - Heli alt-eco
