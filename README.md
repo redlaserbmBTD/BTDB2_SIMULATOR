@@ -60,7 +60,7 @@ buy_queue = [
     [sellFarm(2),upgradeFarm(3,0)]
 ]
 ```
-The buy queue is a list of lists. That is, each item in the buy queue is a list which specifies a set of transactions to perform simultaneously. In those cases this list will only contain one element, but there are moments where it is useful to specify multiple at once. Finally, let's collect all components of our initial game state into a dictionary:
+The buy queue is a list of lists. That is, each item in the buy queue is a list which specifies a set of transactions to perform simultaneously. In most cases this list will only contain one element, but there are moments where it is useful to specify multiple at once --- consider for example, selling one farm and immediately buying an upgrade on another farm with the money. --- Finally, let's collect all components of our initial game state into a dictionary:
 
 ```python
 initial_state_game = {
