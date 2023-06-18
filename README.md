@@ -108,10 +108,11 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
+
 - (June 16, 2023 - v0.9.5)
    - Remedied an issue where the eco simualator would sometimes ignore items in the buy queue for several seconds. The eco simulator now checks the buy queue at the minimum every `interval` seconds.
 - (June 1, 2023 - v0.9.4)
-   - Various updates to keep the game in line with v1.10.3 of the game
+   - Various updates to keep the game in line with v1.10.3 of the game (vTri)
 - (May 16, 2023 - v0.9.3)
    - New syntax for initializing `Rounds()` class which allows the user specify rounds with various levels of stall throughout the game simulation
    - Fixed an issue which would cause the simulation to incorrectly compute the money gained from selling Elite Sniper and Spirit of the Forest
