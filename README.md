@@ -80,7 +80,24 @@ game_state.fastForward(target_round = 28)
 game_state.viewCashEcoHistory()
 print("Current Cash and Eco: (%s,%s)"%(np.round(game_state.cash,0),np.round(game_state.eco,0)))
 ```
-The 2nd last class method displays a graph of eco and cash over time, along with a labellings of when rounds start, changes in eco are made, and when purchases are made.
+The 2nd to last line displays a graph of eco and cash over time, along with a labellings of when rounds start, changes in eco are made, and when purchases are made.
+
+## Advanced Sim Usage
+
+### Custom Round Times
+
+When using the sim with a flat stall factor applied to all rounds, the sim may tend to undershoot the duration of earlier rounds and overshoot the duration of later ones. There are two ways to work around this:
+1. Set different stall factors for different points in the game
+2. Set round times manually.
+
+Method 1 is quick and dirty, while method 2 is slow but precise. To do method 1, initialize the rounds like so
+
+```python
+Rounds([(0,0),(6,0.5),(11,0.3)])
+```
+Here, the rounds class is being initialized with a list of tuples, and each tuple `(round,stall_factor)` instructs the code to change the stall factor to `stall_factor` after reaching round `round`.
+
+To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0)`, modify the list `rounds.round_starts`. The ith index of this list determines what time round i begins on.
 
 # Code Features
 
