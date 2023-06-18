@@ -30,7 +30,7 @@ farms = {
     2: initFarm(rounds.getTimeFromRound(19.999), upgrades = [2,0,4])
 }
 ```
-The indexes of the farm dictionary should nonnegative integers. The first argument of `InitFarm` specifies the purchase time of the farm. Our next step is to initialize the eco and buy queues, which determine our strategy for eco'ing and the purchases we intend to make over the course of the simuation. For 
+The indexes of the farm dictionary should nonnegative integers. The first argument of `InitFarm` specifies the purchase time of the farm. Our next step is to initialize the eco and buy queues, which determine our strategy for eco'ing and the purchases we intend to make over the course of the simuation. 
 
 ```python
 buy_queue = [
