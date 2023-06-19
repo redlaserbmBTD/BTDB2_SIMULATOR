@@ -112,6 +112,7 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
    - `main.ipynb` has been phased out. The "meat" of the code is now contained in `main.py`. Some portions of code previously in `main.py` have been moved to other files. Namely:
         - `farm_init.py` contains info on eco sends and farms. It also contains a function which automatically computes the sellback value of farms given their upgrade costs, which will save time in the future when NK inevitably rebalances farms.
         - `actions.py` contains a list of actions which may be fed into the buy queue when running the eco simulator. See the section "Operating the Code" for more details on this.
+   - Changes to farm data and round length data have been made to reflect the upcoming version 2.0 changes to the game. Eco changes have not been made because I anticipate modifying how the simulator handles eco so that it is more faithful to in-game behavior.
 - (June 16, 2023 - v0.9.5)
    - Remedied an issue where the eco simualator would sometimes ignore items in the buy queue for several seconds. The eco simulator now checks the buy queue at the minimum every `interval` seconds.
 - (June 1, 2023 - v0.9.4)
