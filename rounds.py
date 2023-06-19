@@ -43,20 +43,18 @@ class Rounds():
             #Determine the round length based on the current stall factor.
             round_len = self.nat_send_lens[i] + (1-stall_factor)*max_antistall_time + stall_factor*max_stall_times[i]
             val += round_len
-            self.round_starts.append(val)
-            
+            self.round_starts.append(val)            
             
     def getRoundFromTime(self, time):
         ind = 0
-        while self.round_starts[ind] <= time:
+        while self.round_starts[ind] <= time and ind < 50:
             ind += 1
         #self.logs.append("Mapped time %s to round %s"%(time,ind-1))
         return ind - 1
     
     def getTimeFromRound(self, round_val):
         frac_part = round_val - np.floor(round_val)
-        #The 30's are there to compensate for a limitation in round data. We could use some more involved data rn...
-        time = (1-frac_part)*self.round_starts[int(min(np.floor(round_val),30))] + frac_part*self.round_starts[int(min(np.ceil(round_val),30))]
+        time = (1-frac_part)*self.round_starts[int(min(np.floor(round_val),50))] + frac_part*self.round_starts[int(min(np.ceil(round_val),50))]
         #self.logs.append("Mapped round %s to time %s"%(round_val,time))
         return time
     
