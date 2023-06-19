@@ -5,6 +5,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import farm_init
 
 # %% [markdown]
 # ## TODO:
@@ -22,83 +23,10 @@ import matplotlib.pyplot as plt
 # 3. Selling power over time
 
 # %% [markdown]
-# ## Round Length Info
-
-# %% [markdown]
-# We get for each round the time it takes for naturals to send and also the maximum amount of time each round can be stalled beyond the last natural bloon appearing on screen. The minimum stall time for each round is 4 seconds.
-
-# %%
-filepath = r"nat_send_lengths.csv"
-file = pd.read_csv(filepath)
-nat_send_lens = list(file['Nat Send Len'])
-
-filepath = r"round_start_data.csv"
-file = pd.read_csv(filepath)
-round_starts_stall = list(file['Round Start (Stall)'])
-
-max_stall_times = []
-for i in range(len(round_starts_stall)-1):
-    max_stall_times.append((round_starts_stall[i+1] - round_starts_stall[i]) - nat_send_lens[i])
-
-# %% [markdown]
 # ## Eco Send Info
 
 # %%
 #The formatting of the tuples is (eco_cost, eco_gain)
-eco_send_info = {
-    'Zero': (0,0),
-    'Grouped Reds': (150,6.75),
-    'Spaced Blues': (60,3.2),
-    'Grouped Blues': (240,10),
-    'Spaced Greens': (93.96,4.698),
-    'Grouped Greens': (525,21),
-    'Spaced Yellows': (125.28,6.264),
-    'Grouped Yellows': (1000,40),
-    'Spaced Pinks': (186.667,9.333),
-    'Grouped Pinks': (1800,69),
-    'Spaced Whites': (214.2,10.71),
-    'Grouped Whites': (1300,52),
-    'Spaced Blacks': (264,12.8),
-    'Grouped Blacks': (1406.25,56.25),
-    'Spaced Purples': (262.5,12.375),
-    'Grouped Purples': (3943.35,99.441),
-    'Spaced Zebras': (600,27),
-    'Grouped Zebras': (3000,87.5),
-    'Spaced Leads': (180,8.4),
-    'Grouped Leads': (1500,45),
-    'Spaced Rainbows': (1199.8,51.42),
-    'Grouped Rainbows': (3750,90),
-    'Spaced Ceramics': (1200,45),
-    'Grouped Ceramics': (10000,45)
-}
-
-eco_send_availability = {
-    'Zero': (0,30),
-    'Grouped Reds': (1,10),
-    'Spaced Blues': (1,2),
-    'Grouped Blues': (3,10),
-    'Spaced Greens': (2,4),
-    'Grouped Greens': (5,16),
-    'Spaced Yellows': (3,6),
-    'Grouped Yellows': (7,19),
-    'Spaced Pinks': (4,8),
-    'Grouped Pinks': (9,30),
-    'Spaced Whites': (5,30),
-    'Grouped Whites': (10,21),
-    'Spaced Blacks': (6,9),
-    'Grouped Blacks': (10,30),
-    'Spaced Purples': (8,10),
-    'Grouped Purples': (11,30),
-    'Spaced Zebras': (9,10),
-    'Grouped Zebras': (11,30),
-    'Spaced Leads': (10,11),
-    'Grouped Leads': (12,30),
-    'Spaced Rainbows': (12,12),
-    'Grouped Rainbows': (13,30),
-    'Spaced Ceramics': (13,15),
-    'Grouped Ceramics': (16,30)
-    
-}
 
 # %% [markdown]
 # ## Monkey Farm Info
@@ -111,263 +39,13 @@ eco_send_availability = {
 # Unforunately, the recording of data necessary for farms is quite involved!
 
 # %%
-farm_upgrades_costs = [[550,550,2600,16000,73000],[200,700,5100,7500,45000],[250,200,2800,13000,46000]]
+farm_upgrades_costs = farm_init.farm_upgrades_costs
+farm_bank_capacity = farm_init.farm_bank_capacity
+farm_payout_values = farm_init.farm_payout_values
+farm_sell_values = farm_init.farm_sellback_values
 
-farm_bank_capacity = [0,0,0,14000,20000,30000]
-
-farm_sell_values = {
-    
-    #NOTE: Any farm of level xx2 or higher has 80% sellback value!
-    
-    #Base Farm
-    (0,0,0): 1000*0.7,
-    
-    ####################
-    #UNCROSSPATHED FARMS
-    ####################
-    
-    #Top path (No crosspath)
-    (1,0,0): (1000+550)*0.7,
-    (2,0,0): (1000+550+550)*0.7,
-    (3,0,0): (1000+550+550+2600)*0.7,
-    (4,0,0): (1000+550+550+2600+16000)*0.7,
-    (5,0,0): (1000+550+550+2600+16000+73000)*0.7,
-    
-    #Middle path (No crosspath)
-    (0,1,0): (1000+200)*0.7,
-    (0,2,0): (1000+200+700)*0.7,
-    (0,3,0): (1000+200+700+5100)*0.7,
-    (0,4,0): (1000+200+700+5100+7500)*0.7,
-    (0,5,0): (1000+200+700+5100+7500+45000)*0.7,
-    
-    #Bottom path (No crosspath)
-    (0,0,1): (1000+250)*0.7,
-    (0,0,2): (1000+250+200)*0.8,
-    (0,0,3): (1000+250+200+2800)*0.8,
-    (0,0,4): (1000+250+200+2800+13000)*0.8,
-    (0,0,5): (1000+250+200+2800+13000+46000)*0.8,
-    
-    ######################
-    #TOP CROSSPATHED FARMS
-    ######################
-    
-    #Middle path
-    (1,1,0): (1000+550+200)*0.7,
-    (1,2,0): (1000+550+200+700)*0.7,
-    (1,3,0): (1000+550+200+700+5100)*0.7,
-    (1,4,0): (1000+550+200+700+5100+7500)*0.7,
-    (1,5,0): (1000+550+200+700+5100+7500+45000)*0.7,
-    
-    (2,1,0): (1000+550+550+200)*0.7,
-    (2,2,0): (1000+550+550+200+700)*0.7,
-    (2,3,0): (1000+550+550+200+700+5100)*0.7,
-    (2,4,0): (1000+550+550+200+700+5100+7500)*0.7,
-    (2,5,0): (1000+550+550+200+700+5100+7500+45000)*0.7,
-    
-    #Bottom path
-    (1,0,1): (1000+550+250)*0.7,
-    (1,0,2): (1000+550+250+200)*0.8,
-    (1,0,3): (1000+550+250+200+2800)*0.8,
-    (1,0,4): (1000+550+250+200+2800+13000)*0.8,
-    (1,0,5): (1000+550+250+200+2800+13000+46000)*0.8,
-    
-    (2,0,1): (1000+550+550+250)*0.7,
-    (2,0,2): (1000+550+550+250+200)*0.8,
-    (2,0,3): (1000+550+550+250+200+2800)*0.8,
-    (2,0,4): (1000+550+550+250+200+2800+13000)*0.8,
-    (2,0,5): (1000+550+550+250+200+2800+13000+46000)*0.8,
-    
-    #########################
-    #MIDDLE CROSSPATHED FARMS
-    #########################
-    
-    #Top path
-    (1,1,0): (1000+200+550)*0.7,
-    (2,1,0): (1000+200+550+550)*0.7,
-    (3,1,0): (1000+200+550+550+2600)*0.7,
-    (4,1,0): (1000+200+550+550+2600+16000)*0.7,
-    (5,1,0): (1000+200+550+550+2600+16000+73000)*0.7,
-    
-    (1,2,0): (1000+200+700+550)*0.7,
-    (2,2,0): (1000+200+700+550+550)*0.7,
-    (3,2,0): (1000+200+700+550+550+2600)*0.7,
-    (4,2,0): (1000+200+700+550+550+2600+16000)*0.7,
-    (5,2,0): (1000+200+700+550+550+2600+16000+73000)*0.7,
-    
-    #Bottom path
-    (0,1,1): (1000+200+250)*0.7,
-    (0,1,2): (1000+200+250+200)*0.8,
-    (0,1,3): (1000+200+250+200+2800)*0.8,
-    (0,1,4): (1000+200+250+200+2800+13000)*0.8,
-    (0,1,5): (1000+200+250+200+2800+13000+46000)*0.8,
-    
-    (0,2,1): (1000+200+700+250)*0.7,
-    (0,2,2): (1000+200+700+250+200)*0.8,
-    (0,2,3): (1000+200+700+250+200+2800)*0.8,
-    (0,2,4): (1000+200+700+250+200+2800+13000)*0.8,
-    (0,2,5): (1000+200+700+250+200+2800+13000+46000)*0.8,
-    
-    #########################
-    #BOTTOM CROSSPATHED FARMS
-    #########################
-    
-    #Top path
-    (1,0,1): (1000+250+550)*0.7,
-    (2,0,1): (1000+250+550+550)*0.7,
-    (3,0,1): (1000+250+550+550+2600)*0.7,
-    (4,0,1): (1000+250+550+550+2600+16000)*0.7,
-    (5,0,1): (1000+250+550+550+2600+16000+73000)*0.7,
-    
-    (1,0,2): (1000+250+200+550)*0.8,
-    (2,0,2): (1000+250+200+550+550)*0.8,
-    (3,0,2): (1000+250+200+550+550+2600)*0.8,
-    (4,0,2): (1000+250+200+550+550+2600+16000)*0.8,
-    (5,0,2): (1000+250+200+550+550+2600+16000+73000)*0.8,
-    
-    #Middle path
-    (0,1,1): (1000+250+200)*0.7,
-    (0,2,1): (1000+250+200+700)*0.7,
-    (0,3,1): (1000+250+200+700+5100)*0.7,
-    (0,4,1): (1000+250+200+700+5100+7500)*0.7,
-    (0,5,1): (1000+250+200+700+5100+7500+45000)*0.7,
-    
-    (0,1,2): (1000+250+200+200)*0.8,
-    (0,2,2): (1000+250+200+200+700)*0.8,
-    (0,3,2): (1000+250+200+200+700+5100)*0.8,
-    (0,4,2): (1000+250+200+200+700+5100+7500)*0.8,
-    (0,5,2): (1000+250+200+200+700+5100+7500+45000)*0.8
-    
-}
-
-#In each tuple, the left entry is the payout value while the right entry is the payout frequency
-farm_payout_values = {
-    
-    #Remember, x3x and higher farms do not payout like other farms do!
-    #When a farm is upgraded to x3x, we will set its payments to (0,0)
-    #When a farm is upgraded to xx5, we will set self.MWS_bonus = True
-    #When a farm is upgraded to x2x or higher, its payments are multplied by 1.25!
-    
-    #Base Farm
-    (0,0,0): (40,3),
-    
-    ####################
-    #UNCROSSPATHED FARMS
-    ####################
-    
-    #Top path
-    (1,0,0): (40,5),
-    (2,0,0): (40,7),
-    (3,0,0): (40,16),
-    (4,0,0): (600,5),
-    (5,0,0): (3000,5),
-    
-    #Middle path
-    (0,1,0): (40,3),
-    (0,2,0): (50,3),
-    (0,3,0): (50,3),
-    (0,4,0): (50,3),
-    (0,5,0): (50,3),
-    
-    #Bottom path
-    (0,0,1): (40,3),
-    (0,0,2): (40,3),
-    (0,0,3): (40,14),
-    (0,0,4): (160,14),
-    (0,0,5): (160,14),
-    
-    ######################
-    #TOP CROSSPATHED FARMS
-    ######################
-    
-    #Middle path
-    (1,1,0): (40,5),
-    (1,2,0): (50,5),
-    (1,3,0): (50,5),
-    (1,4,0): (50,5),
-    (1,5,0): (50,5),
-    
-    (2,1,0): (40,7),
-    (2,2,0): (50,7),
-    (2,3,0): (50,7),
-    (2,4,0): (50,7),
-    (2,5,0): (50,7),
-    
-    #Bottom path
-    (1,0,1): (40,5),
-    (1,0,2): (40,5),
-    (1,0,3): (40,16),
-    (1,0,4): (160,16),
-    (1,0,5): (160,16),
-    
-    (2,0,1): (40,7),
-    (2,0,2): (40,7),
-    (2,0,3): (40,18),
-    (2,0,4): (160,18),
-    (2,0,5): (160,18),
-    
-    #########################
-    #MIDDLE CROSSPATHED FARMS
-    #########################
-    
-    #Top path
-    (1,1,0): (40,5),
-    (2,1,0): (40,7),
-    (3,1,0): (40,16),
-    (4,1,0): (600,5),
-    (5,1,0): (3000,5),
-    
-    (1,2,0): (50,5),
-    (2,2,0): (50,7),
-    (3,2,0): (50,16),
-    (4,2,0): (750,5),
-    (5,2,0): (3750,5),
-    
-    #Bottom path
-    (0,1,1): (40,3),
-    (0,1,2): (40,3),
-    (0,1,3): (40,14),
-    (0,1,4): (160,14),
-    (0,1,5): (160,14),
-    
-    (0,2,1): (50,3),
-    (0,2,2): (50,3),
-    (0,2,3): (50,14),
-    (0,2,4): (200,14),
-    (0,2,5): (200,14),
-    
-    #########################
-    #BOTTOM CROSSPATHED FARMS
-    #########################
-    
-    #This is admittedly redundant but I do this beacuse it makes the code easier to read/use
-    
-    #Top path
-    (1,0,1): (40,5),
-    (2,0,1): (40,7),
-    (3,0,1): (40,16),
-    (4,0,1): (600,5),
-    (5,0,1): (3000,5),
-    
-    (1,0,2): (40,5),
-    (2,0,2): (40,7),
-    (3,0,2): (40,16),
-    (4,0,2): (600,5),
-    (5,0,2): (3000,5),
-    
-    #Middle path
-    (0,1,1): (40,3),
-    (0,2,1): (50,3),
-    (0,3,1): (50,3),
-    (0,4,1): (50,3),
-    (0,5,1): (50,3),
-    
-    (0,1,2): (40,3),
-    (0,2,2): (50,3),
-    (0,3,2): (50,3),
-    (0,4,2): (50,3),
-    (0,5,2): (50,3),
-    
-}
+eco_send_info = farm_init.eco_send_info
+eco_send_availability = farm_init.eco_send_availability
 
 # %% [markdown]
 # # Boat Farm Info
@@ -378,89 +56,6 @@ farm_payout_values = {
 boat_upgrades_costs = [5400, 19000]
 boat_payout_values = [300, 1000, 3000]
 boat_sell_values = [1960, 6560, 21760]
-
-# %% [markdown]
-# # Rounds Class
-
-# %% [markdown]
-# The rounds class is designed to handle the conversion of round info to times and vice versa. That is, the class is capable of answering the following two questions:
-# 1. Given some time, what round of the game are we on, and how much of the round has elapsed?
-# 2. Given some round, how much time has elapsed in the game so far?
-
-# %%
-class Rounds():
-    def __init__(self, stall_factor_info):
-        
-        #Logging system
-        self.logs = []
-
-        #FAIL-SAFES
-
-        #Backwards compatability with the old system:
-        if type(stall_factor_info) == float:
-            stall_factor_info = [(0,stall_factor_info)]
-
-        #If the users fails to specify stall factor info for round 0...
-        if stall_factor_info[0][0] > 0:
-            stall_factor_info[0] = (0,stall_factor_info[0][1])
-
-        #Compute the round times given the stall factor info
-        val = 0
-        self.round_starts = [0]
-
-        ind_of_interest = 0
-        stall_factor = stall_factor_info[ind_of_interest][1]
-        for i in range(len(nat_send_lens)):
-
-            #If we have reached a round where the stall factor changes, change the stall factor
-            if len(stall_factor_info) >= ind_of_interest + 2 and i >= stall_factor_info[ind_of_interest+1][0]:
-                ind_of_interest += 1
-                stall_factor = stall_factor_info[ind_of_interest][1]
-                #print("Changed stall factor to %s"%(stall_factor))
-
-            #Determine the round length based on the current stall factor
-            round_len = nat_send_lens[i] + (1-stall_factor)*4 + stall_factor*max_stall_times[i]
-            val += round_len
-            self.round_starts.append(val)
-            
-            
-    def getRoundFromTime(self, time):
-        ind = 0
-        while self.round_starts[ind] <= time:
-            ind += 1
-        #self.logs.append("Mapped time %s to round %s"%(time,ind-1))
-        return ind - 1
-    
-    def getTimeFromRound(self, round_val):
-        frac_part = round_val - np.floor(round_val)
-        #The 30's are there to compensate for a limitation in round data. We could use some more involved data rn...
-        time = (1-frac_part)*self.round_starts[int(min(np.floor(round_val),30))] + frac_part*self.round_starts[int(min(np.ceil(round_val),30))]
-        #self.logs.append("Mapped round %s to time %s"%(round_val,time))
-        return time
-    
-    def changeStallFactor(self,stall_factor, current_time):
-        self.logs.append("MESSAGE FROM Rounds.changeStallFactor():")
-        self.logs.append("Changing the stall factor from %s to %s"%(self.stall_factor,stall_factor))
-        self.logs.append("The old round start times were %s"%(self.round_starts))
-        
-        game_round = self.rounds.getRoundFromTime(current_time)
-        
-        if current_time < self.round_starts[game_round] + nat_send_lens[game_round]:
-            #Yes, the current round should have its stall time modified
-            start_ind = game_round
-        else:
-            #No, the current round should not have its stall time modified
-            start_ind = game_round+1
-            val = self.round_starts[start_ind]
-        
-        for i in range(start_ind, len(nat_send_lens)-1):
-            #print("Trying index %s"%(str(i)))
-            val += nat_send_lens[i] + (1-stall_factor)*4 + stall_factor*max_stall_times[i]
-            self.round_starts[i+1] = val
-        
-        self.logs.append("The new round start times are %s"%(self.round_starts))
-    
-    
 
 # %% [markdown]
 # # Game State Class
@@ -483,7 +78,7 @@ def impact(cash, loan, amount):
         cash = cash + amount
     return cash, loan
 
-def writeLog(lines, filename = 'log', path = './logs/'):
+def writeLog(lines, filename = 'log', path = '../logs/'):
     with open(path + filename + '.txt', 'w') as f:
         for line in lines:
             f.write(line)
@@ -943,12 +538,12 @@ class GameState():
                         if self.current_round > farm_purchase_round:
                             #When the farm was purchased on a previous round
                             round_time = self.current_time - self.rounds.round_starts[self.current_round]
-                            loop_start = int(np.floor(farm.payout_frequency*round_time/nat_send_lens[self.current_round]) + 1)
+                            loop_start = int(np.floor(farm.payout_frequency*round_time/self.rounds.nat_send_lens[self.current_round]) + 1)
                             loop_end = farm.payout_frequency
                         else: #self.current_round == farm_purhcase_round
                             #When the farm was purchased on the same round as we are currently on
-                            loop_start = int(np.floor(farm.payout_frequency*(self.current_time - farm.purchase_time)/nat_send_lens[self.current_round]-1)+1)
-                            loop_end = int(np.ceil(farm.payout_frequency*(1 - (farm.purchase_time - self.rounds.round_starts[self.current_round])/nat_send_lens[self.current_round])-1)-1)
+                            loop_start = int(np.floor(farm.payout_frequency*(self.current_time - farm.purchase_time)/self.rounds.nat_send_lens[self.current_round]-1)+1)
+                            loop_end = int(np.ceil(farm.payout_frequency*(1 - (farm.purchase_time - self.rounds.round_starts[self.current_round])/self.rounds.nat_send_lens[self.current_round])-1)-1)
                     else:
                         loop_start = 0
                         loop_end = farm.payout_frequency
@@ -960,9 +555,9 @@ class GameState():
                         #Precompute the value i that this for loop should start at (as opposed to always starting at 0) to avoid redundant computations
                         #Farm payout rules are different for the round the farm is bought on versus subsequent rounds
                         if self.current_round + self.inc == farm_purchase_round:
-                            farm_time = farm.purchase_time + (i+1)*nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
+                            farm_time = farm.purchase_time + (i+1)*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
                         else:
-                            farm_time = self.rounds.round_starts[self.current_round + self.inc] + i*nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
+                            farm_time = self.rounds.round_starts[self.current_round + self.inc] + i*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
                         
                         #Check if the payment time occurs within our update window. If it does, add it to the payout times list
                         if farm_time <= target_time and farm_time > self.current_time:
@@ -1639,217 +1234,7 @@ class MonkeyFarm():
         if self.upgrades[1] >= 4:
             self.min_use_time = self.purchase_time + 20
 
-# %% [markdown]
-# # Functions For Simulation
 
-# %% [markdown]
-# To begin, we define "actions" that the player can perform in the simulation
-
-# %%
-##############
-# MONKEY FARMS
-##############
-
-def buyFarm(buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Farm',
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Buy Farm'
-    }
-
-def upgradeFarm(index, path, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Upgrade Farm',
-        'Index': index,
-        'Path': path,
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Upgrade farm %s at path %s'%(index, path) 
-    }
-
-def sellFarm(index, min_buy_time = 0):
-    #Look, I know this is confusing, but "min_buy_time" really is the minimum selling time in this case!
-    return {
-        'Type': 'Sell Farm',
-        'Index': index,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Sell farm %s'%(index)
-    }
-
-def buyDefense(cost, buffer = 0, min_buy_time = 0, message = 'Buy Defense'):
-    return {
-        'Type': 'Buy Defense',
-        'Cost': cost,
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': message
-    }
-
-def withdrawBank(index, min_buy_time = 0):
-    return {
-        'Type': 'Withdraw Bank',
-        'Index': index,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Withdraw from farm %s'%(index)
-    }
-
-def activateIMF(index, min_buy_time = 0):
-    return {
-        'Type': 'Activate IMF',
-        'Index': index,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Take out loan from farm %s'%(index)
-    }
-
-# WARNING: This function is for declaring farms in the initial game state. 
-# Do NOT use it to add farms during simulation
-def initFarm(purchase_time = None, upgrades = [0,0,0]):
-    return {
-        'Purchase Time': purchase_time,
-        'Upgrades': upgrades,
-        'Account Value': 0
-    }
-
-############
-# BOAT FARMS
-############
-
-def buyBoatFarm(buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Boat Farm',
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Buy boat farm'
-    }
-
-def upgradeBoatFarm(index, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Upgrade Boat Farm',
-        'Index': index,
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Upgrade boat farm at index %s'%(index)
-    }
-
-def sellBoatFarm(index, min_buy_time = 0):
-    #Look, I know this is confusing, but "min_buy_time" really is the minimum selling time in this case!
-    return {
-        'Type': 'Sell Boat Farm',
-        'Index': index,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Sell boat farm %s'%(index)
-    }
-
-def initBoatFarm(purchase_time = None, upgrade = 3):
-    return {
-        'Purchase Time': purchase_time,
-        'Upgrade': upgrade,
-    }
-
-#############
-# DRUID FARMS
-#############
-
-def buyDruidFarm(buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Druid Farm',
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Buy druid farm'
-    }
-
-def buySOTF(index, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Spirit of the Forest',
-        'Index': index, 
-        'Buffer': buffer, 
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Upgrade druid farm %s to SOTF'%(index)
-    }
-
-def sellDruidFarm(index, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Sell Druid Farm',
-        'Index': index,
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Sell druid farm %s'%(index)
-    }
-
-def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), buffer = 0):
-    return {
-        'Type': 'Repeatedly Buy Druid Farms',
-        'Minimum Buy Time': min_buy_time,
-        'Maximum Buy Time': max_buy_time,
-        'Buffer': buffer,
-        'Message': 'Trigger repeated druid farm buys until time %s'%(max_buy_time)
-    }
-
-def useSOTF(min_buy_time = 0):
-    #Look, I know this is confusing, but minimum buy time really is the minimum time that we use SOTF in this case!
-    return {
-        'Type': 'Use Spirit of the Forest',
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Use SOTF active'
-    }
-
-# WARNING: This function is for declaring druid farms in the initial game state. 
-# Do NOT use it to add druid farms during simulation
-def initDruidFarms(purchase_times, sotf = None):
-    dictionary = {}
-    for i in range(len(purchase_times)):
-        dictionary[i] = purchase_times[i]
-    dictionary['Spirit of the Forest Index'] = sotf
-    return dictionary
-
-##############
-# SUPPLY DROPS
-##############
-
-def buySupplyDrop(buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Supply Drop',
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Buy supply drop'
-    }
-
-def buyEliteSniper(index, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Buy Elite Sniper',
-        'Index': index,
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Upgrade supply drop %s to e-sniper'%(index)
-    }
-
-def sellSupplyDrop(index, buffer = 0, min_buy_time = 0):
-    return {
-        'Type': 'Sell Supply Drop',
-        'Index': index,
-        'Buffer': buffer,
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Sell supply drop %s'%(index)
-    }
-
-def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), buffer = 0):
-    return {
-        'Type': 'Repeatedly Buy Supply Drops',
-        'Minimum Buy Time': min_buy_time,
-        'Maximum Buy Time': max_buy_time,
-        'Buffer': buffer,
-        'Message': 'Trigger repeated supply drop buys until time %s'%(max_buy_time)
-    }
-
-# WARNING: This function is for declaring supply drops in the initial game state. 
-# Do NOT use it to add supply drops during simulation
-def initSupplyDrops(purchase_times, elite_sniper = None):
-    dictionary = {}
-    for i in range(len(purchase_times)):
-        dictionary[i] = purchase_times[i]
-    dictionary['Elite Sniper Index'] = elite_sniper
-    return dictionary
 
 # %% [markdown]
 # The goal of a simulator like this is to compare different strategies and see which one is better. To this end, we define a function capable of simulating multiple game states at once and comparing them.
