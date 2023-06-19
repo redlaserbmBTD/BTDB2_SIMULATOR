@@ -108,7 +108,10 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
-
+- (June 19, 2023 - v0.9.6)
+   - `main.ipynb` has been phased out. The "meat" of the code is now contained in `main.py`. Some portions of code previously in `main.py` have been moved to other files. Namely:
+        - `farm_init.py` contains info on eco sends and farms. It also contains a function which automatically computes the sellback value of farms given their upgrade costs, which will save time in the future when NK inevitably rebalances farms.
+        - `actions.py` contains a list of actions which may be fed into the buy queue when running the eco simulator. See the section "Operating the Code" for more details on this.
 - (June 16, 2023 - v0.9.5)
    - Remedied an issue where the eco simualator would sometimes ignore items in the buy queue for several seconds. The eco simulator now checks the buy queue at the minimum every `interval` seconds.
 - (June 1, 2023 - v0.9.4)
