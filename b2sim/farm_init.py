@@ -1,5 +1,6 @@
 # %%
 import numpy as np
+import pandas as pd
 
 # %%
 farm_upgrades_costs = [[550,550,2600,16000,66000],[200,700,5100,7500,45000],[250,200,2800,13000,46000]]
@@ -208,57 +209,18 @@ farm_payout_values = {
 
 # %%
 
-eco_send_info = {
-    'Zero': (0,0),
-    'Grouped Reds': (150,6.75),
-    'Spaced Blues': (60,3.2),
-    'Grouped Blues': (240,10),
-    'Spaced Greens': (93.96,4.698),
-    'Grouped Greens': (525,21),
-    'Spaced Yellows': (125.28,6.264),
-    'Grouped Yellows': (1000,40),
-    'Spaced Pinks': (186.667,9.333),
-    'Grouped Pinks': (1800,69),
-    'Spaced Whites': (214.2,10.71),
-    'Grouped Whites': (1300,52),
-    'Spaced Blacks': (264,12.8),
-    'Grouped Blacks': (1406.25,56.25),
-    'Spaced Purples': (262.5,12.375),
-    'Grouped Purples': (3943.35,99.441),
-    'Spaced Zebras': (600,27),
-    'Grouped Zebras': (3000,87.5),
-    'Spaced Leads': (180,8.4),
-    'Grouped Leads': (1500,45),
-    'Spaced Rainbows': (1199.8,51.42),
-    'Grouped Rainbows': (3750,90),
-    'Spaced Ceramics': (1200,45),
-    'Grouped Ceramics': (10000,45)
-}
+eco_send_table = pd.read_csv("b2sim/eco_send_info.csv")
+eco_send_info = {}
 
-eco_send_availability = {
-    'Zero': (0,30),
-    'Grouped Reds': (1,10),
-    'Spaced Blues': (1,2),
-    'Grouped Blues': (3,10),
-    'Spaced Greens': (2,4),
-    'Grouped Greens': (5,16),
-    'Spaced Yellows': (3,6),
-    'Grouped Yellows': (7,19),
-    'Spaced Pinks': (4,8),
-    'Grouped Pinks': (9,30),
-    'Spaced Whites': (5,30),
-    'Grouped Whites': (10,21),
-    'Spaced Blacks': (6,9),
-    'Grouped Blacks': (10,30),
-    'Spaced Purples': (8,10),
-    'Grouped Purples': (11,30),
-    'Spaced Zebras': (9,10),
-    'Grouped Zebras': (11,30),
-    'Spaced Leads': (10,11),
-    'Grouped Leads': (12,30),
-    'Spaced Rainbows': (12,12),
-    'Grouped Rainbows': (13,30),
-    'Spaced Ceramics': (13,15),
-    'Grouped Ceramics': (16,30)
-    
-}
+for index, row in eco_send_table.iterrows():
+    eco_send_info[row['send_name']] = {
+        'Price': row['price'],
+        'Eco': row['eco'],
+        'Start Round': row['start_round'],
+        'End Round': row['end_round'],
+        'Send Duration': row['send_duration']
+    }
+
+# %%
+
+

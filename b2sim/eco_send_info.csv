@@ -1,0 +1,25 @@
+﻿send_name,price,eco,start_round,end_round,send_duration
+Zero,0,0,0,50,0
+Grouped Reds,20,1,1,10,0.8
+Spaced Blues,15,0.8,1,2,1.5
+Grouped Blues,24,1,3,10,0.6
+Spaced Greens,18,0.9,2,4,1.15
+Grouped Greens,35,1.4,5,16,0.4
+Spaced Yellows,24,1.2,3,6,1.15
+Grouped Yellows,40,1.6,7,19,0.24
+Spaced Pinks,28,1.4,4,8,0.9
+Grouped Pinks,65,2.4,9,50,0.2
+Spaced Whites,30,1.5,5,50,0.84
+Grouped Whites,65,2.6,10,21,0.3
+Spaced Blacks,33,1.6,6,9,0.75
+Grouped Blacks,75,3,10,50,0.32
+Spaced Purples,70,3.3,8,10,1.6
+Grouped Purples,115,2.7,11,50,0.175
+Spaced Zebras,60,2.7,9,10,0.6
+Grouped Zebras,120,3.5,11,50,0.24
+Spaced Leads,60,2.8,10,11,2
+Grouped Leads,150,4.5,12,50,0.6
+Spaced Rainbows,70,3,12,12,0.35
+Grouped Rainbows,250,6,13,50,0.4
+Spaced Ceramics,150,5,13,15,0.75
+Grouped Ceramics,400,1.8,16,50,0.24

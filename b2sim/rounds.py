@@ -10,12 +10,12 @@ class Rounds():
         self.logs = []
 
         #Determine natural send lengths, max stall times, and max anti-stall times
-        filepath = "../nat_send_lengths.csv"
+        filepath = "b2sim/nat_send_lengths.csv"
         file = pd.read_csv(filepath)
         self.nat_send_lens = list(file['Nat Send Len'])
 
         max_antistall_time = 5.5
-        max_stall_times = [8.5 + i for i in range(31)]
+        max_stall_times = [8.5 + i for i in range(51)]
         max_stall_times[0] = max_antistall_time
 
         #Backwards compatability with the old system:
