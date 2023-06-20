@@ -109,6 +109,8 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
+- (June 19, 2023 - v0.9.8)
+   - The code now simulates eco in a way faithful to the mechanics of battles 2. Previously, the simulator assumed eco worked as a continuous flow of income generation, which led the simulator to underestimate eco relative to actual game scenarios. In this new update, the class variable `attack_queue` tracks bloons that have been sent by the player. The simulator tracks the progression of eco between payments by repeatedly checking the eco queue at key times, during each check removing bloon sends that have already been sent and adding a new send to the queue provided that the queue is not full and the player has enough money to do so.
 - (June 19, 2023 - v0.9.7)
    - Some code has been reorganized in the `GameState` class definition. Some functionality of the `advanceGameState` method has been moved to new helper methods `computePayoutSchedule` and `processBuyQueue`. It should be easier now for potential collaborators to gain a high-level understanding of how the code performs simulation.
    - The code now supports simulation all rounds 0 - 50. The data for natural send lengths from rounds 1-30 is inferred from a test done by spoonoil and ninjayas back in October 2022. The data for natural send lengths for rounds 31-50 is due to vic++. 
@@ -138,8 +140,6 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 
 - (High priority) Restructure the code:
    - While usage of the code for simulation purposes is relatively easy, reading the code to understand how it does what it does is *not*. The goal is to clean up the code so that potential collaborators may be more inclined to contribute.
-- (High priority) Implementation of more accurate eco system:
-   - This simulator currently makes the simpifying assumption that eco works as a continuous stream of income generation rather than how it actually functions in the game, which is as discrete "packs" which award eco in chunks. This simplifying assumption causes the sim to underestimate eco values compared to actual game scenarios.
 - (Medium priority) Equivialent eco contribution of farms:
    - The idea here is to implement a function which answers the following question: Given some set of farms, starting and ending times `start_time` and `end_time`, and some specification of round times, how much eco do I need to make exactly as much as the farm would make over the interval `[start_time, end_time)`?
 - (Medium priority) Robust logging when comparing different strategies
