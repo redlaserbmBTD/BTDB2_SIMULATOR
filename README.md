@@ -109,6 +109,9 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
+- (June 21, 2023 - v0.9.9)
+   - Added support for Jericho money stealing. Note that it is the player's responsbility to correctly indicate the amount that Jericho steals. The code operates under the assumption that Jericho's steal is never blocked.
+   - Fixed an issue which made it so that files which imported the library had to be placed in a certain location relative to the repo location in order for importing to work correctly.
 - (June 19, 2023 - v0.9.8)
    - The code now simulates eco in a way faithful to the mechanics of battles 2. Previously, the simulator assumed eco worked as a continuous flow of income generation, which led the simulator to underestimate eco relative to actual game scenarios. In this new update, the class variable `attack_queue` tracks bloons that have been sent by the player. The simulator tracks the progression of eco between payments by repeatedly checking the eco queue at key times, during each check removing bloon sends that have already been sent and adding a new send to the queue provided that the queue is not full and the player has enough money to do so.
 - (June 19, 2023 - v0.9.7)
