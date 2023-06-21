@@ -202,3 +202,15 @@ def initSupplyDrops(purchase_times, elite_sniper = None):
         dictionary[i] = purchase_times[i]
     dictionary['Elite Sniper Index'] = elite_sniper
     return dictionary
+
+#################
+# JERICHO ACTIONS
+#################
+
+def jerichoSteal(min_buy_time = 0, steal_amount = 25):
+    return {
+        'Type': 'Jericho Steal',
+        'Minimum Buy Time': min_buy_time,
+        'Steal Amount': steal_amount,
+        'Message': 'Trigger Jericho Steal'
+    }

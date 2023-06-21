@@ -2,6 +2,11 @@
 import numpy as np
 import pandas as pd
 
+import os
+
+nat_dirname = os.path.dirname(__file__)
+nat_filename = os.path.join(nat_dirname, "templates/nat_send_lengths.csv")
+
 #DEFINITION OF THE ROUNDS CLASS
 class Rounds():
     def __init__(self, stall_factor_info):
@@ -10,9 +15,8 @@ class Rounds():
         self.logs = []
 
         #Determine natural send lengths, max stall times, and max anti-stall times
-        filepath = "b2sim/nat_send_lengths.csv"
-        file = pd.read_csv(filepath)
-        self.nat_send_lens = list(file['Nat Send Len'])
+        df = pd.read_csv(nat_filename)
+        self.nat_send_lens = list(df['Nat Send Len'])
 
         max_antistall_time = 5.5
         max_stall_times = [8.5 + i for i in range(51)]
@@ -79,5 +83,4 @@ class Rounds():
             self.round_starts[i+1] = val
         
         self.logs.append("The new round start times are %s"%(self.round_starts))
-
   

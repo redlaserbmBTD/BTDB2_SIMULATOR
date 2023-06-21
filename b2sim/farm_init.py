@@ -2,6 +2,8 @@
 import numpy as np
 import pandas as pd
 
+import os
+
 # %%
 farm_upgrades_costs = [[550,550,2600,16000,66000],[200,700,5100,7500,45000],[250,200,2800,13000,46000]]
 farm_bank_capacity = [0,0,0,14000,20000,30000]
@@ -209,7 +211,10 @@ farm_payout_values = {
 
 # %%
 
-eco_send_table = pd.read_csv("b2sim/eco_send_info.csv")
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, "templates/eco_send_info.csv")
+
+eco_send_table = pd.read_csv(filename)
 eco_send_info = {}
 
 for index, row in eco_send_table.iterrows():

@@ -1,42 +1,8 @@
-# %% [markdown]
-# # Preliminaries
-
 # %%
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import b2sim.farm_init
-
-# %% [markdown]
-# ## TODO:
-# 
-# Features to add in the future, (listed in no particular order):
-# 1. When initializing banks, the code implicitly assumes the bank has made 0 dollars worth of deposits prior to the initial time state. Add functionality which allows for bank account amounts (assuming no withdrawals) to be automatically computed.
-# 2. More robust data visualization
-# 3. Add support for boat farms/heli farms/druid farms.
-# 4. Implement fail-safes to prevent the user from eco'ing disabled eco sends.
-# 5. Add support for a proper eco queue which accounts for "queue overloading" and "unloading"
-# 
-# Ideas for data visualization:
-# 1. Show explicitly on the graphs when a change was made in the buy queue or the eco queue.
-# 2. Bar graph showing how much money each farm has made
-# 3. Selling power over time
-
-# %% [markdown]
-# ## Eco Send Info
-
-# %%
-#The formatting of the tuples is (eco_cost, eco_gain)
-
-# %% [markdown]
-# ## Monkey Farm Info
-# 
-# To build the MonkeyFarm class, we need the following global info for farms:
-# 1. Upgrade costs for farms
-# 2. Resell values for farms
-# 3. Payout info for farms
-# 
-# Unforunately, the recording of data necessary for farms is quite involved!
 
 # %%
 farm_upgrades_costs = b2sim.farm_init.farm_upgrades_costs
@@ -46,26 +12,15 @@ farm_sell_values = b2sim.farm_init.farm_sellback_values
 
 eco_send_info = b2sim.farm_init.eco_send_info
 
-# %% [markdown]
-# # Boat Farm Info
-# 
-# Thankfully this information is not *as* intensive to collect!
-
-# %%
 boat_upgrades_costs = [5400, 19000]
 boat_payout_values = [300, 1000, 3000]
 boat_sell_values = [1960, 6560, 21760]
 
-# %% [markdown]
-# # Game State Class
-
-# %% [markdown]
-# The game state class is an instance of battles 2 in action! 
 
 # %%
 def impact(cash, loan, amount):
     #If the amount is positive (like a payment), half of the payment should be directed to the outstanding loan
-    #If the amount is negative (like a purhcase), then we can treat it "normally"
+    #If the amount is negative (like a purchase), then we can treat it "normally"
     if amount > 0:
         if amount > 2*loan:
             cash = cash + amount - loan
@@ -84,15 +39,44 @@ def writeLog(lines, filename = 'log', path = 'logs/'):
             f.write('\n')
 
 # %%
+
+#NOTE: I have not yet implemented these values in the code below. That is, right now these numbers are hard-coded in the GameState class.
+
+globals = {
+    'Eco Delay': 0.1, #The delay between eco sends, in seconds, assuming the attack queue is not full and the player has enough cash to send eco.
+    'MWS Bonus': 10000
+}
+
+#There are additional farm parameters
+farm_globals = {
+    'Monkey Wall Street Bonus': 10000,
+    'Monkeynomics Payout': 20000,
+    'Monkeynomics Initial Cooldown': 20,
+    'Monkeynomics Usage Cooldown': 60
+}
+
+druid_globals = {
+    'Druid Farm Cost': 4675,
+    'Druid Farm Initial Cooldown': 15,
+    'Druid Farm Usage Cooldown': 40,
+    'Druid Farm Payout': 1000,
+    'Spirit of the Forest Upgrade Cost': 35000,
+    'Spirit of the Forest Bonus': 3000
+}
+
+hero_globals = {
+    'Jericho Number of Steals': 10,
+    'Jericho Steal Interval': 1
+}
+
+# %%
 class GameState():
+
     def __init__(self, initial_state):
         
         ############################
         #INITIALIZING THE GAME STATE
         ############################
-        
-        #To ensure the code runs properly, we'll create a log file to track cash and eco as they evolve over time
-        self.logs = []
         
         #Initial cash and eco and loan values
         self.cash = initial_state.get('Cash')
@@ -137,12 +121,16 @@ class GameState():
         #LOGGING
         #~~~~~~~
 
+        #To ensure the code runs properly, we'll create a log file which the code writes to track what it's doing
+        self.logs = []
+
         #As the Game State evolves, I'll use these arrays to track how cash and eco have changed over time
         self.time_states = [self.current_time]
         self.cash_states = [self.cash] 
         self.eco_states = [self.eco]
 
         #These lists will hold tuples (time, message)
+        #These tuples are utilized by the viewCashAndEcoHistory method to display detailed into to the player about what actions were taken at what during simulation
         self.buy_messages = []
         self.eco_messages = []
         
@@ -214,13 +202,21 @@ class GameState():
         else:
             self.elite_sniper = None
             self.sniper_key = 0
-        
+
+        #~~~~~~~~~~~~
+        #HERO SUPPORT
+        #~~~~~~~~~~~~
+
+        self.jericho_steal_time = float('inf') #Represents the time when Jericho's steal is to be activated.
+        self.jericho_steal_amount = 25 #Represents the amount of money Jericho steals
+
         #~~~~~~~~~~~~~~~~
         #THE QUEUE SYSTEM
         #~~~~~~~~~~~~~~~~
         
         #Eco queue info
         self.eco_queue = initial_state.get('Eco Queue')
+        self.eco_cost_multiplier = 1
         
         #Upgrade queue
         self.buy_queue = initial_state.get('Buy Queue')
@@ -231,7 +227,7 @@ class GameState():
         #Attack queue - This is the list of bloons in the center of the screen that pops up whenever you send eco
         self.attack_queue = []
         self.attack_queue_unlock_time = self.current_time
-        self.eco_delay = 1.0/30.0
+        self.eco_delay = 0.1
 
         #For repeated supply drop buys
         self.supply_drop_max_buy_time = -1
@@ -373,6 +369,9 @@ class GameState():
         
     def changeEcoSend(self,send_name):
         #TODO: Implement safeguards to prevent the player from changing to an eco send that is unavailable
+
+        #First, check if the send has any fortied, camo, or regrow characteristics
+
         self.eco_cost = eco_send_info[send_name]['Price']
         self.eco_gain = eco_send_info[send_name]['Eco']
         self.eco_time = eco_send_info[send_name]['Send Duration']
@@ -627,7 +626,7 @@ class GameState():
 
         payout_times = []
         
-        #First, let's identify payouts from eco
+        #ECO PAYOUTS
         eco_time = 6*(np.floor(self.current_time/6)+1)
         while eco_time <= target_time:
             payout_entry = {
@@ -637,7 +636,7 @@ class GameState():
             payout_times.append(payout_entry)
             eco_time += 6
 
-        #Next, let's do druid farms!
+        #DRUID FARMS
         if self.druid_farms is not None:
             for key in self.druid_farms.keys():
                 druid_farm = self.druid_farms[key]
@@ -649,10 +648,10 @@ class GameState():
                         payout_entry = {
                             'Time': druid_farm_time,
                             'Payout Type': 'Direct',
-                            'Payout': 1000
+                            'Payout': druid_globals['Druid Farm Payout']
                         }
                         payout_times.append(payout_entry)
-                        druid_farm_time += 40
+                        druid_farm_time += druid_globals['Druid Farm Usage Cooldown']
                 elif key == self.sotf:
                     #Spirit of the Forest has a start of round payment of 3000 dollars and an "optional" active that is used 
                     #At the start of each round, append a payout entry with the SOTF payout
@@ -661,13 +660,13 @@ class GameState():
                         payout_entry = {
                             'Time': self.rounds.getTimeFromRound(self.current_round + self.inc),
                             'Payout Type': 'Direct',
-                            'Payout': 3000
+                            'Payout': druid_globals['Spirit of the Forest Bonus']
                         }
                         payout_times.append(payout_entry)
                         self.inc += 1
 
 
-        #Next, let's do supply drops
+        #SUPPLY DROPS
         if self.supply_drops is not None:
             for key in self.supply_drops.keys():
                 supply_drop = self.supply_drops[key]
@@ -689,7 +688,7 @@ class GameState():
                     payout_times.append(payout_entry)
                     supply_drop_time += 40
                     
-        #Next, let's do farms!
+        #FARMS
         if len(self.farms) > 0:
             for key in self.farms.keys():
                 farm = self.farms[key]
@@ -788,7 +787,7 @@ class GameState():
                             break
                     self.inc += 1
         
-        #Now, let's do boat farms!
+        #BOAT FARMS
         if len(self.boat_farms) > 0:
 
             #If the player has Trade Empire, determine the buff to be applied to other boat farm payments
@@ -814,6 +813,18 @@ class GameState():
                 }
                 payout_times.append(payout_entry)
                 self.inc += 1
+
+        #JERICHO PAYOUTS
+        jeri_time = self.jericho_steal_time
+        while jeri_time <= min(target_time, self.jericho_steal_time + (hero_globals['Jericho Number of Steals']-1)*hero_globals['Jericho Steal Interval']):
+            if jeri_time > self.current_time:
+                payout_entry = {
+                    'Time': jeri_time,
+                    'Payout Type': 'Direct',
+                    'Payout': self.jericho_steal_amount
+                }
+                payout_times.append(payout_entry)
+            jeri_time += hero_globals['Jericho Steal Interval']
 
         #This special payout prevents the code from waiting possibly several seconds to carry out purchases in the buy queue that can obviously be afforded
         payout_entry = {
@@ -1204,6 +1215,12 @@ class GameState():
                         self.supply_drop_max_buy_time = dict_obj['Maximum Buy Time']
                         self.supply_drop_buffer = dict_obj['Buffer']
                         self.logs.append("Triggered automated supply drop purchases until time %s"%(self.supply_drop_max_buy_time))
+
+                    # JERICHO RELATED MATTERS
+                    elif dict_obj['Type'] == 'Jericho Steal':
+                        self.jericho_steal_time = dict_obj['Minimum Buy Time']
+                        self.jericho_steal_amount = dict_obj['Steal Amount']
+                        self.cash, self.loan = impact(self.cash,self.loan, dict_obj['Steal Amount']) #If this line is not here, the sim would fail to capture the jeri payment that occurs immediately upon activation.
                         
                 #Now, we have finished the for loop through purchase_info and thus correctly performed the buys
                 #Remove the buy from the queue and set self.buy_cost to None so the code knows next time to re-compute
