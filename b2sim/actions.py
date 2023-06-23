@@ -214,3 +214,45 @@ def jerichoSteal(min_buy_time = 0, steal_amount = 25):
         'Steal Amount': steal_amount,
         'Message': 'Trigger Jericho Steal'
     }
+
+###########
+# ECO QUEUE
+###########
+
+def ecoSend(time, send_name, property = 'Normal', max_send_amount = None):
+    
+    fortified = False
+    camo = False
+    regrow = False
+
+    if property == 'Fortified':
+        fortified = True
+    elif property == 'Camo':
+        camo = True
+    elif property == 'Regrow':
+        regrow = True
+    
+
+    elif property == 'Fortified Camo':
+        fortified = True
+        camo = True
+    elif property == 'Fortified Regrow':
+        fortified = True
+        regrow = True
+    elif property == 'Camo Regrow':
+        camo = True
+        regrow = True
+    
+    elif property == 'Fortified Camo Regrow':
+        fortified = True
+        camo = True
+        regrow = True
+
+    return {
+        'Time': time,
+        'Send Name': send_name,
+        'Max Send Amount': max_send_amount,
+        'Fortified': fortified,
+        'Camoflauge': camo,
+        'Regrow': regrow
+    }

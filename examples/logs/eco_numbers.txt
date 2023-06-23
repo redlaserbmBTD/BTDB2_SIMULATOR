@@ -1,0 +1,1790 @@
+MESSAGE FROM GameState.__init__(): 
+Initialized Game State!
+The current game round is 0
+The current game time is 0.0 seconds
+The game round start times are given by [0, 6.0, 30.5, 54.5, 80.0, 111.0, 140.5, 166.5, 193.0, 218.0, 242.5, 257.5, 277.0, 298.0, 324.5, 343.5, 366.0, 407.0, 454.5, 489.5, 535.0, 553.0, 579.5, 620.5, 644.0, 716.0, 764.5, 804.5, 842.0, 879.0, 939.5, 962.5, 1033.293999, 1065.823999, 1112.073999, 1144.515659, 1210.157657, 1256.855657, 1364.740657, 1449.661487, 1566.161487, 1595.161487, 1658.3414870000001, 1711.3414870000001, 1760.8414870000001, 1804.391487, 1845.7914870000002, 1910.7914870000002, 1956.2914870000002, 2019.411489, 2080.911489, 2113.011489] 
+
+MESSAGE FROM GameState.fastForward: 
+Advancing game to time 0.1
+Running updateEco!
+Awarded direct payment 0 at time 0.1
+Determined the minimum buy time of the next purchase to be 6.0
+Recorded cash and eco values (650,250) at time 0.1
+----------
+Advancing game to time 0.2
+Running updateEco!
+Awarded direct payment 0 at time 0.2
+Recorded cash and eco values (650,250) at time 0.2
+----------
+Advancing game to time 0.3
+Running updateEco!
+Awarded direct payment 0 at time 0.3
+Recorded cash and eco values (650,250) at time 0.3
+----------
+Advancing game to time 0.4
+Running updateEco!
+Awarded direct payment 0 at time 0.4
+Recorded cash and eco values (650,250) at time 0.4
+----------
+Advancing game to time 0.5
+Running updateEco!
+Awarded direct payment 0 at time 0.5
+Recorded cash and eco values (650,250) at time 0.5
+----------
+Advancing game to time 0.6
+Running updateEco!
+Awarded direct payment 0 at time 0.6
+Recorded cash and eco values (650,250) at time 0.6
+----------
+Advancing game to time 0.7
+Running updateEco!
+Awarded direct payment 0 at time 0.7
+Recorded cash and eco values (650,250) at time 0.7
+----------
+Advancing game to time 0.8
+Running updateEco!
+Awarded direct payment 0 at time 0.8
+Recorded cash and eco values (650,250) at time 0.8
+----------
+Advancing game to time 0.9
+Running updateEco!
+Awarded direct payment 0 at time 0.9
+Recorded cash and eco values (650,250) at time 0.9
+----------
+Advancing game to time 1.0
+Running updateEco!
+Awarded direct payment 0 at time 1.0
+Recorded cash and eco values (650,250) at time 1.0
+----------
+Advancing game to time 1.1
+Running updateEco!
+Awarded direct payment 0 at time 1.1
+Recorded cash and eco values (650,250) at time 1.1
+----------
+Advancing game to time 1.2
+Running updateEco!
+Awarded direct payment 0 at time 1.2
+Recorded cash and eco values (650,250) at time 1.2
+----------
+Advancing game to time 1.3
+Running updateEco!
+Awarded direct payment 0 at time 1.3
+Recorded cash and eco values (650,250) at time 1.3
+----------
+Advancing game to time 1.4
+Running updateEco!
+Awarded direct payment 0 at time 1.4
+Recorded cash and eco values (650,250) at time 1.4
+----------
+Advancing game to time 1.5
+Running updateEco!
+Awarded direct payment 0 at time 1.5
+Recorded cash and eco values (650,250) at time 1.5
+----------
+Advancing game to time 1.6
+Running updateEco!
+Awarded direct payment 0 at time 1.6
+Recorded cash and eco values (650,250) at time 1.6
+----------
+Advancing game to time 1.7
+Running updateEco!
+Awarded direct payment 0 at time 1.7
+Recorded cash and eco values (650,250) at time 1.7
+----------
+Advancing game to time 1.8
+Running updateEco!
+Awarded direct payment 0 at time 1.8
+Recorded cash and eco values (650,250) at time 1.8
+----------
+Advancing game to time 1.9
+Running updateEco!
+Awarded direct payment 0 at time 1.9
+Recorded cash and eco values (650,250) at time 1.9
+----------
+Advancing game to time 2.0
+Running updateEco!
+Awarded direct payment 0 at time 2.0
+Recorded cash and eco values (650,250) at time 2.0
+----------
+Advancing game to time 2.1
+Running updateEco!
+Awarded direct payment 0 at time 2.1
+Recorded cash and eco values (650,250) at time 2.1
+----------
+Advancing game to time 2.2
+Running updateEco!
+Awarded direct payment 0 at time 2.2
+Recorded cash and eco values (650,250) at time 2.2
+----------
+Advancing game to time 2.3
+Running updateEco!
+Awarded direct payment 0 at time 2.3
+Recorded cash and eco values (650,250) at time 2.3
+----------
+Advancing game to time 2.4
+Running updateEco!
+Awarded direct payment 0 at time 2.4
+Recorded cash and eco values (650,250) at time 2.4
+----------
+Advancing game to time 2.5
+Running updateEco!
+Awarded direct payment 0 at time 2.5
+Recorded cash and eco values (650,250) at time 2.5
+----------
+Advancing game to time 2.6
+Running updateEco!
+Awarded direct payment 0 at time 2.6
+Recorded cash and eco values (650,250) at time 2.6
+----------
+Advancing game to time 2.7
+Running updateEco!
+Awarded direct payment 0 at time 2.7
+Recorded cash and eco values (650,250) at time 2.7
+----------
+Advancing game to time 2.8
+Running updateEco!
+Awarded direct payment 0 at time 2.8
+Recorded cash and eco values (650,250) at time 2.8
+----------
+Advancing game to time 2.9
+Running updateEco!
+Awarded direct payment 0 at time 2.9
+Recorded cash and eco values (650,250) at time 2.9
+----------
+Advancing game to time 3.0
+Running updateEco!
+Awarded direct payment 0 at time 3.0
+Recorded cash and eco values (650,250) at time 3.0
+----------
+Advancing game to time 3.1
+Running updateEco!
+Awarded direct payment 0 at time 3.1
+Recorded cash and eco values (650,250) at time 3.1
+----------
+Advancing game to time 3.2
+Running updateEco!
+Awarded direct payment 0 at time 3.2
+Recorded cash and eco values (650,250) at time 3.2
+----------
+Advancing game to time 3.3
+Running updateEco!
+Awarded direct payment 0 at time 3.3
+Recorded cash and eco values (650,250) at time 3.3
+----------
+Advancing game to time 3.4
+Running updateEco!
+Awarded direct payment 0 at time 3.4
+Recorded cash and eco values (650,250) at time 3.4
+----------
+Advancing game to time 3.5
+Running updateEco!
+Awarded direct payment 0 at time 3.5
+Recorded cash and eco values (650,250) at time 3.5
+----------
+Advancing game to time 3.6
+Running updateEco!
+Awarded direct payment 0 at time 3.6
+Recorded cash and eco values (650,250) at time 3.6
+----------
+Advancing game to time 3.7
+Running updateEco!
+Awarded direct payment 0 at time 3.7
+Recorded cash and eco values (650,250) at time 3.7
+----------
+Advancing game to time 3.8
+Running updateEco!
+Awarded direct payment 0 at time 3.8
+Recorded cash and eco values (650,250) at time 3.8
+----------
+Advancing game to time 3.9
+Running updateEco!
+Awarded direct payment 0 at time 3.9
+Recorded cash and eco values (650,250) at time 3.9
+----------
+Advancing game to time 4.0
+Running updateEco!
+Awarded direct payment 0 at time 4.0
+Recorded cash and eco values (650,250) at time 4.0
+----------
+Advancing game to time 4.1
+Running updateEco!
+Awarded direct payment 0 at time 4.1
+Recorded cash and eco values (650,250) at time 4.1
+----------
+Advancing game to time 4.2
+Running updateEco!
+Awarded direct payment 0 at time 4.2
+Recorded cash and eco values (650,250) at time 4.2
+----------
+Advancing game to time 4.3
+Running updateEco!
+Awarded direct payment 0 at time 4.3
+Recorded cash and eco values (650,250) at time 4.3
+----------
+Advancing game to time 4.35
+Running updateEco!
+Awarded direct payment 0 at time 4.35
+Recorded cash and eco values (650,250) at time 4.35
+----------
+Advancing game to time 4.4
+Running updateEco!
+Awarded direct payment 0 at time 4.4
+Recorded cash and eco values (650,250) at time 4.4
+----------
+Advancing game to time 4.5
+Running updateEco!
+Awarded direct payment 0 at time 4.5
+Recorded cash and eco values (650,250) at time 4.5
+----------
+Advancing game to time 4.6
+Running updateEco!
+Awarded direct payment 0 at time 4.6
+Recorded cash and eco values (650,250) at time 4.6
+----------
+Advancing game to time 4.7
+Running updateEco!
+Awarded direct payment 0 at time 4.7
+Recorded cash and eco values (650,250) at time 4.7
+----------
+Advancing game to time 4.8
+Running updateEco!
+Awarded direct payment 0 at time 4.8
+Recorded cash and eco values (650,250) at time 4.8
+----------
+Advancing game to time 4.9
+Running updateEco!
+Awarded direct payment 0 at time 4.9
+Recorded cash and eco values (650,250) at time 4.9
+----------
+Advancing game to time 5.0
+Running updateEco!
+Awarded direct payment 0 at time 5.0
+Recorded cash and eco values (650,250) at time 5.0
+----------
+Advancing game to time 5.1
+Running updateEco!
+Awarded direct payment 0 at time 5.1
+Recorded cash and eco values (650,250) at time 5.1
+----------
+Advancing game to time 5.2
+Running updateEco!
+Awarded direct payment 0 at time 5.2
+Recorded cash and eco values (650,250) at time 5.2
+----------
+Advancing game to time 5.3
+Running updateEco!
+Awarded direct payment 0 at time 5.3
+Recorded cash and eco values (650,250) at time 5.3
+----------
+Advancing game to time 5.4
+Running updateEco!
+Awarded direct payment 0 at time 5.4
+Recorded cash and eco values (650,250) at time 5.4
+----------
+Advancing game to time 5.5
+Running updateEco!
+Awarded direct payment 0 at time 5.5
+Recorded cash and eco values (650,250) at time 5.5
+----------
+Advancing game to time 5.6
+Running updateEco!
+Awarded direct payment 0 at time 5.6
+Recorded cash and eco values (650,250) at time 5.6
+----------
+Advancing game to time 5.7
+Running updateEco!
+Awarded direct payment 0 at time 5.7
+Recorded cash and eco values (650,250) at time 5.7
+----------
+Advancing game to time 5.8
+Running updateEco!
+Awarded direct payment 0 at time 5.8
+Recorded cash and eco values (650,250) at time 5.8
+----------
+Advancing game to time 5.9
+Running updateEco!
+Awarded direct payment 0 at time 5.9
+Recorded cash and eco values (650,250) at time 5.9
+----------
+Advancing game to time 6.0
+Running updateEco!
+Awarded eco payment 250 at time 6.0
+Recorded cash and eco values (900,250) at time 6.0
+Running updateEco!
+Awarded direct payment 0 at time 6.0
+We have 900 cash! We can do the next buy, which costs 605 and has a buffer of 0 and a minimum buy time of 6.0!
+Completed the buy operation! The buy queue now has 2 items remaining in it
+Determined the minimum buy time of the next purchase to be 12.0
+Recorded cash and eco values (295,250) at time 6.0
+Modified the eco send to Grouped Reds
+----------
+Advancing game to time 6.1
+Running updateEco!
+Advanced current time to 6.0
+Advanced current time to 6.1
+Awarded direct payment 0 at time 6.1
+Recorded cash and eco values (255,252.0) at time 6.1
+----------
+Advancing game to time 6.2
+Running updateEco!
+Advanced current time to 6.199999999999999
+Awarded direct payment 0 at time 6.2
+Recorded cash and eco values (235,253.0) at time 6.2
+----------
+Advancing game to time 6.3
+Running updateEco!
+Advanced current time to 6.299999999999999
+Awarded direct payment 0 at time 6.3
+Recorded cash and eco values (215,254.0) at time 6.3
+----------
+Advancing game to time 6.4
+Running updateEco!
+Advanced current time to 6.399999999999999
+Awarded direct payment 0 at time 6.4
+Recorded cash and eco values (195,255.0) at time 6.4
+----------
+Advancing game to time 6.5
+Running updateEco!
+Advanced current time to 6.499999999999998
+Awarded direct payment 0 at time 6.5
+Recorded cash and eco values (175,256.0) at time 6.5
+----------
+Advancing game to time 6.6
+Running updateEco!
+Advanced current time to 6.599999999999998
+Awarded direct payment 0 at time 6.6
+Recorded cash and eco values (175,256.0) at time 6.6
+----------
+Advancing game to time 6.7
+Running updateEco!
+Awarded direct payment 0 at time 6.7
+Recorded cash and eco values (175,256.0) at time 6.7
+----------
+Advancing game to time 6.8
+Running updateEco!
+Advanced current time to 6.8
+Awarded direct payment 0 at time 6.8
+Recorded cash and eco values (155,257.0) at time 6.8
+----------
+Advancing game to time 6.9
+Running updateEco!
+Advanced current time to 6.8999999999999995
+Awarded direct payment 0 at time 6.9
+Recorded cash and eco values (155,257.0) at time 6.9
+----------
+Advancing game to time 7.0
+Running updateEco!
+Awarded direct payment 0 at time 7.0
+Recorded cash and eco values (155,257.0) at time 7.0
+----------
+Advancing game to time 7.1
+Running updateEco!
+Awarded direct payment 0 at time 7.1
+Recorded cash and eco values (155,257.0) at time 7.1
+----------
+Advancing game to time 7.2
+Running updateEco!
+Awarded direct payment 0 at time 7.2
+Recorded cash and eco values (155,257.0) at time 7.2
+----------
+Advancing game to time 7.3
+Running updateEco!
+Awarded direct payment 0 at time 7.3
+Recorded cash and eco values (155,257.0) at time 7.3
+----------
+Advancing game to time 7.4
+Running updateEco!
+Awarded direct payment 0 at time 7.4
+Recorded cash and eco values (155,257.0) at time 7.4
+----------
+Advancing game to time 7.5
+Running updateEco!
+Awarded direct payment 0 at time 7.5
+Recorded cash and eco values (155,257.0) at time 7.5
+----------
+Advancing game to time 7.6
+Running updateEco!
+Advanced current time to 7.6
+Awarded direct payment 0 at time 7.6
+Recorded cash and eco values (135,258.0) at time 7.6
+----------
+Advancing game to time 7.7
+Running updateEco!
+Advanced current time to 7.699999999999999
+Awarded direct payment 0 at time 7.7
+Recorded cash and eco values (135,258.0) at time 7.7
+----------
+Advancing game to time 7.8
+Running updateEco!
+Awarded direct payment 0 at time 7.8
+Recorded cash and eco values (135,258.0) at time 7.8
+----------
+Advancing game to time 7.9
+Running updateEco!
+Awarded direct payment 0 at time 7.9
+Recorded cash and eco values (135,258.0) at time 7.9
+----------
+Advancing game to time 8.0
+Running updateEco!
+Awarded direct payment 0 at time 8.0
+Recorded cash and eco values (135,258.0) at time 8.0
+----------
+Advancing game to time 8.1
+Running updateEco!
+Awarded direct payment 0 at time 8.1
+Recorded cash and eco values (135,258.0) at time 8.1
+----------
+Advancing game to time 8.15
+Running updateEco!
+Awarded direct payment 0 at time 8.15
+Recorded cash and eco values (135,258.0) at time 8.15
+----------
+Advancing game to time 8.2
+Running updateEco!
+Awarded direct payment 0 at time 8.2
+Recorded cash and eco values (135,258.0) at time 8.2
+----------
+Advancing game to time 8.3
+Running updateEco!
+Awarded direct payment 0 at time 8.3
+Recorded cash and eco values (135,258.0) at time 8.3
+----------
+Advancing game to time 8.4
+Running updateEco!
+Advanced current time to 8.4
+Awarded direct payment 0 at time 8.4
+Recorded cash and eco values (115,259.0) at time 8.4
+----------
+Advancing game to time 8.5
+Running updateEco!
+Advanced current time to 8.5
+Awarded direct payment 0 at time 8.5
+Recorded cash and eco values (115,259.0) at time 8.5
+----------
+Advancing game to time 8.6
+Running updateEco!
+Awarded direct payment 0 at time 8.6
+Recorded cash and eco values (115,259.0) at time 8.6
+----------
+Advancing game to time 8.65
+Running updateEco!
+Awarded direct payment 0 at time 8.65
+Recorded cash and eco values (115,259.0) at time 8.65
+----------
+Advancing game to time 8.7
+Running updateEco!
+Awarded direct payment 0 at time 8.7
+Recorded cash and eco values (115,259.0) at time 8.7
+----------
+Advancing game to time 8.8
+Running updateEco!
+Awarded direct payment 0 at time 8.8
+Recorded cash and eco values (115,259.0) at time 8.8
+----------
+Advancing game to time 8.9
+Running updateEco!
+Awarded direct payment 0 at time 8.9
+Recorded cash and eco values (115,259.0) at time 8.9
+----------
+Advancing game to time 9.0
+Running updateEco!
+Awarded direct payment 0 at time 9.0
+Recorded cash and eco values (115,259.0) at time 9.0
+----------
+Advancing game to time 9.1
+Running updateEco!
+Awarded direct payment 0 at time 9.1
+Recorded cash and eco values (115,259.0) at time 9.1
+----------
+Advancing game to time 9.15
+Running updateEco!
+Awarded direct payment 0 at time 9.15
+Recorded cash and eco values (115,259.0) at time 9.15
+----------
+Advancing game to time 9.2
+Running updateEco!
+Advanced current time to 9.200000000000001
+Awarded direct payment 0 at time 9.2
+Recorded cash and eco values (95,260.0) at time 9.2
+----------
+Advancing game to time 9.3
+Running updateEco!
+Advanced current time to 9.3
+Awarded direct payment 0 at time 9.3
+Recorded cash and eco values (95,260.0) at time 9.3
+----------
+Advancing game to time 9.4
+Running updateEco!
+Awarded direct payment 0 at time 9.4
+Recorded cash and eco values (95,260.0) at time 9.4
+----------
+Advancing game to time 9.5
+Running updateEco!
+Awarded direct payment 0 at time 9.5
+Recorded cash and eco values (95,260.0) at time 9.5
+----------
+Advancing game to time 9.6
+Running updateEco!
+Awarded direct payment 0 at time 9.6
+Recorded cash and eco values (95,260.0) at time 9.6
+----------
+Advancing game to time 9.7
+Running updateEco!
+Awarded direct payment 0 at time 9.7
+Recorded cash and eco values (95,260.0) at time 9.7
+----------
+Advancing game to time 9.8
+Running updateEco!
+Awarded direct payment 0 at time 9.8
+Recorded cash and eco values (95,260.0) at time 9.8
+----------
+Advancing game to time 9.9
+Running updateEco!
+Awarded direct payment 0 at time 9.9
+Recorded cash and eco values (95,260.0) at time 9.9
+----------
+Advancing game to time 10.0
+Running updateEco!
+Awarded direct payment 0 at time 10.0
+Recorded cash and eco values (95,260.0) at time 10.0
+----------
+Advancing game to time 10.1
+Running updateEco!
+Advanced current time to 10.000000000000002
+Advanced current time to 10.100000000000001
+Awarded direct payment 0 at time 10.1
+Recorded cash and eco values (75,261.0) at time 10.1
+----------
+Advancing game to time 10.2
+Running updateEco!
+Awarded direct payment 0 at time 10.2
+Recorded cash and eco values (75,261.0) at time 10.2
+----------
+Advancing game to time 10.3
+Running updateEco!
+Awarded direct payment 0 at time 10.3
+Recorded cash and eco values (75,261.0) at time 10.3
+----------
+Advancing game to time 10.4
+Running updateEco!
+Awarded direct payment 0 at time 10.4
+Recorded cash and eco values (75,261.0) at time 10.4
+----------
+Advancing game to time 10.5
+Running updateEco!
+Awarded direct payment 0 at time 10.5
+Recorded cash and eco values (75,261.0) at time 10.5
+----------
+Advancing game to time 10.6
+Running updateEco!
+Awarded direct payment 0 at time 10.6
+Recorded cash and eco values (75,261.0) at time 10.6
+----------
+Advancing game to time 10.7
+Running updateEco!
+Awarded direct payment 0 at time 10.7
+Recorded cash and eco values (75,261.0) at time 10.7
+----------
+Advancing game to time 10.8
+Running updateEco!
+Awarded direct payment 0 at time 10.8
+Recorded cash and eco values (75,261.0) at time 10.8
+----------
+Advancing game to time 10.9
+Running updateEco!
+Advanced current time to 10.800000000000002
+Awarded direct payment 0 at time 10.9
+Recorded cash and eco values (55,262.0) at time 10.9
+----------
+Advancing game to time 11.0
+Running updateEco!
+Advanced current time to 10.900000000000002
+Awarded direct payment 0 at time 11.0
+Recorded cash and eco values (55,262.0) at time 11.0
+----------
+Advancing game to time 11.1
+Running updateEco!
+Awarded direct payment 0 at time 11.1
+Recorded cash and eco values (55,262.0) at time 11.1
+----------
+Advancing game to time 11.2
+Running updateEco!
+Awarded direct payment 0 at time 11.2
+Recorded cash and eco values (55,262.0) at time 11.2
+----------
+Advancing game to time 11.3
+Running updateEco!
+Awarded direct payment 0 at time 11.3
+Recorded cash and eco values (55,262.0) at time 11.3
+----------
+Advancing game to time 11.4
+Running updateEco!
+Awarded direct payment 0 at time 11.4
+Recorded cash and eco values (55,262.0) at time 11.4
+----------
+Advancing game to time 11.5
+Running updateEco!
+Awarded direct payment 0 at time 11.5
+Recorded cash and eco values (55,262.0) at time 11.5
+----------
+Advancing game to time 11.6
+Running updateEco!
+Awarded direct payment 0 at time 11.6
+Recorded cash and eco values (55,262.0) at time 11.6
+----------
+Advancing game to time 11.7
+Running updateEco!
+Advanced current time to 11.600000000000003
+Awarded direct payment 0 at time 11.7
+Recorded cash and eco values (35,263.0) at time 11.7
+----------
+Advancing game to time 11.8
+Running updateEco!
+Advanced current time to 11.700000000000003
+Awarded direct payment 0 at time 11.8
+Recorded cash and eco values (35,263.0) at time 11.8
+----------
+Advancing game to time 11.9
+Running updateEco!
+Awarded direct payment 0 at time 11.9
+Recorded cash and eco values (35,263.0) at time 11.9
+----------
+Advancing game to time 12.0
+Running updateEco!
+Awarded eco payment 263.0 at time 12.0
+Recorded cash and eco values (298.0,263.0) at time 12.0
+Running updateEco!
+Awarded direct payment 0 at time 12.0
+We have 298.0 cash! We can do the next buy, which costs 150.0 and has a buffer of 0 and a minimum buy time of 12.0!
+Completed the buy operation! The buy queue now has 1 items remaining in it
+Determined the minimum buy time of the next purchase to be 18.25
+Recorded cash and eco values (148.0,263.0) at time 12.0
+----------
+Advancing game to time 12.1
+Running updateEco!
+Awarded direct payment 0 at time 12.1
+Recorded cash and eco values (148.0,263.0) at time 12.1
+----------
+Advancing game to time 12.2
+Running updateEco!
+Awarded direct payment 0 at time 12.2
+Recorded cash and eco values (148.0,263.0) at time 12.2
+----------
+Advancing game to time 12.3
+Running updateEco!
+Awarded direct payment 0 at time 12.3
+Recorded cash and eco values (148.0,263.0) at time 12.3
+----------
+Advancing game to time 12.4
+Running updateEco!
+Awarded direct payment 0 at time 12.4
+Recorded cash and eco values (148.0,263.0) at time 12.4
+----------
+Advancing game to time 12.5
+Running updateEco!
+Advanced current time to 12.400000000000004
+Awarded direct payment 0 at time 12.5
+Recorded cash and eco values (128.0,264.0) at time 12.5
+----------
+Advancing game to time 12.6
+Running updateEco!
+Advanced current time to 12.500000000000004
+Awarded direct payment 0 at time 12.6
+Recorded cash and eco values (128.0,264.0) at time 12.6
+----------
+Advancing game to time 12.7
+Running updateEco!
+Awarded direct payment 0 at time 12.7
+Recorded cash and eco values (128.0,264.0) at time 12.7
+----------
+Advancing game to time 12.8
+Running updateEco!
+Awarded direct payment 0 at time 12.8
+Recorded cash and eco values (128.0,264.0) at time 12.8
+----------
+Advancing game to time 12.9
+Running updateEco!
+Awarded direct payment 0 at time 12.9
+Recorded cash and eco values (128.0,264.0) at time 12.9
+----------
+Advancing game to time 13.0
+Running updateEco!
+Awarded direct payment 0 at time 13.0
+Recorded cash and eco values (128.0,264.0) at time 13.0
+----------
+Advancing game to time 13.1
+Running updateEco!
+Awarded direct payment 0 at time 13.1
+Recorded cash and eco values (128.0,264.0) at time 13.1
+----------
+Advancing game to time 13.2
+Running updateEco!
+Awarded direct payment 0 at time 13.2
+Recorded cash and eco values (128.0,264.0) at time 13.2
+----------
+Advancing game to time 13.3
+Running updateEco!
+Advanced current time to 13.200000000000005
+Awarded direct payment 0 at time 13.3
+Recorded cash and eco values (108.0,265.0) at time 13.3
+----------
+Advancing game to time 13.4
+Running updateEco!
+Advanced current time to 13.300000000000004
+Awarded direct payment 0 at time 13.4
+Recorded cash and eco values (108.0,265.0) at time 13.4
+----------
+Advancing game to time 13.5
+Running updateEco!
+Awarded direct payment 0 at time 13.5
+Recorded cash and eco values (108.0,265.0) at time 13.5
+----------
+Advancing game to time 13.6
+Running updateEco!
+Awarded direct payment 0 at time 13.6
+Recorded cash and eco values (108.0,265.0) at time 13.6
+----------
+Advancing game to time 13.7
+Running updateEco!
+Awarded direct payment 0 at time 13.7
+Recorded cash and eco values (108.0,265.0) at time 13.7
+----------
+Advancing game to time 13.8
+Running updateEco!
+Awarded direct payment 0 at time 13.8
+Recorded cash and eco values (108.0,265.0) at time 13.8
+----------
+Advancing game to time 13.9
+Running updateEco!
+Awarded direct payment 0 at time 13.9
+Recorded cash and eco values (108.0,265.0) at time 13.9
+----------
+Advancing game to time 14.0
+Running updateEco!
+Awarded direct payment 0 at time 14.0
+Recorded cash and eco values (108.0,265.0) at time 14.0
+----------
+Advancing game to time 14.1
+Running updateEco!
+Advanced current time to 14.000000000000005
+Awarded direct payment 0 at time 14.1
+Recorded cash and eco values (88.0,266.0) at time 14.1
+----------
+Advancing game to time 14.2
+Running updateEco!
+Advanced current time to 14.100000000000005
+Awarded direct payment 0 at time 14.2
+Recorded cash and eco values (88.0,266.0) at time 14.2
+----------
+Advancing game to time 14.3
+Running updateEco!
+Awarded direct payment 0 at time 14.3
+Recorded cash and eco values (88.0,266.0) at time 14.3
+----------
+Advancing game to time 14.4
+Running updateEco!
+Awarded direct payment 0 at time 14.4
+Recorded cash and eco values (88.0,266.0) at time 14.4
+----------
+Advancing game to time 14.5
+Running updateEco!
+Awarded direct payment 0 at time 14.5
+Recorded cash and eco values (88.0,266.0) at time 14.5
+----------
+Advancing game to time 14.6
+Running updateEco!
+Awarded direct payment 0 at time 14.6
+Recorded cash and eco values (88.0,266.0) at time 14.6
+----------
+Advancing game to time 14.7
+Running updateEco!
+Awarded direct payment 0 at time 14.7
+Recorded cash and eco values (88.0,266.0) at time 14.7
+----------
+Advancing game to time 14.8
+Running updateEco!
+Awarded direct payment 0 at time 14.8
+Recorded cash and eco values (88.0,266.0) at time 14.8
+----------
+Advancing game to time 14.9
+Running updateEco!
+Advanced current time to 14.800000000000006
+Awarded direct payment 0 at time 14.9
+Recorded cash and eco values (68.0,267.0) at time 14.9
+----------
+Advancing game to time 15.0
+Running updateEco!
+Advanced current time to 14.900000000000006
+Awarded direct payment 0 at time 15.0
+Recorded cash and eco values (68.0,267.0) at time 15.0
+----------
+Advancing game to time 15.1
+Running updateEco!
+Awarded direct payment 0 at time 15.1
+Recorded cash and eco values (68.0,267.0) at time 15.1
+----------
+Advancing game to time 15.2
+Running updateEco!
+Awarded direct payment 0 at time 15.2
+Recorded cash and eco values (68.0,267.0) at time 15.2
+----------
+Advancing game to time 15.3
+Running updateEco!
+Awarded direct payment 0 at time 15.3
+Recorded cash and eco values (68.0,267.0) at time 15.3
+----------
+Advancing game to time 15.4
+Running updateEco!
+Awarded direct payment 0 at time 15.4
+Recorded cash and eco values (68.0,267.0) at time 15.4
+----------
+Advancing game to time 15.5
+Running updateEco!
+Awarded direct payment 0 at time 15.5
+Recorded cash and eco values (68.0,267.0) at time 15.5
+----------
+Advancing game to time 15.6
+Running updateEco!
+Awarded direct payment 0 at time 15.6
+Recorded cash and eco values (68.0,267.0) at time 15.6
+----------
+Advancing game to time 15.7
+Running updateEco!
+Advanced current time to 15.600000000000007
+Awarded direct payment 0 at time 15.7
+Recorded cash and eco values (48.0,268.0) at time 15.7
+----------
+Advancing game to time 15.8
+Running updateEco!
+Advanced current time to 15.700000000000006
+Awarded direct payment 0 at time 15.8
+Recorded cash and eco values (48.0,268.0) at time 15.8
+----------
+Advancing game to time 15.9
+Running updateEco!
+Awarded direct payment 0 at time 15.9
+Recorded cash and eco values (48.0,268.0) at time 15.9
+----------
+Advancing game to time 16.0
+Running updateEco!
+Awarded direct payment 0 at time 16.0
+Recorded cash and eco values (48.0,268.0) at time 16.0
+----------
+Advancing game to time 16.1
+Running updateEco!
+Awarded direct payment 0 at time 16.1
+Recorded cash and eco values (48.0,268.0) at time 16.1
+----------
+Advancing game to time 16.2
+Running updateEco!
+Awarded direct payment 0 at time 16.2
+Recorded cash and eco values (48.0,268.0) at time 16.2
+----------
+Advancing game to time 16.25
+Running updateEco!
+Awarded direct payment 0 at time 16.25
+Recorded cash and eco values (48.0,268.0) at time 16.25
+----------
+Advancing game to time 16.3
+Running updateEco!
+Awarded direct payment 0 at time 16.3
+Recorded cash and eco values (48.0,268.0) at time 16.3
+----------
+Advancing game to time 16.4
+Running updateEco!
+Awarded direct payment 0 at time 16.4
+Recorded cash and eco values (48.0,268.0) at time 16.4
+----------
+Advancing game to time 16.5
+Running updateEco!
+Advanced current time to 16.400000000000006
+Awarded direct payment 0 at time 16.5
+Recorded cash and eco values (28.0,269.0) at time 16.5
+----------
+Advancing game to time 16.6
+Running updateEco!
+Advanced current time to 16.500000000000007
+Awarded direct payment 0 at time 16.6
+Recorded cash and eco values (28.0,269.0) at time 16.6
+----------
+Advancing game to time 16.7
+Running updateEco!
+Awarded direct payment 0 at time 16.7
+Recorded cash and eco values (28.0,269.0) at time 16.7
+----------
+Advancing game to time 16.75
+Running updateEco!
+Awarded direct payment 0 at time 16.75
+Recorded cash and eco values (28.0,269.0) at time 16.75
+----------
+Advancing game to time 16.8
+Running updateEco!
+Awarded direct payment 0 at time 16.8
+Recorded cash and eco values (28.0,269.0) at time 16.8
+----------
+Advancing game to time 16.9
+Running updateEco!
+Awarded direct payment 0 at time 16.9
+Recorded cash and eco values (28.0,269.0) at time 16.9
+----------
+Advancing game to time 17.0
+Running updateEco!
+Awarded direct payment 0 at time 17.0
+Recorded cash and eco values (28.0,269.0) at time 17.0
+----------
+Advancing game to time 17.1
+Running updateEco!
+Awarded direct payment 0 at time 17.1
+Recorded cash and eco values (28.0,269.0) at time 17.1
+----------
+Advancing game to time 17.2
+Running updateEco!
+Awarded direct payment 0 at time 17.2
+Recorded cash and eco values (28.0,269.0) at time 17.2
+----------
+Advancing game to time 17.25
+Running updateEco!
+Advanced current time to 17.200000000000006
+Awarded direct payment 0 at time 17.25
+Recorded cash and eco values (8.0,270.0) at time 17.25
+----------
+Advancing game to time 17.3
+Running updateEco!
+Awarded direct payment 0 at time 17.3
+Recorded cash and eco values (8.0,270.0) at time 17.3
+----------
+Advancing game to time 17.4
+Running updateEco!
+Advanced current time to 17.300000000000008
+Awarded direct payment 0 at time 17.4
+Recorded cash and eco values (8.0,270.0) at time 17.4
+----------
+Advancing game to time 17.5
+Running updateEco!
+Awarded direct payment 0 at time 17.5
+Recorded cash and eco values (8.0,270.0) at time 17.5
+----------
+Advancing game to time 17.6
+Running updateEco!
+Awarded direct payment 0 at time 17.6
+Recorded cash and eco values (8.0,270.0) at time 17.6
+----------
+Advancing game to time 17.7
+Running updateEco!
+Awarded direct payment 0 at time 17.7
+Recorded cash and eco values (8.0,270.0) at time 17.7
+----------
+Advancing game to time 17.75
+Running updateEco!
+Awarded direct payment 0 at time 17.75
+Recorded cash and eco values (8.0,270.0) at time 17.75
+----------
+Advancing game to time 17.8
+Running updateEco!
+Awarded direct payment 0 at time 17.8
+Recorded cash and eco values (8.0,270.0) at time 17.8
+----------
+Advancing game to time 17.9
+Running updateEco!
+Awarded direct payment 0 at time 17.9
+Recorded cash and eco values (8.0,270.0) at time 17.9
+----------
+Advancing game to time 18.0
+Running updateEco!
+Awarded eco payment 270.0 at time 18.0
+Recorded cash and eco values (278.0,270.0) at time 18.0
+Running updateEco!
+Awarded direct payment 0 at time 18.0
+Recorded cash and eco values (278.0,270.0) at time 18.0
+----------
+Advancing game to time 18.1
+Running updateEco!
+Advanced current time to 18.000000000000007
+Awarded direct payment 0 at time 18.1
+Recorded cash and eco values (258.0,271.0) at time 18.1
+----------
+Advancing game to time 18.2
+Running updateEco!
+Advanced current time to 18.10000000000001
+Awarded direct payment 0 at time 18.2
+Recorded cash and eco values (258.0,271.0) at time 18.2
+----------
+Advancing game to time 18.25
+Running updateEco!
+Awarded direct payment 0 at time 18.25
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.25
+----------
+Advancing game to time 18.3
+Running updateEco!
+Awarded direct payment 0 at time 18.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.3
+----------
+Advancing game to time 18.4
+Running updateEco!
+Awarded direct payment 0 at time 18.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.4
+----------
+Advancing game to time 18.5
+Running updateEco!
+Awarded direct payment 0 at time 18.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.5
+----------
+Advancing game to time 18.6
+Running updateEco!
+Awarded direct payment 0 at time 18.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.6
+----------
+Advancing game to time 18.7
+Running updateEco!
+Awarded direct payment 0 at time 18.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.7
+----------
+Advancing game to time 18.75
+Running updateEco!
+Awarded direct payment 0 at time 18.75
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.75
+----------
+Advancing game to time 18.8
+Running updateEco!
+Awarded direct payment 0 at time 18.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (258.0,271.0) at time 18.8
+----------
+Advancing game to time 18.9
+Running updateEco!
+Advanced current time to 18.800000000000008
+Awarded direct payment 0 at time 18.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 18.9
+----------
+Advancing game to time 19.0
+Running updateEco!
+Advanced current time to 18.90000000000001
+Awarded direct payment 0 at time 19.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 19.0
+----------
+Advancing game to time 19.1
+Running updateEco!
+Awarded direct payment 0 at time 19.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 19.1
+----------
+Advancing game to time 19.2
+Running updateEco!
+Awarded direct payment 0 at time 19.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 19.2
+----------
+Advancing game to time 19.3
+Running updateEco!
+Awarded direct payment 0 at time 19.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 19.3
+----------
+Advancing game to time 19.4
+Running updateEco!
+Awarded direct payment 0 at time 19.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 19.4
+----------
+Advancing game to time 19.5
+Running updateEco!
+Awarded direct payment 0 at time 19.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 19.5
+----------
+Advancing game to time 19.6
+Running updateEco!
+Awarded direct payment 0 at time 19.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (238.0,272.0) at time 19.6
+----------
+Advancing game to time 19.7
+Running updateEco!
+Advanced current time to 19.60000000000001
+Reached the maximum amount of eco sends! Attempting to move to next eco send in the queue
+Modified the eco send to Spaced Blues
+----------
+Advancing game to time 19.8
+Running updateEco!
+Advanced current time to 19.70000000000001
+Awarded direct payment 0 at time 19.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (218.0,273.0) at time 19.8
+----------
+Advancing game to time 19.9
+Running updateEco!
+Awarded direct payment 0 at time 19.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (218.0,273.0) at time 19.9
+----------
+Advancing game to time 20.0
+Running updateEco!
+Awarded direct payment 0 at time 20.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (218.0,273.0) at time 20.0
+----------
+Advancing game to time 20.1
+Running updateEco!
+Awarded direct payment 0 at time 20.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (218.0,273.0) at time 20.1
+----------
+Advancing game to time 20.2
+Running updateEco!
+Awarded direct payment 0 at time 20.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (218.0,273.0) at time 20.2
+----------
+Advancing game to time 20.3
+Running updateEco!
+Awarded direct payment 0 at time 20.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (218.0,273.0) at time 20.3
+----------
+Advancing game to time 20.4
+Running updateEco!
+Awarded direct payment 0 at time 20.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (218.0,273.0) at time 20.4
+----------
+Advancing game to time 20.5
+Running updateEco!
+Advanced current time to 20.40000000000001
+Awarded direct payment 0 at time 20.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 20.5
+----------
+Advancing game to time 20.6
+Running updateEco!
+Advanced current time to 20.50000000000001
+Awarded direct payment 0 at time 20.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 20.6
+----------
+Advancing game to time 20.7
+Running updateEco!
+Awarded direct payment 0 at time 20.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 20.7
+----------
+Advancing game to time 20.8
+Running updateEco!
+Awarded direct payment 0 at time 20.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 20.8
+----------
+Advancing game to time 20.9
+Running updateEco!
+Awarded direct payment 0 at time 20.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 20.9
+----------
+Advancing game to time 21.0
+Running updateEco!
+Awarded direct payment 0 at time 21.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 21.0
+----------
+Advancing game to time 21.1
+Running updateEco!
+Awarded direct payment 0 at time 21.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 21.1
+----------
+Advancing game to time 21.2
+Running updateEco!
+Awarded direct payment 0 at time 21.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (203.0,273.8) at time 21.2
+----------
+Advancing game to time 21.3
+Running updateEco!
+Advanced current time to 21.20000000000001
+Awarded direct payment 0 at time 21.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 21.3
+----------
+Advancing game to time 21.4
+Running updateEco!
+Advanced current time to 21.30000000000001
+Awarded direct payment 0 at time 21.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 21.4
+----------
+Advancing game to time 21.5
+Running updateEco!
+Awarded direct payment 0 at time 21.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 21.5
+----------
+Advancing game to time 21.6
+Running updateEco!
+Awarded direct payment 0 at time 21.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 21.6
+----------
+Advancing game to time 21.7
+Running updateEco!
+Awarded direct payment 0 at time 21.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 21.7
+----------
+Advancing game to time 21.8
+Running updateEco!
+Awarded direct payment 0 at time 21.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 21.8
+----------
+Advancing game to time 21.9
+Running updateEco!
+Awarded direct payment 0 at time 21.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 21.9
+----------
+Advancing game to time 22.0
+Running updateEco!
+Awarded direct payment 0 at time 22.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (188.0,274.6) at time 22.0
+----------
+Advancing game to time 22.1
+Running updateEco!
+Advanced current time to 22.00000000000001
+Awarded direct payment 0 at time 22.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.1
+----------
+Advancing game to time 22.2
+Running updateEco!
+Advanced current time to 22.100000000000012
+Awarded direct payment 0 at time 22.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.2
+----------
+Advancing game to time 22.3
+Running updateEco!
+Awarded direct payment 0 at time 22.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.3
+----------
+Advancing game to time 22.4
+Running updateEco!
+Awarded direct payment 0 at time 22.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.4
+----------
+Advancing game to time 22.5
+Running updateEco!
+Awarded direct payment 0 at time 22.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.5
+----------
+Advancing game to time 22.6
+Running updateEco!
+Awarded direct payment 0 at time 22.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.6
+----------
+Advancing game to time 22.7
+Running updateEco!
+Awarded direct payment 0 at time 22.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.7
+----------
+Advancing game to time 22.8
+Running updateEco!
+Awarded direct payment 0 at time 22.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (173.0,275.4) at time 22.8
+----------
+Advancing game to time 22.9
+Running updateEco!
+Advanced current time to 22.80000000000001
+Awarded direct payment 0 at time 22.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 22.9
+----------
+Advancing game to time 23.0
+Running updateEco!
+Advanced current time to 22.900000000000013
+Awarded direct payment 0 at time 23.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 23.0
+----------
+Advancing game to time 23.1
+Running updateEco!
+Awarded direct payment 0 at time 23.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 23.1
+----------
+Advancing game to time 23.2
+Running updateEco!
+Awarded direct payment 0 at time 23.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 23.2
+----------
+Advancing game to time 23.3
+Running updateEco!
+Awarded direct payment 0 at time 23.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 23.3
+----------
+Advancing game to time 23.4
+Running updateEco!
+Awarded direct payment 0 at time 23.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 23.4
+----------
+Advancing game to time 23.5
+Running updateEco!
+Awarded direct payment 0 at time 23.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 23.5
+----------
+Advancing game to time 23.6
+Running updateEco!
+Awarded direct payment 0 at time 23.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (158.0,276.2) at time 23.6
+----------
+Advancing game to time 23.7
+Running updateEco!
+Advanced current time to 23.600000000000012
+Awarded direct payment 0 at time 23.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (143.0,277.0) at time 23.7
+----------
+Advancing game to time 23.8
+Running updateEco!
+Advanced current time to 23.700000000000014
+Awarded direct payment 0 at time 23.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (143.0,277.0) at time 23.8
+----------
+Advancing game to time 23.9
+Running updateEco!
+Awarded direct payment 0 at time 23.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (143.0,277.0) at time 23.9
+----------
+Advancing game to time 24.0
+Running updateEco!
+Awarded eco payment 277.0 at time 24.0
+Recorded cash and eco values (420.0,277.0) at time 24.0
+Running updateEco!
+Awarded direct payment 0 at time 24.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (420.0,277.0) at time 24.0
+----------
+Advancing game to time 24.1
+Running updateEco!
+Awarded direct payment 0 at time 24.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (420.0,277.0) at time 24.1
+----------
+Advancing game to time 24.2
+Running updateEco!
+Awarded direct payment 0 at time 24.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (420.0,277.0) at time 24.2
+----------
+Advancing game to time 24.3
+Running updateEco!
+Awarded direct payment 0 at time 24.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (420.0,277.0) at time 24.3
+----------
+Advancing game to time 24.4
+Running updateEco!
+Awarded direct payment 0 at time 24.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (420.0,277.0) at time 24.4
+----------
+Advancing game to time 24.5
+Running updateEco!
+Advanced current time to 24.400000000000013
+Awarded direct payment 0 at time 24.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 24.5
+----------
+Advancing game to time 24.6
+Running updateEco!
+Advanced current time to 24.500000000000014
+Awarded direct payment 0 at time 24.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 24.6
+----------
+Advancing game to time 24.7
+Running updateEco!
+Awarded direct payment 0 at time 24.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 24.7
+----------
+Advancing game to time 24.8
+Running updateEco!
+Awarded direct payment 0 at time 24.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 24.8
+----------
+Advancing game to time 24.9
+Running updateEco!
+Awarded direct payment 0 at time 24.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 24.9
+----------
+Advancing game to time 25.0
+Running updateEco!
+Awarded direct payment 0 at time 25.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.0
+----------
+Advancing game to time 25.1
+Running updateEco!
+Awarded direct payment 0 at time 25.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.1
+----------
+Advancing game to time 25.2
+Running updateEco!
+Awarded direct payment 0 at time 25.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.2
+----------
+Advancing game to time 25.3
+Running updateEco!
+Awarded direct payment 0 at time 25.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.3
+----------
+Advancing game to time 25.4
+Running updateEco!
+Awarded direct payment 0 at time 25.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.4
+----------
+Advancing game to time 25.5
+Running updateEco!
+Awarded direct payment 0 at time 25.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.5
+----------
+Advancing game to time 25.6
+Running updateEco!
+Awarded direct payment 0 at time 25.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.6
+----------
+Advancing game to time 25.7
+Running updateEco!
+Awarded direct payment 0 at time 25.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.7
+----------
+Advancing game to time 25.8
+Running updateEco!
+Awarded direct payment 0 at time 25.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.8
+----------
+Advancing game to time 25.9
+Running updateEco!
+Awarded direct payment 0 at time 25.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (405.0,277.8) at time 25.9
+----------
+Advancing game to time 26.0
+Running updateEco!
+Advanced current time to 25.900000000000013
+Awarded direct payment 0 at time 26.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.0
+----------
+Advancing game to time 26.1
+Running updateEco!
+Advanced current time to 26.000000000000014
+Awarded direct payment 0 at time 26.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.1
+----------
+Advancing game to time 26.2
+Running updateEco!
+Awarded direct payment 0 at time 26.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.2
+----------
+Advancing game to time 26.3
+Running updateEco!
+Awarded direct payment 0 at time 26.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.3
+----------
+Advancing game to time 26.4
+Running updateEco!
+Awarded direct payment 0 at time 26.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.4
+----------
+Advancing game to time 26.5
+Running updateEco!
+Awarded direct payment 0 at time 26.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.5
+----------
+Advancing game to time 26.6
+Running updateEco!
+Awarded direct payment 0 at time 26.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.6
+----------
+Advancing game to time 26.7
+Running updateEco!
+Awarded direct payment 0 at time 26.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.7
+----------
+Advancing game to time 26.8
+Running updateEco!
+Awarded direct payment 0 at time 26.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.8
+----------
+Advancing game to time 26.9
+Running updateEco!
+Awarded direct payment 0 at time 26.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 26.9
+----------
+Advancing game to time 27.0
+Running updateEco!
+Awarded direct payment 0 at time 27.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 27.0
+----------
+Advancing game to time 27.1
+Running updateEco!
+Awarded direct payment 0 at time 27.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 27.1
+----------
+Advancing game to time 27.2
+Running updateEco!
+Awarded direct payment 0 at time 27.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 27.2
+----------
+Advancing game to time 27.3
+Running updateEco!
+Awarded direct payment 0 at time 27.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 27.3
+----------
+Advancing game to time 27.4
+Running updateEco!
+Awarded direct payment 0 at time 27.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (390.0,278.6) at time 27.4
+----------
+Advancing game to time 27.5
+Running updateEco!
+Advanced current time to 27.400000000000013
+Reached the maximum amount of eco sends! Attempting to move to next eco send in the queue
+No more sends in the eco queue! Switching to the zero send.
+Modified the eco send to Zero
+----------
+Advancing game to time 27.6
+Running updateEco!
+Awarded direct payment 0 at time 27.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 27.6
+----------
+Advancing game to time 27.7
+Running updateEco!
+Awarded direct payment 0 at time 27.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 27.7
+----------
+Advancing game to time 27.8
+Running updateEco!
+Awarded direct payment 0 at time 27.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 27.8
+----------
+Advancing game to time 27.9
+Running updateEco!
+Awarded direct payment 0 at time 27.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 27.9
+----------
+Advancing game to time 28.0
+Running updateEco!
+Awarded direct payment 0 at time 28.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.0
+----------
+Advancing game to time 28.1
+Running updateEco!
+Awarded direct payment 0 at time 28.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.1
+----------
+Advancing game to time 28.2
+Running updateEco!
+Awarded direct payment 0 at time 28.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.2
+----------
+Advancing game to time 28.3
+Running updateEco!
+Awarded direct payment 0 at time 28.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.3
+----------
+Advancing game to time 28.4
+Running updateEco!
+Awarded direct payment 0 at time 28.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.4
+----------
+Advancing game to time 28.5
+Running updateEco!
+Awarded direct payment 0 at time 28.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.5
+----------
+Advancing game to time 28.6
+Running updateEco!
+Awarded direct payment 0 at time 28.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.6
+----------
+Advancing game to time 28.7
+Running updateEco!
+Awarded direct payment 0 at time 28.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.7
+----------
+Advancing game to time 28.8
+Running updateEco!
+Awarded direct payment 0 at time 28.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.8
+----------
+Advancing game to time 28.9
+Running updateEco!
+Awarded direct payment 0 at time 28.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 28.9
+----------
+Advancing game to time 29.0
+Running updateEco!
+Awarded direct payment 0 at time 29.0
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.0
+----------
+Advancing game to time 29.1
+Running updateEco!
+Awarded direct payment 0 at time 29.1
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.1
+----------
+Advancing game to time 29.2
+Running updateEco!
+Awarded direct payment 0 at time 29.2
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.2
+----------
+Advancing game to time 29.3
+Running updateEco!
+Awarded direct payment 0 at time 29.3
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.3
+----------
+Advancing game to time 29.4
+Running updateEco!
+Awarded direct payment 0 at time 29.4
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.4
+----------
+Advancing game to time 29.5
+Running updateEco!
+Awarded direct payment 0 at time 29.5
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.5
+----------
+Advancing game to time 29.6
+Running updateEco!
+Awarded direct payment 0 at time 29.6
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.6
+----------
+Advancing game to time 29.7
+Running updateEco!
+Awarded direct payment 0 at time 29.7
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.7
+----------
+Advancing game to time 29.8
+Running updateEco!
+Awarded direct payment 0 at time 29.8
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.8
+----------
+Advancing game to time 29.9
+Running updateEco!
+Awarded direct payment 0 at time 29.9
+WARNING! Reached negative cash while attempting the transaction!
+Recorded cash and eco values (375.0,279.4) at time 29.9
+----------
+Advancing game to time 30.0
+Running updateEco!
+Awarded eco payment 279.4 at time 30.0
+Recorded cash and eco values (654.4,279.4) at time 30.0
+Running updateEco!
+Awarded direct payment 0 at time 30.0
+We have 654.4 cash! We can do the next buy, which costs 650.0 and has a buffer of 0 and a minimum buy time of 18.25!
+Completed the buy operation! The buy queue now has 0 items remaining in it
+Recorded cash and eco values (4.4,279.4) at time 30.0
+----------
+Advancing game to time 30.1
+Running updateEco!
+Awarded direct payment 0 at time 30.1
+Recorded cash and eco values (4.4,279.4) at time 30.1
+----------
+Advancing game to time 30.2
+Running updateEco!
+Awarded direct payment 0 at time 30.2
+Recorded cash and eco values (4.4,279.4) at time 30.2
+----------
+Advancing game to time 30.3
+Running updateEco!
+Awarded direct payment 0 at time 30.3
+Recorded cash and eco values (4.4,279.4) at time 30.3
+----------
+Advancing game to time 30.4
+Running updateEco!
+Awarded direct payment 0 at time 30.4
+Recorded cash and eco values (4.4,279.4) at time 30.4
+----------
+Advancing game to time 30.5
+Running updateEco!
+Awarded direct payment 0 at time 30.5
+Recorded cash and eco values (4.4,279.4) at time 30.5
+----------
+Advanced game state to round 2
+The current time is 30.5
+The next round starts at time 54.5
+Our new cash and eco is given by (4.4,279.4) 
+
+MESSAGE FROM GameState.viewCashEcoHistory():
+Graphing history of cash and eco!
+Successfully generated graph! 
+

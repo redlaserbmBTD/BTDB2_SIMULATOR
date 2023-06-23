@@ -42,9 +42,14 @@ def writeLog(lines, filename = 'log', path = 'logs/'):
 
 #NOTE: I have not yet implemented these values in the code below. That is, right now these numbers are hard-coded in the GameState class.
 
-globals = {
+game_globals = {
     'Eco Delay': 0.1, #The delay between eco sends, in seconds, assuming the attack queue is not full and the player has enough cash to send eco.
-    'MWS Bonus': 10000
+    'Fortified Multiplier': 2.0,
+    'Camoflauge Multiplier': 2.0,
+    'Regrow Multiplier': 1.6,
+    'Regrow Round': 8,
+    'Camoflauge Round': 12,
+    'Fortified Round': 18
 }
 
 #There are additional farm parameters
@@ -215,8 +220,21 @@ class GameState():
         #~~~~~~~~~~~~~~~~
         
         #Eco queue info
+        
+        # Items in the eco_queue look like (time, properties), where properties is a dictionary like so:
+        # {
+        #     'Send Name': send_name,
+        #     'Max Send Amount': max_send_amount,
+        #     'Fortified': fortified,
+        #     'Camoflauge': camo,
+        #     'Regrow': regrow
+        # }
+
+        # Max send amount is useful if we need to simulate sending a precise number of sets of bloons
+
         self.eco_queue = initial_state.get('Eco Queue')
-        self.eco_cost_multiplier = 1
+        self.max_send_amount = initial_state.get('Max Send Amount')
+        self.number_of_sends = 0
         
         #Upgrade queue
         self.buy_queue = initial_state.get('Buy Queue')
@@ -227,7 +245,7 @@ class GameState():
         #Attack queue - This is the list of bloons in the center of the screen that pops up whenever you send eco
         self.attack_queue = []
         self.attack_queue_unlock_time = self.current_time
-        self.eco_delay = 0.1
+        self.eco_delay = game_globals['Eco Delay']
 
         #For repeated supply drop buys
         self.supply_drop_max_buy_time = -1
@@ -335,49 +353,96 @@ class GameState():
             while len(self.eco_queue) > 0 and break_flag == False:
                 #print("length of queue: %s"%(len(self.eco_queue)))
                 #Is the eco send too late?
-                if self.eco_queue[0][0] >= self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0][1]]['End Round']+1):
+                if self.eco_queue[0]['Time'] >= self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['End Round']+1):
                     #Yes, the send is too late.
-                    self.logs.append("Warning! Time %s is too late to call %s. Removing from eco queue"%(self.eco_queue[0][0],self.eco_queue[0][1]))
+                    self.logs.append("Warning! Time %s is too late to call %s. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
                     self.eco_queue.pop(0)
                     
                 else:
                     #No, the send is not too late
                     
                     #Is the eco send too early?
-                    candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0][1]]['Start Round'])
-                    if self.eco_queue[0][0] < candidate_time:
+                    candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round'])
+                    if self.eco_queue[0]['Time'] < candidate_time:
                         #Yes, the send is too early
-                        self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0][0],self.eco_queue[0][1], candidate_time))
-                        self.eco_queue[0] = (candidate_time, self.eco_queue[0][1])
+                        self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name'], candidate_time))
+                        self.eco_queue[0] = (candidate_time, self.eco_queue[0]['Send Name'])
                         #Is the adjusted time still valid?
-                        if len(self.eco_queue) < 2 or self.eco_queue[0][0] < self.eco_queue[1][0]:
+                        if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
                             #Yes, it's still valid
                             break_flag = True
                         else:
                             #No, it's not valid
-                            self.logs.append("Warning! Time %s is too late to call %s because the next item in the eco queue is slated to come earlier. Removing from eco queue"%(self.eco_queue[0][0],self.eco_queue[0][1]))
+                            self.logs.append("Warning! Time %s is too late to call %s because the next item in the eco queue is slated to come earlier. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
                             self.eco_queue.pop(0)
                     else:
                         #No, the send is not too early
                         break_flag = True
             
-            if len(self.eco_queue) > 0 and self.eco_queue[0][0] <= self.current_time:
-                self.changeEcoSend(self.eco_queue[0][1])
+            if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] <= self.current_time:
+                self.changeEcoSend(self.eco_queue[0])
                 self.eco_queue.pop(0)
             else:
                 future_flag = True
+
+        # Once we have sorted out what eco sends will get used and the times they'll get used...
+        # we need to ensure we don't apply properties to sends if those properties are unavailable or otherwise can't be applied
+        for i in range(len(self.eco_queue)):
+            send = self.eco_queue[i] 
+
+            #Do not apply modifiers to eco sends if the modifiers are not available
+            if send['Time'] < self.rounds.getTimeFromRound(game_globals['Fortified Round']):
+                send['Fortified'] = False
+            if send['Time'] < self.rounds.getTimeFromRound(game_globals['Camoflauge Round']):
+                send['Camoflauge'] = False
+            if send['Time'] < self.rounds.getTimeFromRound(game_globals['Regrow Round']):
+                send['Regrow'] = False
+            
+            #Do not apply modifiers to eco sends if they are ineligible to receive such modifiers
+            if not eco_send_info[send['Send Name']]['Fortified']:
+                send['Fortified'] = False
+            if not eco_send_info[send['Send Name']]['Camoflauge']:
+                send['Camoflauge'] = False
+            if not eco_send_info[send['Send Name']]['Regrow']:
+                send['Regrow'] = False
+            
+            self.eco_queue[i] = send
+
         
-    def changeEcoSend(self,send_name):
-        #TODO: Implement safeguards to prevent the player from changing to an eco send that is unavailable
+    def changeEcoSend(self,send_info):
+        # NOTE: This function does NOT contain safeguards to prevent the player from changing to unavailable eco sends.
+        # Such safeguards are handled by the ecoQueueCorrection method, which is automatically run when simulating game states.
 
+        # The send info dictionary looks like this:
+        # {
+        #     'Time': time,
+        #     'Send Name': send_name,
+        #     'Max Send Amount': max_send_amount,
+        #     'Fortified': fortified,
+        #     'Camoflauge': camo,
+        #     'Regrow': regrow
+        # }
+        
         #First, check if the send has any fortied, camo, or regrow characteristics
+        cost_multiplier = 1
+        if send_info['Fortified'] == True:
+            cost_multiplier *= game_globals['Fortified Multiplier']
+        if send_info['Camoflauge'] == True:
+            cost_multiplier *= game_globals['Camoflauge Multiplier']
+        if send_info['Regrow'] == True:
+            cost_multiplier *= game_globals['Regrow Multiplier']
 
-        self.eco_cost = eco_send_info[send_name]['Price']
-        self.eco_gain = eco_send_info[send_name]['Eco']
-        self.eco_time = eco_send_info[send_name]['Send Duration']
+        self.send_name = send_info['Send Name']
 
-        self.send_name = send_name
-        self.logs.append("Modified the eco send to %s"%(send_name))
+        self.eco_cost = cost_multiplier*eco_send_info[self.send_name]['Price']
+        self.eco_gain = eco_send_info[self.send_name]['Eco']
+        self.eco_time = eco_send_info[self.send_name]['Send Duration']
+
+        self.max_send_amount = send_info['Max Send Amount']
+        self.number_of_sends = 0
+
+        self.logs.append("Modified the eco send to %s"%(self.send_name))
+        self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
 
     def showWarnings(self,warnings):
         for index in warnings:
@@ -414,24 +479,30 @@ class GameState():
         self.logs.append("Our new cash and eco is given by (%s,%s) \n"%(np.round(self.cash,2),np.round(self.eco,2)))
 
     def advanceGameState(self, target_time = None, target_round = None):
-        #self.logs.append("MESSAGE FROM GameState.advanceGameState: ")
+        # self.logs.append("MESSAGE FROM GameState.advanceGameState: ")
         # Advance the game to the time target_time, 
         # computing the new money and eco amounts at target_time
-        
-        # FAIL-SAFE
+
+        # NOTE: This function only works so long as nothing about the player's income sources changes.
+        # Thus, if the player makes a purchase or changes eco sends, we will terminate prematurely.
+
+        ###################
+        #PART 0: FAIL-SAFES
+        ###################
+
+        # If the eco queue has the player try to use eco sends when they unavailable, automatically modify the queue so this doesn't happen
         self.ecoQueueCorrection()
         
         # FAIL-SAFE: Terminate advanceGameState early if an eco change is scheduled before the target_time.
-        if len(self.eco_queue) > 0 and self.eco_queue[0][0] < target_time:
+        if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] < target_time:
             #Yes, an eco change will occur
-            target_time = self.eco_queue[0][0]
+            target_time = self.eco_queue[0]['Time']
 
         # FAIL-SAFE: Check whether the current eco send is valid. If it is not, change the eco send to zero.
         if eco_send_info[self.send_name]['End Round'] < self.current_round:
             self.logs.append("Warning! The eco send %s is no longer available! Switching to the zero send."%(self.send_name))
             self.warnings.append(len(self.logs) - 1)
-            self.changeEcoSend('Zero')
-            self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
+            self.changeEcoSend({'Send Name': 'Zero'})
 
         # FAIL-SAFE: Prevent advanceGameState from using an eco send after it becomes unavailable by terminating early in this case.
         if eco_send_info[self.send_name]['End Round'] + 1 <= self.rounds.getRoundFromTime(target_time):
@@ -456,43 +527,43 @@ class GameState():
         #PART 2: COMPUTATION OF WEALTH
         ##############################
         
-        #Now that payouts are sorted, award them in the order they are meant to be awarded in.
-        #This is essential for the correct computation of wealth gained over the given time period.
+        # Now that payouts are sorted, award them in the order they are meant to be awarded in.
+        # The general flow of the code in this part is this:
+            # Compute the impact of eco between payments
+            # Award payment
+            # Try to make purchases immediately after receiving the payment.
         
-        time = self.current_time
+        made_purchase = False
         for i in range(len(payout_times)):
             payout = payout_times[i]
             
-            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            #First, compute the impact of eco in between payouts
-            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            #First, compute the impact of eco from the previous payout (or starting time) to the current one
+            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-            while self.attack_queue_unlock_time < payout['Time'] and self.send_name != 'Zero':
+            self.updateEco(payout['Time'])
 
-                # First, check if we can remove any items from the attack queue
-                for attack_end in self.attack_queue:
-                    if self.attack_queue_unlock_time >= attack_end:
-                        self.attack_queue.remove(attack_end)
-                
-                # Next, try to add an attack to the attack_queue.
-                # Can we send an attack?
-                if self.cash >= self.eco_cost and len(self.attack_queue) < 6:
-                    # Yes, the queue is empty and we have enough cash
-                    if len(self.attack_queue) == 0:
-                        self.attack_queue.append(time + self.eco_time)
-                    else:
-                        self.attack_queue.append(self.attack_queue[-1] + self.eco_time)
-                    self.cash -= self.eco_cost
-                    self.eco += self.eco_gain
-                    self.attack_queue_unlock_time += self.eco_delay
+            if self.max_send_amount is not None and self.number_of_sends == self.max_send_amount:
+                self.logs.append("Reached the maximum amount of eco sends! Attempting to move to next eco send in the queue")
+                if len(self.eco_queue) > 0:
+                    self.eco_queue[0]['Time'] = self.current_time
+                else:
+                    #Switch to the zero send
+                    self.logs.append("No more sends in the eco queue! Switching to the zero send.")
+                    self.eco_queue.append({
+                        'Time': self.current_time,
+                        'Send Name': 'Zero',
+                        'Max Send Amount': None,
+                        'Fortified': False,
+                        'Camoflauge': False,
+                        'Regrow': False
+                    })
+                self.ecoQueueCorrection()
+                if self.current_time < payout['Time']:
+                    break
+                else:
+                    made_purchase = True
 
-                elif len(self.attack_queue) == 6:
-                    # No, the queue is full!
-                    self.attack_queue_unlock_time = max(self.attack_queue[0], self.attack_queue_unlock_time)
-
-                elif self.cash < self.eco_cost:
-                    # No, we don't have money!
-                    self.attack_queue_unlock_time = max(payout['Time'], self.attack_queue_unlock_time)
             
             #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
             #Next, award the payout at the given time
@@ -537,10 +608,9 @@ class GameState():
             #Now, check whether we can perform the next buy in the buy queue
             #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             
-            # The simulation should attempt to process the buy queue after every purchase, *except* if multiple payouts occur at the same time
+            # The simulation should attempt to process the buy queue after every payout, *except* if multiple payouts occur at the same time
             # If multiple payouts occur at the same time, only access the buy queue after the *last* of those payments occurs.
 
-            made_purchase = False
             try_to_buy = False
 
             if i == len(payout_times)-1:
@@ -548,8 +618,9 @@ class GameState():
             elif payout_times[i]['Time'] < payout_times[i+1]['Time']:
                 try_to_buy = True
             
-            if try_to_buy == True:
-                made_purchase = self.processBuyQueue(payout)
+            if try_to_buy:
+                if self.processBuyQueue(payout):
+                    made_purchase = True
             
             #~~~~~~~~~~~~~~~~~~~~
             # Automated Purchases
@@ -586,11 +657,12 @@ class GameState():
             self.eco_states.append(self.eco)
             self.logs.append("Recorded cash and eco values (%s,%s) at time %s"%(np.round(self.cash,2),np.round(self.eco,2),np.round(payout['Time'],2)))
             
-            time = payout['Time']
+            # NOTE: The last payment is a "ghost" payment to be awarded at the target time.
+            self.current_time = payout['Time']
 
             #If a purchase occured in the buy queue, exit the processing of payments early
             if made_purchase == True:
-                target_time = time
+                target_time = self.current_time
                 break
 
             #end of for loop
@@ -602,16 +674,16 @@ class GameState():
         #PART 3: UPDATE GAME TIME PARAMETERS
         ####################################
         
-        #Determine the round we are in now
+        # DEVELOPER'S NOTE: The list of payments always includes a "ghost" payment of 0 dollars at the designated target time. That payment helps to simplify this code. 
         self.current_time = target_time
+
         while self.rounds.round_starts[self.current_round] <= self.current_time:
             self.current_round += 1
         self.current_round -= 1
         
         #Update the eco send, if necessary
-        if len(self.eco_queue) > 0 and target_time >= self.eco_queue[0][0]:
-            self.changeEcoSend(self.eco_queue[0][1])
-            self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
+        if len(self.eco_queue) > 0 and target_time >= self.eco_queue[0]['Time']:
+            self.changeEcoSend(self.eco_queue[0])
             self.eco_queue.pop(0)
         
         #self.logs.append("Advanced game state to round " + str(self.current_round))
@@ -839,6 +911,50 @@ class GameState():
         #self.logs.append("Sorted the payouts in order of increasing time!")
 
         return payout_times
+
+    def updateEco(self, target_time):
+        # Helper method which updates eco from the current game time to the specified target_time.
+        self.logs.append("Running updateEco!")
+
+        # DEVELOPER'S NOTE: Because of a shortcoming in the code, if the player runs out of cash in the simulator while eco'ing, 
+        # There is a very small delay between when the player earns enough cash to eco again and when they actually start eco'ing again.
+        # This shortcoming is due to the fact that, if the player is to receive a payment on the same time that they try to send a set of bloons, the simulator will try to send the bloons first before awarding the payment.
+        # There is a known fix for this issue, but I do not wish to implement out of fear that it may hamper code performance and make the code more difficult to read and understand.
+
+        # self.logs.append("Attack Queue Unlock time: %s"%(self.attack_queue_unlock_time))
+        # self.logs.append("Send Name: %s"%(self.send_name))
+        # self.logs.append("Number of Sends: %s"%(self.number_of_sends))
+        # self.logs.append("Max Send Amount: %s"%(self.max_send_amount))
+
+        while self.attack_queue_unlock_time <= target_time and self.send_name != 'Zero' and (self.max_send_amount is None or self.number_of_sends < self.max_send_amount):
+            self.current_time = max(self.attack_queue_unlock_time, self.current_time)
+            self.logs.append("Advanced current time to %s"%(self.current_time))
+
+            # First, check if we can remove any items from the attack queue
+            for attack_end in self.attack_queue:
+                if self.current_time >= attack_end:
+                    self.attack_queue.remove(attack_end)
+            
+            # Next, try to add an attack to the attack_queue.
+            # Can we send an attack?
+            if self.cash >= self.eco_cost and len(self.attack_queue) < 6:
+                # Yes, the queue is empty and we have enough cash
+                if len(self.attack_queue) == 0:
+                    self.attack_queue.append(self.current_time + self.eco_time)
+                else:
+                    self.attack_queue.append(self.attack_queue[-1] + self.eco_time)
+                self.cash -= self.eco_cost
+                self.eco += self.eco_gain
+                self.attack_queue_unlock_time = self.current_time + self.eco_delay
+                self.number_of_sends += 1
+
+            elif len(self.attack_queue) == 6:
+                # No, the queue is full!
+                self.attack_queue_unlock_time = self.attack_queue[0]
+            
+            elif self.cash < self.eco_cost:
+                # No, we don't have money!
+                self.attack_queue_unlock_time = target_time + self.eco_delay/2
 
     def processBuyQueue(self, payout):
         # Helper function for advanceGameState
@@ -1410,4 +1526,37 @@ def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None,
     display(df)
     logs.append("Successfully generated graph! \n")
 
+def equivalentEcoImpact(time_tuple, rounds, farms = None, boat_farms = None, druid_farms = None, supply_drops = None, time_type = 'Rounds'):
+    #Given some collection of farms and a span of time, determine the amount of the eco that would make the same amount of money as those farms in that time span
+    assert type(time_tuple) == tuple and len(time_tuple) == 2, "ERROR! time_tuple must be of the form (start, end)"
 
+    #We expect in most cases that the player will indicate start and end rounds for this function. In that case, convert the starting round and ending rounds to times
+    if time_type == 'Rounds':
+        start_time = rounds.getTimeFromRound(time_tuple[0])
+        end_time = rounds.getTimeFromRound(time_tuple[1])
+
+    #If the farms contain any banks, we will add actions to the buy queue to withdraw from these banks upon reaching the target time
+    buy_queue = []
+
+    for key in farms.keys():
+        if farms[key]['Upgrades'][1] >= 3:
+            buy_queue.append([withdrawBank(key, min_buy_time = end_time)])
+
+    initial_state_game = {
+        'Cash': 0,
+        'Eco': 0,
+        'Rounds': rounds,
+        'Game Time': start_time,
+        'Farms': farms,
+        'Boat Farms': boat_farms,
+        'Druid Farms': druid_farms,
+        'Supply Drops': supply_drops
+    }
+
+    game_state = GameState(initial_state_game)
+    game_state.fastForward(target_time = end_time)
+
+    #Now compute the formula for equivlaent eco impact
+    return 6*game_state.cash/(end_time - start_time)
+
+# %%

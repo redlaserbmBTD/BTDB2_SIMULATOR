@@ -217,13 +217,19 @@ filename = os.path.join(dirname, "templates/eco_send_info.csv")
 eco_send_table = pd.read_csv(filename)
 eco_send_info = {}
 
+def str2bool(a):
+    return a.lower in ("true")
+
 for index, row in eco_send_table.iterrows():
     eco_send_info[row['send_name']] = {
         'Price': row['price'],
         'Eco': row['eco'],
         'Start Round': row['start_round'],
         'End Round': row['end_round'],
-        'Send Duration': row['send_duration']
+        'Send Duration': row['send_duration'],
+        'Fortified': row['fortified'],
+        'Camoflauge': row['camo'],
+        'Regrow': row['regrow']
     }
 
 # %%
