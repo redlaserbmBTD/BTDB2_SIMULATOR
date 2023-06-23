@@ -16,72 +16,7 @@ Users unfamiliar with coding who just need essential functionality should use th
 
 ## Running a simulation in code
 
-To begin running a simulation, first start by initilizaing the rounds class.
-
-```python
-rounds = Rounds(0.0)
-```
-The number inside is the *stall factor* of the game. This number may vary from 0 to 1, and a higher number means longer rounds. Next, if you have any farms presently in play, go ahead and declare those like so:
-
-```python
-farms = {
-    0: initFarm(0, upgrades = [4,2,0]), 
-    1: initFarm(0, upgrades = [2,0,4]),
-    2: initFarm(rounds.getTimeFromRound(19.999), upgrades = [2,0,4])
-}
-```
-The indexes of the farm dictionary should nonnegative integers. The first argument of `InitFarm` specifies the purchase time of the farm. Our next step is to initialize the eco and buy queues, which determine our strategy for eco'ing and the purchases we intend to make over the course of the simuation. 
-
-```python
-buy_queue = [
-    
-    #Sell into MWS
-    [sellFarm(0), sellFarm(1), upgradeFarm(2,2)], 
-    
-    #Buy a 420 Farm
-    [buyFarm()],
-    [upgradeFarm(3,0)],
-    [upgradeFarm(3,0)],
-    [upgradeFarm(3,0)],
-    [upgradeFarm(3,1)],
-    [upgradeFarm(3,1)],
-    [upgradeFarm(3,0)],
-    
-    #Buy another 420 Farm
-    [buyFarm()],
-    [upgradeFarm(4,0)],
-    [upgradeFarm(4,0)],
-    [upgradeFarm(4,0)],
-    [upgradeFarm(4,1)],
-    [upgradeFarm(4,1)],
-    [upgradeFarm(4,0)],
-    
-    #Sell into BC
-    [sellFarm(2),upgradeFarm(3,0)]
-]
-```
-The buy queue is a list of lists. That is, each item in the buy queue is a list which specifies a set of _actions_ to perform simultaneously. In most cases this list will only contain one element, but there are moments where it is useful to specify multiple at once --- consider for example, selling one farm and immediately buying an upgrade on another farm with the money. For a complete list of actions that may be fed 
- into the buy queue, please refer to `actions.py`. Finally, let's collect all components of our initial game state into a dictionary:
-
-```python
-initial_state_game = {
-    'Cash': 0,
-    'Eco': 2000,
-    'Eco Send': 'Zero',
-    'Rounds': rounds,
-    'Game Round': 24.5,
-    'Farms': farms,
-    'Buy Queue': buy_queue
-}
-```
-To simulate, we do something like the following:
-```python
-game_state = GameState(initial_state_game)
-game_state.fastForward(target_round = 28)
-game_state.viewCashEcoHistory()
-print("Current Cash and Eco: (%s,%s)"%(np.round(game_state.cash,0),np.round(game_state.eco,0)))
-```
-The 2nd to last line displays a graph of eco and cash over time, along with a labellings of when rounds start, changes in eco are made, and when purchases are made.
+Check out the "examples" folder for tutorial files on how to run the code!
 
 ## Advanced Sim Usage
 
@@ -109,6 +44,9 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
+- (June 23, 2023 - v0.9.10)
+   - Added support for eco modifiers and eco numbers. This new update *changes* how the eco queue works. Now, instead of putting tuples into the eco_queue, you use the function `ecoSend` from actions.py. This new function lets you specify modifiers for the send you are placing in the queue, and also has functionality to force the simulator to switch to the next item in the queue after sending some number of sets. This functionality is generally useful for determining how to eco while still affording your hero + essential defense on R1, or for mapping out the impact of rushing your opponent.
+   - The "examples" folder contains two tutorial files on how to operate the simulator. The purpose of these files is to improve presentability of the code and encourage usage by top level players.
 - (June 21, 2023 - v0.9.9)
    - Added support for Jericho money stealing. Note that it is the player's responsbility to correctly indicate the amount that Jericho steals. The code operates under the assumption that Jericho's steal is never blocked.
    - Fixed an issue which made it so that files which imported the library had to be placed in a certain location relative to the repo location in order for importing to work correctly.
