@@ -79,12 +79,12 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 
 # Feature Requests
 
-- (High priority) Restructure the code:
-   - While usage of the code for simulation purposes is relatively easy, reading the code to understand how it does what it does is *not*. The goal is to clean up the code so that potential collaborators may be more inclined to contribute.
+- (Medium Priority) Heli alt-eco
+- (Medium priority) Restructure the code:
+   - Some parts of the code could be reorganized to improve the dev'ing experience for potential collaborators.
 - (Medium priority) Equivialent eco contribution of farms:
    - The idea here is to implement a function which answers the following question: Given some set of farms, starting and ending times `start_time` and `end_time`, and some specification of round times, how much eco do I need to make exactly as much as the farm would make over the interval `[start_time, end_time)`?
 - (Medium priority) Robust logging when comparing different strategies
    - The idea here is this: If I have two or more game states that share the same round class and are simulated over the same time span, they are directly comparable. While a method already exists to compare multiple game states with this principle, because it does not share code with the `Game State` class method `viewCashAndEcoHistory`, it is currently inflexible with regards to updates and lacks some of the pizazz the class method has right now.
 - (Low Priority) Optimization of the buy queue to prevent redundant computations
    - The code is already reasonably fast, but there are selected cases where the simulator is known to perform the same computation repeatedly when this sort of thing can be avoided.
-- (Low Priority) Heli alt-eco
