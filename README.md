@@ -80,8 +80,9 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 # Feature Requests
 
 - (Medium Priority) Heli alt-eco
-- (Medium priority) Restructure the code:
-   - Some parts of the code could be reorganized to improve the dev'ing experience for potential collaborators.
+- (High priority) Restructure the code:
+   - The file `farm_init.py`, which I intend to rename to `info.py` in a future update, should be a "one-stop shop" file for all the game's corresponding hard-coded values. If I step away from the community and the simulator needs to be updated to remain up to date with balance changes in the game, the intent is that those updates can easily be made by changing the numbers in said file. Such an update does not even require competency in Python.
+   - There may be a way to rewrite 'processBuyQueue' so that it uses less lines of code and is easier to understand. (will explain idea here later)
 - (Medium priority) Equivialent eco contribution of farms:
    - The idea here is to implement a function which answers the following question: Given some set of farms, starting and ending times `start_time` and `end_time`, and some specification of round times, how much eco do I need to make exactly as much as the farm would make over the interval `[start_time, end_time)`?
 - (Medium priority) Robust logging when comparing different strategies
