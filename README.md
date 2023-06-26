@@ -44,6 +44,12 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
+- (June 26, 2023 - v0.9.11)
+   - Better handling of global values. To improve the ease at which the sim can be updated when balance changes come around, hard-coded values are now defined in `info.py` and then imported into `main.py`.
+   - Updated Druid farms. Because of the recent changes to druid, it is no longer necessary to treat the money-making active ability of Spirit of the Forest as an "optional" action.
+   - Added support for maximum eco amounts. This new feature allows you to specify to the simulator to switch to the next eco send after reaching a specified amount of eco.
+   - Slightly improved `ecoQueueCorrection` method. The new method (again) follows the philosophy of only modifying the eco queue on an "as-needed" basis.
+   - Fixed a bug which caused boat farms to not work at all.
 - (June 23, 2023 - v0.9.10)
    - Added support for eco modifiers and eco numbers. This new update *changes* how the eco queue works. Now, instead of putting tuples into the eco queue, you use the function `ecoSend` from `actions.py`. This new function lets you specify modifiers for the send you are placing in the queue, and also has functionality to force the simulator to switch to the next item in the queue after sending some number of sets. This functionality is generally useful for determining how to eco while still affording your hero + essential defense on R1, or for mapping out the impact of rushing your opponent.
    - The "examples" folder contains two tutorial files on how to operate the simulator. The purpose of these files is to improve presentability of the code and encourage usage by top level players.
@@ -77,15 +83,19 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 - (May 11, 2023 - v0.9.1) 
    - Added druid farm support. Currently untested!
 
-# Feature Requests
+# Feature To-Do List
 
-- (Medium Priority) Heli alt-eco
-- (High priority) Restructure the code:
-   - The file `farm_init.py`, which I intend to rename to `info.py` in a future update, should be a "one-stop shop" file for all the game's corresponding hard-coded values. If I step away from the community and the simulator needs to be updated to remain up to date with balance changes in the game, the intent is that those updates can easily be made by changing the numbers in said file. Such an update does not even require competency in Python.
+- (High Priority) Heli alt-eco
+- (High Priority) Improved Jeri functionality
+   - The improved Jericho functionality would ideally include support for Highwayman steals, as well as support for being stolen from.
+   - Although cumbersome with diminishing returns to accompany it, the computation of hero XP and hero levels would help to simplify the experience of using Jericho in the sim.
+- (High Priority) Availability on pypi
+   - My goal is to have the code available on pypi on Friday. Then, any user with python installed on their machine can install the code with a `pip install [module_name]` command and use it on their machine without the need to even import this repository!
+- (Medium priority) Village support:
+   - Village support would help answer the question of how useful Monkey City/Monkey Town actually are.
+- (Medium priority) Restructure the code:
    - There may be a way to rewrite 'processBuyQueue' so that it uses less lines of code and is easier to understand. (will explain idea here later)
-- (Medium priority) Equivialent eco contribution of farms:
-   - The idea here is to implement a function which answers the following question: Given some set of farms, starting and ending times `start_time` and `end_time`, and some specification of round times, how much eco do I need to make exactly as much as the farm would make over the interval `[start_time, end_time)`?
-- (Medium priority) Robust logging when comparing different strategies
+- (Low priority) Robust logging when comparing different strategies
    - The idea here is this: If I have two or more game states that share the same round class and are simulated over the same time span, they are directly comparable. While a method already exists to compare multiple game states with this principle, because it does not share code with the `Game State` class method `viewCashAndEcoHistory`, it is currently inflexible with regards to updates and lacks some of the pizazz the class method has right now.
 - (Low Priority) Optimization of the buy queue to prevent redundant computations
    - The code is already reasonably fast, but there are selected cases where the simulator is known to perform the same computation repeatedly when this sort of thing can be avoided.
