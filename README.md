@@ -2,8 +2,8 @@
 
 Hi there! I'm redlaserbm, the main developer of the BTDB2 Eco simulator. To get started with using the code, please read through this README file! 
 
+- To operate the code, see the examples folder.
 - To learn more about how the code works, see the documentation file at documentation/documentation.pdf
-- To operate the code, see the section on operating the code.
 - Want to request features for the code? Want to help out with the code? Found a bug? Don't hesitate to contact me! The most immediate way to get my attention with regards to this code is to join the B2 Popology discord server and ping me there: https://discord.gg/axHnkcVe6E
 
 # Operating the Code
