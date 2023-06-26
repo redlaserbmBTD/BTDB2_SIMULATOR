@@ -1110,7 +1110,7 @@ Recorded cash and eco values (238.0,272.0) at time 19.6
 Advancing game to time 19.7
 Running updateEco!
 Advanced current time to 19.60000000000001
-Reached the maximum amount of eco sends! Attempting to move to next eco send in the queue
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
 Modified the eco send to Spaced Blues
 ----------
 Advancing game to time 19.8
@@ -1596,7 +1596,7 @@ Recorded cash and eco values (390.0,278.6) at time 27.4
 Advancing game to time 27.5
 Running updateEco!
 Advanced current time to 27.400000000000013
-Reached the maximum amount of eco sends! Attempting to move to next eco send in the queue
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
 No more sends in the eco queue! Switching to the zero send.
 Modified the eco send to Zero
 ----------

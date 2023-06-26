@@ -2,19 +2,9 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import b2sim.farm_init
+from b2sim.info import * #
 
 # %%
-farm_upgrades_costs = b2sim.farm_init.farm_upgrades_costs
-farm_bank_capacity = b2sim.farm_init.farm_bank_capacity
-farm_payout_values = b2sim.farm_init.farm_payout_values
-farm_sell_values = b2sim.farm_init.farm_sellback_values
-
-eco_send_info = b2sim.farm_init.eco_send_info
-
-boat_upgrades_costs = [5400, 19000]
-boat_payout_values = [300, 1000, 3000]
-boat_sell_values = [1960, 6560, 21760]
 
 
 # %%
@@ -37,42 +27,6 @@ def writeLog(lines, filename = 'log', path = 'logs/'):
         for line in lines:
             f.write(line)
             f.write('\n')
-
-# %%
-
-#NOTE: I have not yet implemented these values in the code below. That is, right now these numbers are hard-coded in the GameState class.
-
-game_globals = {
-    'Eco Delay': 0.1, #The delay between eco sends, in seconds, assuming the attack queue is not full and the player has enough cash to send eco.
-    'Fortified Multiplier': 2.0,
-    'Camoflauge Multiplier': 2.0,
-    'Regrow Multiplier': 1.6,
-    'Regrow Round': 8,
-    'Camoflauge Round': 12,
-    'Fortified Round': 18
-}
-
-#There are additional farm parameters
-farm_globals = {
-    'Monkey Wall Street Bonus': 10000,
-    'Monkeynomics Payout': 20000,
-    'Monkeynomics Initial Cooldown': 20,
-    'Monkeynomics Usage Cooldown': 60
-}
-
-druid_globals = {
-    'Druid Farm Cost': 4675,
-    'Druid Farm Initial Cooldown': 15,
-    'Druid Farm Usage Cooldown': 40,
-    'Druid Farm Payout': 1000,
-    'Spirit of the Forest Upgrade Cost': 35000,
-    'Spirit of the Forest Bonus': 3000
-}
-
-hero_globals = {
-    'Jericho Number of Steals': 10,
-    'Jericho Steal Interval': 1
-}
 
 # %%
 class GameState():
@@ -173,7 +127,7 @@ class GameState():
         self.Tempire_exists = False
         self.boat_key = 0
         if self.boat_farms is not None:
-            for key in boat_farms.keys():
+            for key in self.boat_farms.keys():
                 if key >= self.key:
                     self.key = key+1
 
@@ -193,11 +147,6 @@ class GameState():
         else:
             self.sotf = None
             self.druid_key = 0
-        
-        if self.sotf is not None:
-            self.sotf_min_use_time = self.druid_farms[self.sotf] + 15
-        else:
-            self.sotf_min_use_time = None
 
         #Next, supply drops!
         self.supply_drops = initial_state.get('Supply Drops')
@@ -231,9 +180,11 @@ class GameState():
         # }
 
         # Max send amount is useful if we need to simulate sending a precise number of sets of bloons
+        # Max eco amount is useful for eco strategies which may demand strategy decisions like "stop eco at 3000 eco"
 
         self.eco_queue = initial_state.get('Eco Queue')
         self.max_send_amount = initial_state.get('Max Send Amount')
+        self.max_eco_amount = initial_state.get('Max Eco Amount')
         self.number_of_sends = 0
         
         #Upgrade queue
@@ -342,72 +293,90 @@ class GameState():
         self.logs.append("Successfully generated graph! \n")
     
     def changeStallFactor(self,stall_factor):
-        #This is just a helper function
+        #NOTE: This method currently does not see use at all. It may be removed in a future update.
         self.rounds.changeStallFactor(stall_factor,self.current_time)
 
+    def checkProperties(self):
+        # Helper method for ecoQueueCorrection.
+
+        #Do not apply modifiers to eco sends if the modifiers are not available
+        if self.eco_queue[0]['Time'] < self.rounds.getTimeFromRound(game_globals['Fortified Round']):
+            self.eco_queue[0]['Fortified'] = False
+        if self.eco_queue[0]['Time'] < self.rounds.getTimeFromRound(game_globals['Camoflauge Round']):
+            self.eco_queue[0]['Camoflauge'] = False
+        if self.eco_queue[0]['Time'] < self.rounds.getTimeFromRound(game_globals['Regrow Round']):
+            self.eco_queue[0]['Regrow'] = False
+        
+        #Do not apply modifiers to eco sends if they are ineligible to receive such modifiers
+        if not eco_send_info[self.eco_queue[0]['Send Name']]['Fortified']:
+            self.eco_queue[0]['Fortified'] = False
+        if not eco_send_info[self.eco_queue[0]['Send Name']]['Camoflauge']:
+            self.eco_queue[0]['Camoflauge'] = False
+        if not eco_send_info[self.eco_queue[0]['Send Name']]['Regrow']:
+            self.eco_queue[0]['Regrow'] = False
+
     def ecoQueueCorrection(self):
-        #Check whether the next item in the eco queue is valid.
+        # This method automatically adjusts the game state's given eco queue so that it contains valid sends.
+
+        # Essentially, the code works like this:
+        # Look at the first send in the queue and decide if the time currently indicated is too early or late, or if we have exceeded the maximum permissible amount of eco for this send (self.max_eco_amount).
+        # # If it's too late (we are beyond the last round which we would use the send), remove the send from the queue
+        # # If it's too early, adjust the time to earliest available time we can use the send
+        # If the process above results in the first send in the queue being slated to be used after the second, *remove* the first send.
+        # The process above repeats until either the queue is empty or the first send in the queue is valid.
+        # Once it is determined that the first send in the queue is valid, check for and remove any properties from the eco which cannot be applied to said send.
+
+        # When the process above is complete, we must check whether we should change to first send in the queue right now or not.
+        # # If the answer is no, we can exit the process.
+        # # If the answer is yes, switch to said send, and then (if there are still items in the eco queue) check whether the next item in the send is valid (This entails repeating the *entire* process above!)
+
         future_flag = False
         while len(self.eco_queue) > 0 and future_flag == False:
             break_flag = False
             while len(self.eco_queue) > 0 and break_flag == False:
                 #print("length of queue: %s"%(len(self.eco_queue)))
-                #Is the eco send too late?
-                if self.eco_queue[0]['Time'] >= self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['End Round']+1):
-                    #Yes, the send is too late.
-                    self.logs.append("Warning! Time %s is too late to call %s. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
+
+                #Are we under the eco threshold to use the eco send?
+                if self.eco_queue[0]['Max Eco Amount'] is not None and self.eco >= self.eco_queue[0]['Max Eco Amount']:
+                    #No, do not use the eco send.
                     self.eco_queue.pop(0)
-                    
                 else:
-                    #No, the send is not too late
-                    
-                    #Is the eco send too early?
-                    candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round'])
-                    if self.eco_queue[0]['Time'] < candidate_time:
-                        #Yes, the send is too early
-                        self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name'], candidate_time))
-                        self.eco_queue[0] = (candidate_time, self.eco_queue[0]['Send Name'])
-                        #Is the adjusted time still valid?
-                        if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
-                            #Yes, it's still valid
-                            break_flag = True
-                        else:
-                            #No, it's not valid
-                            self.logs.append("Warning! Time %s is too late to call %s because the next item in the eco queue is slated to come earlier. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
-                            self.eco_queue.pop(0)
+                    #Yes, we are under the threshold. Now check if the given time for the send is a valid time..
+
+                    #Is the eco send too late?
+                    if self.eco_queue[0]['Time'] >= self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['End Round']+1):
+                        #Yes, the send is too late. Remove it from the queue.
+                        self.logs.append("Warning! Time %s is too late to call %s. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
+                        self.eco_queue.pop(0)
+                        
                     else:
-                        #No, the send is not too early
-                        break_flag = True
+                        #No, the send is not too late
+                        
+                        #Is the eco send too early?
+                        candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round'])
+                        if self.eco_queue[0]['Time'] < candidate_time:
+                            #Yes, the send is too early
+                            self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name'], candidate_time))
+                            self.eco_queue[0] = (candidate_time, self.eco_queue[0]['Send Name'])
+                            #Is the adjusted time still valid?
+                            if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
+                                #Yes, it's still valid
+                                self.checkProperties()
+                                break_flag = True
+                            else:
+                                #No, it's not valid
+                                self.logs.append("Warning! Time %s is too late to call %s because the next item in the eco queue is slated to come earlier. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
+                                self.eco_queue.pop(0)
+                        else:
+                            #No, the send is not too early
+                            self.checkProperties()
+                            break_flag = True
             
             if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] <= self.current_time:
                 self.changeEcoSend(self.eco_queue[0])
                 self.eco_queue.pop(0)
             else:
                 future_flag = True
-
-        # Once we have sorted out what eco sends will get used and the times they'll get used...
-        # we need to ensure we don't apply properties to sends if those properties are unavailable or otherwise can't be applied
-        for i in range(len(self.eco_queue)):
-            send = self.eco_queue[i] 
-
-            #Do not apply modifiers to eco sends if the modifiers are not available
-            if send['Time'] < self.rounds.getTimeFromRound(game_globals['Fortified Round']):
-                send['Fortified'] = False
-            if send['Time'] < self.rounds.getTimeFromRound(game_globals['Camoflauge Round']):
-                send['Camoflauge'] = False
-            if send['Time'] < self.rounds.getTimeFromRound(game_globals['Regrow Round']):
-                send['Regrow'] = False
-            
-            #Do not apply modifiers to eco sends if they are ineligible to receive such modifiers
-            if not eco_send_info[send['Send Name']]['Fortified']:
-                send['Fortified'] = False
-            if not eco_send_info[send['Send Name']]['Camoflauge']:
-                send['Camoflauge'] = False
-            if not eco_send_info[send['Send Name']]['Regrow']:
-                send['Regrow'] = False
-            
-            self.eco_queue[i] = send
-
         
     def changeEcoSend(self,send_info):
         # NOTE: This function does NOT contain safeguards to prevent the player from changing to unavailable eco sends.
@@ -420,7 +389,8 @@ class GameState():
         #     'Max Send Amount': max_send_amount,
         #     'Fortified': fortified,
         #     'Camoflauge': camo,
-        #     'Regrow': regrow
+        #     'Regrow': regrow,
+        #     'Max Eco Amount': max_eco_amount
         # }
         
         #First, check if the send has any fortied, camo, or regrow characteristics
@@ -438,8 +408,12 @@ class GameState():
         self.eco_gain = eco_send_info[self.send_name]['Eco']
         self.eco_time = eco_send_info[self.send_name]['Send Duration']
 
+        #Setting the max_send_amount
         self.max_send_amount = send_info['Max Send Amount']
         self.number_of_sends = 0
+
+        #Setting the max_eco_amount
+        self.max_eco_amount = send_info['Max Eco Amount']
 
         self.logs.append("Modified the eco send to %s"%(self.send_name))
         self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
@@ -543,10 +517,12 @@ class GameState():
 
             self.updateEco(payout['Time'])
 
-            if self.max_send_amount is not None and self.number_of_sends == self.max_send_amount:
-                self.logs.append("Reached the maximum amount of eco sends! Attempting to move to next eco send in the queue")
+            if (self.max_send_amount is not None and self.number_of_sends == self.max_send_amount) or (self.max_eco_amount is not None and self.eco >= self.max_eco_amount):
+                self.logs.append("Reached the limit on eco'ing for this send! Moving to the next send in the queue.")
+
                 if len(self.eco_queue) > 0:
                     self.eco_queue[0]['Time'] = self.current_time
+                    self.ecoQueueCorrection()
                 else:
                     #Switch to the zero send
                     self.logs.append("No more sends in the eco queue! Switching to the zero send.")
@@ -554,11 +530,14 @@ class GameState():
                         'Time': self.current_time,
                         'Send Name': 'Zero',
                         'Max Send Amount': None,
+                        'Max Eco Amount': None,
                         'Fortified': False,
                         'Camoflauge': False,
                         'Regrow': False
                     })
-                self.ecoQueueCorrection()
+                
+                # In rare cases, we may break from the eco queue on exactly same time that we are slated to receive a payment
+                # In that rare case, we need to award the payment for that time and check the buy queue to ensure that we do not "skip" over anything essential.
                 if self.current_time < payout['Time']:
                     break
                 else:
@@ -712,20 +691,21 @@ class GameState():
         if self.druid_farms is not None:
             for key in self.druid_farms.keys():
                 druid_farm = self.druid_farms[key]
-                if key != self.sotf:
-                    #Determine the earliest druid farm activation that could occur within the interval of interest (self.current_time,target_time]
-                    use_index = max(1,np.floor(1 + (self.current_time - druid_farm - 15)/40)+1)
-                    druid_farm_time = druid_farm + 15 + 40*(use_index-1)
-                    while druid_farm_time <= target_time:
-                        payout_entry = {
-                            'Time': druid_farm_time,
-                            'Payout Type': 'Direct',
-                            'Payout': druid_globals['Druid Farm Payout']
-                        }
-                        payout_times.append(payout_entry)
-                        druid_farm_time += druid_globals['Druid Farm Usage Cooldown']
-                elif key == self.sotf:
-                    #Spirit of the Forest has a start of round payment of 3000 dollars and an "optional" active that is used 
+
+                #Determine the earliest druid farm activation that could occur within the interval of interest (self.current_time,target_time]
+                use_index = max(1,np.floor(1 + (self.current_time - druid_farm - druid_globals['Druid Farm Initial Cooldown'])/druid_globals['Druid Farm Usage Cooldown'])+1)
+                druid_farm_time = druid_farm + druid_globals['Druid Farm Initial Cooldown'] + druid_globals['Druid Farm Usage Cooldown']*(use_index-1)
+                while druid_farm_time <= target_time:
+                    payout_entry = {
+                        'Time': druid_farm_time,
+                        'Payout Type': 'Direct',
+                        'Payout': druid_globals['Druid Farm Payout']
+                    }
+                    payout_times.append(payout_entry)
+                    druid_farm_time += druid_globals['Druid Farm Usage Cooldown']
+
+                if key == self.sotf:
+                    #Spirit of the Forest has a start of round payment of 3000 dollars in addition to the payouts that x4x druids can give out 
                     #At the start of each round, append a payout entry with the SOTF payout
                     self.inc = 1
                     while self.rounds.getTimeFromRound(self.current_round + self.inc) <= target_time:
@@ -743,13 +723,13 @@ class GameState():
             for key in self.supply_drops.keys():
                 supply_drop = self.supply_drops[key]
                 if key == self.elite_sniper:
-                    payout_amount = 5000
+                    payout_amount = sniper_globals['Elite Sniper Payout']
                 else:
-                    payout_amount = 2000
+                    payout_amount = sniper_globals['Supply Drop Payout']
 
                 #Determine the earliest supply drop activation that could occur within the interval of interest (self.current_time,target_time]
-                drop_index = max(1,np.floor(1 + (self.current_time - supply_drop - 15)/40)+1)
-                supply_drop_time = supply_drop + 15 + 40*(drop_index-1)
+                drop_index = max(1,np.floor(1 + (self.current_time - supply_drop - sniper_globals['Supply Drop Initial Cooldown'])/sniper_globals['Supply Drop Usage Cooldown'])+1)
+                supply_drop_time = supply_drop + sniper_globals['Supply Drop Initial Cooldown'] + sniper_globals['Supply Drop Usage Cooldown']*(drop_index-1)
                 while supply_drop_time <= target_time:
                     
                     payout_entry = {
@@ -758,13 +738,13 @@ class GameState():
                         'Payout': payout_amount
                     }
                     payout_times.append(payout_entry)
-                    supply_drop_time += 40
+                    supply_drop_time += sniper_globals['Supply Drop Usage Cooldown']
                     
         #FARMS
         if len(self.farms) > 0:
             for key in self.farms.keys():
                 farm = self.farms[key]
-                #If the farm is a monkeyopolis, determine the payout times of the active ability
+                #If the farm is a monkeynomics, determine the payout times of the active ability
                 if farm.upgrades[1] == 5:
                     farm_time = farm.min_use_time
                     while farm_time <= target_time:
@@ -772,7 +752,7 @@ class GameState():
                             payout_entry = {
                                 'Time': farm_time,
                                 'Payout Type': 'Direct',
-                                'Payout': 20000
+                                'Payout': farm_globals['Monkeynomics Payout']
                             }
                             payout_times.append(payout_entry)
                         farm_time += 60
@@ -838,13 +818,13 @@ class GameState():
                                 payout_entry = {
                                     'Time': farm_time,
                                     'Payout Type': 'Direct',
-                                    'Payout': farm.payout_amount + 10000
+                                    'Payout': farm.payout_amount + farm_globals['Monkey Wall Street Bonus']
                                 }
                             elif farm.upgrades[0] == 4 and self.T5_exists[0] == True:
                                 payout_entry = {
                                     'Time': farm_time,
                                     'Payout Type': 'Direct',
-                                    'Payout': farm.payout_amount*1.25
+                                    'Payout': farm.payout_amount*farm_globals['Banana Central Multplier']
                                 }
                             else:
                                 payout_entry = {
@@ -926,7 +906,7 @@ class GameState():
         # self.logs.append("Number of Sends: %s"%(self.number_of_sends))
         # self.logs.append("Max Send Amount: %s"%(self.max_send_amount))
 
-        while self.attack_queue_unlock_time <= target_time and self.send_name != 'Zero' and (self.max_send_amount is None or self.number_of_sends < self.max_send_amount):
+        while self.attack_queue_unlock_time <= target_time and self.send_name != 'Zero' and (self.max_send_amount is None or self.number_of_sends < self.max_send_amount) and (self.max_eco_amount is None or self.eco < self.max_eco_amount):
             self.current_time = max(self.attack_queue_unlock_time, self.current_time)
             self.logs.append("Advanced current time to %s"%(self.current_time))
 
@@ -1001,17 +981,6 @@ class GameState():
                             self.valid_action_flag = False
                             break
                     
-                    #If the dict_obj is a SOTF use, force self.min_buy_time to be at least be the self.sotf_min_use_time
-                    if dict_obj['Type'] == 'Use Spirit of the Forest':
-                        if self.sotf_min_use_time is not None and self.sotf_min_use_time > self.min_buy_time:
-                            self.min_buy_time = self.sotf_min_use_time
-                        elif self.sotf_min_use_time is None:
-                            #Do not attempt to use SOTF if we don't have SOTF
-                            self.logs.append("Warning! Buy queue entry includes attempt to use Spirit of the Forest when it is not in play! Aborting buy queue!")
-                            self.warnings.append(len(self.logs)-1)
-                            self.valid_action_flag = False
-                            break
-                    
                 self.logs.append("Determined the minimum buy time of the next purchase to be %s"%(self.min_buy_time))
                         
             # If we have not yet reached the minimum buy time, break the while loop. 
@@ -1030,7 +999,7 @@ class GameState():
                     
                 # FARM RELATED MATTERS
                 elif dict_obj['Type'] == 'Buy Farm':
-                    h_cash, h_loan = impact(h_cash, h_loan, -1000)
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*farm_globals['Farm Cost'])
                 elif dict_obj['Type'] == 'Upgrade Farm':
                     ind = dict_obj['Index']
                     path = dict_obj['Path']
@@ -1045,7 +1014,7 @@ class GameState():
                 elif dict_obj['Type'] == 'Sell Farm':
                     ind = dict_obj['Index']
                     farm = self.farms[ind]
-                    h_cash, h_loan = impact(h_cash, h_loan, farm_sell_values[tuple(farm.upgrades)])
+                    h_cash, h_loan = impact(h_cash, h_loan, farm_sellback_values[tuple(farm.upgrades)])
                 elif dict_obj['Type'] == 'Withdraw Bank':
                     #WARNING: The farm in question must actually be a bank for us to perform a withdrawal!
                     #If it isn't, break the loop prematurely
@@ -1073,12 +1042,12 @@ class GameState():
                     farm = self.farms[ind]
                     
                     #When, a loan is activated, treat it like a payment, then add the debt
-                    h_cash, h_loan = impact(h_cash, h_loan, 20000)
-                    h_loan += 20000
+                    h_cash, h_loan = impact(h_cash, h_loan, farm_globals['IMF Loan Amount'])
+                    h_loan += farm_globals['IMF Loan Amount']
                 
                 # BOAT FARM RELATED MATTERS
                 elif dict_obj['Type'] == 'Buy Boat Farm':
-                    h_cash, h_loan = impact(h_cash, h_loan, -2800)
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*boat_globals['Merchantmen Cost'])
                 elif dict_obj['Type'] == 'Upgrade Boat Farm':
                     ind = dict_obj['Index']
                     boat_farm = self.boat_farms[ind]
@@ -1097,12 +1066,12 @@ class GameState():
 
                 # DRUID FARM RELATED MATTERS
                 elif dict_obj['Type'] == 'Buy Druid Farm':
-                    h_cash, h_loan = impact(h_cash, h_loan, -4675)
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*druid_globals['Druid Farm Cost'])
                 elif dict_obj['Type'] == 'Sell Druid Farm':
                     if dict_obj['Index'] == self.sotf:
-                        h_cash, h_loan = impact(h_cash, h_loan, 27772.5)
+                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(druid_globals['Druid Farm Cost'] + druid_globals['Spirit of the Forest Upgrade Cost']))
                     else:
-                        h_cash, h_loan = impact(h_cash, h_loan, 3272.5)
+                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*druid_globals['Druid Farm Cost'])
                 elif dict_obj['Type'] == 'Buy Spirit of the Forest':
                     #WARNING: There can only be one sotf at a time!
                     if self.sotf is not None:
@@ -1110,19 +1079,16 @@ class GameState():
                         self.warnings.append(len(self.logs)-1)
                         self.valid_action_flag = False
                         break
-                    h_cash, h_loan = impact(h_cash, h_loan, -35000)
-                elif dict_obj['Type'] == 'Use Spirit of the Forest':
-                    #Whether or not SOTF is off cooldown is governed by the min_buy_time check
-                    h_cash, h_loan = impact(h_cash, h_loan, 750)
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*druid_globals['Spirit of the Forest Upgrade Cost'])
                 
                 # SUPPLY DROP RELATED MATTERS
                 elif dict_obj['Type'] == 'Buy Supply Drop':
-                    h_cash, h_loan = impact(h_cash, h_loan, -9650)
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*sniper_globals['Supply Drop Cost'])
                 elif dict_obj['Type'] == 'Sell Supply Drop':
                     if dict_obj['Index'] == self.elite_sniper:
-                        h_cash, h_loan = impact(h_cash, h_loan, 16555)
+                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(sniper_globals['Supply Drop Cost'] + sniper_globals['Elite Sniper Upgrade Cost']) )
                     else:
-                        h_cash, h_loan = impact(h_cash, h_loan, 6755)
+                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*sniper_globals['Supply Drop Cost'])
                 elif dict_obj['Type'] == 'Buy Elite Sniper':
                     #WARNING: There can only be one e-sniper at a time!
                     if self.elite_sniper is not None:
@@ -1130,7 +1096,7 @@ class GameState():
                         self.warnings.append(len(self.logs)-1)
                         self.valid_action_flag = False
                         break
-                    h_cash, h_loan = impact(h_cash, h_loan, -14000)
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*sniper_globals['Elite Sniper Upgrade Cost'])
                     
                 #If at any point while performing these operations our cash becomes negative, then prevent the transaction from occurring:
                 if h_cash < 0:
@@ -1194,7 +1160,7 @@ class GameState():
                         farm.purchase_time = payout['Time']
                         
                         #Update the sellback value of the farm
-                        farm.sell_value = farm_sell_values[tuple(farm.upgrades)]
+                        farm.sell_value = farm_sellback_values[tuple(farm.upgrades)]
                         
                         self.logs.append("The new farm has upgrades (%s,%s,%s)"%(farm.upgrades[0],farm.upgrades[1],farm.upgrades[2]))
                         
@@ -1300,9 +1266,6 @@ class GameState():
                         #Determine the minimum time that the SOTF active could be used
                         i = np.floor((20 + payout['Time'] - self.druid_farms[ind])/40) + 1
                         self.sotf_min_use_time = payout['Time'] + 20 + 40*(i-1)
-                    elif dict_obj['Type'] == 'Use Spirit of the Forest':
-                        self.logs.append("Using the Spirit of the Forest active (index %s)"%(self.sotf))
-                        self.sotf_min_use_time = payout['Time'] + 40
                     elif dict_obj['Type'] == 'Repeatedly Buy Druid Farms':
                         self.druid_farm_max_buy_time = dict_obj['Maximum Buy Time']
                         self.druid_farm_buffer = dict_obj['Buffer']
@@ -1372,7 +1335,7 @@ class MonkeyFarm():
         #EXAMPLE: [4,2,0] represents a Banana Research Facility with Valuable Bananas
         
         self.upgrades = initial_state.get('Upgrades')
-        self.sell_value = farm_sell_values[tuple(self.upgrades)]
+        self.sell_value = farm_sellback_values[tuple(self.upgrades)]
         
         self.purchase_time = initial_state.get('Purchase Time')
         

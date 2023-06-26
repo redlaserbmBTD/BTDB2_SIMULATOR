@@ -138,14 +138,6 @@ def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), buffe
         'Message': 'Trigger repeated druid farm buys until time %s'%(max_buy_time)
     }
 
-def useSOTF(min_buy_time = 0):
-    #Look, I know this is confusing, but minimum buy time really is the minimum time that we use SOTF in this case!
-    return {
-        'Type': 'Use Spirit of the Forest',
-        'Minimum Buy Time': min_buy_time,
-        'Message': 'Use SOTF active'
-    }
-
 # WARNING: This function is for declaring druid farms in the initial game state. 
 # Do NOT use it to add druid farms during simulation
 def initDruidFarms(purchase_times, sotf = None):
@@ -219,7 +211,7 @@ def jerichoSteal(min_buy_time = 0, steal_amount = 25):
 # ECO QUEUE
 ###########
 
-def ecoSend(time, send_name, property = 'Normal', max_send_amount = None):
+def ecoSend(time, send_name, property = 'Normal', max_send_amount = None, max_eco_amount = None):
     
     fortified = False
     camo = False
@@ -254,5 +246,6 @@ def ecoSend(time, send_name, property = 'Normal', max_send_amount = None):
         'Max Send Amount': max_send_amount,
         'Fortified': fortified,
         'Camoflauge': camo,
-        'Regrow': regrow
+        'Regrow': regrow,
+        'Max Eco Amount': max_eco_amount
     }
