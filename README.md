@@ -2,17 +2,12 @@
 
 Hi there! I'm redlaserbm, the main developer of the BTDB2 Eco simulator. To get started with using the code, please read through this README file! 
 
-- To operate the code, see the examples folder.
-- To learn more about how the code works, see the documentation file at documentation/documentation.pdf
-- Want to request features for the code? Want to help out with the code? Found a bug? Don't hesitate to contact me! The most immediate way to get my attention with regards to this code is to join the B2 Popology discord server and ping me there: https://discord.gg/axHnkcVe6E
+- To learn how to operate the code, see the examples folder.
+- Want to request features for the code? Want to help out with the code? Found a bug? Don't hesitate to contact me! The most immediate way to get my attention with regards to this code is to join the b2 Popology discord server and ping me there: https://discord.gg/axHnkcVe6E
 
 # Operating the Code
 
-Users unfamiliar with coding who just need essential functionality should use the lightweight version of this simulator on spoonoil's website https://b2.lol. Newbies unfamiliar with coding who nonetheless want to operate the back-end code should follow the steps below to get the code up and running:
-1. Download the latest Anaconda distribution to your computer https://www.anaconda.com/download/ The Anaconda distribution contains a Python "environment" which allows you to run Python code on your computer
-2. Use GitHub Desktop to clone the repository to your desktop. 
-3. One of the programs bundled with the Anaconda distribution is jupyter notebook. Launch jupyter notebook, navigate to where you cloned the repository, and open examples.ipynb
-4. You are now ready to operate the code!
+To use the code, you must have python installed on your computer. First, install python. Then, in the terminal, do `pip install b2sim`.
 
 ## Running a simulation in code
 
@@ -44,6 +39,10 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
 
 # Update Log
+- (June 29, 2023 - v1.0.1)
+   - The python code is now available to install on pip! Just do `pip install b2sim=1.0.1` to install the code on your computer and run it!
+   - If a simulation involves farms, the `GameState` class will track the revenue and expenses of each farm over the course of the simulation.
+   - NOTE: The function for computing equivalentEcoImpact has been phased out. It will be replaced with a better function in a future update. 
 - (June 26, 2023 - v0.9.11)
    - Better handling of global values. To improve the ease at which the sim can be updated when balance changes come around, hard-coded values are now defined in `info.py` and then imported into `main.py`.
    - Updated Druid farms. Because of the recent changes to druid, it is no longer necessary to treat the money-making active ability of Spirit of the Forest as an "optional" action.
@@ -85,12 +84,12 @@ To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0
 
 # Feature To-Do List
 
-- (High Priority) Heli alt-eco
+- (High priority) Expanded revenue tracking:
+   - It would also be nice if the sim could track stats related to alt eco. Such stats could include revenue, expenses, long-run eco, and the aggregate revenue and expenses of each alt eco over the course of the simulation.
+   - For farms in particular, I wish to implement a stat called "equivalent eco impact" which shows the amount of eco that would've earned exactly the same amount that the farm did during its lifespan within simulation time. 
 - (High Priority) Improved Jeri functionality
    - The improved Jericho functionality would ideally include support for Highwayman steals, as well as support for being stolen from.
    - Although cumbersome with diminishing returns to accompany it, the computation of hero XP and hero levels would help to simplify the experience of using Jericho in the sim.
-- (High Priority) Availability on pypi
-   - My goal is to have the code available on pypi on Friday. Then, any user with python installed on their machine can install the code with a `pip install [module_name]` command and use it on their machine without the need to even import this repository!
 - (Medium priority) Village support:
    - Village support would help answer the question of how useful Monkey City/Monkey Town actually are.
 - (Medium priority) Restructure the code:
