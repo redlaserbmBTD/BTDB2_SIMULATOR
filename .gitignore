@@ -2,3 +2,6 @@
 __pycache__/
 /logs/*
 .ipynb_checkpoints/
+build/
+b2sim.egg-info/
+dist/

@@ -93,6 +93,8 @@ def sellBoatFarm(index, min_buy_time = 0):
         'Message': 'Sell boat farm %s'%(index)
     }
 
+# WARNING: This function is for declaring boat farms in the initial game state. 
+# Do NOT use it to add boat farms during simulation
 def initBoatFarm(purchase_time = None, upgrade = 3):
     return {
         'Purchase Time': purchase_time,
@@ -129,11 +131,12 @@ def sellDruidFarm(index, buffer = 0, min_buy_time = 0):
         'Message': 'Sell druid farm %s'%(index)
     }
 
-def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), buffer = 0):
+def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), max_amount = None, buffer = 0):
     return {
         'Type': 'Repeatedly Buy Druid Farms',
         'Minimum Buy Time': min_buy_time,
         'Maximum Buy Time': max_buy_time,
+        'Maximum Amount': max_amount,
         'Buffer': buffer,
         'Message': 'Trigger repeated druid farm buys until time %s'%(max_buy_time)
     }
@@ -177,11 +180,12 @@ def sellSupplyDrop(index, buffer = 0, min_buy_time = 0):
         'Message': 'Sell supply drop %s'%(index)
     }
 
-def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), buffer = 0):
+def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), max_amount = None, buffer = 0):
     return {
         'Type': 'Repeatedly Buy Supply Drops',
         'Minimum Buy Time': min_buy_time,
         'Maximum Buy Time': max_buy_time,
+        'Maximum Amount': max_amount,
         'Buffer': buffer,
         'Message': 'Trigger repeated supply drop buys until time %s'%(max_buy_time)
     }
@@ -193,6 +197,55 @@ def initSupplyDrops(purchase_times, elite_sniper = None):
     for i in range(len(purchase_times)):
         dictionary[i] = purchase_times[i]
     dictionary['Elite Sniper Index'] = elite_sniper
+    return dictionary
+
+############
+# HELICOPTER
+############
+
+def buyHeliFarm(buffer = 0, min_buy_time = 0):
+    return {
+        'Type': 'Buy Heli Farm',
+        'Buffer': buffer,
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Buy heli farm'
+    }
+
+def buySpecialPoperations(index, buffer = 0, min_buy_time = 0):
+    return {
+        'Type': 'Buy Special Poperations',
+        'Index': index,
+        'Buffer': buffer,
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Upgrade heli farm %s to x5x'%(index)
+    }
+
+def sellHeliFarm(index, buffer = 0, min_buy_time = 0):
+    return {
+        'Type': 'Sell Heli Farm',
+        'Index': index,
+        'Buffer': buffer,
+        'Minimum Buy Time': min_buy_time,
+        'Message': 'Sell heli farm %s'%(index)
+    }
+
+def repeatedlyBuyHeliFarms(min_buy_time = 0, max_buy_time = float('inf'), max_amount = None, buffer = 0):
+    return {
+        'Type': 'Repeatedly Buy Heli Farms',
+        'Minimum Buy Time': min_buy_time,
+        'Maximum Buy Time': max_buy_time,
+        'Maximum Amount': max_amount,
+        'Buffer': buffer,
+        'Message': 'Trigger repeated heli farm buys until time %s'%(max_buy_time)
+    }
+
+# WARNING: This function is for declaring heli farms in the initial game state. 
+# Do NOT use it to add supply drops during simulation
+def initHeliFarms(purchase_times, special_poperations = None):
+    dictionary = {}
+    for i in range(len(purchase_times)):
+        dictionary[i] = purchase_times[i]
+    dictionary['Special Poperations Index'] = special_poperations
     return dictionary
 
 #################

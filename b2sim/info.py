@@ -134,6 +134,8 @@ farm_globals = {
     'Farm Upgrade Costs': [[550,550,2600,16000,66000],[200,700,5100,7500,45000],[250,200,2800,13000,46000]],
     'Farm Bank Capacity': [0,0,0,14000,20000,30000],
     'IMF Loan Amount': 20000,
+    'IMF Initial Cooldown': 20,
+    'IMF Usage Cooldown': 90,
     'Monkey Wall Street Bonus': 10000,
     'Monkeynomics Payout': 20000,
     'Monkeynomics Initial Cooldown': 20,
@@ -166,6 +168,15 @@ sniper_globals = {
     'Supply Drop Payout': 2000,
     'Elite Sniper Upgrade Cost': 14000,
     'Elite Sniper Payout': 5000
+}
+
+heli_globals = {
+    'Heli Farm Cost': 12150,
+    'Heli Farm Initial Cooldown': 20,
+    'Heli Farm Usage Cooldown': 60,
+    'Heli Farm Payout': 4000,
+    'Special Poperations Upgrade Cost': 30000,
+    'Special Poperations Payout': 8000
 }
 
 hero_globals = {
@@ -274,7 +285,8 @@ for index, row in eco_send_table.iterrows():
         'Send Duration': row['send_duration'],
         'Fortified': row['fortified'],
         'Camoflauge': row['camo'],
-        'Regrow': row['regrow']
+        'Regrow': row['regrow'],
+        'MOAB Class': row['moab_class']
     }
 
 # %%
