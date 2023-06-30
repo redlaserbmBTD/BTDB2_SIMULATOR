@@ -7,36 +7,18 @@ Hi there! I'm redlaserbm, the main developer of the BTDB2 Eco simulator. To get 
 
 # Operating the Code
 
-To use the code, you must have python installed on your computer. First, install python. Then, in the terminal, do `pip install b2sim`.
-
-## Running a simulation in code
-
-Check out the "examples" folder for tutorial files on how to run the code!
-
-## Advanced Sim Usage
-
-### Custom Round Times
-
-When using the sim with a flat stall factor applied to all rounds, the sim may tend to undershoot the duration of earlier rounds and overshoot the duration of later ones. There are two ways to work around this:
-1. Set different stall factors for different points in the game
-2. Set round times manually.
-
-Method 1 is quick and dirty, while method 2 is slow but precise. To do method 1, initialize the rounds like so
-
-```python
-Rounds([(0,0),(6,0.5),(11,0.3)])
-```
-Here, the rounds class is being initialized with a list of tuples, and each tuple `(round,stall_factor)` instructs the code to change the stall factor to `stall_factor` after reaching round `round`.
-
-To do method 2, after initializing the Rounds class (say as `rounds = Rounds(0.0)`, modify the list `rounds.round_starts`. The ith index of this list determines what time round i begins on.
+To run the code, do the following: 
+1. Install python on your computer. 
+2. In the terminal, do `pip install b2sim`.
+3. Using an IDE like Visual Studio Code, open a new .ipynb file and type `import b2sim as b2` in the first line and hit enter.
+4. You now have a file which you can use to generate simulations! Check out the tutorial files for more info on how to operate the library. 
 
 # Code Features
 
 1. **Simultaneous simulation of eco, farms, and alt-eco:** When given an eco send to use and some arrangement of farms and alt-eco, the simulator accurately tracks the progression of the player's cash and eco over time. The results of the simulator are nearly true to the game.
 2. **Easy operation:** Simply input your initial cash and eco, the round to start on, and the purchases you intend to make and the eco flowchart you intend to follow over the course of the match. The code runs in one click and delivers results in seconds.
 3. **Complete Farm support:** The simulator supports IMF Loans and Monkeyopolis. Also, the simulator supports compound purchases, such as selling into Monkey Wall Street.
-4. **Strategy Comparison:** You can compare multiple different strategies, see how cash and eco progresses over time for each one, and decide what strategy you like better with the compareStrategies() function.
-5. **Advanced Optimization Potential:** The code's fast run time means that it operates well when used in black-box optimization problems.
+4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game. 
 
 # Update Log
 - (June 29, 2023 - v1.0.1)
