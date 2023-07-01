@@ -1,3 +1,4 @@
+Modified the eco send to Grouped Pinks
 MESSAGE FROM GameState.__init__(): 
 Initialized Game State!
 The current game round is 20
@@ -6,8 +7,6 @@ The game round start times are given by [0, 6.0, 29.5, 52.25, 76.25, 105.5, 133.
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 473.3
-Current value of h_farm_revenues: 
-[]
 We have 0 cash! We can do the next buy, which costs 0 and has a buffer of 0 and a minimum buy time of 473.25!
 Triggered automated druid farm purchases until time 809.0
 Completed the buy operation! The buy queue now has 0 items remaining in it

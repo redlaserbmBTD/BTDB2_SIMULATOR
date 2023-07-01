@@ -1,3 +1,4 @@
+Modified the eco send to Zero
 MESSAGE FROM GameState.__init__(): 
 Initialized Game State!
 The current game round is 0
@@ -6,1110 +7,678 @@ The game round start times are given by [0, 6.0, 30.5, 54.5, 80.0, 111.0, 140.5,
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 0.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.1
 ----------
 Advancing game to time 0.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.2
 ----------
 Advancing game to time 0.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.3
 ----------
 Advancing game to time 0.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.4
 ----------
 Advancing game to time 0.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.5
 ----------
 Advancing game to time 0.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.6
 ----------
 Advancing game to time 0.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.7
 ----------
 Advancing game to time 0.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.8
 ----------
 Advancing game to time 0.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 0.9
 ----------
 Advancing game to time 1.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.0
 ----------
 Advancing game to time 1.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.1
 ----------
 Advancing game to time 1.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.2
 ----------
 Advancing game to time 1.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.3
 ----------
 Advancing game to time 1.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.4
 ----------
 Advancing game to time 1.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.5
 ----------
 Advancing game to time 1.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.6
 ----------
 Advancing game to time 1.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.7
 ----------
 Advancing game to time 1.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.8
 ----------
 Advancing game to time 1.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 1.9
 ----------
 Advancing game to time 2.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.0
 ----------
 Advancing game to time 2.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.1
 ----------
 Advancing game to time 2.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.2
 ----------
 Advancing game to time 2.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.3
 ----------
 Advancing game to time 2.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.4
 ----------
 Advancing game to time 2.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.5
 ----------
 Advancing game to time 2.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.6
 ----------
 Advancing game to time 2.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.7
 ----------
 Advancing game to time 2.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.8
 ----------
 Advancing game to time 2.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 2.9
 ----------
 Advancing game to time 3.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.0
 ----------
 Advancing game to time 3.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.1
 ----------
 Advancing game to time 3.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.2
 ----------
 Advancing game to time 3.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.3
 ----------
 Advancing game to time 3.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.4
 ----------
 Advancing game to time 3.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.5
 ----------
 Advancing game to time 3.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.6
 ----------
 Advancing game to time 3.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.7
 ----------
 Advancing game to time 3.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.8
 ----------
 Advancing game to time 3.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 3.9
 ----------
 Advancing game to time 4.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.0
 ----------
 Advancing game to time 4.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.1
 ----------
 Advancing game to time 4.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.2
 ----------
 Advancing game to time 4.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.3
 ----------
 Advancing game to time 4.35
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.35
 ----------
 Advancing game to time 4.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.4
 ----------
 Advancing game to time 4.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.5
 ----------
 Advancing game to time 4.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.6
 ----------
 Advancing game to time 4.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.7
 ----------
 Advancing game to time 4.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.8
 ----------
 Advancing game to time 4.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 4.9
 ----------
 Advancing game to time 5.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.0
 ----------
 Advancing game to time 5.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.1
 ----------
 Advancing game to time 5.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.2
 ----------
 Advancing game to time 5.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.3
 ----------
 Advancing game to time 5.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.4
 ----------
 Advancing game to time 5.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.5
 ----------
 Advancing game to time 5.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.6
 ----------
 Advancing game to time 5.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.7
 ----------
 Advancing game to time 5.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.8
 ----------
 Advancing game to time 5.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (650,250) at time 5.9
 ----------
 Advancing game to time 6.0
 Awarded eco payment 250 at time 6.0
 Recorded cash and eco values (900,250) at time 6.0
-Current value of h_farm_revenues: 
-[]
 We have 900 cash! We can do the next buy, which costs 605 and has a buffer of 0 and a minimum buy time of 6.0!
 Completed the buy operation! The buy queue now has 2 items remaining in it
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (295,250) at time 6.0
 Modified the eco send to Grouped Reds
 ----------
 Advancing game to time 6.1
 Sent a set of Grouped Reds at time 6.0
 Sent a set of Grouped Reds at time 6.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (255,252.0) at time 6.1
 ----------
 Advancing game to time 6.2
 Sent a set of Grouped Reds at time 6.199999999999999
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (235,253.0) at time 6.2
 ----------
 Advancing game to time 6.3
 Sent a set of Grouped Reds at time 6.299999999999999
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (215,254.0) at time 6.3
 ----------
 Advancing game to time 6.4
 Sent a set of Grouped Reds at time 6.399999999999999
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (195,255.0) at time 6.4
 ----------
 Advancing game to time 6.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (195,255.0) at time 6.5
 ----------
 Advancing game to time 6.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (195,255.0) at time 6.6
 ----------
 Advancing game to time 6.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (195,255.0) at time 6.7
 ----------
 Advancing game to time 6.8
 Sent a set of Grouped Reds at time 6.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 6.8
 ----------
 Advancing game to time 6.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 6.9
 ----------
 Advancing game to time 7.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 7.0
 ----------
 Advancing game to time 7.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 7.1
 ----------
 Advancing game to time 7.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 7.2
 ----------
 Advancing game to time 7.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 7.3
 ----------
 Advancing game to time 7.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 7.4
 ----------
 Advancing game to time 7.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (175,256.0) at time 7.5
 ----------
 Advancing game to time 7.6
 Sent a set of Grouped Reds at time 7.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 7.6
 ----------
 Advancing game to time 7.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 7.7
 ----------
 Advancing game to time 7.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 7.8
 ----------
 Advancing game to time 7.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 7.9
 ----------
 Advancing game to time 8.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 8.0
 ----------
 Advancing game to time 8.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 8.1
 ----------
 Advancing game to time 8.15
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 8.15
 ----------
 Advancing game to time 8.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 8.2
 ----------
 Advancing game to time 8.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (155,257.0) at time 8.3
 ----------
 Advancing game to time 8.4
 Sent a set of Grouped Reds at time 8.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 8.4
 ----------
 Advancing game to time 8.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 8.5
 ----------
 Advancing game to time 8.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 8.6
 ----------
 Advancing game to time 8.65
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 8.65
 ----------
 Advancing game to time 8.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 8.7
 ----------
 Advancing game to time 8.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 8.8
 ----------
 Advancing game to time 8.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 8.9
 ----------
 Advancing game to time 9.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 9.0
 ----------
 Advancing game to time 9.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 9.1
 ----------
 Advancing game to time 9.15
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (135,258.0) at time 9.15
 ----------
 Advancing game to time 9.2
 Sent a set of Grouped Reds at time 9.200000000000001
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.2
 ----------
 Advancing game to time 9.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.3
 ----------
 Advancing game to time 9.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.4
 ----------
 Advancing game to time 9.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.5
 ----------
 Advancing game to time 9.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.6
 ----------
 Advancing game to time 9.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.7
 ----------
 Advancing game to time 9.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.8
 ----------
 Advancing game to time 9.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 9.9
 ----------
 Advancing game to time 10.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (115,259.0) at time 10.0
 ----------
 Advancing game to time 10.1
 Sent a set of Grouped Reds at time 10.000000000000002
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.1
 ----------
 Advancing game to time 10.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.2
 ----------
 Advancing game to time 10.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.3
 ----------
 Advancing game to time 10.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.4
 ----------
 Advancing game to time 10.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.5
 ----------
 Advancing game to time 10.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.6
 ----------
 Advancing game to time 10.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.7
 ----------
 Advancing game to time 10.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (95,260.0) at time 10.8
 ----------
 Advancing game to time 10.9
 Sent a set of Grouped Reds at time 10.800000000000002
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 10.9
 ----------
 Advancing game to time 11.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 11.0
 ----------
 Advancing game to time 11.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 11.1
 ----------
 Advancing game to time 11.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 11.2
 ----------
 Advancing game to time 11.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 11.3
 ----------
 Advancing game to time 11.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 11.4
 ----------
 Advancing game to time 11.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 11.5
 ----------
 Advancing game to time 11.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (75,261.0) at time 11.6
 ----------
 Advancing game to time 11.7
 Sent a set of Grouped Reds at time 11.600000000000003
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (55,262.0) at time 11.7
 ----------
 Advancing game to time 11.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (55,262.0) at time 11.8
 ----------
 Advancing game to time 11.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (55,262.0) at time 11.9
 ----------
 Advancing game to time 12.0
 Awarded eco payment 262.0 at time 12.0
 Recorded cash and eco values (317.0,262.0) at time 12.0
-Current value of h_farm_revenues: 
-[]
 We have 317.0 cash! We can do the next buy, which costs 150.0 and has a buffer of 0 and a minimum buy time of 12.0!
 Completed the buy operation! The buy queue now has 1 items remaining in it
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (167.0,262.0) at time 12.0
 ----------
 Advancing game to time 12.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (167.0,262.0) at time 12.1
 ----------
 Advancing game to time 12.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (167.0,262.0) at time 12.2
 ----------
 Advancing game to time 12.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (167.0,262.0) at time 12.3
 ----------
 Advancing game to time 12.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (167.0,262.0) at time 12.4
 ----------
 Advancing game to time 12.5
 Sent a set of Grouped Reds at time 12.400000000000004
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 12.5
 ----------
 Advancing game to time 12.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 12.6
 ----------
 Advancing game to time 12.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 12.7
 ----------
 Advancing game to time 12.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 12.8
 ----------
 Advancing game to time 12.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 12.9
 ----------
 Advancing game to time 13.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 13.0
 ----------
 Advancing game to time 13.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 13.1
 ----------
 Advancing game to time 13.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (147.0,263.0) at time 13.2
 ----------
 Advancing game to time 13.3
 Sent a set of Grouped Reds at time 13.200000000000005
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 13.3
 ----------
 Advancing game to time 13.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 13.4
 ----------
 Advancing game to time 13.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 13.5
 ----------
 Advancing game to time 13.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 13.6
 ----------
 Advancing game to time 13.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 13.7
 ----------
 Advancing game to time 13.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 13.8
 ----------
 Advancing game to time 13.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 13.9
 ----------
 Advancing game to time 14.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (127.0,264.0) at time 14.0
 ----------
 Advancing game to time 14.1
 Sent a set of Grouped Reds at time 14.000000000000005
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.1
 ----------
 Advancing game to time 14.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.2
 ----------
 Advancing game to time 14.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.3
 ----------
 Advancing game to time 14.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.4
 ----------
 Advancing game to time 14.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.5
 ----------
 Advancing game to time 14.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.6
 ----------
 Advancing game to time 14.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.7
 ----------
 Advancing game to time 14.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (107.0,265.0) at time 14.8
 ----------
 Advancing game to time 14.9
 Sent a set of Grouped Reds at time 14.800000000000006
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 14.9
 ----------
 Advancing game to time 15.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 15.0
 ----------
 Advancing game to time 15.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 15.1
 ----------
 Advancing game to time 15.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 15.2
 ----------
 Advancing game to time 15.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 15.3
 ----------
 Advancing game to time 15.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 15.4
 ----------
 Advancing game to time 15.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 15.5
 ----------
 Advancing game to time 15.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (87.0,266.0) at time 15.6
 ----------
 Advancing game to time 15.7
 Sent a set of Grouped Reds at time 15.600000000000007
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 15.7
 ----------
 Advancing game to time 15.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 15.8
 ----------
 Advancing game to time 15.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 15.9
 ----------
 Advancing game to time 16.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 16.0
 ----------
 Advancing game to time 16.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 16.1
 ----------
 Advancing game to time 16.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 16.2
 ----------
 Advancing game to time 16.25
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 16.25
 ----------
 Advancing game to time 16.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 16.3
 ----------
 Advancing game to time 16.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (67.0,267.0) at time 16.4
 ----------
 Advancing game to time 16.5
 Sent a set of Grouped Reds at time 16.400000000000006
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 16.5
 ----------
 Advancing game to time 16.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 16.6
 ----------
 Advancing game to time 16.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 16.7
 ----------
 Advancing game to time 16.75
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 16.75
 ----------
 Advancing game to time 16.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 16.8
 ----------
 Advancing game to time 16.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 16.9
 ----------
 Advancing game to time 17.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 17.0
 ----------
 Advancing game to time 17.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 17.1
 ----------
 Advancing game to time 17.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (47.0,268.0) at time 17.2
 ----------
 Advancing game to time 17.25
 Sent a set of Grouped Reds at time 17.200000000000006
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.25
 ----------
 Advancing game to time 17.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.3
 ----------
 Advancing game to time 17.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.4
 ----------
 Advancing game to time 17.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.5
 ----------
 Advancing game to time 17.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.6
 ----------
 Advancing game to time 17.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.7
 ----------
 Advancing game to time 17.75
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.75
 ----------
 Advancing game to time 17.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.8
 ----------
 Advancing game to time 17.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (27.0,269.0) at time 17.9
 ----------
 Advancing game to time 18.0
 Awarded eco payment 269.0 at time 18.0
 Recorded cash and eco values (296.0,269.0) at time 18.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (296.0,269.0) at time 18.0
 ----------
 Advancing game to time 18.1
 Sent a set of Grouped Reds at time 18.000000000000007
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.1
 ----------
 Advancing game to time 18.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.2
 ----------
 Advancing game to time 18.25
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.25
 ----------
 Advancing game to time 18.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.3
 ----------
 Advancing game to time 18.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.4
 ----------
 Advancing game to time 18.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.5
 ----------
 Advancing game to time 18.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.6
 ----------
 Advancing game to time 18.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.7
 ----------
 Advancing game to time 18.75
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.75
 ----------
 Advancing game to time 18.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (276.0,270.0) at time 18.8
 ----------
 Advancing game to time 18.9
 Sent a set of Grouped Reds at time 18.800000000000008
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 18.9
 ----------
 Advancing game to time 19.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 19.0
 ----------
 Advancing game to time 19.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 19.1
 ----------
 Advancing game to time 19.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 19.2
 ----------
 Advancing game to time 19.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 19.3
 ----------
 Advancing game to time 19.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 19.4
 ----------
 Advancing game to time 19.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 19.5
 ----------
 Advancing game to time 19.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (256.0,271.0) at time 19.6
 ----------
 Advancing game to time 19.7
 Sent a set of Grouped Reds at time 19.60000000000001
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 19.7
 ----------
 Advancing game to time 19.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 19.8
 ----------
 Advancing game to time 19.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 19.9
 ----------
 Advancing game to time 20.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 20.0
 ----------
 Advancing game to time 20.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 20.1
 ----------
 Advancing game to time 20.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 20.2
 ----------
 Advancing game to time 20.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 20.3
 ----------
 Advancing game to time 20.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (236.0,272.0) at time 20.4
 ----------
 Advancing game to time 20.5
@@ -1118,432 +687,264 @@ Reached the limit on eco'ing for this send! Moving to the next send in the queue
 Modified the eco send to Spaced Blues
 ----------
 Advancing game to time 20.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (216.0,273.0) at time 20.6
 ----------
 Advancing game to time 20.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (216.0,273.0) at time 20.7
 ----------
 Advancing game to time 20.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (216.0,273.0) at time 20.8
 ----------
 Advancing game to time 20.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (216.0,273.0) at time 20.9
 ----------
 Advancing game to time 21.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (216.0,273.0) at time 21.0
 ----------
 Advancing game to time 21.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (216.0,273.0) at time 21.1
 ----------
 Advancing game to time 21.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (216.0,273.0) at time 21.2
 ----------
 Advancing game to time 21.3
 Sent a set of Spaced Blues at time 21.20000000000001
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 21.3
 ----------
 Advancing game to time 21.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 21.4
 ----------
 Advancing game to time 21.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 21.5
 ----------
 Advancing game to time 21.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 21.6
 ----------
 Advancing game to time 21.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 21.7
 ----------
 Advancing game to time 21.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 21.8
 ----------
 Advancing game to time 21.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 21.9
 ----------
 Advancing game to time 22.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (201.0,273.8) at time 22.0
 ----------
 Advancing game to time 22.1
 Sent a set of Spaced Blues at time 22.00000000000001
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.1
 ----------
 Advancing game to time 22.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.2
 ----------
 Advancing game to time 22.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.3
 ----------
 Advancing game to time 22.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.4
 ----------
 Advancing game to time 22.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.5
 ----------
 Advancing game to time 22.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.6
 ----------
 Advancing game to time 22.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.7
 ----------
 Advancing game to time 22.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (186.0,274.6) at time 22.8
 ----------
 Advancing game to time 22.9
 Sent a set of Spaced Blues at time 22.80000000000001
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 22.9
 ----------
 Advancing game to time 23.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 23.0
 ----------
 Advancing game to time 23.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 23.1
 ----------
 Advancing game to time 23.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 23.2
 ----------
 Advancing game to time 23.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 23.3
 ----------
 Advancing game to time 23.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 23.4
 ----------
 Advancing game to time 23.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 23.5
 ----------
 Advancing game to time 23.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (171.0,275.4) at time 23.6
 ----------
 Advancing game to time 23.7
 Sent a set of Spaced Blues at time 23.600000000000012
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (156.0,276.2) at time 23.7
 ----------
 Advancing game to time 23.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (156.0,276.2) at time 23.8
 ----------
 Advancing game to time 23.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (156.0,276.2) at time 23.9
 ----------
 Advancing game to time 24.0
 Awarded eco payment 276.2 at time 24.0
 Recorded cash and eco values (432.2,276.2) at time 24.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (432.2,276.2) at time 24.0
 ----------
 Advancing game to time 24.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (432.2,276.2) at time 24.1
 ----------
 Advancing game to time 24.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (432.2,276.2) at time 24.2
 ----------
 Advancing game to time 24.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (432.2,276.2) at time 24.3
 ----------
 Advancing game to time 24.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (432.2,276.2) at time 24.4
 ----------
 Advancing game to time 24.5
 Sent a set of Spaced Blues at time 24.400000000000013
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 24.5
 ----------
 Advancing game to time 24.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 24.6
 ----------
 Advancing game to time 24.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 24.7
 ----------
 Advancing game to time 24.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 24.8
 ----------
 Advancing game to time 24.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 24.9
 ----------
 Advancing game to time 25.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.0
 ----------
 Advancing game to time 25.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.1
 ----------
 Advancing game to time 25.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.2
 ----------
 Advancing game to time 25.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.3
 ----------
 Advancing game to time 25.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.4
 ----------
 Advancing game to time 25.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.5
 ----------
 Advancing game to time 25.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.6
 ----------
 Advancing game to time 25.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.7
 ----------
 Advancing game to time 25.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.8
 ----------
 Advancing game to time 25.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (417.2,277.0) at time 25.9
 ----------
 Advancing game to time 26.0
 Sent a set of Spaced Blues at time 25.900000000000013
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.0
 ----------
 Advancing game to time 26.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.1
 ----------
 Advancing game to time 26.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.2
 ----------
 Advancing game to time 26.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.3
 ----------
 Advancing game to time 26.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.4
 ----------
 Advancing game to time 26.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.5
 ----------
 Advancing game to time 26.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.6
 ----------
 Advancing game to time 26.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.7
 ----------
 Advancing game to time 26.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.8
 ----------
 Advancing game to time 26.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 26.9
 ----------
 Advancing game to time 27.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 27.0
 ----------
 Advancing game to time 27.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 27.1
 ----------
 Advancing game to time 27.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 27.2
 ----------
 Advancing game to time 27.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 27.3
 ----------
 Advancing game to time 27.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (402.2,277.8) at time 27.4
 ----------
 Advancing game to time 27.5
 Sent a set of Spaced Blues at time 27.400000000000013
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 27.5
 ----------
 Advancing game to time 27.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 27.6
 ----------
 Advancing game to time 27.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 27.7
 ----------
 Advancing game to time 27.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 27.8
 ----------
 Advancing game to time 27.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 27.9
 ----------
 Advancing game to time 28.0
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.0
 ----------
 Advancing game to time 28.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.1
 ----------
 Advancing game to time 28.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.2
 ----------
 Advancing game to time 28.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.3
 ----------
 Advancing game to time 28.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.4
 ----------
 Advancing game to time 28.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.5
 ----------
 Advancing game to time 28.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.6
 ----------
 Advancing game to time 28.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.7
 ----------
 Advancing game to time 28.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.8
 ----------
 Advancing game to time 28.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (387.2,278.6) at time 28.9
 ----------
 Advancing game to time 29.0
@@ -1553,55 +954,35 @@ No more sends in the eco queue! Switching to the zero send.
 Modified the eco send to Zero
 ----------
 Advancing game to time 29.1
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.1
 ----------
 Advancing game to time 29.2
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.2
 ----------
 Advancing game to time 29.3
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.3
 ----------
 Advancing game to time 29.4
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.4
 ----------
 Advancing game to time 29.5
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.5
 ----------
 Advancing game to time 29.6
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.6
 ----------
 Advancing game to time 29.7
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.7
 ----------
 Advancing game to time 29.8
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.8
 ----------
 Advancing game to time 29.9
-Current value of h_farm_revenues: 
-[]
 Recorded cash and eco values (372.2,279.4) at time 29.9
 ----------
 Advancing game to time 30.0
 Awarded eco payment 279.4 at time 30.0
 Recorded cash and eco values (651.6,279.4) at time 30.0
-Current value of h_farm_revenues: 
-[]
 We have 651.6 cash! We can do the next buy, which costs 650.0 and has a buffer of 0 and a minimum buy time of 18.25!
 Completed the buy operation! The buy queue now has 0 items remaining in it
 Recorded cash and eco values (1.6,279.4) at time 30.0

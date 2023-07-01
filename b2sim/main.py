@@ -43,20 +43,6 @@ class GameState():
         self.eco = initial_state.get('Eco')
         self.loan = initial_state.get('Loan') #For IMF Loans
         
-        #Eco send info
-        self.send_name = initial_state.get('Eco Send')
-        if self.send_name is None:
-            self.send_name = 'Zero'
-        
-        try:
-            self.eco_cost = eco_send_info[self.send_name]['Price']
-            self.eco_gain = eco_send_info[self.send_name]['Eco']
-            self.eco_time = eco_send_info[self.send_name]['Send Duration']
-        except:
-            self.send_name = 'Zero'
-            self.eco_cost = 0
-            self.eco_gain = 0
-        
         #~~~~~~~~~~~~~~~~~
         #ROUND LENGTH INFO
         #~~~~~~~~~~~~~~~~~
@@ -81,8 +67,8 @@ class GameState():
         #LOGGING
         #~~~~~~~
 
-        #To ensure the code runs properly, we'll create a log file which the code writes to track what it's doing
-        self.logs = []
+        self.logs = [] #To ensure the code runs properly, we'll create a log file which the code writes to track what it's doing
+        self.warnings = [] #These are indices corresponding to log messages where fail-safes or other unexpecated events are triggered.
 
         #As the Game State evolves, I'll use these arrays to track how cash and eco have changed over time
         self.time_states = [self.current_time]
@@ -129,8 +115,6 @@ class GameState():
                         self.farms[self.key].upgrades[i] = 4
                 
                 self.key += 1
-        self.farm_revenues = [0 for farm in self.farms]
-        self.farm_expenses = [0 for farm in self.farms]
 
         #Next, boat farms!
         self.boat_farms = initial_state.get('Boat Farms')
@@ -202,9 +186,9 @@ class GameState():
         # Max send amount is useful if we need to simulate sending a precise number of sets of bloons
         # Max eco amount is useful for eco strategies which may demand strategy decisions like "stop eco at 3000 eco"
 
+        self.changeEcoSend(initial_state.get('Eco Send'))
+
         self.eco_queue = initial_state.get('Eco Queue')
-        self.max_send_amount = initial_state.get('Max Send Amount')
-        self.max_eco_amount = initial_state.get('Max Eco Amount')
         self.number_of_sends = 0
         
         #Upgrade queue
@@ -250,6 +234,7 @@ class GameState():
             self.heli_farms = {}
         if self.supply_drops is None:
             self.supply_drops = {}
+        self.simulation_start_time = 0
             
         self.logs.append("MESSAGE FROM GameState.__init__(): ")
         self.logs.append("Initialized Game State!")
@@ -326,10 +311,28 @@ class GameState():
         #Create a table that displays the revenue made by each farm
         #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
+        #Create a list of revenues and expenses for every farm
+        self.farm_revenues = []
+        self.farm_expenses = []
+        self.farm_profits = []
+        self.farm_eis = []
+
+        for key in self.farms.keys():
+            farm = self.farms[key]
+            self.farm_revenues.append(farm.revenue)
+            self.farm_expenses.append(farm.expenses)
+            self.farm_profits.append(farm.revenue - farm.expenses)
+
+            #Also, measure the equivalent eco impact of the farm
+            if farm.sell_time == None:
+                self.farm_eis.append(6*farm.revenue/(self.current_time - max(farm.init_purchase_time, self.simulation_start_time)))
+            else:
+                self.farm_eis.append(6*farm.revenue/(farm.sell_time -  max(farm.init_purchase_time, self.simulation_start_time)))
+                
+
         # dictionary of lists 
         if display_farms and len(self.farms) > 0:
-            profit = [self.farm_revenues[i] - self.farm_expenses[i] for i in range(len(self.farm_revenues))]
-            farm_table = {'Farm Index': [int(i) for i in range(self.key)], 'Revenue': self.farm_revenues, 'Expenses': self.farm_expenses, 'Profit': profit} 
+            farm_table = {'Farm Index': [int(i) for i in range(self.key)], 'Revenue': self.farm_revenues, 'Expenses': self.farm_expenses, 'Profit': self.farm_profits, 'Eco Impact': self.farm_eis} 
             df = pd.DataFrame(farm_table)
             df = df.set_index('Farm Index')
             df = df.round(0)
@@ -438,6 +441,13 @@ class GameState():
         #     'Max Eco Amount': max_eco_amount
         # }
         
+        # Check if the given send name corresponds to a valid send. If not, default to the zero send.
+        eco_send_keys = list(eco_send_info.keys())
+        if eco_send_keys.count(send_info['Send Name']) == 0:
+            self.logs.append("Warning! The name %s does not correspond with an eco send! Switching to the zero send."%(send_info['Send Name']))
+            send_info['Send Name'] = 'Zero'
+            self.warnings.append(len(self.logs) - 1)
+
         # First, check if the send has any fortied, camo, or regrow characteristics
         eco_cost_multiplier = 1
         if send_info['Fortified'] == True:
@@ -450,6 +460,7 @@ class GameState():
         self.send_name = send_info['Send Name']
 
         # If an eco send is a MOAB class send, fortifying it doubles the eco penalty
+
         eco_gain_multiplier = 1
         if eco_send_info[self.send_name]['MOAB Class'] and send_info['Fortified']:
             eco_gain_multiplier = 2
@@ -474,11 +485,8 @@ class GameState():
         
     def fastForward(self, target_time = None, target_round = None, interval = 0.1):
         self.logs.append("MESSAGE FROM GameState.fastForward: ")
-
-        #Collect a list of indices corresponding to log messages the player should know about.
-        #Useful for when the user inputs incorrect data or gets unexpected results.
-        self.warnings = []
         self.valid_action_flag = True #To prevent the code from repeatedly trying to perform a transaction that obviously can't happen
+        self.simulation_start_time = self.current_time
         
         # If a target round is given, compute the target_time from that
         if target_round is not None:
@@ -608,7 +616,8 @@ class GameState():
                     if payout['Source'] == 'Farm':
                         #Track the money generated by the farm
                         key = payout['Index']
-                        self.farm_revenues[key] += new_cash - self.cash
+                        farm = self.farms[key]
+                        farm.revenue += new_cash - self.cash
 
                     self.cash, self.loan = new_cash, new_loan
                     self.logs.append("Awarded direct payment %s at time %s"%(np.round(payout['Payout'],2),np.round(payout['Time'],2)))
@@ -625,7 +634,7 @@ class GameState():
                     #At this point, the player should withdraw from the bank.
                     farm.account_value = 0
                     new_cash, new_loan = impact(self.cash,self.loan,farm.max_account_value)
-                    self.farm_revenues[key] += new_cash - self.cash #Track the money generated by the farm
+                    farm.revenue += new_cash - self.cash #Track the money generated by the farm
                     self.cash, self.loan = new_cash, new_loan
                     self.logs.append("The bank at index %s reached max capacity! Withdrawing money"%(key))
                 self.logs.append("The bank's new account value is %s"%(farm.account_value))
@@ -639,7 +648,7 @@ class GameState():
                 if farm.account_value >= farm.max_account_value:
                     farm.account_value = 0
                     new_cash, new_loan = impact(self.cash,self.loan,farm.max_account_value)
-                    self.farm_revenues[key] += new_cash - self.cash #Track the money generated by the farm
+                    farm.revenue += new_cash - self.cash #Track the money generated by the farm
                     self.cash, self.loan = new_cash, new_loan
                     self.logs.append("The bank at index %s reached max capacity! Withdrawing money"%(key))
                 self.logs.append("The bank's new account value is %s"%(farm.account_value))
@@ -842,110 +851,111 @@ class GameState():
         if len(self.farms) > 0:
             for key in self.farms.keys():
                 farm = self.farms[key]
-                #If the farm is a monkeynomics, determine the payout times of the active ability
-                if farm.upgrades[1] == 5:
-                    farm_time = farm.min_use_time
-                    while farm_time <= target_time:
-                        if farm_time > self.current_time:
-                            payout_entry = {
-                                'Time': farm_time,
-                                'Payout Type': 'Direct',
-                                'Payout': farm_globals['Monkeynomics Payout'],
-                                'Source': 'Farm',
-                                'Index': key
-                            }
-                            payout_times.append(payout_entry)
-                        farm_time += farm_globals['Monkeynomics Usage Cooldown']
-                    farm.min_use_time = farm_time
-                
-                farm_purchase_round = self.rounds.getRoundFromTime(farm.purchase_time)
-                self.inc = 0
-                self.flag = False
-                while self.flag == False:
-                    #If computing farm payments on the same round as we are currently on, precompute the indices the for loop should go through.
-                    #NOTE: This is not necessary at the end because the for loop terminates when a "future" payment is reached.
-                    if self.inc == 0:
-                        if self.current_round > farm_purchase_round:
-                            #When the farm was purchased on a previous round
-                            round_time = self.current_time - self.rounds.round_starts[self.current_round]
-                            loop_start = int(np.floor(farm.payout_frequency*round_time/self.rounds.nat_send_lens[self.current_round]) + 1)
-                            loop_end = farm.payout_frequency
-                        else: #self.current_round == farm_purhcase_round
-                            #When the farm was purchased on the same round as we are currently on
-                            loop_start = int(np.floor(farm.payout_frequency*(self.current_time - farm.purchase_time)/self.rounds.nat_send_lens[self.current_round]-1)+1)
-                            loop_end = int(np.ceil(farm.payout_frequency*(1 - (farm.purchase_time - self.rounds.round_starts[self.current_round])/self.rounds.nat_send_lens[self.current_round])-1)-1)
-                    else:
-                        loop_start = 0
-                        loop_end = farm.payout_frequency
+                if farm.sell_time is None:
+                    #If the farm is a monkeynomics, determine the payout times of the active ability
+                    if farm.upgrades[1] == 5:
+                        farm_time = farm.min_use_time
+                        while farm_time <= target_time:
+                            if farm_time > self.current_time:
+                                payout_entry = {
+                                    'Time': farm_time,
+                                    'Payout Type': 'Direct',
+                                    'Payout': farm_globals['Monkeynomics Payout'],
+                                    'Source': 'Farm',
+                                    'Index': key
+                                }
+                                payout_times.append(payout_entry)
+                            farm_time += farm_globals['Monkeynomics Usage Cooldown']
+                        farm.min_use_time = farm_time
                     
-                    #self.logs.append("Precomputed the loop indices to be (%s,%s)"%(loop_start,loop_end))
-                    #self.logs.append("Now computing payments at round %s"%(self.current_round + self.inc))
-                    
-                    for i in range(loop_start, loop_end):
-                        #Precompute the value i that this for loop should start at (as opposed to always starting at 0) to avoid redundant computations
-                        #Farm payout rules are different for the round the farm is bought on versus subsequent rounds
-                        if self.current_round + self.inc == farm_purchase_round:
-                            farm_time = farm.purchase_time + (i+1)*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
+                    farm_purchase_round = self.rounds.getRoundFromTime(farm.purchase_time)
+                    self.inc = 0
+                    self.flag = False
+                    while self.flag == False:
+                        #If computing farm payments on the same round as we are currently on, precompute the indices the for loop should go through.
+                        #NOTE: This is not necessary at the end because the for loop terminates when a "future" payment is reached.
+                        if self.inc == 0:
+                            if self.current_round > farm_purchase_round:
+                                #When the farm was purchased on a previous round
+                                round_time = self.current_time - self.rounds.round_starts[self.current_round]
+                                loop_start = int(np.floor(farm.payout_frequency*round_time/self.rounds.nat_send_lens[self.current_round]) + 1)
+                                loop_end = farm.payout_frequency
+                            else: #self.current_round == farm_purhcase_round
+                                #When the farm was purchased on the same round as we are currently on
+                                loop_start = int(np.floor(farm.payout_frequency*(self.current_time - farm.purchase_time)/self.rounds.nat_send_lens[self.current_round]-1)+1)
+                                loop_end = int(np.ceil(farm.payout_frequency*(1 - (farm.purchase_time - self.rounds.round_starts[self.current_round])/self.rounds.nat_send_lens[self.current_round])-1)-1)
                         else:
-                            farm_time = self.rounds.round_starts[self.current_round + self.inc] + i*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
+                            loop_start = 0
+                            loop_end = farm.payout_frequency
                         
-                        #Check if the payment time occurs within our update window. If it does, add it to the payout times list
-                        if farm_time <= target_time and farm_time > self.current_time:
+                        #self.logs.append("Precomputed the loop indices to be (%s,%s)"%(loop_start,loop_end))
+                        #self.logs.append("Now computing payments at round %s"%(self.current_round + self.inc))
+                        
+                        for i in range(loop_start, loop_end):
+                            #Precompute the value i that this for loop should start at (as opposed to always starting at 0) to avoid redundant computations
+                            #Farm payout rules are different for the round the farm is bought on versus subsequent rounds
+                            if self.current_round + self.inc == farm_purchase_round:
+                                farm_time = farm.purchase_time + (i+1)*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
+                            else:
+                                farm_time = self.rounds.round_starts[self.current_round + self.inc] + i*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
                             
-                            #Farm payouts will either immediately be added to the player's cash or added to the monkey bank's account value
-                            #This depends of course on whether the farm is a bank or not.
-                            
-                            #WARNING: If the farm we are dealing with is a bank, we must direct the payment into the bank rather than the player.
-                            #WARNING: If the farm we are dealing with is a MWS, we must check whether we are awarding the MWS bonus payment!
-                            #WARNING: If the farm we are dealing with is a BRF, we must check whether the BRF buff is being applied or not!
-                            
-                            if farm.upgrades[1] >= 3:
-                                if i == 0 and self.current_round + self.inc > farm_purchase_round:
-                                    #At the start of every round, every bank gets a $400 payment and then is awarded 20% interest.
+                            #Check if the payment time occurs within our update window. If it does, add it to the payout times list
+                            if farm_time <= target_time and farm_time > self.current_time:
+                                
+                                #Farm payouts will either immediately be added to the player's cash or added to the monkey bank's account value
+                                #This depends of course on whether the farm is a bank or not.
+                                
+                                #WARNING: If the farm we are dealing with is a bank, we must direct the payment into the bank rather than the player.
+                                #WARNING: If the farm we are dealing with is a MWS, we must check whether we are awarding the MWS bonus payment!
+                                #WARNING: If the farm we are dealing with is a BRF, we must check whether the BRF buff is being applied or not!
+                                
+                                if farm.upgrades[1] >= 3:
+                                    if i == 0 and self.current_round + self.inc > farm_purchase_round:
+                                        #At the start of every round, every bank gets a $400 payment and then is awarded 20% interest.
+                                        payout_entry = {
+                                            'Time': farm_time,
+                                            'Payout Type': 'Bank Interest',
+                                            'Index': key,
+                                            'Source': 'Farm'
+                                        }
+                                        payout_times.append(payout_entry)
                                     payout_entry = {
                                         'Time': farm_time,
-                                        'Payout Type': 'Bank Interest',
+                                        'Payout Type': 'Bank Payment',
                                         'Index': key,
+                                        'Payout': farm.payout_amount,
                                         'Source': 'Farm'
                                     }
-                                    payout_times.append(payout_entry)
-                                payout_entry = {
-                                    'Time': farm_time,
-                                    'Payout Type': 'Bank Payment',
-                                    'Index': key,
-                                    'Payout': farm.payout_amount,
-                                    'Source': 'Farm'
-                                }
-                            elif i == 0 and farm.upgrades[2] == 5 and self.current_round + self.inc > farm_purchase_round:
-                                payout_entry = {
-                                    'Time': farm_time,
-                                    'Payout Type': 'Direct',
-                                    'Payout': farm.payout_amount + farm_globals['Monkey Wall Street Bonus'],
-                                    'Source': 'Farm',
-                                    'Index': key
-                                }
-                            elif farm.upgrades[0] == 4 and self.T5_exists[0] == True:
-                                payout_entry = {
-                                    'Time': farm_time,
-                                    'Payout Type': 'Direct',
-                                    'Payout': farm.payout_amount*farm_globals['Banana Central Multplier'],
-                                    'Source': 'Farm',
-                                    'Index': key
-                                }
-                            else:
-                                payout_entry = {
-                                    'Time': farm_time,
-                                    'Payout Type': 'Direct',
-                                    'Payout': farm.payout_amount,
-                                    'Source': 'Farm',
-                                    'Index': key
-                                }
-                            payout_times.append(payout_entry)
-                        elif farm_time > target_time:
-                            #self.logs.append("The payout time of %s is too late! Excluding payout time!"%(farm_time))
-                            self.flag = True
-                            break
-                    self.inc += 1
+                                elif i == 0 and farm.upgrades[2] == 5 and self.current_round + self.inc > farm_purchase_round:
+                                    payout_entry = {
+                                        'Time': farm_time,
+                                        'Payout Type': 'Direct',
+                                        'Payout': farm.payout_amount + farm_globals['Monkey Wall Street Bonus'],
+                                        'Source': 'Farm',
+                                        'Index': key
+                                    }
+                                elif farm.upgrades[0] == 4 and self.T5_exists[0] == True:
+                                    payout_entry = {
+                                        'Time': farm_time,
+                                        'Payout Type': 'Direct',
+                                        'Payout': farm.payout_amount*farm_globals['Banana Central Multplier'],
+                                        'Source': 'Farm',
+                                        'Index': key
+                                    }
+                                else:
+                                    payout_entry = {
+                                        'Time': farm_time,
+                                        'Payout Type': 'Direct',
+                                        'Payout': farm.payout_amount,
+                                        'Source': 'Farm',
+                                        'Index': key
+                                    }
+                                payout_times.append(payout_entry)
+                            elif farm_time > target_time:
+                                #self.logs.append("The payout time of %s is too late! Excluding payout time!"%(farm_time))
+                                self.flag = True
+                                break
+                        self.inc += 1
         
         #BOAT FARMS
         if len(self.boat_farms) > 0:
@@ -1076,14 +1086,7 @@ class GameState():
             h_cash = self.cash
             h_loan = self.loan
 
-            #For whatever reason, not putting copy.deepcopy would cause changes to h_farm_revenues to *also* apply to self.farm_revenues and so forth
-            #This behavior of variable assignment is different for numbers than it is for lists.
-            h_farm_revenues = copy.deepcopy(self.farm_revenues)
-            h_farm_expenses = copy.deepcopy(self.farm_expenses)
             self.buffer = 0
-
-            self.logs.append("Current value of h_farm_revenues: ")
-            self.logs.append(str(h_farm_revenues))
             
             # Let's start by determining the minimum buy time.
             # NOTE: Only one object in purchase info should have minimum buy time info
@@ -1121,8 +1124,14 @@ class GameState():
             if payout['Time'] < self.min_buy_time:
                 break
             
-            #Next, let's compute the cash and loan values we would have if the transaction was performed
-            #We will also take the opportunity here to form the message that gets sent to the graph for viewCashEcoHistory
+            # Next, let's compute the cash and loan values we would have if the transaction was performed
+            # We will compute the hypothetical revenues each farm would have if the transactions were carried out
+            # In general the this step is necessary if there are in the presence of loans.
+            # NOTE: Loans do not influence purchases, so we can process expense tracking for farms only when a transaction actually occurs.
+
+            for key in self.farms.keys():
+                farm = self.farms[key]
+                farm.h_revenue = farm.revenue
             
             for dict_obj in purchase_info:
 
@@ -1133,7 +1142,6 @@ class GameState():
                 # FARM RELATED MATTERS
                 elif dict_obj['Type'] == 'Buy Farm':
                     h_new_cash, h_new_loan = impact(h_cash, h_loan, -1*farm_globals['Farm Cost'])
-                    self.farm_expenses
                 elif dict_obj['Type'] == 'Upgrade Farm':
                     ind = dict_obj['Index']
                     path = dict_obj['Path']
@@ -1149,10 +1157,17 @@ class GameState():
                     ind = dict_obj['Index']
                     farm = self.farms[ind]
 
-                    #Selling a farm counts as that farm generating revenue
-                    h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_sellback_values[tuple(farm.upgrades)])
-                    h_farm_revenues[ind] += h_new_cash - h_cash
-                    h_cash, h_loan = h_new_cash, h_new_loan
+                    #Check whether the farm is actually on screen before selling it:
+                    if farm.sell_time is None:
+                        #Selling a farm counts as that farm generating revenue
+                        h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_sellback_values[tuple(farm.upgrades)])
+                        farm.h_revenue += h_new_cash - h_cash
+                        h_cash, h_loan = h_new_cash, h_new_loan
+                    else:
+                        self.logs.append("WARNING! Tried to sell a farm that is not on screen! Aborting buy queue")
+                        self.warnings.append(len(self.logs)-1)
+                        self.valid_action_flag = False
+                        break
 
                 elif dict_obj['Type'] == 'Withdraw Bank':
                     #WARNING: The farm in question must actually be a bank for us to perform a withdrawal!
@@ -1167,7 +1182,7 @@ class GameState():
                     
                     h_new_cash, h_new_loan = impact(h_cash, h_loan, farm.account_value)
                     # self.logs.append("Detected bank withdrawal of %s"%(h_new_cash - h_cash))
-                    h_farm_revenues[ind] += h_new_cash - h_cash
+                    farm.h_revenue += h_new_cash - h_cash
                     h_cash, h_loan = h_new_cash, h_new_loan
 
                 elif dict_obj['Type'] == 'Activate IMF':
@@ -1185,7 +1200,7 @@ class GameState():
                     
                     #When, a loan is activated, treat it like a payment, then add the debt
                     h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_globals['IMF Loan Amount'])
-                    h_farm_revenues[ind] += h_new_cash - h_cash
+                    farm.h_revenue += h_new_cash - h_cash
                     h_new_loan += farm_globals['IMF Loan Amount']
                     h_cash, h_loan = h_new_cash, h_new_loan
                 
@@ -1285,14 +1300,14 @@ class GameState():
                 made_purchase = True
                 self.logs.append("We have %s cash! We can do the next buy, which costs %s and has a buffer of %s and a minimum buy time of %s!"%(np.round(self.cash,2), np.round(self.cash - h_cash,2),np.round(self.buffer,2),np.round(self.min_buy_time,2)))
 
-                #Make the adjustments to the cash and loan amounts
+                # Make the adjustments to the cash and loan amounts
                 self.cash = h_cash
                 self.loan = h_loan
 
-                # Update the lists of revenues and expenses for existing farms. 
-                # Note that we *might* still need to append these lists with additional entries if we bought more farms
-                self.farm_revenues = h_farm_revenues
-                self.farm_expenses = h_farm_expenses
+                # Track the revenue made by each farm
+                for key in self.farms.keys():
+                    farm = self.farms[key]
+                    farm.revenue = farm.h_revenue
 
                 # self.logs.append("The new lists of farm revenues and expenses are given by: ")
                 # self.logs.append(str(self.farm_revenues))
@@ -1315,8 +1330,8 @@ class GameState():
                         self.key+= 1
 
                         #For revenue and expense tracking
-                        self.farm_revenues.append(0)
-                        self.farm_expenses.append(farm_globals['Farm Cost'])
+                        farm.revenue = 0
+                        farm.expenses = farm_globals['Farm Cost']
                         
                     elif dict_obj['Type'] == 'Upgrade Farm':
                         ind = dict_obj['Index']
@@ -1326,7 +1341,7 @@ class GameState():
                         farm = self.farms[ind]
 
                         #For expense tracking
-                        self.farm_expenses[ind] += farm_upgrades_costs[path][farm.upgrades[path]]
+                        farm.expenses += farm_upgrades_costs[path][farm.upgrades[path]]
 
                         farm.upgrades[path] += 1
 
@@ -1381,8 +1396,8 @@ class GameState():
                         elif farm.upgrades[2] == 5:
                             self.T5_exists[2] = False
 
-                        #Remove the farm from the self.farms dictionary
-                        self.farms.pop(ind)
+                        #Mark the farm's sell time. The code checks whether this value is a number or not before trying to compute farm payments
+                        farm.sell_time = payout['Time']
                         
                     elif dict_obj['Type'] == 'Withdraw Bank':
                         self.logs.append("Withdrawing money from the bank at index %s"%(ind))
@@ -1550,6 +1565,7 @@ class MonkeyFarm():
         self.sell_value = farm_sellback_values[tuple(self.upgrades)]
         
         self.purchase_time = initial_state.get('Purchase Time')
+        self.init_purchase_time = self.purchase_time #This isn't great code, *but*, I do this so that the sim can accurately track eco impact.
         
         self.payout_amount = farm_payout_values[tuple(self.upgrades)][0]
         self.payout_frequency = farm_payout_values[tuple(self.upgrades)][1]
@@ -1571,6 +1587,20 @@ class MonkeyFarm():
         self.min_use_time = None
         if self.upgrades[1] >= 4:
             self.min_use_time = self.purchase_time + farm_globals['Monkeynomics Initial Cooldown']
+
+        ##################
+        # REVENUE TRACKING
+        ##################
+
+        # Rather than remove a farm from the simulator when sold, we will just mark its sell time and tell the simulator not to consider payments from this farm anymore
+        self.sell_time = None
+
+        self.revenue = 0
+        self.expenses = 0
+
+        # Tracks hypothetical revenue while processing the buy queue.
+        # In general this is necessary because of the impact of Loans on revenue generation.
+        self.h_revenue = 0
 
 
 

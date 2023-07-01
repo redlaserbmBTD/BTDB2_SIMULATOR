@@ -264,7 +264,7 @@ def jerichoSteal(min_buy_time = 0, steal_amount = 25):
 # ECO QUEUE
 ###########
 
-def ecoSend(time, send_name, property = 'Normal', max_send_amount = None, max_eco_amount = None):
+def ecoSend(time = 0, send_name = 'Zero', property = 'Normal', max_send_amount = None, max_eco_amount = None):
     
     fortified = False
     camo = False

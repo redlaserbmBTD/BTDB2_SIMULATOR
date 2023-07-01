@@ -1,3 +1,4 @@
+Modified the eco send to Spaced Zebras
 MESSAGE FROM GameState.__init__(): 
 Initialized Game State!
 The current game round is 9
@@ -8,101 +9,65 @@ MESSAGE FROM GameState.fastForward:
 Advancing game to time 203.1
 Sent a set of Spaced Zebras at time 203.0
 Sent a set of Spaced Zebras at time 203.1
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1380,525.4) at time 203.1
 ----------
 Advancing game to time 203.2
 Sent a set of Spaced Zebras at time 203.2
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1320,528.1) at time 203.2
 ----------
 Advancing game to time 203.3
 Sent a set of Spaced Zebras at time 203.29999999999998
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1260,530.8) at time 203.3
 ----------
 Advancing game to time 203.4
 Sent a set of Spaced Zebras at time 203.39999999999998
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1200,533.5) at time 203.4
 ----------
 Advancing game to time 203.5
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1200,533.5) at time 203.5
 ----------
 Advancing game to time 203.6
 Sent a set of Spaced Zebras at time 203.6
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1140,536.2) at time 203.6
 ----------
 Advancing game to time 203.7
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1140,536.2) at time 203.7
 ----------
 Advancing game to time 203.8
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1140,536.2) at time 203.8
 ----------
 Advancing game to time 203.9
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1140,536.2) at time 203.9
 ----------
 Advancing game to time 204.0
 Awarded eco payment 536.2 at time 204.0
 Recorded cash and eco values (1676.2,536.2) at time 204.0
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1676.2,536.2) at time 204.0
 ----------
 Advancing game to time 204.1
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1676.2,536.2) at time 204.1
 ----------
 Advancing game to time 204.2
 Sent a set of Spaced Zebras at time 204.2
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1616.2,538.9) at time 204.2
 ----------
 Advancing game to time 204.3
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1616.2,538.9) at time 204.3
 ----------
 Advancing game to time 204.4
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1616.2,538.9) at time 204.4
 ----------
 Advancing game to time 204.5
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1616.2,538.9) at time 204.5
 ----------
 Advancing game to time 204.6
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1616.2,538.9) at time 204.6
 ----------
 Advancing game to time 204.7
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1616.2,538.9) at time 204.7
 ----------
 Advancing game to time 204.8
 Sent a set of Spaced Zebras at time 204.79999999999998
-Current value of h_farm_revenues: 
-[0, 0]
 Recorded cash and eco values (1556.2,541.6) at time 204.8
 Modified the eco send to Zero
 ----------
@@ -110,1062 +75,638 @@ Advancing game to time 204.9
 Awarded direct payment 40 at time 204.86
 Recorded cash and eco values (1596.2,541.6) at time 204.86
 Awarded direct payment 40 at time 204.86
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 204.86
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 204.9
 ----------
 Advancing game to time 205.0
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.0
 ----------
 Advancing game to time 205.1
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.1
 ----------
 Advancing game to time 205.2
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.2
 ----------
 Advancing game to time 205.3
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.3
 ----------
 Advancing game to time 205.4
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.4
 ----------
 Advancing game to time 205.5
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.5
 ----------
 Advancing game to time 205.6
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.6
 ----------
 Advancing game to time 205.7
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.7
 ----------
 Advancing game to time 205.8
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.8
 ----------
 Advancing game to time 205.9
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 205.9
 ----------
 Advancing game to time 206.0
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.0
 ----------
 Advancing game to time 206.1
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.1
 ----------
 Advancing game to time 206.2
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.2
 ----------
 Advancing game to time 206.3
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.3
 ----------
 Advancing game to time 206.4
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.4
 ----------
 Advancing game to time 206.5
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.5
 ----------
 Advancing game to time 206.6
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.6
 ----------
 Advancing game to time 206.7
-Current value of h_farm_revenues: 
-[40.0, 40.0]
 Recorded cash and eco values (1636.2,541.6) at time 206.7
 ----------
 Advancing game to time 206.8
 Awarded direct payment 40 at time 206.71
 Recorded cash and eco values (1676.2,541.6) at time 206.71
 Awarded direct payment 40 at time 206.71
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 206.71
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 206.8
 ----------
 Advancing game to time 206.9
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 206.9
 ----------
 Advancing game to time 207.0
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.0
 ----------
 Advancing game to time 207.1
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.1
 ----------
 Advancing game to time 207.2
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.2
 ----------
 Advancing game to time 207.3
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.3
 ----------
 Advancing game to time 207.4
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.4
 ----------
 Advancing game to time 207.5
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.5
 ----------
 Advancing game to time 207.6
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.6
 ----------
 Advancing game to time 207.7
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.7
 ----------
 Advancing game to time 207.8
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.8
 ----------
 Advancing game to time 207.9
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 207.9
 ----------
 Advancing game to time 208.0
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 208.0
 ----------
 Advancing game to time 208.1
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 208.1
 ----------
 Advancing game to time 208.2
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 208.2
 ----------
 Advancing game to time 208.3
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1716.2,541.6) at time 208.3
 ----------
 Advancing game to time 208.4
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 We have 1716.2 cash! We can do the next buy, which costs 0.0 and has a buffer of 0 and a minimum buy time of 208.38!
 Completed the buy operation! The buy queue now has 1 items remaining in it
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1741.2,541.6) at time 208.4
 ----------
 Advancing game to time 208.5
-Current value of h_farm_revenues: 
-[80.0, 80.0]
 Recorded cash and eco values (1741.2,541.6) at time 208.5
 ----------
 Advancing game to time 208.6
 Awarded direct payment 40 at time 208.57
 Recorded cash and eco values (1781.2,541.6) at time 208.57
 Awarded direct payment 40 at time 208.57
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 208.57
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 208.6
 ----------
 Advancing game to time 208.7
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 208.7
 ----------
 Advancing game to time 208.8
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 208.8
 ----------
 Advancing game to time 208.9
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 208.9
 ----------
 Advancing game to time 209.0
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 209.0
 ----------
 Advancing game to time 209.1
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 209.1
 ----------
 Advancing game to time 209.2
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 209.2
 ----------
 Advancing game to time 209.3
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1821.2,541.6) at time 209.3
 ----------
 Advancing game to time 209.4
 Awarded direct payment 25 at time 209.38
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1846.2,541.6) at time 209.38
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1846.2,541.6) at time 209.4
 ----------
 Advancing game to time 209.5
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1846.2,541.6) at time 209.5
 ----------
 Advancing game to time 209.6
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1846.2,541.6) at time 209.6
 ----------
 Advancing game to time 209.7
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1846.2,541.6) at time 209.7
 ----------
 Advancing game to time 209.8
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1846.2,541.6) at time 209.8
 ----------
 Advancing game to time 209.9
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (1846.2,541.6) at time 209.9
 ----------
 Advancing game to time 210.0
 Awarded eco payment 541.6 at time 210.0
 Recorded cash and eco values (2387.8,541.6) at time 210.0
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (2387.8,541.6) at time 210.0
 ----------
 Advancing game to time 210.1
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (2387.8,541.6) at time 210.1
 ----------
 Advancing game to time 210.2
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (2387.8,541.6) at time 210.2
 ----------
 Advancing game to time 210.3
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (2387.8,541.6) at time 210.3
 ----------
 Advancing game to time 210.4
 Awarded direct payment 25 at time 210.38
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (2412.8,541.6) at time 210.38
-Current value of h_farm_revenues: 
-[120.0, 120.0]
 Recorded cash and eco values (2412.8,541.6) at time 210.4
 ----------
 Advancing game to time 210.5
 Awarded direct payment 40 at time 210.43
 Recorded cash and eco values (2452.8,541.6) at time 210.43
 Awarded direct payment 40 at time 210.43
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 210.43
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 210.5
 ----------
 Advancing game to time 210.6
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 210.6
 ----------
 Advancing game to time 210.7
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 210.7
 ----------
 Advancing game to time 210.8
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 210.8
 ----------
 Advancing game to time 210.9
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 210.9
 ----------
 Advancing game to time 211.0
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 211.0
 ----------
 Advancing game to time 211.1
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 211.1
 ----------
 Advancing game to time 211.2
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 211.2
 ----------
 Advancing game to time 211.3
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2492.8,541.6) at time 211.3
 ----------
 Advancing game to time 211.4
 Awarded direct payment 25 at time 211.38
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 211.38
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 211.4
 ----------
 Advancing game to time 211.5
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 211.5
 ----------
 Advancing game to time 211.6
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 211.6
 ----------
 Advancing game to time 211.7
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 211.7
 ----------
 Advancing game to time 211.8
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 211.8
 ----------
 Advancing game to time 211.9
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 211.9
 ----------
 Advancing game to time 212.0
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 212.0
 ----------
 Advancing game to time 212.1
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 212.1
 ----------
 Advancing game to time 212.2
-Current value of h_farm_revenues: 
-[160.0, 160.0]
 Recorded cash and eco values (2517.8,541.6) at time 212.2
 ----------
 Advancing game to time 212.3
 Awarded direct payment 40 at time 212.29
 Recorded cash and eco values (2557.8,541.6) at time 212.29
 Awarded direct payment 40 at time 212.29
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2597.8,541.6) at time 212.29
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2597.8,541.6) at time 212.3
 ----------
 Advancing game to time 212.4
 Awarded direct payment 25 at time 212.38
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 212.38
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 212.4
 ----------
 Advancing game to time 212.5
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 212.5
 ----------
 Advancing game to time 212.6
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 212.6
 ----------
 Advancing game to time 212.7
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 212.7
 ----------
 Advancing game to time 212.8
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 212.8
 ----------
 Advancing game to time 212.9
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 212.9
 ----------
 Advancing game to time 213.0
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 213.0
 ----------
 Advancing game to time 213.1
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 213.1
 ----------
 Advancing game to time 213.2
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 213.2
 ----------
 Advancing game to time 213.3
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2622.8,541.6) at time 213.3
 ----------
 Advancing game to time 213.4
 Awarded direct payment 25 at time 213.38
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 213.38
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 213.4
 ----------
 Advancing game to time 213.5
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 213.5
 ----------
 Advancing game to time 213.6
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 213.6
 ----------
 Advancing game to time 213.7
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 213.7
 ----------
 Advancing game to time 213.8
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 213.8
 ----------
 Advancing game to time 213.9
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 213.9
 ----------
 Advancing game to time 214.0
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 214.0
 ----------
 Advancing game to time 214.1
-Current value of h_farm_revenues: 
-[200.0, 200.0]
 Recorded cash and eco values (2647.8,541.6) at time 214.1
 ----------
 Advancing game to time 214.2
 Awarded direct payment 40 at time 214.14
 Recorded cash and eco values (2687.8,541.6) at time 214.14
 Awarded direct payment 40 at time 214.14
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2727.8,541.6) at time 214.14
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2727.8,541.6) at time 214.2
 ----------
 Advancing game to time 214.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2727.8,541.6) at time 214.3
 ----------
 Advancing game to time 214.4
 Awarded direct payment 25 at time 214.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 214.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 214.4
 ----------
 Advancing game to time 214.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 214.5
 ----------
 Advancing game to time 214.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 214.6
 ----------
 Advancing game to time 214.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 214.7
 ----------
 Advancing game to time 214.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 214.8
 ----------
 Advancing game to time 214.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 214.9
 ----------
 Advancing game to time 215.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 215.0
 ----------
 Advancing game to time 215.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 215.1
 ----------
 Advancing game to time 215.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 215.2
 ----------
 Advancing game to time 215.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2752.8,541.6) at time 215.3
 ----------
 Advancing game to time 215.4
 Awarded direct payment 25 at time 215.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2777.8,541.6) at time 215.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2777.8,541.6) at time 215.4
 ----------
 Advancing game to time 215.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2777.8,541.6) at time 215.5
 ----------
 Advancing game to time 215.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2777.8,541.6) at time 215.6
 ----------
 Advancing game to time 215.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2777.8,541.6) at time 215.7
 ----------
 Advancing game to time 215.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2777.8,541.6) at time 215.8
 ----------
 Advancing game to time 215.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (2777.8,541.6) at time 215.9
 ----------
 Advancing game to time 216.0
 Awarded eco payment 541.6 at time 216.0
 Recorded cash and eco values (3319.4,541.6) at time 216.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3319.4,541.6) at time 216.0
 ----------
 Advancing game to time 216.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3319.4,541.6) at time 216.1
 ----------
 Advancing game to time 216.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3319.4,541.6) at time 216.2
 ----------
 Advancing game to time 216.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3319.4,541.6) at time 216.3
 ----------
 Advancing game to time 216.4
 Awarded direct payment 25 at time 216.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 216.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 216.4
 ----------
 Advancing game to time 216.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 216.5
 ----------
 Advancing game to time 216.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 216.6
 ----------
 Advancing game to time 216.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 216.7
 ----------
 Advancing game to time 216.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 216.8
 ----------
 Advancing game to time 216.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 216.9
 ----------
 Advancing game to time 217.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 217.0
 ----------
 Advancing game to time 217.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 217.1
 ----------
 Advancing game to time 217.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 217.2
 ----------
 Advancing game to time 217.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3344.4,541.6) at time 217.3
 ----------
 Advancing game to time 217.4
 Awarded direct payment 25 at time 217.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 217.38
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 217.4
 ----------
 Advancing game to time 217.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 217.5
 ----------
 Advancing game to time 217.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 217.6
 ----------
 Advancing game to time 217.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 217.7
 ----------
 Advancing game to time 217.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 217.8
 ----------
 Advancing game to time 217.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 217.9
 ----------
 Advancing game to time 218.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.0
 ----------
 Advancing game to time 218.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.1
 ----------
 Advancing game to time 218.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.2
 ----------
 Advancing game to time 218.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.3
 ----------
 Advancing game to time 218.4
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.4
 ----------
 Advancing game to time 218.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.5
 ----------
 Advancing game to time 218.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.6
 ----------
 Advancing game to time 218.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.7
 ----------
 Advancing game to time 218.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.8
 ----------
 Advancing game to time 218.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 218.9
 ----------
 Advancing game to time 219.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.0
 ----------
 Advancing game to time 219.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.1
 ----------
 Advancing game to time 219.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.2
 ----------
 Advancing game to time 219.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.3
 ----------
 Advancing game to time 219.4
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.4
 ----------
 Advancing game to time 219.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.5
 ----------
 Advancing game to time 219.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.6
 ----------
 Advancing game to time 219.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.7
 ----------
 Advancing game to time 219.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.8
 ----------
 Advancing game to time 219.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 219.9
 ----------
 Advancing game to time 220.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.0
 ----------
 Advancing game to time 220.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.1
 ----------
 Advancing game to time 220.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.2
 ----------
 Advancing game to time 220.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.3
 ----------
 Advancing game to time 220.4
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.4
 ----------
 Advancing game to time 220.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.5
 ----------
 Advancing game to time 220.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.6
 ----------
 Advancing game to time 220.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.7
 ----------
 Advancing game to time 220.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.8
 ----------
 Advancing game to time 220.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 220.9
 ----------
 Advancing game to time 221.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.0
 ----------
 Advancing game to time 221.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.1
 ----------
 Advancing game to time 221.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.2
 ----------
 Advancing game to time 221.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.3
 ----------
 Advancing game to time 221.4
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.4
 ----------
 Advancing game to time 221.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.5
 ----------
 Advancing game to time 221.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.6
 ----------
 Advancing game to time 221.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.7
 ----------
 Advancing game to time 221.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.8
 ----------
 Advancing game to time 221.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3369.4,541.6) at time 221.9
 ----------
 Advancing game to time 222.0
 Awarded eco payment 541.6 at time 222.0
 Recorded cash and eco values (3911.0,541.6) at time 222.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.0
 ----------
 Advancing game to time 222.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.1
 ----------
 Advancing game to time 222.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.2
 ----------
 Advancing game to time 222.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.3
 ----------
 Advancing game to time 222.4
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.4
 ----------
 Advancing game to time 222.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.5
 ----------
 Advancing game to time 222.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.6
 ----------
 Advancing game to time 222.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.7
 ----------
 Advancing game to time 222.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.8
 ----------
 Advancing game to time 222.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 222.9
 ----------
 Advancing game to time 223.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.0
 ----------
 Advancing game to time 223.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.1
 ----------
 Advancing game to time 223.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.2
 ----------
 Advancing game to time 223.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.3
 ----------
 Advancing game to time 223.4
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.4
 ----------
 Advancing game to time 223.5
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.5
 ----------
 Advancing game to time 223.6
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.6
 ----------
 Advancing game to time 223.7
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.7
 ----------
 Advancing game to time 223.8
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.8
 ----------
 Advancing game to time 223.9
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 223.9
 ----------
 Advancing game to time 224.0
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 224.0
 ----------
 Advancing game to time 224.1
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 224.1
 ----------
 Advancing game to time 224.2
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 224.2
 ----------
 Advancing game to time 224.3
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 224.3
 ----------
 Advancing game to time 224.4
-Current value of h_farm_revenues: 
-[240.0, 240.0]
 Recorded cash and eco values (3911.0,541.6) at time 224.4
 ----------
 Advancing game to time 224.5
@@ -1173,341 +714,209 @@ Awarded direct payment 40 at time 224.5
 Recorded cash and eco values (3951.0,541.6) at time 224.5
 Awarded direct payment 40 at time 224.5
 Recorded cash and eco values (3991.0,541.6) at time 224.5
-Current value of h_farm_revenues: 
-[280.0, 280.0]
 Recorded cash and eco values (3991.0,541.6) at time 224.5
 ----------
 Advancing game to time 224.6
-Current value of h_farm_revenues: 
-[280.0, 280.0]
 Recorded cash and eco values (3991.0,541.6) at time 224.6
 ----------
 Advancing game to time 224.7
-Current value of h_farm_revenues: 
-[280.0, 280.0]
 Recorded cash and eco values (3991.0,541.6) at time 224.7
 ----------
 Advancing game to time 224.8
-Current value of h_farm_revenues: 
-[280.0, 280.0]
 Recorded cash and eco values (3991.0,541.6) at time 224.8
 ----------
 Advancing game to time 224.9
-Current value of h_farm_revenues: 
-[280.0, 280.0]
 Recorded cash and eco values (3991.0,541.6) at time 224.9
 ----------
 Advancing game to time 225.0
 Awarded direct payment 40 at time 224.93
 Recorded cash and eco values (4031.0,541.6) at time 224.93
 Awarded direct payment 40 at time 224.93
-Current value of h_farm_revenues: 
-[320.0, 320.0]
 Recorded cash and eco values (4071.0,541.6) at time 224.93
-Current value of h_farm_revenues: 
-[320.0, 320.0]
 Recorded cash and eco values (4071.0,541.6) at time 225.0
 ----------
 Advancing game to time 225.1
-Current value of h_farm_revenues: 
-[320.0, 320.0]
 Recorded cash and eco values (4071.0,541.6) at time 225.1
 ----------
 Advancing game to time 225.2
-Current value of h_farm_revenues: 
-[320.0, 320.0]
 Recorded cash and eco values (4071.0,541.6) at time 225.2
 ----------
 Advancing game to time 225.3
-Current value of h_farm_revenues: 
-[320.0, 320.0]
 Recorded cash and eco values (4071.0,541.6) at time 225.3
 ----------
 Advancing game to time 225.4
 Awarded direct payment 40 at time 225.36
 Recorded cash and eco values (4111.0,541.6) at time 225.36
 Awarded direct payment 40 at time 225.36
-Current value of h_farm_revenues: 
-[360.00000000000045, 360.0]
 Recorded cash and eco values (4151.0,541.6) at time 225.36
-Current value of h_farm_revenues: 
-[360.00000000000045, 360.0]
 Recorded cash and eco values (4151.0,541.6) at time 225.4
 ----------
 Advancing game to time 225.5
-Current value of h_farm_revenues: 
-[360.00000000000045, 360.0]
 Recorded cash and eco values (4151.0,541.6) at time 225.5
 ----------
 Advancing game to time 225.6
-Current value of h_farm_revenues: 
-[360.00000000000045, 360.0]
 Recorded cash and eco values (4151.0,541.6) at time 225.6
 ----------
 Advancing game to time 225.7
-Current value of h_farm_revenues: 
-[360.00000000000045, 360.0]
 Recorded cash and eco values (4151.0,541.6) at time 225.7
 ----------
 Advancing game to time 225.8
 Awarded direct payment 40 at time 225.79
 Recorded cash and eco values (4191.0,541.6) at time 225.79
 Awarded direct payment 40 at time 225.79
-Current value of h_farm_revenues: 
-[400.00000000000045, 400.0]
 Recorded cash and eco values (4231.0,541.6) at time 225.79
-Current value of h_farm_revenues: 
-[400.00000000000045, 400.0]
 Recorded cash and eco values (4231.0,541.6) at time 225.8
 ----------
 Advancing game to time 225.9
-Current value of h_farm_revenues: 
-[400.00000000000045, 400.0]
 Recorded cash and eco values (4231.0,541.6) at time 225.9
 ----------
 Advancing game to time 226.0
-Current value of h_farm_revenues: 
-[400.00000000000045, 400.0]
 Recorded cash and eco values (4231.0,541.6) at time 226.0
 ----------
 Advancing game to time 226.1
-Current value of h_farm_revenues: 
-[400.00000000000045, 400.0]
 Recorded cash and eco values (4231.0,541.6) at time 226.1
 ----------
 Advancing game to time 226.2
-Current value of h_farm_revenues: 
-[400.00000000000045, 400.0]
 Recorded cash and eco values (4231.0,541.6) at time 226.2
 ----------
 Advancing game to time 226.3
 Awarded direct payment 40 at time 226.21
 Recorded cash and eco values (4271.0,541.6) at time 226.21
 Awarded direct payment 40 at time 226.21
-Current value of h_farm_revenues: 
-[440.00000000000045, 440.0]
 Recorded cash and eco values (4311.0,541.6) at time 226.21
-Current value of h_farm_revenues: 
-[440.00000000000045, 440.0]
 Recorded cash and eco values (4311.0,541.6) at time 226.3
 ----------
 Advancing game to time 226.4
-Current value of h_farm_revenues: 
-[440.00000000000045, 440.0]
 Recorded cash and eco values (4311.0,541.6) at time 226.4
 ----------
 Advancing game to time 226.5
-Current value of h_farm_revenues: 
-[440.00000000000045, 440.0]
 Recorded cash and eco values (4311.0,541.6) at time 226.5
 ----------
 Advancing game to time 226.6
-Current value of h_farm_revenues: 
-[440.00000000000045, 440.0]
 Recorded cash and eco values (4311.0,541.6) at time 226.6
 ----------
 Advancing game to time 226.7
 Awarded direct payment 40 at time 226.64
 Recorded cash and eco values (4351.0,541.6) at time 226.64
 Awarded direct payment 40 at time 226.64
-Current value of h_farm_revenues: 
-[480.00000000000045, 480.0]
 Recorded cash and eco values (4391.0,541.6) at time 226.64
-Current value of h_farm_revenues: 
-[480.00000000000045, 480.0]
 Recorded cash and eco values (4391.0,541.6) at time 226.7
 ----------
 Advancing game to time 226.8
-Current value of h_farm_revenues: 
-[480.00000000000045, 480.0]
 Recorded cash and eco values (4391.0,541.6) at time 226.8
 ----------
 Advancing game to time 226.9
-Current value of h_farm_revenues: 
-[480.00000000000045, 480.0]
 Recorded cash and eco values (4391.0,541.6) at time 226.9
 ----------
 Advancing game to time 227.0
-Current value of h_farm_revenues: 
-[480.00000000000045, 480.0]
 Recorded cash and eco values (4391.0,541.6) at time 227.0
 ----------
 Advancing game to time 227.1
 Awarded direct payment 40 at time 227.07
 Recorded cash and eco values (4431.0,541.6) at time 227.07
 Awarded direct payment 40 at time 227.07
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.07
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.1
 ----------
 Advancing game to time 227.2
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.2
 ----------
 Advancing game to time 227.3
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.3
 ----------
 Advancing game to time 227.4
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.4
 ----------
 Advancing game to time 227.5
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.5
 ----------
 Advancing game to time 227.6
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.6
 ----------
 Advancing game to time 227.7
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.7
 ----------
 Advancing game to time 227.8
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.8
 ----------
 Advancing game to time 227.9
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (4471.0,541.6) at time 227.9
 ----------
 Advancing game to time 228.0
 Awarded eco payment 541.6 at time 228.0
 Recorded cash and eco values (5012.6,541.6) at time 228.0
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.0
 ----------
 Advancing game to time 228.1
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.1
 ----------
 Advancing game to time 228.2
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.2
 ----------
 Advancing game to time 228.3
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.3
 ----------
 Advancing game to time 228.4
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.4
 ----------
 Advancing game to time 228.5
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.5
 ----------
 Advancing game to time 228.6
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.6
 ----------
 Advancing game to time 228.7
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.7
 ----------
 Advancing game to time 228.8
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.8
 ----------
 Advancing game to time 228.9
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 228.9
 ----------
 Advancing game to time 229.0
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.0
 ----------
 Advancing game to time 229.1
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.1
 ----------
 Advancing game to time 229.2
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.2
 ----------
 Advancing game to time 229.3
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.3
 ----------
 Advancing game to time 229.4
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.4
 ----------
 Advancing game to time 229.5
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.5
 ----------
 Advancing game to time 229.6
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.6
 ----------
 Advancing game to time 229.7
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.7
 ----------
 Advancing game to time 229.8
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.8
 ----------
 Advancing game to time 229.9
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 229.9
 ----------
 Advancing game to time 230.0
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 230.0
 ----------
 Advancing game to time 230.1
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 230.1
 ----------
 Advancing game to time 230.2
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 230.2
 ----------
 Advancing game to time 230.3
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 Recorded cash and eco values (5012.6,541.6) at time 230.3
 ----------
 Advancing game to time 230.4
-Current value of h_farm_revenues: 
-[520.0000000000005, 520.0]
 We have 5012.6 cash! We can do the next buy, which costs 4300.0 and has a buffer of 0 and a minimum buy time of 230.38!
 Completed the buy operation! The buy queue now has 0 items remaining in it
 Recorded cash and eco values (712.6,541.6) at time 230.4

@@ -1,3 +1,4 @@
+Modified the eco send to Grouped Blacks
 MESSAGE FROM GameState.__init__(): 
 Initialized Game State!
 The current game round is 14
