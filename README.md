@@ -21,6 +21,11 @@ To run the code, do the following:
 4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game. 
 
 # Update Log
+- (July 1, 2023 - v1.0.3)
+   - Added back support for *eco impact*. Whenever a farm is used in a simulation, the simulator computes the equivalent amount of eco that would've made the exact same money as the farm during its lifetime in the simulation. Thus, a farm that is on screen for 6 seconds and generates 100 dollars would have an eco impact of 100.
+   - Rectified an error in the build which caused installing from pip to not work.
+   - The revenue and expenses of a given farm is now stored in the `MonkeyFarm` class. Previously, revenue and expense tracking were handled by the `GameState` class.
+   - Selling farms no longer actually removes the `MonkeyFarm` object from the simulator. Instead, the farm's sell time is marked, and the simulator whenever processing payments for a farm checks whether the farm has been sold or not first. This behavior makes it easier to write code concerning revenue/expense tracking of farms.
 - (June 29, 2023 - v1.0.1)
    - The python code is now available to install on pip! Just do `pip install b2sim=1.0.1` to install the code on your computer and run it!
    - If a simulation involves farms, the `GameState` class will track the revenue and expenses of each farm over the course of the simulation.
