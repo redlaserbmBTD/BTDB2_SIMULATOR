@@ -22,7 +22,7 @@ To run the code, do the following:
 
 # Update Log
 - (July 1, 2023 - v1.0.4)
-   - Fixed an issue which caused the attack queue (which concerns the queue of bloons sent to your opponent) to sometimes fail to remove sends from the queue that already finished sending, resulting in the simulator displaying incorrect eco amounts during simulation.
+   - Fixed an issue which caused the attack queue (which concerns the queue of bloons sent to your opponent) to sometimes fail to remove sends from the queue that already finished sending, resulting in the simulator computing incorrect eco amounts during simulation.
    - You can now change the text size of the legend in the `viewCashEcoHistory` by using the `text_size` argument.
 - (July 1, 2023 - v1.0.3)
    - Added back support for *eco impact*. Whenever a farm is used in a simulation, the simulator computes the equivalent amount of eco that would've made the exact same money as the farm during its lifetime in the simulation. Thus, a farm that is on screen for 6 seconds and generates 100 dollars would have an eco impact of 100.
