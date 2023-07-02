@@ -190,6 +190,12 @@ def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), max_
         'Message': 'Trigger repeated supply drop buys until time %s'%(max_buy_time)
     }
 
+def sellAllSupplyDrops(min_buy_time = 0):
+    return {
+        'Type': 'Sell All Supply Drops',
+        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+    }
+
 # WARNING: This function is for declaring supply drops in the initial game state. 
 # Do NOT use it to add supply drops during simulation
 def initSupplyDrops(purchase_times, elite_sniper = None):

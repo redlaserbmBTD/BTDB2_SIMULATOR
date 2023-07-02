@@ -242,7 +242,7 @@ class GameState():
         self.logs.append("The current game time is %s seconds"%(self.current_time))
         self.logs.append("The game round start times are given by %s \n"%(self.rounds.round_starts))
         
-    def viewCashEcoHistory(self, dim = (15,18), display_farms = True):
+    def viewCashEcoHistory(self, dim = (15,18), display_farms = True, font_size = 12):
         self.logs.append("MESSAGE FROM GameState.viewCashEcoHistory():")
         self.logs.append("Graphing history of cash and eco!")
 
@@ -302,8 +302,8 @@ class GameState():
         ax[0].set_xlabel("Time (seconds)")
         ax[1].set_xlabel("Time (seconds)")
         
-        ax[0].legend(bbox_to_anchor = (1.02, 1))
-        ax[1].legend(bbox_to_anchor = (1.02, 1))
+        ax[0].legend(bbox_to_anchor = (1.02, 1), fontsize = font_size)
+        ax[1].legend(bbox_to_anchor = (1.02, 1), fontsize = font_size)
         
         fig.tight_layout()
 
@@ -1033,9 +1033,8 @@ class GameState():
             # self.logs.append("Advanced current time to %s"%(self.current_time))
 
             # First, check if we can remove any items from the attack queue
-            for attack_end in self.attack_queue:
-                if self.current_time >= attack_end:
-                    self.attack_queue.remove(attack_end)
+            while len(self.attack_queue) > 0 and self.current_time >= self.attack_queue[0]:
+                self.attack_queue.pop(0)
             
             # Next, try to add an attack to the attack_queue.
             # Can we send an attack?
@@ -1048,6 +1047,8 @@ class GameState():
                 self.cash -= self.eco_cost
                 self.eco += self.eco_gain
                 self.logs.append("Sent a set of %s at time %s"%(self.send_name, self.current_time))
+                self.logs.append("Currently, the send queue looks like this: ")
+                self.logs.append(str(self.attack_queue))
 
                 # Will the attack we send fill up the queue completely?
                 if len(self.attack_queue) == 5:
@@ -1146,6 +1147,13 @@ class GameState():
                     ind = dict_obj['Index']
                     path = dict_obj['Path']
                     farm = self.farms[ind]
+                    #Do not upgrade a farm that has already been sold!
+                    if farm.sell_time is not None:
+                        self.logs.append("WARNING! Tried to upgrade a farm that was already sold! Aborting buy queue!")
+                        self.warnings.append(len(self.logs)-1)
+                        self.valid_action_flag = False
+                        break
+
                     #The following code prevents from the player from having multiple T5's in play
                     if farm.upgrades[path]+1 == 5 and self.T5_exists[path] == True:
                         self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
@@ -1174,6 +1182,12 @@ class GameState():
                     #If it isn't, break the loop prematurely
                     ind = dict_obj['Index']
                     farm = self.farms[ind]
+                    if farm.sell_time is not None:
+                        self.logs.append("WARNING! Tried to withdraw from a bank that was already sold! Aborting buy queue!")
+                        self.warnings.append(len(self.logs)-1)
+                        self.valid_action_flag = False
+                        break
+
                     if farm.upgrades[1] < 3:
                         self.logs.append("WARNING! Tried to Withdraw from a farm that is not a bank! Aborting buy queue!")
                         self.warnings.append(len(self.logs)-1)
@@ -1189,6 +1203,13 @@ class GameState():
                     #WARNING: The farm in question must actually be an IMF Loan for us to use this ability!
                     #If it isn't, set a flag to False and break the loop.
                     #DEVELOPER'S NOTE: A farm that has a min_use_time is not necessarily an IMF loan, it could also be an Monkeyopolis
+                    #Do not upgrade a farm that has already been sold!
+                    if farm.sell_time is not None:
+                        self.logs.append("WARNING! Tried to take out a loan from a bank that was already sold! Aborting buy queue!")
+                        self.warnings.append(len(self.logs)-1)
+                        self.valid_action_flag = False
+                        break
+
                     if farm.upgrades[1] != 4:
                         self.logs.append("WARNING! Tried to take out a loan from a farm that is not an IMF! Aborting buy queue!")
                         self.warnings.append(len(self.logs)-1)
@@ -1608,7 +1629,7 @@ class MonkeyFarm():
 # The goal of a simulator like this is to compare different strategies and see which one is better. To this end, we define a function capable of simulating multiple game states at once and comparing them.
 
 # %%
-def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None, target_round = 30, display_farms = True):
+def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None, target_round = 30, display_farms = True, font_size = 12):
     
     # Log file in case we need to check outputs
     logs = []
@@ -1721,8 +1742,8 @@ def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None,
 
     ax[1].set_xlabel("Time (seconds)")
 
-    ax[0].legend(loc='upper left')
-    ax[1].legend(loc='upper left')
+    ax[0].legend(loc='upper left', fontsize = font_size)
+    ax[1].legend(loc='upper left', fontsize = font_size)
     
     d = {'Game State': [i for i in range(N)], 'Farm Income': [farm_incomes[i] for i in range(N)]}
     df = pd.DataFrame(data=d)
