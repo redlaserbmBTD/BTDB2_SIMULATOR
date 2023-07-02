@@ -54,6 +54,13 @@ def activateIMF(index, min_buy_time = 0):
         'Message': 'Take out loan from farm %s'%(index)
     }
 
+#Not yet implemented, don't use
+def sellAllFarms(min_buy_time = 0):
+    return {
+        'Type': 'Sell All Farms',
+        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+    }
+
 # WARNING: This function is for declaring farms in the initial game state. 
 # Do NOT use it to add farms during simulation
 def initFarm(purchase_time = None, upgrades = [0,0,0]):
@@ -91,6 +98,13 @@ def sellBoatFarm(index, min_buy_time = 0):
         'Index': index,
         'Minimum Buy Time': min_buy_time,
         'Message': 'Sell boat farm %s'%(index)
+    }
+
+#Not yet implemented, don't use
+def sellAllBoatFarms(min_buy_time = 0):
+    return {
+        'Type': 'Sell All Boat Farms',
+        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
     }
 
 # WARNING: This function is for declaring boat farms in the initial game state. 
@@ -139,6 +153,13 @@ def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), max_a
         'Maximum Amount': max_amount,
         'Buffer': buffer,
         'Message': 'Trigger repeated druid farm buys until time %s'%(max_buy_time)
+    }
+
+#Not yet implemented, don't use
+def sellAllDruidFarms(min_buy_time = 0):
+    return {
+        'Type': 'Sell All Druid Farms',
+        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
     }
 
 # WARNING: This function is for declaring druid farms in the initial game state. 
@@ -190,6 +211,7 @@ def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), max_
         'Message': 'Trigger repeated supply drop buys until time %s'%(max_buy_time)
     }
 
+#Not yet implemented, don't use
 def sellAllSupplyDrops(min_buy_time = 0):
     return {
         'Type': 'Sell All Supply Drops',
@@ -243,6 +265,13 @@ def repeatedlyBuyHeliFarms(min_buy_time = 0, max_buy_time = float('inf'), max_am
         'Maximum Amount': max_amount,
         'Buffer': buffer,
         'Message': 'Trigger repeated heli farm buys until time %s'%(max_buy_time)
+    }
+
+#Not yet implemented, don't use
+def sellAllHeliFarms(min_buy_time = 0):
+    return {
+        'Type': 'Sell All Heli Farms',
+        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
     }
 
 # WARNING: This function is for declaring heli farms in the initial game state. 

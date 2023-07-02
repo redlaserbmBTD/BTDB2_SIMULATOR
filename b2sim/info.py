@@ -119,7 +119,7 @@ farm_payout_values = {
 }
 
 game_globals = {
-    'Eco Delay': 0.1, #The delay between eco sends, in seconds, assuming the attack queue is not full and the player has enough cash to send eco.
+    'Eco Delay': 0.15, #The delay between eco sends, in seconds, assuming the attack queue is not full and the player has enough cash to send eco.
     'Fortified Multiplier': 2.0,
     'Camoflauge Multiplier': 2.0,
     'Regrow Multiplier': 1.6,

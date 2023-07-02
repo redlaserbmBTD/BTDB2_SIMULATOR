@@ -1073,8 +1073,8 @@ class GameState():
                 self.logs.append("Currently, the send queue looks like this: ")
                 self.logs.append(str(self.attack_queue))
 
-                # Will the attack we send fill up the queue completely?
-                if len(self.attack_queue) == 5:
+                # Did the attack fill up the eco queue?
+                if len(self.attack_queue) == 6:
                     # Yes, The next send will cause the attack queue to fill up. Wait until the queue empties (if necessary)
                     self.attack_queue_unlock_time = max(self.current_time + self.eco_delay, self.attack_queue[0])
                 else:
@@ -1199,6 +1199,14 @@ class GameState():
                         self.warnings.append(len(self.logs)-1)
                         self.valid_action_flag = False
                         break
+                elif dict_obj['Type'] == 'Sell All Farms':
+                    for key in self.farms.keys():
+                        farm = self.farms[key]
+                        if farm.sell_time is None:
+                            h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_sellback_values[tuple(farm.upgrades)])
+                            farm.h_revenue += h_new_cash - h_cash
+                            h_cash, h_loan = h_new_cash, h_new_loan
+
 
                 elif dict_obj['Type'] == 'Withdraw Bank':
                     #WARNING: The farm in question must actually be a bank for us to perform a withdrawal!
@@ -1443,6 +1451,13 @@ class GameState():
                         #Mark the farm's sell time. The code checks whether this value is a number or not before trying to compute farm payments
                         farm.sell_time = payout['Time']
                         
+                    elif dict_obj['Type'] == 'Sell All Farms':
+                        self.logs.append("Selling all farms!")
+                        self.T5_exists = [False for i in range(3)] #Obviously, if we sell all farms we won't have any T5's anymore!
+                        for key in self.farms.keys():
+                            farm = self.farms[key]
+                            farm.sell_time = payout['Time']
+                    
                     elif dict_obj['Type'] == 'Withdraw Bank':
                         self.logs.append("Withdrawing money from the bank at index %s"%(ind))
                         ind = dict_obj['Index']
