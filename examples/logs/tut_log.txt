@@ -24,6 +24,8 @@ Recorded cash and eco values (50,800) at time 292.31
 Awarded direct payment 50 at time 292.31
 Recorded cash and eco values (100,800) at time 292.31
 Sent a set of Grouped Blacks at time 292.35
+Currently, the send queue looks like this: 
+[292.67]
 Recorded cash and eco values (25,803.0) at time 292.4
 ----------
 Advancing game to time 292.5
@@ -38,6 +40,8 @@ Recorded cash and eco values (75,803.0) at time 292.62
 Awarded direct payment 50 at time 292.62
 Recorded cash and eco values (125,803.0) at time 292.62
 Sent a set of Grouped Blacks at time 292.65000000000003
+Currently, the send queue looks like this: 
+[292.67, 292.99]
 Recorded cash and eco values (50,806.0) at time 292.7
 ----------
 Advancing game to time 292.75
@@ -55,10 +59,14 @@ Recorded cash and eco values (100,806.0) at time 292.94
 Awarded direct payment 50 at time 292.94
 Recorded cash and eco values (150,806.0) at time 292.94
 Sent a set of Grouped Blacks at time 292.95000000000005
+Currently, the send queue looks like this: 
+[292.99, 293.31]
 Recorded cash and eco values (75,809.0) at time 293.0
 ----------
 Advancing game to time 293.1
 Sent a set of Grouped Blacks at time 293.05000000000007
+Currently, the send queue looks like this: 
+[293.31, 293.63]
 Recorded cash and eco values (0,812.0) at time 293.1
 ----------
 Advancing game to time 293.2
@@ -73,6 +81,8 @@ Recorded cash and eco values (100,812.0) at time 293.25
 ----------
 Advancing game to time 293.3
 Sent a set of Grouped Blacks at time 293.3
+Currently, the send queue looks like this: 
+[293.31, 293.63, 293.95]
 Recorded cash and eco values (25,815.0) at time 293.3
 ----------
 Advancing game to time 293.4
@@ -90,6 +100,8 @@ Recorded cash and eco values (125,815.0) at time 293.6
 ----------
 Advancing game to time 293.7
 Sent a set of Grouped Blacks at time 293.6125
+Currently, the send queue looks like this: 
+[293.63, 293.95, 294.27]
 Recorded cash and eco values (50,818.0) at time 293.7
 ----------
 Advancing game to time 293.75
@@ -107,16 +119,22 @@ Recorded cash and eco values (150,818.0) at time 293.9
 ----------
 Advancing game to time 294.0
 Sent a set of Grouped Blacks at time 293.925
+Currently, the send queue looks like this: 
+[293.95, 294.27, 294.59]
 Awarded eco payment 821.0 at time 294.0
 Recorded cash and eco values (896.0,821.0) at time 294.0
 Recorded cash and eco values (896.0,821.0) at time 294.0
 ----------
 Advancing game to time 294.1
 Sent a set of Grouped Blacks at time 294.02500000000003
+Currently, the send queue looks like this: 
+[294.27, 294.59, 294.90999999999997]
 Recorded cash and eco values (821.0,824.0) at time 294.1
 ----------
 Advancing game to time 294.2
 Sent a set of Grouped Blacks at time 294.12500000000006
+Currently, the send queue looks like this: 
+[294.27, 294.59, 294.90999999999997, 295.22999999999996]
 Awarded direct payment 50 at time 294.19
 Recorded cash and eco values (796.0,827.0) at time 294.19
 Awarded direct payment 50 at time 294.19
@@ -125,6 +143,8 @@ Recorded cash and eco values (846.0,827.0) at time 294.2
 ----------
 Advancing game to time 294.25
 Sent a set of Grouped Blacks at time 294.2250000000001
+Currently, the send queue looks like this: 
+[294.27, 294.59, 294.90999999999997, 295.22999999999996, 295.54999999999995]
 Recorded cash and eco values (771.0,830.0) at time 294.25
 ----------
 Advancing game to time 294.3
@@ -132,6 +152,8 @@ Recorded cash and eco values (771.0,830.0) at time 294.3
 ----------
 Advancing game to time 294.4
 Sent a set of Grouped Blacks at time 294.3250000000001
+Currently, the send queue looks like this: 
+[294.59, 294.90999999999997, 295.22999999999996, 295.54999999999995, 295.86999999999995]
 Recorded cash and eco values (696.0,833.0) at time 294.4
 ----------
 Advancing game to time 294.5
@@ -143,6 +165,8 @@ Recorded cash and eco values (796.0,833.0) at time 294.5
 ----------
 Advancing game to time 294.6
 Sent a set of Grouped Blacks at time 294.59
+Currently, the send queue looks like this: 
+[294.90999999999997, 295.22999999999996, 295.54999999999995, 295.86999999999995, 296.18999999999994]
 Recorded cash and eco values (721.0,836.0) at time 294.6
 ----------
 Advancing game to time 294.7
@@ -163,6 +187,8 @@ Recorded cash and eco values (821.0,836.0) at time 294.9
 ----------
 Advancing game to time 295.0
 Sent a set of Grouped Blacks at time 294.90999999999997
+Currently, the send queue looks like this: 
+[295.22999999999996, 295.54999999999995, 295.86999999999995, 296.18999999999994, 296.50999999999993]
 Recorded cash and eco values (746.0,839.0) at time 295.0
 ----------
 Advancing game to time 295.1
@@ -177,6 +203,8 @@ Recorded cash and eco values (846.0,839.0) at time 295.2
 ----------
 Advancing game to time 295.25
 Sent a set of Grouped Blacks at time 295.22999999999996
+Currently, the send queue looks like this: 
+[295.54999999999995, 295.86999999999995, 296.18999999999994, 296.50999999999993, 296.8299999999999]
 Recorded cash and eco values (771.0,842.0) at time 295.25
 ----------
 Advancing game to time 295.3
@@ -194,6 +222,8 @@ Recorded cash and eco values (871.0,842.0) at time 295.5
 ----------
 Advancing game to time 295.6
 Sent a set of Grouped Blacks at time 295.54999999999995
+Currently, the send queue looks like this: 
+[295.86999999999995, 296.18999999999994, 296.50999999999993, 296.8299999999999, 297.1499999999999]
 Recorded cash and eco values (796.0,845.0) at time 295.6
 ----------
 Advancing game to time 295.7
@@ -211,6 +241,8 @@ Recorded cash and eco values (896.0,845.0) at time 295.8
 ----------
 Advancing game to time 295.9
 Sent a set of Grouped Blacks at time 295.86999999999995
+Currently, the send queue looks like this: 
+[296.18999999999994, 296.50999999999993, 296.8299999999999, 297.1499999999999, 297.4699999999999]
 Recorded cash and eco values (821.0,848.0) at time 295.9
 ----------
 Advancing game to time 296.0
@@ -225,6 +257,8 @@ Recorded cash and eco values (921.0,848.0) at time 296.1
 ----------
 Advancing game to time 296.2
 Sent a set of Grouped Blacks at time 296.18999999999994
+Currently, the send queue looks like this: 
+[296.50999999999993, 296.8299999999999, 297.1499999999999, 297.4699999999999, 297.7899999999999]
 Recorded cash and eco values (846.0,851.0) at time 296.2
 ----------
 Advancing game to time 296.25
@@ -245,6 +279,8 @@ Recorded cash and eco values (946.0,851.0) at time 296.5
 ----------
 Advancing game to time 296.6
 Sent a set of Grouped Blacks at time 296.50999999999993
+Currently, the send queue looks like this: 
+[296.8299999999999, 297.1499999999999, 297.4699999999999, 297.7899999999999, 298.1099999999999]
 Recorded cash and eco values (871.0,854.0) at time 296.6
 ----------
 Advancing game to time 296.7
@@ -262,6 +298,8 @@ Recorded cash and eco values (971.0,854.0) at time 296.8
 ----------
 Advancing game to time 296.9
 Sent a set of Grouped Blacks at time 296.8299999999999
+Currently, the send queue looks like this: 
+[297.1499999999999, 297.4699999999999, 297.7899999999999, 298.1099999999999, 298.4299999999999]
 Recorded cash and eco values (896.0,857.0) at time 296.9
 ----------
 Advancing game to time 297.0
@@ -272,6 +310,8 @@ Recorded cash and eco values (896.0,857.0) at time 297.1
 ----------
 Advancing game to time 297.2
 Sent a set of Grouped Blacks at time 297.1499999999999
+Currently, the send queue looks like this: 
+[297.4699999999999, 297.7899999999999, 298.1099999999999, 298.4299999999999, 298.7499999999999]
 Recorded cash and eco values (821.0,860.0) at time 297.2
 ----------
 Advancing game to time 297.25
@@ -285,6 +325,8 @@ Recorded cash and eco values (821.0,860.0) at time 297.4
 ----------
 Advancing game to time 297.5
 Sent a set of Grouped Blacks at time 297.4699999999999
+Currently, the send queue looks like this: 
+[297.7899999999999, 298.1099999999999, 298.4299999999999, 298.7499999999999, 299.0699999999999]
 Recorded cash and eco values (746.0,863.0) at time 297.5
 ----------
 Advancing game to time 297.6
@@ -298,6 +340,8 @@ Recorded cash and eco values (746.0,863.0) at time 297.75
 ----------
 Advancing game to time 297.8
 Sent a set of Grouped Blacks at time 297.7899999999999
+Currently, the send queue looks like this: 
+[298.1099999999999, 298.4299999999999, 298.7499999999999, 299.0699999999999, 299.3899999999999]
 Recorded cash and eco values (671.0,866.0) at time 297.8
 ----------
 Advancing game to time 297.9
@@ -311,6 +355,8 @@ Recorded cash and eco values (671.0,866.0) at time 298.1
 ----------
 Advancing game to time 298.2
 Sent a set of Grouped Blacks at time 298.1099999999999
+Currently, the send queue looks like this: 
+[298.4299999999999, 298.7499999999999, 299.0699999999999, 299.3899999999999, 299.70999999999987]
 Recorded cash and eco values (596.0,869.0) at time 298.2
 ----------
 Advancing game to time 298.25
@@ -324,6 +370,8 @@ Recorded cash and eco values (596.0,869.0) at time 298.4
 ----------
 Advancing game to time 298.5
 Sent a set of Grouped Blacks at time 298.4299999999999
+Currently, the send queue looks like this: 
+[298.7499999999999, 299.0699999999999, 299.3899999999999, 299.70999999999987, 300.02999999999986]
 Recorded cash and eco values (521.0,872.0) at time 298.5
 ----------
 Advancing game to time 298.6
@@ -334,6 +382,8 @@ Recorded cash and eco values (521.0,872.0) at time 298.7
 ----------
 Advancing game to time 298.75
 Sent a set of Grouped Blacks at time 298.7499999999999
+Currently, the send queue looks like this: 
+[299.0699999999999, 299.3899999999999, 299.70999999999987, 300.02999999999986, 300.34999999999985]
 Recorded cash and eco values (446.0,875.0) at time 298.75
 ----------
 Advancing game to time 298.8
@@ -347,6 +397,8 @@ Recorded cash and eco values (446.0,875.0) at time 299.0
 ----------
 Advancing game to time 299.1
 Sent a set of Grouped Blacks at time 299.0699999999999
+Currently, the send queue looks like this: 
+[299.3899999999999, 299.70999999999987, 300.02999999999986, 300.34999999999985, 300.66999999999985]
 Recorded cash and eco values (371.0,878.0) at time 299.1
 ----------
 Advancing game to time 299.2
@@ -360,6 +412,8 @@ Recorded cash and eco values (371.0,878.0) at time 299.3
 ----------
 Advancing game to time 299.4
 Sent a set of Grouped Blacks at time 299.3899999999999
+Currently, the send queue looks like this: 
+[299.70999999999987, 300.02999999999986, 300.34999999999985, 300.66999999999985, 300.98999999999984]
 Recorded cash and eco values (296.0,881.0) at time 299.4
 ----------
 Advancing game to time 299.5
@@ -373,6 +427,8 @@ Recorded cash and eco values (296.0,881.0) at time 299.7
 ----------
 Advancing game to time 299.75
 Sent a set of Grouped Blacks at time 299.70999999999987
+Currently, the send queue looks like this: 
+[300.02999999999986, 300.34999999999985, 300.66999999999985, 300.98999999999984, 301.30999999999983]
 Recorded cash and eco values (221.0,884.0) at time 299.75
 ----------
 Advancing game to time 299.8
@@ -388,6 +444,8 @@ Recorded cash and eco values (1105.0,884.0) at time 300.0
 ----------
 Advancing game to time 300.1
 Sent a set of Grouped Blacks at time 300.02999999999986
+Currently, the send queue looks like this: 
+[300.34999999999985, 300.66999999999985, 300.98999999999984, 301.30999999999983, 301.6299999999998]
 Recorded cash and eco values (1030.0,887.0) at time 300.1
 ----------
 Advancing game to time 300.2
@@ -401,6 +459,8 @@ Recorded cash and eco values (1030.0,887.0) at time 300.3
 ----------
 Advancing game to time 300.4
 Sent a set of Grouped Blacks at time 300.34999999999985
+Currently, the send queue looks like this: 
+[300.66999999999985, 300.98999999999984, 301.30999999999983, 301.6299999999998, 301.9499999999998]
 Recorded cash and eco values (955.0,890.0) at time 300.4
 ----------
 Advancing game to time 300.5
@@ -411,6 +471,8 @@ Recorded cash and eco values (955.0,890.0) at time 300.6
 ----------
 Advancing game to time 300.7
 Sent a set of Grouped Blacks at time 300.66999999999985
+Currently, the send queue looks like this: 
+[300.98999999999984, 301.30999999999983, 301.6299999999998, 301.9499999999998, 302.2699999999998]
 Recorded cash and eco values (880.0,893.0) at time 300.7
 ----------
 Advancing game to time 300.75
@@ -424,6 +486,8 @@ Recorded cash and eco values (880.0,893.0) at time 300.9
 ----------
 Advancing game to time 301.0
 Sent a set of Grouped Blacks at time 300.98999999999984
+Currently, the send queue looks like this: 
+[301.30999999999983, 301.6299999999998, 301.9499999999998, 302.2699999999998, 302.5899999999998]
 Recorded cash and eco values (805.0,896.0) at time 301.0
 ----------
 Advancing game to time 301.1
@@ -440,6 +504,8 @@ Recorded cash and eco values (805.0,896.0) at time 301.3
 ----------
 Advancing game to time 301.4
 Sent a set of Grouped Blacks at time 301.30999999999983
+Currently, the send queue looks like this: 
+[301.6299999999998, 301.9499999999998, 302.2699999999998, 302.5899999999998, 302.9099999999998]
 Recorded cash and eco values (730.0,899.0) at time 301.4
 ----------
 Advancing game to time 301.5
@@ -450,6 +516,8 @@ Recorded cash and eco values (730.0,899.0) at time 301.6
 ----------
 Advancing game to time 301.7
 Sent a set of Grouped Blacks at time 301.6299999999998
+Currently, the send queue looks like this: 
+[301.9499999999998, 302.2699999999998, 302.5899999999998, 302.9099999999998, 303.2299999999998]
 Recorded cash and eco values (655.0,902.0) at time 301.7
 ----------
 Advancing game to time 301.75
@@ -463,6 +531,8 @@ Recorded cash and eco values (655.0,902.0) at time 301.9
 ----------
 Advancing game to time 302.0
 Sent a set of Grouped Blacks at time 301.9499999999998
+Currently, the send queue looks like this: 
+[302.2699999999998, 302.5899999999998, 302.9099999999998, 303.2299999999998, 303.5499999999998]
 Recorded cash and eco values (580.0,905.0) at time 302.0
 ----------
 Advancing game to time 302.1
@@ -476,6 +546,8 @@ Recorded cash and eco values (580.0,905.0) at time 302.25
 ----------
 Advancing game to time 302.3
 Sent a set of Grouped Blacks at time 302.2699999999998
+Currently, the send queue looks like this: 
+[302.5899999999998, 302.9099999999998, 303.2299999999998, 303.5499999999998, 303.8699999999998]
 Recorded cash and eco values (505.0,908.0) at time 302.3
 ----------
 Advancing game to time 302.4
@@ -486,6 +558,8 @@ Recorded cash and eco values (505.0,908.0) at time 302.5
 ----------
 Advancing game to time 302.6
 Sent a set of Grouped Blacks at time 302.5899999999998
+Currently, the send queue looks like this: 
+[302.9099999999998, 303.2299999999998, 303.5499999999998, 303.8699999999998, 304.18999999999977]
 Recorded cash and eco values (430.0,911.0) at time 302.6
 ----------
 Advancing game to time 302.7
@@ -502,6 +576,8 @@ Recorded cash and eco values (430.0,911.0) at time 302.9
 ----------
 Advancing game to time 303.0
 Sent a set of Grouped Blacks at time 302.9099999999998
+Currently, the send queue looks like this: 
+[303.2299999999998, 303.5499999999998, 303.8699999999998, 304.18999999999977, 304.50999999999976]
 Recorded cash and eco values (355.0,914.0) at time 303.0
 ----------
 Advancing game to time 303.1
@@ -512,6 +588,8 @@ Recorded cash and eco values (355.0,914.0) at time 303.2
 ----------
 Advancing game to time 303.25
 Sent a set of Grouped Blacks at time 303.2299999999998
+Currently, the send queue looks like this: 
+[303.5499999999998, 303.8699999999998, 304.18999999999977, 304.50999999999976, 304.82999999999976]
 Recorded cash and eco values (280.0,917.0) at time 303.25
 ----------
 Advancing game to time 303.3
@@ -525,6 +603,8 @@ Recorded cash and eco values (280.0,917.0) at time 303.5
 ----------
 Advancing game to time 303.6
 Sent a set of Grouped Blacks at time 303.5499999999998
+Currently, the send queue looks like this: 
+[303.8699999999998, 304.18999999999977, 304.50999999999976, 304.82999999999976, 305.14999999999975]
 Recorded cash and eco values (205.0,920.0) at time 303.6
 ----------
 Advancing game to time 303.7
@@ -538,6 +618,8 @@ Recorded cash and eco values (205.0,920.0) at time 303.8
 ----------
 Advancing game to time 303.9
 Sent a set of Grouped Blacks at time 303.8699999999998
+Currently, the send queue looks like this: 
+[304.18999999999977, 304.50999999999976, 304.82999999999976, 305.14999999999975, 305.46999999999974]
 Recorded cash and eco values (130.0,923.0) at time 303.9
 ----------
 Advancing game to time 304.0
@@ -548,6 +630,8 @@ Recorded cash and eco values (130.0,923.0) at time 304.1
 ----------
 Advancing game to time 304.2
 Sent a set of Grouped Blacks at time 304.18999999999977
+Currently, the send queue looks like this: 
+[304.50999999999976, 304.82999999999976, 305.14999999999975, 305.46999999999974, 305.78999999999974]
 Recorded cash and eco values (55.0,926.0) at time 304.2
 ----------
 Advancing game to time 304.25
@@ -620,10 +704,14 @@ Recorded cash and eco values (981.0,926.0) at time 306.0
 ----------
 Advancing game to time 306.1
 Sent a set of Grouped Blacks at time 306.05
+Currently, the send queue looks like this: 
+[306.37]
 Recorded cash and eco values (906.0,929.0) at time 306.1
 ----------
 Advancing game to time 306.2
 Sent a set of Grouped Blacks at time 306.15000000000003
+Currently, the send queue looks like this: 
+[306.37, 306.69]
 Recorded cash and eco values (831.0,932.0) at time 306.2
 ----------
 Advancing game to time 306.25
@@ -631,22 +719,32 @@ Recorded cash and eco values (831.0,932.0) at time 306.25
 ----------
 Advancing game to time 306.3
 Sent a set of Grouped Blacks at time 306.25000000000006
+Currently, the send queue looks like this: 
+[306.37, 306.69, 307.01]
 Recorded cash and eco values (756.0,935.0) at time 306.3
 ----------
 Advancing game to time 306.4
 Sent a set of Grouped Blacks at time 306.3500000000001
+Currently, the send queue looks like this: 
+[306.37, 306.69, 307.01, 307.33]
 Recorded cash and eco values (681.0,938.0) at time 306.4
 ----------
 Advancing game to time 306.5
 Sent a set of Grouped Blacks at time 306.4500000000001
+Currently, the send queue looks like this: 
+[306.69, 307.01, 307.33, 307.65]
 Recorded cash and eco values (606.0,941.0) at time 306.5
 ----------
 Advancing game to time 306.6
 Sent a set of Grouped Blacks at time 306.5500000000001
+Currently, the send queue looks like this: 
+[306.69, 307.01, 307.33, 307.65, 307.96999999999997]
 Recorded cash and eco values (531.0,944.0) at time 306.6
 ----------
 Advancing game to time 306.7
 Sent a set of Grouped Blacks at time 306.69
+Currently, the send queue looks like this: 
+[307.01, 307.33, 307.65, 307.96999999999997, 308.28999999999996]
 Recorded cash and eco values (456.0,947.0) at time 306.7
 ----------
 Advancing game to time 306.75
@@ -667,6 +765,8 @@ Recorded cash and eco values (556.0,947.0) at time 307.0
 ----------
 Advancing game to time 307.1
 Sent a set of Grouped Blacks at time 307.01
+Currently, the send queue looks like this: 
+[307.33, 307.65, 307.96999999999997, 308.28999999999996, 308.60999999999996]
 Recorded cash and eco values (481.0,950.0) at time 307.1
 ----------
 Advancing game to time 307.2
@@ -681,6 +781,8 @@ Recorded cash and eco values (581.0,950.0) at time 307.3
 ----------
 Advancing game to time 307.4
 Sent a set of Grouped Blacks at time 307.33
+Currently, the send queue looks like this: 
+[307.65, 307.96999999999997, 308.28999999999996, 308.60999999999996, 308.92999999999995]
 Recorded cash and eco values (506.0,953.0) at time 307.4
 ----------
 Advancing game to time 307.5
@@ -691,6 +793,8 @@ Recorded cash and eco values (506.0,953.0) at time 307.6
 ----------
 Advancing game to time 307.7
 Sent a set of Grouped Blacks at time 307.65
+Currently, the send queue looks like this: 
+[307.96999999999997, 308.28999999999996, 308.60999999999996, 308.92999999999995, 309.24999999999994]
 Recorded cash and eco values (431.0,956.0) at time 307.7
 ----------
 Advancing game to time 307.8
@@ -705,6 +809,8 @@ Recorded cash and eco values (531.0,956.0) at time 307.9
 ----------
 Advancing game to time 308.0
 Sent a set of Grouped Blacks at time 307.96999999999997
+Currently, the send queue looks like this: 
+[308.28999999999996, 308.60999999999996, 308.92999999999995, 309.24999999999994, 309.56999999999994]
 Recorded cash and eco values (456.0,959.0) at time 308.0
 ----------
 Advancing game to time 308.1
@@ -719,6 +825,8 @@ Recorded cash and eco values (506.0,959.0) at time 308.25
 Awarded direct payment 50 at time 308.25
 Recorded cash and eco values (556.0,959.0) at time 308.25
 Sent a set of Grouped Blacks at time 308.28999999999996
+Currently, the send queue looks like this: 
+[308.60999999999996, 308.92999999999995, 309.24999999999994, 309.56999999999994, 309.88999999999993]
 Recorded cash and eco values (481.0,962.0) at time 308.3
 ----------
 Advancing game to time 308.4
@@ -732,6 +840,8 @@ Recorded cash and eco values (481.0,962.0) at time 308.6
 ----------
 Advancing game to time 308.7
 Sent a set of Grouped Blacks at time 308.60999999999996
+Currently, the send queue looks like this: 
+[308.92999999999995, 309.24999999999994, 309.56999999999994, 309.88999999999993, 310.2099999999999]
 Recorded cash and eco values (406.0,965.0) at time 308.7
 ----------
 Advancing game to time 308.8
@@ -746,6 +856,8 @@ Recorded cash and eco values (506.0,965.0) at time 308.9
 ----------
 Advancing game to time 309.0
 Sent a set of Grouped Blacks at time 308.92999999999995
+Currently, the send queue looks like this: 
+[309.24999999999994, 309.56999999999994, 309.88999999999993, 310.2099999999999, 310.5299999999999]
 Recorded cash and eco values (431.0,968.0) at time 309.0
 ----------
 Advancing game to time 309.1
@@ -756,6 +868,8 @@ Recorded cash and eco values (431.0,968.0) at time 309.2
 ----------
 Advancing game to time 309.3
 Sent a set of Grouped Blacks at time 309.24999999999994
+Currently, the send queue looks like this: 
+[309.56999999999994, 309.88999999999993, 310.2099999999999, 310.5299999999999, 310.8499999999999]
 Awarded direct payment 50 at time 309.25
 Recorded cash and eco values (406.0,971.0) at time 309.25
 Awarded direct payment 50 at time 309.25
@@ -770,6 +884,8 @@ Recorded cash and eco values (456.0,971.0) at time 309.5
 ----------
 Advancing game to time 309.6
 Sent a set of Grouped Blacks at time 309.56999999999994
+Currently, the send queue looks like this: 
+[309.88999999999993, 310.2099999999999, 310.5299999999999, 310.8499999999999, 311.1699999999999]
 Recorded cash and eco values (381.0,974.0) at time 309.6
 ----------
 Advancing game to time 309.7
@@ -784,6 +900,8 @@ Recorded cash and eco values (481.0,974.0) at time 309.8
 ----------
 Advancing game to time 309.9
 Sent a set of Grouped Blacks at time 309.88999999999993
+Currently, the send queue looks like this: 
+[310.2099999999999, 310.5299999999999, 310.8499999999999, 311.1699999999999, 311.4899999999999]
 Recorded cash and eco values (406.0,977.0) at time 309.9
 ----------
 Advancing game to time 310.0
@@ -797,6 +915,8 @@ Recorded cash and eco values (406.0,977.0) at time 310.2
 ----------
 Advancing game to time 310.3
 Sent a set of Grouped Blacks at time 310.2099999999999
+Currently, the send queue looks like this: 
+[310.5299999999999, 310.8499999999999, 311.1699999999999, 311.4899999999999, 311.8099999999999]
 Awarded direct payment 50 at time 310.25
 Recorded cash and eco values (381.0,980.0) at time 310.25
 Awarded direct payment 50 at time 310.25
@@ -811,6 +931,8 @@ Recorded cash and eco values (431.0,980.0) at time 310.5
 ----------
 Advancing game to time 310.6
 Sent a set of Grouped Blacks at time 310.5299999999999
+Currently, the send queue looks like this: 
+[310.8499999999999, 311.1699999999999, 311.4899999999999, 311.8099999999999, 312.1299999999999]
 Recorded cash and eco values (356.0,983.0) at time 310.6
 ----------
 Advancing game to time 310.7
@@ -825,6 +947,8 @@ Recorded cash and eco values (456.0,983.0) at time 310.8
 ----------
 Advancing game to time 310.9
 Sent a set of Grouped Blacks at time 310.8499999999999
+Currently, the send queue looks like this: 
+[311.1699999999999, 311.4899999999999, 311.8099999999999, 312.1299999999999, 312.4499999999999]
 Recorded cash and eco values (381.0,986.0) at time 310.9
 ----------
 Advancing game to time 311.0
@@ -835,6 +959,8 @@ Recorded cash and eco values (381.0,986.0) at time 311.1
 ----------
 Advancing game to time 311.2
 Sent a set of Grouped Blacks at time 311.1699999999999
+Currently, the send queue looks like this: 
+[311.4899999999999, 311.8099999999999, 312.1299999999999, 312.4499999999999, 312.76999999999987]
 Recorded cash and eco values (306.0,989.0) at time 311.2
 ----------
 Advancing game to time 311.3
@@ -849,6 +975,8 @@ Recorded cash and eco values (406.0,989.0) at time 311.4
 ----------
 Advancing game to time 311.5
 Sent a set of Grouped Blacks at time 311.4899999999999
+Currently, the send queue looks like this: 
+[311.8099999999999, 312.1299999999999, 312.4499999999999, 312.76999999999987, 313.08999999999986]
 Recorded cash and eco values (331.0,992.0) at time 311.5
 ----------
 Advancing game to time 311.6
@@ -866,6 +994,8 @@ Recorded cash and eco values (431.0,992.0) at time 311.8
 ----------
 Advancing game to time 311.9
 Sent a set of Grouped Blacks at time 311.8099999999999
+Currently, the send queue looks like this: 
+[312.1299999999999, 312.4499999999999, 312.76999999999987, 313.08999999999986, 313.40999999999985]
 Recorded cash and eco values (356.0,995.0) at time 311.9
 ----------
 Advancing game to time 312.0
@@ -878,6 +1008,8 @@ Recorded cash and eco values (1351.0,995.0) at time 312.1
 ----------
 Advancing game to time 312.2
 Sent a set of Grouped Blacks at time 312.1299999999999
+Currently, the send queue looks like this: 
+[312.4499999999999, 312.76999999999987, 313.08999999999986, 313.40999999999985, 313.72999999999985]
 Recorded cash and eco values (1276.0,998.0) at time 312.2
 ----------
 Advancing game to time 312.3
@@ -892,6 +1024,8 @@ Recorded cash and eco values (1376.0,998.0) at time 312.4
 ----------
 Advancing game to time 312.5
 Sent a set of Grouped Blacks at time 312.4499999999999
+Currently, the send queue looks like this: 
+[312.76999999999987, 313.08999999999986, 313.40999999999985, 313.72999999999985, 314.04999999999984]
 Recorded cash and eco values (1301.0,1001.0) at time 312.5
 ----------
 Advancing game to time 312.6
@@ -906,6 +1040,8 @@ Recorded cash and eco values (1351.0,1001.0) at time 312.75
 Awarded direct payment 50 at time 312.75
 Recorded cash and eco values (1401.0,1001.0) at time 312.75
 Sent a set of Grouped Blacks at time 312.76999999999987
+Currently, the send queue looks like this: 
+[313.08999999999986, 313.40999999999985, 313.72999999999985, 314.04999999999984, 314.36999999999983]
 Recorded cash and eco values (1326.0,1004.0) at time 312.8
 ----------
 Advancing game to time 312.9
@@ -916,6 +1052,8 @@ Recorded cash and eco values (1326.0,1004.0) at time 313.0
 ----------
 Advancing game to time 313.1
 Sent a set of Grouped Blacks at time 313.08999999999986
+Currently, the send queue looks like this: 
+[313.40999999999985, 313.72999999999985, 314.04999999999984, 314.36999999999983, 314.6899999999998]
 Recorded cash and eco values (1251.0,1007.0) at time 313.1
 ----------
 Advancing game to time 313.2
@@ -933,6 +1071,8 @@ Recorded cash and eco values (1351.0,1007.0) at time 313.4
 ----------
 Advancing game to time 313.5
 Sent a set of Grouped Blacks at time 313.40999999999985
+Currently, the send queue looks like this: 
+[313.72999999999985, 314.04999999999984, 314.36999999999983, 314.6899999999998, 315.0099999999998]
 Recorded cash and eco values (1276.0,1010.0) at time 313.5
 ----------
 Advancing game to time 313.6
@@ -943,6 +1083,8 @@ Recorded cash and eco values (1276.0,1010.0) at time 313.7
 ----------
 Advancing game to time 313.8
 Sent a set of Grouped Blacks at time 313.72999999999985
+Currently, the send queue looks like this: 
+[314.04999999999984, 314.36999999999983, 314.6899999999998, 315.0099999999998, 315.3299999999998]
 Awarded direct payment 50 at time 313.75
 Recorded cash and eco values (1251.0,1013.0) at time 313.75
 Awarded direct payment 50 at time 313.75
@@ -957,6 +1099,8 @@ Recorded cash and eco values (1301.0,1013.0) at time 314.0
 ----------
 Advancing game to time 314.1
 Sent a set of Grouped Blacks at time 314.04999999999984
+Currently, the send queue looks like this: 
+[314.36999999999983, 314.6899999999998, 315.0099999999998, 315.3299999999998, 315.6499999999998]
 Recorded cash and eco values (1226.0,1016.0) at time 314.1
 ----------
 Advancing game to time 314.2
@@ -971,6 +1115,8 @@ Recorded cash and eco values (1326.0,1016.0) at time 314.3
 ----------
 Advancing game to time 314.4
 Sent a set of Grouped Blacks at time 314.36999999999983
+Currently, the send queue looks like this: 
+[314.6899999999998, 315.0099999999998, 315.3299999999998, 315.6499999999998, 315.9699999999998]
 Recorded cash and eco values (1251.0,1019.0) at time 314.4
 ----------
 Advancing game to time 314.5
@@ -981,6 +1127,8 @@ Recorded cash and eco values (1251.0,1019.0) at time 314.6
 ----------
 Advancing game to time 314.7
 Sent a set of Grouped Blacks at time 314.6899999999998
+Currently, the send queue looks like this: 
+[315.0099999999998, 315.3299999999998, 315.6499999999998, 315.9699999999998, 316.2899999999998]
 Recorded cash and eco values (1176.0,1022.0) at time 314.7
 ----------
 Advancing game to time 314.8
@@ -994,6 +1142,8 @@ Recorded cash and eco values (1176.0,1022.0) at time 315.0
 ----------
 Advancing game to time 315.1
 Sent a set of Grouped Blacks at time 315.0099999999998
+Currently, the send queue looks like this: 
+[315.3299999999998, 315.6499999999998, 315.9699999999998, 316.2899999999998, 316.6099999999998]
 Recorded cash and eco values (1101.0,1025.0) at time 315.1
 ----------
 Advancing game to time 315.2
@@ -1004,6 +1154,8 @@ Recorded cash and eco values (1101.0,1025.0) at time 315.3
 ----------
 Advancing game to time 315.4
 Sent a set of Grouped Blacks at time 315.3299999999998
+Currently, the send queue looks like this: 
+[315.6499999999998, 315.9699999999998, 316.2899999999998, 316.6099999999998, 316.9299999999998]
 Recorded cash and eco values (1026.0,1028.0) at time 315.4
 ----------
 Advancing game to time 315.5
@@ -1014,6 +1166,8 @@ Recorded cash and eco values (1026.0,1028.0) at time 315.6
 ----------
 Advancing game to time 315.7
 Sent a set of Grouped Blacks at time 315.6499999999998
+Currently, the send queue looks like this: 
+[315.9699999999998, 316.2899999999998, 316.6099999999998, 316.9299999999998, 317.2499999999998]
 Recorded cash and eco values (951.0,1031.0) at time 315.7
 ----------
 Advancing game to time 315.8
@@ -1024,6 +1178,8 @@ Recorded cash and eco values (951.0,1031.0) at time 315.9
 ----------
 Advancing game to time 316.0
 Sent a set of Grouped Blacks at time 315.9699999999998
+Currently, the send queue looks like this: 
+[316.2899999999998, 316.6099999999998, 316.9299999999998, 317.2499999999998, 317.56999999999977]
 Recorded cash and eco values (876.0,1034.0) at time 316.0
 ----------
 Advancing game to time 316.1
@@ -1034,6 +1190,8 @@ Recorded cash and eco values (876.0,1034.0) at time 316.2
 ----------
 Advancing game to time 316.3
 Sent a set of Grouped Blacks at time 316.2899999999998
+Currently, the send queue looks like this: 
+[316.6099999999998, 316.9299999999998, 317.2499999999998, 317.56999999999977, 317.88999999999976]
 Recorded cash and eco values (801.0,1037.0) at time 316.3
 ----------
 Advancing game to time 316.4
@@ -1047,6 +1205,8 @@ Recorded cash and eco values (801.0,1037.0) at time 316.6
 ----------
 Advancing game to time 316.7
 Sent a set of Grouped Blacks at time 316.6099999999998
+Currently, the send queue looks like this: 
+[316.9299999999998, 317.2499999999998, 317.56999999999977, 317.88999999999976, 318.20999999999975]
 Recorded cash and eco values (726.0,1040.0) at time 316.7
 ----------
 Advancing game to time 316.8
@@ -1057,6 +1217,8 @@ Recorded cash and eco values (726.0,1040.0) at time 316.9
 ----------
 Advancing game to time 317.0
 Sent a set of Grouped Blacks at time 316.9299999999998
+Currently, the send queue looks like this: 
+[317.2499999999998, 317.56999999999977, 317.88999999999976, 318.20999999999975, 318.52999999999975]
 Recorded cash and eco values (651.0,1043.0) at time 317.0
 ----------
 Advancing game to time 317.1
@@ -1067,6 +1229,8 @@ Recorded cash and eco values (651.0,1043.0) at time 317.2
 ----------
 Advancing game to time 317.3
 Sent a set of Grouped Blacks at time 317.2499999999998
+Currently, the send queue looks like this: 
+[317.56999999999977, 317.88999999999976, 318.20999999999975, 318.52999999999975, 318.84999999999974]
 Recorded cash and eco values (576.0,1046.0) at time 317.3
 ----------
 Advancing game to time 317.4
@@ -1077,6 +1241,8 @@ Recorded cash and eco values (576.0,1046.0) at time 317.5
 ----------
 Advancing game to time 317.6
 Sent a set of Grouped Blacks at time 317.56999999999977
+Currently, the send queue looks like this: 
+[317.88999999999976, 318.20999999999975, 318.52999999999975, 318.84999999999974, 319.16999999999973]
 Recorded cash and eco values (501.0,1049.0) at time 317.6
 ----------
 Advancing game to time 317.7
@@ -1087,6 +1253,8 @@ Recorded cash and eco values (501.0,1049.0) at time 317.8
 ----------
 Advancing game to time 317.9
 Sent a set of Grouped Blacks at time 317.88999999999976
+Currently, the send queue looks like this: 
+[318.20999999999975, 318.52999999999975, 318.84999999999974, 319.16999999999973, 319.4899999999997]
 Recorded cash and eco values (426.0,1052.0) at time 317.9
 ----------
 Advancing game to time 318.0
@@ -1102,6 +1270,8 @@ Recorded cash and eco values (1478.0,1052.0) at time 318.2
 ----------
 Advancing game to time 318.3
 Sent a set of Grouped Blacks at time 318.20999999999975
+Currently, the send queue looks like this: 
+[318.52999999999975, 318.84999999999974, 319.16999999999973, 319.4899999999997, 319.8099999999997]
 Recorded cash and eco values (1403.0,1055.0) at time 318.3
 ----------
 Advancing game to time 318.4
@@ -1112,6 +1282,8 @@ Recorded cash and eco values (1403.0,1055.0) at time 318.5
 ----------
 Advancing game to time 318.6
 Sent a set of Grouped Blacks at time 318.52999999999975
+Currently, the send queue looks like this: 
+[318.84999999999974, 319.16999999999973, 319.4899999999997, 319.8099999999997, 320.1299999999997]
 Recorded cash and eco values (1328.0,1058.0) at time 318.6
 ----------
 Advancing game to time 318.7
@@ -1122,6 +1294,8 @@ Recorded cash and eco values (1328.0,1058.0) at time 318.8
 ----------
 Advancing game to time 318.9
 Sent a set of Grouped Blacks at time 318.84999999999974
+Currently, the send queue looks like this: 
+[319.16999999999973, 319.4899999999997, 319.8099999999997, 320.1299999999997, 320.4499999999997]
 Recorded cash and eco values (1253.0,1061.0) at time 318.9
 ----------
 Advancing game to time 319.0
@@ -1132,6 +1306,8 @@ Recorded cash and eco values (1253.0,1061.0) at time 319.1
 ----------
 Advancing game to time 319.2
 Sent a set of Grouped Blacks at time 319.16999999999973
+Currently, the send queue looks like this: 
+[319.4899999999997, 319.8099999999997, 320.1299999999997, 320.4499999999997, 320.7699999999997]
 Recorded cash and eco values (1178.0,1064.0) at time 319.2
 ----------
 Advancing game to time 319.3
@@ -1142,6 +1318,8 @@ Recorded cash and eco values (1178.0,1064.0) at time 319.4
 ----------
 Advancing game to time 319.5
 Sent a set of Grouped Blacks at time 319.4899999999997
+Currently, the send queue looks like this: 
+[319.8099999999997, 320.1299999999997, 320.4499999999997, 320.7699999999997, 321.0899999999997]
 Recorded cash and eco values (1103.0,1067.0) at time 319.5
 ----------
 Advancing game to time 319.6
@@ -1155,6 +1333,8 @@ Recorded cash and eco values (1103.0,1067.0) at time 319.8
 ----------
 Advancing game to time 319.9
 Sent a set of Grouped Blacks at time 319.8099999999997
+Currently, the send queue looks like this: 
+[320.1299999999997, 320.4499999999997, 320.7699999999997, 321.0899999999997, 321.4099999999997]
 Recorded cash and eco values (1028.0,1070.0) at time 319.9
 ----------
 Advancing game to time 320.0
@@ -1165,6 +1345,8 @@ Recorded cash and eco values (1028.0,1070.0) at time 320.1
 ----------
 Advancing game to time 320.2
 Sent a set of Grouped Blacks at time 320.1299999999997
+Currently, the send queue looks like this: 
+[320.4499999999997, 320.7699999999997, 321.0899999999997, 321.4099999999997, 321.7299999999997]
 Recorded cash and eco values (953.0,1073.0) at time 320.2
 ----------
 Advancing game to time 320.3
@@ -1175,6 +1357,8 @@ Recorded cash and eco values (953.0,1073.0) at time 320.4
 ----------
 Advancing game to time 320.5
 Sent a set of Grouped Blacks at time 320.4499999999997
+Currently, the send queue looks like this: 
+[320.7699999999997, 321.0899999999997, 321.4099999999997, 321.7299999999997, 322.04999999999967]
 Recorded cash and eco values (878.0,1076.0) at time 320.5
 ----------
 Advancing game to time 320.6
@@ -1185,6 +1369,8 @@ Recorded cash and eco values (878.0,1076.0) at time 320.7
 ----------
 Advancing game to time 320.8
 Sent a set of Grouped Blacks at time 320.7699999999997
+Currently, the send queue looks like this: 
+[321.0899999999997, 321.4099999999997, 321.7299999999997, 322.04999999999967, 322.36999999999966]
 Recorded cash and eco values (803.0,1079.0) at time 320.8
 ----------
 Advancing game to time 320.9
@@ -1195,6 +1381,8 @@ Recorded cash and eco values (803.0,1079.0) at time 321.0
 ----------
 Advancing game to time 321.1
 Sent a set of Grouped Blacks at time 321.0899999999997
+Currently, the send queue looks like this: 
+[321.4099999999997, 321.7299999999997, 322.04999999999967, 322.36999999999966, 322.68999999999966]
 Recorded cash and eco values (728.0,1082.0) at time 321.1
 ----------
 Advancing game to time 321.2
@@ -1208,6 +1396,8 @@ Recorded cash and eco values (728.0,1082.0) at time 321.4
 ----------
 Advancing game to time 321.5
 Sent a set of Grouped Blacks at time 321.4099999999997
+Currently, the send queue looks like this: 
+[321.7299999999997, 322.04999999999967, 322.36999999999966, 322.68999999999966, 323.00999999999965]
 Recorded cash and eco values (653.0,1085.0) at time 321.5
 ----------
 Advancing game to time 321.6
@@ -1218,6 +1408,8 @@ Recorded cash and eco values (653.0,1085.0) at time 321.7
 ----------
 Advancing game to time 321.8
 Sent a set of Grouped Blacks at time 321.7299999999997
+Currently, the send queue looks like this: 
+[322.04999999999967, 322.36999999999966, 322.68999999999966, 323.00999999999965, 323.32999999999964]
 Recorded cash and eco values (578.0,1088.0) at time 321.8
 ----------
 Advancing game to time 321.9
@@ -1228,6 +1420,8 @@ Recorded cash and eco values (578.0,1088.0) at time 322.0
 ----------
 Advancing game to time 322.1
 Sent a set of Grouped Blacks at time 322.04999999999967
+Currently, the send queue looks like this: 
+[322.36999999999966, 322.68999999999966, 323.00999999999965, 323.32999999999964, 323.64999999999964]
 Recorded cash and eco values (503.0,1091.0) at time 322.1
 ----------
 Advancing game to time 322.2
@@ -1238,6 +1432,8 @@ Recorded cash and eco values (503.0,1091.0) at time 322.3
 ----------
 Advancing game to time 322.4
 Sent a set of Grouped Blacks at time 322.36999999999966
+Currently, the send queue looks like this: 
+[322.68999999999966, 323.00999999999965, 323.32999999999964, 323.64999999999964, 323.96999999999963]
 Recorded cash and eco values (428.0,1094.0) at time 322.4
 ----------
 Advancing game to time 322.5
@@ -1248,6 +1444,8 @@ Recorded cash and eco values (428.0,1094.0) at time 322.6
 ----------
 Advancing game to time 322.7
 Sent a set of Grouped Blacks at time 322.68999999999966
+Currently, the send queue looks like this: 
+[323.00999999999965, 323.32999999999964, 323.64999999999964, 323.96999999999963, 324.2899999999996]
 Recorded cash and eco values (353.0,1097.0) at time 322.7
 ----------
 Advancing game to time 322.8
@@ -1261,6 +1459,8 @@ Recorded cash and eco values (353.0,1097.0) at time 323.0
 ----------
 Advancing game to time 323.1
 Sent a set of Grouped Blacks at time 323.00999999999965
+Currently, the send queue looks like this: 
+[323.32999999999964, 323.64999999999964, 323.96999999999963, 324.2899999999996, 324.6099999999996]
 Recorded cash and eco values (278.0,1100.0) at time 323.1
 ----------
 Advancing game to time 323.2
@@ -1271,6 +1471,8 @@ Recorded cash and eco values (278.0,1100.0) at time 323.3
 ----------
 Advancing game to time 323.4
 Sent a set of Grouped Blacks at time 323.32999999999964
+Currently, the send queue looks like this: 
+[323.64999999999964, 323.96999999999963, 324.2899999999996, 324.6099999999996, 324.9299999999996]
 Recorded cash and eco values (203.0,1103.0) at time 323.4
 ----------
 Advancing game to time 323.5
@@ -1281,6 +1483,8 @@ Recorded cash and eco values (203.0,1103.0) at time 323.6
 ----------
 Advancing game to time 323.7
 Sent a set of Grouped Blacks at time 323.64999999999964
+Currently, the send queue looks like this: 
+[323.96999999999963, 324.2899999999996, 324.6099999999996, 324.9299999999996, 325.2499999999996]
 Recorded cash and eco values (128.0,1106.0) at time 323.7
 ----------
 Advancing game to time 323.8
@@ -1291,6 +1495,8 @@ Recorded cash and eco values (128.0,1106.0) at time 323.9
 ----------
 Advancing game to time 324.0
 Sent a set of Grouped Blacks at time 323.96999999999963
+Currently, the send queue looks like this: 
+[324.2899999999996, 324.6099999999996, 324.9299999999996, 325.2499999999996, 325.5699999999996]
 Awarded eco payment 1109.0 at time 324.0
 Recorded cash and eco values (1162.0,1109.0) at time 324.0
 Recorded cash and eco values (1162.0,1109.0) at time 324.0
@@ -1303,6 +1509,8 @@ Recorded cash and eco values (1162.0,1109.0) at time 324.2
 ----------
 Advancing game to time 324.3
 Sent a set of Grouped Blacks at time 324.2899999999996
+Currently, the send queue looks like this: 
+[324.6099999999996, 324.9299999999996, 325.2499999999996, 325.5699999999996, 325.8899999999996]
 Recorded cash and eco values (1087.0,1112.0) at time 324.3
 ----------
 Advancing game to time 324.4
@@ -1316,6 +1524,8 @@ Recorded cash and eco values (1087.0,1112.0) at time 324.6
 ----------
 Advancing game to time 324.7
 Sent a set of Grouped Blacks at time 324.6099999999996
+Currently, the send queue looks like this: 
+[324.9299999999996, 325.2499999999996, 325.5699999999996, 325.8899999999996, 326.2099999999996]
 Recorded cash and eco values (1012.0,1115.0) at time 324.7
 ----------
 Advancing game to time 324.8
@@ -1330,6 +1540,8 @@ Recorded cash and eco values (1112.0,1115.0) at time 324.9
 ----------
 Advancing game to time 325.0
 Sent a set of Grouped Blacks at time 324.9299999999996
+Currently, the send queue looks like this: 
+[325.2499999999996, 325.5699999999996, 325.8899999999996, 326.2099999999996, 326.5299999999996]
 Recorded cash and eco values (1037.0,1118.0) at time 325.0
 ----------
 Advancing game to time 325.1
@@ -1340,6 +1552,8 @@ Recorded cash and eco values (1037.0,1118.0) at time 325.2
 ----------
 Advancing game to time 325.3
 Sent a set of Grouped Blacks at time 325.2499999999996
+Currently, the send queue looks like this: 
+[325.5699999999996, 325.8899999999996, 326.2099999999996, 326.5299999999996, 326.84999999999957]
 Recorded cash and eco values (962.0,1121.0) at time 325.3
 ----------
 Advancing game to time 325.4
@@ -1350,6 +1564,8 @@ Recorded cash and eco values (962.0,1121.0) at time 325.5
 ----------
 Advancing game to time 325.6
 Sent a set of Grouped Blacks at time 325.5699999999996
+Currently, the send queue looks like this: 
+[325.8899999999996, 326.2099999999996, 326.5299999999996, 326.84999999999957, 327.16999999999956]
 Recorded cash and eco values (887.0,1124.0) at time 325.6
 ----------
 Advancing game to time 325.7
@@ -1360,6 +1576,8 @@ Recorded cash and eco values (887.0,1124.0) at time 325.8
 ----------
 Advancing game to time 325.9
 Sent a set of Grouped Blacks at time 325.8899999999996
+Currently, the send queue looks like this: 
+[326.2099999999996, 326.5299999999996, 326.84999999999957, 327.16999999999956, 327.48999999999955]
 Recorded cash and eco values (812.0,1127.0) at time 325.9
 ----------
 Advancing game to time 326.0
@@ -1373,6 +1591,8 @@ Recorded cash and eco values (812.0,1127.0) at time 326.2
 ----------
 Advancing game to time 326.3
 Sent a set of Grouped Blacks at time 326.2099999999996
+Currently, the send queue looks like this: 
+[326.5299999999996, 326.84999999999957, 327.16999999999956, 327.48999999999955, 327.80999999999955]
 Recorded cash and eco values (737.0,1130.0) at time 326.3
 ----------
 Advancing game to time 326.4
@@ -1387,6 +1607,8 @@ Recorded cash and eco values (837.0,1130.0) at time 326.5
 ----------
 Advancing game to time 326.6
 Sent a set of Grouped Blacks at time 326.5299999999996
+Currently, the send queue looks like this: 
+[326.84999999999957, 327.16999999999956, 327.48999999999955, 327.80999999999955, 328.12999999999954]
 Recorded cash and eco values (762.0,1133.0) at time 326.6
 ----------
 Advancing game to time 326.7
@@ -1397,6 +1619,8 @@ Recorded cash and eco values (762.0,1133.0) at time 326.8
 ----------
 Advancing game to time 326.9
 Sent a set of Grouped Blacks at time 326.84999999999957
+Currently, the send queue looks like this: 
+[327.16999999999956, 327.48999999999955, 327.80999999999955, 328.12999999999954, 328.44999999999953]
 Recorded cash and eco values (687.0,1136.0) at time 326.9
 ----------
 Advancing game to time 327.0
@@ -1407,6 +1631,8 @@ Recorded cash and eco values (687.0,1136.0) at time 327.1
 ----------
 Advancing game to time 327.2
 Sent a set of Grouped Blacks at time 327.16999999999956
+Currently, the send queue looks like this: 
+[327.48999999999955, 327.80999999999955, 328.12999999999954, 328.44999999999953, 328.7699999999995]
 Recorded cash and eco values (612.0,1139.0) at time 327.2
 ----------
 Advancing game to time 327.3
@@ -1417,6 +1643,8 @@ Recorded cash and eco values (612.0,1139.0) at time 327.4
 ----------
 Advancing game to time 327.5
 Sent a set of Grouped Blacks at time 327.48999999999955
+Currently, the send queue looks like this: 
+[327.80999999999955, 328.12999999999954, 328.44999999999953, 328.7699999999995, 329.0899999999995]
 Recorded cash and eco values (537.0,1142.0) at time 327.5
 ----------
 Advancing game to time 327.6
@@ -1430,6 +1658,8 @@ Recorded cash and eco values (537.0,1142.0) at time 327.8
 ----------
 Advancing game to time 327.9
 Sent a set of Grouped Blacks at time 327.80999999999955
+Currently, the send queue looks like this: 
+[328.12999999999954, 328.44999999999953, 328.7699999999995, 329.0899999999995, 329.4099999999995]
 Recorded cash and eco values (462.0,1145.0) at time 327.9
 ----------
 Advancing game to time 328.0
@@ -1444,6 +1674,8 @@ Recorded cash and eco values (562.0,1145.0) at time 328.1
 ----------
 Advancing game to time 328.2
 Sent a set of Grouped Blacks at time 328.12999999999954
+Currently, the send queue looks like this: 
+[328.44999999999953, 328.7699999999995, 329.0899999999995, 329.4099999999995, 329.7299999999995]
 Recorded cash and eco values (487.0,1148.0) at time 328.2
 ----------
 Advancing game to time 328.3
@@ -1454,6 +1686,8 @@ Recorded cash and eco values (487.0,1148.0) at time 328.4
 ----------
 Advancing game to time 328.5
 Sent a set of Grouped Blacks at time 328.44999999999953
+Currently, the send queue looks like this: 
+[328.7699999999995, 329.0899999999995, 329.4099999999995, 329.7299999999995, 330.0499999999995]
 Recorded cash and eco values (412.0,1151.0) at time 328.5
 ----------
 Advancing game to time 328.6
@@ -1464,6 +1698,8 @@ Recorded cash and eco values (412.0,1151.0) at time 328.7
 ----------
 Advancing game to time 328.8
 Sent a set of Grouped Blacks at time 328.7699999999995
+Currently, the send queue looks like this: 
+[329.0899999999995, 329.4099999999995, 329.7299999999995, 330.0499999999995, 330.3699999999995]
 Recorded cash and eco values (337.0,1154.0) at time 328.8
 ----------
 Advancing game to time 328.9
@@ -1474,6 +1710,8 @@ Recorded cash and eco values (337.0,1154.0) at time 329.0
 ----------
 Advancing game to time 329.1
 Sent a set of Grouped Blacks at time 329.0899999999995
+Currently, the send queue looks like this: 
+[329.4099999999995, 329.7299999999995, 330.0499999999995, 330.3699999999995, 330.6899999999995]
 Recorded cash and eco values (262.0,1157.0) at time 329.1
 ----------
 Advancing game to time 329.2
@@ -1487,6 +1725,8 @@ Recorded cash and eco values (262.0,1157.0) at time 329.4
 ----------
 Advancing game to time 329.5
 Sent a set of Grouped Blacks at time 329.4099999999995
+Currently, the send queue looks like this: 
+[329.7299999999995, 330.0499999999995, 330.3699999999995, 330.6899999999995, 331.0099999999995]
 Recorded cash and eco values (187.0,1160.0) at time 329.5
 ----------
 Advancing game to time 329.6
@@ -1501,6 +1741,8 @@ Recorded cash and eco values (287.0,1160.0) at time 329.7
 ----------
 Advancing game to time 329.8
 Sent a set of Grouped Blacks at time 329.7299999999995
+Currently, the send queue looks like this: 
+[330.0499999999995, 330.3699999999995, 330.6899999999995, 331.0099999999995, 331.3299999999995]
 Recorded cash and eco values (212.0,1163.0) at time 329.8
 ----------
 Advancing game to time 329.9
@@ -1513,6 +1755,8 @@ Recorded cash and eco values (1375.0,1163.0) at time 330.0
 ----------
 Advancing game to time 330.1
 Sent a set of Grouped Blacks at time 330.0499999999995
+Currently, the send queue looks like this: 
+[330.3699999999995, 330.6899999999995, 331.0099999999995, 331.3299999999995, 331.64999999999947]
 Recorded cash and eco values (1300.0,1166.0) at time 330.1
 ----------
 Advancing game to time 330.2
@@ -1523,6 +1767,8 @@ Recorded cash and eco values (1300.0,1166.0) at time 330.3
 ----------
 Advancing game to time 330.4
 Sent a set of Grouped Blacks at time 330.3699999999995
+Currently, the send queue looks like this: 
+[330.6899999999995, 331.0099999999995, 331.3299999999995, 331.64999999999947, 331.96999999999946]
 Recorded cash and eco values (1225.0,1169.0) at time 330.4
 ----------
 Advancing game to time 330.5
@@ -1533,6 +1779,8 @@ Recorded cash and eco values (1225.0,1169.0) at time 330.6
 ----------
 Advancing game to time 330.7
 Sent a set of Grouped Blacks at time 330.6899999999995
+Currently, the send queue looks like this: 
+[331.0099999999995, 331.3299999999995, 331.64999999999947, 331.96999999999946, 332.28999999999945]
 Recorded cash and eco values (1150.0,1172.0) at time 330.7
 ----------
 Advancing game to time 330.8
@@ -1546,6 +1794,8 @@ Recorded cash and eco values (1150.0,1172.0) at time 331.0
 ----------
 Advancing game to time 331.1
 Sent a set of Grouped Blacks at time 331.0099999999995
+Currently, the send queue looks like this: 
+[331.3299999999995, 331.64999999999947, 331.96999999999946, 332.28999999999945, 332.60999999999945]
 Recorded cash and eco values (1075.0,1175.0) at time 331.1
 ----------
 Advancing game to time 331.2
@@ -1560,6 +1810,8 @@ Recorded cash and eco values (1175.0,1175.0) at time 331.3
 ----------
 Advancing game to time 331.4
 Sent a set of Grouped Blacks at time 331.3299999999995
+Currently, the send queue looks like this: 
+[331.64999999999947, 331.96999999999946, 332.28999999999945, 332.60999999999945, 332.92999999999944]
 Recorded cash and eco values (1100.0,1178.0) at time 331.4
 ----------
 Advancing game to time 331.5
@@ -1570,6 +1822,8 @@ Recorded cash and eco values (1100.0,1178.0) at time 331.6
 ----------
 Advancing game to time 331.7
 Sent a set of Grouped Blacks at time 331.64999999999947
+Currently, the send queue looks like this: 
+[331.96999999999946, 332.28999999999945, 332.60999999999945, 332.92999999999944, 333.24999999999943]
 Recorded cash and eco values (1025.0,1181.0) at time 331.7
 ----------
 Advancing game to time 331.8
@@ -1580,6 +1834,8 @@ Recorded cash and eco values (1025.0,1181.0) at time 331.9
 ----------
 Advancing game to time 332.0
 Sent a set of Grouped Blacks at time 331.96999999999946
+Currently, the send queue looks like this: 
+[332.28999999999945, 332.60999999999945, 332.92999999999944, 333.24999999999943, 333.5699999999994]
 Recorded cash and eco values (950.0,1184.0) at time 332.0
 ----------
 Advancing game to time 332.1
@@ -1590,6 +1846,8 @@ Recorded cash and eco values (950.0,1184.0) at time 332.2
 ----------
 Advancing game to time 332.3
 Sent a set of Grouped Blacks at time 332.28999999999945
+Currently, the send queue looks like this: 
+[332.60999999999945, 332.92999999999944, 333.24999999999943, 333.5699999999994, 333.8899999999994]
 Recorded cash and eco values (875.0,1187.0) at time 332.3
 ----------
 Advancing game to time 332.4
@@ -1603,6 +1861,8 @@ Recorded cash and eco values (875.0,1187.0) at time 332.6
 ----------
 Advancing game to time 332.7
 Sent a set of Grouped Blacks at time 332.60999999999945
+Currently, the send queue looks like this: 
+[332.92999999999944, 333.24999999999943, 333.5699999999994, 333.8899999999994, 334.2099999999994]
 Recorded cash and eco values (800.0,1190.0) at time 332.7
 ----------
 Advancing game to time 332.8
@@ -1617,6 +1877,8 @@ Recorded cash and eco values (900.0,1190.0) at time 332.9
 ----------
 Advancing game to time 333.0
 Sent a set of Grouped Blacks at time 332.92999999999944
+Currently, the send queue looks like this: 
+[333.24999999999943, 333.5699999999994, 333.8899999999994, 334.2099999999994, 334.5299999999994]
 Recorded cash and eco values (825.0,1193.0) at time 333.0
 ----------
 Advancing game to time 333.1
@@ -1627,6 +1889,8 @@ Recorded cash and eco values (825.0,1193.0) at time 333.2
 ----------
 Advancing game to time 333.3
 Sent a set of Grouped Blacks at time 333.24999999999943
+Currently, the send queue looks like this: 
+[333.5699999999994, 333.8899999999994, 334.2099999999994, 334.5299999999994, 334.8499999999994]
 Recorded cash and eco values (750.0,1196.0) at time 333.3
 ----------
 Advancing game to time 333.4
@@ -1637,6 +1901,8 @@ Recorded cash and eco values (750.0,1196.0) at time 333.5
 ----------
 Advancing game to time 333.6
 Sent a set of Grouped Blacks at time 333.5699999999994
+Currently, the send queue looks like this: 
+[333.8899999999994, 334.2099999999994, 334.5299999999994, 334.8499999999994, 335.1699999999994]
 Recorded cash and eco values (675.0,1199.0) at time 333.6
 ----------
 Advancing game to time 333.7
@@ -1647,6 +1913,8 @@ Recorded cash and eco values (675.0,1199.0) at time 333.8
 ----------
 Advancing game to time 333.9
 Sent a set of Grouped Blacks at time 333.8899999999994
+Currently, the send queue looks like this: 
+[334.2099999999994, 334.5299999999994, 334.8499999999994, 335.1699999999994, 335.4899999999994]
 Recorded cash and eco values (600.0,1202.0) at time 333.9
 ----------
 Advancing game to time 334.0
@@ -1660,6 +1928,8 @@ Recorded cash and eco values (600.0,1202.0) at time 334.2
 ----------
 Advancing game to time 334.3
 Sent a set of Grouped Blacks at time 334.2099999999994
+Currently, the send queue looks like this: 
+[334.5299999999994, 334.8499999999994, 335.1699999999994, 335.4899999999994, 335.8099999999994]
 Recorded cash and eco values (525.0,1205.0) at time 334.3
 ----------
 Advancing game to time 334.4
@@ -1674,6 +1944,8 @@ Recorded cash and eco values (625.0,1205.0) at time 334.5
 ----------
 Advancing game to time 334.6
 Sent a set of Grouped Blacks at time 334.5299999999994
+Currently, the send queue looks like this: 
+[334.8499999999994, 335.1699999999994, 335.4899999999994, 335.8099999999994, 336.12999999999937]
 Recorded cash and eco values (550.0,1208.0) at time 334.6
 ----------
 Advancing game to time 334.7
@@ -1684,6 +1956,8 @@ Recorded cash and eco values (550.0,1208.0) at time 334.8
 ----------
 Advancing game to time 334.9
 Sent a set of Grouped Blacks at time 334.8499999999994
+Currently, the send queue looks like this: 
+[335.1699999999994, 335.4899999999994, 335.8099999999994, 336.12999999999937, 336.44999999999936]
 Recorded cash and eco values (475.0,1211.0) at time 334.9
 ----------
 Advancing game to time 335.0
@@ -1694,6 +1968,8 @@ Recorded cash and eco values (475.0,1211.0) at time 335.1
 ----------
 Advancing game to time 335.2
 Sent a set of Grouped Blacks at time 335.1699999999994
+Currently, the send queue looks like this: 
+[335.4899999999994, 335.8099999999994, 336.12999999999937, 336.44999999999936, 336.76999999999936]
 Recorded cash and eco values (400.0,1214.0) at time 335.2
 ----------
 Advancing game to time 335.3
@@ -1704,6 +1980,8 @@ Recorded cash and eco values (400.0,1214.0) at time 335.4
 ----------
 Advancing game to time 335.5
 Sent a set of Grouped Blacks at time 335.4899999999994
+Currently, the send queue looks like this: 
+[335.8099999999994, 336.12999999999937, 336.44999999999936, 336.76999999999936, 337.08999999999935]
 Recorded cash and eco values (325.0,1217.0) at time 335.5
 ----------
 Advancing game to time 335.6
@@ -1717,6 +1995,8 @@ Recorded cash and eco values (325.0,1217.0) at time 335.8
 ----------
 Advancing game to time 335.9
 Sent a set of Grouped Blacks at time 335.8099999999994
+Currently, the send queue looks like this: 
+[336.12999999999937, 336.44999999999936, 336.76999999999936, 337.08999999999935, 337.40999999999934]
 Recorded cash and eco values (250.0,1220.0) at time 335.9
 ----------
 Advancing game to time 336.0
@@ -1733,6 +2013,8 @@ Recorded cash and eco values (1520.0,1220.0) at time 336.12
 Awarded direct payment 50 at time 336.12
 Recorded cash and eco values (1570.0,1220.0) at time 336.12
 Sent a set of Grouped Blacks at time 336.12999999999937
+Currently, the send queue looks like this: 
+[336.44999999999936, 336.76999999999936, 337.08999999999935, 337.40999999999934, 337.72999999999934]
 Recorded cash and eco values (1495.0,1223.0) at time 336.2
 ----------
 Advancing game to time 336.3
@@ -1743,6 +2025,8 @@ Recorded cash and eco values (1495.0,1223.0) at time 336.4
 ----------
 Advancing game to time 336.5
 Sent a set of Grouped Blacks at time 336.44999999999936
+Currently, the send queue looks like this: 
+[336.76999999999936, 337.08999999999935, 337.40999999999934, 337.72999999999934, 338.04999999999933]
 Recorded cash and eco values (1420.0,1226.0) at time 336.5
 ----------
 Advancing game to time 336.6
@@ -1753,6 +2037,8 @@ Recorded cash and eco values (1420.0,1226.0) at time 336.7
 ----------
 Advancing game to time 336.8
 Sent a set of Grouped Blacks at time 336.76999999999936
+Currently, the send queue looks like this: 
+[337.08999999999935, 337.40999999999934, 337.72999999999934, 338.04999999999933, 338.3699999999993]
 Recorded cash and eco values (1345.0,1229.0) at time 336.8
 ----------
 Advancing game to time 336.9
@@ -1763,6 +2049,8 @@ Recorded cash and eco values (1345.0,1229.0) at time 337.0
 ----------
 Advancing game to time 337.1
 Sent a set of Grouped Blacks at time 337.08999999999935
+Currently, the send queue looks like this: 
+[337.40999999999934, 337.72999999999934, 338.04999999999933, 338.3699999999993, 338.6899999999993]
 Recorded cash and eco values (1270.0,1232.0) at time 337.1
 ----------
 Advancing game to time 337.2
@@ -1776,6 +2064,8 @@ Recorded cash and eco values (1270.0,1232.0) at time 337.4
 ----------
 Advancing game to time 337.5
 Sent a set of Grouped Blacks at time 337.40999999999934
+Currently, the send queue looks like this: 
+[337.72999999999934, 338.04999999999933, 338.3699999999993, 338.6899999999993, 339.0099999999993]
 Recorded cash and eco values (1195.0,1235.0) at time 337.5
 ----------
 Advancing game to time 337.6
@@ -1786,6 +2076,8 @@ Recorded cash and eco values (1195.0,1235.0) at time 337.7
 ----------
 Advancing game to time 337.8
 Sent a set of Grouped Blacks at time 337.72999999999934
+Currently, the send queue looks like this: 
+[338.04999999999933, 338.3699999999993, 338.6899999999993, 339.0099999999993, 339.3299999999993]
 Awarded direct payment 50 at time 337.75
 Recorded cash and eco values (1170.0,1238.0) at time 337.75
 Awarded direct payment 50 at time 337.75
@@ -1800,6 +2092,8 @@ Recorded cash and eco values (1220.0,1238.0) at time 338.0
 ----------
 Advancing game to time 338.1
 Sent a set of Grouped Blacks at time 338.04999999999933
+Currently, the send queue looks like this: 
+[338.3699999999993, 338.6899999999993, 339.0099999999993, 339.3299999999993, 339.6499999999993]
 Recorded cash and eco values (1145.0,1241.0) at time 338.1
 ----------
 Advancing game to time 338.2
@@ -1810,6 +2104,8 @@ Recorded cash and eco values (1145.0,1241.0) at time 338.3
 ----------
 Advancing game to time 338.4
 Sent a set of Grouped Blacks at time 338.3699999999993
+Currently, the send queue looks like this: 
+[338.6899999999993, 339.0099999999993, 339.3299999999993, 339.6499999999993, 339.9699999999993]
 Recorded cash and eco values (1070.0,1244.0) at time 338.4
 ----------
 Advancing game to time 338.5
@@ -1820,6 +2116,8 @@ Recorded cash and eco values (1070.0,1244.0) at time 338.6
 ----------
 Advancing game to time 338.7
 Sent a set of Grouped Blacks at time 338.6899999999993
+Currently, the send queue looks like this: 
+[339.0099999999993, 339.3299999999993, 339.6499999999993, 339.9699999999993, 340.2899999999993]
 Recorded cash and eco values (995.0,1247.0) at time 338.7
 ----------
 Advancing game to time 338.8
@@ -1833,6 +2131,8 @@ Recorded cash and eco values (995.0,1247.0) at time 339.0
 ----------
 Advancing game to time 339.1
 Sent a set of Grouped Blacks at time 339.0099999999993
+Currently, the send queue looks like this: 
+[339.3299999999993, 339.6499999999993, 339.9699999999993, 340.2899999999993, 340.6099999999993]
 Recorded cash and eco values (920.0,1250.0) at time 339.1
 ----------
 Advancing game to time 339.2
@@ -1843,6 +2143,8 @@ Recorded cash and eco values (920.0,1250.0) at time 339.3
 ----------
 Advancing game to time 339.4
 Sent a set of Grouped Blacks at time 339.3299999999993
+Currently, the send queue looks like this: 
+[339.6499999999993, 339.9699999999993, 340.2899999999993, 340.6099999999993, 340.92999999999927]
 Awarded direct payment 50 at time 339.38
 Recorded cash and eco values (895.0,1253.0) at time 339.38
 Awarded direct payment 50 at time 339.38
@@ -1857,6 +2159,8 @@ Recorded cash and eco values (945.0,1253.0) at time 339.6
 ----------
 Advancing game to time 339.7
 Sent a set of Grouped Blacks at time 339.6499999999993
+Currently, the send queue looks like this: 
+[339.9699999999993, 340.2899999999993, 340.6099999999993, 340.92999999999927, 341.24999999999926]
 Recorded cash and eco values (870.0,1256.0) at time 339.7
 ----------
 Advancing game to time 339.8
@@ -1867,6 +2171,8 @@ Recorded cash and eco values (870.0,1256.0) at time 339.9
 ----------
 Advancing game to time 340.0
 Sent a set of Grouped Blacks at time 339.9699999999993
+Currently, the send queue looks like this: 
+[340.2899999999993, 340.6099999999993, 340.92999999999927, 341.24999999999926, 341.56999999999925]
 Recorded cash and eco values (795.0,1259.0) at time 340.0
 ----------
 Advancing game to time 340.1
@@ -1877,6 +2183,8 @@ Recorded cash and eco values (795.0,1259.0) at time 340.2
 ----------
 Advancing game to time 340.3
 Sent a set of Grouped Blacks at time 340.2899999999993
+Currently, the send queue looks like this: 
+[340.6099999999993, 340.92999999999927, 341.24999999999926, 341.56999999999925, 341.88999999999925]
 Recorded cash and eco values (720.0,1262.0) at time 340.3
 ----------
 Advancing game to time 340.4
@@ -1890,6 +2198,8 @@ Recorded cash and eco values (720.0,1262.0) at time 340.6
 ----------
 Advancing game to time 340.7
 Sent a set of Grouped Blacks at time 340.6099999999993
+Currently, the send queue looks like this: 
+[340.92999999999927, 341.24999999999926, 341.56999999999925, 341.88999999999925, 342.20999999999924]
 Recorded cash and eco values (645.0,1265.0) at time 340.7
 ----------
 Advancing game to time 340.8
@@ -1900,6 +2210,8 @@ Recorded cash and eco values (645.0,1265.0) at time 340.9
 ----------
 Advancing game to time 341.0
 Sent a set of Grouped Blacks at time 340.92999999999927
+Currently, the send queue looks like this: 
+[341.24999999999926, 341.56999999999925, 341.88999999999925, 342.20999999999924, 342.52999999999923]
 Awarded direct payment 50 at time 341.0
 Recorded cash and eco values (620.0,1268.0) at time 341.0
 Awarded direct payment 50 at time 341.0
@@ -1914,6 +2226,8 @@ Recorded cash and eco values (670.0,1268.0) at time 341.2
 ----------
 Advancing game to time 341.3
 Sent a set of Grouped Blacks at time 341.24999999999926
+Currently, the send queue looks like this: 
+[341.56999999999925, 341.88999999999925, 342.20999999999924, 342.52999999999923, 342.8499999999992]
 Recorded cash and eco values (595.0,1271.0) at time 341.3
 ----------
 Advancing game to time 341.4
@@ -1924,6 +2238,8 @@ Recorded cash and eco values (595.0,1271.0) at time 341.5
 ----------
 Advancing game to time 341.6
 Sent a set of Grouped Blacks at time 341.56999999999925
+Currently, the send queue looks like this: 
+[341.88999999999925, 342.20999999999924, 342.52999999999923, 342.8499999999992, 343.1699999999992]
 Recorded cash and eco values (520.0,1274.0) at time 341.6
 ----------
 Advancing game to time 341.7
@@ -1934,6 +2250,8 @@ Recorded cash and eco values (520.0,1274.0) at time 341.8
 ----------
 Advancing game to time 341.9
 Sent a set of Grouped Blacks at time 341.88999999999925
+Currently, the send queue looks like this: 
+[342.20999999999924, 342.52999999999923, 342.8499999999992, 343.1699999999992, 343.4899999999992]
 Recorded cash and eco values (445.0,1277.0) at time 341.9
 ----------
 Advancing game to time 342.0
@@ -1949,6 +2267,8 @@ Recorded cash and eco values (1722.0,1277.0) at time 342.2
 ----------
 Advancing game to time 342.3
 Sent a set of Grouped Blacks at time 342.20999999999924
+Currently, the send queue looks like this: 
+[342.52999999999923, 342.8499999999992, 343.1699999999992, 343.4899999999992, 343.8099999999992]
 Recorded cash and eco values (1647.0,1280.0) at time 342.3
 ----------
 Advancing game to time 342.4
@@ -1959,6 +2279,8 @@ Recorded cash and eco values (1647.0,1280.0) at time 342.5
 ----------
 Advancing game to time 342.6
 Sent a set of Grouped Blacks at time 342.52999999999923
+Currently, the send queue looks like this: 
+[342.8499999999992, 343.1699999999992, 343.4899999999992, 343.8099999999992, 344.1299999999992]
 Recorded cash and eco values (1572.0,1283.0) at time 342.6
 ----------
 Advancing game to time 342.7
@@ -1973,6 +2295,8 @@ Recorded cash and eco values (1672.0,1283.0) at time 342.8
 ----------
 Advancing game to time 342.9
 Sent a set of Grouped Blacks at time 342.8499999999992
+Currently, the send queue looks like this: 
+[343.1699999999992, 343.4899999999992, 343.8099999999992, 344.1299999999992, 344.4499999999992]
 Recorded cash and eco values (1597.0,1286.0) at time 342.9
 ----------
 Advancing game to time 343.0
@@ -1983,6 +2307,8 @@ Recorded cash and eco values (1597.0,1286.0) at time 343.1
 ----------
 Advancing game to time 343.2
 Sent a set of Grouped Blacks at time 343.1699999999992
+Currently, the send queue looks like this: 
+[343.4899999999992, 343.8099999999992, 344.1299999999992, 344.4499999999992, 344.7699999999992]
 Recorded cash and eco values (1522.0,1289.0) at time 343.2
 ----------
 Advancing game to time 343.3
@@ -1993,6 +2319,8 @@ Recorded cash and eco values (1522.0,1289.0) at time 343.4
 ----------
 Advancing game to time 343.5
 Sent a set of Grouped Blacks at time 343.4899999999992
+Currently, the send queue looks like this: 
+[343.8099999999992, 344.1299999999992, 344.4499999999992, 344.7699999999992, 345.0899999999992]
 Recorded cash and eco values (1447.0,1292.0) at time 343.5
 ----------
 Advancing game to time 343.6
@@ -2006,6 +2334,8 @@ Recorded cash and eco values (1447.0,1292.0) at time 343.8
 ----------
 Advancing game to time 343.9
 Sent a set of Grouped Blacks at time 343.8099999999992
+Currently, the send queue looks like this: 
+[344.1299999999992, 344.4499999999992, 344.7699999999992, 345.0899999999992, 345.4099999999992]
 Recorded cash and eco values (1372.0,1295.0) at time 343.9
 ----------
 Advancing game to time 344.0
@@ -2016,6 +2346,8 @@ Recorded cash and eco values (1372.0,1295.0) at time 344.1
 ----------
 Advancing game to time 344.2
 Sent a set of Grouped Blacks at time 344.1299999999992
+Currently, the send queue looks like this: 
+[344.4499999999992, 344.7699999999992, 345.0899999999992, 345.4099999999992, 345.72999999999917]
 Recorded cash and eco values (1297.0,1298.0) at time 344.2
 ----------
 Advancing game to time 344.3
@@ -2030,6 +2362,8 @@ Recorded cash and eco values (1397.0,1298.0) at time 344.4
 ----------
 Advancing game to time 344.5
 Sent a set of Grouped Blacks at time 344.4499999999992
+Currently, the send queue looks like this: 
+[344.7699999999992, 345.0899999999992, 345.4099999999992, 345.72999999999917, 346.04999999999916]
 Recorded cash and eco values (1322.0,1301.0) at time 344.5
 ----------
 Advancing game to time 344.6
@@ -2040,6 +2374,8 @@ Recorded cash and eco values (1322.0,1301.0) at time 344.7
 ----------
 Advancing game to time 344.8
 Sent a set of Grouped Blacks at time 344.7699999999992
+Currently, the send queue looks like this: 
+[345.0899999999992, 345.4099999999992, 345.72999999999917, 346.04999999999916, 346.36999999999915]
 Recorded cash and eco values (1247.0,1304.0) at time 344.8
 ----------
 Advancing game to time 344.9
@@ -2050,6 +2386,8 @@ Recorded cash and eco values (1247.0,1304.0) at time 345.0
 ----------
 Advancing game to time 345.1
 Sent a set of Grouped Blacks at time 345.0899999999992
+Currently, the send queue looks like this: 
+[345.4099999999992, 345.72999999999917, 346.04999999999916, 346.36999999999915, 346.68999999999915]
 Recorded cash and eco values (1172.0,1307.0) at time 345.1
 ----------
 Advancing game to time 345.2
@@ -2063,6 +2401,8 @@ Recorded cash and eco values (1172.0,1307.0) at time 345.4
 ----------
 Advancing game to time 345.5
 Sent a set of Grouped Blacks at time 345.4099999999992
+Currently, the send queue looks like this: 
+[345.72999999999917, 346.04999999999916, 346.36999999999915, 346.68999999999915, 347.00999999999914]
 Recorded cash and eco values (1097.0,1310.0) at time 345.5
 ----------
 Advancing game to time 345.6
@@ -2073,6 +2413,8 @@ Recorded cash and eco values (1097.0,1310.0) at time 345.7
 ----------
 Advancing game to time 345.8
 Sent a set of Grouped Blacks at time 345.72999999999917
+Currently, the send queue looks like this: 
+[346.04999999999916, 346.36999999999915, 346.68999999999915, 347.00999999999914, 347.32999999999913]
 Recorded cash and eco values (1022.0,1313.0) at time 345.8
 ----------
 Advancing game to time 345.9
@@ -2087,6 +2429,8 @@ Recorded cash and eco values (1122.0,1313.0) at time 346.0
 ----------
 Advancing game to time 346.1
 Sent a set of Grouped Blacks at time 346.04999999999916
+Currently, the send queue looks like this: 
+[346.36999999999915, 346.68999999999915, 347.00999999999914, 347.32999999999913, 347.6499999999991]
 Recorded cash and eco values (1047.0,1316.0) at time 346.1
 ----------
 Advancing game to time 346.2
@@ -2097,6 +2441,8 @@ Recorded cash and eco values (1047.0,1316.0) at time 346.3
 ----------
 Advancing game to time 346.4
 Sent a set of Grouped Blacks at time 346.36999999999915
+Currently, the send queue looks like this: 
+[346.68999999999915, 347.00999999999914, 347.32999999999913, 347.6499999999991, 347.9699999999991]
 Recorded cash and eco values (972.0,1319.0) at time 346.4
 ----------
 Advancing game to time 346.5
@@ -2107,6 +2453,8 @@ Recorded cash and eco values (972.0,1319.0) at time 346.6
 ----------
 Advancing game to time 346.7
 Sent a set of Grouped Blacks at time 346.68999999999915
+Currently, the send queue looks like this: 
+[347.00999999999914, 347.32999999999913, 347.6499999999991, 347.9699999999991, 348.2899999999991]
 Recorded cash and eco values (897.0,1322.0) at time 346.7
 ----------
 Advancing game to time 346.8
@@ -2120,6 +2468,8 @@ Recorded cash and eco values (897.0,1322.0) at time 347.0
 ----------
 Advancing game to time 347.1
 Sent a set of Grouped Blacks at time 347.00999999999914
+Currently, the send queue looks like this: 
+[347.32999999999913, 347.6499999999991, 347.9699999999991, 348.2899999999991, 348.6099999999991]
 Recorded cash and eco values (822.0,1325.0) at time 347.1
 ----------
 Advancing game to time 347.2
@@ -2130,6 +2480,8 @@ Recorded cash and eco values (822.0,1325.0) at time 347.3
 ----------
 Advancing game to time 347.4
 Sent a set of Grouped Blacks at time 347.32999999999913
+Currently, the send queue looks like this: 
+[347.6499999999991, 347.9699999999991, 348.2899999999991, 348.6099999999991, 348.9299999999991]
 Recorded cash and eco values (747.0,1328.0) at time 347.4
 ----------
 Advancing game to time 347.5
@@ -2144,6 +2496,8 @@ Recorded cash and eco values (847.0,1328.0) at time 347.6
 ----------
 Advancing game to time 347.7
 Sent a set of Grouped Blacks at time 347.6499999999991
+Currently, the send queue looks like this: 
+[347.9699999999991, 348.2899999999991, 348.6099999999991, 348.9299999999991, 349.2499999999991]
 Recorded cash and eco values (772.0,1331.0) at time 347.7
 ----------
 Advancing game to time 347.8
@@ -2154,6 +2508,8 @@ Recorded cash and eco values (772.0,1331.0) at time 347.9
 ----------
 Advancing game to time 348.0
 Sent a set of Grouped Blacks at time 347.9699999999991
+Currently, the send queue looks like this: 
+[348.2899999999991, 348.6099999999991, 348.9299999999991, 349.2499999999991, 349.5699999999991]
 Awarded eco payment 1334.0 at time 348.0
 Recorded cash and eco values (2031.0,1334.0) at time 348.0
 Recorded cash and eco values (2031.0,1334.0) at time 348.0
@@ -2166,6 +2522,8 @@ Recorded cash and eco values (2031.0,1334.0) at time 348.2
 ----------
 Advancing game to time 348.3
 Sent a set of Grouped Blacks at time 348.2899999999991
+Currently, the send queue looks like this: 
+[348.6099999999991, 348.9299999999991, 349.2499999999991, 349.5699999999991, 349.8899999999991]
 Recorded cash and eco values (1956.0,1337.0) at time 348.3
 ----------
 Advancing game to time 348.4
@@ -2179,6 +2537,8 @@ Recorded cash and eco values (1956.0,1337.0) at time 348.6
 ----------
 Advancing game to time 348.7
 Sent a set of Grouped Blacks at time 348.6099999999991
+Currently, the send queue looks like this: 
+[348.9299999999991, 349.2499999999991, 349.5699999999991, 349.8899999999991, 350.20999999999907]
 Recorded cash and eco values (1881.0,1340.0) at time 348.7
 ----------
 Advancing game to time 348.8
@@ -2189,6 +2549,8 @@ Recorded cash and eco values (1881.0,1340.0) at time 348.9
 ----------
 Advancing game to time 349.0
 Sent a set of Grouped Blacks at time 348.9299999999991
+Currently, the send queue looks like this: 
+[349.2499999999991, 349.5699999999991, 349.8899999999991, 350.20999999999907, 350.52999999999906]
 Recorded cash and eco values (1806.0,1343.0) at time 349.0
 ----------
 Advancing game to time 349.1
@@ -2203,6 +2565,8 @@ Recorded cash and eco values (1906.0,1343.0) at time 349.2
 ----------
 Advancing game to time 349.3
 Sent a set of Grouped Blacks at time 349.2499999999991
+Currently, the send queue looks like this: 
+[349.5699999999991, 349.8899999999991, 350.20999999999907, 350.52999999999906, 350.84999999999906]
 Recorded cash and eco values (1831.0,1346.0) at time 349.3
 ----------
 Advancing game to time 349.4
@@ -2213,6 +2577,8 @@ Recorded cash and eco values (1831.0,1346.0) at time 349.5
 ----------
 Advancing game to time 349.6
 Sent a set of Grouped Blacks at time 349.5699999999991
+Currently, the send queue looks like this: 
+[349.8899999999991, 350.20999999999907, 350.52999999999906, 350.84999999999906, 351.16999999999905]
 Recorded cash and eco values (1756.0,1349.0) at time 349.6
 ----------
 Advancing game to time 349.7
@@ -2223,6 +2589,8 @@ Recorded cash and eco values (1756.0,1349.0) at time 349.8
 ----------
 Advancing game to time 349.9
 Sent a set of Grouped Blacks at time 349.8899999999991
+Currently, the send queue looks like this: 
+[350.20999999999907, 350.52999999999906, 350.84999999999906, 351.16999999999905, 351.48999999999904]
 Recorded cash and eco values (1681.0,1352.0) at time 349.9
 ----------
 Advancing game to time 350.0
@@ -2236,6 +2604,8 @@ Recorded cash and eco values (1681.0,1352.0) at time 350.2
 ----------
 Advancing game to time 350.3
 Sent a set of Grouped Blacks at time 350.20999999999907
+Currently, the send queue looks like this: 
+[350.52999999999906, 350.84999999999906, 351.16999999999905, 351.48999999999904, 351.80999999999904]
 Recorded cash and eco values (1606.0,1355.0) at time 350.3
 ----------
 Advancing game to time 350.4
@@ -2246,6 +2616,8 @@ Recorded cash and eco values (1606.0,1355.0) at time 350.5
 ----------
 Advancing game to time 350.6
 Sent a set of Grouped Blacks at time 350.52999999999906
+Currently, the send queue looks like this: 
+[350.84999999999906, 351.16999999999905, 351.48999999999904, 351.80999999999904, 352.12999999999903]
 Recorded cash and eco values (1531.0,1358.0) at time 350.6
 ----------
 Advancing game to time 350.7
@@ -2256,6 +2628,8 @@ Recorded cash and eco values (1531.0,1358.0) at time 350.8
 ----------
 Advancing game to time 350.9
 Sent a set of Grouped Blacks at time 350.84999999999906
+Currently, the send queue looks like this: 
+[351.16999999999905, 351.48999999999904, 351.80999999999904, 352.12999999999903, 352.449999999999]
 Recorded cash and eco values (1456.0,1361.0) at time 350.9
 ----------
 Advancing game to time 351.0
@@ -2266,6 +2640,8 @@ Recorded cash and eco values (1456.0,1361.0) at time 351.1
 ----------
 Advancing game to time 351.2
 Sent a set of Grouped Blacks at time 351.16999999999905
+Currently, the send queue looks like this: 
+[351.48999999999904, 351.80999999999904, 352.12999999999903, 352.449999999999, 352.769999999999]
 Recorded cash and eco values (1381.0,1364.0) at time 351.2
 ----------
 Advancing game to time 351.3
@@ -2276,6 +2652,8 @@ Recorded cash and eco values (1381.0,1364.0) at time 351.4
 ----------
 Advancing game to time 351.5
 Sent a set of Grouped Blacks at time 351.48999999999904
+Currently, the send queue looks like this: 
+[351.80999999999904, 352.12999999999903, 352.449999999999, 352.769999999999, 353.089999999999]
 Recorded cash and eco values (1306.0,1367.0) at time 351.5
 ----------
 Advancing game to time 351.6
@@ -2289,6 +2667,8 @@ Recorded cash and eco values (1306.0,1367.0) at time 351.8
 ----------
 Advancing game to time 351.9
 Sent a set of Grouped Blacks at time 351.80999999999904
+Currently, the send queue looks like this: 
+[352.12999999999903, 352.449999999999, 352.769999999999, 353.089999999999, 353.409999999999]
 Recorded cash and eco values (1231.0,1370.0) at time 351.9
 ----------
 Advancing game to time 352.0
@@ -2299,6 +2679,8 @@ Recorded cash and eco values (1231.0,1370.0) at time 352.1
 ----------
 Advancing game to time 352.2
 Sent a set of Grouped Blacks at time 352.12999999999903
+Currently, the send queue looks like this: 
+[352.449999999999, 352.769999999999, 353.089999999999, 353.409999999999, 353.729999999999]
 Recorded cash and eco values (1156.0,1373.0) at time 352.2
 ----------
 Advancing game to time 352.3
@@ -2309,6 +2691,8 @@ Recorded cash and eco values (1156.0,1373.0) at time 352.4
 ----------
 Advancing game to time 352.5
 Sent a set of Grouped Blacks at time 352.449999999999
+Currently, the send queue looks like this: 
+[352.769999999999, 353.089999999999, 353.409999999999, 353.729999999999, 354.049999999999]
 Recorded cash and eco values (1081.0,1376.0) at time 352.5
 ----------
 Advancing game to time 352.6
@@ -2319,6 +2703,8 @@ Recorded cash and eco values (1081.0,1376.0) at time 352.7
 ----------
 Advancing game to time 352.8
 Sent a set of Grouped Blacks at time 352.769999999999
+Currently, the send queue looks like this: 
+[353.089999999999, 353.409999999999, 353.729999999999, 354.049999999999, 354.369999999999]
 Recorded cash and eco values (1006.0,1379.0) at time 352.8
 ----------
 Advancing game to time 352.9
@@ -2329,6 +2715,8 @@ Recorded cash and eco values (1006.0,1379.0) at time 353.0
 ----------
 Advancing game to time 353.1
 Sent a set of Grouped Blacks at time 353.089999999999
+Currently, the send queue looks like this: 
+[353.409999999999, 353.729999999999, 354.049999999999, 354.369999999999, 354.689999999999]
 Recorded cash and eco values (931.0,1382.0) at time 353.1
 ----------
 Advancing game to time 353.2
@@ -2342,6 +2730,8 @@ Recorded cash and eco values (931.0,1382.0) at time 353.4
 ----------
 Advancing game to time 353.5
 Sent a set of Grouped Blacks at time 353.409999999999
+Currently, the send queue looks like this: 
+[353.729999999999, 354.049999999999, 354.369999999999, 354.689999999999, 355.00999999999897]
 Recorded cash and eco values (856.0,1385.0) at time 353.5
 ----------
 Advancing game to time 353.6
@@ -2352,6 +2742,8 @@ Recorded cash and eco values (856.0,1385.0) at time 353.7
 ----------
 Advancing game to time 353.8
 Sent a set of Grouped Blacks at time 353.729999999999
+Currently, the send queue looks like this: 
+[354.049999999999, 354.369999999999, 354.689999999999, 355.00999999999897, 355.32999999999896]
 Recorded cash and eco values (781.0,1388.0) at time 353.8
 ----------
 Advancing game to time 353.9
@@ -2364,6 +2756,8 @@ Recorded cash and eco values (2169.0,1388.0) at time 354.0
 ----------
 Advancing game to time 354.1
 Sent a set of Grouped Blacks at time 354.049999999999
+Currently, the send queue looks like this: 
+[354.369999999999, 354.689999999999, 355.00999999999897, 355.32999999999896, 355.64999999999895]
 Recorded cash and eco values (2094.0,1391.0) at time 354.1
 ----------
 Advancing game to time 354.2
@@ -2374,6 +2768,8 @@ Recorded cash and eco values (2094.0,1391.0) at time 354.3
 ----------
 Advancing game to time 354.4
 Sent a set of Grouped Blacks at time 354.369999999999
+Currently, the send queue looks like this: 
+[354.689999999999, 355.00999999999897, 355.32999999999896, 355.64999999999895, 355.96999999999895]
 Recorded cash and eco values (2019.0,1394.0) at time 354.4
 ----------
 Advancing game to time 354.5
@@ -2384,6 +2780,8 @@ Recorded cash and eco values (2019.0,1394.0) at time 354.6
 ----------
 Advancing game to time 354.7
 Sent a set of Grouped Blacks at time 354.689999999999
+Currently, the send queue looks like this: 
+[355.00999999999897, 355.32999999999896, 355.64999999999895, 355.96999999999895, 356.28999999999894]
 Recorded cash and eco values (1944.0,1397.0) at time 354.7
 ----------
 Advancing game to time 354.8
@@ -2397,6 +2795,8 @@ Recorded cash and eco values (1944.0,1397.0) at time 355.0
 ----------
 Advancing game to time 355.1
 Sent a set of Grouped Blacks at time 355.00999999999897
+Currently, the send queue looks like this: 
+[355.32999999999896, 355.64999999999895, 355.96999999999895, 356.28999999999894, 356.60999999999893]
 Recorded cash and eco values (1869.0,1400.0) at time 355.1
 ----------
 Advancing game to time 355.2
@@ -2407,6 +2807,8 @@ Recorded cash and eco values (1869.0,1400.0) at time 355.3
 ----------
 Advancing game to time 355.4
 Sent a set of Grouped Blacks at time 355.32999999999896
+Currently, the send queue looks like this: 
+[355.64999999999895, 355.96999999999895, 356.28999999999894, 356.60999999999893, 356.9299999999989]
 Recorded cash and eco values (1794.0,1403.0) at time 355.4
 ----------
 Advancing game to time 355.5
@@ -2417,6 +2819,8 @@ Recorded cash and eco values (1794.0,1403.0) at time 355.6
 ----------
 Advancing game to time 355.7
 Sent a set of Grouped Blacks at time 355.64999999999895
+Currently, the send queue looks like this: 
+[355.96999999999895, 356.28999999999894, 356.60999999999893, 356.9299999999989, 357.2499999999989]
 Recorded cash and eco values (1719.0,1406.0) at time 355.7
 ----------
 Advancing game to time 355.8
@@ -2427,6 +2831,8 @@ Recorded cash and eco values (1719.0,1406.0) at time 355.9
 ----------
 Advancing game to time 356.0
 Sent a set of Grouped Blacks at time 355.96999999999895
+Currently, the send queue looks like this: 
+[356.28999999999894, 356.60999999999893, 356.9299999999989, 357.2499999999989, 357.5699999999989]
 Recorded cash and eco values (1644.0,1409.0) at time 356.0
 ----------
 Advancing game to time 356.1
@@ -2437,6 +2843,8 @@ Recorded cash and eco values (1644.0,1409.0) at time 356.2
 ----------
 Advancing game to time 356.3
 Sent a set of Grouped Blacks at time 356.28999999999894
+Currently, the send queue looks like this: 
+[356.60999999999893, 356.9299999999989, 357.2499999999989, 357.5699999999989, 357.8899999999989]
 Recorded cash and eco values (1569.0,1412.0) at time 356.3
 ----------
 Advancing game to time 356.4
@@ -2450,6 +2858,8 @@ Recorded cash and eco values (1569.0,1412.0) at time 356.6
 ----------
 Advancing game to time 356.7
 Sent a set of Grouped Blacks at time 356.60999999999893
+Currently, the send queue looks like this: 
+[356.9299999999989, 357.2499999999989, 357.5699999999989, 357.8899999999989, 358.2099999999989]
 Recorded cash and eco values (1494.0,1415.0) at time 356.7
 ----------
 Advancing game to time 356.8
@@ -2460,6 +2870,8 @@ Recorded cash and eco values (1494.0,1415.0) at time 356.9
 ----------
 Advancing game to time 357.0
 Sent a set of Grouped Blacks at time 356.9299999999989
+Currently, the send queue looks like this: 
+[357.2499999999989, 357.5699999999989, 357.8899999999989, 358.2099999999989, 358.5299999999989]
 Recorded cash and eco values (1419.0,1418.0) at time 357.0
 ----------
 Advancing game to time 357.1
@@ -2470,6 +2882,8 @@ Recorded cash and eco values (1419.0,1418.0) at time 357.2
 ----------
 Advancing game to time 357.3
 Sent a set of Grouped Blacks at time 357.2499999999989
+Currently, the send queue looks like this: 
+[357.5699999999989, 357.8899999999989, 358.2099999999989, 358.5299999999989, 358.8499999999989]
 Recorded cash and eco values (1344.0,1421.0) at time 357.3
 ----------
 Advancing game to time 357.4
@@ -2480,6 +2894,8 @@ Recorded cash and eco values (1344.0,1421.0) at time 357.5
 ----------
 Advancing game to time 357.6
 Sent a set of Grouped Blacks at time 357.5699999999989
+Currently, the send queue looks like this: 
+[357.8899999999989, 358.2099999999989, 358.5299999999989, 358.8499999999989, 359.1699999999989]
 Recorded cash and eco values (1269.0,1424.0) at time 357.6
 ----------
 Advancing game to time 357.7
@@ -2490,6 +2906,8 @@ Recorded cash and eco values (1269.0,1424.0) at time 357.8
 ----------
 Advancing game to time 357.9
 Sent a set of Grouped Blacks at time 357.8899999999989
+Currently, the send queue looks like this: 
+[358.2099999999989, 358.5299999999989, 358.8499999999989, 359.1699999999989, 359.4899999999989]
 Recorded cash and eco values (1194.0,1427.0) at time 357.9
 ----------
 Advancing game to time 358.0
@@ -2503,6 +2921,8 @@ Recorded cash and eco values (1194.0,1427.0) at time 358.2
 ----------
 Advancing game to time 358.3
 Sent a set of Grouped Blacks at time 358.2099999999989
+Currently, the send queue looks like this: 
+[358.5299999999989, 358.8499999999989, 359.1699999999989, 359.4899999999989, 359.80999999999887]
 Recorded cash and eco values (1119.0,1430.0) at time 358.3
 ----------
 Advancing game to time 358.4
@@ -2513,6 +2933,8 @@ Recorded cash and eco values (1119.0,1430.0) at time 358.5
 ----------
 Advancing game to time 358.6
 Sent a set of Grouped Blacks at time 358.5299999999989
+Currently, the send queue looks like this: 
+[358.8499999999989, 359.1699999999989, 359.4899999999989, 359.80999999999887, 360.12999999999886]
 Recorded cash and eco values (1044.0,1433.0) at time 358.6
 ----------
 Advancing game to time 358.7
@@ -2523,6 +2945,8 @@ Recorded cash and eco values (1044.0,1433.0) at time 358.8
 ----------
 Advancing game to time 358.9
 Sent a set of Grouped Blacks at time 358.8499999999989
+Currently, the send queue looks like this: 
+[359.1699999999989, 359.4899999999989, 359.80999999999887, 360.12999999999886, 360.44999999999885]
 Recorded cash and eco values (969.0,1436.0) at time 358.9
 ----------
 Advancing game to time 359.0
@@ -2533,6 +2957,8 @@ Recorded cash and eco values (969.0,1436.0) at time 359.1
 ----------
 Advancing game to time 359.2
 Sent a set of Grouped Blacks at time 359.1699999999989
+Currently, the send queue looks like this: 
+[359.4899999999989, 359.80999999999887, 360.12999999999886, 360.44999999999885, 360.76999999999884]
 Recorded cash and eco values (894.0,1439.0) at time 359.2
 ----------
 Advancing game to time 359.3
@@ -2543,6 +2969,8 @@ Recorded cash and eco values (894.0,1439.0) at time 359.4
 ----------
 Advancing game to time 359.5
 Sent a set of Grouped Blacks at time 359.4899999999989
+Currently, the send queue looks like this: 
+[359.80999999999887, 360.12999999999886, 360.44999999999885, 360.76999999999884, 361.08999999999884]
 Recorded cash and eco values (819.0,1442.0) at time 359.5
 ----------
 Advancing game to time 359.6
@@ -2556,6 +2984,8 @@ Recorded cash and eco values (819.0,1442.0) at time 359.8
 ----------
 Advancing game to time 359.9
 Sent a set of Grouped Blacks at time 359.80999999999887
+Currently, the send queue looks like this: 
+[360.12999999999886, 360.44999999999885, 360.76999999999884, 361.08999999999884, 361.40999999999883]
 Recorded cash and eco values (744.0,1445.0) at time 359.9
 ----------
 Advancing game to time 360.0
@@ -2568,6 +2998,8 @@ Recorded cash and eco values (2189.0,1445.0) at time 360.1
 ----------
 Advancing game to time 360.2
 Sent a set of Grouped Blacks at time 360.12999999999886
+Currently, the send queue looks like this: 
+[360.44999999999885, 360.76999999999884, 361.08999999999884, 361.40999999999883, 361.7299999999988]
 Recorded cash and eco values (2114.0,1448.0) at time 360.2
 ----------
 Advancing game to time 360.3
@@ -2578,6 +3010,8 @@ Recorded cash and eco values (2114.0,1448.0) at time 360.4
 ----------
 Advancing game to time 360.5
 Sent a set of Grouped Blacks at time 360.44999999999885
+Currently, the send queue looks like this: 
+[360.76999999999884, 361.08999999999884, 361.40999999999883, 361.7299999999988, 362.0499999999988]
 Recorded cash and eco values (2039.0,1451.0) at time 360.5
 ----------
 Advancing game to time 360.6
@@ -2588,6 +3022,8 @@ Recorded cash and eco values (2039.0,1451.0) at time 360.7
 ----------
 Advancing game to time 360.8
 Sent a set of Grouped Blacks at time 360.76999999999884
+Currently, the send queue looks like this: 
+[361.08999999999884, 361.40999999999883, 361.7299999999988, 362.0499999999988, 362.3699999999988]
 Recorded cash and eco values (1964.0,1454.0) at time 360.8
 ----------
 Advancing game to time 360.9

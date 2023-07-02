@@ -8,19 +8,29 @@ The game round start times are given by [0, 6.0, 29.5, 52.25, 76.25, 105.5, 133.
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 203.1
 Sent a set of Spaced Zebras at time 203.0
+Currently, the send queue looks like this: 
+[203.6]
 Sent a set of Spaced Zebras at time 203.1
+Currently, the send queue looks like this: 
+[203.6, 204.2]
 Recorded cash and eco values (1380,525.4) at time 203.1
 ----------
 Advancing game to time 203.2
 Sent a set of Spaced Zebras at time 203.2
+Currently, the send queue looks like this: 
+[203.6, 204.2, 204.79999999999998]
 Recorded cash and eco values (1320,528.1) at time 203.2
 ----------
 Advancing game to time 203.3
 Sent a set of Spaced Zebras at time 203.29999999999998
+Currently, the send queue looks like this: 
+[203.6, 204.2, 204.79999999999998, 205.39999999999998]
 Recorded cash and eco values (1260,530.8) at time 203.3
 ----------
 Advancing game to time 203.4
 Sent a set of Spaced Zebras at time 203.39999999999998
+Currently, the send queue looks like this: 
+[203.6, 204.2, 204.79999999999998, 205.39999999999998, 205.99999999999997]
 Recorded cash and eco values (1200,533.5) at time 203.4
 ----------
 Advancing game to time 203.5
@@ -28,6 +38,8 @@ Recorded cash and eco values (1200,533.5) at time 203.5
 ----------
 Advancing game to time 203.6
 Sent a set of Spaced Zebras at time 203.6
+Currently, the send queue looks like this: 
+[204.2, 204.79999999999998, 205.39999999999998, 205.99999999999997, 206.59999999999997]
 Recorded cash and eco values (1140,536.2) at time 203.6
 ----------
 Advancing game to time 203.7
@@ -49,6 +61,8 @@ Recorded cash and eco values (1676.2,536.2) at time 204.1
 ----------
 Advancing game to time 204.2
 Sent a set of Spaced Zebras at time 204.2
+Currently, the send queue looks like this: 
+[204.79999999999998, 205.39999999999998, 205.99999999999997, 206.59999999999997, 207.19999999999996]
 Recorded cash and eco values (1616.2,538.9) at time 204.2
 ----------
 Advancing game to time 204.3
@@ -68,6 +82,8 @@ Recorded cash and eco values (1616.2,538.9) at time 204.7
 ----------
 Advancing game to time 204.8
 Sent a set of Spaced Zebras at time 204.79999999999998
+Currently, the send queue looks like this: 
+[205.39999999999998, 205.99999999999997, 206.59999999999997, 207.19999999999996, 207.79999999999995]
 Recorded cash and eco values (1556.2,541.6) at time 204.8
 Modified the eco send to Zero
 ----------

@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from b2sim.info import *
+from b2sim.actions import *
 import copy
 
 # %%
@@ -390,37 +391,40 @@ class GameState():
                     self.eco_queue.pop(0)
                 else:
                     #Yes, we are under the threshold. Now check if the given time for the send is a valid time..
-
-                    #Is the eco send too late?
-                    if self.eco_queue[0]['Time'] >= self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['End Round']+1):
-                        #Yes, the send is too late. Remove it from the queue.
-                        self.logs.append("Warning! Time %s is too late to call %s. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
-                        self.eco_queue.pop(0)
-                        
+                    if self.eco_queue[0]['Time'] is None:
+                        #Bypass the time check if no time is given.
+                        break_flag = True
                     else:
-                        #No, the send is not too late
-                        
-                        #Is the eco send too early?
-                        candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round'])
-                        if self.eco_queue[0]['Time'] < candidate_time:
-                            #Yes, the send is too early
-                            self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name'], candidate_time))
-                            self.eco_queue[0] = (candidate_time, self.eco_queue[0]['Send Name'])
-                            #Is the adjusted time still valid?
-                            if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
-                                #Yes, it's still valid
+                        #Is the eco send too late?
+                        if self.eco_queue[0]['Time'] >= self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['End Round']+1):
+                            #Yes, the send is too late. Remove it from the queue.
+                            self.logs.append("Warning! Time %s is too late to call %s. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
+                            self.eco_queue.pop(0)
+                            
+                        else:
+                            #No, the send is not too late
+                            
+                            #Is the eco send too early?
+                            candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round'])
+                            if self.eco_queue[0]['Time'] < candidate_time:
+                                #Yes, the send is too early
+                                self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name'], candidate_time))
+                                self.eco_queue[0] = (candidate_time, self.eco_queue[0]['Send Name'])
+                                #Is the adjusted time still valid?
+                                if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
+                                    #Yes, it's still valid
+                                    self.checkProperties()
+                                    break_flag = True
+                                else:
+                                    #No, it's not valid
+                                    self.logs.append("Warning! Time %s is too late to call %s because the next item in the eco queue is slated to come earlier. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
+                                    self.eco_queue.pop(0)
+                            else:
+                                #No, the send is not too early
                                 self.checkProperties()
                                 break_flag = True
-                            else:
-                                #No, it's not valid
-                                self.logs.append("Warning! Time %s is too late to call %s because the next item in the eco queue is slated to come earlier. Removing from eco queue"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name']))
-                                self.eco_queue.pop(0)
-                        else:
-                            #No, the send is not too early
-                            self.checkProperties()
-                            break_flag = True
             
-            if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] <= self.current_time:
+            if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time:
                 self.changeEcoSend(self.eco_queue[0])
                 self.eco_queue.pop(0)
             else:
@@ -447,6 +451,25 @@ class GameState():
             self.logs.append("Warning! The name %s does not correspond with an eco send! Switching to the zero send."%(send_info['Send Name']))
             send_info['Send Name'] = 'Zero'
             self.warnings.append(len(self.logs) - 1)
+
+        self.current_round = self.rounds.getRoundFromTime(self.current_time)
+
+        # FAIL SAFE: Switch to the zero send instead if the send is not yet available and reinsert the eco send we wanted to change to into the queue
+        if self.current_round < eco_send_info[send_info['Send Name']]['Start Round']:
+            self.logs.append("Warning! The eco send %s is not available yet! Switching to the zero send for now, we will attempt to use this send later."%(send_info['Send Name']))
+            self.warnings.append(len(self.logs) - 1)
+            send_info['Time'] = self.rounds.getTimeFromRound(eco_send_info[send_info['Send Name']]['Start Round'])
+            self.eco_queue.insert(0,send_info)
+        
+        # FAIL SAFE: Switch to the zero send if the send is no longer available.
+        # WARNING: If this fail-safe triggers, something is probably wrong with the code.
+        if self.current_round > eco_send_info[send_info['Send Name']]['End Round']:
+            self.logs.append("Warning! The eco send %s is no longer available! Switching to the zero send."%(send_info['Send Name']))
+            self.logs.append("Warning! The above message occurred during the changeEcoSend method, which means something's probably wrong with the code!")
+            self.warnings.append(len(self.logs) - 1)
+            self.warnings.append(len(self.logs) - 2)
+            send_info['Send Name'] = 'Zero'
+
 
         # First, check if the send has any fortied, camo, or regrow characteristics
         eco_cost_multiplier = 1
@@ -526,7 +549,7 @@ class GameState():
         self.ecoQueueCorrection()
         
         # FAIL-SAFE: Terminate advanceGameState early if an eco change is scheduled before the target_time.
-        if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] < target_time:
+        if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] < target_time:
             #Yes, an eco change will occur
             target_time = self.eco_queue[0]['Time']
 
@@ -742,7 +765,7 @@ class GameState():
         self.current_round -= 1
         
         #Update the eco send, if necessary
-        if len(self.eco_queue) > 0 and target_time >= self.eco_queue[0]['Time']:
+        if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] and target_time >= self.eco_queue[0]['Time']:
             self.changeEcoSend(self.eco_queue[0])
             self.eco_queue.pop(0)
         
