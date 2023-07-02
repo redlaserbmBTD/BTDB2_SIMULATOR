@@ -21,6 +21,8 @@ To run the code, do the following:
 4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game. 
 
 # Update Log
+- (July 2, 2023 - v1.0.5)
+   - Improved support for eco numbers. It is no longer mandatory when specifying eco sends in the eco queue to specify a time for the player to start triggering that send. Note that if you place a send in the queue without a time specified, the previous send must have some sort of break condition (like `max_eco_amount` or `max_send_amount`) specified which compels the simulator to switch sends, otherwise the next send in the queue will never be triggered.
 - (July 1, 2023 - v1.0.4)
    - Fixed an issue which caused the attack queue (which concerns the queue of bloons sent to your opponent) to sometimes fail to remove sends from the queue that already finished sending, resulting in the simulator computing incorrect eco amounts during simulation.
    - You can now change the text size of the legend in the `viewCashEcoHistory` by using the `text_size` argument.
