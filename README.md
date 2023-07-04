@@ -22,6 +22,9 @@ To run the code, do the following:
 4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game. 
 
 # Update Log
+- (July 4, 2023 - v1.0.7)
+   - Fixed various bugs which caused the simulator to behave incorrectly when fail-safes were triggered.
+   - Updated display for graphs. The legend shows (approximated to the nearest tenth) when each action is carried out in the simulation.
 - (July 2, 2023 - v1.0.6)
    - Fixed an issue which effectively caused the attack queue size to be 5 instead of 6.
    - New action `sellAllFarms` for rapidly selling all farms.
