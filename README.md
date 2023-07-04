@@ -90,7 +90,7 @@ To run the code, do the following:
    - In order for players to understand the `eco impact` statistic, display the farm's start and end of availability during the simulation.
 - (High Priority) Change the formatting for storing farms and boat farms:
    - In a previous update, the behavior of farm selling was changed so that, from the perspective of the simulator, the farm is not sold, but rather "disabled". The `GameState` class continues to store the farms but does not compute their payments or award them.
-   - This new behavior circumvents an issue in early builds where selling farms would cause a farm's identifying index to shift, essentially making it impossible to implement support for compound transactions.
+   - This new behavior circumvents an issue in early builds that used a list structure to store farms where a selling one farm could cause other farms' identifying index to shift, essentially making it impossible to implement support for compound transactions.
    - Because of this, farms can now be stored in a simple list structure.
    - Naturally, when revenue/expense tracking support is also implemented for boat farms, we will in the same way want to change the data structure for storing them to a list.
 - (Medium priority) Village support:
