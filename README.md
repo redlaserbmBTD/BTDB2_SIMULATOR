@@ -4,6 +4,7 @@ Hi there! I'm redlaserbm, the main developer of the BTDB2 Eco simulator. To get 
 
 - To learn how to operate the code, see the examples folder.
 - Want to request features for the code? Want to help out with the code? Found a bug? Don't hesitate to contact me! The most immediate way to get my attention with regards to this code is to join the b2 Popology discord server and ping me there: https://discord.gg/axHnkcVe6E
+- Potential collaborators interested with helping out with the code should view the "Feature Requests" section below for more info on tasks that need to be completed.
 
 # Operating the Code
 
@@ -77,14 +78,21 @@ To run the code, do the following:
 - (May 11, 2023 - v0.9.1) 
    - Added druid farm support. Currently untested!
 
-# Feature To-Do List
+# Feature Requests
 
-- (High priority) Expanded revenue tracking:
+- (High Priority) More actions in `actions.py` to expand functionality and improve ease of use, including:
+   - Selling all Supply Drops, Selling all Druid Farms, Selling all Boat Farms
+   - Selling into a farm upgrade
+   - Withdrawing from all banks at once
+   - Buying, selling, and using overclock (on farms)
+- (High Priority) Expanded revenue tracking:
    - It would also be nice if the sim could track stats related to alt eco. Such stats could include revenue, expenses, long-run eco, and the aggregate revenue and expenses of each alt eco over the course of the simulation.
-   - For farms in particular, I wish to implement a stat called "equivalent eco impact" which shows the amount of eco that would've earned exactly the same amount that the farm did during its lifespan within simulation time. 
-- (High Priority) Improved Jeri functionality
-   - The improved Jericho functionality would ideally include support for Highwayman steals, as well as support for being stolen from.
-   - Although cumbersome with diminishing returns to accompany it, the computation of hero XP and hero levels would help to simplify the experience of using Jericho in the sim.
+   - In order for players to understand the `eco impact` statistic, display the farm's start and end of availability during the simulation.
+- (High Priority) Change the formatting for storing farms and boat farms:
+   - In a previous update, the behavior of farm selling was changed so that, from the perspective of the simulator, the farm is not sold, but rather "disabled". The `GameState` class continues to store the farms but does not compute their payments or award them.
+   - This new behavior circumvents an issue in early builds where selling farms would cause a farm's identifying index to shift, essentially making it impossible to implement support for compound transactions.
+   - Because of this, farms can now be stored in a simple list structure.
+   - Naturally, when revenue/expense tracking support is also implemented for boat farms, we will in the same way want to change the data structure for storing them to a list.
 - (Medium priority) Village support:
    - Village support would help answer the question of how useful Monkey City/Monkey Town actually are.
 - (Medium priority) Restructure the code:
