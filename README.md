@@ -1,8 +1,9 @@
-# Welcome!
+# Overview
 
-Hi there! I'm redlaserbm, the main developer of the BTDB2 Eco simulator. To get started with using the code, please read through this README file! 
+The `b2sim` Python library is an extensive feature-rich library for simulating flowcharts within battles 2. Simulating essential aspects of battles 2's income sources with virtually 100% accuracy, the library is an essential tool for optimizing eco'ing and farming with any flowchart. Results from the simulator can be used to better inform practical decisions made during games, improving player game sense and leading to more optimal play. The code is relatively easy to use and does not require prior coding experience to effectively operate.
 
-- To learn how to operate the code, see the examples folder.
+- To install the code, first download Python on your machine, and then in the terminal type `pip install b2sim` and hit 'Enter'.
+- To learn how to operate the code, see the examples folder in this GitHub repo. It contains numerous examples with code explained in plain English.
 - Want to request features for the code? Want to help out with the code? Found a bug? Don't hesitate to contact me! The most immediate way to get my attention with regards to this code is to join the b2 Popology discord server and ping me there: https://discord.gg/axHnkcVe6E
 - Potential collaborators interested with helping out with the code should view the "Feature Requests" section below for more info on tasks that need to be completed.
 
