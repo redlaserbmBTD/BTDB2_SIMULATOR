@@ -49,11 +49,15 @@ class Rounds():
             val += round_len
             self.round_starts.append(val)            
             
-    def getRoundFromTime(self, time):
+    def getRoundFromTime(self, time, get_frac_part = False):
         ind = 0
         while self.round_starts[ind] <= time and ind < 50:
             ind += 1
-        #self.logs.append("Mapped time %s to round %s"%(time,ind-1))
+        
+        if get_frac_part:
+            frac_part = (time - self.round_starts[ind-1])/(self.round_starts[ind] - self.round_starts[ind-1])
+            ind += frac_part
+            
         return ind - 1
     
     def getTimeFromRound(self, round_val):

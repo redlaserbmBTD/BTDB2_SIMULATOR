@@ -187,10 +187,14 @@ class GameState():
         # Max send amount is useful if we need to simulate sending a precise number of sets of bloons
         # Max eco amount is useful for eco strategies which may demand strategy decisions like "stop eco at 3000 eco"
 
-        self.changeEcoSend(initial_state.get('Eco Send'))
-
         self.eco_queue = initial_state.get('Eco Queue')
+        if self.eco_queue is None:
+            self.eco_queue = []
         self.number_of_sends = 0
+
+        eco_send = initial_state.get('Eco Send')
+        eco_send['Time'] = 0
+        self.eco_queue.insert(0,eco_send)
         
         #Upgrade queue
         self.buy_queue = initial_state.get('Buy Queue')
@@ -223,8 +227,6 @@ class GameState():
             self.farms = {}
         if self.buy_queue is None:
             self.buy_queue = []
-        if self.eco_queue is None:
-            self.eco_queue = []
         if self.loan is None:
             self.loan = 0
         if self.boat_farms is None:
@@ -287,6 +289,7 @@ class GameState():
             else:
                 thing_to_say = message[1]
             
+            thing_to_say = thing_to_say + ' (R' + str(np.round(self.rounds.getRoundFromTime(message[0], get_frac_part = True),1)) + ')'
             ax[0].plot([message[0],message[0]],[cash_min-1, cash_max+1], label = thing_to_say, linestyle = 'dashed', color = line_color)
             ax[1].plot([message[0],message[0]],[eco_min-1, eco_max+1], label = thing_to_say, linestyle = 'dashed', color = line_color)
 
@@ -302,8 +305,7 @@ class GameState():
         
         ax[0].set_xlabel("Time (seconds)")
         ax[1].set_xlabel("Time (seconds)")
-        
-        ax[0].legend(bbox_to_anchor = (1.02, 1), fontsize = font_size)
+
         ax[1].legend(bbox_to_anchor = (1.02, 1), fontsize = font_size)
         
         fig.tight_layout()
@@ -405,11 +407,12 @@ class GameState():
                             #No, the send is not too late
                             
                             #Is the eco send too early?
+                            self.logs.append("The candidate round is %s"%(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round']))
                             candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round'])
                             if self.eco_queue[0]['Time'] < candidate_time:
                                 #Yes, the send is too early
                                 self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name'], candidate_time))
-                                self.eco_queue[0] = (candidate_time, self.eco_queue[0]['Send Name'])
+                                self.eco_queue[0]['Time'] = candidate_time
                                 #Is the adjusted time still valid?
                                 if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
                                     #Yes, it's still valid
@@ -425,14 +428,17 @@ class GameState():
                                 break_flag = True
             
             if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time:
-                self.changeEcoSend(self.eco_queue[0])
-                self.eco_queue.pop(0)
+                self.changeEcoSend()
             else:
                 future_flag = True
         
-    def changeEcoSend(self,send_info):
-        # NOTE: This function does NOT contain safeguards to prevent the player from changing to unavailable eco sends.
-        # Such safeguards are handled by the ecoQueueCorrection method, which is automatically run when simulating game states.
+    def changeEcoSend(self):
+        # Attempt to change to the first send available in the eco queue
+        # This method is triggered either when reaching the specified time for the next send in the eco queue OR when a break condition (such as max_eco_amount) is satisfied for the current send
+        # Note that if this method is called as a consequence of a break condition being satisfied, it is possible that the safeguard for switching to a send before it becomes available could be triggered.
+
+        send_info = self.eco_queue[0]
+        self.eco_queue.pop(0)
 
         # The send info dictionary looks like this:
         # {
@@ -454,15 +460,20 @@ class GameState():
 
         self.current_round = self.rounds.getRoundFromTime(self.current_time)
 
-        # FAIL SAFE: Switch to the zero send instead if the send is not yet available and reinsert the eco send we wanted to change to into the queue
+        # FAIL SAFE: Switch to the zero send instead if the send is not yet available, and reinsert the send we tried to switch to back into the eco queue.
         if self.current_round < eco_send_info[send_info['Send Name']]['Start Round']:
             self.logs.append("Warning! The eco send %s is not available yet! Switching to the zero send for now, we will attempt to use this send later."%(send_info['Send Name']))
             self.warnings.append(len(self.logs) - 1)
             send_info['Time'] = self.rounds.getTimeFromRound(eco_send_info[send_info['Send Name']]['Start Round'])
-            self.eco_queue.insert(0,send_info)
+            self.logs.append("We are about to insert the following send into the eco queue: ")
+            self.logs.append(str(send_info))
+            self.eco_queue.insert(0,copy.deepcopy(send_info))
+            send_info['Send Name'] = 'Zero'
+            self.logs.append("The next item in the eco queue now looks like this: ")
+            self.logs.append(str(self.eco_queue[0]))
         
         # FAIL SAFE: Switch to the zero send if the send is no longer available.
-        # WARNING: If this fail-safe triggers, something is probably wrong with the code.
+        # The only scenario this should trigger is if the initially specified eco send is no good.
         if self.current_round > eco_send_info[send_info['Send Name']]['End Round']:
             self.logs.append("Warning! The eco send %s is no longer available! Switching to the zero send."%(send_info['Send Name']))
             self.logs.append("Warning! The above message occurred during the changeEcoSend method, which means something's probably wrong with the code!")
@@ -556,8 +567,10 @@ class GameState():
         # FAIL-SAFE: Check whether the current eco send is valid. If it is not, change the eco send to zero.
         if eco_send_info[self.send_name]['End Round'] < self.current_round:
             self.logs.append("Warning! The eco send %s is no longer available! Switching to the zero send."%(self.send_name))
+            self.logs.append("Warning! This message should not have come up during simulation! Please contact redlaserbm with information on what happened.")
             self.warnings.append(len(self.logs) - 1)
-            self.changeEcoSend({'Send Name': 'Zero'})
+            self.eco_queue.insert(0,{'Time': 0, 'Send Name': 'Zero'})
+            target_time = self.eco_queue[0]['Time']
 
         # FAIL-SAFE: Prevent advanceGameState from using an eco send after it becomes unavailable by terminating early in this case.
         if eco_send_info[self.send_name]['End Round'] + 1 <= self.rounds.getRoundFromTime(target_time):
@@ -601,11 +614,8 @@ class GameState():
             if (self.max_send_amount is not None and self.number_of_sends == self.max_send_amount) or (self.max_eco_amount is not None and self.eco >= self.max_eco_amount):
                 self.logs.append("Reached the limit on eco'ing for this send! Moving to the next send in the queue.")
 
-                if len(self.eco_queue) > 0:
-                    self.eco_queue[0]['Time'] = self.current_time
-                    self.ecoQueueCorrection()
-                else:
-                    #Switch to the zero send
+                #Switch to the zero send
+                if len(self.eco_queue) == 0:
                     self.logs.append("No more sends in the eco queue! Switching to the zero send.")
                     self.eco_queue.append({
                         'Time': self.current_time,
@@ -616,6 +626,9 @@ class GameState():
                         'Camoflauge': False,
                         'Regrow': False
                     })
+                else:
+                    # Adjust the time of the next eco send so that the simulator attempts to change to it at simulation end
+                    self.eco_queue[0]['Time'] = self.current_time
                 
                 # In rare cases, we may break from the eco queue on exactly same time that we are slated to receive a payment
                 # In that rare case, we need to award the payment for that time and check the buy queue to ensure that we do not "skip" over anything essential.
@@ -766,8 +779,7 @@ class GameState():
         
         #Update the eco send, if necessary
         if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] and target_time >= self.eco_queue[0]['Time']:
-            self.changeEcoSend(self.eco_queue[0])
-            self.eco_queue.pop(0)
+            self.changeEcoSend()
         
         #self.logs.append("Advanced game state to round " + str(self.current_round))
         #self.logs.append("The current time is " + str(self.current_time))
@@ -1066,7 +1078,7 @@ class GameState():
                 if len(self.attack_queue) == 0:
                     self.attack_queue.append(self.current_time + self.eco_time)
                 else:
-                    self.attack_queue.append(self.attack_queue[-1] + self.eco_time)
+                    self.attack_queue.append(max(self.attack_queue[-1] + self.eco_time, self.current_time + self.eco_time))
                 self.cash -= self.eco_cost
                 self.eco += self.eco_gain
                 self.logs.append("Sent a set of %s at time %s"%(self.send_name, self.current_time))

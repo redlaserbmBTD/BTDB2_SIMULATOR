@@ -54,7 +54,6 @@ def activateIMF(index, min_buy_time = 0):
         'Message': 'Take out loan from farm %s'%(index)
     }
 
-#Not yet implemented, don't use
 def sellAllFarms(min_buy_time = 0):
     return {
         'Type': 'Sell All Farms',
