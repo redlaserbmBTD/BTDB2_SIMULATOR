@@ -23,6 +23,9 @@ To run the code, do the following:
 4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game. 
 
 # Update Log
+- (July 10, 2023 - v1.0.8)
+   - Initializing boat farms is now also done with a list structure just like with regular farms.
+   - Changed round lengths in the spreadsheet. Natural round lengths were inferred by a test between spoonoil and ninjayas but the old numbers led to underestimates. The new numbers may still underestimate actual natural round lengths but are closer to the truth than before.
 - (July 4, 2023 - v1.0.7)
    - Fixed various bugs which caused the simulator to behave incorrectly when fail-safes were triggered. Such issues were related to when the eco sim tried to change eco sends as a consequence of a break condition (such as `max_eco_amount`) on the current send being satisfied.
    - Updated display for graphs. The legend shows (approximated to the nearest tenth) when each action is carried out in the simulation.
