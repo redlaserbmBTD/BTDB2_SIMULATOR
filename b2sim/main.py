@@ -118,21 +118,22 @@ class GameState():
                 self.key += 1
 
         #Next, boat farms!
-        self.boat_farms = initial_state.get('Boat Farms')
+        boat_info = initial_state.get('Boat Farms')
         self.Tempire_exists = False
+        self.boat_farms = {}
         self.boat_key = 0
-        if self.boat_farms is not None:
-            for key in self.boat_farms.keys():
-                if key >= self.key:
-                    self.key = key+1
-
-                boat_farm = self.boat_farms[key]
+        if boat_info is not None:
+            for boat_entry in boat_info:
                 #If the boat farm is a Tempire, mark it as such appropriately.
                 #Do not allow the user to initialize with multiple Tempires!
-                if boat_farm['Upgrade'] == 5 and self.Tempire_exists[i] == False:
+                if boat_entry['Upgrade'] == 5 and self.Tempire_exists[i] == False:
                     self.Tempire_exists = True
-                elif boat_farm['Upgrade'] == 5 and self.Tempire_exists[i] == True:
-                    boat_farm['Upgrade'] = 4
+                elif boat_entry['Upgrade'] == 5 and self.Tempire_exists[i] == True:
+                    boat_entry['Upgrade'] = 4
+                self.boat_farms[self.boat_key] = boat_entry
+
+                self.boat_key += 1
+                
 
         #Next, druid farms!
         self.druid_farms = initial_state.get('Druid Farms')
