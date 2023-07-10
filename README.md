@@ -86,7 +86,7 @@ To run the code, do the following:
    - Added druid farm support. Currently untested!
 
 # Feature Requests
-
+- (High Priority) Reorganize `GameState.processBuyQueue()` so that the process of adding actions to the simulator is more straightforward. 
 - (High Priority) More actions in `actions.py` to expand functionality and improve ease of use, including:
    - Selling all Supply Drops, Selling all Druid Farms, Selling all Boat Farms
    - Selling into a farm upgrade
