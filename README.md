@@ -9,18 +9,18 @@ The `b2sim` Python library is an extensive feature-rich library for simulating f
 
 # Running the Code
 
-For noobs:
+## For noobs:
 1. Install python on your computer here: https://www.anaconda.com/download/
 2. Open the anaconda prompt and type `pip install b2sim`.
 3. Your installation of anaconda came with a program called "Jupyter Notebook", which allows you to create and edit .ipynb files which you will use to operate the code. Open Jupyter, and create a new .ipynb file wherever you wish on your computer.
 4. In the first cell of this new .ipynb file you've created, type `import b2sim as b2` and hit enter. 
 5. Congratulations, you now have a file which you can use to generate simulations! Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
 
-For experienced coders:
+## For experienced coders:
 1. Type `pip install b2sim` in the terminal to download.
 2. Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
 
-Alternative installation instructions:
+## Alternative installation instructions:
 If for whatever reason pip installation does not work, try the following:
 1. Clone this GitHub repository onto your computer (using a program like GitHub Desktop)
 2. Navigate to where you cloned the repository in the terminal, and then run the command `python3 setup.py install --user`
