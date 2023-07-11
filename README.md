@@ -7,13 +7,18 @@ The `b2sim` Python library is an extensive feature-rich library for simulating f
 - Want to request features for the code? Want to help out with the code? Found a bug? Don't hesitate to contact me! The most immediate way to get my attention with regards to this code is to join the b2 Popology discord server and ping me there: https://discord.gg/axHnkcVe6E
 - Potential collaborators interested with helping out with the code should view the "Feature Requests" section below for more info on tasks that need to be completed.
 
-# Operating the Code
+# Running the Code
 
-To run the code, do the following: 
-1. Install python on your computer. 
-2. In the terminal, do `pip install b2sim`.
-3. Using an IDE like Visual Studio Code, open a new .ipynb file and type `import b2sim as b2` in the first line and hit enter.
-4. You now have a file which you can use to generate simulations! Check out the tutorial files for more info on how to operate the library. 
+For noobs:
+1. Install python on your computer here: https://www.anaconda.com/download/
+2. Open the anaconda prompt and type `pip install b2sim`.
+3. Your installation of anaconda came with a program called "Jupyter Notebook", which allows you to create and edit .ipynb files which you will use to operate the code. Open Jupyter, and create a new .ipynb wherever you wish on your computer.
+4. In the first cell of this new .ipynb file you've created, type `import b2sim as b2` and hit enter. 
+5. Congratulations, you now have a file which you can use to generate simulations! Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
+
+For experienced coders:
+1. Type 'pip install b2sim' in the terminal to download.
+2. Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
 
 # Code Features
 
