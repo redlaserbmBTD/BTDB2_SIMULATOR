@@ -17,7 +17,7 @@ For noobs:
 5. Congratulations, you now have a file which you can use to generate simulations! Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
 
 For experienced coders:
-1. Type 'pip install b2sim' in the terminal to download.
+1. Type `pip install b2sim` in the terminal to download.
 2. Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
 
 # Code Features
