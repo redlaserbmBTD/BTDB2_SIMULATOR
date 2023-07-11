@@ -20,6 +20,11 @@ For experienced coders:
 1. Type `pip install b2sim` in the terminal to download.
 2. Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
 
+Alternative installation instructions:
+If for whatever reason pip installation does not work, try the following:
+1. Clone this GitHub repository onto your computer (using a program like GitHub Desktop)
+2. Navigate to where you cloned the repository in the terminal, and then run the command `python3 setup.py install --user`
+
 # Code Features
 
 1. **Simultaneous simulation of eco, farms, and alt-eco:** When given an eco send to use and some arrangement of farms and alt-eco, the simulator accurately tracks the progression of the player's cash and eco over time. The results of the simulator are nearly true to the game.
