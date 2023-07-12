@@ -6,7 +6,7 @@ The game round start times are given by [0, 6.0, 30.9, 53.9, 78.0, 107.2, 134.5,
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 457.3
-The candidate round is 0
+Modified the eco send to Zero
 Modified the eco send to Zero
 We have 0 cash! We can do the next buy, which costs 0 and has a buffer of 0 and a minimum buy time of 0!
 Purchasing farm!

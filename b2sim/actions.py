@@ -20,13 +20,14 @@ def upgradeFarm(index, path, buffer = 0, min_buy_time = 0):
         'Message': 'Upgrade farm %s at path %s'%(index, path) 
     }
 
-def sellFarm(index, min_buy_time = 0):
+def sellFarm(index, min_buy_time = 0, withdraw = False):
     #Look, I know this is confusing, but "min_buy_time" really is the minimum selling time in this case!
     return {
         'Type': 'Sell Farm',
         'Index': index,
         'Minimum Buy Time': min_buy_time,
-        'Message': 'Sell farm %s'%(index)
+        'Message': 'Sell farm %s'%(index),
+        'Withdraw': withdraw
     }
 
 def buyDefense(cost, buffer = 0, min_buy_time = 0, message = 'Buy Defense'):
@@ -54,10 +55,11 @@ def activateIMF(index, min_buy_time = 0):
         'Message': 'Take out loan from farm %s'%(index)
     }
 
-def sellAllFarms(min_buy_time = 0):
+def sellAllFarms(min_buy_time = 0, withdraw = False):
     return {
         'Type': 'Sell All Farms',
-        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Minimum Buy Time': min_buy_time,
+        'Withdraw': withdraw #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
     }
 
 # WARNING: This function is for declaring farms in the initial game state. 
@@ -303,7 +305,7 @@ def jerichoSteal(min_buy_time = 0, steal_amount = 25):
 # ECO QUEUE
 ###########
 
-def ecoSend(time = None, send_name = 'Zero', property = 'Normal', max_send_amount = None, max_eco_amount = None):
+def ecoSend(time = None, send_name = 'Zero', property = 'Normal', max_send_amount = None, max_eco_amount = None, max_send_time = None, queue_threshold = 6):
     
     fortified = False
     camo = False
@@ -339,5 +341,7 @@ def ecoSend(time = None, send_name = 'Zero', property = 'Normal', max_send_amoun
         'Fortified': fortified,
         'Camoflauge': camo,
         'Regrow': regrow,
-        'Max Eco Amount': max_eco_amount
+        'Max Eco Amount': max_eco_amount,
+        'Max Send Time': max_send_time,
+        'Queue Threshold': queue_threshold
     }

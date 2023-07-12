@@ -6,424 +6,330 @@ The game round start times are given by [0, 6.0, 31.299999999999997, 54.8, 79.5,
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 231.0
-The candidate round is 0
-Modified the eco send to Zero
-The candidate round is 1
 Modified the eco send to Grouped Reds
-The candidate round is 12
 Sent a set of Grouped Reds at time 230.9
 Currently, the send queue looks like this: 
 [231.70000000000002]
 Recorded cash and eco values (2780,701.0) at time 231.0
 ----------
 Advancing game to time 231.1
-The candidate round is 12
 Sent a set of Grouped Reds at time 231.05
 Currently, the send queue looks like this: 
 [231.70000000000002, 232.50000000000003]
 Recorded cash and eco values (2760,702.0) at time 231.1
 ----------
 Advancing game to time 231.2
-The candidate round is 12
 Sent a set of Grouped Reds at time 231.20000000000002
 Currently, the send queue looks like this: 
 [231.70000000000002, 232.50000000000003, 233.30000000000004]
 Recorded cash and eco values (2740,703.0) at time 231.2
 ----------
 Advancing game to time 231.3
-The candidate round is 12
 Recorded cash and eco values (2740,703.0) at time 231.3
 ----------
 Advancing game to time 231.4
-The candidate round is 12
 Sent a set of Grouped Reds at time 231.35000000000002
 Currently, the send queue looks like this: 
 [231.70000000000002, 232.50000000000003, 233.30000000000004, 234.10000000000005]
 Recorded cash and eco values (2720,704.0) at time 231.4
 ----------
 Advancing game to time 231.5
-The candidate round is 12
 Recorded cash and eco values (2720,704.0) at time 231.5
 ----------
 Advancing game to time 231.6
-The candidate round is 12
 Sent a set of Grouped Reds at time 231.50000000000003
 Currently, the send queue looks like this: 
 [231.70000000000002, 232.50000000000003, 233.30000000000004, 234.10000000000005, 234.90000000000006]
 Recorded cash and eco values (2700,705.0) at time 231.6
 ----------
 Advancing game to time 231.7
-The candidate round is 12
 Sent a set of Grouped Reds at time 231.65000000000003
 Currently, the send queue looks like this: 
 [231.70000000000002, 232.50000000000003, 233.30000000000004, 234.10000000000005, 234.90000000000006, 235.70000000000007]
 Recorded cash and eco values (2680,706.0) at time 231.7
 ----------
 Advancing game to time 231.8
-The candidate round is 12
 Recorded cash and eco values (2680,706.0) at time 231.8
 ----------
 Advancing game to time 231.9
-The candidate round is 12
 Sent a set of Grouped Reds at time 231.80000000000004
 Currently, the send queue looks like this: 
 [232.50000000000003, 233.30000000000004, 234.10000000000005, 234.90000000000006, 235.70000000000007, 236.50000000000009]
 Recorded cash and eco values (2660,707.0) at time 231.9
 ----------
 Advancing game to time 232.0
-The candidate round is 12
 Recorded cash and eco values (2660,707.0) at time 232.0
 ----------
 Advancing game to time 232.1
-The candidate round is 12
 Recorded cash and eco values (2660,707.0) at time 232.1
 ----------
 Advancing game to time 232.2
-The candidate round is 12
 Recorded cash and eco values (2660,707.0) at time 232.2
 ----------
 Advancing game to time 232.3
-The candidate round is 12
 Recorded cash and eco values (2660,707.0) at time 232.3
 ----------
 Advancing game to time 232.4
-The candidate round is 12
 Recorded cash and eco values (2660,707.0) at time 232.4
 ----------
 Advancing game to time 232.5
-The candidate round is 12
 Recorded cash and eco values (2660,707.0) at time 232.5
 ----------
 Advancing game to time 232.6
-The candidate round is 12
 Sent a set of Grouped Reds at time 232.50000000000003
 Currently, the send queue looks like this: 
 [233.30000000000004, 234.10000000000005, 234.90000000000006, 235.70000000000007, 236.50000000000009, 237.3000000000001]
 Recorded cash and eco values (2640,708.0) at time 232.6
 ----------
 Advancing game to time 232.7
-The candidate round is 12
 Recorded cash and eco values (2640,708.0) at time 232.7
 ----------
 Advancing game to time 232.8
-The candidate round is 12
 Recorded cash and eco values (2640,708.0) at time 232.8
 ----------
 Advancing game to time 232.9
-The candidate round is 12
 Recorded cash and eco values (2640,708.0) at time 232.9
 ----------
 Advancing game to time 233.0
-The candidate round is 12
 Recorded cash and eco values (2640,708.0) at time 233.0
 ----------
 Advancing game to time 233.1
-The candidate round is 12
 Recorded cash and eco values (2640,708.0) at time 233.1
 ----------
 Advancing game to time 233.2
-The candidate round is 12
 Recorded cash and eco values (2640,708.0) at time 233.2
 ----------
 Advancing game to time 233.3
-The candidate round is 12
 Recorded cash and eco values (2640,708.0) at time 233.3
 ----------
 Advancing game to time 233.4
-The candidate round is 12
 Sent a set of Grouped Reds at time 233.30000000000004
 Currently, the send queue looks like this: 
 [234.10000000000005, 234.90000000000006, 235.70000000000007, 236.50000000000009, 237.3000000000001, 238.1000000000001]
 Recorded cash and eco values (2620,709.0) at time 233.4
 ----------
 Advancing game to time 233.5
-The candidate round is 12
 Recorded cash and eco values (2620,709.0) at time 233.5
 ----------
 Advancing game to time 233.6
-The candidate round is 12
 Recorded cash and eco values (2620,709.0) at time 233.6
 ----------
 Advancing game to time 233.7
-The candidate round is 12
 Recorded cash and eco values (2620,709.0) at time 233.7
 ----------
 Advancing game to time 233.8
-The candidate round is 12
 Recorded cash and eco values (2620,709.0) at time 233.8
 ----------
 Advancing game to time 233.9
-The candidate round is 12
 Recorded cash and eco values (2620,709.0) at time 233.9
 ----------
 Advancing game to time 234.0
-The candidate round is 12
 Awarded eco payment 709.0 at time 234.0
 Recorded cash and eco values (3329.0,709.0) at time 234.0
 Recorded cash and eco values (3329.0,709.0) at time 234.0
 ----------
 Advancing game to time 234.1
-The candidate round is 12
 Recorded cash and eco values (3329.0,709.0) at time 234.1
 ----------
 Advancing game to time 234.2
-The candidate round is 12
 Sent a set of Grouped Reds at time 234.10000000000005
 Currently, the send queue looks like this: 
 [234.90000000000006, 235.70000000000007, 236.50000000000009, 237.3000000000001, 238.1000000000001, 238.90000000000012]
 Recorded cash and eco values (3309.0,710.0) at time 234.2
 ----------
 Advancing game to time 234.3
-The candidate round is 12
 Recorded cash and eco values (3309.0,710.0) at time 234.3
 ----------
 Advancing game to time 234.4
-The candidate round is 12
 Recorded cash and eco values (3309.0,710.0) at time 234.4
 ----------
 Advancing game to time 234.5
-The candidate round is 12
 Recorded cash and eco values (3309.0,710.0) at time 234.5
 ----------
 Advancing game to time 234.6
-The candidate round is 12
 Recorded cash and eco values (3309.0,710.0) at time 234.6
 ----------
 Advancing game to time 234.7
-The candidate round is 12
 Recorded cash and eco values (3309.0,710.0) at time 234.7
 ----------
 Advancing game to time 234.8
-The candidate round is 12
 Recorded cash and eco values (3309.0,710.0) at time 234.8
 ----------
 Advancing game to time 234.9
-The candidate round is 12
 Recorded cash and eco values (3309.0,710.0) at time 234.9
 ----------
 Advancing game to time 235.0
-The candidate round is 12
 Sent a set of Grouped Reds at time 234.90000000000006
 Currently, the send queue looks like this: 
 [235.70000000000007, 236.50000000000009, 237.3000000000001, 238.1000000000001, 238.90000000000012, 239.70000000000013]
 Recorded cash and eco values (3289.0,711.0) at time 235.0
 ----------
 Advancing game to time 235.1
-The candidate round is 12
 Recorded cash and eco values (3289.0,711.0) at time 235.1
 ----------
 Advancing game to time 235.2
-The candidate round is 12
 Recorded cash and eco values (3289.0,711.0) at time 235.2
 ----------
 Advancing game to time 235.3
-The candidate round is 12
 Recorded cash and eco values (3289.0,711.0) at time 235.3
 ----------
 Advancing game to time 235.4
-The candidate round is 12
 Recorded cash and eco values (3289.0,711.0) at time 235.4
 ----------
 Advancing game to time 235.5
-The candidate round is 12
 Recorded cash and eco values (3289.0,711.0) at time 235.5
 ----------
 Advancing game to time 235.6
-The candidate round is 12
 Recorded cash and eco values (3289.0,711.0) at time 235.6
 ----------
 Advancing game to time 235.7
-The candidate round is 12
 Recorded cash and eco values (3289.0,711.0) at time 235.7
 ----------
 Advancing game to time 235.8
-The candidate round is 12
 Sent a set of Grouped Reds at time 235.70000000000007
 Currently, the send queue looks like this: 
 [236.50000000000009, 237.3000000000001, 238.1000000000001, 238.90000000000012, 239.70000000000013, 240.50000000000014]
 Recorded cash and eco values (3269.0,712.0) at time 235.8
 ----------
 Advancing game to time 235.9
-The candidate round is 12
 Recorded cash and eco values (3269.0,712.0) at time 235.9
 ----------
 Advancing game to time 236.0
-The candidate round is 12
 Recorded cash and eco values (3269.0,712.0) at time 236.0
 ----------
 Advancing game to time 236.1
-The candidate round is 12
 Recorded cash and eco values (3269.0,712.0) at time 236.1
 ----------
 Advancing game to time 236.2
-The candidate round is 12
 Recorded cash and eco values (3269.0,712.0) at time 236.2
 ----------
 Advancing game to time 236.3
-The candidate round is 12
 Recorded cash and eco values (3269.0,712.0) at time 236.3
 ----------
 Advancing game to time 236.4
-The candidate round is 12
 Recorded cash and eco values (3269.0,712.0) at time 236.4
 ----------
 Advancing game to time 236.5
-The candidate round is 12
 Recorded cash and eco values (3269.0,712.0) at time 236.5
 ----------
 Advancing game to time 236.6
-The candidate round is 12
 Sent a set of Grouped Reds at time 236.50000000000009
 Currently, the send queue looks like this: 
 [237.3000000000001, 238.1000000000001, 238.90000000000012, 239.70000000000013, 240.50000000000014, 241.30000000000015]
 Recorded cash and eco values (3249.0,713.0) at time 236.6
 ----------
 Advancing game to time 236.7
-The candidate round is 12
 Recorded cash and eco values (3249.0,713.0) at time 236.7
 ----------
 Advancing game to time 236.8
-The candidate round is 12
 Recorded cash and eco values (3249.0,713.0) at time 236.8
 ----------
 Advancing game to time 236.9
-The candidate round is 12
 Recorded cash and eco values (3249.0,713.0) at time 236.9
 ----------
 Advancing game to time 237.0
-The candidate round is 12
 Recorded cash and eco values (3249.0,713.0) at time 237.0
 ----------
 Advancing game to time 237.1
-The candidate round is 12
 Recorded cash and eco values (3249.0,713.0) at time 237.1
 ----------
 Advancing game to time 237.2
-The candidate round is 12
 Recorded cash and eco values (3249.0,713.0) at time 237.2
 ----------
 Advancing game to time 237.3
-The candidate round is 12
 Recorded cash and eco values (3249.0,713.0) at time 237.3
 ----------
 Advancing game to time 237.4
-The candidate round is 12
 Sent a set of Grouped Reds at time 237.3000000000001
 Currently, the send queue looks like this: 
 [238.1000000000001, 238.90000000000012, 239.70000000000013, 240.50000000000014, 241.30000000000015, 242.10000000000016]
 Recorded cash and eco values (3229.0,714.0) at time 237.4
 ----------
 Advancing game to time 237.5
-The candidate round is 12
 Recorded cash and eco values (3229.0,714.0) at time 237.5
 ----------
 Advancing game to time 237.6
-The candidate round is 12
 Recorded cash and eco values (3229.0,714.0) at time 237.6
 ----------
 Advancing game to time 237.7
-The candidate round is 12
 Recorded cash and eco values (3229.0,714.0) at time 237.7
 ----------
 Advancing game to time 237.8
-The candidate round is 12
 Recorded cash and eco values (3229.0,714.0) at time 237.8
 ----------
 Advancing game to time 237.9
-The candidate round is 12
 Recorded cash and eco values (3229.0,714.0) at time 237.9
 ----------
 Advancing game to time 238.0
-The candidate round is 12
 Recorded cash and eco values (3229.0,714.0) at time 238.0
 ----------
 Advancing game to time 238.1
-The candidate round is 12
 Recorded cash and eco values (3229.0,714.0) at time 238.1
 ----------
 Advancing game to time 238.2
-The candidate round is 12
 Sent a set of Grouped Reds at time 238.1000000000001
 Currently, the send queue looks like this: 
 [238.90000000000012, 239.70000000000013, 240.50000000000014, 241.30000000000015, 242.10000000000016, 242.90000000000018]
 Recorded cash and eco values (3209.0,715.0) at time 238.2
 ----------
 Advancing game to time 238.3
-The candidate round is 12
 Recorded cash and eco values (3209.0,715.0) at time 238.3
 ----------
 Advancing game to time 238.4
-The candidate round is 12
 Recorded cash and eco values (3209.0,715.0) at time 238.4
 ----------
 Advancing game to time 238.5
-The candidate round is 12
 Recorded cash and eco values (3209.0,715.0) at time 238.5
 ----------
 Advancing game to time 238.6
-The candidate round is 12
 Recorded cash and eco values (3209.0,715.0) at time 238.6
 ----------
 Advancing game to time 238.7
-The candidate round is 12
 Recorded cash and eco values (3209.0,715.0) at time 238.7
 ----------
 Advancing game to time 238.8
-The candidate round is 12
 Recorded cash and eco values (3209.0,715.0) at time 238.8
 ----------
 Advancing game to time 238.9
-The candidate round is 12
 Recorded cash and eco values (3209.0,715.0) at time 238.9
 ----------
 Advancing game to time 239.0
-The candidate round is 12
 Sent a set of Grouped Reds at time 238.90000000000012
 Currently, the send queue looks like this: 
 [239.70000000000013, 240.50000000000014, 241.30000000000015, 242.10000000000016, 242.90000000000018, 243.7000000000002]
 Recorded cash and eco values (3189.0,716.0) at time 239.0
 ----------
 Advancing game to time 239.1
-The candidate round is 12
 Recorded cash and eco values (3189.0,716.0) at time 239.1
 ----------
 Advancing game to time 239.2
-The candidate round is 12
 Recorded cash and eco values (3189.0,716.0) at time 239.2
 ----------
 Advancing game to time 239.3
-The candidate round is 12
 Recorded cash and eco values (3189.0,716.0) at time 239.3
 ----------
 Advancing game to time 239.4
-The candidate round is 12
 Recorded cash and eco values (3189.0,716.0) at time 239.4
 ----------
 Advancing game to time 239.5
-The candidate round is 12
 Recorded cash and eco values (3189.0,716.0) at time 239.5
 ----------
 Advancing game to time 239.6
-The candidate round is 12
 Recorded cash and eco values (3189.0,716.0) at time 239.6
 ----------
 Advancing game to time 239.7
-The candidate round is 12
 Recorded cash and eco values (3189.0,716.0) at time 239.7
 ----------
 Advancing game to time 239.8
-The candidate round is 12
 Sent a set of Grouped Reds at time 239.70000000000013
 Currently, the send queue looks like this: 
 [240.50000000000014, 241.30000000000015, 242.10000000000016, 242.90000000000018, 243.7000000000002, 244.5000000000002]
 Recorded cash and eco values (3169.0,717.0) at time 239.8
 ----------
 Advancing game to time 239.9
-The candidate round is 12
 Recorded cash and eco values (3169.0,717.0) at time 239.9
 ----------
 Advancing game to time 240.0
-The candidate round is 12
 Awarded eco payment 717.0 at time 240.0
 Recorded cash and eco values (3886.0,717.0) at time 240.0
 We have 3886.0 cash! We can do the next buy, which costs 3850.0 and has a buffer of 0 and a minimum buy time of 0!
@@ -431,654 +337,505 @@ Completed the buy operation! The buy queue now has 1 items remaining in it
 Recorded cash and eco values (36.0,717.0) at time 240.0
 ----------
 Advancing game to time 240.1
-The candidate round is 12
 Recorded cash and eco values (36.0,717.0) at time 240.1
 ----------
 Advancing game to time 240.2
-The candidate round is 12
 Recorded cash and eco values (36.0,717.0) at time 240.2
 ----------
 Advancing game to time 240.3
-The candidate round is 12
 Recorded cash and eco values (36.0,717.0) at time 240.3
 ----------
 Advancing game to time 240.4
-The candidate round is 12
 Recorded cash and eco values (36.0,717.0) at time 240.4
 ----------
 Advancing game to time 240.5
-The candidate round is 12
 Recorded cash and eco values (36.0,717.0) at time 240.5
 ----------
 Advancing game to time 240.6
-The candidate round is 12
 Sent a set of Grouped Reds at time 240.50000000000014
 Currently, the send queue looks like this: 
 [241.30000000000015, 242.10000000000016, 242.90000000000018, 243.7000000000002, 244.5000000000002, 245.3000000000002]
 Recorded cash and eco values (16.0,718.0) at time 240.6
 ----------
 Advancing game to time 240.7
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 240.7
 ----------
 Advancing game to time 240.8
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 240.8
 ----------
 Advancing game to time 240.9
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 240.9
 ----------
 Advancing game to time 241.0
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.0
 ----------
 Advancing game to time 241.1
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.1
 ----------
 Advancing game to time 241.2
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.2
 ----------
 Advancing game to time 241.3
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.3
 ----------
 Advancing game to time 241.4
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.4
 ----------
 Advancing game to time 241.5
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.5
 ----------
 Advancing game to time 241.6
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.6
 ----------
 Advancing game to time 241.7
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.7
 ----------
 Advancing game to time 241.8
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.8
 ----------
 Advancing game to time 241.9
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 241.9
 ----------
 Advancing game to time 242.0
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.0
 ----------
 Advancing game to time 242.1
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.1
 ----------
 Advancing game to time 242.2
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.2
 ----------
 Advancing game to time 242.3
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.3
 ----------
 Advancing game to time 242.4
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.4
 ----------
 Advancing game to time 242.5
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.5
 ----------
 Advancing game to time 242.6
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.6
 ----------
 Advancing game to time 242.7
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.7
 ----------
 Advancing game to time 242.8
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.8
 ----------
 Advancing game to time 242.9
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 242.9
 ----------
 Advancing game to time 243.0
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.0
 ----------
 Advancing game to time 243.1
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.1
 ----------
 Advancing game to time 243.2
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.2
 ----------
 Advancing game to time 243.3
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.3
 ----------
 Advancing game to time 243.4
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.4
 ----------
 Advancing game to time 243.5
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.5
 ----------
 Advancing game to time 243.6
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.6
 ----------
 Advancing game to time 243.7
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.7
 ----------
 Advancing game to time 243.8
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.8
 ----------
 Advancing game to time 243.9
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 243.9
 ----------
 Advancing game to time 244.0
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.0
 ----------
 Advancing game to time 244.1
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.1
 ----------
 Advancing game to time 244.2
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.2
 ----------
 Advancing game to time 244.3
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.3
 ----------
 Advancing game to time 244.4
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.4
 ----------
 Advancing game to time 244.5
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.5
 ----------
 Advancing game to time 244.6
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.6
 ----------
 Advancing game to time 244.7
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.7
 ----------
 Advancing game to time 244.8
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.8
 ----------
 Advancing game to time 244.9
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 244.9
 ----------
 Advancing game to time 245.0
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.0
 ----------
 Advancing game to time 245.1
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.1
 ----------
 Advancing game to time 245.2
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.2
 ----------
 Advancing game to time 245.3
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.3
 ----------
 Advancing game to time 245.4
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.4
 ----------
 Advancing game to time 245.5
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.5
 ----------
 Advancing game to time 245.6
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.6
 ----------
 Advancing game to time 245.7
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.7
 ----------
 Advancing game to time 245.8
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.8
 ----------
 Advancing game to time 245.9
-The candidate round is 12
 Recorded cash and eco values (16.0,718.0) at time 245.9
 ----------
 Advancing game to time 246.0
-The candidate round is 12
 Awarded eco payment 718.0 at time 246.0
 Recorded cash and eco values (734.0,718.0) at time 246.0
 Recorded cash and eco values (734.0,718.0) at time 246.0
 ----------
 Advancing game to time 246.1
-The candidate round is 12
 Sent a set of Grouped Reds at time 246.075
 Currently, the send queue looks like this: 
 [246.875]
 Recorded cash and eco values (714.0,719.0) at time 246.1
 ----------
 Advancing game to time 246.2
-The candidate round is 12
 Recorded cash and eco values (714.0,719.0) at time 246.2
 ----------
 Advancing game to time 246.3
-The candidate round is 12
 Sent a set of Grouped Reds at time 246.225
 Currently, the send queue looks like this: 
 [246.875, 247.675]
 Recorded cash and eco values (694.0,720.0) at time 246.3
 ----------
 Advancing game to time 246.4
-The candidate round is 12
 Sent a set of Grouped Reds at time 246.375
 Currently, the send queue looks like this: 
 [246.875, 247.675, 248.47500000000002]
 Recorded cash and eco values (674.0,721.0) at time 246.4
 ----------
 Advancing game to time 246.5
-The candidate round is 12
 Recorded cash and eco values (674.0,721.0) at time 246.5
 ----------
 Advancing game to time 246.6
-The candidate round is 12
 Sent a set of Grouped Reds at time 246.525
 Currently, the send queue looks like this: 
 [246.875, 247.675, 248.47500000000002, 249.27500000000003]
 Recorded cash and eco values (654.0,722.0) at time 246.6
 ----------
 Advancing game to time 246.7
-The candidate round is 12
 Sent a set of Grouped Reds at time 246.675
 Currently, the send queue looks like this: 
 [246.875, 247.675, 248.47500000000002, 249.27500000000003, 250.07500000000005]
 Recorded cash and eco values (634.0,723.0) at time 246.7
 ----------
 Advancing game to time 246.8
-The candidate round is 12
 Recorded cash and eco values (634.0,723.0) at time 246.8
 ----------
 Advancing game to time 246.9
-The candidate round is 12
 Sent a set of Grouped Reds at time 246.82500000000002
 Currently, the send queue looks like this: 
 [246.875, 247.675, 248.47500000000002, 249.27500000000003, 250.07500000000005, 250.87500000000006]
 Recorded cash and eco values (614.0,724.0) at time 246.9
 ----------
 Advancing game to time 247.0
-The candidate round is 12
 Sent a set of Grouped Reds at time 246.97500000000002
 Currently, the send queue looks like this: 
 [247.675, 248.47500000000002, 249.27500000000003, 250.07500000000005, 250.87500000000006, 251.67500000000007]
 Recorded cash and eco values (594.0,725.0) at time 247.0
 ----------
 Advancing game to time 247.1
-The candidate round is 12
 Recorded cash and eco values (594.0,725.0) at time 247.1
 ----------
 Advancing game to time 247.2
-The candidate round is 12
 Recorded cash and eco values (594.0,725.0) at time 247.2
 ----------
 Advancing game to time 247.3
-The candidate round is 12
 Recorded cash and eco values (594.0,725.0) at time 247.3
 ----------
 Advancing game to time 247.4
-The candidate round is 12
 Recorded cash and eco values (594.0,725.0) at time 247.4
 ----------
 Advancing game to time 247.5
-The candidate round is 12
 Recorded cash and eco values (594.0,725.0) at time 247.5
 ----------
 Advancing game to time 247.6
-The candidate round is 12
 Recorded cash and eco values (594.0,725.0) at time 247.6
 ----------
 Advancing game to time 247.7
-The candidate round is 12
 Sent a set of Grouped Reds at time 247.675
 Currently, the send queue looks like this: 
 [248.47500000000002, 249.27500000000003, 250.07500000000005, 250.87500000000006, 251.67500000000007, 252.47500000000008]
 Recorded cash and eco values (574.0,726.0) at time 247.7
 ----------
 Advancing game to time 247.8
-The candidate round is 12
 Recorded cash and eco values (574.0,726.0) at time 247.8
 ----------
 Advancing game to time 247.9
-The candidate round is 12
 Recorded cash and eco values (574.0,726.0) at time 247.9
 ----------
 Advancing game to time 248.0
-The candidate round is 12
 Recorded cash and eco values (574.0,726.0) at time 248.0
 ----------
 Advancing game to time 248.1
-The candidate round is 12
 Recorded cash and eco values (574.0,726.0) at time 248.1
 ----------
 Advancing game to time 248.2
-The candidate round is 12
 Recorded cash and eco values (574.0,726.0) at time 248.2
 ----------
 Advancing game to time 248.3
-The candidate round is 12
 Recorded cash and eco values (574.0,726.0) at time 248.3
 ----------
 Advancing game to time 248.4
-The candidate round is 12
 Recorded cash and eco values (574.0,726.0) at time 248.4
 ----------
 Advancing game to time 248.5
-The candidate round is 12
 Sent a set of Grouped Reds at time 248.47500000000002
 Currently, the send queue looks like this: 
 [249.27500000000003, 250.07500000000005, 250.87500000000006, 251.67500000000007, 252.47500000000008, 253.2750000000001]
 Recorded cash and eco values (554.0,727.0) at time 248.5
 ----------
 Advancing game to time 248.6
-The candidate round is 12
 Recorded cash and eco values (554.0,727.0) at time 248.6
 ----------
 Advancing game to time 248.7
-The candidate round is 12
 Recorded cash and eco values (554.0,727.0) at time 248.7
 ----------
 Advancing game to time 248.8
-The candidate round is 12
 Recorded cash and eco values (554.0,727.0) at time 248.8
 ----------
 Advancing game to time 248.9
-The candidate round is 12
 Recorded cash and eco values (554.0,727.0) at time 248.9
 ----------
 Advancing game to time 249.0
-The candidate round is 12
 Recorded cash and eco values (554.0,727.0) at time 249.0
 ----------
 Advancing game to time 249.1
-The candidate round is 12
 Recorded cash and eco values (554.0,727.0) at time 249.1
 ----------
 Advancing game to time 249.2
-The candidate round is 12
 Recorded cash and eco values (554.0,727.0) at time 249.2
 ----------
 Advancing game to time 249.3
-The candidate round is 12
 Sent a set of Grouped Reds at time 249.27500000000003
 Currently, the send queue looks like this: 
 [250.07500000000005, 250.87500000000006, 251.67500000000007, 252.47500000000008, 253.2750000000001, 254.0750000000001]
 Recorded cash and eco values (534.0,728.0) at time 249.3
 ----------
 Advancing game to time 249.4
-The candidate round is 12
 Recorded cash and eco values (534.0,728.0) at time 249.4
 ----------
 Advancing game to time 249.5
-The candidate round is 12
 Recorded cash and eco values (534.0,728.0) at time 249.5
 ----------
 Advancing game to time 249.6
-The candidate round is 12
 Recorded cash and eco values (534.0,728.0) at time 249.6
 ----------
 Advancing game to time 249.7
-The candidate round is 12
 Recorded cash and eco values (534.0,728.0) at time 249.7
 ----------
 Advancing game to time 249.8
-The candidate round is 12
 Recorded cash and eco values (534.0,728.0) at time 249.8
 ----------
 Advancing game to time 249.9
-The candidate round is 12
 Recorded cash and eco values (534.0,728.0) at time 249.9
 ----------
 Advancing game to time 250.0
-The candidate round is 12
 Recorded cash and eco values (534.0,728.0) at time 250.0
 ----------
 Advancing game to time 250.1
-The candidate round is 12
 Sent a set of Grouped Reds at time 250.07500000000005
 Currently, the send queue looks like this: 
 [250.87500000000006, 251.67500000000007, 252.47500000000008, 253.2750000000001, 254.0750000000001, 254.8750000000001]
 Recorded cash and eco values (514.0,729.0) at time 250.1
 ----------
 Advancing game to time 250.2
-The candidate round is 12
 Recorded cash and eco values (514.0,729.0) at time 250.2
 ----------
 Advancing game to time 250.3
-The candidate round is 12
 Recorded cash and eco values (514.0,729.0) at time 250.3
 ----------
 Advancing game to time 250.4
-The candidate round is 12
 Recorded cash and eco values (514.0,729.0) at time 250.4
 ----------
 Advancing game to time 250.5
-The candidate round is 12
 Recorded cash and eco values (514.0,729.0) at time 250.5
 ----------
 Advancing game to time 250.6
-The candidate round is 12
 Recorded cash and eco values (514.0,729.0) at time 250.6
 ----------
 Advancing game to time 250.7
-The candidate round is 12
 Recorded cash and eco values (514.0,729.0) at time 250.7
 ----------
 Advancing game to time 250.8
-The candidate round is 12
 Recorded cash and eco values (514.0,729.0) at time 250.8
 ----------
 Advancing game to time 250.9
-The candidate round is 12
 Sent a set of Grouped Reds at time 250.87500000000006
 Currently, the send queue looks like this: 
 [251.67500000000007, 252.47500000000008, 253.2750000000001, 254.0750000000001, 254.8750000000001, 255.67500000000013]
 Recorded cash and eco values (494.0,730.0) at time 250.9
 ----------
 Advancing game to time 251.0
-The candidate round is 12
 Recorded cash and eco values (494.0,730.0) at time 251.0
 ----------
 Advancing game to time 251.1
-The candidate round is 12
 Recorded cash and eco values (494.0,730.0) at time 251.1
 ----------
 Advancing game to time 251.2
-The candidate round is 12
 Recorded cash and eco values (494.0,730.0) at time 251.2
 ----------
 Advancing game to time 251.3
-The candidate round is 12
 Recorded cash and eco values (494.0,730.0) at time 251.3
 ----------
 Advancing game to time 251.4
-The candidate round is 12
 Recorded cash and eco values (494.0,730.0) at time 251.4
 ----------
 Advancing game to time 251.5
-The candidate round is 12
 Recorded cash and eco values (494.0,730.0) at time 251.5
 ----------
 Advancing game to time 251.6
-The candidate round is 12
 Recorded cash and eco values (494.0,730.0) at time 251.6
 ----------
 Advancing game to time 251.7
-The candidate round is 12
 Sent a set of Grouped Reds at time 251.67500000000007
 Currently, the send queue looks like this: 
 [252.47500000000008, 253.2750000000001, 254.0750000000001, 254.8750000000001, 255.67500000000013, 256.47500000000014]
 Recorded cash and eco values (474.0,731.0) at time 251.7
 ----------
 Advancing game to time 251.8
-The candidate round is 12
 Recorded cash and eco values (474.0,731.0) at time 251.8
 ----------
 Advancing game to time 251.9
-The candidate round is 12
 Recorded cash and eco values (474.0,731.0) at time 251.9
 ----------
 Advancing game to time 252.0
-The candidate round is 12
 Awarded eco payment 731.0 at time 252.0
 Recorded cash and eco values (1205.0,731.0) at time 252.0
 Recorded cash and eco values (1205.0,731.0) at time 252.0
 ----------
 Advancing game to time 252.1
-The candidate round is 12
 Recorded cash and eco values (1205.0,731.0) at time 252.1
 ----------
 Advancing game to time 252.2
-The candidate round is 12
 Recorded cash and eco values (1205.0,731.0) at time 252.2
 ----------
 Advancing game to time 252.3
-The candidate round is 12
 Recorded cash and eco values (1205.0,731.0) at time 252.3
 ----------
 Advancing game to time 252.4
-The candidate round is 12
 Recorded cash and eco values (1205.0,731.0) at time 252.4
 ----------
 Advancing game to time 252.5
-The candidate round is 12
 Sent a set of Grouped Reds at time 252.47500000000008
 Currently, the send queue looks like this: 
 [253.2750000000001, 254.0750000000001, 254.8750000000001, 255.67500000000013, 256.47500000000014, 257.27500000000015]
 Recorded cash and eco values (1185.0,732.0) at time 252.5
 ----------
 Advancing game to time 252.6
-The candidate round is 12
 Recorded cash and eco values (1185.0,732.0) at time 252.6
 ----------
 Advancing game to time 252.7
-The candidate round is 12
 Recorded cash and eco values (1185.0,732.0) at time 252.7
 ----------
 Advancing game to time 252.8
-The candidate round is 12
 Recorded cash and eco values (1185.0,732.0) at time 252.8
 ----------
 Advancing game to time 252.9
-The candidate round is 12
 Recorded cash and eco values (1185.0,732.0) at time 252.9
 ----------
 Advancing game to time 253.0
-The candidate round is 12
 Recorded cash and eco values (1185.0,732.0) at time 253.0
 ----------
 Advancing game to time 253.1
-The candidate round is 12
 Recorded cash and eco values (1185.0,732.0) at time 253.1
 ----------
 Advancing game to time 253.2
-The candidate round is 12
 Recorded cash and eco values (1185.0,732.0) at time 253.2
 ----------
 Advancing game to time 253.3
-The candidate round is 12
 Sent a set of Grouped Reds at time 253.2750000000001
 Currently, the send queue looks like this: 
 [254.0750000000001, 254.8750000000001, 255.67500000000013, 256.47500000000014, 257.27500000000015, 258.07500000000016]
 Recorded cash and eco values (1165.0,733.0) at time 253.3
 ----------
 Advancing game to time 253.4
-The candidate round is 12
 Recorded cash and eco values (1165.0,733.0) at time 253.4
 ----------
 Advancing game to time 253.5
-The candidate round is 12
 Recorded cash and eco values (1165.0,733.0) at time 253.5
 ----------
 Advancing game to time 253.6
-The candidate round is 12
 Recorded cash and eco values (1165.0,733.0) at time 253.6
 ----------
 Advancing game to time 253.7
-The candidate round is 12
 Recorded cash and eco values (1165.0,733.0) at time 253.7
 ----------
 Advancing game to time 253.8
-The candidate round is 12
 Recorded cash and eco values (1165.0,733.0) at time 253.8
 ----------
 Advancing game to time 253.9
-The candidate round is 12
 Recorded cash and eco values (1165.0,733.0) at time 253.9
 ----------
 Advancing game to time 254.0
-The candidate round is 12
 Recorded cash and eco values (1165.0,733.0) at time 254.0
 ----------
 Advancing game to time 254.1
-The candidate round is 12
 Sent a set of Grouped Reds at time 254.0750000000001
 Currently, the send queue looks like this: 
 [254.8750000000001, 255.67500000000013, 256.47500000000014, 257.27500000000015, 258.07500000000016, 258.87500000000017]
 Recorded cash and eco values (1145.0,734.0) at time 254.1
 ----------
 Advancing game to time 254.2
-The candidate round is 12
 Recorded cash and eco values (1145.0,734.0) at time 254.2
 ----------
 Advancing game to time 254.3
-The candidate round is 12
 Recorded cash and eco values (1145.0,734.0) at time 254.3
 ----------
 Advancing game to time 254.4
-The candidate round is 12
 Recorded cash and eco values (1145.0,734.0) at time 254.4
 ----------
 Advancing game to time 254.5
-The candidate round is 12
 Recorded cash and eco values (1145.0,734.0) at time 254.5
 ----------
 Advancing game to time 254.6
-The candidate round is 12
 Recorded cash and eco values (1145.0,734.0) at time 254.6
 ----------
 Advancing game to time 254.7
-The candidate round is 12
 Recorded cash and eco values (1145.0,734.0) at time 254.7
 ----------
 Advancing game to time 254.8
-The candidate round is 12
 Recorded cash and eco values (1145.0,734.0) at time 254.8
 ----------
 Advancing game to time 254.9
-The candidate round is 12
 Warning! The current eco send will not be available after the conclusion of round 11. Adjusting the target time.
 Sent a set of Grouped Reds at time 254.8750000000001
 Currently, the send queue looks like this: 
@@ -1087,1902 +844,1460 @@ Recorded cash and eco values (1125.0,735.0) at time 254.9
 Modified the eco send to Spaced Rainbows
 ----------
 Advancing game to time 255.0
-The candidate round is 0
 Recorded cash and eco values (1125.0,735.0) at time 255.0
 ----------
 Advancing game to time 255.1
-The candidate round is 0
 Recorded cash and eco values (1125.0,735.0) at time 255.1
 ----------
 Advancing game to time 255.2
-The candidate round is 0
 Recorded cash and eco values (1125.0,735.0) at time 255.2
 ----------
 Advancing game to time 255.3
-The candidate round is 0
 Recorded cash and eco values (1125.0,735.0) at time 255.3
 ----------
 Advancing game to time 255.4
-The candidate round is 0
 Recorded cash and eco values (1125.0,735.0) at time 255.4
 ----------
 Advancing game to time 255.5
-The candidate round is 0
 Recorded cash and eco values (1125.0,735.0) at time 255.5
 ----------
 Advancing game to time 255.6
-The candidate round is 0
 Recorded cash and eco values (1125.0,735.0) at time 255.6
 ----------
 Advancing game to time 255.7
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 255.67500000000013
 Currently, the send queue looks like this: 
 [256.47500000000014, 257.27500000000015, 258.07500000000016, 258.87500000000017, 259.6750000000002, 260.0250000000002]
 Recorded cash and eco values (1055.0,738.0) at time 255.7
 ----------
 Advancing game to time 255.8
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 255.8
 ----------
 Advancing game to time 255.9
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 255.9
 ----------
 Advancing game to time 256.0
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 256.0
 ----------
 Advancing game to time 256.1
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 256.1
 ----------
 Advancing game to time 256.2
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 256.2
 ----------
 Advancing game to time 256.25
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 256.25
 ----------
 Advancing game to time 256.3
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 256.3
 ----------
 Advancing game to time 256.4
-The candidate round is 0
 Recorded cash and eco values (1055.0,738.0) at time 256.4
 ----------
 Advancing game to time 256.5
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 256.47500000000014
 Currently, the send queue looks like this: 
 [257.27500000000015, 258.07500000000016, 258.87500000000017, 259.6750000000002, 260.0250000000002, 260.3750000000002]
 Recorded cash and eco values (985.0,741.0) at time 256.5
 ----------
 Advancing game to time 256.6
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 256.6
 ----------
 Advancing game to time 256.7
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 256.7
 ----------
 Advancing game to time 256.75
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 256.75
 ----------
 Advancing game to time 256.8
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 256.8
 ----------
 Advancing game to time 256.9
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 256.9
 ----------
 Advancing game to time 257.0
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 257.0
 ----------
 Advancing game to time 257.1
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 257.1
 ----------
 Advancing game to time 257.2
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 257.2
 ----------
 Advancing game to time 257.25
-The candidate round is 0
 Recorded cash and eco values (985.0,741.0) at time 257.25
 ----------
 Advancing game to time 257.3
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 257.27500000000015
 Currently, the send queue looks like this: 
 [258.07500000000016, 258.87500000000017, 259.6750000000002, 260.0250000000002, 260.3750000000002, 260.72500000000025]
 Recorded cash and eco values (915.0,744.0) at time 257.3
 ----------
 Advancing game to time 257.4
-The candidate round is 0
 Recorded cash and eco values (915.0,744.0) at time 257.4
 ----------
 Advancing game to time 257.5
-The candidate round is 0
 Recorded cash and eco values (915.0,744.0) at time 257.5
 ----------
 Advancing game to time 257.6
-The candidate round is 0
 Recorded cash and eco values (915.0,744.0) at time 257.6
 ----------
 Advancing game to time 257.7
-The candidate round is 0
 Recorded cash and eco values (915.0,744.0) at time 257.7
 ----------
 Advancing game to time 257.75
-The candidate round is 0
 Recorded cash and eco values (915.0,744.0) at time 257.75
 ----------
 Advancing game to time 257.8
-The candidate round is 0
 Recorded cash and eco values (915.0,744.0) at time 257.8
 ----------
 Advancing game to time 257.9
-The candidate round is 0
 Recorded cash and eco values (915.0,744.0) at time 257.9
 ----------
 Advancing game to time 258.0
-The candidate round is 0
 Awarded eco payment 744.0 at time 258.0
 Recorded cash and eco values (1659.0,744.0) at time 258.0
 Recorded cash and eco values (1659.0,744.0) at time 258.0
 ----------
 Advancing game to time 258.1
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 258.07500000000016
 Currently, the send queue looks like this: 
 [258.87500000000017, 259.6750000000002, 260.0250000000002, 260.3750000000002, 260.72500000000025, 261.0750000000003]
 Recorded cash and eco values (1589.0,747.0) at time 258.1
 ----------
 Advancing game to time 258.2
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.2
 ----------
 Advancing game to time 258.25
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.25
 ----------
 Advancing game to time 258.3
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.3
 ----------
 Advancing game to time 258.4
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.4
 ----------
 Advancing game to time 258.5
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.5
 ----------
 Advancing game to time 258.6
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.6
 ----------
 Advancing game to time 258.7
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.7
 ----------
 Advancing game to time 258.75
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.75
 ----------
 Advancing game to time 258.8
-The candidate round is 0
 Recorded cash and eco values (1589.0,747.0) at time 258.8
 ----------
 Advancing game to time 258.9
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 258.87500000000017
 Currently, the send queue looks like this: 
 [259.6750000000002, 260.0250000000002, 260.3750000000002, 260.72500000000025, 261.0750000000003, 261.4250000000003]
 Recorded cash and eco values (1519.0,750.0) at time 258.9
 ----------
 Advancing game to time 259.0
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.0
 ----------
 Advancing game to time 259.1
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.1
 ----------
 Advancing game to time 259.2
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.2
 ----------
 Advancing game to time 259.25
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.25
 ----------
 Advancing game to time 259.3
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.3
 ----------
 Advancing game to time 259.4
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.4
 ----------
 Advancing game to time 259.5
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.5
 ----------
 Advancing game to time 259.6
-The candidate round is 0
 Recorded cash and eco values (1519.0,750.0) at time 259.6
 ----------
 Advancing game to time 259.7
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 259.6750000000002
 Currently, the send queue looks like this: 
 [260.0250000000002, 260.3750000000002, 260.72500000000025, 261.0750000000003, 261.4250000000003, 261.7750000000003]
 Recorded cash and eco values (1449.0,753.0) at time 259.7
 ----------
 Advancing game to time 259.75
-The candidate round is 0
 Recorded cash and eco values (1449.0,753.0) at time 259.75
 ----------
 Advancing game to time 259.8
-The candidate round is 0
 Recorded cash and eco values (1449.0,753.0) at time 259.8
 ----------
 Advancing game to time 259.9
-The candidate round is 0
 Recorded cash and eco values (1449.0,753.0) at time 259.9
 ----------
 Advancing game to time 260.0
-The candidate round is 0
 Recorded cash and eco values (1449.0,753.0) at time 260.0
 ----------
 Advancing game to time 260.1
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 260.0250000000002
 Currently, the send queue looks like this: 
 [260.3750000000002, 260.72500000000025, 261.0750000000003, 261.4250000000003, 261.7750000000003, 262.12500000000034]
 Recorded cash and eco values (1379.0,756.0) at time 260.1
 ----------
 Advancing game to time 260.2
-The candidate round is 0
 Recorded cash and eco values (1379.0,756.0) at time 260.2
 ----------
 Advancing game to time 260.25
-The candidate round is 0
 Recorded cash and eco values (1379.0,756.0) at time 260.25
 ----------
 Advancing game to time 260.3
-The candidate round is 0
 Recorded cash and eco values (1379.0,756.0) at time 260.3
 ----------
 Advancing game to time 260.4
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 260.3750000000002
 Currently, the send queue looks like this: 
 [260.72500000000025, 261.0750000000003, 261.4250000000003, 261.7750000000003, 262.12500000000034, 262.47500000000036]
 Recorded cash and eco values (1309.0,759.0) at time 260.4
 ----------
 Advancing game to time 260.5
-The candidate round is 0
 Recorded cash and eco values (1309.0,759.0) at time 260.5
 ----------
 Advancing game to time 260.6
-The candidate round is 0
 Recorded cash and eco values (1309.0,759.0) at time 260.6
 ----------
 Advancing game to time 260.7
-The candidate round is 0
 Recorded cash and eco values (1309.0,759.0) at time 260.7
 ----------
 Advancing game to time 260.75
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 260.72500000000025
 Currently, the send queue looks like this: 
 [261.0750000000003, 261.4250000000003, 261.7750000000003, 262.12500000000034, 262.47500000000036, 262.8250000000004]
 Recorded cash and eco values (1239.0,762.0) at time 260.75
 ----------
 Advancing game to time 260.8
-The candidate round is 0
 Recorded cash and eco values (1239.0,762.0) at time 260.8
 ----------
 Advancing game to time 260.9
-The candidate round is 0
 Recorded cash and eco values (1239.0,762.0) at time 260.9
 ----------
 Advancing game to time 261.0
-The candidate round is 0
 Recorded cash and eco values (1239.0,762.0) at time 261.0
 ----------
 Advancing game to time 261.1
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 261.0750000000003
 Currently, the send queue looks like this: 
 [261.4250000000003, 261.7750000000003, 262.12500000000034, 262.47500000000036, 262.8250000000004, 263.1750000000004]
 Recorded cash and eco values (1169.0,765.0) at time 261.1
 ----------
 Advancing game to time 261.2
-The candidate round is 0
 Recorded cash and eco values (1169.0,765.0) at time 261.2
 ----------
 Advancing game to time 261.25
-The candidate round is 0
 Recorded cash and eco values (1169.0,765.0) at time 261.25
 ----------
 Advancing game to time 261.3
-The candidate round is 0
 Recorded cash and eco values (1169.0,765.0) at time 261.3
 ----------
 Advancing game to time 261.4
-The candidate round is 0
 Recorded cash and eco values (1169.0,765.0) at time 261.4
 ----------
 Advancing game to time 261.5
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 261.4250000000003
 Currently, the send queue looks like this: 
 [261.7750000000003, 262.12500000000034, 262.47500000000036, 262.8250000000004, 263.1750000000004, 263.52500000000043]
 Recorded cash and eco values (1099.0,768.0) at time 261.5
 ----------
 Advancing game to time 261.6
-The candidate round is 0
 Recorded cash and eco values (1099.0,768.0) at time 261.6
 ----------
 Advancing game to time 261.7
-The candidate round is 0
 Recorded cash and eco values (1099.0,768.0) at time 261.7
 ----------
 Advancing game to time 261.75
-The candidate round is 0
 Recorded cash and eco values (1099.0,768.0) at time 261.75
 ----------
 Advancing game to time 261.8
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 261.7750000000003
 Currently, the send queue looks like this: 
 [262.12500000000034, 262.47500000000036, 262.8250000000004, 263.1750000000004, 263.52500000000043, 263.87500000000045]
 Recorded cash and eco values (1029.0,771.0) at time 261.8
 ----------
 Advancing game to time 261.9
-The candidate round is 0
 Recorded cash and eco values (1029.0,771.0) at time 261.9
 ----------
 Advancing game to time 262.0
-The candidate round is 0
 Recorded cash and eco values (1029.0,771.0) at time 262.0
 ----------
 Advancing game to time 262.1
-The candidate round is 0
 Recorded cash and eco values (1029.0,771.0) at time 262.1
 ----------
 Advancing game to time 262.2
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 262.12500000000034
 Currently, the send queue looks like this: 
 [262.47500000000036, 262.8250000000004, 263.1750000000004, 263.52500000000043, 263.87500000000045, 264.2250000000005]
 Recorded cash and eco values (959.0,774.0) at time 262.2
 ----------
 Advancing game to time 262.25
-The candidate round is 0
 Recorded cash and eco values (959.0,774.0) at time 262.25
 ----------
 Advancing game to time 262.3
-The candidate round is 0
 Recorded cash and eco values (959.0,774.0) at time 262.3
 ----------
 Advancing game to time 262.4
-The candidate round is 0
 Recorded cash and eco values (959.0,774.0) at time 262.4
 ----------
 Advancing game to time 262.5
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 262.47500000000036
 Currently, the send queue looks like this: 
 [262.8250000000004, 263.1750000000004, 263.52500000000043, 263.87500000000045, 264.2250000000005, 264.5750000000005]
 Recorded cash and eco values (889.0,777.0) at time 262.5
 ----------
 Advancing game to time 262.6
-The candidate round is 0
 Recorded cash and eco values (889.0,777.0) at time 262.6
 ----------
 Advancing game to time 262.7
-The candidate round is 0
 Recorded cash and eco values (889.0,777.0) at time 262.7
 ----------
 Advancing game to time 262.75
-The candidate round is 0
 Recorded cash and eco values (889.0,777.0) at time 262.75
 ----------
 Advancing game to time 262.8
-The candidate round is 0
 Recorded cash and eco values (889.0,777.0) at time 262.8
 ----------
 Advancing game to time 262.9
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 262.8250000000004
 Currently, the send queue looks like this: 
 [263.1750000000004, 263.52500000000043, 263.87500000000045, 264.2250000000005, 264.5750000000005, 264.9250000000005]
 Recorded cash and eco values (819.0,780.0) at time 262.9
 ----------
 Advancing game to time 263.0
-The candidate round is 0
 Recorded cash and eco values (819.0,780.0) at time 263.0
 ----------
 Advancing game to time 263.1
-The candidate round is 0
 Recorded cash and eco values (819.0,780.0) at time 263.1
 ----------
 Advancing game to time 263.2
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 263.1750000000004
 Currently, the send queue looks like this: 
 [263.52500000000043, 263.87500000000045, 264.2250000000005, 264.5750000000005, 264.9250000000005, 265.27500000000055]
 Recorded cash and eco values (749.0,783.0) at time 263.2
 ----------
 Advancing game to time 263.25
-The candidate round is 0
 Recorded cash and eco values (749.0,783.0) at time 263.25
 ----------
 Advancing game to time 263.3
-The candidate round is 0
 Recorded cash and eco values (749.0,783.0) at time 263.3
 ----------
 Advancing game to time 263.4
-The candidate round is 0
 Recorded cash and eco values (749.0,783.0) at time 263.4
 ----------
 Advancing game to time 263.5
-The candidate round is 0
 Recorded cash and eco values (749.0,783.0) at time 263.5
 ----------
 Advancing game to time 263.6
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 263.52500000000043
 Currently, the send queue looks like this: 
 [263.87500000000045, 264.2250000000005, 264.5750000000005, 264.9250000000005, 265.27500000000055, 265.62500000000057]
 Recorded cash and eco values (679.0,786.0) at time 263.6
 ----------
 Advancing game to time 263.7
-The candidate round is 0
 Recorded cash and eco values (679.0,786.0) at time 263.7
 ----------
 Advancing game to time 263.75
-The candidate round is 0
 Recorded cash and eco values (679.0,786.0) at time 263.75
 ----------
 Advancing game to time 263.8
-The candidate round is 0
 Recorded cash and eco values (679.0,786.0) at time 263.8
 ----------
 Advancing game to time 263.9
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 263.87500000000045
 Currently, the send queue looks like this: 
 [264.2250000000005, 264.5750000000005, 264.9250000000005, 265.27500000000055, 265.62500000000057, 265.9750000000006]
 Recorded cash and eco values (609.0,789.0) at time 263.9
 ----------
 Advancing game to time 264.0
-The candidate round is 0
 Awarded eco payment 789.0 at time 264.0
 Recorded cash and eco values (1398.0,789.0) at time 264.0
 Recorded cash and eco values (1398.0,789.0) at time 264.0
 ----------
 Advancing game to time 264.1
-The candidate round is 0
 Recorded cash and eco values (1398.0,789.0) at time 264.1
 ----------
 Advancing game to time 264.2
-The candidate round is 0
 Recorded cash and eco values (1398.0,789.0) at time 264.2
 ----------
 Advancing game to time 264.25
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 264.2250000000005
 Currently, the send queue looks like this: 
 [264.5750000000005, 264.9250000000005, 265.27500000000055, 265.62500000000057, 265.9750000000006, 266.3250000000006]
 Recorded cash and eco values (1328.0,792.0) at time 264.25
 ----------
 Advancing game to time 264.3
-The candidate round is 0
 Recorded cash and eco values (1328.0,792.0) at time 264.3
 ----------
 Advancing game to time 264.4
-The candidate round is 0
 Recorded cash and eco values (1328.0,792.0) at time 264.4
 ----------
 Advancing game to time 264.5
-The candidate round is 0
 Recorded cash and eco values (1328.0,792.0) at time 264.5
 ----------
 Advancing game to time 264.6
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 264.5750000000005
 Currently, the send queue looks like this: 
 [264.9250000000005, 265.27500000000055, 265.62500000000057, 265.9750000000006, 266.3250000000006, 266.67500000000064]
 Recorded cash and eco values (1258.0,795.0) at time 264.6
 ----------
 Advancing game to time 264.7
-The candidate round is 0
 Recorded cash and eco values (1258.0,795.0) at time 264.7
 ----------
 Advancing game to time 264.75
-The candidate round is 0
 Recorded cash and eco values (1258.0,795.0) at time 264.75
 ----------
 Advancing game to time 264.8
-The candidate round is 0
 Recorded cash and eco values (1258.0,795.0) at time 264.8
 ----------
 Advancing game to time 264.9
-The candidate round is 0
 Recorded cash and eco values (1258.0,795.0) at time 264.9
 ----------
 Advancing game to time 265.0
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 264.9250000000005
 Currently, the send queue looks like this: 
 [265.27500000000055, 265.62500000000057, 265.9750000000006, 266.3250000000006, 266.67500000000064, 267.02500000000066]
 Recorded cash and eco values (1188.0,798.0) at time 265.0
 ----------
 Advancing game to time 265.1
-The candidate round is 0
 Recorded cash and eco values (1188.0,798.0) at time 265.1
 ----------
 Advancing game to time 265.2
-The candidate round is 0
 Recorded cash and eco values (1188.0,798.0) at time 265.2
 ----------
 Advancing game to time 265.25
-The candidate round is 0
 Recorded cash and eco values (1188.0,798.0) at time 265.25
 ----------
 Advancing game to time 265.3
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 265.27500000000055
 Currently, the send queue looks like this: 
 [265.62500000000057, 265.9750000000006, 266.3250000000006, 266.67500000000064, 267.02500000000066, 267.3750000000007]
 Recorded cash and eco values (1118.0,801.0) at time 265.3
 ----------
 Advancing game to time 265.4
-The candidate round is 0
 Recorded cash and eco values (1118.0,801.0) at time 265.4
 ----------
 Advancing game to time 265.5
-The candidate round is 0
 Recorded cash and eco values (1118.0,801.0) at time 265.5
 ----------
 Advancing game to time 265.6
-The candidate round is 0
 Recorded cash and eco values (1118.0,801.0) at time 265.6
 ----------
 Advancing game to time 265.7
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 265.62500000000057
 Currently, the send queue looks like this: 
 [265.9750000000006, 266.3250000000006, 266.67500000000064, 267.02500000000066, 267.3750000000007, 267.7250000000007]
 Recorded cash and eco values (1048.0,804.0) at time 265.7
 ----------
 Advancing game to time 265.75
-The candidate round is 0
 Recorded cash and eco values (1048.0,804.0) at time 265.75
 ----------
 Advancing game to time 265.8
-The candidate round is 0
 Recorded cash and eco values (1048.0,804.0) at time 265.8
 ----------
 Advancing game to time 265.9
-The candidate round is 0
 Recorded cash and eco values (1048.0,804.0) at time 265.9
 ----------
 Advancing game to time 266.0
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 265.9750000000006
 Currently, the send queue looks like this: 
 [266.3250000000006, 266.67500000000064, 267.02500000000066, 267.3750000000007, 267.7250000000007, 268.0750000000007]
 Recorded cash and eco values (978.0,807.0) at time 266.0
 ----------
 Advancing game to time 266.1
-The candidate round is 0
 Recorded cash and eco values (978.0,807.0) at time 266.1
 ----------
 Advancing game to time 266.2
-The candidate round is 0
 Recorded cash and eco values (978.0,807.0) at time 266.2
 ----------
 Advancing game to time 266.25
-The candidate round is 0
 Recorded cash and eco values (978.0,807.0) at time 266.25
 ----------
 Advancing game to time 266.3
-The candidate round is 0
 Recorded cash and eco values (978.0,807.0) at time 266.3
 ----------
 Advancing game to time 266.4
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 266.3250000000006
 Currently, the send queue looks like this: 
 [266.67500000000064, 267.02500000000066, 267.3750000000007, 267.7250000000007, 268.0750000000007, 268.42500000000075]
 Recorded cash and eco values (908.0,810.0) at time 266.4
 ----------
 Advancing game to time 266.5
-The candidate round is 0
 Recorded cash and eco values (908.0,810.0) at time 266.5
 ----------
 Advancing game to time 266.6
-The candidate round is 0
 Recorded cash and eco values (908.0,810.0) at time 266.6
 ----------
 Advancing game to time 266.7
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 266.67500000000064
 Currently, the send queue looks like this: 
 [267.02500000000066, 267.3750000000007, 267.7250000000007, 268.0750000000007, 268.42500000000075, 268.7750000000008]
 Recorded cash and eco values (838.0,813.0) at time 266.7
 ----------
 Advancing game to time 266.75
-The candidate round is 0
 Recorded cash and eco values (838.0,813.0) at time 266.75
 ----------
 Advancing game to time 266.8
-The candidate round is 0
 Recorded cash and eco values (838.0,813.0) at time 266.8
 ----------
 Advancing game to time 266.9
-The candidate round is 0
 Recorded cash and eco values (838.0,813.0) at time 266.9
 ----------
 Advancing game to time 267.0
-The candidate round is 0
 Recorded cash and eco values (838.0,813.0) at time 267.0
 ----------
 Advancing game to time 267.1
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 267.02500000000066
 Currently, the send queue looks like this: 
 [267.3750000000007, 267.7250000000007, 268.0750000000007, 268.42500000000075, 268.7750000000008, 269.1250000000008]
 Recorded cash and eco values (768.0,816.0) at time 267.1
 ----------
 Advancing game to time 267.2
-The candidate round is 0
 Recorded cash and eco values (768.0,816.0) at time 267.2
 ----------
 Advancing game to time 267.25
-The candidate round is 0
 Recorded cash and eco values (768.0,816.0) at time 267.25
 ----------
 Advancing game to time 267.3
-The candidate round is 0
 Recorded cash and eco values (768.0,816.0) at time 267.3
 ----------
 Advancing game to time 267.4
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 267.3750000000007
 Currently, the send queue looks like this: 
 [267.7250000000007, 268.0750000000007, 268.42500000000075, 268.7750000000008, 269.1250000000008, 269.4750000000008]
 Recorded cash and eco values (698.0,819.0) at time 267.4
 ----------
 Advancing game to time 267.5
-The candidate round is 0
 Recorded cash and eco values (698.0,819.0) at time 267.5
 ----------
 Advancing game to time 267.6
-The candidate round is 0
 Recorded cash and eco values (698.0,819.0) at time 267.6
 ----------
 Advancing game to time 267.7
-The candidate round is 0
 Recorded cash and eco values (698.0,819.0) at time 267.7
 ----------
 Advancing game to time 267.75
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 267.7250000000007
 Currently, the send queue looks like this: 
 [268.0750000000007, 268.42500000000075, 268.7750000000008, 269.1250000000008, 269.4750000000008, 269.82500000000084]
 Recorded cash and eco values (628.0,822.0) at time 267.75
 ----------
 Advancing game to time 267.8
-The candidate round is 0
 Recorded cash and eco values (628.0,822.0) at time 267.8
 ----------
 Advancing game to time 267.9
-The candidate round is 0
 Recorded cash and eco values (628.0,822.0) at time 267.9
 ----------
 Advancing game to time 268.0
-The candidate round is 0
 Recorded cash and eco values (628.0,822.0) at time 268.0
 ----------
 Advancing game to time 268.1
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 268.0750000000007
 Currently, the send queue looks like this: 
 [268.42500000000075, 268.7750000000008, 269.1250000000008, 269.4750000000008, 269.82500000000084, 270.17500000000086]
 Recorded cash and eco values (558.0,825.0) at time 268.1
 ----------
 Advancing game to time 268.2
-The candidate round is 0
 Recorded cash and eco values (558.0,825.0) at time 268.2
 ----------
 Advancing game to time 268.25
-The candidate round is 0
 Recorded cash and eco values (558.0,825.0) at time 268.25
 ----------
 Advancing game to time 268.3
-The candidate round is 0
 Recorded cash and eco values (558.0,825.0) at time 268.3
 ----------
 Advancing game to time 268.4
-The candidate round is 0
 Recorded cash and eco values (558.0,825.0) at time 268.4
 ----------
 Advancing game to time 268.5
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 268.42500000000075
 Currently, the send queue looks like this: 
 [268.7750000000008, 269.1250000000008, 269.4750000000008, 269.82500000000084, 270.17500000000086, 270.5250000000009]
 Recorded cash and eco values (488.0,828.0) at time 268.5
 ----------
 Advancing game to time 268.6
-The candidate round is 0
 Recorded cash and eco values (488.0,828.0) at time 268.6
 ----------
 Advancing game to time 268.7
-The candidate round is 0
 Recorded cash and eco values (488.0,828.0) at time 268.7
 ----------
 Advancing game to time 268.75
-The candidate round is 0
 Recorded cash and eco values (488.0,828.0) at time 268.75
 ----------
 Advancing game to time 268.8
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 268.7750000000008
 Currently, the send queue looks like this: 
 [269.1250000000008, 269.4750000000008, 269.82500000000084, 270.17500000000086, 270.5250000000009, 270.8750000000009]
 Recorded cash and eco values (418.0,831.0) at time 268.8
 ----------
 Advancing game to time 268.9
-The candidate round is 0
 Recorded cash and eco values (418.0,831.0) at time 268.9
 ----------
 Advancing game to time 269.0
-The candidate round is 0
 Recorded cash and eco values (418.0,831.0) at time 269.0
 ----------
 Advancing game to time 269.1
-The candidate round is 0
 Recorded cash and eco values (418.0,831.0) at time 269.1
 ----------
 Advancing game to time 269.2
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 269.1250000000008
 Currently, the send queue looks like this: 
 [269.4750000000008, 269.82500000000084, 270.17500000000086, 270.5250000000009, 270.8750000000009, 271.22500000000093]
 Recorded cash and eco values (348.0,834.0) at time 269.2
 ----------
 Advancing game to time 269.25
-The candidate round is 0
 Recorded cash and eco values (348.0,834.0) at time 269.25
 ----------
 Advancing game to time 269.3
-The candidate round is 0
 Recorded cash and eco values (348.0,834.0) at time 269.3
 ----------
 Advancing game to time 269.4
-The candidate round is 0
 Recorded cash and eco values (348.0,834.0) at time 269.4
 ----------
 Advancing game to time 269.5
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 269.4750000000008
 Currently, the send queue looks like this: 
 [269.82500000000084, 270.17500000000086, 270.5250000000009, 270.8750000000009, 271.22500000000093, 271.57500000000095]
 Recorded cash and eco values (278.0,837.0) at time 269.5
 ----------
 Advancing game to time 269.6
-The candidate round is 0
 Recorded cash and eco values (278.0,837.0) at time 269.6
 ----------
 Advancing game to time 269.7
-The candidate round is 0
 Recorded cash and eco values (278.0,837.0) at time 269.7
 ----------
 Advancing game to time 269.75
-The candidate round is 0
 Recorded cash and eco values (278.0,837.0) at time 269.75
 ----------
 Advancing game to time 269.8
-The candidate round is 0
 Recorded cash and eco values (278.0,837.0) at time 269.8
 ----------
 Advancing game to time 269.9
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 269.82500000000084
 Currently, the send queue looks like this: 
 [270.17500000000086, 270.5250000000009, 270.8750000000009, 271.22500000000093, 271.57500000000095, 271.925000000001]
 Recorded cash and eco values (208.0,840.0) at time 269.9
 ----------
 Advancing game to time 270.0
-The candidate round is 0
 Awarded eco payment 840.0 at time 270.0
 Recorded cash and eco values (1048.0,840.0) at time 270.0
 Recorded cash and eco values (1048.0,840.0) at time 270.0
 ----------
 Advancing game to time 270.1
-The candidate round is 0
 Recorded cash and eco values (1048.0,840.0) at time 270.1
 ----------
 Advancing game to time 270.2
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 270.17500000000086
 Currently, the send queue looks like this: 
 [270.5250000000009, 270.8750000000009, 271.22500000000093, 271.57500000000095, 271.925000000001, 272.275000000001]
 Recorded cash and eco values (978.0,843.0) at time 270.2
 ----------
 Advancing game to time 270.25
-The candidate round is 0
 Recorded cash and eco values (978.0,843.0) at time 270.25
 ----------
 Advancing game to time 270.3
-The candidate round is 0
 Recorded cash and eco values (978.0,843.0) at time 270.3
 ----------
 Advancing game to time 270.4
-The candidate round is 0
 Recorded cash and eco values (978.0,843.0) at time 270.4
 ----------
 Advancing game to time 270.5
-The candidate round is 0
 Recorded cash and eco values (978.0,843.0) at time 270.5
 ----------
 Advancing game to time 270.6
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 270.5250000000009
 Currently, the send queue looks like this: 
 [270.8750000000009, 271.22500000000093, 271.57500000000095, 271.925000000001, 272.275000000001, 272.625000000001]
 Recorded cash and eco values (908.0,846.0) at time 270.6
 ----------
 Advancing game to time 270.7
-The candidate round is 0
 Recorded cash and eco values (908.0,846.0) at time 270.7
 ----------
 Advancing game to time 270.75
-The candidate round is 0
 Recorded cash and eco values (908.0,846.0) at time 270.75
 ----------
 Advancing game to time 270.8
-The candidate round is 0
 Recorded cash and eco values (908.0,846.0) at time 270.8
 ----------
 Advancing game to time 270.9
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 270.8750000000009
 Currently, the send queue looks like this: 
 [271.22500000000093, 271.57500000000095, 271.925000000001, 272.275000000001, 272.625000000001, 272.97500000000105]
 Recorded cash and eco values (838.0,849.0) at time 270.9
 ----------
 Advancing game to time 271.0
-The candidate round is 0
 Recorded cash and eco values (838.0,849.0) at time 271.0
 ----------
 Advancing game to time 271.1
-The candidate round is 0
 Recorded cash and eco values (838.0,849.0) at time 271.1
 ----------
 Advancing game to time 271.2
-The candidate round is 0
 Recorded cash and eco values (838.0,849.0) at time 271.2
 ----------
 Advancing game to time 271.25
-The candidate round is 0
 Sent a set of Spaced Rainbows at time 271.22500000000093
 Currently, the send queue looks like this: 
 [271.57500000000095, 271.925000000001, 272.275000000001, 272.625000000001, 272.97500000000105, 273.32500000000107]
 Recorded cash and eco values (768.0,852.0) at time 271.25
 ----------
 Advancing game to time 271.3
-The candidate round is 0
 Recorded cash and eco values (768.0,852.0) at time 271.3
 ----------
 Advancing game to time 271.4
-The candidate round is 0
 Warning! The current eco send will not be available after the conclusion of round 12. Adjusting the target time.
 Recorded cash and eco values (768.0,852.0) at time 271.4
 Modified the eco send to Zero
 ----------
 Advancing game to time 271.45
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 271.45
 ----------
 Advancing game to time 271.5
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 271.5
 ----------
 Advancing game to time 271.6
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 271.6
 ----------
 Advancing game to time 271.7
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 271.7
 ----------
 Advancing game to time 271.75
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 271.75
 ----------
 Advancing game to time 271.8
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 271.8
 ----------
 Advancing game to time 271.9
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 271.9
 ----------
 Advancing game to time 272.0
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.0
 ----------
 Advancing game to time 272.1
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.1
 ----------
 Advancing game to time 272.2
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.2
 ----------
 Advancing game to time 272.25
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.25
 ----------
 Advancing game to time 272.3
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.3
 ----------
 Advancing game to time 272.4
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.4
 ----------
 Advancing game to time 272.5
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.5
 ----------
 Advancing game to time 272.6
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.6
 ----------
 Advancing game to time 272.7
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.7
 ----------
 Advancing game to time 272.75
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.75
 ----------
 Advancing game to time 272.8
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.8
 ----------
 Advancing game to time 272.9
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 272.9
 ----------
 Advancing game to time 273.0
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.0
 ----------
 Advancing game to time 273.1
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.1
 ----------
 Advancing game to time 273.2
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.2
 ----------
 Advancing game to time 273.25
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.25
 ----------
 Advancing game to time 273.3
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.3
 ----------
 Advancing game to time 273.4
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.4
 ----------
 Advancing game to time 273.5
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.5
 ----------
 Advancing game to time 273.6
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.6
 ----------
 Advancing game to time 273.7
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.7
 ----------
 Advancing game to time 273.75
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.75
 ----------
 Advancing game to time 273.8
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.8
 ----------
 Advancing game to time 273.9
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 273.9
 ----------
 Advancing game to time 274.0
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.0
 ----------
 Advancing game to time 274.1
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.1
 ----------
 Advancing game to time 274.2
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.2
 ----------
 Advancing game to time 274.25
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.25
 ----------
 Advancing game to time 274.3
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.3
 ----------
 Advancing game to time 274.4
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.4
 ----------
 Advancing game to time 274.5
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.5
 ----------
 Advancing game to time 274.6
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.6
 ----------
 Advancing game to time 274.7
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.7
 ----------
 Advancing game to time 274.75
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.75
 ----------
 Advancing game to time 274.8
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.8
 ----------
 Advancing game to time 274.9
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 274.9
 ----------
 Advancing game to time 275.0
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.0
 ----------
 Advancing game to time 275.1
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.1
 ----------
 Advancing game to time 275.2
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.2
 ----------
 Advancing game to time 275.25
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.25
 ----------
 Advancing game to time 275.3
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.3
 ----------
 Advancing game to time 275.4
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.4
 ----------
 Advancing game to time 275.5
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.5
 ----------
 Advancing game to time 275.6
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.6
 ----------
 Advancing game to time 275.7
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.7
 ----------
 Advancing game to time 275.75
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.75
 ----------
 Advancing game to time 275.8
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.8
 ----------
 Advancing game to time 275.9
-The candidate round is 10
 Recorded cash and eco values (768.0,852.0) at time 275.9
 ----------
 Advancing game to time 276.0
-The candidate round is 10
 Awarded eco payment 852.0 at time 276.0
 Recorded cash and eco values (1620.0,852.0) at time 276.0
 Recorded cash and eco values (1620.0,852.0) at time 276.0
 ----------
 Advancing game to time 276.1
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.1
 ----------
 Advancing game to time 276.2
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.2
 ----------
 Advancing game to time 276.25
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.25
 ----------
 Advancing game to time 276.3
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.3
 ----------
 Advancing game to time 276.4
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.4
 ----------
 Advancing game to time 276.5
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.5
 ----------
 Advancing game to time 276.6
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.6
 ----------
 Advancing game to time 276.7
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.7
 ----------
 Advancing game to time 276.75
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.75
 ----------
 Advancing game to time 276.8
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.8
 ----------
 Advancing game to time 276.9
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 276.9
 ----------
 Advancing game to time 277.0
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.0
 ----------
 Advancing game to time 277.1
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.1
 ----------
 Advancing game to time 277.2
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.2
 ----------
 Advancing game to time 277.25
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.25
 ----------
 Advancing game to time 277.3
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.3
 ----------
 Advancing game to time 277.4
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.4
 ----------
 Advancing game to time 277.5
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.5
 ----------
 Advancing game to time 277.6
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.6
 ----------
 Advancing game to time 277.7
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.7
 ----------
 Advancing game to time 277.75
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.75
 ----------
 Advancing game to time 277.8
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.8
 ----------
 Advancing game to time 277.9
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 277.9
 ----------
 Advancing game to time 278.0
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.0
 ----------
 Advancing game to time 278.1
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.1
 ----------
 Advancing game to time 278.2
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.2
 ----------
 Advancing game to time 278.25
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.25
 ----------
 Advancing game to time 278.3
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.3
 ----------
 Advancing game to time 278.4
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.4
 ----------
 Advancing game to time 278.5
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.5
 ----------
 Advancing game to time 278.6
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.6
 ----------
 Advancing game to time 278.7
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.7
 ----------
 Advancing game to time 278.75
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.75
 ----------
 Advancing game to time 278.8
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.8
 ----------
 Advancing game to time 278.9
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 278.9
 ----------
 Advancing game to time 279.0
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.0
 ----------
 Advancing game to time 279.1
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.1
 ----------
 Advancing game to time 279.2
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.2
 ----------
 Advancing game to time 279.25
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.25
 ----------
 Advancing game to time 279.3
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.3
 ----------
 Advancing game to time 279.4
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.4
 ----------
 Advancing game to time 279.5
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.5
 ----------
 Advancing game to time 279.6
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.6
 ----------
 Advancing game to time 279.7
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.7
 ----------
 Advancing game to time 279.75
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.75
 ----------
 Advancing game to time 279.8
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.8
 ----------
 Advancing game to time 279.9
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 279.9
 ----------
 Advancing game to time 280.0
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.0
 ----------
 Advancing game to time 280.1
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.1
 ----------
 Advancing game to time 280.2
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.2
 ----------
 Advancing game to time 280.25
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.25
 ----------
 Advancing game to time 280.3
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.3
 ----------
 Advancing game to time 280.4
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.4
 ----------
 Advancing game to time 280.5
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.5
 ----------
 Advancing game to time 280.6
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.6
 ----------
 Advancing game to time 280.7
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.7
 ----------
 Advancing game to time 280.75
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.75
 ----------
 Advancing game to time 280.8
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.8
 ----------
 Advancing game to time 280.9
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 280.9
 ----------
 Advancing game to time 281.0
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.0
 ----------
 Advancing game to time 281.1
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.1
 ----------
 Advancing game to time 281.2
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.2
 ----------
 Advancing game to time 281.25
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.25
 ----------
 Advancing game to time 281.3
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.3
 ----------
 Advancing game to time 281.4
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.4
 ----------
 Advancing game to time 281.5
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.5
 ----------
 Advancing game to time 281.6
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.6
 ----------
 Advancing game to time 281.7
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.7
 ----------
 Advancing game to time 281.75
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.75
 ----------
 Advancing game to time 281.8
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.8
 ----------
 Advancing game to time 281.9
-The candidate round is 10
 Recorded cash and eco values (1620.0,852.0) at time 281.9
 ----------
 Advancing game to time 282.0
-The candidate round is 10
 Awarded eco payment 852.0 at time 282.0
 Recorded cash and eco values (2472.0,852.0) at time 282.0
 Recorded cash and eco values (2472.0,852.0) at time 282.0
 ----------
 Advancing game to time 282.1
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.1
 ----------
 Advancing game to time 282.2
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.2
 ----------
 Advancing game to time 282.25
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.25
 ----------
 Advancing game to time 282.3
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.3
 ----------
 Advancing game to time 282.4
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.4
 ----------
 Advancing game to time 282.5
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.5
 ----------
 Advancing game to time 282.6
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.6
 ----------
 Advancing game to time 282.7
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.7
 ----------
 Advancing game to time 282.75
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.75
 ----------
 Advancing game to time 282.8
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.8
 ----------
 Advancing game to time 282.9
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 282.9
 ----------
 Advancing game to time 283.0
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.0
 ----------
 Advancing game to time 283.1
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.1
 ----------
 Advancing game to time 283.2
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.2
 ----------
 Advancing game to time 283.25
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.25
 ----------
 Advancing game to time 283.3
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.3
 ----------
 Advancing game to time 283.4
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.4
 ----------
 Advancing game to time 283.5
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.5
 ----------
 Advancing game to time 283.6
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.6
 ----------
 Advancing game to time 283.7
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.7
 ----------
 Advancing game to time 283.75
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.75
 ----------
 Advancing game to time 283.8
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.8
 ----------
 Advancing game to time 283.9
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 283.9
 ----------
 Advancing game to time 284.0
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.0
 ----------
 Advancing game to time 284.1
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.1
 ----------
 Advancing game to time 284.2
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.2
 ----------
 Advancing game to time 284.25
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.25
 ----------
 Advancing game to time 284.3
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.3
 ----------
 Advancing game to time 284.4
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.4
 ----------
 Advancing game to time 284.5
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.5
 ----------
 Advancing game to time 284.6
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.6
 ----------
 Advancing game to time 284.7
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.7
 ----------
 Advancing game to time 284.75
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.75
 ----------
 Advancing game to time 284.8
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.8
 ----------
 Advancing game to time 284.9
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 284.9
 ----------
 Advancing game to time 285.0
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.0
 ----------
 Advancing game to time 285.1
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.1
 ----------
 Advancing game to time 285.2
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.2
 ----------
 Advancing game to time 285.25
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.25
 ----------
 Advancing game to time 285.3
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.3
 ----------
 Advancing game to time 285.4
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.4
 ----------
 Advancing game to time 285.5
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.5
 ----------
 Advancing game to time 285.6
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.6
 ----------
 Advancing game to time 285.7
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.7
 ----------
 Advancing game to time 285.75
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.75
 ----------
 Advancing game to time 285.8
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.8
 ----------
 Advancing game to time 285.9
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 285.9
 ----------
 Advancing game to time 286.0
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.0
 ----------
 Advancing game to time 286.1
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.1
 ----------
 Advancing game to time 286.2
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.2
 ----------
 Advancing game to time 286.25
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.25
 ----------
 Advancing game to time 286.3
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.3
 ----------
 Advancing game to time 286.4
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.4
 ----------
 Advancing game to time 286.5
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.5
 ----------
 Advancing game to time 286.6
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.6
 ----------
 Advancing game to time 286.7
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.7
 ----------
 Advancing game to time 286.75
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.75
 ----------
 Advancing game to time 286.8
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.8
 ----------
 Advancing game to time 286.9
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 286.9
 ----------
 Advancing game to time 287.0
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.0
 ----------
 Advancing game to time 287.1
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.1
 ----------
 Advancing game to time 287.2
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.2
 ----------
 Advancing game to time 287.25
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.25
 ----------
 Advancing game to time 287.3
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.3
 ----------
 Advancing game to time 287.4
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.4
 ----------
 Advancing game to time 287.5
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.5
 ----------
 Advancing game to time 287.6
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.6
 ----------
 Advancing game to time 287.7
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.7
 ----------
 Advancing game to time 287.75
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.75
 ----------
 Advancing game to time 287.8
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.8
 ----------
 Advancing game to time 287.9
-The candidate round is 10
 Recorded cash and eco values (2472.0,852.0) at time 287.9
 ----------
 Advancing game to time 288.0
-The candidate round is 10
 Awarded eco payment 852.0 at time 288.0
 Recorded cash and eco values (3324.0,852.0) at time 288.0
 Recorded cash and eco values (3324.0,852.0) at time 288.0
 ----------
 Advancing game to time 288.1
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.1
 ----------
 Advancing game to time 288.2
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.2
 ----------
 Advancing game to time 288.25
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.25
 ----------
 Advancing game to time 288.3
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.3
 ----------
 Advancing game to time 288.4
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.4
 ----------
 Advancing game to time 288.5
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.5
 ----------
 Advancing game to time 288.6
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.6
 ----------
 Advancing game to time 288.7
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.7
 ----------
 Advancing game to time 288.75
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.75
 ----------
 Advancing game to time 288.8
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.8
 ----------
 Advancing game to time 288.9
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 288.9
 ----------
 Advancing game to time 289.0
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.0
 ----------
 Advancing game to time 289.1
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.1
 ----------
 Advancing game to time 289.2
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.2
 ----------
 Advancing game to time 289.25
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.25
 ----------
 Advancing game to time 289.3
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.3
 ----------
 Advancing game to time 289.4
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.4
 ----------
 Advancing game to time 289.5
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.5
 ----------
 Advancing game to time 289.6
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.6
 ----------
 Advancing game to time 289.7
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.7
 ----------
 Advancing game to time 289.75
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.75
 ----------
 Advancing game to time 289.8
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.8
 ----------
 Advancing game to time 289.9
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 289.9
 ----------
 Advancing game to time 290.0
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.0
 ----------
 Advancing game to time 290.1
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.1
 ----------
 Advancing game to time 290.2
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.2
 ----------
 Advancing game to time 290.25
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.25
 ----------
 Advancing game to time 290.3
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.3
 ----------
 Advancing game to time 290.4
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.4
 ----------
 Advancing game to time 290.5
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.5
 ----------
 Advancing game to time 290.6
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.6
 ----------
 Advancing game to time 290.7
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.7
 ----------
 Advancing game to time 290.75
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.75
 ----------
 Advancing game to time 290.8
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.8
 ----------
 Advancing game to time 290.9
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 290.9
 ----------
 Advancing game to time 291.0
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.0
 ----------
 Advancing game to time 291.1
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.1
 ----------
 Advancing game to time 291.2
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.2
 ----------
 Advancing game to time 291.25
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.25
 ----------
 Advancing game to time 291.3
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.3
 ----------
 Advancing game to time 291.4
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.4
 ----------
 Advancing game to time 291.5
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.5
 ----------
 Advancing game to time 291.6
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.6
 ----------
 Advancing game to time 291.7
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.7
 ----------
 Advancing game to time 291.75
-The candidate round is 10
 Recorded cash and eco values (3324.0,852.0) at time 291.75
 ----------
 Advancing game to time 291.8
-The candidate round is 10
 We have 3324.0 cash! We can do the next buy, which costs 2550.0 and has a buffer of 0 and a minimum buy time of 291.8!
 Completed the buy operation! The buy queue now has 0 items remaining in it
 Recorded cash and eco values (774.0,852.0) at time 291.8

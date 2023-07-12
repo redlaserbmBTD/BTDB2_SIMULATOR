@@ -6,1729 +6,1300 @@ The game round start times are given by [0, 6.0, 31.5, 55.25, 80.25, 110.5, 139.
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 285.6
-The candidate round is 0
 Modified the eco send to Zero
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 285.6
 ----------
 Advancing game to time 285.7
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 285.7
 ----------
 Advancing game to time 285.75
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 285.75
 ----------
 Advancing game to time 285.8
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 285.8
 ----------
 Advancing game to time 285.9
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 285.9
 ----------
 Advancing game to time 286.0
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.0
 ----------
 Advancing game to time 286.1
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.1
 ----------
 Advancing game to time 286.2
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.2
 ----------
 Advancing game to time 286.25
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.25
 ----------
 Advancing game to time 286.3
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.3
 ----------
 Advancing game to time 286.4
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.4
 ----------
 Advancing game to time 286.5
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.5
 ----------
 Advancing game to time 286.6
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.6
 ----------
 Advancing game to time 286.7
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.7
 ----------
 Advancing game to time 286.75
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.75
 ----------
 Advancing game to time 286.8
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.8
 ----------
 Advancing game to time 286.9
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 286.9
 ----------
 Advancing game to time 287.0
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.0
 ----------
 Advancing game to time 287.1
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.1
 ----------
 Advancing game to time 287.2
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.2
 ----------
 Advancing game to time 287.25
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.25
 ----------
 Advancing game to time 287.3
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.3
 ----------
 Advancing game to time 287.4
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.4
 ----------
 Advancing game to time 287.5
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.5
 ----------
 Advancing game to time 287.6
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.6
 ----------
 Advancing game to time 287.7
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.7
 ----------
 Advancing game to time 287.75
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.75
 ----------
 Advancing game to time 287.8
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.8
 ----------
 Advancing game to time 287.9
-The candidate round is 9
 Recorded cash and eco values (0,850) at time 287.9
 ----------
 Advancing game to time 288.0
-The candidate round is 9
 Awarded eco payment 850 at time 288.0
 Recorded cash and eco values (850,850) at time 288.0
 Recorded cash and eco values (850,850) at time 288.0
 ----------
 Advancing game to time 288.1
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.1
 ----------
 Advancing game to time 288.2
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.2
 ----------
 Advancing game to time 288.25
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.25
 ----------
 Advancing game to time 288.3
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.3
 ----------
 Advancing game to time 288.4
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.4
 ----------
 Advancing game to time 288.5
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.5
 ----------
 Advancing game to time 288.6
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.6
 ----------
 Advancing game to time 288.7
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.7
 ----------
 Advancing game to time 288.75
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.75
 ----------
 Advancing game to time 288.8
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.8
 ----------
 Advancing game to time 288.9
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 288.9
 ----------
 Advancing game to time 289.0
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.0
 ----------
 Advancing game to time 289.1
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.1
 ----------
 Advancing game to time 289.2
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.2
 ----------
 Advancing game to time 289.25
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.25
 ----------
 Advancing game to time 289.3
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.3
 ----------
 Advancing game to time 289.4
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.4
 ----------
 Advancing game to time 289.5
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.5
 ----------
 Advancing game to time 289.6
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.6
 ----------
 Advancing game to time 289.7
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.7
 ----------
 Advancing game to time 289.75
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.75
 ----------
 Advancing game to time 289.8
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.8
 ----------
 Advancing game to time 289.9
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 289.9
 ----------
 Advancing game to time 290.0
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.0
 ----------
 Advancing game to time 290.1
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.1
 ----------
 Advancing game to time 290.2
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.2
 ----------
 Advancing game to time 290.25
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.25
 ----------
 Advancing game to time 290.3
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.3
 ----------
 Advancing game to time 290.4
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.4
 ----------
 Advancing game to time 290.5
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.5
 ----------
 Advancing game to time 290.6
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.6
 ----------
 Advancing game to time 290.7
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.7
 ----------
 Advancing game to time 290.75
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.75
 ----------
 Advancing game to time 290.8
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.8
 ----------
 Advancing game to time 290.9
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 290.9
 ----------
 Advancing game to time 291.0
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.0
 ----------
 Advancing game to time 291.1
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.1
 ----------
 Advancing game to time 291.2
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.2
 ----------
 Advancing game to time 291.25
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.25
 ----------
 Advancing game to time 291.3
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.3
 ----------
 Advancing game to time 291.4
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.4
 ----------
 Advancing game to time 291.5
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.5
 ----------
 Advancing game to time 291.6
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.6
 ----------
 Advancing game to time 291.7
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.7
 ----------
 Advancing game to time 291.75
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.75
 ----------
 Advancing game to time 291.8
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.8
 ----------
 Advancing game to time 291.9
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 291.9
 ----------
 Advancing game to time 292.0
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.0
 ----------
 Advancing game to time 292.1
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.1
 ----------
 Advancing game to time 292.2
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.2
 ----------
 Advancing game to time 292.25
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.25
 ----------
 Advancing game to time 292.3
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.3
 ----------
 Advancing game to time 292.4
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.4
 ----------
 Advancing game to time 292.5
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.5
 ----------
 Advancing game to time 292.6
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.6
 ----------
 Advancing game to time 292.7
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.7
 ----------
 Advancing game to time 292.75
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.75
 ----------
 Advancing game to time 292.8
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.8
 ----------
 Advancing game to time 292.9
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 292.9
 ----------
 Advancing game to time 293.0
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.0
 ----------
 Advancing game to time 293.1
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.1
 ----------
 Advancing game to time 293.2
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.2
 ----------
 Advancing game to time 293.25
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.25
 ----------
 Advancing game to time 293.3
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.3
 ----------
 Advancing game to time 293.4
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.4
 ----------
 Advancing game to time 293.5
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.5
 ----------
 Advancing game to time 293.6
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.6
 ----------
 Advancing game to time 293.7
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.7
 ----------
 Advancing game to time 293.75
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.75
 ----------
 Advancing game to time 293.8
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.8
 ----------
 Advancing game to time 293.9
-The candidate round is 9
 Recorded cash and eco values (850,850) at time 293.9
 ----------
 Advancing game to time 294.0
-The candidate round is 9
 Awarded eco payment 850 at time 294.0
 Recorded cash and eco values (1700,850) at time 294.0
 Recorded cash and eco values (1700,850) at time 294.0
 ----------
 Advancing game to time 294.1
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.1
 ----------
 Advancing game to time 294.2
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.2
 ----------
 Advancing game to time 294.25
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.25
 ----------
 Advancing game to time 294.3
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.3
 ----------
 Advancing game to time 294.4
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.4
 ----------
 Advancing game to time 294.5
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.5
 ----------
 Advancing game to time 294.6
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.6
 ----------
 Advancing game to time 294.7
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.7
 ----------
 Advancing game to time 294.75
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.75
 ----------
 Advancing game to time 294.8
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.8
 ----------
 Advancing game to time 294.9
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 294.9
 ----------
 Advancing game to time 295.0
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.0
 ----------
 Advancing game to time 295.1
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.1
 ----------
 Advancing game to time 295.2
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.2
 ----------
 Advancing game to time 295.25
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.25
 ----------
 Advancing game to time 295.3
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.3
 ----------
 Advancing game to time 295.4
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.4
 ----------
 Advancing game to time 295.5
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.5
 ----------
 Advancing game to time 295.6
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.6
 ----------
 Advancing game to time 295.7
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.7
 ----------
 Advancing game to time 295.75
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.75
 ----------
 Advancing game to time 295.8
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.8
 ----------
 Advancing game to time 295.9
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 295.9
 ----------
 Advancing game to time 296.0
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.0
 ----------
 Advancing game to time 296.1
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.1
 ----------
 Advancing game to time 296.2
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.2
 ----------
 Advancing game to time 296.25
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.25
 ----------
 Advancing game to time 296.3
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.3
 ----------
 Advancing game to time 296.4
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.4
 ----------
 Advancing game to time 296.5
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.5
 ----------
 Advancing game to time 296.6
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.6
 ----------
 Advancing game to time 296.7
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.7
 ----------
 Advancing game to time 296.75
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.75
 ----------
 Advancing game to time 296.8
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.8
 ----------
 Advancing game to time 296.9
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 296.9
 ----------
 Advancing game to time 297.0
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.0
 ----------
 Advancing game to time 297.1
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.1
 ----------
 Advancing game to time 297.2
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.2
 ----------
 Advancing game to time 297.25
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.25
 ----------
 Advancing game to time 297.3
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.3
 ----------
 Advancing game to time 297.4
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.4
 ----------
 Advancing game to time 297.5
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.5
 ----------
 Advancing game to time 297.6
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.6
 ----------
 Advancing game to time 297.7
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.7
 ----------
 Advancing game to time 297.75
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.75
 ----------
 Advancing game to time 297.8
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.8
 ----------
 Advancing game to time 297.9
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 297.9
 ----------
 Advancing game to time 298.0
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.0
 ----------
 Advancing game to time 298.1
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.1
 ----------
 Advancing game to time 298.2
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.2
 ----------
 Advancing game to time 298.25
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.25
 ----------
 Advancing game to time 298.3
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.3
 ----------
 Advancing game to time 298.4
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.4
 ----------
 Advancing game to time 298.5
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.5
 ----------
 Advancing game to time 298.6
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.6
 ----------
 Advancing game to time 298.7
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.7
 ----------
 Advancing game to time 298.75
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.75
 ----------
 Advancing game to time 298.8
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.8
 ----------
 Advancing game to time 298.9
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 298.9
 ----------
 Advancing game to time 299.0
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.0
 ----------
 Advancing game to time 299.1
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.1
 ----------
 Advancing game to time 299.2
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.2
 ----------
 Advancing game to time 299.25
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.25
 ----------
 Advancing game to time 299.3
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.3
 ----------
 Advancing game to time 299.4
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.4
 ----------
 Advancing game to time 299.5
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.5
 ----------
 Advancing game to time 299.6
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.6
 ----------
 Advancing game to time 299.7
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.7
 ----------
 Advancing game to time 299.75
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.75
 ----------
 Advancing game to time 299.8
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.8
 ----------
 Advancing game to time 299.9
-The candidate round is 9
 Recorded cash and eco values (1700,850) at time 299.9
 ----------
 Advancing game to time 300.0
-The candidate round is 9
 Awarded eco payment 850 at time 300.0
 Recorded cash and eco values (2550,850) at time 300.0
 Recorded cash and eco values (2550,850) at time 300.0
 ----------
 Advancing game to time 300.1
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.1
 ----------
 Advancing game to time 300.2
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.2
 ----------
 Advancing game to time 300.25
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.25
 ----------
 Advancing game to time 300.3
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.3
 ----------
 Advancing game to time 300.4
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.4
 ----------
 Advancing game to time 300.5
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.5
 ----------
 Advancing game to time 300.6
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.6
 ----------
 Advancing game to time 300.7
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.7
 ----------
 Advancing game to time 300.75
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.75
 ----------
 Advancing game to time 300.8
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.8
 ----------
 Advancing game to time 300.9
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 300.9
 ----------
 Advancing game to time 301.0
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.0
 ----------
 Advancing game to time 301.1
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.1
 ----------
 Advancing game to time 301.2
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.2
 ----------
 Advancing game to time 301.25
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.25
 ----------
 Advancing game to time 301.3
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.3
 ----------
 Advancing game to time 301.4
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.4
 ----------
 Advancing game to time 301.5
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.5
 ----------
 Advancing game to time 301.6
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.6
 ----------
 Advancing game to time 301.7
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.7
 ----------
 Advancing game to time 301.75
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.75
 ----------
 Advancing game to time 301.8
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.8
 ----------
 Advancing game to time 301.9
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 301.9
 ----------
 Advancing game to time 302.0
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.0
 ----------
 Advancing game to time 302.1
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.1
 ----------
 Advancing game to time 302.2
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.2
 ----------
 Advancing game to time 302.25
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.25
 ----------
 Advancing game to time 302.3
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.3
 ----------
 Advancing game to time 302.4
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.4
 ----------
 Advancing game to time 302.5
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.5
 ----------
 Advancing game to time 302.6
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.6
 ----------
 Advancing game to time 302.7
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.7
 ----------
 Advancing game to time 302.75
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.75
 ----------
 Advancing game to time 302.8
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.8
 ----------
 Advancing game to time 302.9
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 302.9
 ----------
 Advancing game to time 303.0
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.0
 ----------
 Advancing game to time 303.1
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.1
 ----------
 Advancing game to time 303.2
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.2
 ----------
 Advancing game to time 303.25
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.25
 ----------
 Advancing game to time 303.3
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.3
 ----------
 Advancing game to time 303.4
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.4
 ----------
 Advancing game to time 303.5
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.5
 ----------
 Advancing game to time 303.6
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.6
 ----------
 Advancing game to time 303.7
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.7
 ----------
 Advancing game to time 303.75
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.75
 ----------
 Advancing game to time 303.8
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.8
 ----------
 Advancing game to time 303.9
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 303.9
 ----------
 Advancing game to time 304.0
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.0
 ----------
 Advancing game to time 304.1
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.1
 ----------
 Advancing game to time 304.2
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.2
 ----------
 Advancing game to time 304.25
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.25
 ----------
 Advancing game to time 304.3
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.3
 ----------
 Advancing game to time 304.4
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.4
 ----------
 Advancing game to time 304.5
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.5
 ----------
 Advancing game to time 304.6
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.6
 ----------
 Advancing game to time 304.7
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.7
 ----------
 Advancing game to time 304.75
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.75
 ----------
 Advancing game to time 304.8
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.8
 ----------
 Advancing game to time 304.9
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 304.9
 ----------
 Advancing game to time 305.0
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.0
 ----------
 Advancing game to time 305.1
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.1
 ----------
 Advancing game to time 305.2
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.2
 ----------
 Advancing game to time 305.25
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.25
 ----------
 Advancing game to time 305.3
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.3
 ----------
 Advancing game to time 305.4
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.4
 ----------
 Advancing game to time 305.5
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.5
 ----------
 Advancing game to time 305.6
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.6
 ----------
 Advancing game to time 305.7
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.7
 ----------
 Advancing game to time 305.75
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.75
 ----------
 Advancing game to time 305.8
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.8
 ----------
 Advancing game to time 305.9
-The candidate round is 9
 Recorded cash and eco values (2550,850) at time 305.9
 ----------
 Advancing game to time 306.0
-The candidate round is 9
 Awarded eco payment 850 at time 306.0
 Recorded cash and eco values (3400,850) at time 306.0
 Recorded cash and eco values (3400,850) at time 306.0
 ----------
 Advancing game to time 306.1
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.1
 ----------
 Advancing game to time 306.2
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.2
 ----------
 Advancing game to time 306.25
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.25
 ----------
 Advancing game to time 306.3
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.3
 ----------
 Advancing game to time 306.4
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.4
 ----------
 Advancing game to time 306.5
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.5
 ----------
 Advancing game to time 306.6
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.6
 ----------
 Advancing game to time 306.7
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.7
 ----------
 Advancing game to time 306.75
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.75
 ----------
 Advancing game to time 306.8
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.8
 ----------
 Advancing game to time 306.9
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 306.9
 ----------
 Advancing game to time 307.0
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.0
 ----------
 Advancing game to time 307.1
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.1
 ----------
 Advancing game to time 307.2
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.2
 ----------
 Advancing game to time 307.3
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.3
 ----------
 Advancing game to time 307.4
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.4
 ----------
 Advancing game to time 307.5
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.5
 ----------
 Advancing game to time 307.6
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.6
 ----------
 Advancing game to time 307.7
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.7
 ----------
 Advancing game to time 307.8
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.8
 ----------
 Advancing game to time 307.9
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 307.9
 ----------
 Advancing game to time 308.0
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.0
 ----------
 Advancing game to time 308.1
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.1
 ----------
 Advancing game to time 308.2
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.2
 ----------
 Advancing game to time 308.3
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.3
 ----------
 Advancing game to time 308.4
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.4
 ----------
 Advancing game to time 308.5
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.5
 ----------
 Advancing game to time 308.6
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.6
 ----------
 Advancing game to time 308.7
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.7
 ----------
 Advancing game to time 308.8
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.8
 ----------
 Advancing game to time 308.9
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 308.9
 ----------
 Advancing game to time 309.0
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.0
 ----------
 Advancing game to time 309.1
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.1
 ----------
 Advancing game to time 309.2
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.2
 ----------
 Advancing game to time 309.3
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.3
 ----------
 Advancing game to time 309.4
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.4
 ----------
 Advancing game to time 309.5
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.5
 ----------
 Advancing game to time 309.6
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.6
 ----------
 Advancing game to time 309.7
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.7
 ----------
 Advancing game to time 309.8
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.8
 ----------
 Advancing game to time 309.9
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 309.9
 ----------
 Advancing game to time 310.0
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.0
 ----------
 Advancing game to time 310.1
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.1
 ----------
 Advancing game to time 310.2
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.2
 ----------
 Advancing game to time 310.3
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.3
 ----------
 Advancing game to time 310.4
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.4
 ----------
 Advancing game to time 310.5
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.5
 ----------
 Advancing game to time 310.6
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.6
 ----------
 Advancing game to time 310.7
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.7
 ----------
 Advancing game to time 310.8
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.8
 ----------
 Advancing game to time 310.9
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 310.9
 ----------
 Advancing game to time 311.0
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.0
 ----------
 Advancing game to time 311.1
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.1
 ----------
 Advancing game to time 311.2
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.2
 ----------
 Advancing game to time 311.3
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.3
 ----------
 Advancing game to time 311.4
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.4
 ----------
 Advancing game to time 311.5
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.5
 ----------
 Advancing game to time 311.6
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.6
 ----------
 Advancing game to time 311.7
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.7
 ----------
 Advancing game to time 311.8
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.8
 ----------
 Advancing game to time 311.9
-The candidate round is 9
 Recorded cash and eco values (3400,850) at time 311.9
 ----------
 Advancing game to time 312.0
-The candidate round is 9
 Awarded eco payment 850 at time 312.0
 Recorded cash and eco values (4250,850) at time 312.0
 Recorded cash and eco values (4250,850) at time 312.0
 ----------
 Advancing game to time 312.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.1
 ----------
 Advancing game to time 312.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.2
 ----------
 Advancing game to time 312.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.3
 ----------
 Advancing game to time 312.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.4
 ----------
 Advancing game to time 312.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.5
 ----------
 Advancing game to time 312.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.6
 ----------
 Advancing game to time 312.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.7
 ----------
 Advancing game to time 312.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.8
 ----------
 Advancing game to time 312.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 312.9
 ----------
 Advancing game to time 313.0
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.0
 ----------
 Advancing game to time 313.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.1
 ----------
 Advancing game to time 313.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.2
 ----------
 Advancing game to time 313.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.3
 ----------
 Advancing game to time 313.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.4
 ----------
 Advancing game to time 313.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.5
 ----------
 Advancing game to time 313.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.6
 ----------
 Advancing game to time 313.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.7
 ----------
 Advancing game to time 313.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.8
 ----------
 Advancing game to time 313.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 313.9
 ----------
 Advancing game to time 314.0
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.0
 ----------
 Advancing game to time 314.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.1
 ----------
 Advancing game to time 314.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.2
 ----------
 Advancing game to time 314.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.3
 ----------
 Advancing game to time 314.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.4
 ----------
 Advancing game to time 314.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.5
 ----------
 Advancing game to time 314.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.6
 ----------
 Advancing game to time 314.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.7
 ----------
 Advancing game to time 314.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.8
 ----------
 Advancing game to time 314.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 314.9
 ----------
 Advancing game to time 315.0
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.0
 ----------
 Advancing game to time 315.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.1
 ----------
 Advancing game to time 315.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.2
 ----------
 Advancing game to time 315.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.3
 ----------
 Advancing game to time 315.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.4
 ----------
 Advancing game to time 315.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.5
 ----------
 Advancing game to time 315.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.6
 ----------
 Advancing game to time 315.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.7
 ----------
 Advancing game to time 315.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.8
 ----------
 Advancing game to time 315.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 315.9
 ----------
 Advancing game to time 316.0
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.0
 ----------
 Advancing game to time 316.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.1
 ----------
 Advancing game to time 316.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.2
 ----------
 Advancing game to time 316.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.3
 ----------
 Advancing game to time 316.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.4
 ----------
 Advancing game to time 316.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.5
 ----------
 Advancing game to time 316.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.6
 ----------
 Advancing game to time 316.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.7
 ----------
 Advancing game to time 316.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.8
 ----------
 Advancing game to time 316.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 316.9
 ----------
 Advancing game to time 317.0
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.0
 ----------
 Advancing game to time 317.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.1
 ----------
 Advancing game to time 317.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.2
 ----------
 Advancing game to time 317.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.3
 ----------
 Advancing game to time 317.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.4
 ----------
 Advancing game to time 317.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.5
 ----------
 Advancing game to time 317.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.6
 ----------
 Advancing game to time 317.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.7
 ----------
 Advancing game to time 317.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.8
 ----------
 Advancing game to time 317.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 317.9
 ----------
 Advancing game to time 318.0
-The candidate round is 9
 Awarded eco payment 850 at time 318.0
 Recorded cash and eco values (5100,850) at time 318.0
 Recorded cash and eco values (5100,850) at time 318.0
 ----------
 Advancing game to time 318.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.1
 ----------
 Advancing game to time 318.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.2
 ----------
 Advancing game to time 318.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.3
 ----------
 Advancing game to time 318.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.4
 ----------
 Advancing game to time 318.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.5
 ----------
 Advancing game to time 318.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.6
 ----------
 Advancing game to time 318.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.7
 ----------
 Advancing game to time 318.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.8
 ----------
 Advancing game to time 318.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 318.9
 ----------
 Advancing game to time 319.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.0
 ----------
 Advancing game to time 319.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.1
 ----------
 Advancing game to time 319.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.2
 ----------
 Advancing game to time 319.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.3
 ----------
 Advancing game to time 319.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.4
 ----------
 Advancing game to time 319.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.5
 ----------
 Advancing game to time 319.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.6
 ----------
 Advancing game to time 319.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.7
 ----------
 Advancing game to time 319.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.8
 ----------
 Advancing game to time 319.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 319.9
 ----------
 Advancing game to time 320.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.0
 ----------
 Advancing game to time 320.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.1
 ----------
 Advancing game to time 320.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.2
 ----------
 Advancing game to time 320.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.3
 ----------
 Advancing game to time 320.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.4
 ----------
 Advancing game to time 320.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.5
 ----------
 Advancing game to time 320.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.6
 ----------
 Advancing game to time 320.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.7
 ----------
 Advancing game to time 320.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.8
 ----------
 Advancing game to time 320.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 320.9
 ----------
 Advancing game to time 321.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.0
 ----------
 Advancing game to time 321.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.1
 ----------
 Advancing game to time 321.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.2
 ----------
 Advancing game to time 321.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.3
 ----------
 Advancing game to time 321.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.4
 ----------
 Advancing game to time 321.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.5
 ----------
 Advancing game to time 321.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.6
 ----------
 Advancing game to time 321.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.7
 ----------
 Advancing game to time 321.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.8
 ----------
 Advancing game to time 321.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 321.9
 ----------
 Advancing game to time 322.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.0
 ----------
 Advancing game to time 322.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.1
 ----------
 Advancing game to time 322.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.2
 ----------
 Advancing game to time 322.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.3
 ----------
 Advancing game to time 322.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.4
 ----------
 Advancing game to time 322.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.5
 ----------
 Advancing game to time 322.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.6
 ----------
 Advancing game to time 322.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.7
 ----------
 Advancing game to time 322.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.8
 ----------
 Advancing game to time 322.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 322.9
 ----------
 Advancing game to time 323.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.0
 ----------
 Advancing game to time 323.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.1
 ----------
 Advancing game to time 323.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.2
 ----------
 Advancing game to time 323.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.3
 ----------
 Advancing game to time 323.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.4
 ----------
 Advancing game to time 323.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.5
 ----------
 Advancing game to time 323.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.6
 ----------
 Advancing game to time 323.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.7
 ----------
 Advancing game to time 323.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.8
 ----------
 Advancing game to time 323.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 323.9
 ----------
 Advancing game to time 324.0
-The candidate round is 9
 Awarded eco payment 850 at time 324.0
 Recorded cash and eco values (5950,850) at time 324.0
 We have 5950 cash! We can do the next buy, which costs 5400 and has a buffer of 0 and a minimum buy time of 0!
@@ -1737,2909 +1308,2189 @@ Completed the buy operation! The buy queue now has 2 items remaining in it
 Recorded cash and eco values (550,850) at time 324.0
 ----------
 Advancing game to time 324.1
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.1
 ----------
 Advancing game to time 324.2
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.2
 ----------
 Advancing game to time 324.3
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.3
 ----------
 Advancing game to time 324.4
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.4
 ----------
 Advancing game to time 324.5
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.5
 ----------
 Advancing game to time 324.6
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.6
 ----------
 Advancing game to time 324.7
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.7
 ----------
 Advancing game to time 324.8
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.8
 ----------
 Advancing game to time 324.9
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 324.9
 ----------
 Advancing game to time 325.0
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.0
 ----------
 Advancing game to time 325.1
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.1
 ----------
 Advancing game to time 325.2
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.2
 ----------
 Advancing game to time 325.3
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.3
 ----------
 Advancing game to time 325.4
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.4
 ----------
 Advancing game to time 325.5
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.5
 ----------
 Advancing game to time 325.6
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.6
 ----------
 Advancing game to time 325.7
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.7
 ----------
 Advancing game to time 325.8
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.8
 ----------
 Advancing game to time 325.9
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 325.9
 ----------
 Advancing game to time 326.0
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.0
 ----------
 Advancing game to time 326.1
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.1
 ----------
 Advancing game to time 326.2
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.2
 ----------
 Advancing game to time 326.3
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.3
 ----------
 Advancing game to time 326.4
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.4
 ----------
 Advancing game to time 326.5
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.5
 ----------
 Advancing game to time 326.6
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.6
 ----------
 Advancing game to time 326.7
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.7
 ----------
 Advancing game to time 326.8
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.8
 ----------
 Advancing game to time 326.9
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 326.9
 ----------
 Advancing game to time 327.0
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.0
 ----------
 Advancing game to time 327.1
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.1
 ----------
 Advancing game to time 327.2
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.2
 ----------
 Advancing game to time 327.3
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.3
 ----------
 Advancing game to time 327.4
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.4
 ----------
 Advancing game to time 327.5
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.5
 ----------
 Advancing game to time 327.6
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.6
 ----------
 Advancing game to time 327.7
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.7
 ----------
 Advancing game to time 327.8
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.8
 ----------
 Advancing game to time 327.9
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 327.9
 ----------
 Advancing game to time 328.0
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.0
 ----------
 Advancing game to time 328.1
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.1
 ----------
 Advancing game to time 328.2
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.2
 ----------
 Advancing game to time 328.3
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.3
 ----------
 Advancing game to time 328.4
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.4
 ----------
 Advancing game to time 328.5
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.5
 ----------
 Advancing game to time 328.6
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.6
 ----------
 Advancing game to time 328.7
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.7
 ----------
 Advancing game to time 328.8
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.8
 ----------
 Advancing game to time 328.9
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 328.9
 ----------
 Advancing game to time 329.0
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.0
 ----------
 Advancing game to time 329.1
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.1
 ----------
 Advancing game to time 329.2
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.2
 ----------
 Advancing game to time 329.3
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.3
 ----------
 Advancing game to time 329.4
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.4
 ----------
 Advancing game to time 329.5
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.5
 ----------
 Advancing game to time 329.6
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.6
 ----------
 Advancing game to time 329.7
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.7
 ----------
 Advancing game to time 329.8
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.8
 ----------
 Advancing game to time 329.9
-The candidate round is 9
 Recorded cash and eco values (550,850) at time 329.9
 ----------
 Advancing game to time 330.0
-The candidate round is 9
 Awarded eco payment 850 at time 330.0
 Recorded cash and eco values (1400,850) at time 330.0
 Recorded cash and eco values (1400,850) at time 330.0
 ----------
 Advancing game to time 330.1
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.1
 ----------
 Advancing game to time 330.2
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.2
 ----------
 Advancing game to time 330.3
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.3
 ----------
 Advancing game to time 330.4
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.4
 ----------
 Advancing game to time 330.5
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.5
 ----------
 Advancing game to time 330.6
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.6
 ----------
 Advancing game to time 330.7
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.7
 ----------
 Advancing game to time 330.8
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.8
 ----------
 Advancing game to time 330.9
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 330.9
 ----------
 Advancing game to time 331.0
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.0
 ----------
 Advancing game to time 331.1
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.1
 ----------
 Advancing game to time 331.2
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.2
 ----------
 Advancing game to time 331.3
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.3
 ----------
 Advancing game to time 331.4
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.4
 ----------
 Advancing game to time 331.5
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.5
 ----------
 Advancing game to time 331.6
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.6
 ----------
 Advancing game to time 331.7
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.7
 ----------
 Advancing game to time 331.8
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.8
 ----------
 Advancing game to time 331.9
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 331.9
 ----------
 Advancing game to time 332.0
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.0
 ----------
 Advancing game to time 332.1
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.1
 ----------
 Advancing game to time 332.2
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.2
 ----------
 Advancing game to time 332.3
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.3
 ----------
 Advancing game to time 332.4
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.4
 ----------
 Advancing game to time 332.5
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.5
 ----------
 Advancing game to time 332.6
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.6
 ----------
 Advancing game to time 332.7
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.7
 ----------
 Advancing game to time 332.8
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.8
 ----------
 Advancing game to time 332.9
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 332.9
 ----------
 Advancing game to time 333.0
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.0
 ----------
 Advancing game to time 333.1
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.1
 ----------
 Advancing game to time 333.2
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.2
 ----------
 Advancing game to time 333.3
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.3
 ----------
 Advancing game to time 333.4
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.4
 ----------
 Advancing game to time 333.5
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.5
 ----------
 Advancing game to time 333.6
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.6
 ----------
 Advancing game to time 333.7
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.7
 ----------
 Advancing game to time 333.8
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.8
 ----------
 Advancing game to time 333.9
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 333.9
 ----------
 Advancing game to time 334.0
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.0
 ----------
 Advancing game to time 334.1
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.1
 ----------
 Advancing game to time 334.2
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.2
 ----------
 Advancing game to time 334.3
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.3
 ----------
 Advancing game to time 334.4
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.4
 ----------
 Advancing game to time 334.5
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.5
 ----------
 Advancing game to time 334.6
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.6
 ----------
 Advancing game to time 334.7
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.7
 ----------
 Advancing game to time 334.8
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.8
 ----------
 Advancing game to time 334.9
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 334.9
 ----------
 Advancing game to time 335.0
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.0
 ----------
 Advancing game to time 335.1
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.1
 ----------
 Advancing game to time 335.2
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.2
 ----------
 Advancing game to time 335.3
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.3
 ----------
 Advancing game to time 335.4
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.4
 ----------
 Advancing game to time 335.5
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.5
 ----------
 Advancing game to time 335.6
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.6
 ----------
 Advancing game to time 335.7
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.7
 ----------
 Advancing game to time 335.8
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.8
 ----------
 Advancing game to time 335.9
-The candidate round is 9
 Recorded cash and eco values (1400,850) at time 335.9
 ----------
 Advancing game to time 336.0
-The candidate round is 9
 Awarded eco payment 850 at time 336.0
 Recorded cash and eco values (2250,850) at time 336.0
 Recorded cash and eco values (2250,850) at time 336.0
 ----------
 Advancing game to time 336.1
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.1
 ----------
 Advancing game to time 336.2
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.2
 ----------
 Advancing game to time 336.3
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.3
 ----------
 Advancing game to time 336.4
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.4
 ----------
 Advancing game to time 336.5
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.5
 ----------
 Advancing game to time 336.6
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.6
 ----------
 Advancing game to time 336.7
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.7
 ----------
 Advancing game to time 336.8
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.8
 ----------
 Advancing game to time 336.9
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 336.9
 ----------
 Advancing game to time 337.0
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.0
 ----------
 Advancing game to time 337.1
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.1
 ----------
 Advancing game to time 337.2
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.2
 ----------
 Advancing game to time 337.3
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.3
 ----------
 Advancing game to time 337.4
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.4
 ----------
 Advancing game to time 337.5
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.5
 ----------
 Advancing game to time 337.6
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.6
 ----------
 Advancing game to time 337.7
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.7
 ----------
 Advancing game to time 337.8
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.8
 ----------
 Advancing game to time 337.9
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 337.9
 ----------
 Advancing game to time 338.0
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.0
 ----------
 Advancing game to time 338.1
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.1
 ----------
 Advancing game to time 338.2
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.2
 ----------
 Advancing game to time 338.3
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.3
 ----------
 Advancing game to time 338.4
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.4
 ----------
 Advancing game to time 338.5
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.5
 ----------
 Advancing game to time 338.6
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.6
 ----------
 Advancing game to time 338.7
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.7
 ----------
 Advancing game to time 338.8
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.8
 ----------
 Advancing game to time 338.9
-The candidate round is 9
 Recorded cash and eco values (2250,850) at time 338.9
 ----------
 Advancing game to time 339.0
-The candidate round is 9
 Awarded direct payment 2000 at time 339.0
 Recorded cash and eco values (4250,850) at time 339.0
 Recorded cash and eco values (4250,850) at time 339.0
 ----------
 Advancing game to time 339.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.1
 ----------
 Advancing game to time 339.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.2
 ----------
 Advancing game to time 339.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.3
 ----------
 Advancing game to time 339.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.4
 ----------
 Advancing game to time 339.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.5
 ----------
 Advancing game to time 339.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.6
 ----------
 Advancing game to time 339.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.7
 ----------
 Advancing game to time 339.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.8
 ----------
 Advancing game to time 339.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 339.9
 ----------
 Advancing game to time 340.0
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.0
 ----------
 Advancing game to time 340.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.1
 ----------
 Advancing game to time 340.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.2
 ----------
 Advancing game to time 340.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.3
 ----------
 Advancing game to time 340.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.4
 ----------
 Advancing game to time 340.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.5
 ----------
 Advancing game to time 340.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.6
 ----------
 Advancing game to time 340.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.7
 ----------
 Advancing game to time 340.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.8
 ----------
 Advancing game to time 340.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 340.9
 ----------
 Advancing game to time 341.0
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.0
 ----------
 Advancing game to time 341.1
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.1
 ----------
 Advancing game to time 341.2
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.2
 ----------
 Advancing game to time 341.3
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.3
 ----------
 Advancing game to time 341.4
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.4
 ----------
 Advancing game to time 341.5
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.5
 ----------
 Advancing game to time 341.6
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.6
 ----------
 Advancing game to time 341.7
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.7
 ----------
 Advancing game to time 341.8
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.8
 ----------
 Advancing game to time 341.9
-The candidate round is 9
 Recorded cash and eco values (4250,850) at time 341.9
 ----------
 Advancing game to time 342.0
-The candidate round is 9
 Awarded eco payment 850 at time 342.0
 Recorded cash and eco values (5100,850) at time 342.0
 Recorded cash and eco values (5100,850) at time 342.0
 ----------
 Advancing game to time 342.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.1
 ----------
 Advancing game to time 342.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.2
 ----------
 Advancing game to time 342.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.3
 ----------
 Advancing game to time 342.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.4
 ----------
 Advancing game to time 342.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.5
 ----------
 Advancing game to time 342.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.6
 ----------
 Advancing game to time 342.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.7
 ----------
 Advancing game to time 342.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.8
 ----------
 Advancing game to time 342.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 342.9
 ----------
 Advancing game to time 343.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.0
 ----------
 Advancing game to time 343.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.1
 ----------
 Advancing game to time 343.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.2
 ----------
 Advancing game to time 343.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.3
 ----------
 Advancing game to time 343.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.4
 ----------
 Advancing game to time 343.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.5
 ----------
 Advancing game to time 343.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.6
 ----------
 Advancing game to time 343.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.7
 ----------
 Advancing game to time 343.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.8
 ----------
 Advancing game to time 343.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 343.9
 ----------
 Advancing game to time 344.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.0
 ----------
 Advancing game to time 344.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.1
 ----------
 Advancing game to time 344.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.2
 ----------
 Advancing game to time 344.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.3
 ----------
 Advancing game to time 344.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.4
 ----------
 Advancing game to time 344.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.5
 ----------
 Advancing game to time 344.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.6
 ----------
 Advancing game to time 344.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.7
 ----------
 Advancing game to time 344.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.8
 ----------
 Advancing game to time 344.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 344.9
 ----------
 Advancing game to time 345.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.0
 ----------
 Advancing game to time 345.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.1
 ----------
 Advancing game to time 345.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.2
 ----------
 Advancing game to time 345.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.3
 ----------
 Advancing game to time 345.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.4
 ----------
 Advancing game to time 345.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.5
 ----------
 Advancing game to time 345.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.6
 ----------
 Advancing game to time 345.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.7
 ----------
 Advancing game to time 345.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.8
 ----------
 Advancing game to time 345.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 345.9
 ----------
 Advancing game to time 346.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.0
 ----------
 Advancing game to time 346.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.1
 ----------
 Advancing game to time 346.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.2
 ----------
 Advancing game to time 346.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.3
 ----------
 Advancing game to time 346.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.4
 ----------
 Advancing game to time 346.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.5
 ----------
 Advancing game to time 346.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.6
 ----------
 Advancing game to time 346.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.7
 ----------
 Advancing game to time 346.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.8
 ----------
 Advancing game to time 346.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 346.9
 ----------
 Advancing game to time 347.0
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.0
 ----------
 Advancing game to time 347.1
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.1
 ----------
 Advancing game to time 347.2
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.2
 ----------
 Advancing game to time 347.3
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.3
 ----------
 Advancing game to time 347.4
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.4
 ----------
 Advancing game to time 347.5
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.5
 ----------
 Advancing game to time 347.6
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.6
 ----------
 Advancing game to time 347.7
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.7
 ----------
 Advancing game to time 347.8
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.8
 ----------
 Advancing game to time 347.9
-The candidate round is 9
 Recorded cash and eco values (5100,850) at time 347.9
 ----------
 Advancing game to time 348.0
-The candidate round is 9
 Awarded eco payment 850 at time 348.0
 Recorded cash and eco values (5950,850) at time 348.0
 Recorded cash and eco values (5950,850) at time 348.0
 ----------
 Advancing game to time 348.1
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.1
 ----------
 Advancing game to time 348.2
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.2
 ----------
 Advancing game to time 348.3
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.3
 ----------
 Advancing game to time 348.4
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.4
 ----------
 Advancing game to time 348.5
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.5
 ----------
 Advancing game to time 348.6
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.6
 ----------
 Advancing game to time 348.7
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.7
 ----------
 Advancing game to time 348.8
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.8
 ----------
 Advancing game to time 348.9
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 348.9
 ----------
 Advancing game to time 349.0
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.0
 ----------
 Advancing game to time 349.1
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.1
 ----------
 Advancing game to time 349.2
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.2
 ----------
 Advancing game to time 349.3
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.3
 ----------
 Advancing game to time 349.4
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.4
 ----------
 Advancing game to time 349.5
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.5
 ----------
 Advancing game to time 349.6
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.6
 ----------
 Advancing game to time 349.7
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.7
 ----------
 Advancing game to time 349.8
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.8
 ----------
 Advancing game to time 349.9
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 349.9
 ----------
 Advancing game to time 350.0
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.0
 ----------
 Advancing game to time 350.1
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.1
 ----------
 Advancing game to time 350.2
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.2
 ----------
 Advancing game to time 350.3
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.3
 ----------
 Advancing game to time 350.4
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.4
 ----------
 Advancing game to time 350.5
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.5
 ----------
 Advancing game to time 350.6
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.6
 ----------
 Advancing game to time 350.7
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.7
 ----------
 Advancing game to time 350.8
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.8
 ----------
 Advancing game to time 350.9
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 350.9
 ----------
 Advancing game to time 351.0
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.0
 ----------
 Advancing game to time 351.1
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.1
 ----------
 Advancing game to time 351.2
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.2
 ----------
 Advancing game to time 351.3
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.3
 ----------
 Advancing game to time 351.4
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.4
 ----------
 Advancing game to time 351.5
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.5
 ----------
 Advancing game to time 351.6
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.6
 ----------
 Advancing game to time 351.7
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.7
 ----------
 Advancing game to time 351.8
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.8
 ----------
 Advancing game to time 351.9
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 351.9
 ----------
 Advancing game to time 352.0
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.0
 ----------
 Advancing game to time 352.1
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.1
 ----------
 Advancing game to time 352.2
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.2
 ----------
 Advancing game to time 352.3
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.3
 ----------
 Advancing game to time 352.4
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.4
 ----------
 Advancing game to time 352.5
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.5
 ----------
 Advancing game to time 352.6
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.6
 ----------
 Advancing game to time 352.7
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.7
 ----------
 Advancing game to time 352.8
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.8
 ----------
 Advancing game to time 352.9
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 352.9
 ----------
 Advancing game to time 353.0
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.0
 ----------
 Advancing game to time 353.1
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.1
 ----------
 Advancing game to time 353.2
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.2
 ----------
 Advancing game to time 353.3
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.3
 ----------
 Advancing game to time 353.4
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.4
 ----------
 Advancing game to time 353.5
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.5
 ----------
 Advancing game to time 353.6
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.6
 ----------
 Advancing game to time 353.7
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.7
 ----------
 Advancing game to time 353.8
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.8
 ----------
 Advancing game to time 353.9
-The candidate round is 9
 Recorded cash and eco values (5950,850) at time 353.9
 ----------
 Advancing game to time 354.0
-The candidate round is 9
 Awarded eco payment 850 at time 354.0
 Recorded cash and eco values (6800,850) at time 354.0
 Recorded cash and eco values (6800,850) at time 354.0
 ----------
 Advancing game to time 354.1
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.1
 ----------
 Advancing game to time 354.2
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.2
 ----------
 Advancing game to time 354.3
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.3
 ----------
 Advancing game to time 354.4
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.4
 ----------
 Advancing game to time 354.5
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.5
 ----------
 Advancing game to time 354.6
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.6
 ----------
 Advancing game to time 354.7
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.7
 ----------
 Advancing game to time 354.8
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.8
 ----------
 Advancing game to time 354.9
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 354.9
 ----------
 Advancing game to time 355.0
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.0
 ----------
 Advancing game to time 355.1
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.1
 ----------
 Advancing game to time 355.2
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.2
 ----------
 Advancing game to time 355.3
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.3
 ----------
 Advancing game to time 355.4
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.4
 ----------
 Advancing game to time 355.5
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.5
 ----------
 Advancing game to time 355.6
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.6
 ----------
 Advancing game to time 355.7
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.7
 ----------
 Advancing game to time 355.8
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.8
 ----------
 Advancing game to time 355.9
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 355.9
 ----------
 Advancing game to time 356.0
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.0
 ----------
 Advancing game to time 356.1
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.1
 ----------
 Advancing game to time 356.2
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.2
 ----------
 Advancing game to time 356.3
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.3
 ----------
 Advancing game to time 356.4
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.4
 ----------
 Advancing game to time 356.5
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.5
 ----------
 Advancing game to time 356.6
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.6
 ----------
 Advancing game to time 356.7
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.7
 ----------
 Advancing game to time 356.8
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.8
 ----------
 Advancing game to time 356.9
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 356.9
 ----------
 Advancing game to time 357.0
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.0
 ----------
 Advancing game to time 357.1
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.1
 ----------
 Advancing game to time 357.2
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.2
 ----------
 Advancing game to time 357.3
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.3
 ----------
 Advancing game to time 357.4
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.4
 ----------
 Advancing game to time 357.5
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.5
 ----------
 Advancing game to time 357.6
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.6
 ----------
 Advancing game to time 357.7
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.7
 ----------
 Advancing game to time 357.8
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.8
 ----------
 Advancing game to time 357.9
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 357.9
 ----------
 Advancing game to time 358.0
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.0
 ----------
 Advancing game to time 358.1
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.1
 ----------
 Advancing game to time 358.2
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.2
 ----------
 Advancing game to time 358.3
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.3
 ----------
 Advancing game to time 358.4
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.4
 ----------
 Advancing game to time 358.5
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.5
 ----------
 Advancing game to time 358.6
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.6
 ----------
 Advancing game to time 358.7
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.7
 ----------
 Advancing game to time 358.8
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.8
 ----------
 Advancing game to time 358.9
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 358.9
 ----------
 Advancing game to time 359.0
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.0
 ----------
 Advancing game to time 359.1
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.1
 ----------
 Advancing game to time 359.2
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.2
 ----------
 Advancing game to time 359.3
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.3
 ----------
 Advancing game to time 359.4
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.4
 ----------
 Advancing game to time 359.5
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.5
 ----------
 Advancing game to time 359.6
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.6
 ----------
 Advancing game to time 359.7
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.7
 ----------
 Advancing game to time 359.8
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.8
 ----------
 Advancing game to time 359.9
-The candidate round is 9
 Recorded cash and eco values (6800,850) at time 359.9
 ----------
 Advancing game to time 360.0
-The candidate round is 9
 Awarded eco payment 850 at time 360.0
 Recorded cash and eco values (7650,850) at time 360.0
 Recorded cash and eco values (7650,850) at time 360.0
 ----------
 Advancing game to time 360.1
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.1
 ----------
 Advancing game to time 360.2
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.2
 ----------
 Advancing game to time 360.3
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.3
 ----------
 Advancing game to time 360.4
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.4
 ----------
 Advancing game to time 360.5
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.5
 ----------
 Advancing game to time 360.6
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.6
 ----------
 Advancing game to time 360.7
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.7
 ----------
 Advancing game to time 360.8
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.8
 ----------
 Advancing game to time 360.9
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 360.9
 ----------
 Advancing game to time 361.0
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.0
 ----------
 Advancing game to time 361.1
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.1
 ----------
 Advancing game to time 361.2
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.2
 ----------
 Advancing game to time 361.3
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.3
 ----------
 Advancing game to time 361.4
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.4
 ----------
 Advancing game to time 361.5
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.5
 ----------
 Advancing game to time 361.6
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.6
 ----------
 Advancing game to time 361.7
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.7
 ----------
 Advancing game to time 361.8
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.8
 ----------
 Advancing game to time 361.9
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 361.9
 ----------
 Advancing game to time 362.0
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.0
 ----------
 Advancing game to time 362.1
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.1
 ----------
 Advancing game to time 362.2
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.2
 ----------
 Advancing game to time 362.3
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.3
 ----------
 Advancing game to time 362.4
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.4
 ----------
 Advancing game to time 362.5
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.5
 ----------
 Advancing game to time 362.6
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.6
 ----------
 Advancing game to time 362.7
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.7
 ----------
 Advancing game to time 362.8
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.8
 ----------
 Advancing game to time 362.9
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 362.9
 ----------
 Advancing game to time 363.0
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.0
 ----------
 Advancing game to time 363.1
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.1
 ----------
 Advancing game to time 363.2
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.2
 ----------
 Advancing game to time 363.3
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.3
 ----------
 Advancing game to time 363.4
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.4
 ----------
 Advancing game to time 363.5
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.5
 ----------
 Advancing game to time 363.6
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.6
 ----------
 Advancing game to time 363.7
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.7
 ----------
 Advancing game to time 363.8
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.8
 ----------
 Advancing game to time 363.9
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 363.9
 ----------
 Advancing game to time 364.0
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.0
 ----------
 Advancing game to time 364.1
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.1
 ----------
 Advancing game to time 364.2
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.2
 ----------
 Advancing game to time 364.3
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.3
 ----------
 Advancing game to time 364.4
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.4
 ----------
 Advancing game to time 364.5
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.5
 ----------
 Advancing game to time 364.6
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.6
 ----------
 Advancing game to time 364.7
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.7
 ----------
 Advancing game to time 364.8
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.8
 ----------
 Advancing game to time 364.9
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 364.9
 ----------
 Advancing game to time 365.0
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.0
 ----------
 Advancing game to time 365.1
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.1
 ----------
 Advancing game to time 365.2
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.2
 ----------
 Advancing game to time 365.3
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.3
 ----------
 Advancing game to time 365.4
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.4
 ----------
 Advancing game to time 365.5
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.5
 ----------
 Advancing game to time 365.6
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.6
 ----------
 Advancing game to time 365.7
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.7
 ----------
 Advancing game to time 365.8
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.8
 ----------
 Advancing game to time 365.9
-The candidate round is 9
 Recorded cash and eco values (7650,850) at time 365.9
 ----------
 Advancing game to time 366.0
-The candidate round is 9
 Awarded eco payment 850 at time 366.0
 Recorded cash and eco values (8500,850) at time 366.0
 Recorded cash and eco values (8500,850) at time 366.0
 ----------
 Advancing game to time 366.1
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.1
 ----------
 Advancing game to time 366.2
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.2
 ----------
 Advancing game to time 366.3
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.3
 ----------
 Advancing game to time 366.4
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.4
 ----------
 Advancing game to time 366.5
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.5
 ----------
 Advancing game to time 366.6
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.6
 ----------
 Advancing game to time 366.7
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.7
 ----------
 Advancing game to time 366.8
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.8
 ----------
 Advancing game to time 366.9
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 366.9
 ----------
 Advancing game to time 367.0
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.0
 ----------
 Advancing game to time 367.1
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.1
 ----------
 Advancing game to time 367.2
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.2
 ----------
 Advancing game to time 367.3
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.3
 ----------
 Advancing game to time 367.4
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.4
 ----------
 Advancing game to time 367.5
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.5
 ----------
 Advancing game to time 367.6
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.6
 ----------
 Advancing game to time 367.7
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.7
 ----------
 Advancing game to time 367.8
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.8
 ----------
 Advancing game to time 367.9
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 367.9
 ----------
 Advancing game to time 368.0
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.0
 ----------
 Advancing game to time 368.1
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.1
 ----------
 Advancing game to time 368.2
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.2
 ----------
 Advancing game to time 368.3
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.3
 ----------
 Advancing game to time 368.4
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.4
 ----------
 Advancing game to time 368.5
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.5
 ----------
 Advancing game to time 368.6
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.6
 ----------
 Advancing game to time 368.7
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.7
 ----------
 Advancing game to time 368.8
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.8
 ----------
 Advancing game to time 368.9
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 368.9
 ----------
 Advancing game to time 369.0
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.0
 ----------
 Advancing game to time 369.1
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.1
 ----------
 Advancing game to time 369.2
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.2
 ----------
 Advancing game to time 369.3
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.3
 ----------
 Advancing game to time 369.4
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.4
 ----------
 Advancing game to time 369.5
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.5
 ----------
 Advancing game to time 369.6
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.6
 ----------
 Advancing game to time 369.7
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.7
 ----------
 Advancing game to time 369.8
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.8
 ----------
 Advancing game to time 369.9
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 369.9
 ----------
 Advancing game to time 370.0
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.0
 ----------
 Advancing game to time 370.1
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.1
 ----------
 Advancing game to time 370.2
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.2
 ----------
 Advancing game to time 370.3
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.3
 ----------
 Advancing game to time 370.4
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.4
 ----------
 Advancing game to time 370.5
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.5
 ----------
 Advancing game to time 370.6
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.6
 ----------
 Advancing game to time 370.7
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.7
 ----------
 Advancing game to time 370.8
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.8
 ----------
 Advancing game to time 370.9
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 370.9
 ----------
 Advancing game to time 371.0
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.0
 ----------
 Advancing game to time 371.1
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.1
 ----------
 Advancing game to time 371.2
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.2
 ----------
 Advancing game to time 371.3
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.3
 ----------
 Advancing game to time 371.4
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.4
 ----------
 Advancing game to time 371.5
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.5
 ----------
 Advancing game to time 371.6
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.6
 ----------
 Advancing game to time 371.7
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.7
 ----------
 Advancing game to time 371.8
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.8
 ----------
 Advancing game to time 371.9
-The candidate round is 9
 Recorded cash and eco values (8500,850) at time 371.9
 ----------
 Advancing game to time 372.0
-The candidate round is 9
 Awarded eco payment 850 at time 372.0
 Recorded cash and eco values (9350,850) at time 372.0
 Recorded cash and eco values (9350,850) at time 372.0
 ----------
 Advancing game to time 372.1
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.1
 ----------
 Advancing game to time 372.2
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.2
 ----------
 Advancing game to time 372.3
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.3
 ----------
 Advancing game to time 372.4
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.4
 ----------
 Advancing game to time 372.5
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.5
 ----------
 Advancing game to time 372.6
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.6
 ----------
 Advancing game to time 372.7
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.7
 ----------
 Advancing game to time 372.8
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.8
 ----------
 Advancing game to time 372.9
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 372.9
 ----------
 Advancing game to time 373.0
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.0
 ----------
 Advancing game to time 373.1
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.1
 ----------
 Advancing game to time 373.2
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.2
 ----------
 Advancing game to time 373.3
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.3
 ----------
 Advancing game to time 373.4
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.4
 ----------
 Advancing game to time 373.5
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.5
 ----------
 Advancing game to time 373.6
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.6
 ----------
 Advancing game to time 373.7
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.7
 ----------
 Advancing game to time 373.8
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.8
 ----------
 Advancing game to time 373.9
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 373.9
 ----------
 Advancing game to time 374.0
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.0
 ----------
 Advancing game to time 374.1
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.1
 ----------
 Advancing game to time 374.2
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.2
 ----------
 Advancing game to time 374.3
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.3
 ----------
 Advancing game to time 374.4
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.4
 ----------
 Advancing game to time 374.5
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.5
 ----------
 Advancing game to time 374.6
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.6
 ----------
 Advancing game to time 374.7
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.7
 ----------
 Advancing game to time 374.8
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.8
 ----------
 Advancing game to time 374.9
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 374.9
 ----------
 Advancing game to time 375.0
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.0
 ----------
 Advancing game to time 375.1
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.1
 ----------
 Advancing game to time 375.2
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.2
 ----------
 Advancing game to time 375.3
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.3
 ----------
 Advancing game to time 375.4
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.4
 ----------
 Advancing game to time 375.5
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.5
 ----------
 Advancing game to time 375.6
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.6
 ----------
 Advancing game to time 375.7
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.7
 ----------
 Advancing game to time 375.8
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.8
 ----------
 Advancing game to time 375.9
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 375.9
 ----------
 Advancing game to time 376.0
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.0
 ----------
 Advancing game to time 376.1
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.1
 ----------
 Advancing game to time 376.2
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.2
 ----------
 Advancing game to time 376.3
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.3
 ----------
 Advancing game to time 376.4
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.4
 ----------
 Advancing game to time 376.5
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.5
 ----------
 Advancing game to time 376.6
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.6
 ----------
 Advancing game to time 376.7
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.7
 ----------
 Advancing game to time 376.8
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.8
 ----------
 Advancing game to time 376.9
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 376.9
 ----------
 Advancing game to time 377.0
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.0
 ----------
 Advancing game to time 377.1
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.1
 ----------
 Advancing game to time 377.2
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.2
 ----------
 Advancing game to time 377.3
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.3
 ----------
 Advancing game to time 377.4
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.4
 ----------
 Advancing game to time 377.5
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.5
 ----------
 Advancing game to time 377.6
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.6
 ----------
 Advancing game to time 377.7
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.7
 ----------
 Advancing game to time 377.8
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.8
 ----------
 Advancing game to time 377.9
-The candidate round is 9
 Recorded cash and eco values (9350,850) at time 377.9
 ----------
 Advancing game to time 378.0
-The candidate round is 9
 Awarded eco payment 850 at time 378.0
 Recorded cash and eco values (10200,850) at time 378.0
 Recorded cash and eco values (10200,850) at time 378.0
 ----------
 Advancing game to time 378.1
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.1
 ----------
 Advancing game to time 378.2
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.2
 ----------
 Advancing game to time 378.3
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.3
 ----------
 Advancing game to time 378.4
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.4
 ----------
 Advancing game to time 378.5
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.5
 ----------
 Advancing game to time 378.6
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.6
 ----------
 Advancing game to time 378.7
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.7
 ----------
 Advancing game to time 378.8
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.8
 ----------
 Advancing game to time 378.9
-The candidate round is 9
 Recorded cash and eco values (10200,850) at time 378.9
 ----------
 Advancing game to time 379.0
-The candidate round is 9
 Awarded direct payment 2000 at time 379.0
 Recorded cash and eco values (12200,850) at time 379.0
 Recorded cash and eco values (12200,850) at time 379.0
 ----------
 Advancing game to time 379.1
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.1
 ----------
 Advancing game to time 379.2
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.2
 ----------
 Advancing game to time 379.3
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.3
 ----------
 Advancing game to time 379.4
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.4
 ----------
 Advancing game to time 379.5
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.5
 ----------
 Advancing game to time 379.6
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.6
 ----------
 Advancing game to time 379.7
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.7
 ----------
 Advancing game to time 379.8
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.8
 ----------
 Advancing game to time 379.9
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 379.9
 ----------
 Advancing game to time 380.0
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.0
 ----------
 Advancing game to time 380.1
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.1
 ----------
 Advancing game to time 380.2
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.2
 ----------
 Advancing game to time 380.3
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.3
 ----------
 Advancing game to time 380.4
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.4
 ----------
 Advancing game to time 380.5
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.5
 ----------
 Advancing game to time 380.6
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.6
 ----------
 Advancing game to time 380.7
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.7
 ----------
 Advancing game to time 380.8
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.8
 ----------
 Advancing game to time 380.9
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 380.9
 ----------
 Advancing game to time 381.0
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.0
 ----------
 Advancing game to time 381.1
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.1
 ----------
 Advancing game to time 381.2
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.2
 ----------
 Advancing game to time 381.3
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.3
 ----------
 Advancing game to time 381.4
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.4
 ----------
 Advancing game to time 381.5
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.5
 ----------
 Advancing game to time 381.6
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.6
 ----------
 Advancing game to time 381.7
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.7
 ----------
 Advancing game to time 381.8
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.8
 ----------
 Advancing game to time 381.9
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 381.9
 ----------
 Advancing game to time 382.0
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.0
 ----------
 Advancing game to time 382.1
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.1
 ----------
 Advancing game to time 382.2
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.2
 ----------
 Advancing game to time 382.3
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.3
 ----------
 Advancing game to time 382.4
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.4
 ----------
 Advancing game to time 382.5
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.5
 ----------
 Advancing game to time 382.6
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.6
 ----------
 Advancing game to time 382.7
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.7
 ----------
 Advancing game to time 382.8
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.8
 ----------
 Advancing game to time 382.9
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 382.9
 ----------
 Advancing game to time 383.0
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.0
 ----------
 Advancing game to time 383.1
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.1
 ----------
 Advancing game to time 383.2
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.2
 ----------
 Advancing game to time 383.3
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.3
 ----------
 Advancing game to time 383.4
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.4
 ----------
 Advancing game to time 383.5
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.5
 ----------
 Advancing game to time 383.6
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.6
 ----------
 Advancing game to time 383.7
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.7
 ----------
 Advancing game to time 383.8
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.8
 ----------
 Advancing game to time 383.9
-The candidate round is 9
 Recorded cash and eco values (12200,850) at time 383.9
 ----------
 Advancing game to time 384.0
-The candidate round is 9
 Awarded eco payment 850 at time 384.0
 Recorded cash and eco values (13050,850) at time 384.0
 Recorded cash and eco values (13050,850) at time 384.0
 ----------
 Advancing game to time 384.1
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.1
 ----------
 Advancing game to time 384.2
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.2
 ----------
 Advancing game to time 384.3
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.3
 ----------
 Advancing game to time 384.4
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.4
 ----------
 Advancing game to time 384.5
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.5
 ----------
 Advancing game to time 384.6
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.6
 ----------
 Advancing game to time 384.7
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.7
 ----------
 Advancing game to time 384.8
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.8
 ----------
 Advancing game to time 384.9
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 384.9
 ----------
 Advancing game to time 385.0
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.0
 ----------
 Advancing game to time 385.1
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.1
 ----------
 Advancing game to time 385.2
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.2
 ----------
 Advancing game to time 385.3
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.3
 ----------
 Advancing game to time 385.4
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.4
 ----------
 Advancing game to time 385.5
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.5
 ----------
 Advancing game to time 385.6
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.6
 ----------
 Advancing game to time 385.7
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.7
 ----------
 Advancing game to time 385.8
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.8
 ----------
 Advancing game to time 385.9
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 385.9
 ----------
 Advancing game to time 386.0
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.0
 ----------
 Advancing game to time 386.1
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.1
 ----------
 Advancing game to time 386.2
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.2
 ----------
 Advancing game to time 386.3
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.3
 ----------
 Advancing game to time 386.4
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.4
 ----------
 Advancing game to time 386.5
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.5
 ----------
 Advancing game to time 386.6
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.6
 ----------
 Advancing game to time 386.7
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.7
 ----------
 Advancing game to time 386.8
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.8
 ----------
 Advancing game to time 386.9
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 386.9
 ----------
 Advancing game to time 387.0
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.0
 ----------
 Advancing game to time 387.1
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.1
 ----------
 Advancing game to time 387.2
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.2
 ----------
 Advancing game to time 387.3
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.3
 ----------
 Advancing game to time 387.4
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.4
 ----------
 Advancing game to time 387.5
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.5
 ----------
 Advancing game to time 387.6
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.6
 ----------
 Advancing game to time 387.7
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.7
 ----------
 Advancing game to time 387.8
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.8
 ----------
 Advancing game to time 387.9
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 387.9
 ----------
 Advancing game to time 388.0
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.0
 ----------
 Advancing game to time 388.1
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.1
 ----------
 Advancing game to time 388.2
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.2
 ----------
 Advancing game to time 388.3
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.3
 ----------
 Advancing game to time 388.4
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.4
 ----------
 Advancing game to time 388.5
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.5
 ----------
 Advancing game to time 388.6
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.6
 ----------
 Advancing game to time 388.7
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.7
 ----------
 Advancing game to time 388.8
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.8
 ----------
 Advancing game to time 388.9
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 388.9
 ----------
 Advancing game to time 389.0
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.0
 ----------
 Advancing game to time 389.1
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.1
 ----------
 Advancing game to time 389.2
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.2
 ----------
 Advancing game to time 389.3
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.3
 ----------
 Advancing game to time 389.4
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.4
 ----------
 Advancing game to time 389.5
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.5
 ----------
 Advancing game to time 389.6
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.6
 ----------
 Advancing game to time 389.7
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.7
 ----------
 Advancing game to time 389.8
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.8
 ----------
 Advancing game to time 389.9
-The candidate round is 9
 Recorded cash and eco values (13050,850) at time 389.9
 ----------
 Advancing game to time 390.0
-The candidate round is 9
 Awarded eco payment 850 at time 390.0
 Recorded cash and eco values (13900,850) at time 390.0
 Recorded cash and eco values (13900,850) at time 390.0
 ----------
 Advancing game to time 390.1
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.1
 ----------
 Advancing game to time 390.2
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.2
 ----------
 Advancing game to time 390.3
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.3
 ----------
 Advancing game to time 390.4
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.4
 ----------
 Advancing game to time 390.5
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.5
 ----------
 Advancing game to time 390.6
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.6
 ----------
 Advancing game to time 390.7
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.7
 ----------
 Advancing game to time 390.8
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.8
 ----------
 Advancing game to time 390.9
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 390.9
 ----------
 Advancing game to time 391.0
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.0
 ----------
 Advancing game to time 391.1
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.1
 ----------
 Advancing game to time 391.2
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.2
 ----------
 Advancing game to time 391.3
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.3
 ----------
 Advancing game to time 391.4
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.4
 ----------
 Advancing game to time 391.5
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.5
 ----------
 Advancing game to time 391.6
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.6
 ----------
 Advancing game to time 391.7
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.7
 ----------
 Advancing game to time 391.8
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.8
 ----------
 Advancing game to time 391.9
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 391.9
 ----------
 Advancing game to time 392.0
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.0
 ----------
 Advancing game to time 392.1
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.1
 ----------
 Advancing game to time 392.2
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.2
 ----------
 Advancing game to time 392.3
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.3
 ----------
 Advancing game to time 392.4
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.4
 ----------
 Advancing game to time 392.5
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.5
 ----------
 Advancing game to time 392.6
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.6
 ----------
 Advancing game to time 392.7
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.7
 ----------
 Advancing game to time 392.8
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.8
 ----------
 Advancing game to time 392.9
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 392.9
 ----------
 Advancing game to time 393.0
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.0
 ----------
 Advancing game to time 393.1
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.1
 ----------
 Advancing game to time 393.2
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.2
 ----------
 Advancing game to time 393.3
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.3
 ----------
 Advancing game to time 393.4
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.4
 ----------
 Advancing game to time 393.5
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.5
 ----------
 Advancing game to time 393.6
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.6
 ----------
 Advancing game to time 393.7
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.7
 ----------
 Advancing game to time 393.8
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.8
 ----------
 Advancing game to time 393.9
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 393.9
 ----------
 Advancing game to time 394.0
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.0
 ----------
 Advancing game to time 394.1
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.1
 ----------
 Advancing game to time 394.2
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.2
 ----------
 Advancing game to time 394.3
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.3
 ----------
 Advancing game to time 394.4
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.4
 ----------
 Advancing game to time 394.5
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.5
 ----------
 Advancing game to time 394.6
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.6
 ----------
 Advancing game to time 394.7
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.7
 ----------
 Advancing game to time 394.8
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.8
 ----------
 Advancing game to time 394.9
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 394.9
 ----------
 Advancing game to time 395.0
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.0
 ----------
 Advancing game to time 395.1
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.1
 ----------
 Advancing game to time 395.2
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.2
 ----------
 Advancing game to time 395.3
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.3
 ----------
 Advancing game to time 395.4
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.4
 ----------
 Advancing game to time 395.5
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.5
 ----------
 Advancing game to time 395.6
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.6
 ----------
 Advancing game to time 395.7
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.7
 ----------
 Advancing game to time 395.8
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.8
 ----------
 Advancing game to time 395.9
-The candidate round is 9
 Recorded cash and eco values (13900,850) at time 395.9
 ----------
 Advancing game to time 396.0
-The candidate round is 9
 Awarded eco payment 850 at time 396.0
 Recorded cash and eco values (14750,850) at time 396.0
 We have 14750 cash! We can do the next buy, which costs 14000 and has a buffer of 0 and a minimum buy time of 0!
@@ -4651,135 +3502,102 @@ Completed the buy operation! The buy queue now has 0 items remaining in it
 Recorded cash and eco values (750,850) at time 396.0
 ----------
 Advancing game to time 396.1
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.1
 ----------
 Advancing game to time 396.2
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.2
 ----------
 Advancing game to time 396.3
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.3
 ----------
 Advancing game to time 396.4
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.4
 ----------
 Advancing game to time 396.5
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.5
 ----------
 Advancing game to time 396.6
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.6
 ----------
 Advancing game to time 396.7
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.7
 ----------
 Advancing game to time 396.8
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.8
 ----------
 Advancing game to time 396.9
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 396.9
 ----------
 Advancing game to time 397.0
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.0
 ----------
 Advancing game to time 397.1
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.1
 ----------
 Advancing game to time 397.2
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.2
 ----------
 Advancing game to time 397.3
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.3
 ----------
 Advancing game to time 397.4
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.4
 ----------
 Advancing game to time 397.5
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.5
 ----------
 Advancing game to time 397.6
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.6
 ----------
 Advancing game to time 397.7
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.7
 ----------
 Advancing game to time 397.8
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.8
 ----------
 Advancing game to time 397.9
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 397.9
 ----------
 Advancing game to time 398.0
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.0
 ----------
 Advancing game to time 398.1
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.1
 ----------
 Advancing game to time 398.2
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.2
 ----------
 Advancing game to time 398.3
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.3
 ----------
 Advancing game to time 398.4
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.4
 ----------
 Advancing game to time 398.5
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.5
 ----------
 Advancing game to time 398.6
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.6
 ----------
 Advancing game to time 398.7
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.7
 ----------
 Advancing game to time 398.8
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.8
 ----------
 Advancing game to time 398.9
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 398.9
 ----------
 Advancing game to time 399.0
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 399.0
 ----------
 Advancing game to time 399.1
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 399.1
 ----------
 Advancing game to time 399.2
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 399.2
 ----------
 Advancing game to time 399.3
-The candidate round is 9
 Recorded cash and eco values (750,850) at time 399.25
 Modified the eco send to Grouped Pinks
 ----------

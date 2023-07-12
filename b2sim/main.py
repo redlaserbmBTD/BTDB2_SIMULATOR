@@ -188,14 +188,13 @@ class GameState():
 
         self.eco_queue = initial_state.get('Eco Queue')
         if self.eco_queue is None:
-            self.eco_queue = []
+            self.eco_queue = [ecoSend(time = 0, send_name = 'Zero')]
         self.number_of_sends = 0
 
         eco_send = initial_state.get('Eco Send')
-        if eco_send is None:
-            eco_send = ecoSend(send_name = 'Zero')
-        eco_send['Time'] = 0
-        self.eco_queue.insert(0,eco_send)
+        if eco_send is not None:
+            eco_send['Time'] = 0
+            self.eco_queue.insert(0,eco_send)
         
         #Upgrade queue
         self.buy_queue = initial_state.get('Buy Queue')
@@ -207,6 +206,8 @@ class GameState():
         self.attack_queue = []
         self.attack_queue_unlock_time = self.current_time
         self.eco_delay = game_globals['Eco Delay']
+        self.max_queue_length = game_globals['Max Queue Length']
+        self.attack_queue_threshold = game_globals['Max Queue Length']
 
         #For repeated supply drop buys
         self.supply_drop_max_buy_time = -1
@@ -225,7 +226,7 @@ class GameState():
         #~~~~~~~~~~
         
         if self.farms is None:
-            self.farms = {}
+            self.farms = []
         if self.buy_queue is None:
             self.buy_queue = []
         if self.loan is None:
@@ -316,7 +317,7 @@ class GameState():
         #~~~~~~~~~~~~~~~~
 
         ax1.set_title("Cash & Eco vs Time")
-        ax1.legend(bbox_to_anchor = (1.02, 1), fontsize = font_size)
+        ax1.legend(bbox_to_anchor = (1.1, 1), fontsize = font_size)
         fig.tight_layout()
 
         #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -431,7 +432,7 @@ class GameState():
                             #No, the send is not too late
                             
                             #Is the eco send too early?
-                            self.logs.append("The candidate round is %s"%(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round']))
+                            #self.logs.append("The candidate round is %s"%(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round']))
                             candidate_time = self.rounds.getTimeFromRound(eco_send_info[self.eco_queue[0]['Send Name']]['Start Round'])
                             if self.eco_queue[0]['Time'] < candidate_time:
                                 #Yes, the send is too early
@@ -451,7 +452,7 @@ class GameState():
                                 self.checkProperties()
                                 break_flag = True
             
-            if len(self.eco_queue) > 0 and self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time:
+            if len(self.eco_queue) > 0 and (self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time):
                 self.changeEcoSend()
             else:
                 future_flag = True
@@ -533,6 +534,12 @@ class GameState():
 
         #Setting the max_eco_amount
         self.max_eco_amount = send_info['Max Eco Amount']
+
+        #Setting the max_send_time
+        self.max_send_time = send_info['Max Send Time']
+
+        #Setting the queue threshold
+        self.attack_queue_threshold = send_info['Queue Threshold']
 
         self.logs.append("Modified the eco send to %s"%(self.send_name))
         self.event_messages.append({
@@ -652,21 +659,13 @@ class GameState():
 
             self.updateEco(payout['Time'])
 
-            if (self.max_send_amount is not None and self.number_of_sends == self.max_send_amount) or (self.max_eco_amount is not None and self.eco >= self.max_eco_amount):
+            if (self.max_send_amount is not None and self.number_of_sends >= self.max_send_amount) or (self.max_eco_amount is not None and self.eco >= self.max_eco_amount) or (self.max_send_time is not None and self.current_time > self.max_send_time):
                 self.logs.append("Reached the limit on eco'ing for this send! Moving to the next send in the queue.")
 
                 #Switch to the zero send
                 if len(self.eco_queue) == 0:
                     self.logs.append("No more sends in the eco queue! Switching to the zero send.")
-                    self.eco_queue.append({
-                        'Time': self.current_time,
-                        'Send Name': 'Zero',
-                        'Max Send Amount': None,
-                        'Max Eco Amount': None,
-                        'Fortified': False,
-                        'Camoflauge': False,
-                        'Regrow': False
-                    })
+                    self.eco_queue.append(ecoSend(send_name = 'Zero'))
                 else:
                     # Adjust the time of the next eco send so that the simulator attempts to change to it at simulation end
                     self.eco_queue[0]['Time'] = self.current_time
@@ -1113,7 +1112,7 @@ class GameState():
         # self.logs.append("Number of Sends: %s"%(self.number_of_sends))
         # self.logs.append("Max Send Amount: %s"%(self.max_send_amount))
 
-        while self.attack_queue_unlock_time <= target_time and self.send_name != 'Zero' and (self.max_send_amount is None or self.number_of_sends < self.max_send_amount) and (self.max_eco_amount is None or self.eco < self.max_eco_amount):
+        while self.attack_queue_unlock_time <= target_time and self.send_name != 'Zero' and (self.max_send_amount is None or self.number_of_sends < self.max_send_amount) and (self.max_eco_amount is None or self.eco < self.max_eco_amount) and (self.max_send_time is None or self.attack_queue_unlock_time <= self.max_send_time):
             self.current_time = max(self.attack_queue_unlock_time, self.current_time)
             # self.logs.append("Advanced current time to %s"%(self.current_time))
 
@@ -1123,7 +1122,7 @@ class GameState():
             
             # Next, try to add an attack to the attack_queue.
             # Can we send an attack?
-            if self.cash >= self.eco_cost and len(self.attack_queue) < 6:
+            if self.cash >= self.eco_cost and len(self.attack_queue) < min(6, self.attack_queue_threshold):
                 # Yes, the queue is empty and we have enough cash
                 if len(self.attack_queue) == 0:
                     self.attack_queue.append(self.current_time + self.eco_time)
@@ -1136,7 +1135,7 @@ class GameState():
                 self.logs.append(str(self.attack_queue))
 
                 # Did the attack fill up the eco queue?
-                if len(self.attack_queue) == 6:
+                if len(self.attack_queue) >= min(6, self.attack_queue_threshold):
                     # Yes, The next send will cause the attack queue to fill up. Wait until the queue empties (if necessary)
                     self.attack_queue_unlock_time = max(self.current_time + self.eco_delay, self.attack_queue[0])
                 else:
@@ -1145,7 +1144,7 @@ class GameState():
                 
                 self.number_of_sends += 1
 
-            elif len(self.attack_queue) == 6:
+            elif len(self.attack_queue) >= min(6, self.attack_queue_threshold):
                 # No, the queue is full!
                 # NOTE: This block of code won't get reached unless the game state is initalized with a full attack queue.
                 self.attack_queue_unlock_time = self.attack_queue[0]
@@ -1226,182 +1225,11 @@ class GameState():
             
             for dict_obj in purchase_info:
 
-                # DEFENSE RELATED MATTERS
-                if dict_obj['Type'] == 'Buy Defense':
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*dict_obj['Cost'])
-                    
-                # FARM RELATED MATTERS
-                elif dict_obj['Type'] == 'Buy Farm':
-                    h_new_cash, h_new_loan = impact(h_cash, h_loan, -1*farm_globals['Farm Cost'])
-                elif dict_obj['Type'] == 'Upgrade Farm':
-                    ind = dict_obj['Index']
-                    path = dict_obj['Path']
-                    farm = self.farms[ind]
-                    #Do not upgrade a farm that has already been sold!
-                    if farm.sell_time is not None:
-                        self.logs.append("WARNING! Tried to upgrade a farm that was already sold! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
+                h_cash, h_loan = self.processAction(dict_obj, payout, h_cash = h_cash, h_loan = h_loan, stage = 'check')
 
-                    #The following code prevents from the player from having multiple T5's in play
-                    if farm.upgrades[path]+1 == 5 and self.T5_exists[path] == True:
-                        self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*farm_upgrades_costs[path][farm.upgrades[path]])
-                elif dict_obj['Type'] == 'Sell Farm':
-                    ind = dict_obj['Index']
-                    farm = self.farms[ind]
-
-                    #Check whether the farm is actually on screen before selling it:
-                    if farm.sell_time is None:
-                        #Selling a farm counts as that farm generating revenue
-                        h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_sellback_values[tuple(farm.upgrades)])
-                        farm.h_revenue += h_new_cash - h_cash
-                        h_cash, h_loan = h_new_cash, h_new_loan
-                    else:
-                        self.logs.append("WARNING! Tried to sell a farm that is not on screen! Aborting buy queue")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                elif dict_obj['Type'] == 'Sell All Farms':
-                    for farm in self.farms:
-                        if farm.sell_time is None:
-                            h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_sellback_values[tuple(farm.upgrades)])
-                            farm.h_revenue += h_new_cash - h_cash
-                            h_cash, h_loan = h_new_cash, h_new_loan
-
-
-                elif dict_obj['Type'] == 'Withdraw Bank':
-                    #WARNING: The farm in question must actually be a bank for us to perform a withdrawal!
-                    #If it isn't, break the loop prematurely
-                    ind = dict_obj['Index']
-                    farm = self.farms[ind]
-                    if farm.sell_time is not None:
-                        self.logs.append("WARNING! Tried to withdraw from a bank that was already sold! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-
-                    if farm.upgrades[1] < 3:
-                        self.logs.append("WARNING! Tried to Withdraw from a farm that is not a bank! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                    
-                    h_new_cash, h_new_loan = impact(h_cash, h_loan, farm.account_value)
-                    # self.logs.append("Detected bank withdrawal of %s"%(h_new_cash - h_cash))
-                    farm.h_revenue += h_new_cash - h_cash
-                    h_cash, h_loan = h_new_cash, h_new_loan
-
-                elif dict_obj['Type'] == 'Activate IMF':
-                    #WARNING: The farm in question must actually be an IMF Loan for us to use this ability!
-                    #If it isn't, set a flag to False and break the loop.
-                    #DEVELOPER'S NOTE: A farm that has a min_use_time is not necessarily an IMF loan, it could also be an Monkeyopolis
-                    #Do not upgrade a farm that has already been sold!
-                    if farm.sell_time is not None:
-                        self.logs.append("WARNING! Tried to take out a loan from a bank that was already sold! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-
-                    if farm.upgrades[1] != 4:
-                        self.logs.append("WARNING! Tried to take out a loan from a farm that is not an IMF! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                        
-                    ind = dict_obj['Index']
-                    farm = self.farms[ind]
-                    
-                    #When, a loan is activated, treat it like a payment, then add the debt
-                    h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_globals['IMF Loan Amount'])
-                    farm.h_revenue += h_new_cash - h_cash
-                    h_new_loan += farm_globals['IMF Loan Amount']
-                    h_cash, h_loan = h_new_cash, h_new_loan
-                
-                # BOAT FARM RELATED MATTERS
-                elif dict_obj['Type'] == 'Buy Boat Farm':
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*boat_globals['Merchantmen Cost'])
-                elif dict_obj['Type'] == 'Upgrade Boat Farm':
-                    ind = dict_obj['Index']
-                    boat_farm = self.boat_farms[ind]
-                    #The following code prevents from the player from having multiple Trade Empires in play
-                    if boat_farm['Upgrade']+1 == 5 and self.Tempire_exists == True:
-                        self.logs.append("WARNING! Tried to purchase a Trade Empire when one already exists! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                    upgrade_cost = boat_upgrades_costs[boat_farm['Upgrade']-3]
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*upgrade_cost)
-                elif dict_obj['Type'] == 'Sell Boat Farm':
-                    ind = dict_obj['Index']
-                    boat_farm = self.boat_farms[ind]
-
-                    #Check whether the boat farm is actually on screen before selling it:
-                    if boat_farm['Sell Time'] is None:
-                        #Selling a farm counts as that farm generating revenue
-                        h_new_cash, h_new_loan = impact(h_cash, h_loan, boat_sell_values[boat_farm['Upgrade']-3])
-                        boat_farm['Hypothetical Revenue'] += h_new_cash - h_cash
-                        h_cash, h_loan = h_new_cash, h_new_loan
-                    else:
-                        self.logs.append("WARNING! Tried to sell a boat farm that is not on screen! Aborting buy queue")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-
-                # DRUID FARM RELATED MATTERS
-                elif dict_obj['Type'] == 'Buy Druid Farm':
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*druid_globals['Druid Farm Cost'])
-                elif dict_obj['Type'] == 'Sell Druid Farm':
-                    if dict_obj['Index'] == self.sotf:
-                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(druid_globals['Druid Farm Cost'] + druid_globals['Spirit of the Forest Upgrade Cost']))
-                    else:
-                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*druid_globals['Druid Farm Cost'])
-                elif dict_obj['Type'] == 'Buy Spirit of the Forest':
-                    #WARNING: There can only be one sotf at a time!
-                    if self.sotf is not None:
-                        self.logs.append("WARNING! Tried to purchase a Spirit of the Forest when one already exists! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*druid_globals['Spirit of the Forest Upgrade Cost'])
-                
-                # SUPPLY DROP RELATED MATTERS
-                elif dict_obj['Type'] == 'Buy Supply Drop':
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*sniper_globals['Supply Drop Cost'])
-                elif dict_obj['Type'] == 'Sell Supply Drop':
-                    if dict_obj['Index'] == self.elite_sniper:
-                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(sniper_globals['Supply Drop Cost'] + sniper_globals['Elite Sniper Upgrade Cost']) )
-                    else:
-                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*sniper_globals['Supply Drop Cost'])
-                elif dict_obj['Type'] == 'Buy Elite Sniper':
-                    #WARNING: There can only be one e-sniper at a time!
-                    if self.elite_sniper is not None:
-                        self.logs.append("WARNING! Tried to purchase an Elite Sniper when one already exists! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*sniper_globals['Elite Sniper Upgrade Cost'])
-
-                # HELI FARM RELATED MATTERS
-                elif dict_obj['Type'] == 'Buy Heli Farm':
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*heli_globals['Heli Farm Cost'])
-                elif dict_obj['Type'] == 'Sell Heli Farm':
-                    if dict_obj['Index'] == self.special_poperations:
-                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(heli_globals['Heli Farm Cost'] + heli_globals['Special Poperations Upgrade Cost']) )
-                    else:
-                        h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*heli_globals['Heli Farm Cost'])
-                elif dict_obj['Type'] == 'Buy Special Poperations':
-                    #WARNING: There can only be one Special Poperations on screen at a time!
-                    if self.special_poperations is not None:
-                        self.logs.append("WARNING! Tried to purchase Special Poperations when one already exists! Aborting buy queue!")
-                        self.warnings.append(len(self.logs)-1)
-                        self.valid_action_flag = False
-                        break
-                    h_cash, h_loan = impact(h_cash, h_loan, -1*heli_globals['Special Poperations Upgrade Cost'])
+                #Immediately abort attempting the purchase if we try to process an action that is not possible:
+                if not self.valid_action_flag:
+                    break
                     
                 #If at any point while performing these operations our cash becomes negative, then prevent the transaction from occurring:
                 if h_cash < 0:
@@ -1412,11 +1240,12 @@ class GameState():
                 #NOTE: Only one object in purchase_info should have buffer info
                 #If there are multiple buffers, the code rectifies the matter by
                 #adding them all together
+
                 if dict_obj.get('Buffer') is not None:
                     self.buffer += dict_obj.get('Buffer')
             
-            #If the purchase sequence triggered a warning in the logs, do NOT perform it and break the while loop
-            if self.valid_action_flag == False:
+            #Immediately break from processing the buy queue entirely if we try to process an action that is not possible.
+            if not self.valid_action_flag:
                 break
             
             # If the amount of cash we have exceeds our buffer, perform the transaction.
@@ -1449,232 +1278,8 @@ class GameState():
                 for dict_obj in purchase_info:
 
                     buy_message_list.append(dict_obj['Message'])
-                    
-                    #FARM RELATED MATTERS
-                    if dict_obj['Type'] == 'Buy Farm':
-                        self.logs.append("Purchasing farm!")
-                        farm_info = {
-                            'Purchase Time': self.current_time,
-                            'Upgrades': [0,0,0]
-                        }
-                        farm = MonkeyFarm(farm_info)
-                        self.farms.append(farm)
+                    self.processAction(dict_obj, payout, stage = 'process')
 
-                        #For revenue and expense tracking
-                        farm.revenue = 0
-                        farm.expenses = farm_globals['Farm Cost']
-                        
-                    elif dict_obj['Type'] == 'Upgrade Farm':
-                        ind = dict_obj['Index']
-                        path = dict_obj['Path']
-                        
-                        self.logs.append("Upgrading path %s of the farm at index %s"%(path, ind))
-                        farm = self.farms[ind]
-
-                        #For expense tracking
-                        farm.expenses += farm_upgrades_costs[path][farm.upgrades[path]]
-
-                        farm.upgrades[path] += 1
-
-                        #Update the payout information of the farm
-                        farm.payout_amount = farm_payout_values[tuple(farm.upgrades)][0]
-                        farm.payout_frequency = farm_payout_values[tuple(farm.upgrades)][1]
-                        
-                        #So that we can accurately track payments for the farm
-                        farm.purchase_time = payout['Time']
-                        
-                        #Update the sellback value of the farm
-                        farm.sell_value = farm_sellback_values[tuple(farm.upgrades)]
-                        
-                        self.logs.append("The new farm has upgrades (%s,%s,%s)"%(farm.upgrades[0],farm.upgrades[1],farm.upgrades[2]))
-                        
-                        #If the resulting farm is a Monkey Bank, indicate as such and set its max account value appropriately
-                        if farm.upgrades[1] >= 3 and path == 1:
-                            farm.bank = True
-                            farm.max_account_value = farm_bank_capacity[farm.upgrades[1]]
-                            self.logs.append("The new farm is a bank! The bank's max capacity is %s"%(farm.max_account_value))
-                            
-                        #If the resulting farm is an IMF Loan or Monkeyopolis, determine the earliest time the loan can be used
-                        if farm.upgrades[1] > 3 and path == 1:
-                            farm.min_use_time = payout['Time'] + farm_globals['Monkeynomics Initial Cooldown']
-                        
-                        #If the resulting farm is a Banana Central, activate the BRF buff, giving them 25% more payment amount
-                        if farm.upgrades[0] == 5 and path == 0:
-                            self.logs.append("The new farm is a Banana Central!")
-                            self.T5_exists[0] = True
-                            
-                        #If the resutling farm is a Monkeyopolis, mark the x5x_exists flag as true to prevent the user from trying to have multiple of them
-                        if farm.upgrades[1] == 5:
-                            self.T5_exists[1] = True
-                        
-                        #If the resulting farm is a MWS, mark the MWS_exists flag as true to prevent the user from trying to have multiple of them.
-                        if farm.upgrades[2] == 5:
-                            self.T5_exists[2] = True
-                        
-                    elif dict_obj['Type'] == 'Sell Farm':
-                        ind = dict_obj['Index']
-                        farm = self.farms[ind]
-                        self.logs.append("Selling the farm at index %s"%(ind))
-
-                        # If the farm being sold is a Banana Central, we must turn off the BRF buff
-                        # If the farm is a T5 of any sorts, ensure that the game state knows we no longer that particular T5
-
-                        if farm.upgrades[0] == 5:
-                            self.logs.append("The farm we're selling is a Banana Central! Removing the BRF buff.")
-                            self.T5_exists[0] = False
-                        elif farm.upgrades[1] == 5:
-                            self.T5_exists[1] = False
-                        elif farm.upgrades[2] == 5:
-                            self.T5_exists[2] = False
-
-                        #Mark the farm's sell time. The code checks whether this value is a number or not before trying to compute farm payments
-                        farm.sell_time = payout['Time']
-                        
-                    elif dict_obj['Type'] == 'Sell All Farms':
-                        self.logs.append("Selling all farms!")
-                        self.T5_exists = [False for i in range(3)] #Obviously, if we sell all farms we won't have any T5's anymore!
-                        for farm in self.farms:
-                            farm.sell_time = payout['Time']
-                    
-                    elif dict_obj['Type'] == 'Withdraw Bank':
-                        self.logs.append("Withdrawing money from the bank at index %s"%(ind))
-                        ind = dict_obj['Index']
-                        farm = self.farms[ind]
-                        farm.account_value = 0
-                    elif dict_obj['Type'] == 'Activate IMF':
-                        ind = dict_obj['Index']
-                        farm = self.farms[ind]
-                        self.logs.append("Taking out a loan from the IMF at index %s"%(ind))
-                        farm.min_use_time = payout['Time'] + farm_globals['IMF Usage Cooldown']
-                        
-                    # BOAT FARM RELATED MATTERS
-                    elif dict_obj['Type'] == 'Buy Boat Farm':
-                        self.logs.append("Purchasing boat farm!")
-                        boat_farm = {
-                            'Initial Purchase Time': self.current_time,
-                            'Purchase Time': self.current_time,
-                            'Upgrade': 3,
-                            'Revenue': 0,
-                            'Expenses': boat_globals['Merchantmen Cost'],
-                            'Hypothetical Revenue': 0,
-                            'Sell Time': None
-                        }
-                        self.boat_farms[self.boat_key] = boat_farm
-                        self.boat_key += 1
-                    elif dict_obj['Type'] == 'Upgrade Boat Farm':
-                        ind = dict_obj['Index']
-                        
-                        self.logs.append("Upgrading the boat farm at index %s"%(ind))
-                        boat_farm = self.boat_farms[ind]
-                        boat_farm['Upgrade'] += 1
-
-                        #Expense tracking
-                        boat_farm['Expenses'] += boat_upgrades_costs[boat_farm['Upgrade'] - 4]
-                        
-                        #Update the payout information of the boat farm
-                        boat_farm['Payout'] = boat_payout_values[boat_farm['Upgrade'] - 3]
-                        
-                        #So that we can accurately track payments for the boat farm
-                        boat['Purchase Time'] = payout['Time']
-                        
-                        #Update the sellback value of the boat farm
-                        boat['Sell Value'] = boat_sell_values[boat_farm['Upgrade'] - 3]
-
-                        #If the new boat farm is a Trade Empire, indicate as such
-                        if boat_farm['Upgrade'] == 5:
-                            self.logs.append("The new boat farm is a Trade Empire!")
-                            self.Tempire_exists = True
-
-                    elif dict_obj['Type'] == 'Sell Boat Farm':
-                        ind = dict_obj['Index']
-                        self.logs.append("Selling the boat farm at index %s"%(ind))
-                        #If the farm being sold is a Trade Empire, indicate as such
-                        if boat_farm['Upgrade'] == 5:
-                            self.logs.append("The boat farm we're selling is a Trade Empire! Removing the Tempire buff.")
-                            self.Tempire_exists = False
-
-                        #Mark the boat farm's sell time
-                        boat_farm['Sell Time'] = payout['Time']
-
-                    # DRUID FARMS
-                    elif dict_obj['Type'] == 'Buy Druid Farm':
-                        self.druid_farms[self.druid_key] = payout['Time']
-                        self.druid_key += 1
-                        self.logs.append("Purchased a druid farm!")
-                    elif dict_obj['Type'] == 'Sell Druid Farm':
-                        ind = dict_obj['Index']
-                        self.logs.append("Selling the druid farm at index %s"%(ind))
-                        #If the druid we're selling is actually SOTF...
-                        if self.sotf is not None and ind == self.sotf:
-                            self.logs.append("The druid farm being sold is a Spirit of the Forest!")
-                            self.sotf = None
-                            self.sotf_min_use_time = None
-                    elif dict_obj['Type'] == 'Buy Spirit of the Forest':
-                        ind = dict_obj['Index']
-                        self.sotf = ind
-                        self.logs.append("Upgrading the druid farm at index %s into a Spirit of the Forest!"%(ind))
-                        #Determine the minimum time that the SOTF active could be used
-                        i = np.floor((20 + payout['Time'] - self.druid_farms[ind])/40) + 1
-                        self.sotf_min_use_time = payout['Time'] + 20 + 40*(i-1)
-                    elif dict_obj['Type'] == 'Repeatedly Buy Druid Farms':
-                        self.druid_farm_max_buy_time = dict_obj['Maximum Buy Time']
-                        self.druid_farm_buffer = dict_obj['Buffer']
-                        self.logs.append("Triggered automated druid farm purchases until time %s"%(self.druid_farm_max_buy_time))
-
-                    # SUPPLY DROP RELATED MATTERS
-                    elif dict_obj['Type'] == 'Buy Supply Drop':
-                        self.supply_drops[self.sniper_key] = payout['Time']
-                        self.sniper_key += 1
-                        self.logs.append("Purchased a supply drop!")
-                    elif dict_obj['Type'] == 'Sell Supply Drop':
-                        ind = dict_obj['Index']
-                        self.logs.append("Selling the supply drop at index %s"%(ind))
-                        #If the supply drop we're selling is actually an E-sniper, then...
-                        if self.elite_sniper is not None:
-                            if ind == self.elite_sniper:
-                                self.logs.append("The supply drop being sold is an elite sniper!")
-                                self.elite_sniper = None
-                        
-                        self.supply_drops.pop(ind)
-                    elif dict_obj['Type'] == 'Buy Elite Sniper':
-                        ind = dict_obj['Index']
-                        self.elite_sniper = ind
-                        self.logs.append("Upgrading the supply drop at index %s into an elite sniper!"%(ind))
-                    elif dict_obj['Type'] == 'Repeatedly Buy Supply Drops':
-                        self.supply_drop_max_buy_time = dict_obj['Maximum Buy Time']
-                        self.supply_drop_buffer = dict_obj['Buffer']
-                        self.logs.append("Triggered automated supply drop purchases until time %s"%(self.supply_drop_max_buy_time))
-
-                    # HELI FARM RELATED MATTERS
-                    elif dict_obj['Type'] == 'Buy Heli Farm':
-                        self.heli_farms[self.heli_key] = payout['Time']
-                        self.heli_key += 1
-                        self.logs.append("Purchased a heli farm!")
-                    elif dict_obj['Type'] == 'Sell Supply Drop':
-                        ind = dict_obj['Index']
-                        self.logs.append("Selling the heli farm at index %s"%(ind))
-                        #If the supply drop we're selling is actually a special poperations, then...
-                        if self.special_poperations is not None:
-                            if ind == self.special_poperations:
-                                self.logs.append("The heli farm being sold is a special poperations!")
-                                self.elite_sniper = None
-                        
-                        self.supply_drops.pop(ind)
-                    elif dict_obj['Type'] == 'Buy Special Poperations':
-                        ind = dict_obj['Index']
-                        self.special_poperations = ind
-                        self.logs.append("Upgrading the heli farm at index %s into special poperations!"%(ind))
-                    elif dict_obj['Type'] == 'Repeatedly Buy Heli Farms':
-                        self.heli_farm_max_buy_time = dict_obj['Maximum Buy Time']
-                        self.heli_farm_buffer = dict_obj['Buffer']
-                        self.logs.append("Triggered automated heli farm purchases until time %s"%(self.heli_farm_max_buy_time))
-
-                    # JERICHO RELATED MATTERS
-                    elif dict_obj['Type'] == 'Jericho Steal':
-                        self.jericho_steal_time = dict_obj['Minimum Buy Time']
-                        self.jericho_steal_amount = dict_obj['Steal Amount']
-                        self.cash, self.loan = impact(self.cash,self.loan, dict_obj['Steal Amount']) #If this line is not here, the sim would fail to capture the jeri payment that occurs immediately upon activation.
-                        
                 #Now, we have finished the for loop through purchase_info and thus correctly performed the buys
                 #Remove the buy from the queue and set self.buy_cost to None so the code knows next time to re-compute
                 #the buy cost for the next item in the buy queue
@@ -1697,6 +1302,425 @@ class GameState():
             })
         
         return made_purchase
+    
+    def processAction(self, dict_obj, payout, h_cash = None, h_loan = None, stage = 'check'):
+        # Helper method for processBuyQueue
+        # This is essentially just one giant if-elif block
+
+        # processBuyQueue will use this method in two stages. 
+        # The first stage is for checking if the next transaction in the buy queue can be performed.
+        # The second stage is for actually carrying out the transaction
+
+        # DEFENSE RELATED MATTERS
+        if dict_obj['Type'] == 'Buy Defense':
+            if stage == 'check':
+                h_cash, h_loan = impact(h_cash, h_loan, -1*dict_obj['Cost'])
+            # We don't need to do anything here in the processing stage
+        # FARM RELATED MATTERS
+        elif dict_obj['Type'] == 'Buy Farm':
+            if stage == 'check':
+                h_new_cash, h_new_loan = impact(h_cash, h_loan, -1*farm_globals['Farm Cost'])
+            else:
+                self.logs.append("Purchasing farm!")
+                farm_info = {
+                    'Purchase Time': self.current_time,
+                    'Upgrades': [0,0,0]
+                }
+                farm = MonkeyFarm(farm_info)
+                self.farms.append(farm)
+
+                #For revenue and expense tracking
+                farm.revenue = 0
+                farm.expenses = farm_globals['Farm Cost']
+        elif dict_obj['Type'] == 'Upgrade Farm':
+            if stage == 'check':
+                ind = dict_obj['Index']
+                path = dict_obj['Path']
+                farm = self.farms[ind]
+                #Do not upgrade a farm that has already been sold!
+                if farm.sell_time is not None:
+                    self.logs.append("WARNING! Tried to upgrade a farm that was already sold! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+
+                #The following code prevents from the player from having multiple T5's in play
+                if farm.upgrades[path]+1 == 5 and self.T5_exists[path] == True:
+                    self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                h_cash, h_loan = impact(h_cash, h_loan, -1*farm_upgrades_costs[path][farm.upgrades[path]])
+            else:
+                ind = dict_obj['Index']
+                path = dict_obj['Path']
+                
+                self.logs.append("Upgrading path %s of the farm at index %s"%(path, ind))
+                farm = self.farms[ind]
+
+                #For expense tracking
+                farm.expenses += farm_upgrades_costs[path][farm.upgrades[path]]
+
+                farm.upgrades[path] += 1
+
+                #Update the payout information of the farm
+                farm.payout_amount = farm_payout_values[tuple(farm.upgrades)][0]
+                farm.payout_frequency = farm_payout_values[tuple(farm.upgrades)][1]
+                
+                #So that we can accurately track payments for the farm
+                farm.purchase_time = payout['Time']
+                
+                #Update the sellback value of the farm
+                farm.sell_value = farm_sellback_values[tuple(farm.upgrades)]
+                
+                self.logs.append("The new farm has upgrades (%s,%s,%s)"%(farm.upgrades[0],farm.upgrades[1],farm.upgrades[2]))
+                
+                #If the resulting farm is a Monkey Bank, indicate as such and set its max account value appropriately
+                if farm.upgrades[1] >= 3 and path == 1:
+                    farm.bank = True
+                    farm.max_account_value = farm_bank_capacity[farm.upgrades[1]]
+                    self.logs.append("The new farm is a bank! The bank's max capacity is %s"%(farm.max_account_value))
+                    
+                #If the resulting farm is an IMF Loan or Monkeyopolis, determine the earliest time the loan can be used
+                if farm.upgrades[1] > 3 and path == 1:
+                    farm.min_use_time = payout['Time'] + farm_globals['Monkeynomics Initial Cooldown']
+                
+                #If the resulting farm is a Banana Central, activate the BRF buff, giving them 25% more payment amount
+                if farm.upgrades[0] == 5 and path == 0:
+                    self.logs.append("The new farm is a Banana Central!")
+                    self.T5_exists[0] = True
+                    
+                #If the resutling farm is a Monkeyopolis, mark the x5x_exists flag as true to prevent the user from trying to have multiple of them
+                if farm.upgrades[1] == 5:
+                    self.T5_exists[1] = True
+                
+                #If the resulting farm is a MWS, mark the MWS_exists flag as true to prevent the user from trying to have multiple of them.
+                if farm.upgrades[2] == 5:
+                    self.T5_exists[2] = True
+        elif dict_obj['Type'] == 'Sell Farm':
+            if stage == 'check':
+                ind = dict_obj['Index']
+                farm = self.farms[ind]
+                withdraw = dict_obj['Withdraw']
+
+                #Check whether the farm is actually on screen before selling it:
+                h_new_cash, h_new_loan = h_cash, h_loan
+                if farm.sell_time is None:
+                    #If indicated, withdraw from the bank before selling it
+                    if withdraw and farm.upgrades[1] >= 3:
+                        h_new_cash, h_new_loan = impact(h_new_cash, h_new_loan, farm.account_value)
+                    #Selling a farm counts as that farm generating revenue
+                    h_new_cash, h_new_loan = impact(h_new_cash, h_new_loan, farm_sellback_values[tuple(farm.upgrades)])
+                    farm.h_revenue += h_new_cash - h_cash
+                    h_cash, h_loan = h_new_cash, h_new_loan
+                else:
+                    self.logs.append("WARNING! Tried to sell a farm that is not on screen! Aborting buy queue")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+            else:
+                ind = dict_obj['Index']
+                farm = self.farms[ind]
+                self.logs.append("Selling the farm at index %s"%(ind))
+
+                # If the farm being sold is a Banana Central, we must turn off the BRF buff
+                # If the farm is a T5 of any sorts, ensure that the game state knows we no longer that particular T5
+
+                if farm.upgrades[0] == 5:
+                    self.logs.append("The farm we're selling is a Banana Central! Removing the BRF buff.")
+                    self.T5_exists[0] = False
+                elif farm.upgrades[1] == 5:
+                    self.T5_exists[1] = False
+                elif farm.upgrades[2] == 5:
+                    self.T5_exists[2] = False
+
+                #Mark the farm's sell time. The code checks whether this value is a number or not before trying to compute farm payments
+                farm.sell_time = payout['Time']
+        elif dict_obj['Type'] == 'Sell All Farms':
+            if stage == 'check':
+                for farm in self.farms:
+                    if farm.sell_time is None:
+                        h_new_cash, h_new_loan = h_cash, h_loan
+                        #Withdraw from the bank first, provided that the withdraw argument is True *and* the farm given is actually a bank
+                        if withdraw and farm.upgrades[1] >= 3:
+                            h_new_cash, h_new_loan = impact(h_new_cash, h_new_loan, farm.account_value)
+
+                        #Now, sell the farm
+                        h_new_cash, h_new_loan = impact(h_new_cash, h_new_loan, farm_sellback_values[tuple(farm.upgrades)])
+                        farm.h_revenue += h_new_cash - h_cash
+                        h_cash, h_loan = h_new_cash, h_new_loan
+            else:
+                self.logs.append("Selling all farms!")
+                self.T5_exists = [False for i in range(3)] #Obviously, if we sell all farms we won't have any T5's anymore!
+                for farm in self.farms:
+                    farm.sell_time = payout['Time']
+        elif dict_obj['Type'] == 'Withdraw Bank':
+            if stage == 'check':
+                #WARNING: The farm in question must actually be a bank for us to perform a withdrawal!
+                #If it isn't, break the loop prematurely
+                ind = dict_obj['Index']
+                farm = self.farms[ind]
+                if farm.sell_time is not None:
+                    self.logs.append("WARNING! Tried to withdraw from a bank that was already sold! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+
+                if farm.upgrades[1] < 3:
+                    self.logs.append("WARNING! Tried to Withdraw from a farm that is not a bank! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                
+                h_new_cash, h_new_loan = impact(h_cash, h_loan, farm.account_value)
+                # self.logs.append("Detected bank withdrawal of %s"%(h_new_cash - h_cash))
+                farm.h_revenue += h_new_cash - h_cash
+                h_cash, h_loan = h_new_cash, h_new_loan
+            else:
+                ind = dict_obj['Index']
+                self.logs.append("Withdrawing money from the bank at index %s"%(ind))
+                farm = self.farms[ind]
+                farm.account_value = 0
+        elif dict_obj['Type'] == 'Activate IMF':
+            if stage == 'check':
+                #WARNING: The farm in question must actually be an IMF Loan for us to use this ability!
+                #If it isn't, set a flag to False and break the loop.
+                #DEVELOPER'S NOTE: A farm that has a min_use_time is not necessarily an IMF loan, it could also be an Monkeyopolis
+                #Do not upgrade a farm that has already been sold!
+                ind = dict_obj['Index']
+                farm = self.farms[ind]
+
+                if farm.sell_time is not None:
+                    self.logs.append("WARNING! Tried to take out a loan from a bank that was already sold! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+
+                if farm.upgrades[1] != 4:
+                    self.logs.append("WARNING! Tried to take out a loan from a farm that is not an IMF! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                    
+                ind = dict_obj['Index']
+                farm = self.farms[ind]
+                
+                #When, a loan is activated, treat it like a payment, then add the debt
+                h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_globals['IMF Loan Amount'])
+                farm.h_revenue += h_new_cash - h_cash
+                h_new_loan += farm_globals['IMF Loan Amount']
+                h_cash, h_loan = h_new_cash, h_new_loan
+            else:
+                ind = dict_obj['Index']
+                farm = self.farms[ind]
+                self.logs.append("Taking out a loan from the IMF at index %s"%(ind))
+                farm.min_use_time = payout['Time'] + farm_globals['IMF Usage Cooldown']
+        # BOAT FARM RELATED MATTERS
+        elif dict_obj['Type'] == 'Buy Boat Farm':
+            if stage == 'check':
+                h_cash, h_loan = impact(h_cash, h_loan, -1*boat_globals['Merchantmen Cost'])
+            else:
+                self.logs.append("Purchasing boat farm!")
+                boat_farm = {
+                    'Initial Purchase Time': self.current_time,
+                    'Purchase Time': self.current_time,
+                    'Upgrade': 3,
+                    'Revenue': 0,
+                    'Expenses': boat_globals['Merchantmen Cost'],
+                    'Hypothetical Revenue': 0,
+                    'Sell Time': None
+                }
+                self.boat_farms[self.boat_key] = boat_farm
+                self.boat_key += 1
+        elif dict_obj['Type'] == 'Upgrade Boat Farm':
+            if stage == 'check':
+                ind = dict_obj['Index']
+                boat_farm = self.boat_farms[ind]
+                #The following code prevents from the player from having multiple Trade Empires in play
+                if boat_farm['Upgrade']+1 == 5 and self.Tempire_exists == True:
+                    self.logs.append("WARNING! Tried to purchase a Trade Empire when one already exists! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                upgrade_cost = boat_upgrades_costs[boat_farm['Upgrade']-3]
+                h_cash, h_loan = impact(h_cash, h_loan, -1*upgrade_cost)
+            else:
+                ind = dict_obj['Index']
+                        
+                self.logs.append("Upgrading the boat farm at index %s"%(ind))
+                boat_farm = self.boat_farms[ind]
+                boat_farm['Upgrade'] += 1
+
+                #Expense tracking
+                boat_farm['Expenses'] += boat_upgrades_costs[boat_farm['Upgrade'] - 4]
+                
+                #Update the payout information of the boat farm
+                boat_farm['Payout'] = boat_payout_values[boat_farm['Upgrade'] - 3]
+                
+                #So that we can accurately track payments for the boat farm
+                boat['Purchase Time'] = payout['Time']
+                
+                #Update the sellback value of the boat farm
+                boat['Sell Value'] = boat_sell_values[boat_farm['Upgrade'] - 3]
+
+                #If the new boat farm is a Trade Empire, indicate as such
+                if boat_farm['Upgrade'] == 5:
+                    self.logs.append("The new boat farm is a Trade Empire!")
+                    self.Tempire_exists = True
+        elif dict_obj['Type'] == 'Sell Boat Farm':
+            if stage == 'check':
+                ind = dict_obj['Index']
+                boat_farm = self.boat_farms[ind]
+
+                #Check whether the boat farm is actually on screen before selling it:
+                if boat_farm['Sell Time'] is None:
+                    #Selling a farm counts as that farm generating revenue
+                    h_new_cash, h_new_loan = impact(h_cash, h_loan, boat_sell_values[boat_farm['Upgrade']-3])
+                    boat_farm['Hypothetical Revenue'] += h_new_cash - h_cash
+                    h_cash, h_loan = h_new_cash, h_new_loan
+                else:
+                    self.logs.append("WARNING! Tried to sell a boat farm that is not on screen! Aborting buy queue")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+            else:
+                ind = dict_obj['Index']
+                boat_farm = self.boat_farms[ind]
+                self.logs.append("Selling the boat farm at index %s"%(ind))
+                #If the farm being sold is a Trade Empire, indicate as such
+                if boat_farm['Upgrade'] == 5:
+                    self.logs.append("The boat farm we're selling is a Trade Empire! Removing the Tempire buff.")
+                    self.Tempire_exists = False
+
+                #Mark the boat farm's sell time
+                boat_farm['Sell Time'] = payout['Time']
+        # DRUID FARM RELATED MATTERS
+        elif dict_obj['Type'] == 'Buy Druid Farm':
+            if stage == 'check':
+                h_cash, h_loan = impact(h_cash, h_loan, -1*druid_globals['Druid Farm Cost'])
+            else:
+                self.druid_farms[self.druid_key] = payout['Time']
+                self.druid_key += 1
+                self.logs.append("Purchased a druid farm!")
+        elif dict_obj['Type'] == 'Sell Druid Farm':
+            if stage == 'check':
+                if dict_obj['Index'] == self.sotf:
+                    h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(druid_globals['Druid Farm Cost'] + druid_globals['Spirit of the Forest Upgrade Cost']))
+                else:
+                    h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*druid_globals['Druid Farm Cost'])
+            else:
+                ind = dict_obj['Index']
+                self.logs.append("Selling the druid farm at index %s"%(ind))
+                #If the druid we're selling is actually SOTF...
+                if self.sotf is not None and ind == self.sotf:
+                    self.logs.append("The druid farm being sold is a Spirit of the Forest!")
+                    self.sotf = None
+                    self.sotf_min_use_time = None
+        elif dict_obj['Type'] == 'Buy Spirit of the Forest':
+            if stage == 'check':
+                #WARNING: There can only be one sotf at a time!
+                if self.sotf is not None:
+                    self.logs.append("WARNING! Tried to purchase a Spirit of the Forest when one already exists! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                h_cash, h_loan = impact(h_cash, h_loan, -1*druid_globals['Spirit of the Forest Upgrade Cost'])
+            else:
+                ind = dict_obj['Index']
+                self.sotf = ind
+                self.logs.append("Upgrading the druid farm at index %s into a Spirit of the Forest!"%(ind))
+                #Determine the minimum time that the SOTF active could be used
+                i = np.floor((20 + payout['Time'] - self.druid_farms[ind])/40) + 1
+                self.sotf_min_use_time = payout['Time'] + 20 + 40*(i-1)
+        elif dict_obj['Type'] == 'Repeatedly Buy Druid Farms':
+            #Note, there is no "checking" stage for this action.
+            if stage != 'check':
+                self.druid_farm_max_buy_time = dict_obj['Maximum Buy Time']
+                self.druid_farm_buffer = dict_obj['Buffer']
+                self.logs.append("Triggered automated druid farm purchases until time %s"%(self.druid_farm_max_buy_time))
+        # SUPPLY DROP RELATED MATTERS
+        elif dict_obj['Type'] == 'Buy Supply Drop':
+            if stage == 'check':
+                h_cash, h_loan = impact(h_cash, h_loan, -1*sniper_globals['Supply Drop Cost'])
+            else:
+                self.supply_drops[self.sniper_key] = payout['Time']
+                self.sniper_key += 1
+                self.logs.append("Purchased a supply drop!")
+        elif dict_obj['Type'] == 'Sell Supply Drop':
+            if stage == 'check':
+                if dict_obj['Index'] == self.elite_sniper:
+                    h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(sniper_globals['Supply Drop Cost'] + sniper_globals['Elite Sniper Upgrade Cost']) )
+                else:
+                    h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*sniper_globals['Supply Drop Cost'])
+            else:
+                ind = dict_obj['Index']
+                self.logs.append("Selling the supply drop at index %s"%(ind))
+                #If the supply drop we're selling is actually an E-sniper, then...
+                if self.elite_sniper is not None:
+                    if ind == self.elite_sniper:
+                        self.logs.append("The supply drop being sold is an elite sniper!")
+                        self.elite_sniper = None
+        elif dict_obj['Type'] == 'Buy Elite Sniper':
+            if stage == 'check':
+                #WARNING: There can only be one e-sniper at a time!
+                if self.elite_sniper is not None:
+                    self.logs.append("WARNING! Tried to purchase an Elite Sniper when one already exists! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                h_cash, h_loan = impact(h_cash, h_loan, -1*sniper_globals['Elite Sniper Upgrade Cost'])
+            else:
+                ind = dict_obj['Index']
+                self.elite_sniper = ind
+                self.logs.append("Upgrading the supply drop at index %s into an elite sniper!"%(ind))
+        elif dict_obj['Type'] == 'Repeatedly Buy Supply Drops':
+            #There is no checking stage for this action
+            if stage != 'check':
+                self.supply_drop_max_buy_time = dict_obj['Maximum Buy Time']
+                self.supply_drop_buffer = dict_obj['Buffer']
+                self.logs.append("Triggered automated supply drop purchases until time %s"%(self.supply_drop_max_buy_time))
+        # HELI FARM RELATED MATTERS
+        elif dict_obj['Type'] == 'Buy Heli Farm':
+            if stage == 'check':
+                h_cash, h_loan = impact(h_cash, h_loan, -1*heli_globals['Heli Farm Cost'])
+            else:
+                self.heli_farms[self.heli_key] = payout['Time']
+                self.heli_key += 1
+                self.logs.append("Purchased a heli farm!")
+        elif dict_obj['Type'] == 'Sell Heli Farm':
+            if stage == 'check':
+                if dict_obj['Index'] == self.special_poperations:
+                    h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*(heli_globals['Heli Farm Cost'] + heli_globals['Special Poperations Upgrade Cost']) )
+                else:
+                    h_cash, h_loan = impact(h_cash, h_loan, game_globals['Sellback Value']*heli_globals['Heli Farm Cost'])
+            else:
+                ind = dict_obj['Index']
+                self.logs.append("Selling the heli farm at index %s"%(ind))
+                #If the supply drop we're selling is actually a special poperations, then...
+                if self.special_poperations is not None:
+                    if ind == self.special_poperations:
+                        self.logs.append("The heli farm being sold is a special poperations!")
+                        self.elite_sniper = None
+                
+                self.supply_drops.pop(ind)
+        elif dict_obj['Type'] == 'Buy Special Poperations':
+            if stage == 'check':
+                #WARNING: There can only be one Special Poperations on screen at a time!
+                if self.special_poperations is not None:
+                    self.logs.append("WARNING! Tried to purchase Special Poperations when one already exists! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                h_cash, h_loan = impact(h_cash, h_loan, -1*heli_globals['Special Poperations Upgrade Cost'])
+            else:
+                ind = dict_obj['Index']
+                self.special_poperations = ind
+                self.logs.append("Upgrading the heli farm at index %s into special poperations!"%(ind))
+        elif dict_obj['Type'] == 'Repeatedly Buy Heli Farms':
+            #This action does not have a checking stage.
+            if stage != 'check':
+                self.heli_farm_max_buy_time = dict_obj['Maximum Buy Time']
+                self.heli_farm_buffer = dict_obj['Buffer']
+                self.logs.append("Triggered automated heli farm purchases until time %s"%(self.heli_farm_max_buy_time))
+        # JERICHO RELATED MATTERS
+        elif dict_obj['Type'] == 'Jericho Steal':
+            if stage != 'check':
+                self.jericho_steal_time = dict_obj['Minimum Buy Time']
+                self.jericho_steal_amount = dict_obj['Steal Amount']
+                self.cash, self.loan = impact(self.cash,self.loan, dict_obj['Steal Amount']) #If this line is not here, the sim would fail to capture the jeri payment that occurs immediately upon activation.
+                
+        if stage == 'check':
+            return h_cash, h_loan
+        elif stage == 'process':
+            return None
             
 # %% [markdown]
 # Now it's time to define the MonkeyFarm class!
@@ -1881,38 +1905,3 @@ def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None,
     fig.tight_layout()
     display(df)
     logs.append("Successfully generated graph! \n")
-
-# def equivalentEcoImpact(time_tuple, rounds, farms = None, boat_farms = None, druid_farms = None, supply_drops = None, time_type = 'Rounds'):
-#     #Given some collection of farms and a span of time, determine the amount of the eco that would make the same amount of money as those farms in that time span
-#     assert type(time_tuple) == tuple and len(time_tuple) == 2, "ERROR! time_tuple must be of the form (start, end)"
-
-#     #We expect in most cases that the player will indicate start and end rounds for this function. In that case, convert the starting round and ending rounds to times
-#     if time_type == 'Rounds':
-#         start_time = rounds.getTimeFromRound(time_tuple[0])
-#         end_time = rounds.getTimeFromRound(time_tuple[1])
-
-#     #If the farms contain any banks, we will add actions to the buy queue to withdraw from these banks upon reaching the target time
-#     buy_queue = []
-
-#     for farm_info_entry in farms:
-#         if farms[key]['Upgrades'][1] >= 3:
-#             buy_queue.append([withdrawBank(key, min_buy_time = end_time)])
-
-#     initial_state_game = {
-#         'Cash': 0,
-#         'Eco': 0,
-#         'Rounds': rounds,
-#         'Game Time': start_time,
-#         'Farms': farms,
-#         'Boat Farms': boat_farms,
-#         'Druid Farms': druid_farms,
-#         'Supply Drops': supply_drops
-#     }
-
-#     game_state = GameState(initial_state_game)
-#     game_state.fastForward(target_time = end_time)
-
-#     #Now compute the formula for equivlaent eco impact
-#     return 6*game_state.cash/(end_time - start_time)
-
-# %%

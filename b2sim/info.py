@@ -126,7 +126,8 @@ game_globals = {
     'Regrow Round': 8,
     'Camoflauge Round': 12,
     'Fortified Round': 18,
-    'Sellback Value': 0.7
+    'Sellback Value': 0.7,
+    'Max Queue Length': 6 #The maximum number of bloon sends that can exist in the attack queue at any given time.
 }
 
 farm_globals = {
