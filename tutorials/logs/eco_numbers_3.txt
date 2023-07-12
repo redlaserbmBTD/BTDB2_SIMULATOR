@@ -2,7 +2,7 @@ MESSAGE FROM GameState.__init__():
 Initialized Game State!
 The current game round is 0
 The current game time is 0.0 seconds
-The game round start times are given by [0, 6.0, 30.299999999999997, 54.05, 79.25, 109.9, 139.0, 164.55, 190.55, 215.0, 238.9, 253.25, 272.05, 292.3, 318.0, 336.15, 357.75, 397.8, 444.3, 478.25, 522.65, 539.5, 564.8, 604.55, 626.75, 697.4, 744.5, 783.05, 819.05, 854.5, 913.4, 934.75, 1003.8439989999999, 1034.623999, 1079.073999, 1109.665659, 1173.407657, 1218.155657, 1324.040657, 1406.911487, 1521.3114870000002, 1548.161487, 1609.141487, 1659.891487, 1707.0914870000001, 1748.2914870000002, 1787.2914870000002, 1849.8414870000001, 1892.8414870000001, 1953.411489, 2012.3114890000002, 2041.7614890000002] 
+The game round start times are given by [0, 6.0, 32.3, 57.05, 83.25, 114.9, 145.0, 171.55, 198.55, 224.0, 248.9, 265.25, 285.05, 308.3, 333.5, 352.15, 374.75, 415.8, 463.3, 498.25, 543.65, 560.5, 586.8, 627.55, 650.75, 722.4, 770.5, 810.05, 847.05, 883.5, 943.4, 964.75, 1033.843999, 1064.623999, 1109.073999, 1139.665659, 1203.407657, 1248.155657, 1354.040657, 1436.911487, 1551.3114870000002, 1578.161487, 1639.141487, 1689.891487, 1737.0914870000001, 1778.2914870000002, 1817.2914870000002, 1879.8414870000001, 1922.8414870000001, 1983.411489, 2042.3114890000002, 2071.761489] 
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 0.1
@@ -482,7 +482,7 @@ Recorded cash and eco values (640,263.0) at time 11.9
 Advancing game to time 12.0
 Awarded eco payment 263.0 at time 12.0
 Recorded cash and eco values (903.0,263.0) at time 12.0
-We have 903.0 cash! We can do the next buy, which costs 800.0 and has a buffer of 0 and a minimum buy time of 8.43!
+We have 903.0 cash! We can do the next buy, which costs 800.0 and has a buffer of 0 and a minimum buy time of 8.63!
 Completed the buy operation! The buy queue now has 1 items remaining in it
 Recorded cash and eco values (103.0,263.0) at time 12.0
 ----------
@@ -1099,7 +1099,7 @@ Recorded cash and eco values (375.6,277.0) at time 29.9
 Advancing game to time 30.0
 Awarded eco payment 277.0 at time 30.0
 Recorded cash and eco values (652.6,277.0) at time 30.0
-We have 652.6 cash! We can do the next buy, which costs 650.0 and has a buffer of 0 and a minimum buy time of 18.15!
+We have 652.6 cash! We can do the next buy, which costs 650.0 and has a buffer of 0 and a minimum buy time of 19.15!
 Completed the buy operation! The buy queue now has 0 items remaining in it
 Recorded cash and eco values (2.6,277.0) at time 30.0
 ----------
@@ -1112,9 +1112,69 @@ Recorded cash and eco values (2.6,277.0) at time 30.2
 Advancing game to time 30.3
 Recorded cash and eco values (2.6,277.0) at time 30.3
 ----------
+Advancing game to time 30.4
+Recorded cash and eco values (2.6,277.0) at time 30.4
+----------
+Advancing game to time 30.5
+Recorded cash and eco values (2.6,277.0) at time 30.5
+----------
+Advancing game to time 30.6
+Recorded cash and eco values (2.6,277.0) at time 30.6
+----------
+Advancing game to time 30.7
+Recorded cash and eco values (2.6,277.0) at time 30.7
+----------
+Advancing game to time 30.8
+Recorded cash and eco values (2.6,277.0) at time 30.8
+----------
+Advancing game to time 30.9
+Recorded cash and eco values (2.6,277.0) at time 30.9
+----------
+Advancing game to time 31.0
+Recorded cash and eco values (2.6,277.0) at time 31.0
+----------
+Advancing game to time 31.1
+Recorded cash and eco values (2.6,277.0) at time 31.1
+----------
+Advancing game to time 31.2
+Recorded cash and eco values (2.6,277.0) at time 31.2
+----------
+Advancing game to time 31.3
+Recorded cash and eco values (2.6,277.0) at time 31.3
+----------
+Advancing game to time 31.4
+Recorded cash and eco values (2.6,277.0) at time 31.4
+----------
+Advancing game to time 31.5
+Recorded cash and eco values (2.6,277.0) at time 31.5
+----------
+Advancing game to time 31.6
+Recorded cash and eco values (2.6,277.0) at time 31.6
+----------
+Advancing game to time 31.7
+Recorded cash and eco values (2.6,277.0) at time 31.7
+----------
+Advancing game to time 31.8
+Recorded cash and eco values (2.6,277.0) at time 31.8
+----------
+Advancing game to time 31.9
+Recorded cash and eco values (2.6,277.0) at time 31.9
+----------
+Advancing game to time 32.0
+Recorded cash and eco values (2.6,277.0) at time 32.0
+----------
+Advancing game to time 32.1
+Recorded cash and eco values (2.6,277.0) at time 32.1
+----------
+Advancing game to time 32.2
+Recorded cash and eco values (2.6,277.0) at time 32.2
+----------
+Advancing game to time 32.3
+Recorded cash and eco values (2.6,277.0) at time 32.3
+----------
 Advanced game state to round 2
-The current time is 30.299999999999997
-The next round starts at time 54.05
+The current time is 32.3
+The next round starts at time 57.05
 Our new cash and eco is given by (2.6,277.0) 
 
 MESSAGE FROM GameState.viewCashEcoHistory():

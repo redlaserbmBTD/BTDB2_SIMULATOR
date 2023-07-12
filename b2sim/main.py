@@ -82,8 +82,7 @@ class GameState():
 
         #These lists will hold tuples (time, message)
         #These tuples are utilized by the viewCashAndEcoHistory method to display detailed into to the player about what actions were taken at what during simulation
-        self.buy_messages = []
-        self.eco_messages = []
+        self.event_messages = []
         
         #~~~~~~~~~~~~~~~
         #FARMS & ALT-ECO
@@ -100,22 +99,21 @@ class GameState():
         # Note that the structure of self.farms however is not a list, but a dictionary with keys being nonnegative integers
         # The rationale for doing this is to drastically simplify code related to performing compound transactions.
 
-        self.farms = {}
+        self.farms = []
         farm_info = initial_state.get('Farms')
-        self.key = 0
         if farm_info is not None:
             for farm_info_entry in farm_info:
-                self.farms[self.key] = MonkeyFarm(farm_info_entry)
+                self.farms.append(MonkeyFarm(farm_info_entry))
                 
                 #If the farm is a T5 farm, modify our T5 flags appropriately
                 #Do not allow the user to initialize with multiple T5's
                 for i in range(3):
-                    if self.farms[self.key].upgrades[i] == 5 and self.T5_exists[i] == False:
+                    if self.farms[-1].upgrades[i] == 5 and self.T5_exists[i] == False:
                         self.T5_exists[i] = True
-                    elif self.farms[self.key].upgrades[i] == 5 and self.T5_exists[i] == True:
-                        self.farms[self.key].upgrades[i] = 4
-                
-                self.key += 1
+                    elif self.farms[-1].upgrades[i] == 5 and self.T5_exists[i] == True:
+                        self.logs.append("Warning! The initial state contained multiple T5 farms. Modifying the initial state to prevent this.")
+                        self.warnings.append(len(self.logs)-1)
+                        self.farms[-1].upgrades[i] = 4
 
         #Next, boat farms!
         boat_info = initial_state.get('Boat Farms')
@@ -194,6 +192,8 @@ class GameState():
         self.number_of_sends = 0
 
         eco_send = initial_state.get('Eco Send')
+        if eco_send is None:
+            eco_send = ecoSend(send_name = 'Zero')
         eco_send['Time'] = 0
         self.eco_queue.insert(0,eco_send)
         
@@ -250,18 +250,38 @@ class GameState():
         self.logs.append("MESSAGE FROM GameState.viewCashEcoHistory():")
         self.logs.append("Graphing history of cash and eco!")
 
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #Create a table that shows when each significant event in simulation occurs
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        event_df = pd.DataFrame(self.event_messages)
+        event_df = event_df.round(1)
+        display(event_df)
+
         #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         #Graph the cash and eco values over time
         #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-        fig, ax = plt.subplots(1,2)
+        #Graphing cash
+        fig, ax1 = plt.subplots()
         fig.set_size_inches(dim[0],dim[1])
-        ax[0].plot(self.time_states, self.cash_states, label = "Cash")
-        ax[1].plot(self.time_states, self.eco_states, label = "Eco")
-        
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        #Mark where the rounds start
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        color = 'tab:blue'
+        ax1.set_xlabel('Time (seconds)')
+        ax1.set_ylabel('Cash', color = color)
+        ax1.plot(self.time_states, self.cash_states, label = "Cash", color = color)
+        ax1.tick_params(axis ='y', labelcolor = color)
+
+        #Graphing eco
+        color = 'tab:orange'
+        ax2 = ax1.twinx()
+        ax2.set_ylabel('Eco', color = color)
+        ax2.plot(self.time_states, self.eco_states, label = "Eco", color = color)
+        ax2.tick_params(axis ='y', labelcolor = color)
+
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #Mark on the graph messages in self.event_messages
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
         cash_min = min(self.cash_states)
         eco_min = min(self.eco_states)
@@ -269,78 +289,81 @@ class GameState():
         cash_max = max(self.cash_states)
         eco_max = max(self.eco_states)
 
-        round_to_graph = self.rounds.getRoundFromTime(self.time_states[0]) + 1
-        while self.rounds.round_starts[round_to_graph] <= self.time_states[-1]:
-            ax[0].plot([self.rounds.round_starts[round_to_graph], self.rounds.round_starts[round_to_graph]],[cash_min-1, cash_max+1], label = "R" + str(round_to_graph) + " start", linestyle='dotted', color = 'k')
-            ax[1].plot([self.rounds.round_starts[round_to_graph], self.rounds.round_starts[round_to_graph]],[eco_min-1, eco_max+1], label = "R" + str(round_to_graph) + " start", linestyle='dotted', color = 'k')
-            round_to_graph += 1
+        for message in self.event_messages:
 
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        #Mark where purchases in the buy queue and eco queue occurred
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-        for message in self.buy_messages:
-            if message[2] == 'Eco':
+            # Set different line properties for each message type
+            if message['Type'] == 'Eco':
+                line_style = ':'
                 line_color = 'b'
-            elif message[2] == 'Buy':
+            elif message['Type'] == 'Buy':
+                line_style = ':'
                 line_color = 'r'
+            elif message['Type'] == 'Round':
+                line_style = ':'
+                line_color = 'k'
 
-            if len(message[1]) > 30:
-                thing_to_say = message[1][0:22] + '...'
+            # If the given message is too long, truncate it.
+            if len(message['Message']) > 30:
+                thing_to_say = message['Message'][0:22] + '...'
             else:
-                thing_to_say = message[1]
-            
-            thing_to_say = thing_to_say + ' (R' + str(np.round(self.rounds.getRoundFromTime(message[0], get_frac_part = True),1)) + ')'
-            ax[0].plot([message[0],message[0]],[cash_min-1, cash_max+1], label = thing_to_say, linestyle = 'dashed', color = line_color)
-            ax[1].plot([message[0],message[0]],[eco_min-1, eco_max+1], label = thing_to_say, linestyle = 'dashed', color = line_color)
+                thing_to_say = message['Message']
+
+            #On both the cash and eco history graphs
+            ax1.plot([message['Time'],message['Time']],[cash_min-1, cash_max+1], label = thing_to_say, linestyle = line_style, color = line_color)
 
         #~~~~~~~~~~~~~~~~
         #Label the graphs
         #~~~~~~~~~~~~~~~~
 
-        ax[0].set_title("Cash vs Time")
-        ax[1].set_title("Eco vs Time")
-        
-        ax[0].set_ylabel("Cash")
-        ax[1].set_ylabel("Eco")
-        
-        ax[0].set_xlabel("Time (seconds)")
-        ax[1].set_xlabel("Time (seconds)")
-
-        ax[1].legend(bbox_to_anchor = (1.02, 1), fontsize = font_size)
-        
+        ax1.set_title("Cash & Eco vs Time")
+        ax1.legend(bbox_to_anchor = (1.02, 1), fontsize = font_size)
         fig.tight_layout()
 
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        #Create a table that displays the revenue made by each farm
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #Create a table that displays the revenue/expenses of each farm
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
         #Create a list of revenues and expenses for every farm
         self.farm_revenues = []
         self.farm_expenses = []
         self.farm_profits = []
         self.farm_eis = []
+        self.farm_starts = []
+        self.farm_ends = []
 
-        for key in self.farms.keys():
-            farm = self.farms[key]
+        for farm in self.farms:
             self.farm_revenues.append(farm.revenue)
             self.farm_expenses.append(farm.expenses)
             self.farm_profits.append(farm.revenue - farm.expenses)
 
             #Also, measure the equivalent eco impact of the farm
+            start_time = max(farm.init_purchase_time, self.simulation_start_time)
             if farm.sell_time == None:
-                self.farm_eis.append(6*farm.revenue/(self.current_time - max(farm.init_purchase_time, self.simulation_start_time)))
+                end_time = self.current_time
             else:
-                self.farm_eis.append(6*farm.revenue/(farm.sell_time -  max(farm.init_purchase_time, self.simulation_start_time)))
-                
+                end_time = farm.sell_time
+
+            self.farm_starts.append(start_time)
+            self.farm_ends.append(end_time)
+
+            self.farm_eis.append(6*farm.revenue/(end_time - start_time))
 
         # dictionary of lists 
         if display_farms and len(self.farms) > 0:
-            farm_table = {'Farm Index': [int(i) for i in range(self.key)], 'Revenue': self.farm_revenues, 'Expenses': self.farm_expenses, 'Profit': self.farm_profits, 'Eco Impact': self.farm_eis} 
+            farm_table = {
+                'Farm Index': [int(i) for i in range(len(self.farms))], 
+                'Revenue': self.farm_revenues, 
+                'Expenses': self.farm_expenses, 
+                'Profit': self.farm_profits, 
+                'Eco Impact': self.farm_eis, 
+                'Start Time': self.farm_starts, 
+                'End Time': self.farm_ends
+            } 
             df = pd.DataFrame(farm_table)
             df = df.set_index('Farm Index')
             df = df.round(0)
             display(df)
+
         
         self.logs.append("Successfully generated graph! \n")
     
@@ -512,7 +535,11 @@ class GameState():
         self.max_eco_amount = send_info['Max Eco Amount']
 
         self.logs.append("Modified the eco send to %s"%(self.send_name))
-        self.buy_messages.append((self.current_time, 'Change eco to %s'%(self.send_name), 'Eco'))
+        self.event_messages.append({
+            'Time': self.current_time, 
+            'Type': "Eco",
+            'Message': "Change eco to %s"%(self.send_name)
+        })
 
     def showWarnings(self,warnings):
         for index in warnings:
@@ -526,6 +553,17 @@ class GameState():
         # If a target round is given, compute the target_time from that
         if target_round is not None:
             target_time = self.rounds.getTimeFromRound(target_round)
+
+        # Append messages to the event messages list showing when each round starts
+        given_round = self.current_round
+        end_round = self.rounds.getRoundFromTime(target_time)
+        while given_round <= end_round:
+            self.event_messages.append({
+                'Time': self.rounds.getTimeFromRound(given_round),
+                'Type': "Round",
+                'Message': "Round %s start"%(given_round)
+            })
+            given_round += 1
             
         #A fail-safe to prevent the code from trying to go backwards in time
         if target_time < self.current_time:
@@ -536,6 +574,9 @@ class GameState():
             self.logs.append("Advancing game to time %s"%(np.round(intermediate_time,3)))
             self.advanceGameState(target_time = intermediate_time)
             self.logs.append("----------")
+
+        # Sort the messages in self.event_messages so that they are listed chronologically
+        self.event_messages = sorted(self.event_messages, key=lambda x: x['Time']) 
 
         #FOR SPOONOIL: Show warning messages for fail-safes triggered during simulation
         self.showWarnings(self.warnings)
@@ -568,9 +609,8 @@ class GameState():
         # FAIL-SAFE: Check whether the current eco send is valid. If it is not, change the eco send to zero.
         if eco_send_info[self.send_name]['End Round'] < self.current_round:
             self.logs.append("Warning! The eco send %s is no longer available! Switching to the zero send."%(self.send_name))
-            self.logs.append("Warning! This message should not have come up during simulation! Please contact redlaserbm with information on what happened.")
             self.warnings.append(len(self.logs) - 1)
-            self.eco_queue.insert(0,{'Time': 0, 'Send Name': 'Zero'})
+            self.eco_queue.insert(0,ecoSend(time = 0, send_name='Zero'))
             target_time = self.eco_queue[0]['Time']
 
         # FAIL-SAFE: Prevent advanceGameState from using an eco send after it becomes unavailable by terminating early in this case.
@@ -885,8 +925,7 @@ class GameState():
 
         #FARMS
         if len(self.farms) > 0:
-            for key in self.farms.keys():
-                farm = self.farms[key]
+            for key, farm in enumerate(self.farms):
                 if farm.sell_time is None:
                     #If the farm is a monkeynomics, determine the payout times of the active ability
                     if farm.upgrades[1] == 5:
@@ -996,18 +1035,27 @@ class GameState():
         #BOAT FARMS
         if len(self.boat_farms) > 0:
 
-            #If the player has Trade Empire, determine the buff to be applied to other boat farm payments
+            #Is there a Trade Empire on screen right now? 
             if self.Tempire_exists == True:
-                arg = min(len(self.boat_farms) - 1,20)
+                #Yes, determine the buff to be applied to other boat farm payments.
+                active_boats = 0
+                for key in self.boat_farms.keys():
+                    boat_farm = self.boat_farms[key]
+                    if boat_farm['Sell Time'] is None:
+                        active_boats += 1
+                arg = min(active_boats - 1,20)
             else:
+                #No, there is not.
                 arg = 0
+
             multiplier = 1 + 0.05*arg
 
             #Determine the amount of the money the boats will give each round
             boat_payout = 0
             for key in self.boat_farms.keys():
                 boat_farm = self.boat_farms[key]
-                boat_payout += multiplier*boat_payout_values[boat_farm['Upgrade'] - 3]
+                if boat_farm['Sell Time'] is None:
+                    boat_payout += multiplier*boat_payout_values[boat_farm['Upgrade'] - 3]
 
             #At the start of each round, append a payout entry with the boat payout
             self.inc = 1
@@ -1046,6 +1094,7 @@ class GameState():
 
         #Now that we determined all the payouts, sort the payout times by the order they occur in
         payout_times = sorted(payout_times, key=lambda x: x['Time']) 
+
         #self.logs.append("Sorted the payouts in order of increasing time!")
 
         return payout_times
@@ -1166,9 +1215,14 @@ class GameState():
             # In general the this step is necessary if there are in the presence of loans.
             # NOTE: Loans do not influence purchases, so we can process expense tracking for farms only when a transaction actually occurs.
 
-            for key in self.farms.keys():
-                farm = self.farms[key]
+            #For tracking the revenue of farms
+            for farm in self.farms:
                 farm.h_revenue = farm.revenue
+
+            #For tracking the revenue of boat farms
+            for key in self.boat_farms.keys():
+                boat_farm = self.boat_farms[key]
+                boat_farm['Hypothetical Revenue'] = boat_farm['Revenue']
             
             for dict_obj in purchase_info:
 
@@ -1213,8 +1267,7 @@ class GameState():
                         self.valid_action_flag = False
                         break
                 elif dict_obj['Type'] == 'Sell All Farms':
-                    for key in self.farms.keys():
-                        farm = self.farms[key]
+                    for farm in self.farms:
                         if farm.sell_time is None:
                             h_new_cash, h_new_loan = impact(h_cash, h_loan, farm_sellback_values[tuple(farm.upgrades)])
                             farm.h_revenue += h_new_cash - h_cash
@@ -1286,7 +1339,18 @@ class GameState():
                 elif dict_obj['Type'] == 'Sell Boat Farm':
                     ind = dict_obj['Index']
                     boat_farm = self.boat_farms[ind]
-                    h_cash, h_loan = impact(h_cash, h_loan, boat_sell_values[boat_farm['Upgrade']-3])
+
+                    #Check whether the boat farm is actually on screen before selling it:
+                    if boat_farm['Sell Time'] is None:
+                        #Selling a farm counts as that farm generating revenue
+                        h_new_cash, h_new_loan = impact(h_cash, h_loan, boat_sell_values[boat_farm['Upgrade']-3])
+                        boat_farm['Hypothetical Revenue'] += h_new_cash - h_cash
+                        h_cash, h_loan = h_new_cash, h_new_loan
+                    else:
+                        self.logs.append("WARNING! Tried to sell a boat farm that is not on screen! Aborting buy queue")
+                        self.warnings.append(len(self.logs)-1)
+                        self.valid_action_flag = False
+                        break
 
                 # DRUID FARM RELATED MATTERS
                 elif dict_obj['Type'] == 'Buy Druid Farm':
@@ -1370,9 +1434,13 @@ class GameState():
                 self.loan = h_loan
 
                 # Track the revenue made by each farm
-                for key in self.farms.keys():
-                    farm = self.farms[key]
+                for farm in self.farms:
                     farm.revenue = farm.h_revenue
+
+                # Track the revenue made by each boat farm
+                for key in self.boat_farms.keys():
+                    boat_farm = self.boat_farms[key]
+                    boat_farm['Revenue'] = boat_farm['Hypothetical Revenue']
 
                 # self.logs.append("The new lists of farm revenues and expenses are given by: ")
                 # self.logs.append(str(self.farm_revenues))
@@ -1390,9 +1458,7 @@ class GameState():
                             'Upgrades': [0,0,0]
                         }
                         farm = MonkeyFarm(farm_info)
-                        
-                        self.farms[self.key] = farm
-                        self.key+= 1
+                        self.farms.append(farm)
 
                         #For revenue and expense tracking
                         farm.revenue = 0
@@ -1467,8 +1533,7 @@ class GameState():
                     elif dict_obj['Type'] == 'Sell All Farms':
                         self.logs.append("Selling all farms!")
                         self.T5_exists = [False for i in range(3)] #Obviously, if we sell all farms we won't have any T5's anymore!
-                        for key in self.farms.keys():
-                            farm = self.farms[key]
+                        for farm in self.farms:
                             farm.sell_time = payout['Time']
                     
                     elif dict_obj['Type'] == 'Withdraw Bank':
@@ -1486,8 +1551,13 @@ class GameState():
                     elif dict_obj['Type'] == 'Buy Boat Farm':
                         self.logs.append("Purchasing boat farm!")
                         boat_farm = {
+                            'Initial Purchase Time': self.current_time,
                             'Purchase Time': self.current_time,
-                            'Upgrade': 3
+                            'Upgrade': 3,
+                            'Revenue': 0,
+                            'Expenses': boat_globals['Merchantmen Cost'],
+                            'Hypothetical Revenue': 0,
+                            'Sell Time': None
                         }
                         self.boat_farms[self.boat_key] = boat_farm
                         self.boat_key += 1
@@ -1497,6 +1567,9 @@ class GameState():
                         self.logs.append("Upgrading the boat farm at index %s"%(ind))
                         boat_farm = self.boat_farms[ind]
                         boat_farm['Upgrade'] += 1
+
+                        #Expense tracking
+                        boat_farm['Expenses'] += boat_upgrades_costs[boat_farm['Upgrade'] - 4]
                         
                         #Update the payout information of the boat farm
                         boat_farm['Payout'] = boat_payout_values[boat_farm['Upgrade'] - 3]
@@ -1519,7 +1592,9 @@ class GameState():
                         if boat_farm['Upgrade'] == 5:
                             self.logs.append("The boat farm we're selling is a Trade Empire! Removing the Tempire buff.")
                             self.Tempire_exists = False
-                        self.boat_farms.pop(ind)
+
+                        #Mark the boat farm's sell time
+                        boat_farm['Sell Time'] = payout['Time']
 
                     # DRUID FARMS
                     elif dict_obj['Type'] == 'Buy Druid Farm':
@@ -1615,7 +1690,11 @@ class GameState():
         #...so that players can see where in the graphs their purchases are occuring
         if len(buy_message_list) > 0:
             buy_message = ', '.join(buy_message_list)
-            self.buy_messages.append((payout['Time'], buy_message, 'Buy'))
+            self.event_messages.append({
+                'Time': payout['Time'], 
+                'Type': "Buy", 
+                'Message': buy_message
+            })
         
         return made_purchase
             

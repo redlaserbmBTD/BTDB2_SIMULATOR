@@ -110,8 +110,13 @@ def sellAllBoatFarms(min_buy_time = 0):
 # Do NOT use it to add boat farms during simulation
 def initBoatFarm(purchase_time = None, upgrade = 3):
     return {
+        'Initial Purchase Time': purchase_time,
         'Purchase Time': purchase_time,
         'Upgrade': upgrade,
+        'Revenue': 0,
+        'Expenses': 0,
+        'Hypothetical Revenue': 0,
+        'Sell Time': None
     }
 
 #############
