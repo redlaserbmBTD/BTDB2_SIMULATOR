@@ -2,11 +2,6 @@
 
 The `b2sim` Python library is an extensive feature-rich library for simulating flowcharts within battles 2. Simulating essential aspects of battles 2's income sources with virtually 100% accuracy, the library is a must-use tool for optimizing eco'ing and farming with any flowchart. Results from the simulator can be used to better inform practical decisions made during games, improving player game sense and leading to more optimal play. The code is relatively easy to use and does not require prior coding experience to effectively operate.
 
-- To install the code, first download Python on your machine, and then in the terminal type `pip install b2sim` and hit 'Enter'.
-- To learn how to operate the code, see the tutorials folder in this GitHub repo. It contains numerous examples with code explained in plain English.
-- Want to request features for the code? Want to help out with the code? Found a bug? Don't hesitate to contact me! The most immediate way to get my attention with regards to this code is to join the b2 Popology discord server and ping me there: https://discord.gg/axHnkcVe6E
-- Potential collaborators interested with helping out with the code should view the "Feature Requests" section below for more info on tasks that need to be completed.
-
 # Running the Code
 
 ## For noobs:
@@ -30,7 +25,11 @@ If for whatever reason pip installation does not work, try the following:
 1. **Simultaneous simulation of eco, farms, and alt-eco:** When given an eco send to use and some arrangement of farms and alt-eco, the simulator accurately tracks the progression of the player's cash and eco over time. The results of the simulator are nearly true to the game.
 2. **Easy operation:** Simply input your initial cash and eco, the round to start on, and the purchases you intend to make and the eco flowchart you intend to follow over the course of the match. The code runs in one click and delivers results in seconds.
 3. **Complete Farm support:** The simulator supports IMF Loans and Monkeyopolis. Also, the simulator supports compound purchases, such as selling into Monkey Wall Street.
-4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game. 
+4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game.
+
+# Contributing to the Code
+
+Potential contributors are urged to join the [b2 popology discord](https://discord.gg/YBkvcdBN4H) where I can be easily reached with a ping. Look in the "issues" section of this repo for tasks which need to be completed but have not yet been tended to.
 
 # Update Log
 - (July 11, 2023 - v1.0.9)
@@ -100,27 +99,3 @@ If for whatever reason pip installation does not work, try the following:
    - `GameState.fastForward()` now by default uses `interval = 0.1`. This will lead to sharper graphs and surprisngly does not appear to slow down the code much.
 - (May 11, 2023 - v0.9.1) 
    - Added druid farm support. Currently untested!
-
-# Feature Requests
-- (High Priority) Reorganize `GameState.processBuyQueue()` so that the process of adding actions to the simulator is more straightforward. 
-- (High Priority) More actions in `actions.py` to expand functionality and improve ease of use, including:
-   - Selling all Supply Drops, Selling all Druid Farms, Selling all Boat Farms
-   - Selling into a farm upgrade
-   - Withdrawing from all banks at once
-   - Buying, selling, and using overclock (on farms)
-- (High Priority) Expanded revenue tracking:
-   - It would also be nice if the sim could track stats related to alt eco. Such stats could include revenue, expenses, long-run eco, and the aggregate revenue and expenses of each alt eco over the course of the simulation.
-   - In order for players to understand the `eco impact` statistic, display the farm's start and end of availability during the simulation.
-- (High Priority) Change the formatting for storing farms and boat farms:
-   - In a previous update, the behavior of farm selling was changed so that, from the perspective of the simulator, the farm is not sold, but rather "disabled". The `GameState` class continues to store the farms but does not compute their payments or award them.
-   - This new behavior circumvents an issue in early builds that used a list structure to store farms where a selling one farm could cause other farms' identifying index to shift, essentially making it impossible to implement support for compound transactions.
-   - Because of this, farms can now be stored in a simple list structure.
-   - Naturally, when revenue/expense tracking support is also implemented for boat farms, we will in the same way want to change the data structure for storing them to a list.
-- (Medium priority) Village support:
-   - Village support would help answer the question of how useful Monkey City/Monkey Town actually are.
-- (Medium priority) Restructure the code:
-   - There may be a way to rewrite 'processBuyQueue' so that it uses less lines of code and is easier to understand. (will explain idea here later)
-- (Low priority) Robust logging when comparing different strategies
-   - The idea here is this: If I have two or more game states that share the same round class and are simulated over the same time span, they are directly comparable. While a method already exists to compare multiple game states with this principle, because it does not share code with the `Game State` class method `viewCashAndEcoHistory`, it is currently inflexible with regards to updates and lacks some of the pizazz the class method has right now.
-- (Low Priority) Optimization of the buy queue to prevent redundant computations
-   - The code is already reasonably fast, but there are selected cases where the simulator is known to perform the same computation repeatedly when this sort of thing can be avoided.
