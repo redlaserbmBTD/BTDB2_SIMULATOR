@@ -10,6 +10,7 @@ The `b2sim` Python library is an extensive feature-rich library for simulating f
 3. Your installation of anaconda came with a program called "Jupyter Notebook", which allows you to create and edit .ipynb files which you will use to operate the code. Open Jupyter, and create a new .ipynb file wherever you wish on your computer.
 4. In the first cell of this new .ipynb file you've created, type `import b2sim as b2` and hit enter. 
 5. Congratulations, you now have a file which you can use to generate simulations! Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
+6. (Bonus step) Instead of Jupyter Notebook, I recommend using [Visual Studio Code](https://code.visualstudio.com/) to operate the code. VS Code comes with a number of bells and whistles and QOL features that can speed up the code-writing process.
 
 ## For experienced coders:
 1. Type `pip install b2sim` in the terminal to download.
@@ -30,6 +31,13 @@ If for whatever reason pip installation does not work, try the following:
 # Contributing to the Code
 
 Potential contributors are urged to join the [b2 popology discord](https://discord.gg/YBkvcdBN4H) where I can be easily reached with a ping. Look in the "issues" section of this repo for tasks which need to be completed but have not yet been tended to.
+
+## First-Time Contributors
+
+If it's your first time ever contributing to the code, follow these steps to made the contribution process easy and hassle-free:
+1. Download [GitHub Desktop](https://desktop.github.com/).
+2. Clone the repository to your desktop.
+3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
 - (July 11, 2023 - v1.0.9)
