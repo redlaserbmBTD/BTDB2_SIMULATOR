@@ -37,6 +37,7 @@ If for whatever reason pip installation does not work, try the following:
    - Adjusted the lengths of some of the rounds in `nat_send_lengths.csv`
    - Fixed an error in `eco_send_info.csv` which caused Grouped Reds and Grouped Blues to be unavailable in the simulator on Round 11
    - Fixed a bug which made the code throw an error if a fail-safe was triggered as a consequence of the simulator attempting to use an eco send after it became unavailable.
+   - Renamed "examples" folder to "tutorials". Revised the tutorial files so that they are more instructive.
    - Updated `GameState.viewCashEcoHistory` so that it is easier to see when key transactions or changes in eco occur during the simulation.
 - (July 10, 2023 - v1.0.8)
    - Initializing boat farms is now also done with a list structure just like with regular farms.
