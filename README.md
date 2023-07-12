@@ -33,6 +33,11 @@ If for whatever reason pip installation does not work, try the following:
 4. **Advanced Optimization Potential:** The code can be used in conjuction with optimization or nonlinear root-finding methods to determine the absolute best times to makes your moves during the game. 
 
 # Update Log
+- (July 11, 2023 - v1.0.9)
+   - Adjusted the lengths of some of the rounds in `nat_send_lengths.csv`
+   - Fixed an error in `eco_send_info.csv` which caused Grouped Reds and Grouped Blues to be unavailable in the simulator on Round 11
+   - Fixed a bug which made the code throw an error if a fail-safe was triggered as a consequence of the simulator attempting to use an eco send after it became unavailable.
+   - Updated `GameState.viewCashEcoHistory` so that it is easier to see when key transactions or changes in eco occur during the simulation.
 - (July 10, 2023 - v1.0.8)
    - Initializing boat farms is now also done with a list structure just like with regular farms.
    - Changed round lengths in the spreadsheet. Natural round lengths were inferred by a test between spoonoil and ninjayas but the old numbers led to underestimates. The new numbers may still underestimate actual natural round lengths but are closer to the truth than before.
