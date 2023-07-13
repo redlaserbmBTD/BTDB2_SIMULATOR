@@ -40,6 +40,10 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (July 12, 2023 - v1.1.0)
+   - Reogranized `GameState.processBuyQueue` buy introducing for it a new helper method `GameState.processAction`. Potential contributors should now have an easier time adding new actions to the simulator.
+   - Within the `sellFarm` and `sellAllFarms` actions, you can now specify whether to withdraw from the farm (assuming it is a bank) before selling or not.
+   - You can now specify an argument `queue_threshold` for the `ecoSend` function. This argument prevents the simulator from allowing the attack queue to fill up with more sends than allowed by `queue_threshold`. This is useful for cases of sending multiple ZOMGs on R22 or multiple BADs on R30, where in either case, it is useful to wait until the previous bloon has finished sending before sending the next one so as to minimize self-drain.
 - (July 11, 2023 - v1.0.9)
    - Adjusted the lengths of some of the rounds in `nat_send_lengths.csv`
    - Fixed an error in `eco_send_info.csv` which caused Grouped Reds and Grouped Blues to be unavailable in the simulator on Round 11
