@@ -188,13 +188,16 @@ class GameState():
 
         self.eco_queue = initial_state.get('Eco Queue')
         if self.eco_queue is None:
-            self.eco_queue = [ecoSend(time = 0, send_name = 'Zero')]
+            self.eco_queue = []
         self.number_of_sends = 0
 
         eco_send = initial_state.get('Eco Send')
         if eco_send is not None:
             eco_send['Time'] = 0
             self.eco_queue.insert(0,eco_send)
+
+        if len(self.eco_queue) == 0: #I'm gonna be honest, I'm not proud of myself for writing code like this, but it works so fuck you.
+            self.eco_queue = [ecoSend(time = 0, send_name = 'Zero')]
         
         #Upgrade queue
         self.buy_queue = initial_state.get('Buy Queue')

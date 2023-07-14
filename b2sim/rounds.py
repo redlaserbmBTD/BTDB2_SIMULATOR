@@ -8,8 +8,13 @@ nat_dirname = os.path.dirname(__file__)
 nat_filename = os.path.join(nat_dirname, "templates/nat_send_lengths.csv")
 
 #DEFINITION OF THE ROUNDS CLASS
+
+# There are two ways to set round times:
+# 1. Stall Factor - stall factors are given to rounds with a list of tuples
+# 2. Stall Times - stall times are given to rounds witha list of tuples
+
 class Rounds():
-    def __init__(self, stall_factor_info):
+    def __init__(self, info, mode = 'Stall Factor'):
         
         #Logging system
         self.logs = []
@@ -23,31 +28,34 @@ class Rounds():
         max_stall_times[0] = max_antistall_time
 
         #Backwards compatability with the old system:
-        if type(stall_factor_info) == float:
-            stall_factor_info = [(0,stall_factor_info)]
+        if type(info) == float:
+            info = [(0,info)]
 
         #If the users fails to specify stall factor info for round 0...
-        if stall_factor_info[0][0] > 0:
-            stall_factor_info[0] = (0,stall_factor_info[0][1])
+        if info[0][0] > 0:
+            info[0] = (0,info[0][1])
 
         #Compute the round times given the stall factor info
         val = 0
         self.round_starts = [0]
 
         ind_of_interest = 0
-        stall_factor = stall_factor_info[ind_of_interest][1]
+        stall_info = info[ind_of_interest][1]
         for i in range(len(self.nat_send_lens)):
 
-            #If we have reached a round where the stall factor changes, change the stall factor
-            if len(stall_factor_info) >= ind_of_interest + 2 and i >= stall_factor_info[ind_of_interest+1][0]:
+            #If we have reached a round where the stall info changes, change the stall info
+            if len(info) >= ind_of_interest + 2 and i >= info[ind_of_interest+1][0]:
                 ind_of_interest += 1
-                stall_factor = stall_factor_info[ind_of_interest][1]
-                #print("Changed stall factor to %s"%(stall_factor))
-
-            #Determine the round length based on the current stall factor.
-            round_len = self.nat_send_lens[i] + (1-stall_factor)*max_antistall_time + stall_factor*max_stall_times[i]
+                stall_info = info[ind_of_interest][1]
+            
+            if mode == 'Stall Times':
+                #Interpret the stall info as meaning, "the given round is stalled for this many seconds"
+                round_len = self.nat_send_lens[i] + max(max_antistall_time,min(max_stall_times[i],stall_info))
+            elif mode == 'Stall Factor':
+                #Interpret the stall info as meaning, "the given round has this stall factor"
+                round_len = self.nat_send_lens[i] + (1-stall_info)*max_antistall_time + stall_info*max_stall_times[i]
             val += round_len
-            self.round_starts.append(val)            
+            self.round_starts.append(val)
             
     def getRoundFromTime(self, time, get_frac_part = False):
         ind = 0
