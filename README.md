@@ -40,6 +40,9 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (July 13, 2023 - v1.1.1)
+   - Fixed a bug which caused the sim to behave incorrectly when an eco send was specified but a queue wasn't.
+   - You can now specify stall times directly when initializing the `Rounds` class, by doing something like `Rounds([(0,6), (1,8.5), (2,10.5), (3,7), (7,8)], mode = 'Stall Times')`. In a later update I will flesh out the tutorial files so that it is more clear how to operate this new mode.
 - (July 12, 2023 - v1.1.0)
    - Reogranized `GameState.processBuyQueue` by introducing for it a new helper method `GameState.processAction`. Potential contributors should now have an easier time adding new actions to the simulator.
    - Within the `sellFarm` and `sellAllFarms` actions, you can now specify whether to withdraw from the farm (assuming it is a bank) before selling or not.
