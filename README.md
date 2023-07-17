@@ -40,7 +40,10 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
-- (July 14, 2023 - v1.2.0)
+- (July 17, 2023 - v1.2.1)
+   - Corrected an oversight which caused the simulator to think buying a farm was 0 dollars. Oops.
+   - You can now use `buyFarm` to buy more than just 000 farms. Use the `upgrades` argument along with a tuple for the upgrades you want on your farm.
+- (July 16, 2023 - v1.2.0)
    - Support for engineer overclocks has been added. You can now buy and sell overclocks and use them on farms. See the tutorial file on farms for an example on how to use this new feature.
    - New argument `mode` for the `Rounds` class. You can initialize the Rounds class with one of four different modes: Stall Factor, Stall Times, Manual, and Theoretical Stall Factor. The details for initialization of the `Rounds` class is briefly explained in the tutorial files.
    - New argument `max_send_time` for eco sends. This is essentially the same thing as putting a `time` argument on the next eco send but this second syntax option may prove easier to use than `time` in some cases.
