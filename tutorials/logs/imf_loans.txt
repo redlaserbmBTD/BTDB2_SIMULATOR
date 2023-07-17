@@ -523,37 +523,11 @@ Advancing game to time 317.9
 Advancing game to time 318.0
 Awarded eco payment 700 at time 318.0
 Recorded cash and eco values (7700,700) at time 318.0
-We have 7700 cash! We can do the next buy, which costs -7840.0 and has a buffer of 14950 and a minimum buy time of 0!
+We have 7700 cash! We can do the next buy, which costs 7110.0 and has a buffer of 0 and a minimum buy time of 0!
 Selling all farms!
-Completed the buy operation! The buy queue now has 8 items remaining in it
-We have 15540.0 cash! We can do the next buy, which costs 0.0 and has a buffer of 0 and a minimum buy time of 0!
 Purchasing farm!
-Completed the buy operation! The buy queue now has 7 items remaining in it
-We have 15540.0 cash! We can do the next buy, which costs 200.0 and has a buffer of 0 and a minimum buy time of 0!
-Upgrading path 1 of the farm at index 2
-The new farm has upgrades (0,1,0)
-Completed the buy operation! The buy queue now has 6 items remaining in it
-We have 15340.0 cash! We can do the next buy, which costs 700.0 and has a buffer of 0 and a minimum buy time of 0!
-Upgrading path 1 of the farm at index 2
-The new farm has upgrades (0,2,0)
-Completed the buy operation! The buy queue now has 5 items remaining in it
-We have 14640.0 cash! We can do the next buy, which costs 5100.0 and has a buffer of 0 and a minimum buy time of 0!
-Upgrading path 1 of the farm at index 2
-The new farm has upgrades (0,3,0)
-Completed the buy operation! The buy queue now has 4 items remaining in it
-We have 9540.0 cash! We can do the next buy, which costs 7500.0 and has a buffer of 0 and a minimum buy time of 0!
-Upgrading path 1 of the farm at index 2
-The new farm has upgrades (0,4,0)
-Completed the buy operation! The buy queue now has 3 items remaining in it
-We have 2040.0 cash! We can do the next buy, which costs 250.0 and has a buffer of 0 and a minimum buy time of 0!
-Upgrading path 2 of the farm at index 2
-The new farm has upgrades (0,4,1)
-Completed the buy operation! The buy queue now has 2 items remaining in it
-We have 1790.0 cash! We can do the next buy, which costs 200.0 and has a buffer of 0 and a minimum buy time of 0!
-Upgrading path 2 of the farm at index 2
-The new farm has upgrades (0,4,2)
 Completed the buy operation! The buy queue now has 1 items remaining in it
-Recorded cash and eco values (1590.0,700) at time 318.0
+Recorded cash and eco values (590.0,700) at time 318.0
 Advancing game to time 318.1
 Advancing game to time 318.2
 Advancing game to time 318.3
@@ -615,7 +589,7 @@ Advancing game to time 323.8
 Advancing game to time 323.9
 Advancing game to time 324.0
 Awarded eco payment 700 at time 324.0
-Recorded cash and eco values (2290.0,700) at time 324.0
+Recorded cash and eco values (1290.0,700) at time 324.0
 Advancing game to time 324.1
 Advancing game to time 324.2
 Advancing game to time 324.3
@@ -679,7 +653,7 @@ Advancing game to time 329.8
 Advancing game to time 329.9
 Advancing game to time 330.0
 Awarded eco payment 700 at time 330.0
-Recorded cash and eco values (2990.0,700) at time 330.0
+Recorded cash and eco values (1990.0,700) at time 330.0
 Advancing game to time 330.1
 Advancing game to time 330.2
 Advancing game to time 330.3
@@ -741,7 +715,7 @@ Advancing game to time 335.8
 Advancing game to time 335.9
 Advancing game to time 336.0
 Awarded eco payment 700 at time 336.0
-Recorded cash and eco values (3690.0,700) at time 336.0
+Recorded cash and eco values (2690.0,700) at time 336.0
 Advancing game to time 336.1
 Advancing game to time 336.2
 Advancing game to time 336.3
@@ -762,11 +736,11 @@ Advancing game to time 337.7
 Advancing game to time 337.8
 Advancing game to time 337.9
 Advancing game to time 338.0
-We have 3690.0 cash! We can do the next buy, which costs -26005.0 and has a buffer of 0 and a minimum buy time of 338.0!
+We have 2690.0 cash! We can do the next buy, which costs -26005.0 and has a buffer of 0 and a minimum buy time of 338.0!
 Taking out a loan from the IMF at index 2
 Selling the farm at index 2
 Completed the buy operation! The buy queue now has 0 items remaining in it
-Recorded cash and eco values (29695.0,700) at time 338.0
+Recorded cash and eco values (28695.0,700) at time 338.0
 Advancing game to time 338.1
 Advancing game to time 338.2
 Advancing game to time 338.3
@@ -808,7 +782,7 @@ Advancing game to time 341.8
 Advancing game to time 341.9
 Advancing game to time 342.0
 Awarded eco payment 700 at time 342.0
-Recorded cash and eco values (30045.0,700) at time 342.0
+Recorded cash and eco values (29045.0,700) at time 342.0
 Advancing game to time 342.1
 Advancing game to time 342.2
 Advancing game to time 342.3
@@ -866,7 +840,7 @@ Advancing game to time 347.4
 Advanced game state to round 17
 The current time is 347.40000000000003
 The next round starts at time 386.65000000000003
-Our new cash and eco is given by (30045.0,700) 
+Our new cash and eco is given by (29045.0,700) 
 
 MESSAGE FROM GameState.viewCashEcoHistory():
 Graphing history of cash and eco!

@@ -1340,10 +1340,11 @@ class GameState():
         # FARM RELATED MATTERS
         elif dict_obj['Type'] == 'Buy Farm':
             if stage == 'check':
-                h_new_cash, h_new_loan = impact(h_cash, h_loan, -1*farm_globals['Farm Cost'])
+                farm_cost = farm_total_cost_values[dict_obj['Upgrades']]
+                h_cash, h_loan = impact(h_cash, h_loan, -1*farm_cost)
             else:
                 self.logs.append("Purchasing farm!")
-                farm_info = initFarm(purchase_time = payout['Time'], upgrades = [0,0,0])
+                farm_info = initFarm(purchase_time = payout['Time'], upgrades = list(dict_obj['Upgrades']))
                 farm = MonkeyFarm(farm_info)
                 self.farms.append(farm)
 

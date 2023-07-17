@@ -1,6 +1,7 @@
 # %%
 import pandas as pd
 import os
+from copy import deepcopy as dc
 
 # %%
 
@@ -269,15 +270,17 @@ def computeSellbackValues(farm_upgrades_costs, farm_cost):
                 upgrades_of_interest[i] = j+1
                 farm_sellback_values[tuple(upgrades_of_interest)] = farm_sellback_values[(0,0,k)] + crosspath_money_spent
 
+    farm_total_cost_values = dc(farm_sellback_values)
+
     for key in farm_sellback_values:
         if key[2] >= 2:
             farm_sellback_values[key] = (sellback_value+0.1)*farm_sellback_values[key]
         else:
             farm_sellback_values[key] = sellback_value*farm_sellback_values[key]
 
-    return farm_sellback_values
+    return farm_total_cost_values, farm_sellback_values
 
-farm_sellback_values = computeSellbackValues(farm_upgrades_costs, farm_cost)
+farm_total_cost_values, farm_sellback_values = computeSellbackValues(farm_upgrades_costs, farm_cost)
 
 # %%
 

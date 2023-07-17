@@ -2,9 +2,10 @@
 # FARMS
 #######
 
-def buyFarm(buffer = 0, min_buy_time = 0):
+def buyFarm(upgrades = (0,0,0), buffer = 0, min_buy_time = 0):
     return {
         'Type': 'Buy Farm',
+        'Upgrades': upgrades,
         'Buffer': buffer,
         'Minimum Buy Time': min_buy_time,
         'Message': 'Buy Farm'
