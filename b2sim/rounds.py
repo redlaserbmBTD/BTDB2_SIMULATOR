@@ -9,29 +9,37 @@ nat_filename = os.path.join(nat_dirname, "templates/nat_send_lengths.csv")
 
 #DEFINITION OF THE ROUNDS CLASS
 
-# There are two ways to set round times:
-# 1. Stall Factor - stall factors are given to rounds with a list of tuples
-# 2. Stall Times - stall times are given to rounds witha list of tuples
+# There are different ways to set round times in the Rounds class:
+# 1. Stall Factor - Sets rounds using designated "stall factors" for each round
+# 2. Theoretical Stall Factor - Just like 
+# 3. Stall Times
+# 4. Manual
 
 class Rounds():
     def __init__(self, info, mode = 'Stall Factor'):
-        
-        #Logging system
-        self.logs = []
+
+        if mode == 'Manual':
+            #For manually setting round times
+            self.round_starts = info
+            return None
 
         #Determine natural send lengths, max stall times, and max anti-stall times
         df = pd.read_csv(nat_filename)
         self.nat_send_lens = list(df['Nat Send Len'])
 
         max_antistall_time = 5.5
-        max_stall_times = [8.5 + i for i in range(51)]
-        max_stall_times[0] = max_antistall_time
-
+        if mode == 'Stall Factor':
+            max_stall_times = list(df['Nat Stall Len'])
+        else:
+            #If using the Theoretical Stall Factor or Stall Times modes, use the round timer to determine maximum stall times
+            max_stall_times = [8.5 + i for i in range(51)]
+            max_stall_times[0] = max_antistall_time
+        
         #Backwards compatability with the old system:
         if type(info) == float:
             info = [(0,info)]
 
-        #If the users fails to specify stall factor info for round 0...
+        #If the user fails to specify stall factor info for round 0...
         if info[0][0] > 0:
             info[0] = (0,info[0][1])
 
@@ -51,7 +59,7 @@ class Rounds():
             if mode == 'Stall Times':
                 #Interpret the stall info as meaning, "the given round is stalled for this many seconds"
                 round_len = self.nat_send_lens[i] + max(max_antistall_time,min(max_stall_times[i],stall_info))
-            elif mode == 'Stall Factor':
+            elif mode == 'Stall Factor' or mode == 'Theoretical Stall Factor':
                 #Interpret the stall info as meaning, "the given round has this stall factor"
                 round_len = self.nat_send_lens[i] + (1-stall_info)*max_antistall_time + stall_info*max_stall_times[i]
             val += round_len
@@ -74,10 +82,17 @@ class Rounds():
         #self.logs.append("Mapped round %s to time %s"%(round_val,time))
         return time
     
+    def getStallTimes(self):
+        #given self.round_starts, determine how long each round is stalled for in seconds
+        stall_times = [0]
+        for i in range(1,len(self.round_starts) - 1):
+            stall_times.append((self.round_starts[i+1] - self.round_starts[i]) - self.nat_send_lens[i])
+        return stall_times
+
     def changeStallFactor(self,stall_factor, current_time):
-        self.logs.append("MESSAGE FROM Rounds.changeStallFactor():")
-        self.logs.append("Changing the stall factor from %s to %s"%(self.stall_factor,stall_factor))
-        self.logs.append("The old round start times were %s"%(self.round_starts))
+        #self.logs.append("MESSAGE FROM Rounds.changeStallFactor():")
+        #self.logs.append("Changing the stall factor from %s to %s"%(self.stall_factor,stall_factor))
+        #self.logs.append("The old round start times were %s"%(self.round_starts))
         
         game_round = self.rounds.getRoundFromTime(current_time)
         

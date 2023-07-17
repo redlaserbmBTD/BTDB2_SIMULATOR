@@ -20,13 +20,14 @@ def upgradeFarm(index, path, buffer = 0, min_buy_time = 0):
         'Message': 'Upgrade farm %s at path %s'%(index, path) 
     }
 
-def sellFarm(index, min_buy_time = 0, withdraw = False):
+def sellFarm(index, min_buy_time = 0, withdraw = False, buffer = 0):
     #Look, I know this is confusing, but "min_buy_time" really is the minimum selling time in this case!
     return {
         'Type': 'Sell Farm',
         'Index': index,
         'Minimum Buy Time': min_buy_time,
         'Message': 'Sell farm %s'%(index),
+        'Buffer': buffer,
         'Withdraw': withdraw
     }
 
@@ -39,11 +40,12 @@ def buyDefense(cost, buffer = 0, min_buy_time = 0, message = 'Buy Defense'):
         'Message': message
     }
 
-def withdrawBank(index, min_buy_time = 0):
+def withdrawBank(index, min_buy_time = 0, buffer = 0):
     return {
         'Type': 'Withdraw Bank',
         'Index': index,
         'Minimum Buy Time': min_buy_time,
+        'Buffer': buffer,
         'Message': 'Withdraw from farm %s'%(index)
     }
 
@@ -55,20 +57,23 @@ def activateIMF(index, min_buy_time = 0):
         'Message': 'Take out loan from farm %s'%(index)
     }
 
-def sellAllFarms(min_buy_time = 0, withdraw = False):
+def sellAllFarms(min_buy_time = 0, withdraw = False, buffer = 0):
     return {
         'Type': 'Sell All Farms',
         'Minimum Buy Time': min_buy_time,
-        'Withdraw': withdraw #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Buffer': buffer,
+        'Withdraw': withdraw, #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Message': 'Sell All Farms'
     }
 
 # WARNING: This function is for declaring farms in the initial game state. 
 # Do NOT use it to add farms during simulation
-def initFarm(purchase_time = None, upgrades = [0,0,0]):
+def initFarm(purchase_time = None, upgrades = [0,0,0], overclock_expiration_time = 0):
     return {
         'Purchase Time': purchase_time,
         'Upgrades': upgrades,
-        'Account Value': 0
+        'Account Value': 0,
+        'Overclock Expiration Time': overclock_expiration_time #For handling when a farm is buffed by an overclock
     }
 
 ############
@@ -92,20 +97,23 @@ def upgradeBoatFarm(index, buffer = 0, min_buy_time = 0):
         'Message': 'Upgrade boat farm at index %s'%(index)
     }
 
-def sellBoatFarm(index, min_buy_time = 0):
+def sellBoatFarm(index, min_buy_time = 0, buffer = 0):
     #Look, I know this is confusing, but "min_buy_time" really is the minimum selling time in this case!
     return {
         'Type': 'Sell Boat Farm',
         'Index': index,
         'Minimum Buy Time': min_buy_time,
+        'Buffer': buffer,
         'Message': 'Sell boat farm %s'%(index)
     }
 
 #Not yet implemented, don't use
-def sellAllBoatFarms(min_buy_time = 0):
+def sellAllBoatFarms(min_buy_time = 0, buffer = 0):
     return {
         'Type': 'Sell All Boat Farms',
-        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Minimum Buy Time': min_buy_time, #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Buffer': buffer,
+        'Message': 'Sell All Boat Farms'
     }
 
 # WARNING: This function is for declaring boat farms in the initial game state. 
@@ -162,10 +170,12 @@ def repeatedlyBuyDruidFarms(min_buy_time = 0, max_buy_time = float('inf'), max_a
     }
 
 #Not yet implemented, don't use
-def sellAllDruidFarms(min_buy_time = 0):
+def sellAllDruidFarms(min_buy_time = 0, buffer = 0):
     return {
         'Type': 'Sell All Druid Farms',
-        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Minimum Buy Time': min_buy_time, #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Buffer': buffer,
+        'Message': 'Sell All Druid Farms'
     }
 
 # WARNING: This function is for declaring druid farms in the initial game state. 
@@ -218,10 +228,12 @@ def repeatedlyBuySupplyDrops(min_buy_time = 0, max_buy_time = float('inf'), max_
     }
 
 #Not yet implemented, don't use
-def sellAllSupplyDrops(min_buy_time = 0):
+def sellAllSupplyDrops(min_buy_time = 0, buffer = 0):
     return {
         'Type': 'Sell All Supply Drops',
-        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Minimum Buy Time': min_buy_time, #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Buffer': buffer,
+        'Message': 'Sell All Supply Drops'
     }
 
 # WARNING: This function is for declaring supply drops in the initial game state. 
@@ -274,10 +286,12 @@ def repeatedlyBuyHeliFarms(min_buy_time = 0, max_buy_time = float('inf'), max_am
     }
 
 #Not yet implemented, don't use
-def sellAllHeliFarms(min_buy_time = 0):
+def sellAllHeliFarms(min_buy_time = 0, buffer = 0):
     return {
         'Type': 'Sell All Heli Farms',
-        'Minimum Buy Time': min_buy_time #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Minimum Buy Time': min_buy_time, #Okay, this might be confusing, but this is actually the minimum *sell* time for this action.
+        'Buffer': buffer,
+        'Message': 'Sell All Heli Farms'
     }
 
 # WARNING: This function is for declaring heli farms in the initial game state. 
@@ -293,13 +307,70 @@ def initHeliFarms(purchase_times, special_poperations = None):
 # JERICHO ACTIONS
 #################
 
-def jerichoSteal(min_buy_time = 0, steal_amount = 25):
+def jerichoSteal(min_buy_time = 0, steal_amount = 25, buffer = 0):
     return {
         'Type': 'Jericho Steal',
         'Minimum Buy Time': min_buy_time,
         'Steal Amount': steal_amount,
+        'Buffer': buffer,
         'Message': 'Trigger Jericho Steal'
     }
+
+##################
+# ENGINEER ACTIONS
+##################
+
+def buyOverclock(min_buy_time = 0, buffer = 0):
+    return {
+        'Type': 'Buy Overclock',
+        'Minimum Buy Time': min_buy_time,
+        'Buffer': buffer,
+        'Message': 'Buy Overclock'
+    }
+
+def buyUltraboost(index, min_buy_time = 0, buffer = 0):
+    return {
+        'Type': 'Buy Ultraboost',
+        'Index': index,
+        'Minimum Buy Time': min_buy_time,
+        'Buffer': buffer,
+        'Message': 'Buy Ultraboost at index %s'%(index)
+    }
+
+def useOverclock(engi_index, farm_index, min_buy_time = 0, buffer = 0):
+    return {
+        'Type': 'Use Overclock',
+        'Engineer Index': engi_index,
+        'Farm Index': farm_index,
+        'Minimum Buy Time': min_buy_time,
+        'Buffer': buffer,
+        'Message': 'Use Overclock %s on Farm %s'%(engi_index, farm_index)
+    }
+
+def sellOverclock(index, min_buy_time = 0, buffer = 0):
+    return {
+        'Type': 'Sell Overclock',
+        'Index': index,
+        'Minimum Buy Time': min_buy_time,
+        'Buffer': buffer,
+        'Message': 'Sell Overclock at index %s'%(index)
+    }
+
+# WARNING: This function is for declaring overclocks in the initial game state. 
+# Do NOT use it to add supply drops during simulation
+def initOverclocks(purchase_times, ultraboost_index = None):
+    overclocks = []
+    for purchase_time in purchase_times:
+        overclocks.append({
+            'Initial Purchase Time': purchase_time, #Useful for revenue/expense tracking purposes.
+            'Use Time': purchase_time, #Determines when the overclock ability can be used
+            'Sell Time': None, #When an overclock is sold, this will be changed to the time it was sold.
+        })
+    val = {
+        'Overclocks': overclocks,
+        'Ultraboost Index': ultraboost_index
+    }
+    return val
 
 ###########
 # ECO QUEUE

@@ -1,2831 +1,1547 @@
 MESSAGE FROM GameState.__init__(): 
 Initialized Game State!
 The current game round is 21
-The current game time is 466.0 seconds
-The game round start times are given by [0, 6.0, 30.9, 53.9, 78.0, 107.2, 134.5, 157.9, 181.4, 203.0, 223.7, 235.5, 250.4, 268.4, 288.0, 300.7, 317.0, 351.4, 391.9, 419.5, 457.2, 466.0, 483.9, 515.9, 530.0, 592.2, 630.5, 659.9, 686.4, 712.0, 760.7, 770.5, 827.693999, 846.2239989999999, 878.073999, 895.715659, 946.157657, 977.2556569999999, 1069.140657, 1137.6614869999999, 1237.361487, 1249.1614869999999, 1294.7414869999998, 1329.7414869999998, 1360.8414869999997, 1385.5914869999997, 1407.7914869999997, 1453.1914869999998, 1478.6914869999998, 1521.4114889999998, 1562.111489, 1573.011489] 
+The current game time is 457.95000000000005 seconds
+The game round start times are given by [0, 6.0, 30.849999999999998, 53.849999999999994, 77.94999999999999, 107.14999999999999, 134.45, 157.85, 181.35, 202.6, 223.29999999999998, 234.85, 249.4, 267.15, 285.95, 298.05, 314.35, 347.40000000000003, 386.65000000000003, 412.8, 449.15000000000003, 457.95000000000005, 474.50000000000006, 504.75000000000006, 517.3000000000001, 577.7500000000001, 615.4000000000001, 644.1500000000001, 669.3000000000001, 693.5500000000001, 740.3000000000001, 750.1, 804.843999, 820.8239990000001, 850.0239990000001, 864.9156590000001, 912.5076570000001, 940.6556570000001, 1029.490657, 1094.8614870000001, 1191.3114870000002, 1203.1114870000001, 1245.2414870000002, 1276.6914870000003, 1304.1414870000003, 1325.1414870000003, 1343.4914870000002, 1384.9414870000003, 1406.3914870000003, 1444.9614890000003, 1481.4114890000003, 1492.3114890000004] 
 
 MESSAGE FROM GameState.fastForward: 
-Advancing game to time 466.1
-Warning! Time 0 is too early to call Grouped Pinks. Adjusting the queue time to 203.0
+Advancing game to time 458.0
+Warning! Time 0 is too early to call Grouped Pinks. Adjusting the queue time to 202.6
 Modified the eco send to Grouped Pinks
-Sent a set of Grouped Pinks at time 466.0
+Sent a set of Grouped Pinks at time 457.95000000000005
 Currently, the send queue looks like this: 
-[466.2]
-Recorded cash and eco values (4935,2002.4) at time 466.1
-----------
-Advancing game to time 466.2
-Sent a set of Grouped Pinks at time 466.15
+[458.15000000000003]
+Recorded cash and eco values (4935,2002.4) at time 458.0
+Advancing game to time 458.1
+Sent a set of Grouped Pinks at time 458.1
 Currently, the send queue looks like this: 
-[466.2, 466.4]
-Recorded cash and eco values (4870,2004.8) at time 466.2
-----------
-Advancing game to time 466.3
-Sent a set of Grouped Pinks at time 466.29999999999995
+[458.15000000000003, 458.35]
+Recorded cash and eco values (4870,2004.8) at time 458.1
+Advancing game to time 458.2
+Advancing game to time 458.3
+Sent a set of Grouped Pinks at time 458.25
 Currently, the send queue looks like this: 
-[466.4, 466.59999999999997]
-Recorded cash and eco values (4805,2007.2) at time 466.3
-----------
-Advancing game to time 466.4
-Recorded cash and eco values (4805,2007.2) at time 466.4
-----------
-Advancing game to time 466.5
-Sent a set of Grouped Pinks at time 466.44999999999993
+[458.35, 458.55]
+Recorded cash and eco values (4805,2007.2) at time 458.3
+Advancing game to time 458.4
+Sent a set of Grouped Pinks at time 458.4
 Currently, the send queue looks like this: 
-[466.59999999999997, 466.79999999999995]
-Recorded cash and eco values (4740,2009.6) at time 466.5
-----------
-Advancing game to time 466.6
-Sent a set of Grouped Pinks at time 466.5999999999999
+[458.55, 458.75]
+Recorded cash and eco values (4740,2009.6) at time 458.4
+Advancing game to time 458.5
+Advancing game to time 458.6
+Sent a set of Grouped Pinks at time 458.54999999999995
 Currently, the send queue looks like this: 
-[466.59999999999997, 466.79999999999995, 466.99999999999994]
-Recorded cash and eco values (4675,2012.0) at time 466.6
-----------
-Advancing game to time 466.7
-Recorded cash and eco values (4675,2012.0) at time 466.7
-----------
-Advancing game to time 466.8
-Sent a set of Grouped Pinks at time 466.7499999999999
+[458.55, 458.75, 458.95]
+Recorded cash and eco values (4675,2012.0) at time 458.6
+Advancing game to time 458.7
+Sent a set of Grouped Pinks at time 458.69999999999993
 Currently, the send queue looks like this: 
-[466.79999999999995, 466.99999999999994, 467.19999999999993]
-Recorded cash and eco values (4610,2014.4) at time 466.8
-----------
-Advancing game to time 466.9
-Sent a set of Grouped Pinks at time 466.89999999999986
+[458.75, 458.95, 459.15]
+Recorded cash and eco values (4610,2014.4) at time 458.7
+Advancing game to time 458.8
+Advancing game to time 458.9
+Sent a set of Grouped Pinks at time 458.8499999999999
 Currently, the send queue looks like this: 
-[466.99999999999994, 467.19999999999993, 467.3999999999999]
-Recorded cash and eco values (4545,2016.8) at time 466.9
-----------
-Advancing game to time 467.0
-Recorded cash and eco values (4545,2016.8) at time 467.0
-----------
-Advancing game to time 467.1
-Sent a set of Grouped Pinks at time 467.04999999999984
+[458.95, 459.15, 459.34999999999997]
+Recorded cash and eco values (4545,2016.8) at time 458.9
+Advancing game to time 459.0
+Sent a set of Grouped Pinks at time 458.9999999999999
 Currently, the send queue looks like this: 
-[467.19999999999993, 467.3999999999999, 467.5999999999999]
-Recorded cash and eco values (4480,2019.2) at time 467.1
-----------
-Advancing game to time 467.2
-Sent a set of Grouped Pinks at time 467.1999999999998
+[459.15, 459.34999999999997, 459.54999999999995]
+Recorded cash and eco values (4480,2019.2) at time 459.0
+Advancing game to time 459.1
+Advancing game to time 459.2
+Sent a set of Grouped Pinks at time 459.14999999999986
 Currently, the send queue looks like this: 
-[467.19999999999993, 467.3999999999999, 467.5999999999999, 467.7999999999999]
-Recorded cash and eco values (4415,2021.6) at time 467.2
-----------
-Advancing game to time 467.3
-Recorded cash and eco values (4415,2021.6) at time 467.3
-----------
-Advancing game to time 467.4
-Sent a set of Grouped Pinks at time 467.3499999999998
+[459.15, 459.34999999999997, 459.54999999999995, 459.74999999999994]
+Recorded cash and eco values (4415,2021.6) at time 459.2
+Advancing game to time 459.3
+Sent a set of Grouped Pinks at time 459.29999999999984
 Currently, the send queue looks like this: 
-[467.3999999999999, 467.5999999999999, 467.7999999999999, 467.9999999999999]
-Recorded cash and eco values (4350,2024.0) at time 467.4
-----------
-Advancing game to time 467.5
-Sent a set of Grouped Pinks at time 467.4999999999998
+[459.34999999999997, 459.54999999999995, 459.74999999999994, 459.94999999999993]
+Recorded cash and eco values (4350,2024.0) at time 459.3
+Advancing game to time 459.4
+Advancing game to time 459.5
+Sent a set of Grouped Pinks at time 459.4499999999998
 Currently, the send queue looks like this: 
-[467.5999999999999, 467.7999999999999, 467.9999999999999, 468.1999999999999]
-Recorded cash and eco values (4285,2026.4) at time 467.5
-----------
-Advancing game to time 467.6
-Recorded cash and eco values (4285,2026.4) at time 467.6
-----------
-Advancing game to time 467.7
-Sent a set of Grouped Pinks at time 467.64999999999975
+[459.54999999999995, 459.74999999999994, 459.94999999999993, 460.1499999999999]
+Recorded cash and eco values (4285,2026.4) at time 459.5
+Advancing game to time 459.6
+Sent a set of Grouped Pinks at time 459.5999999999998
 Currently, the send queue looks like this: 
-[467.7999999999999, 467.9999999999999, 468.1999999999999, 468.39999999999986]
-Recorded cash and eco values (4220,2028.8) at time 467.7
-----------
-Advancing game to time 467.8
-Sent a set of Grouped Pinks at time 467.7999999999997
+[459.74999999999994, 459.94999999999993, 460.1499999999999, 460.3499999999999]
+Recorded cash and eco values (4220,2028.8) at time 459.6
+Advancing game to time 459.7
+Advancing game to time 459.8
+Sent a set of Grouped Pinks at time 459.7499999999998
 Currently, the send queue looks like this: 
-[467.7999999999999, 467.9999999999999, 468.1999999999999, 468.39999999999986, 468.59999999999985]
-Recorded cash and eco values (4155,2031.2) at time 467.8
-----------
-Advancing game to time 467.9
-Recorded cash and eco values (4155,2031.2) at time 467.9
-----------
-Advancing game to time 468.0
-Sent a set of Grouped Pinks at time 467.9499999999997
+[459.74999999999994, 459.94999999999993, 460.1499999999999, 460.3499999999999, 460.5499999999999]
+Recorded cash and eco values (4155,2031.2) at time 459.8
+Advancing game to time 459.9
+Sent a set of Grouped Pinks at time 459.89999999999975
 Currently, the send queue looks like this: 
-[467.9999999999999, 468.1999999999999, 468.39999999999986, 468.59999999999985, 468.79999999999984]
-Awarded eco payment 2033.6 at time 468.0
-Recorded cash and eco values (6123.6,2033.6) at time 468.0
-Awarded direct payment 750 at time 468.0
-Recorded cash and eco values (6873.6,2033.6) at time 468.0
-Recorded cash and eco values (6873.6,2033.6) at time 468.0
-----------
-Advancing game to time 468.1
-Sent a set of Grouped Pinks at time 468.0999999999997
+[459.94999999999993, 460.1499999999999, 460.3499999999999, 460.5499999999999, 460.7499999999999]
+Recorded cash and eco values (4090,2033.6) at time 459.9
+Advancing game to time 460.0
+Awarded direct payment 750 at time 459.95
+Recorded cash and eco values (4840,2033.6) at time 459.95
+Advancing game to time 460.1
+Sent a set of Grouped Pinks at time 460.0499999999997
 Currently, the send queue looks like this: 
-[468.1999999999999, 468.39999999999986, 468.59999999999985, 468.79999999999984, 468.99999999999983]
-Recorded cash and eco values (6808.6,2036.0) at time 468.1
-----------
-Advancing game to time 468.2
-Recorded cash and eco values (6808.6,2036.0) at time 468.2
-----------
-Advancing game to time 468.3
-Sent a set of Grouped Pinks at time 468.24999999999966
+[460.1499999999999, 460.3499999999999, 460.5499999999999, 460.7499999999999, 460.9499999999999]
+Recorded cash and eco values (4775,2036.0) at time 460.1
+Advancing game to time 460.2
+Sent a set of Grouped Pinks at time 460.1999999999997
 Currently, the send queue looks like this: 
-[468.39999999999986, 468.59999999999985, 468.79999999999984, 468.99999999999983, 469.1999999999998]
-Recorded cash and eco values (6743.6,2038.4) at time 468.3
-----------
-Advancing game to time 468.4
-Sent a set of Grouped Pinks at time 468.39999999999964
+[460.3499999999999, 460.5499999999999, 460.7499999999999, 460.9499999999999, 461.14999999999986]
+Recorded cash and eco values (4710,2038.4) at time 460.2
+Advancing game to time 460.3
+Advancing game to time 460.4
+Sent a set of Grouped Pinks at time 460.3499999999997
 Currently, the send queue looks like this: 
-[468.39999999999986, 468.59999999999985, 468.79999999999984, 468.99999999999983, 469.1999999999998, 469.3999999999998]
-Recorded cash and eco values (6678.6,2040.8) at time 468.4
-----------
-Advancing game to time 468.5
-Recorded cash and eco values (6678.6,2040.8) at time 468.5
-----------
-Advancing game to time 468.6
-Sent a set of Grouped Pinks at time 468.5499999999996
+[460.3499999999999, 460.5499999999999, 460.7499999999999, 460.9499999999999, 461.14999999999986, 461.34999999999985]
+Recorded cash and eco values (4645,2040.8) at time 460.4
+Advancing game to time 460.5
+Sent a set of Grouped Pinks at time 460.49999999999966
 Currently, the send queue looks like this: 
-[468.59999999999985, 468.79999999999984, 468.99999999999983, 469.1999999999998, 469.3999999999998, 469.5999999999998]
-Recorded cash and eco values (6613.6,2043.2) at time 468.6
-----------
-Advancing game to time 468.7
-Sent a set of Grouped Pinks at time 468.6999999999996
+[460.5499999999999, 460.7499999999999, 460.9499999999999, 461.14999999999986, 461.34999999999985, 461.54999999999984]
+Recorded cash and eco values (4580,2043.2) at time 460.5
+Advancing game to time 460.6
+Advancing game to time 460.7
+Sent a set of Grouped Pinks at time 460.64999999999964
 Currently, the send queue looks like this: 
-[468.79999999999984, 468.99999999999983, 469.1999999999998, 469.3999999999998, 469.5999999999998, 469.7999999999998]
-Recorded cash and eco values (6548.6,2045.6) at time 468.7
-----------
-Advancing game to time 468.8
-Recorded cash and eco values (6548.6,2045.6) at time 468.8
-----------
-Advancing game to time 468.9
-Sent a set of Grouped Pinks at time 468.84999999999957
+[460.7499999999999, 460.9499999999999, 461.14999999999986, 461.34999999999985, 461.54999999999984, 461.74999999999983]
+Recorded cash and eco values (4515,2045.6) at time 460.7
+Advancing game to time 460.8
+Sent a set of Grouped Pinks at time 460.7999999999996
 Currently, the send queue looks like this: 
-[468.99999999999983, 469.1999999999998, 469.3999999999998, 469.5999999999998, 469.7999999999998, 469.9999999999998]
-Recorded cash and eco values (6483.6,2048.0) at time 468.9
-----------
-Advancing game to time 469.0
-Sent a set of Grouped Pinks at time 468.99999999999983
+[460.9499999999999, 461.14999999999986, 461.34999999999985, 461.54999999999984, 461.74999999999983, 461.9499999999998]
+Recorded cash and eco values (4450,2048.0) at time 460.8
+Advancing game to time 460.9
+Advancing game to time 461.0
+Sent a set of Grouped Pinks at time 460.9499999999999
 Currently, the send queue looks like this: 
-[469.1999999999998, 469.3999999999998, 469.5999999999998, 469.7999999999998, 469.9999999999998, 470.19999999999976]
-Recorded cash and eco values (6418.6,2050.4) at time 469.0
-----------
-Advancing game to time 469.1
-Recorded cash and eco values (6418.6,2050.4) at time 469.1
-----------
-Advancing game to time 469.2
-Sent a set of Grouped Pinks at time 469.1999999999998
+[461.14999999999986, 461.34999999999985, 461.54999999999984, 461.74999999999983, 461.9499999999998, 462.1499999999998]
+Recorded cash and eco values (4385,2050.4) at time 461.0
+Advancing game to time 461.1
+Advancing game to time 461.2
+Sent a set of Grouped Pinks at time 461.14999999999986
 Currently, the send queue looks like this: 
-[469.3999999999998, 469.5999999999998, 469.7999999999998, 469.9999999999998, 470.19999999999976, 470.39999999999975]
-Recorded cash and eco values (6353.6,2052.8) at time 469.2
-----------
-Advancing game to time 469.3
-Recorded cash and eco values (6353.6,2052.8) at time 469.3
-----------
-Advancing game to time 469.4
-Sent a set of Grouped Pinks at time 469.3999999999998
+[461.34999999999985, 461.54999999999984, 461.74999999999983, 461.9499999999998, 462.1499999999998, 462.3499999999998]
+Recorded cash and eco values (4320,2052.8) at time 461.2
+Advancing game to time 461.3
+Advancing game to time 461.4
+Sent a set of Grouped Pinks at time 461.34999999999985
 Currently, the send queue looks like this: 
-[469.5999999999998, 469.7999999999998, 469.9999999999998, 470.19999999999976, 470.39999999999975, 470.59999999999974]
-Recorded cash and eco values (6288.6,2055.2) at time 469.4
-----------
-Advancing game to time 469.5
-Recorded cash and eco values (6288.6,2055.2) at time 469.5
-----------
-Advancing game to time 469.6
-Sent a set of Grouped Pinks at time 469.5999999999998
+[461.54999999999984, 461.74999999999983, 461.9499999999998, 462.1499999999998, 462.3499999999998, 462.5499999999998]
+Recorded cash and eco values (4255,2055.2) at time 461.4
+Advancing game to time 461.5
+Advancing game to time 461.6
+Sent a set of Grouped Pinks at time 461.54999999999984
 Currently, the send queue looks like this: 
-[469.7999999999998, 469.9999999999998, 470.19999999999976, 470.39999999999975, 470.59999999999974, 470.7999999999997]
-Recorded cash and eco values (6223.6,2057.6) at time 469.6
-----------
-Advancing game to time 469.7
-Recorded cash and eco values (6223.6,2057.6) at time 469.7
-----------
-Advancing game to time 469.8
-Sent a set of Grouped Pinks at time 469.7999999999998
+[461.74999999999983, 461.9499999999998, 462.1499999999998, 462.3499999999998, 462.5499999999998, 462.7499999999998]
+Recorded cash and eco values (4190,2057.6) at time 461.6
+Advancing game to time 461.7
+Advancing game to time 461.8
+Sent a set of Grouped Pinks at time 461.74999999999983
 Currently, the send queue looks like this: 
-[469.9999999999998, 470.19999999999976, 470.39999999999975, 470.59999999999974, 470.7999999999997, 470.9999999999997]
-Recorded cash and eco values (6158.6,2060.0) at time 469.8
-----------
-Advancing game to time 469.9
-Recorded cash and eco values (6158.6,2060.0) at time 469.9
-----------
-Advancing game to time 470.0
-Sent a set of Grouped Pinks at time 469.9999999999998
+[461.9499999999998, 462.1499999999998, 462.3499999999998, 462.5499999999998, 462.7499999999998, 462.94999999999976]
+Recorded cash and eco values (4125,2060.0) at time 461.8
+Advancing game to time 461.9
+Advancing game to time 462.0
+Sent a set of Grouped Pinks at time 461.9499999999998
 Currently, the send queue looks like this: 
-[470.19999999999976, 470.39999999999975, 470.59999999999974, 470.7999999999997, 470.9999999999997, 471.1999999999997]
-Awarded direct payment 750 at time 470.0
-Recorded cash and eco values (6843.6,2062.4) at time 470.0
-Recorded cash and eco values (6843.6,2062.4) at time 470.0
-----------
-Advancing game to time 470.1
-Recorded cash and eco values (6843.6,2062.4) at time 470.1
-----------
-Advancing game to time 470.2
-Sent a set of Grouped Pinks at time 470.19999999999976
+[462.1499999999998, 462.3499999999998, 462.5499999999998, 462.7499999999998, 462.94999999999976, 463.14999999999975]
+Awarded direct payment 750 at time 461.95
+Recorded cash and eco values (4810,2062.4) at time 461.95
+Awarded eco payment 2062.4 at time 462.0
+Recorded cash and eco values (6872.4,2062.4) at time 462.0
+Advancing game to time 462.1
+Advancing game to time 462.2
+Sent a set of Grouped Pinks at time 462.1499999999998
 Currently, the send queue looks like this: 
-[470.39999999999975, 470.59999999999974, 470.7999999999997, 470.9999999999997, 471.1999999999997, 471.3999999999997]
-Recorded cash and eco values (6778.6,2064.8) at time 470.2
-----------
-Advancing game to time 470.3
-Recorded cash and eco values (6778.6,2064.8) at time 470.3
-----------
-Advancing game to time 470.4
-Sent a set of Grouped Pinks at time 470.39999999999975
+[462.3499999999998, 462.5499999999998, 462.7499999999998, 462.94999999999976, 463.14999999999975, 463.34999999999974]
+Recorded cash and eco values (6807.4,2064.8) at time 462.2
+Advancing game to time 462.3
+Advancing game to time 462.4
+Sent a set of Grouped Pinks at time 462.3499999999998
 Currently, the send queue looks like this: 
-[470.59999999999974, 470.7999999999997, 470.9999999999997, 471.1999999999997, 471.3999999999997, 471.5999999999997]
-Recorded cash and eco values (6713.6,2067.2) at time 470.4
-----------
-Advancing game to time 470.5
-Recorded cash and eco values (6713.6,2067.2) at time 470.5
-----------
-Advancing game to time 470.6
-Sent a set of Grouped Pinks at time 470.59999999999974
-Currently, the send queue looks like this: 
-[470.7999999999997, 470.9999999999997, 471.1999999999997, 471.3999999999997, 471.5999999999997, 471.79999999999967]
-Recorded cash and eco values (6648.6,2069.6) at time 470.6
-----------
-Advancing game to time 470.7
-Recorded cash and eco values (6648.6,2069.6) at time 470.7
-----------
-Advancing game to time 470.8
-Sent a set of Grouped Pinks at time 470.7999999999997
-Currently, the send queue looks like this: 
-[470.9999999999997, 471.1999999999997, 471.3999999999997, 471.5999999999997, 471.79999999999967, 471.99999999999966]
-Recorded cash and eco values (6583.6,2072.0) at time 470.8
-----------
-Advancing game to time 470.9
-Recorded cash and eco values (6583.6,2072.0) at time 470.9
-----------
-Advancing game to time 471.0
-Sent a set of Grouped Pinks at time 470.9999999999997
-Currently, the send queue looks like this: 
-[471.1999999999997, 471.3999999999997, 471.5999999999997, 471.79999999999967, 471.99999999999966, 472.19999999999965]
-Recorded cash and eco values (6518.6,2074.4) at time 471.0
-----------
-Advancing game to time 471.1
-Recorded cash and eco values (6518.6,2074.4) at time 471.1
-----------
-Advancing game to time 471.2
-Sent a set of Grouped Pinks at time 471.1999999999997
-Currently, the send queue looks like this: 
-[471.3999999999997, 471.5999999999997, 471.79999999999967, 471.99999999999966, 472.19999999999965, 472.39999999999964]
-Recorded cash and eco values (6453.6,2076.8) at time 471.2
-----------
-Advancing game to time 471.3
-Recorded cash and eco values (6453.6,2076.8) at time 471.3
-----------
-Advancing game to time 471.4
-Sent a set of Grouped Pinks at time 471.3999999999997
-Currently, the send queue looks like this: 
-[471.5999999999997, 471.79999999999967, 471.99999999999966, 472.19999999999965, 472.39999999999964, 472.5999999999996]
-Recorded cash and eco values (6388.6,2079.2) at time 471.4
-----------
-Advancing game to time 471.5
-Recorded cash and eco values (6388.6,2079.2) at time 471.5
-----------
-Advancing game to time 471.6
-Sent a set of Grouped Pinks at time 471.5999999999997
-Currently, the send queue looks like this: 
-[471.79999999999967, 471.99999999999966, 472.19999999999965, 472.39999999999964, 472.5999999999996, 472.7999999999996]
-Recorded cash and eco values (6323.6,2081.6) at time 471.6
-----------
-Advancing game to time 471.7
-Recorded cash and eco values (6323.6,2081.6) at time 471.7
-----------
-Advancing game to time 471.8
-Sent a set of Grouped Pinks at time 471.79999999999967
-Currently, the send queue looks like this: 
-[471.99999999999966, 472.19999999999965, 472.39999999999964, 472.5999999999996, 472.7999999999996, 472.9999999999996]
-Recorded cash and eco values (6258.6,2084.0) at time 471.8
-----------
-Advancing game to time 471.9
-Recorded cash and eco values (6258.6,2084.0) at time 471.9
+[462.5499999999998, 462.7499999999998, 462.94999999999976, 463.14999999999975, 463.34999999999974, 463.5499999999997]
+Recorded cash and eco values (6742.4,2067.2) at time 462.4
+Advancing game to time 462.5
+Advancing game to time 462.6
 Modified the eco send to Zero
-----------
-Advancing game to time 471.95
-Recorded cash and eco values (6258.6,2084.0) at time 471.95
-----------
+Advancing game to time 462.6
+Advancing game to time 462.7
+Advancing game to time 462.8
+Advancing game to time 462.9
+Advancing game to time 463.0
+Advancing game to time 463.1
+Advancing game to time 463.2
+Advancing game to time 463.3
+Advancing game to time 463.4
+Advancing game to time 463.5
+Advancing game to time 463.6
+Advancing game to time 463.7
+Advancing game to time 463.8
+Advancing game to time 463.9
+Advancing game to time 464.0
+Awarded direct payment 750 at time 463.95
+Recorded cash and eco values (7492.4,2067.2) at time 463.95
+Advancing game to time 464.1
+Advancing game to time 464.2
+Advancing game to time 464.3
+Advancing game to time 464.4
+Advancing game to time 464.5
+Advancing game to time 464.6
+Advancing game to time 464.7
+Advancing game to time 464.8
+Advancing game to time 464.9
+Advancing game to time 465.0
+Advancing game to time 465.1
+Advancing game to time 465.2
+Advancing game to time 465.3
+Advancing game to time 465.4
+Advancing game to time 465.5
+Advancing game to time 465.6
+Advancing game to time 465.7
+Advancing game to time 465.8
+Advancing game to time 465.9
+Advancing game to time 466.0
+Awarded direct payment 750 at time 465.95
+Recorded cash and eco values (8242.4,2067.2) at time 465.95
+Advancing game to time 466.1
+Advancing game to time 466.2
+Advancing game to time 466.3
+Advancing game to time 466.4
+Advancing game to time 466.5
+Advancing game to time 466.6
+Advancing game to time 466.7
+Advancing game to time 466.8
+Advancing game to time 466.9
+Advancing game to time 467.0
+Advancing game to time 467.1
+Advancing game to time 467.2
+Advancing game to time 467.3
+Advancing game to time 467.4
+Advancing game to time 467.5
+Advancing game to time 467.6
+Advancing game to time 467.7
+Advancing game to time 467.8
+Advancing game to time 467.9
+Advancing game to time 468.0
+Awarded eco payment 2067.2 at time 468.0
+Recorded cash and eco values (10309.6,2067.2) at time 468.0
+Advancing game to time 468.1
+Advancing game to time 468.2
+Advancing game to time 468.3
+Advancing game to time 468.4
+Advancing game to time 468.5
+Advancing game to time 468.6
+Advancing game to time 468.7
+Advancing game to time 468.8
+Advancing game to time 468.9
+Advancing game to time 469.0
+Advancing game to time 469.1
+Advancing game to time 469.2
+Advancing game to time 469.3
+Advancing game to time 469.4
+Advancing game to time 469.5
+Advancing game to time 469.6
+Advancing game to time 469.7
+Advancing game to time 469.8
+Advancing game to time 469.9
+Advancing game to time 470.0
+Advancing game to time 470.1
+Advancing game to time 470.2
+Advancing game to time 470.3
+Advancing game to time 470.4
+Advancing game to time 470.5
+Advancing game to time 470.6
+Advancing game to time 470.7
+Advancing game to time 470.8
+Advancing game to time 470.9
+Advancing game to time 471.0
+Advancing game to time 471.1
+Advancing game to time 471.2
+Advancing game to time 471.3
+Advancing game to time 471.4
+Advancing game to time 471.5
+Advancing game to time 471.6
+Advancing game to time 471.7
+Advancing game to time 471.8
+Advancing game to time 471.9
 Advancing game to time 472.0
-Awarded direct payment 750 at time 472.0
-Recorded cash and eco values (7008.6,2084.0) at time 472.0
-Recorded cash and eco values (7008.6,2084.0) at time 472.0
-----------
 Advancing game to time 472.1
-Recorded cash and eco values (7008.6,2084.0) at time 472.1
-----------
 Advancing game to time 472.2
-Recorded cash and eco values (7008.6,2084.0) at time 472.2
-----------
 Advancing game to time 472.3
-Recorded cash and eco values (7008.6,2084.0) at time 472.3
-----------
 Advancing game to time 472.4
-Recorded cash and eco values (7008.6,2084.0) at time 472.4
-----------
 Advancing game to time 472.5
-Recorded cash and eco values (7008.6,2084.0) at time 472.5
-----------
 Advancing game to time 472.6
-Recorded cash and eco values (7008.6,2084.0) at time 472.6
-----------
 Advancing game to time 472.7
-Recorded cash and eco values (7008.6,2084.0) at time 472.7
-----------
 Advancing game to time 472.8
-Recorded cash and eco values (7008.6,2084.0) at time 472.8
-----------
 Advancing game to time 472.9
-Recorded cash and eco values (7008.6,2084.0) at time 472.9
-----------
 Advancing game to time 473.0
-Recorded cash and eco values (7008.6,2084.0) at time 473.0
-----------
 Advancing game to time 473.1
-Recorded cash and eco values (7008.6,2084.0) at time 473.1
-----------
 Advancing game to time 473.2
-Recorded cash and eco values (7008.6,2084.0) at time 473.2
-----------
 Advancing game to time 473.3
-Recorded cash and eco values (7008.6,2084.0) at time 473.3
-----------
 Advancing game to time 473.4
-Recorded cash and eco values (7008.6,2084.0) at time 473.4
-----------
 Advancing game to time 473.5
-Recorded cash and eco values (7008.6,2084.0) at time 473.5
-----------
 Advancing game to time 473.6
-Recorded cash and eco values (7008.6,2084.0) at time 473.6
-----------
 Advancing game to time 473.7
-Recorded cash and eco values (7008.6,2084.0) at time 473.7
-----------
 Advancing game to time 473.8
-Recorded cash and eco values (7008.6,2084.0) at time 473.8
-----------
 Advancing game to time 473.9
-Recorded cash and eco values (7008.6,2084.0) at time 473.9
-----------
 Advancing game to time 474.0
-Awarded eco payment 2084.0 at time 474.0
-Recorded cash and eco values (9092.6,2084.0) at time 474.0
-Awarded direct payment 750 at time 474.0
-Recorded cash and eco values (9842.6,2084.0) at time 474.0
-Recorded cash and eco values (9842.6,2084.0) at time 474.0
-----------
+Awarded eco payment 2067.2 at time 474.0
+Recorded cash and eco values (12376.8,2067.2) at time 474.0
 Advancing game to time 474.1
-Recorded cash and eco values (9842.6,2084.0) at time 474.1
-----------
 Advancing game to time 474.2
-Recorded cash and eco values (9842.6,2084.0) at time 474.2
-----------
 Advancing game to time 474.3
-Recorded cash and eco values (9842.6,2084.0) at time 474.3
-----------
 Advancing game to time 474.4
-Recorded cash and eco values (9842.6,2084.0) at time 474.4
-----------
 Advancing game to time 474.5
-Recorded cash and eco values (9842.6,2084.0) at time 474.5
-----------
 Advancing game to time 474.6
-Recorded cash and eco values (9842.6,2084.0) at time 474.6
-----------
-Advancing game to time 474.7
-Recorded cash and eco values (9842.6,2084.0) at time 474.7
-----------
-Advancing game to time 474.8
-Recorded cash and eco values (9842.6,2084.0) at time 474.8
-----------
-Advancing game to time 474.9
-Recorded cash and eco values (9842.6,2084.0) at time 474.9
-----------
-Advancing game to time 475.0
-Recorded cash and eco values (9842.6,2084.0) at time 475.0
-----------
-Advancing game to time 475.1
-Recorded cash and eco values (9842.6,2084.0) at time 475.1
-----------
-Advancing game to time 475.2
-Recorded cash and eco values (9842.6,2084.0) at time 475.2
-----------
-Advancing game to time 475.3
-Recorded cash and eco values (9842.6,2084.0) at time 475.3
-----------
-Advancing game to time 475.4
-Recorded cash and eco values (9842.6,2084.0) at time 475.4
-----------
-Advancing game to time 475.5
-Recorded cash and eco values (9842.6,2084.0) at time 475.5
-----------
-Advancing game to time 475.6
-Recorded cash and eco values (9842.6,2084.0) at time 475.6
-----------
-Advancing game to time 475.7
-Recorded cash and eco values (9842.6,2084.0) at time 475.7
-----------
-Advancing game to time 475.8
-Recorded cash and eco values (9842.6,2084.0) at time 475.8
-----------
-Advancing game to time 475.9
-Recorded cash and eco values (9842.6,2084.0) at time 475.9
-----------
-Advancing game to time 476.0
-Recorded cash and eco values (9842.6,2084.0) at time 476.0
-----------
-Advancing game to time 476.1
-Recorded cash and eco values (9842.6,2084.0) at time 476.1
-----------
-Advancing game to time 476.2
-Recorded cash and eco values (9842.6,2084.0) at time 476.2
-----------
-Advancing game to time 476.3
-Recorded cash and eco values (9842.6,2084.0) at time 476.3
-----------
-Advancing game to time 476.4
-Recorded cash and eco values (9842.6,2084.0) at time 476.4
-----------
-Advancing game to time 476.5
-Recorded cash and eco values (9842.6,2084.0) at time 476.5
-----------
-Advancing game to time 476.6
-Recorded cash and eco values (9842.6,2084.0) at time 476.6
-----------
-Advancing game to time 476.7
-Recorded cash and eco values (9842.6,2084.0) at time 476.7
-----------
-Advancing game to time 476.8
-Recorded cash and eco values (9842.6,2084.0) at time 476.8
-----------
-Advancing game to time 476.9
-Recorded cash and eco values (9842.6,2084.0) at time 476.9
-----------
-Advancing game to time 477.0
-Recorded cash and eco values (9842.6,2084.0) at time 477.0
-----------
-Advancing game to time 477.1
-Recorded cash and eco values (9842.6,2084.0) at time 477.1
-----------
-Advancing game to time 477.2
-Recorded cash and eco values (9842.6,2084.0) at time 477.2
-----------
-Advancing game to time 477.3
-Recorded cash and eco values (9842.6,2084.0) at time 477.3
-----------
-Advancing game to time 477.4
-Recorded cash and eco values (9842.6,2084.0) at time 477.4
-----------
-Advancing game to time 477.5
-Recorded cash and eco values (9842.6,2084.0) at time 477.5
-----------
-Advancing game to time 477.6
-Recorded cash and eco values (9842.6,2084.0) at time 477.6
-----------
-Advancing game to time 477.7
-Recorded cash and eco values (9842.6,2084.0) at time 477.7
-----------
-Advancing game to time 477.8
-Recorded cash and eco values (9842.6,2084.0) at time 477.8
-----------
-Advancing game to time 477.9
-Recorded cash and eco values (9842.6,2084.0) at time 477.9
-----------
-Advancing game to time 478.0
-Recorded cash and eco values (9842.6,2084.0) at time 478.0
-----------
-Advancing game to time 478.1
-Recorded cash and eco values (9842.6,2084.0) at time 478.1
-----------
-Advancing game to time 478.2
-Recorded cash and eco values (9842.6,2084.0) at time 478.2
-----------
-Advancing game to time 478.3
-Recorded cash and eco values (9842.6,2084.0) at time 478.3
-----------
-Advancing game to time 478.4
-Recorded cash and eco values (9842.6,2084.0) at time 478.4
-----------
-Advancing game to time 478.5
-Recorded cash and eco values (9842.6,2084.0) at time 478.5
-----------
-Advancing game to time 478.6
-Recorded cash and eco values (9842.6,2084.0) at time 478.6
-----------
-Advancing game to time 478.7
-Recorded cash and eco values (9842.6,2084.0) at time 478.7
-----------
-Advancing game to time 478.8
-Recorded cash and eco values (9842.6,2084.0) at time 478.8
-----------
-Advancing game to time 478.9
-Recorded cash and eco values (9842.6,2084.0) at time 478.9
-----------
-Advancing game to time 479.0
-Recorded cash and eco values (9842.6,2084.0) at time 479.0
-----------
-Advancing game to time 479.1
-Recorded cash and eco values (9842.6,2084.0) at time 479.1
-----------
-Advancing game to time 479.2
-Recorded cash and eco values (9842.6,2084.0) at time 479.2
-----------
-Advancing game to time 479.3
-Recorded cash and eco values (9842.6,2084.0) at time 479.3
-----------
-Advancing game to time 479.4
-Recorded cash and eco values (9842.6,2084.0) at time 479.4
-----------
-Advancing game to time 479.5
-Recorded cash and eco values (9842.6,2084.0) at time 479.5
-----------
-Advancing game to time 479.6
-Recorded cash and eco values (9842.6,2084.0) at time 479.6
-----------
-Advancing game to time 479.7
-Recorded cash and eco values (9842.6,2084.0) at time 479.7
-----------
-Advancing game to time 479.8
-Recorded cash and eco values (9842.6,2084.0) at time 479.8
-----------
-Advancing game to time 479.9
-Recorded cash and eco values (9842.6,2084.0) at time 479.9
-----------
-Advancing game to time 480.0
-Awarded eco payment 2084.0 at time 480.0
-Recorded cash and eco values (11926.6,2084.0) at time 480.0
-Recorded cash and eco values (11926.6,2084.0) at time 480.0
-----------
-Advancing game to time 480.1
-Recorded cash and eco values (11926.6,2084.0) at time 480.1
-----------
-Advancing game to time 480.2
-Recorded cash and eco values (11926.6,2084.0) at time 480.2
-----------
-Advancing game to time 480.3
-Recorded cash and eco values (11926.6,2084.0) at time 480.3
-----------
-Advancing game to time 480.4
-Recorded cash and eco values (11926.6,2084.0) at time 480.4
-----------
-Advancing game to time 480.5
-Recorded cash and eco values (11926.6,2084.0) at time 480.5
-----------
-Advancing game to time 480.6
-Recorded cash and eco values (11926.6,2084.0) at time 480.6
-----------
-Advancing game to time 480.7
-Recorded cash and eco values (11926.6,2084.0) at time 480.7
-----------
-Advancing game to time 480.8
-Recorded cash and eco values (11926.6,2084.0) at time 480.8
-----------
-Advancing game to time 480.9
-Recorded cash and eco values (11926.6,2084.0) at time 480.9
-----------
-Advancing game to time 481.0
-Recorded cash and eco values (11926.6,2084.0) at time 481.0
-----------
-Advancing game to time 481.1
-Recorded cash and eco values (11926.6,2084.0) at time 481.1
-----------
-Advancing game to time 481.2
-Recorded cash and eco values (11926.6,2084.0) at time 481.2
-----------
-Advancing game to time 481.3
-Recorded cash and eco values (11926.6,2084.0) at time 481.3
-----------
-Advancing game to time 481.4
-Recorded cash and eco values (11926.6,2084.0) at time 481.4
-----------
-Advancing game to time 481.5
-Recorded cash and eco values (11926.6,2084.0) at time 481.5
-----------
-Advancing game to time 481.6
-Recorded cash and eco values (11926.6,2084.0) at time 481.6
-----------
-Advancing game to time 481.7
-Recorded cash and eco values (11926.6,2084.0) at time 481.7
-----------
-Advancing game to time 481.8
-Recorded cash and eco values (11926.6,2084.0) at time 481.8
-----------
-Advancing game to time 481.9
-Recorded cash and eco values (11926.6,2084.0) at time 481.9
-----------
-Advancing game to time 482.0
-Recorded cash and eco values (11926.6,2084.0) at time 482.0
-----------
-Advancing game to time 482.1
-Recorded cash and eco values (11926.6,2084.0) at time 482.1
-----------
-Advancing game to time 482.2
-Recorded cash and eco values (11926.6,2084.0) at time 482.2
-----------
-Advancing game to time 482.3
-Recorded cash and eco values (11926.6,2084.0) at time 482.3
-----------
-Advancing game to time 482.4
-Recorded cash and eco values (11926.6,2084.0) at time 482.4
-----------
-Advancing game to time 482.5
-Recorded cash and eco values (11926.6,2084.0) at time 482.5
-----------
-Advancing game to time 482.6
-Recorded cash and eco values (11926.6,2084.0) at time 482.6
-----------
-Advancing game to time 482.7
-Recorded cash and eco values (11926.6,2084.0) at time 482.7
-----------
-Advancing game to time 482.8
-Recorded cash and eco values (11926.6,2084.0) at time 482.8
-----------
-Advancing game to time 482.9
-Recorded cash and eco values (11926.6,2084.0) at time 482.9
-----------
-Advancing game to time 483.0
-Recorded cash and eco values (11926.6,2084.0) at time 483.0
-----------
-Advancing game to time 483.1
-Recorded cash and eco values (11926.6,2084.0) at time 483.1
-----------
-Advancing game to time 483.2
-Recorded cash and eco values (11926.6,2084.0) at time 483.2
-----------
-Advancing game to time 483.3
-Recorded cash and eco values (11926.6,2084.0) at time 483.3
-----------
-Advancing game to time 483.4
-Recorded cash and eco values (11926.6,2084.0) at time 483.4
-----------
-Advancing game to time 483.5
-Recorded cash and eco values (11926.6,2084.0) at time 483.5
-----------
-Advancing game to time 483.6
-Recorded cash and eco values (11926.6,2084.0) at time 483.6
-----------
-Advancing game to time 483.7
-Recorded cash and eco values (11926.6,2084.0) at time 483.7
-----------
-Advancing game to time 483.8
-Recorded cash and eco values (11926.6,2084.0) at time 483.8
-----------
-Advancing game to time 483.9
-Awarded direct payment 750 at time 483.9
-Recorded cash and eco values (12676.6,2084.0) at time 483.9
-Recorded cash and eco values (12676.6,2084.0) at time 483.9
+Awarded direct payment 750 at time 474.5
+Recorded cash and eco values (13126.8,2067.2) at time 474.5
 Modified the eco send to Spaced ZOMGs
-----------
-Advancing game to time 483.95
-Sent a set of Spaced ZOMGs at time 483.9
+Advancing game to time 474.6
+Sent a set of Spaced ZOMGs at time 474.50000000000006
 Currently, the send queue looks like this: 
-[489.9]
+[480.50000000000006]
 Reached the limit on eco'ing for this send! Moving to the next send in the queue.
 Modified the eco send to Grouped Pinks
-----------
+Advancing game to time 474.7
+Sent a set of Grouped Pinks at time 474.65000000000003
+Currently, the send queue looks like this: 
+[480.50000000000006, 480.70000000000005]
+Recorded cash and eco values (2061.8,1869.6) at time 474.7
+Advancing game to time 474.8
+Sent a set of Grouped Pinks at time 474.8
+Currently, the send queue looks like this: 
+[480.50000000000006, 480.70000000000005, 480.90000000000003]
+Recorded cash and eco values (1996.8,1872.0) at time 474.8
+Advancing game to time 474.9
+Advancing game to time 475.0
+Sent a set of Grouped Pinks at time 474.95
+Currently, the send queue looks like this: 
+[480.50000000000006, 480.70000000000005, 480.90000000000003, 481.1]
+Recorded cash and eco values (1931.8,1874.4) at time 475.0
+Advancing game to time 475.1
+Sent a set of Grouped Pinks at time 475.09999999999997
+Currently, the send queue looks like this: 
+[480.50000000000006, 480.70000000000005, 480.90000000000003, 481.1, 481.3]
+Recorded cash and eco values (1866.8,1876.8) at time 475.1
+Advancing game to time 475.2
+Advancing game to time 475.3
+Sent a set of Grouped Pinks at time 475.24999999999994
+Currently, the send queue looks like this: 
+[480.50000000000006, 480.70000000000005, 480.90000000000003, 481.1, 481.3, 481.5]
+Recorded cash and eco values (1801.8,1879.2) at time 475.3
+Advancing game to time 475.4
+Advancing game to time 475.5
+Advancing game to time 475.6
+Advancing game to time 475.7
+Advancing game to time 475.8
+Advancing game to time 475.9
+Advancing game to time 476.0
+Advancing game to time 476.1
+Advancing game to time 476.2
+Advancing game to time 476.3
+Advancing game to time 476.4
+Advancing game to time 476.5
+Advancing game to time 476.6
+Advancing game to time 476.7
+Advancing game to time 476.8
+Advancing game to time 476.9
+Advancing game to time 477.0
+Advancing game to time 477.1
+Advancing game to time 477.2
+Advancing game to time 477.3
+Advancing game to time 477.4
+Advancing game to time 477.5
+Advancing game to time 477.6
+Advancing game to time 477.7
+Advancing game to time 477.8
+Advancing game to time 477.9
+Advancing game to time 478.0
+Advancing game to time 478.1
+Advancing game to time 478.2
+Advancing game to time 478.3
+Advancing game to time 478.4
+Advancing game to time 478.5
+Advancing game to time 478.6
+Advancing game to time 478.7
+Advancing game to time 478.8
+Advancing game to time 478.9
+Advancing game to time 479.0
+Advancing game to time 479.1
+Advancing game to time 479.2
+Advancing game to time 479.3
+Advancing game to time 479.4
+Awarded direct payment 750 at time 479.3
+Recorded cash and eco values (2551.8,1879.2) at time 479.3
+Advancing game to time 479.5
+Advancing game to time 479.6
+Advancing game to time 479.7
+Advancing game to time 479.8
+Advancing game to time 479.9
+Advancing game to time 480.0
+Awarded eco payment 1879.2 at time 480.0
+Recorded cash and eco values (4431.0,1879.2) at time 480.0
+Advancing game to time 480.1
+Advancing game to time 480.2
+Advancing game to time 480.3
+Advancing game to time 480.4
+Advancing game to time 480.5
+Advancing game to time 480.6
+Sent a set of Grouped Pinks at time 480.50000000000006
+Currently, the send queue looks like this: 
+[480.70000000000005, 480.90000000000003, 481.1, 481.3, 481.5, 481.7]
+Recorded cash and eco values (4366.0,1881.6) at time 480.6
+Advancing game to time 480.7
+Sent a set of Grouped Pinks at time 480.70000000000005
+Currently, the send queue looks like this: 
+[480.90000000000003, 481.1, 481.3, 481.5, 481.7, 481.9]
+Recorded cash and eco values (4301.0,1884.0) at time 480.7
+Advancing game to time 480.8
+Advancing game to time 480.9
+Sent a set of Grouped Pinks at time 480.90000000000003
+Currently, the send queue looks like this: 
+[481.1, 481.3, 481.5, 481.7, 481.9, 482.09999999999997]
+Recorded cash and eco values (4236.0,1886.4) at time 480.9
+Advancing game to time 481.0
+Advancing game to time 481.1
+Sent a set of Grouped Pinks at time 481.1
+Currently, the send queue looks like this: 
+[481.3, 481.5, 481.7, 481.9, 482.09999999999997, 482.29999999999995]
+Recorded cash and eco values (4171.0,1888.8) at time 481.1
+Advancing game to time 481.2
+Advancing game to time 481.3
+Sent a set of Grouped Pinks at time 481.3
+Currently, the send queue looks like this: 
+[481.5, 481.7, 481.9, 482.09999999999997, 482.29999999999995, 482.49999999999994]
+Recorded cash and eco values (4106.0,1891.2) at time 481.3
+Advancing game to time 481.4
+Advancing game to time 481.5
+Sent a set of Grouped Pinks at time 481.5
+Currently, the send queue looks like this: 
+[481.7, 481.9, 482.09999999999997, 482.29999999999995, 482.49999999999994, 482.69999999999993]
+Recorded cash and eco values (4041.0,1893.6) at time 481.5
+Advancing game to time 481.6
+Advancing game to time 481.7
+Sent a set of Grouped Pinks at time 481.7
+Currently, the send queue looks like this: 
+[481.9, 482.09999999999997, 482.29999999999995, 482.49999999999994, 482.69999999999993, 482.8999999999999]
+Recorded cash and eco values (3976.0,1896.0) at time 481.7
+Advancing game to time 481.8
+Advancing game to time 481.9
+Sent a set of Grouped Pinks at time 481.9
+Currently, the send queue looks like this: 
+[482.09999999999997, 482.29999999999995, 482.49999999999994, 482.69999999999993, 482.8999999999999, 483.0999999999999]
+Recorded cash and eco values (3911.0,1898.4) at time 481.9
+Advancing game to time 482.0
+Advancing game to time 482.1
+Sent a set of Grouped Pinks at time 482.09999999999997
+Currently, the send queue looks like this: 
+[482.29999999999995, 482.49999999999994, 482.69999999999993, 482.8999999999999, 483.0999999999999, 483.2999999999999]
+Recorded cash and eco values (3846.0,1900.8) at time 482.1
+Advancing game to time 482.2
+Advancing game to time 482.3
+Sent a set of Grouped Pinks at time 482.29999999999995
+Currently, the send queue looks like this: 
+[482.49999999999994, 482.69999999999993, 482.8999999999999, 483.0999999999999, 483.2999999999999, 483.4999999999999]
+Recorded cash and eco values (3781.0,1903.2) at time 482.3
+Advancing game to time 482.4
+Advancing game to time 482.5
+Sent a set of Grouped Pinks at time 482.49999999999994
+Currently, the send queue looks like this: 
+[482.69999999999993, 482.8999999999999, 483.0999999999999, 483.2999999999999, 483.4999999999999, 483.6999999999999]
+Recorded cash and eco values (3716.0,1905.6) at time 482.5
+Advancing game to time 482.6
+Advancing game to time 482.7
+Sent a set of Grouped Pinks at time 482.69999999999993
+Currently, the send queue looks like this: 
+[482.8999999999999, 483.0999999999999, 483.2999999999999, 483.4999999999999, 483.6999999999999, 483.89999999999986]
+Recorded cash and eco values (3651.0,1908.0) at time 482.7
+Advancing game to time 482.8
+Advancing game to time 482.9
+Sent a set of Grouped Pinks at time 482.8999999999999
+Currently, the send queue looks like this: 
+[483.0999999999999, 483.2999999999999, 483.4999999999999, 483.6999999999999, 483.89999999999986, 484.09999999999985]
+Recorded cash and eco values (3586.0,1910.4) at time 482.9
+Advancing game to time 483.0
+Advancing game to time 483.1
+Sent a set of Grouped Pinks at time 483.0999999999999
+Currently, the send queue looks like this: 
+[483.2999999999999, 483.4999999999999, 483.6999999999999, 483.89999999999986, 484.09999999999985, 484.29999999999984]
+Recorded cash and eco values (3521.0,1912.8) at time 483.1
+Advancing game to time 483.2
+Advancing game to time 483.3
+Sent a set of Grouped Pinks at time 483.2999999999999
+Currently, the send queue looks like this: 
+[483.4999999999999, 483.6999999999999, 483.89999999999986, 484.09999999999985, 484.29999999999984, 484.49999999999983]
+Recorded cash and eco values (3456.0,1915.2) at time 483.3
+Advancing game to time 483.4
+Advancing game to time 483.5
+Sent a set of Grouped Pinks at time 483.4999999999999
+Currently, the send queue looks like this: 
+[483.6999999999999, 483.89999999999986, 484.09999999999985, 484.29999999999984, 484.49999999999983, 484.6999999999998]
+Recorded cash and eco values (3391.0,1917.6) at time 483.5
+Advancing game to time 483.6
+Advancing game to time 483.7
+Sent a set of Grouped Pinks at time 483.6999999999999
+Currently, the send queue looks like this: 
+[483.89999999999986, 484.09999999999985, 484.29999999999984, 484.49999999999983, 484.6999999999998, 484.8999999999998]
+Recorded cash and eco values (3326.0,1920.0) at time 483.7
+Advancing game to time 483.8
+Advancing game to time 483.9
+Sent a set of Grouped Pinks at time 483.89999999999986
+Currently, the send queue looks like this: 
+[484.09999999999985, 484.29999999999984, 484.49999999999983, 484.6999999999998, 484.8999999999998, 485.0999999999998]
+Recorded cash and eco values (3261.0,1922.4) at time 483.9
 Advancing game to time 484.0
-Recorded cash and eco values (1676.6,1884.0) at time 484.0
-----------
 Advancing game to time 484.1
-Sent a set of Grouped Pinks at time 484.04999999999995
+Sent a set of Grouped Pinks at time 484.09999999999985
 Currently, the send queue looks like this: 
-[489.9, 490.09999999999997]
-Recorded cash and eco values (1611.6,1886.4) at time 484.1
-----------
+[484.29999999999984, 484.49999999999983, 484.6999999999998, 484.8999999999998, 485.0999999999998, 485.2999999999998]
+Recorded cash and eco values (3196.0,1924.8) at time 484.1
 Advancing game to time 484.2
-Sent a set of Grouped Pinks at time 484.19999999999993
-Currently, the send queue looks like this: 
-[489.9, 490.09999999999997, 490.29999999999995]
-Recorded cash and eco values (1546.6,1888.8) at time 484.2
-----------
+Awarded direct payment 750 at time 484.1
+Recorded cash and eco values (3946.0,1924.8) at time 484.1
 Advancing game to time 484.3
-Recorded cash and eco values (1546.6,1888.8) at time 484.3
-----------
+Sent a set of Grouped Pinks at time 484.29999999999984
+Currently, the send queue looks like this: 
+[484.49999999999983, 484.6999999999998, 484.8999999999998, 485.0999999999998, 485.2999999999998, 485.4999999999998]
+Recorded cash and eco values (3881.0,1927.2) at time 484.3
 Advancing game to time 484.4
-Sent a set of Grouped Pinks at time 484.3499999999999
-Currently, the send queue looks like this: 
-[489.9, 490.09999999999997, 490.29999999999995, 490.49999999999994]
-Recorded cash and eco values (1481.6,1891.2) at time 484.4
-----------
 Advancing game to time 484.5
-Sent a set of Grouped Pinks at time 484.4999999999999
+Sent a set of Grouped Pinks at time 484.49999999999983
 Currently, the send queue looks like this: 
-[489.9, 490.09999999999997, 490.29999999999995, 490.49999999999994, 490.69999999999993]
-Recorded cash and eco values (1416.6,1893.6) at time 484.5
-----------
+[484.6999999999998, 484.8999999999998, 485.0999999999998, 485.2999999999998, 485.4999999999998, 485.69999999999976]
+Recorded cash and eco values (3816.0,1929.6) at time 484.5
 Advancing game to time 484.6
-Recorded cash and eco values (1416.6,1893.6) at time 484.6
-----------
 Advancing game to time 484.7
-Sent a set of Grouped Pinks at time 484.64999999999986
+Sent a set of Grouped Pinks at time 484.6999999999998
 Currently, the send queue looks like this: 
-[489.9, 490.09999999999997, 490.29999999999995, 490.49999999999994, 490.69999999999993, 490.8999999999999]
-Recorded cash and eco values (1351.6,1896.0) at time 484.7
-----------
+[484.8999999999998, 485.0999999999998, 485.2999999999998, 485.4999999999998, 485.69999999999976, 485.89999999999975]
+Recorded cash and eco values (3751.0,1932.0) at time 484.7
 Advancing game to time 484.8
-Recorded cash and eco values (1351.6,1896.0) at time 484.8
-----------
 Advancing game to time 484.9
-Recorded cash and eco values (1351.6,1896.0) at time 484.9
-----------
+Sent a set of Grouped Pinks at time 484.8999999999998
+Currently, the send queue looks like this: 
+[485.0999999999998, 485.2999999999998, 485.4999999999998, 485.69999999999976, 485.89999999999975, 486.09999999999974]
+Recorded cash and eco values (3686.0,1934.4) at time 484.9
 Advancing game to time 485.0
-Recorded cash and eco values (1351.6,1896.0) at time 485.0
-----------
 Advancing game to time 485.1
-Recorded cash and eco values (1351.6,1896.0) at time 485.1
-----------
+Sent a set of Grouped Pinks at time 485.0999999999998
+Currently, the send queue looks like this: 
+[485.2999999999998, 485.4999999999998, 485.69999999999976, 485.89999999999975, 486.09999999999974, 486.2999999999997]
+Recorded cash and eco values (3621.0,1936.8) at time 485.1
 Advancing game to time 485.2
-Recorded cash and eco values (1351.6,1896.0) at time 485.2
-----------
 Advancing game to time 485.3
-Recorded cash and eco values (1351.6,1896.0) at time 485.3
-----------
+Sent a set of Grouped Pinks at time 485.2999999999998
+Currently, the send queue looks like this: 
+[485.4999999999998, 485.69999999999976, 485.89999999999975, 486.09999999999974, 486.2999999999997, 486.4999999999997]
+Recorded cash and eco values (3556.0,1939.2) at time 485.3
 Advancing game to time 485.4
-Recorded cash and eco values (1351.6,1896.0) at time 485.4
-----------
 Advancing game to time 485.5
-Recorded cash and eco values (1351.6,1896.0) at time 485.5
-----------
+Sent a set of Grouped Pinks at time 485.4999999999998
+Currently, the send queue looks like this: 
+[485.69999999999976, 485.89999999999975, 486.09999999999974, 486.2999999999997, 486.4999999999997, 486.6999999999997]
+Recorded cash and eco values (3491.0,1941.6) at time 485.5
 Advancing game to time 485.6
-Recorded cash and eco values (1351.6,1896.0) at time 485.6
-----------
 Advancing game to time 485.7
-Recorded cash and eco values (1351.6,1896.0) at time 485.7
-----------
+Sent a set of Grouped Pinks at time 485.69999999999976
+Currently, the send queue looks like this: 
+[485.89999999999975, 486.09999999999974, 486.2999999999997, 486.4999999999997, 486.6999999999997, 486.8999999999997]
+Recorded cash and eco values (3426.0,1944.0) at time 485.7
 Advancing game to time 485.8
-Recorded cash and eco values (1351.6,1896.0) at time 485.8
-----------
 Advancing game to time 485.9
-Recorded cash and eco values (1351.6,1896.0) at time 485.9
-----------
+Sent a set of Grouped Pinks at time 485.89999999999975
+Currently, the send queue looks like this: 
+[486.09999999999974, 486.2999999999997, 486.4999999999997, 486.6999999999997, 486.8999999999997, 487.0999999999997]
+Recorded cash and eco values (3361.0,1946.4) at time 485.9
 Advancing game to time 486.0
-Awarded eco payment 1896.0 at time 486.0
-Recorded cash and eco values (3247.6,1896.0) at time 486.0
-Recorded cash and eco values (3247.6,1896.0) at time 486.0
-----------
+Awarded eco payment 1946.4 at time 486.0
+Recorded cash and eco values (5307.4,1946.4) at time 486.0
 Advancing game to time 486.1
-Recorded cash and eco values (3247.6,1896.0) at time 486.1
-----------
+Sent a set of Grouped Pinks at time 486.09999999999974
+Currently, the send queue looks like this: 
+[486.2999999999997, 486.4999999999997, 486.6999999999997, 486.8999999999997, 487.0999999999997, 487.29999999999967]
+Recorded cash and eco values (5242.4,1948.8) at time 486.1
 Advancing game to time 486.2
-Recorded cash and eco values (3247.6,1896.0) at time 486.2
-----------
 Advancing game to time 486.3
-Recorded cash and eco values (3247.6,1896.0) at time 486.3
-----------
+Sent a set of Grouped Pinks at time 486.2999999999997
+Currently, the send queue looks like this: 
+[486.4999999999997, 486.6999999999997, 486.8999999999997, 487.0999999999997, 487.29999999999967, 487.49999999999966]
+Recorded cash and eco values (5177.4,1951.2) at time 486.3
 Advancing game to time 486.4
-Recorded cash and eco values (3247.6,1896.0) at time 486.4
-----------
 Advancing game to time 486.5
-Recorded cash and eco values (3247.6,1896.0) at time 486.5
-----------
+Sent a set of Grouped Pinks at time 486.4999999999997
+Currently, the send queue looks like this: 
+[486.6999999999997, 486.8999999999997, 487.0999999999997, 487.29999999999967, 487.49999999999966, 487.69999999999965]
+Recorded cash and eco values (5112.4,1953.6) at time 486.5
 Advancing game to time 486.6
-Recorded cash and eco values (3247.6,1896.0) at time 486.6
-----------
 Advancing game to time 486.7
-Recorded cash and eco values (3247.6,1896.0) at time 486.7
-----------
+Sent a set of Grouped Pinks at time 486.6999999999997
+Currently, the send queue looks like this: 
+[486.8999999999997, 487.0999999999997, 487.29999999999967, 487.49999999999966, 487.69999999999965, 487.89999999999964]
+Recorded cash and eco values (5047.4,1956.0) at time 486.7
 Advancing game to time 486.8
-Recorded cash and eco values (3247.6,1896.0) at time 486.8
-----------
 Advancing game to time 486.9
-Recorded cash and eco values (3247.6,1896.0) at time 486.9
-----------
+Sent a set of Grouped Pinks at time 486.8999999999997
+Currently, the send queue looks like this: 
+[487.0999999999997, 487.29999999999967, 487.49999999999966, 487.69999999999965, 487.89999999999964, 488.0999999999996]
+Recorded cash and eco values (4982.4,1958.4) at time 486.9
 Advancing game to time 487.0
-Recorded cash and eco values (3247.6,1896.0) at time 487.0
-----------
 Advancing game to time 487.1
-Recorded cash and eco values (3247.6,1896.0) at time 487.1
-----------
+Sent a set of Grouped Pinks at time 487.0999999999997
+Currently, the send queue looks like this: 
+[487.29999999999967, 487.49999999999966, 487.69999999999965, 487.89999999999964, 488.0999999999996, 488.2999999999996]
+Recorded cash and eco values (4917.4,1960.8) at time 487.1
 Advancing game to time 487.2
-Recorded cash and eco values (3247.6,1896.0) at time 487.2
-----------
 Advancing game to time 487.3
-Recorded cash and eco values (3247.6,1896.0) at time 487.3
-----------
+Sent a set of Grouped Pinks at time 487.29999999999967
+Currently, the send queue looks like this: 
+[487.49999999999966, 487.69999999999965, 487.89999999999964, 488.0999999999996, 488.2999999999996, 488.4999999999996]
+Recorded cash and eco values (4852.4,1963.2) at time 487.3
 Advancing game to time 487.4
-Recorded cash and eco values (3247.6,1896.0) at time 487.4
-----------
 Advancing game to time 487.5
-Recorded cash and eco values (3247.6,1896.0) at time 487.5
-----------
+Sent a set of Grouped Pinks at time 487.49999999999966
+Currently, the send queue looks like this: 
+[487.69999999999965, 487.89999999999964, 488.0999999999996, 488.2999999999996, 488.4999999999996, 488.6999999999996]
+Recorded cash and eco values (4787.4,1965.6) at time 487.5
 Advancing game to time 487.6
-Recorded cash and eco values (3247.6,1896.0) at time 487.6
-----------
 Advancing game to time 487.7
-Recorded cash and eco values (3247.6,1896.0) at time 487.7
-----------
+Sent a set of Grouped Pinks at time 487.69999999999965
+Currently, the send queue looks like this: 
+[487.89999999999964, 488.0999999999996, 488.2999999999996, 488.4999999999996, 488.6999999999996, 488.8999999999996]
+Recorded cash and eco values (4722.4,1968.0) at time 487.7
 Advancing game to time 487.8
-Recorded cash and eco values (3247.6,1896.0) at time 487.8
-----------
 Advancing game to time 487.9
-Recorded cash and eco values (3247.6,1896.0) at time 487.9
-----------
+Sent a set of Grouped Pinks at time 487.89999999999964
+Currently, the send queue looks like this: 
+[488.0999999999996, 488.2999999999996, 488.4999999999996, 488.6999999999996, 488.8999999999996, 489.09999999999957]
+Recorded cash and eco values (4657.4,1970.4) at time 487.9
 Advancing game to time 488.0
-Recorded cash and eco values (3247.6,1896.0) at time 488.0
-----------
 Advancing game to time 488.1
-Recorded cash and eco values (3247.6,1896.0) at time 488.1
-----------
+Sent a set of Grouped Pinks at time 488.0999999999996
+Currently, the send queue looks like this: 
+[488.2999999999996, 488.4999999999996, 488.6999999999996, 488.8999999999996, 489.09999999999957, 489.29999999999956]
+Recorded cash and eco values (4592.4,1972.8) at time 488.1
 Advancing game to time 488.2
-Recorded cash and eco values (3247.6,1896.0) at time 488.2
-----------
 Advancing game to time 488.3
-Recorded cash and eco values (3247.6,1896.0) at time 488.3
-----------
+Sent a set of Grouped Pinks at time 488.2999999999996
+Currently, the send queue looks like this: 
+[488.4999999999996, 488.6999999999996, 488.8999999999996, 489.09999999999957, 489.29999999999956, 489.49999999999955]
+Recorded cash and eco values (4527.4,1975.2) at time 488.3
 Advancing game to time 488.4
-Recorded cash and eco values (3247.6,1896.0) at time 488.4
-----------
 Advancing game to time 488.5
-Recorded cash and eco values (3247.6,1896.0) at time 488.5
-----------
+Sent a set of Grouped Pinks at time 488.4999999999996
+Currently, the send queue looks like this: 
+[488.6999999999996, 488.8999999999996, 489.09999999999957, 489.29999999999956, 489.49999999999955, 489.69999999999953]
+Recorded cash and eco values (4462.4,1977.6) at time 488.5
 Advancing game to time 488.6
-Recorded cash and eco values (3247.6,1896.0) at time 488.6
-----------
 Advancing game to time 488.7
-Awarded direct payment 750 at time 488.7
-Recorded cash and eco values (3997.6,1896.0) at time 488.7
-Recorded cash and eco values (3997.6,1896.0) at time 488.7
-----------
+Sent a set of Grouped Pinks at time 488.6999999999996
+Currently, the send queue looks like this: 
+[488.8999999999996, 489.09999999999957, 489.29999999999956, 489.49999999999955, 489.69999999999953, 489.8999999999995]
+Recorded cash and eco values (4397.4,1980.0) at time 488.7
 Advancing game to time 488.8
-Recorded cash and eco values (3997.6,1896.0) at time 488.8
-----------
 Advancing game to time 488.9
-Recorded cash and eco values (3997.6,1896.0) at time 488.9
-----------
+Sent a set of Grouped Pinks at time 488.8999999999996
+Currently, the send queue looks like this: 
+[489.09999999999957, 489.29999999999956, 489.49999999999955, 489.69999999999953, 489.8999999999995, 490.0999999999995]
+Awarded direct payment 750 at time 488.9
+Recorded cash and eco values (5082.4,1982.4) at time 488.9
 Advancing game to time 489.0
-Recorded cash and eco values (3997.6,1896.0) at time 489.0
-----------
 Advancing game to time 489.1
-Recorded cash and eco values (3997.6,1896.0) at time 489.1
-----------
+Sent a set of Grouped Pinks at time 489.09999999999957
+Currently, the send queue looks like this: 
+[489.29999999999956, 489.49999999999955, 489.69999999999953, 489.8999999999995, 490.0999999999995, 490.2999999999995]
+Recorded cash and eco values (5017.4,1984.8) at time 489.1
 Advancing game to time 489.2
-Recorded cash and eco values (3997.6,1896.0) at time 489.2
-----------
 Advancing game to time 489.3
-Recorded cash and eco values (3997.6,1896.0) at time 489.3
-----------
+Sent a set of Grouped Pinks at time 489.29999999999956
+Currently, the send queue looks like this: 
+[489.49999999999955, 489.69999999999953, 489.8999999999995, 490.0999999999995, 490.2999999999995, 490.4999999999995]
+Recorded cash and eco values (4952.4,1987.2) at time 489.3
 Advancing game to time 489.4
-Recorded cash and eco values (3997.6,1896.0) at time 489.4
-----------
 Advancing game to time 489.5
-Recorded cash and eco values (3997.6,1896.0) at time 489.5
-----------
+Sent a set of Grouped Pinks at time 489.49999999999955
+Currently, the send queue looks like this: 
+[489.69999999999953, 489.8999999999995, 490.0999999999995, 490.2999999999995, 490.4999999999995, 490.6999999999995]
+Recorded cash and eco values (4887.4,1989.6) at time 489.5
 Advancing game to time 489.6
-Recorded cash and eco values (3997.6,1896.0) at time 489.6
-----------
 Advancing game to time 489.7
-Recorded cash and eco values (3997.6,1896.0) at time 489.7
-----------
+Sent a set of Grouped Pinks at time 489.69999999999953
+Currently, the send queue looks like this: 
+[489.8999999999995, 490.0999999999995, 490.2999999999995, 490.4999999999995, 490.6999999999995, 490.89999999999947]
+Recorded cash and eco values (4822.4,1992.0) at time 489.7
 Advancing game to time 489.8
-Recorded cash and eco values (3997.6,1896.0) at time 489.8
-----------
 Advancing game to time 489.9
-Sent a set of Grouped Pinks at time 489.9
+Sent a set of Grouped Pinks at time 489.8999999999995
 Currently, the send queue looks like this: 
-[490.09999999999997, 490.29999999999995, 490.49999999999994, 490.69999999999993, 490.8999999999999, 491.0999999999999]
-Recorded cash and eco values (3932.6,1898.4) at time 489.9
-----------
+[490.0999999999995, 490.2999999999995, 490.4999999999995, 490.6999999999995, 490.89999999999947, 491.09999999999945]
+Recorded cash and eco values (4757.4,1994.4) at time 489.9
 Advancing game to time 490.0
-Recorded cash and eco values (3932.6,1898.4) at time 490.0
-----------
 Advancing game to time 490.1
-Sent a set of Grouped Pinks at time 490.09999999999997
+Sent a set of Grouped Pinks at time 490.0999999999995
 Currently, the send queue looks like this: 
-[490.29999999999995, 490.49999999999994, 490.69999999999993, 490.8999999999999, 491.0999999999999, 491.2999999999999]
-Recorded cash and eco values (3867.6,1900.8) at time 490.1
-----------
+[490.2999999999995, 490.4999999999995, 490.6999999999995, 490.89999999999947, 491.09999999999945, 491.29999999999944]
+Recorded cash and eco values (4692.4,1996.8) at time 490.1
 Advancing game to time 490.2
-Recorded cash and eco values (3867.6,1900.8) at time 490.2
-----------
 Advancing game to time 490.3
-Sent a set of Grouped Pinks at time 490.29999999999995
+Sent a set of Grouped Pinks at time 490.2999999999995
 Currently, the send queue looks like this: 
-[490.49999999999994, 490.69999999999993, 490.8999999999999, 491.0999999999999, 491.2999999999999, 491.4999999999999]
-Recorded cash and eco values (3802.6,1903.2) at time 490.3
-----------
+[490.4999999999995, 490.6999999999995, 490.89999999999947, 491.09999999999945, 491.29999999999944, 491.49999999999943]
+Recorded cash and eco values (4627.4,1999.2) at time 490.3
 Advancing game to time 490.4
-Recorded cash and eco values (3802.6,1903.2) at time 490.4
-----------
 Advancing game to time 490.5
-Sent a set of Grouped Pinks at time 490.49999999999994
+Sent a set of Grouped Pinks at time 490.4999999999995
 Currently, the send queue looks like this: 
-[490.69999999999993, 490.8999999999999, 491.0999999999999, 491.2999999999999, 491.4999999999999, 491.6999999999999]
-Recorded cash and eco values (3737.6,1905.6) at time 490.5
-----------
+[490.6999999999995, 490.89999999999947, 491.09999999999945, 491.29999999999944, 491.49999999999943, 491.6999999999994]
+Recorded cash and eco values (4562.4,2001.6) at time 490.5
 Advancing game to time 490.6
-Recorded cash and eco values (3737.6,1905.6) at time 490.6
-----------
 Advancing game to time 490.7
-Sent a set of Grouped Pinks at time 490.69999999999993
+Sent a set of Grouped Pinks at time 490.6999999999995
 Currently, the send queue looks like this: 
-[490.8999999999999, 491.0999999999999, 491.2999999999999, 491.4999999999999, 491.6999999999999, 491.89999999999986]
-Recorded cash and eco values (3672.6,1908.0) at time 490.7
-----------
+[490.89999999999947, 491.09999999999945, 491.29999999999944, 491.49999999999943, 491.6999999999994, 491.8999999999994]
+Recorded cash and eco values (4497.4,2004.0) at time 490.7
 Advancing game to time 490.8
-Recorded cash and eco values (3672.6,1908.0) at time 490.8
-----------
 Advancing game to time 490.9
-Sent a set of Grouped Pinks at time 490.8999999999999
+Sent a set of Grouped Pinks at time 490.89999999999947
 Currently, the send queue looks like this: 
-[491.0999999999999, 491.2999999999999, 491.4999999999999, 491.6999999999999, 491.89999999999986, 492.09999999999985]
-Recorded cash and eco values (3607.6,1910.4) at time 490.9
-----------
+[491.09999999999945, 491.29999999999944, 491.49999999999943, 491.6999999999994, 491.8999999999994, 492.0999999999994]
+Recorded cash and eco values (4432.4,2006.4) at time 490.9
 Advancing game to time 491.0
-Recorded cash and eco values (3607.6,1910.4) at time 491.0
-----------
 Advancing game to time 491.1
-Sent a set of Grouped Pinks at time 491.0999999999999
+Sent a set of Grouped Pinks at time 491.09999999999945
 Currently, the send queue looks like this: 
-[491.2999999999999, 491.4999999999999, 491.6999999999999, 491.89999999999986, 492.09999999999985, 492.29999999999984]
-Recorded cash and eco values (3542.6,1912.8) at time 491.1
-----------
+[491.29999999999944, 491.49999999999943, 491.6999999999994, 491.8999999999994, 492.0999999999994, 492.2999999999994]
+Recorded cash and eco values (4367.4,2008.8) at time 491.1
 Advancing game to time 491.2
-Recorded cash and eco values (3542.6,1912.8) at time 491.2
-----------
 Advancing game to time 491.3
-Sent a set of Grouped Pinks at time 491.2999999999999
+Sent a set of Grouped Pinks at time 491.29999999999944
 Currently, the send queue looks like this: 
-[491.4999999999999, 491.6999999999999, 491.89999999999986, 492.09999999999985, 492.29999999999984, 492.49999999999983]
-Recorded cash and eco values (3477.6,1915.2) at time 491.3
-----------
+[491.49999999999943, 491.6999999999994, 491.8999999999994, 492.0999999999994, 492.2999999999994, 492.4999999999994]
+Recorded cash and eco values (4302.4,2011.2) at time 491.3
 Advancing game to time 491.4
-Recorded cash and eco values (3477.6,1915.2) at time 491.4
-----------
 Advancing game to time 491.5
-Sent a set of Grouped Pinks at time 491.4999999999999
+Sent a set of Grouped Pinks at time 491.49999999999943
 Currently, the send queue looks like this: 
-[491.6999999999999, 491.89999999999986, 492.09999999999985, 492.29999999999984, 492.49999999999983, 492.6999999999998]
-Recorded cash and eco values (3412.6,1917.6) at time 491.5
-----------
+[491.6999999999994, 491.8999999999994, 492.0999999999994, 492.2999999999994, 492.4999999999994, 492.69999999999936]
+Recorded cash and eco values (4237.4,2013.6) at time 491.5
 Advancing game to time 491.6
-Recorded cash and eco values (3412.6,1917.6) at time 491.6
-----------
 Advancing game to time 491.7
-Sent a set of Grouped Pinks at time 491.6999999999999
+Sent a set of Grouped Pinks at time 491.6999999999994
 Currently, the send queue looks like this: 
-[491.89999999999986, 492.09999999999985, 492.29999999999984, 492.49999999999983, 492.6999999999998, 492.8999999999998]
-Recorded cash and eco values (3347.6,1920.0) at time 491.7
-----------
+[491.8999999999994, 492.0999999999994, 492.2999999999994, 492.4999999999994, 492.69999999999936, 492.89999999999935]
+Recorded cash and eco values (4172.4,2016.0) at time 491.7
 Advancing game to time 491.8
-Recorded cash and eco values (3347.6,1920.0) at time 491.8
-----------
 Advancing game to time 491.9
-Sent a set of Grouped Pinks at time 491.89999999999986
+Sent a set of Grouped Pinks at time 491.8999999999994
 Currently, the send queue looks like this: 
-[492.09999999999985, 492.29999999999984, 492.49999999999983, 492.6999999999998, 492.8999999999998, 493.0999999999998]
-Recorded cash and eco values (3282.6,1922.4) at time 491.9
-----------
+[492.0999999999994, 492.2999999999994, 492.4999999999994, 492.69999999999936, 492.89999999999935, 493.09999999999934]
+Recorded cash and eco values (4107.4,2018.4) at time 491.9
 Advancing game to time 492.0
-Awarded eco payment 1922.4 at time 492.0
-Recorded cash and eco values (5205.0,1922.4) at time 492.0
-Recorded cash and eco values (5205.0,1922.4) at time 492.0
-----------
+Awarded eco payment 2018.4 at time 492.0
+Recorded cash and eco values (6125.8,2018.4) at time 492.0
 Advancing game to time 492.1
-Sent a set of Grouped Pinks at time 492.09999999999985
+Sent a set of Grouped Pinks at time 492.0999999999994
 Currently, the send queue looks like this: 
-[492.29999999999984, 492.49999999999983, 492.6999999999998, 492.8999999999998, 493.0999999999998, 493.2999999999998]
-Recorded cash and eco values (5140.0,1924.8) at time 492.1
-----------
+[492.2999999999994, 492.4999999999994, 492.69999999999936, 492.89999999999935, 493.09999999999934, 493.29999999999933]
+Recorded cash and eco values (6060.8,2020.8) at time 492.1
 Advancing game to time 492.2
-Recorded cash and eco values (5140.0,1924.8) at time 492.2
-----------
 Advancing game to time 492.3
-Sent a set of Grouped Pinks at time 492.29999999999984
+Sent a set of Grouped Pinks at time 492.2999999999994
 Currently, the send queue looks like this: 
-[492.49999999999983, 492.6999999999998, 492.8999999999998, 493.0999999999998, 493.2999999999998, 493.4999999999998]
-Recorded cash and eco values (5075.0,1927.2) at time 492.3
-----------
+[492.4999999999994, 492.69999999999936, 492.89999999999935, 493.09999999999934, 493.29999999999933, 493.4999999999993]
+Recorded cash and eco values (5995.8,2023.2) at time 492.3
 Advancing game to time 492.4
-Recorded cash and eco values (5075.0,1927.2) at time 492.4
-----------
 Advancing game to time 492.5
-Sent a set of Grouped Pinks at time 492.49999999999983
+Sent a set of Grouped Pinks at time 492.4999999999994
 Currently, the send queue looks like this: 
-[492.6999999999998, 492.8999999999998, 493.0999999999998, 493.2999999999998, 493.4999999999998, 493.69999999999976]
-Recorded cash and eco values (5010.0,1929.6) at time 492.5
-----------
+[492.69999999999936, 492.89999999999935, 493.09999999999934, 493.29999999999933, 493.4999999999993, 493.6999999999993]
+Recorded cash and eco values (5930.8,2025.6) at time 492.5
 Advancing game to time 492.6
-Recorded cash and eco values (5010.0,1929.6) at time 492.6
-----------
 Advancing game to time 492.7
-Sent a set of Grouped Pinks at time 492.6999999999998
+Sent a set of Grouped Pinks at time 492.69999999999936
 Currently, the send queue looks like this: 
-[492.8999999999998, 493.0999999999998, 493.2999999999998, 493.4999999999998, 493.69999999999976, 493.89999999999975]
-Recorded cash and eco values (4945.0,1932.0) at time 492.7
-----------
+[492.89999999999935, 493.09999999999934, 493.29999999999933, 493.4999999999993, 493.6999999999993, 493.8999999999993]
+Recorded cash and eco values (5865.8,2028.0) at time 492.7
 Advancing game to time 492.8
-Recorded cash and eco values (4945.0,1932.0) at time 492.8
-----------
 Advancing game to time 492.9
-Sent a set of Grouped Pinks at time 492.8999999999998
+Sent a set of Grouped Pinks at time 492.89999999999935
 Currently, the send queue looks like this: 
-[493.0999999999998, 493.2999999999998, 493.4999999999998, 493.69999999999976, 493.89999999999975, 494.09999999999974]
-Recorded cash and eco values (4880.0,1934.4) at time 492.9
-----------
+[493.09999999999934, 493.29999999999933, 493.4999999999993, 493.6999999999993, 493.8999999999993, 494.0999999999993]
+Recorded cash and eco values (5800.8,2030.4) at time 492.9
 Advancing game to time 493.0
-Recorded cash and eco values (4880.0,1934.4) at time 493.0
-----------
 Advancing game to time 493.1
-Sent a set of Grouped Pinks at time 493.0999999999998
+Sent a set of Grouped Pinks at time 493.09999999999934
 Currently, the send queue looks like this: 
-[493.2999999999998, 493.4999999999998, 493.69999999999976, 493.89999999999975, 494.09999999999974, 494.2999999999997]
-Recorded cash and eco values (4815.0,1936.8) at time 493.1
-----------
+[493.29999999999933, 493.4999999999993, 493.6999999999993, 493.8999999999993, 494.0999999999993, 494.2999999999993]
+Recorded cash and eco values (5735.8,2032.8) at time 493.1
 Advancing game to time 493.2
-Recorded cash and eco values (4815.0,1936.8) at time 493.2
-----------
 Advancing game to time 493.3
-Sent a set of Grouped Pinks at time 493.2999999999998
+Sent a set of Grouped Pinks at time 493.29999999999933
 Currently, the send queue looks like this: 
-[493.4999999999998, 493.69999999999976, 493.89999999999975, 494.09999999999974, 494.2999999999997, 494.4999999999997]
-Recorded cash and eco values (4750.0,1939.2) at time 493.3
-----------
+[493.4999999999993, 493.6999999999993, 493.8999999999993, 494.0999999999993, 494.2999999999993, 494.49999999999926]
+Recorded cash and eco values (5670.8,2035.2) at time 493.3
 Advancing game to time 493.4
-Recorded cash and eco values (4750.0,1939.2) at time 493.4
-----------
 Advancing game to time 493.5
-Sent a set of Grouped Pinks at time 493.4999999999998
+Sent a set of Grouped Pinks at time 493.4999999999993
 Currently, the send queue looks like this: 
-[493.69999999999976, 493.89999999999975, 494.09999999999974, 494.2999999999997, 494.4999999999997, 494.6999999999997]
-Awarded direct payment 750 at time 493.5
-Recorded cash and eco values (5435.0,1941.6) at time 493.5
-Recorded cash and eco values (5435.0,1941.6) at time 493.5
-----------
+[493.6999999999993, 493.8999999999993, 494.0999999999993, 494.2999999999993, 494.49999999999926, 494.69999999999925]
+Recorded cash and eco values (5605.8,2037.6) at time 493.5
 Advancing game to time 493.6
-Recorded cash and eco values (5435.0,1941.6) at time 493.6
-----------
 Advancing game to time 493.7
-Sent a set of Grouped Pinks at time 493.69999999999976
+Sent a set of Grouped Pinks at time 493.6999999999993
 Currently, the send queue looks like this: 
-[493.89999999999975, 494.09999999999974, 494.2999999999997, 494.4999999999997, 494.6999999999997, 494.8999999999997]
-Recorded cash and eco values (5370.0,1944.0) at time 493.7
-----------
+[493.8999999999993, 494.0999999999993, 494.2999999999993, 494.49999999999926, 494.69999999999925, 494.89999999999924]
+Awarded direct payment 750 at time 493.7
+Recorded cash and eco values (6290.8,2040.0) at time 493.7
 Advancing game to time 493.8
-Recorded cash and eco values (5370.0,1944.0) at time 493.8
-----------
 Advancing game to time 493.9
-Sent a set of Grouped Pinks at time 493.89999999999975
+Sent a set of Grouped Pinks at time 493.8999999999993
 Currently, the send queue looks like this: 
-[494.09999999999974, 494.2999999999997, 494.4999999999997, 494.6999999999997, 494.8999999999997, 495.0999999999997]
-Recorded cash and eco values (5305.0,1946.4) at time 493.9
-----------
+[494.0999999999993, 494.2999999999993, 494.49999999999926, 494.69999999999925, 494.89999999999924, 495.0999999999992]
+Recorded cash and eco values (6225.8,2042.4) at time 493.9
 Advancing game to time 494.0
-Recorded cash and eco values (5305.0,1946.4) at time 494.0
-----------
 Advancing game to time 494.1
-Sent a set of Grouped Pinks at time 494.09999999999974
+Sent a set of Grouped Pinks at time 494.0999999999993
 Currently, the send queue looks like this: 
-[494.2999999999997, 494.4999999999997, 494.6999999999997, 494.8999999999997, 495.0999999999997, 495.29999999999967]
-Recorded cash and eco values (5240.0,1948.8) at time 494.1
-----------
+[494.2999999999993, 494.49999999999926, 494.69999999999925, 494.89999999999924, 495.0999999999992, 495.2999999999992]
+Recorded cash and eco values (6160.8,2044.8) at time 494.1
 Advancing game to time 494.2
-Recorded cash and eco values (5240.0,1948.8) at time 494.2
-----------
 Advancing game to time 494.3
-Sent a set of Grouped Pinks at time 494.2999999999997
+Sent a set of Grouped Pinks at time 494.2999999999993
 Currently, the send queue looks like this: 
-[494.4999999999997, 494.6999999999997, 494.8999999999997, 495.0999999999997, 495.29999999999967, 495.49999999999966]
-Recorded cash and eco values (5175.0,1951.2) at time 494.3
-----------
+[494.49999999999926, 494.69999999999925, 494.89999999999924, 495.0999999999992, 495.2999999999992, 495.4999999999992]
+Recorded cash and eco values (6095.8,2047.2) at time 494.3
 Advancing game to time 494.4
-Recorded cash and eco values (5175.0,1951.2) at time 494.4
-----------
 Advancing game to time 494.5
-Sent a set of Grouped Pinks at time 494.4999999999997
+Sent a set of Grouped Pinks at time 494.49999999999926
 Currently, the send queue looks like this: 
-[494.6999999999997, 494.8999999999997, 495.0999999999997, 495.29999999999967, 495.49999999999966, 495.69999999999965]
-Recorded cash and eco values (5110.0,1953.6) at time 494.5
-----------
+[494.69999999999925, 494.89999999999924, 495.0999999999992, 495.2999999999992, 495.4999999999992, 495.6999999999992]
+Recorded cash and eco values (6030.8,2049.6) at time 494.5
 Advancing game to time 494.6
-Recorded cash and eco values (5110.0,1953.6) at time 494.6
-----------
 Advancing game to time 494.7
-Sent a set of Grouped Pinks at time 494.6999999999997
+Sent a set of Grouped Pinks at time 494.69999999999925
 Currently, the send queue looks like this: 
-[494.8999999999997, 495.0999999999997, 495.29999999999967, 495.49999999999966, 495.69999999999965, 495.89999999999964]
-Recorded cash and eco values (5045.0,1956.0) at time 494.7
-----------
+[494.89999999999924, 495.0999999999992, 495.2999999999992, 495.4999999999992, 495.6999999999992, 495.8999999999992]
+Recorded cash and eco values (5965.8,2052.0) at time 494.7
 Advancing game to time 494.8
-Recorded cash and eco values (5045.0,1956.0) at time 494.8
-----------
 Advancing game to time 494.9
-Sent a set of Grouped Pinks at time 494.8999999999997
+Sent a set of Grouped Pinks at time 494.89999999999924
 Currently, the send queue looks like this: 
-[495.0999999999997, 495.29999999999967, 495.49999999999966, 495.69999999999965, 495.89999999999964, 496.0999999999996]
-Recorded cash and eco values (4980.0,1958.4) at time 494.9
-----------
+[495.0999999999992, 495.2999999999992, 495.4999999999992, 495.6999999999992, 495.8999999999992, 496.09999999999917]
+Recorded cash and eco values (5900.8,2054.4) at time 494.9
 Advancing game to time 495.0
-Recorded cash and eco values (4980.0,1958.4) at time 495.0
-----------
 Advancing game to time 495.1
-Sent a set of Grouped Pinks at time 495.0999999999997
+Sent a set of Grouped Pinks at time 495.0999999999992
 Currently, the send queue looks like this: 
-[495.29999999999967, 495.49999999999966, 495.69999999999965, 495.89999999999964, 496.0999999999996, 496.2999999999996]
-Recorded cash and eco values (4915.0,1960.8) at time 495.1
-----------
+[495.2999999999992, 495.4999999999992, 495.6999999999992, 495.8999999999992, 496.09999999999917, 496.29999999999916]
+Recorded cash and eco values (5835.8,2056.8) at time 495.1
 Advancing game to time 495.2
-Recorded cash and eco values (4915.0,1960.8) at time 495.2
-----------
 Advancing game to time 495.3
-Sent a set of Grouped Pinks at time 495.29999999999967
+Sent a set of Grouped Pinks at time 495.2999999999992
 Currently, the send queue looks like this: 
-[495.49999999999966, 495.69999999999965, 495.89999999999964, 496.0999999999996, 496.2999999999996, 496.4999999999996]
-Recorded cash and eco values (4850.0,1963.2) at time 495.3
-----------
+[495.4999999999992, 495.6999999999992, 495.8999999999992, 496.09999999999917, 496.29999999999916, 496.49999999999915]
+Recorded cash and eco values (5770.8,2059.2) at time 495.3
 Advancing game to time 495.4
-Recorded cash and eco values (4850.0,1963.2) at time 495.4
-----------
 Advancing game to time 495.5
-Sent a set of Grouped Pinks at time 495.49999999999966
+Sent a set of Grouped Pinks at time 495.4999999999992
 Currently, the send queue looks like this: 
-[495.69999999999965, 495.89999999999964, 496.0999999999996, 496.2999999999996, 496.4999999999996, 496.6999999999996]
-Recorded cash and eco values (4785.0,1965.6) at time 495.5
-----------
+[495.6999999999992, 495.8999999999992, 496.09999999999917, 496.29999999999916, 496.49999999999915, 496.69999999999914]
+Recorded cash and eco values (5705.8,2061.6) at time 495.5
 Advancing game to time 495.6
-Recorded cash and eco values (4785.0,1965.6) at time 495.6
-----------
 Advancing game to time 495.7
-Sent a set of Grouped Pinks at time 495.69999999999965
+Sent a set of Grouped Pinks at time 495.6999999999992
 Currently, the send queue looks like this: 
-[495.89999999999964, 496.0999999999996, 496.2999999999996, 496.4999999999996, 496.6999999999996, 496.8999999999996]
-Recorded cash and eco values (4720.0,1968.0) at time 495.7
-----------
+[495.8999999999992, 496.09999999999917, 496.29999999999916, 496.49999999999915, 496.69999999999914, 496.8999999999991]
+Recorded cash and eco values (5640.8,2064.0) at time 495.7
 Advancing game to time 495.8
-Recorded cash and eco values (4720.0,1968.0) at time 495.8
-----------
 Advancing game to time 495.9
-Sent a set of Grouped Pinks at time 495.89999999999964
+Sent a set of Grouped Pinks at time 495.8999999999992
 Currently, the send queue looks like this: 
-[496.0999999999996, 496.2999999999996, 496.4999999999996, 496.6999999999996, 496.8999999999996, 497.09999999999957]
-Recorded cash and eco values (4655.0,1970.4) at time 495.9
-----------
+[496.09999999999917, 496.29999999999916, 496.49999999999915, 496.69999999999914, 496.8999999999991, 497.0999999999991]
+Recorded cash and eco values (5575.8,2066.4) at time 495.9
 Advancing game to time 496.0
-Recorded cash and eco values (4655.0,1970.4) at time 496.0
-----------
 Advancing game to time 496.1
-Sent a set of Grouped Pinks at time 496.0999999999996
+Sent a set of Grouped Pinks at time 496.09999999999917
 Currently, the send queue looks like this: 
-[496.2999999999996, 496.4999999999996, 496.6999999999996, 496.8999999999996, 497.09999999999957, 497.29999999999956]
-Recorded cash and eco values (4590.0,1972.8) at time 496.1
-----------
+[496.29999999999916, 496.49999999999915, 496.69999999999914, 496.8999999999991, 497.0999999999991, 497.2999999999991]
+Recorded cash and eco values (5510.8,2068.8) at time 496.1
 Advancing game to time 496.2
-Recorded cash and eco values (4590.0,1972.8) at time 496.2
-----------
 Advancing game to time 496.3
-Sent a set of Grouped Pinks at time 496.2999999999996
+Sent a set of Grouped Pinks at time 496.29999999999916
 Currently, the send queue looks like this: 
-[496.4999999999996, 496.6999999999996, 496.8999999999996, 497.09999999999957, 497.29999999999956, 497.49999999999955]
-Recorded cash and eco values (4525.0,1975.2) at time 496.3
-----------
+[496.49999999999915, 496.69999999999914, 496.8999999999991, 497.0999999999991, 497.2999999999991, 497.4999999999991]
+Recorded cash and eco values (5445.8,2071.2) at time 496.3
 Advancing game to time 496.4
-Recorded cash and eco values (4525.0,1975.2) at time 496.4
-----------
 Advancing game to time 496.5
-Sent a set of Grouped Pinks at time 496.4999999999996
+Sent a set of Grouped Pinks at time 496.49999999999915
 Currently, the send queue looks like this: 
-[496.6999999999996, 496.8999999999996, 497.09999999999957, 497.29999999999956, 497.49999999999955, 497.69999999999953]
-Recorded cash and eco values (4460.0,1977.6) at time 496.5
-----------
+[496.69999999999914, 496.8999999999991, 497.0999999999991, 497.2999999999991, 497.4999999999991, 497.6999999999991]
+Recorded cash and eco values (5380.8,2073.6) at time 496.5
 Advancing game to time 496.6
-Recorded cash and eco values (4460.0,1977.6) at time 496.6
-----------
 Advancing game to time 496.7
-Sent a set of Grouped Pinks at time 496.6999999999996
+Sent a set of Grouped Pinks at time 496.69999999999914
 Currently, the send queue looks like this: 
-[496.8999999999996, 497.09999999999957, 497.29999999999956, 497.49999999999955, 497.69999999999953, 497.8999999999995]
-Recorded cash and eco values (4395.0,1980.0) at time 496.7
-----------
+[496.8999999999991, 497.0999999999991, 497.2999999999991, 497.4999999999991, 497.6999999999991, 497.89999999999907]
+Recorded cash and eco values (5315.8,2076.0) at time 496.7
 Advancing game to time 496.8
-Recorded cash and eco values (4395.0,1980.0) at time 496.8
-----------
 Advancing game to time 496.9
-Sent a set of Grouped Pinks at time 496.8999999999996
+Sent a set of Grouped Pinks at time 496.8999999999991
 Currently, the send queue looks like this: 
-[497.09999999999957, 497.29999999999956, 497.49999999999955, 497.69999999999953, 497.8999999999995, 498.0999999999995]
-Recorded cash and eco values (4330.0,1982.4) at time 496.9
-----------
+[497.0999999999991, 497.2999999999991, 497.4999999999991, 497.6999999999991, 497.89999999999907, 498.09999999999906]
+Recorded cash and eco values (5250.8,2078.4) at time 496.9
 Advancing game to time 497.0
-Recorded cash and eco values (4330.0,1982.4) at time 497.0
-----------
 Advancing game to time 497.1
-Sent a set of Grouped Pinks at time 497.09999999999957
+Sent a set of Grouped Pinks at time 497.0999999999991
 Currently, the send queue looks like this: 
-[497.29999999999956, 497.49999999999955, 497.69999999999953, 497.8999999999995, 498.0999999999995, 498.2999999999995]
-Recorded cash and eco values (4265.0,1984.8) at time 497.1
-----------
+[497.2999999999991, 497.4999999999991, 497.6999999999991, 497.89999999999907, 498.09999999999906, 498.29999999999905]
+Recorded cash and eco values (5185.8,2080.8) at time 497.1
 Advancing game to time 497.2
-Recorded cash and eco values (4265.0,1984.8) at time 497.2
-----------
 Advancing game to time 497.3
-Sent a set of Grouped Pinks at time 497.29999999999956
+Sent a set of Grouped Pinks at time 497.2999999999991
 Currently, the send queue looks like this: 
-[497.49999999999955, 497.69999999999953, 497.8999999999995, 498.0999999999995, 498.2999999999995, 498.4999999999995]
-Recorded cash and eco values (4200.0,1987.2) at time 497.3
-----------
+[497.4999999999991, 497.6999999999991, 497.89999999999907, 498.09999999999906, 498.29999999999905, 498.49999999999903]
+Recorded cash and eco values (5120.8,2083.2) at time 497.3
 Advancing game to time 497.4
-Recorded cash and eco values (4200.0,1987.2) at time 497.4
-----------
 Advancing game to time 497.5
-Sent a set of Grouped Pinks at time 497.49999999999955
+Sent a set of Grouped Pinks at time 497.4999999999991
 Currently, the send queue looks like this: 
-[497.69999999999953, 497.8999999999995, 498.0999999999995, 498.2999999999995, 498.4999999999995, 498.6999999999995]
-Recorded cash and eco values (4135.0,1989.6) at time 497.5
-----------
+[497.6999999999991, 497.89999999999907, 498.09999999999906, 498.29999999999905, 498.49999999999903, 498.699999999999]
+Recorded cash and eco values (5055.8,2085.6) at time 497.5
 Advancing game to time 497.6
-Recorded cash and eco values (4135.0,1989.6) at time 497.6
-----------
 Advancing game to time 497.7
-Sent a set of Grouped Pinks at time 497.69999999999953
+Sent a set of Grouped Pinks at time 497.6999999999991
 Currently, the send queue looks like this: 
-[497.8999999999995, 498.0999999999995, 498.2999999999995, 498.4999999999995, 498.6999999999995, 498.89999999999947]
-Recorded cash and eco values (4070.0,1992.0) at time 497.7
-----------
+[497.89999999999907, 498.09999999999906, 498.29999999999905, 498.49999999999903, 498.699999999999, 498.899999999999]
+Recorded cash and eco values (4990.8,2088.0) at time 497.7
 Advancing game to time 497.8
-Recorded cash and eco values (4070.0,1992.0) at time 497.8
-----------
 Advancing game to time 497.9
-Sent a set of Grouped Pinks at time 497.8999999999995
+Sent a set of Grouped Pinks at time 497.89999999999907
 Currently, the send queue looks like this: 
-[498.0999999999995, 498.2999999999995, 498.4999999999995, 498.6999999999995, 498.89999999999947, 499.09999999999945]
-Recorded cash and eco values (4005.0,1994.4) at time 497.9
-----------
+[498.09999999999906, 498.29999999999905, 498.49999999999903, 498.699999999999, 498.899999999999, 499.099999999999]
+Recorded cash and eco values (4925.8,2090.4) at time 497.9
 Advancing game to time 498.0
-Awarded eco payment 1994.4 at time 498.0
-Recorded cash and eco values (5999.4,1994.4) at time 498.0
-Recorded cash and eco values (5999.4,1994.4) at time 498.0
-----------
+Awarded eco payment 2090.4 at time 498.0
+Recorded cash and eco values (7016.2,2090.4) at time 498.0
 Advancing game to time 498.1
-Sent a set of Grouped Pinks at time 498.0999999999995
+Sent a set of Grouped Pinks at time 498.09999999999906
 Currently, the send queue looks like this: 
-[498.2999999999995, 498.4999999999995, 498.6999999999995, 498.89999999999947, 499.09999999999945, 499.29999999999944]
-Recorded cash and eco values (5934.4,1996.8) at time 498.1
-----------
+[498.29999999999905, 498.49999999999903, 498.699999999999, 498.899999999999, 499.099999999999, 499.299999999999]
+Recorded cash and eco values (6951.2,2092.8) at time 498.1
 Advancing game to time 498.2
-Recorded cash and eco values (5934.4,1996.8) at time 498.2
-----------
 Advancing game to time 498.3
-Sent a set of Grouped Pinks at time 498.2999999999995
+Sent a set of Grouped Pinks at time 498.29999999999905
 Currently, the send queue looks like this: 
-[498.4999999999995, 498.6999999999995, 498.89999999999947, 499.09999999999945, 499.29999999999944, 499.49999999999943]
-Awarded direct payment 750 at time 498.3
-Recorded cash and eco values (6619.4,1999.2) at time 498.3
-Recorded cash and eco values (6619.4,1999.2) at time 498.3
-----------
+[498.49999999999903, 498.699999999999, 498.899999999999, 499.099999999999, 499.299999999999, 499.499999999999]
+Recorded cash and eco values (6886.2,2095.2) at time 498.3
 Advancing game to time 498.4
-Recorded cash and eco values (6619.4,1999.2) at time 498.4
-----------
 Advancing game to time 498.5
-Sent a set of Grouped Pinks at time 498.4999999999995
+Sent a set of Grouped Pinks at time 498.49999999999903
 Currently, the send queue looks like this: 
-[498.6999999999995, 498.89999999999947, 499.09999999999945, 499.29999999999944, 499.49999999999943, 499.6999999999994]
-Recorded cash and eco values (6554.4,2001.6) at time 498.5
-----------
+[498.699999999999, 498.899999999999, 499.099999999999, 499.299999999999, 499.499999999999, 499.69999999999897]
+Recorded cash and eco values (6821.2,2097.6) at time 498.5
 Advancing game to time 498.6
-Recorded cash and eco values (6554.4,2001.6) at time 498.6
-----------
 Advancing game to time 498.7
-Sent a set of Grouped Pinks at time 498.6999999999995
+Sent a set of Grouped Pinks at time 498.699999999999
 Currently, the send queue looks like this: 
-[498.89999999999947, 499.09999999999945, 499.29999999999944, 499.49999999999943, 499.6999999999994, 499.8999999999994]
-Recorded cash and eco values (6489.4,2004.0) at time 498.7
-----------
+[498.899999999999, 499.099999999999, 499.299999999999, 499.499999999999, 499.69999999999897, 499.89999999999895]
+Recorded cash and eco values (6756.2,2100.0) at time 498.7
 Advancing game to time 498.8
-Recorded cash and eco values (6489.4,2004.0) at time 498.8
-----------
 Advancing game to time 498.9
-Sent a set of Grouped Pinks at time 498.89999999999947
+Sent a set of Grouped Pinks at time 498.899999999999
 Currently, the send queue looks like this: 
-[499.09999999999945, 499.29999999999944, 499.49999999999943, 499.6999999999994, 499.8999999999994, 500.0999999999994]
-Recorded cash and eco values (6424.4,2006.4) at time 498.9
-----------
+[499.099999999999, 499.299999999999, 499.499999999999, 499.69999999999897, 499.89999999999895, 500.09999999999894]
+Recorded cash and eco values (6691.2,2102.4) at time 498.9
 Advancing game to time 499.0
-Recorded cash and eco values (6424.4,2006.4) at time 499.0
-----------
 Advancing game to time 499.1
-Sent a set of Grouped Pinks at time 499.09999999999945
+Sent a set of Grouped Pinks at time 499.099999999999
 Currently, the send queue looks like this: 
-[499.29999999999944, 499.49999999999943, 499.6999999999994, 499.8999999999994, 500.0999999999994, 500.2999999999994]
-Recorded cash and eco values (6359.4,2008.8) at time 499.1
-----------
+[499.299999999999, 499.499999999999, 499.69999999999897, 499.89999999999895, 500.09999999999894, 500.29999999999893]
+Recorded cash and eco values (6626.2,2104.8) at time 499.1
 Advancing game to time 499.2
-Recorded cash and eco values (6359.4,2008.8) at time 499.2
-----------
 Advancing game to time 499.3
-Sent a set of Grouped Pinks at time 499.29999999999944
+Sent a set of Grouped Pinks at time 499.299999999999
 Currently, the send queue looks like this: 
-[499.49999999999943, 499.6999999999994, 499.8999999999994, 500.0999999999994, 500.2999999999994, 500.4999999999994]
-Recorded cash and eco values (6294.4,2011.2) at time 499.3
-----------
+[499.499999999999, 499.69999999999897, 499.89999999999895, 500.09999999999894, 500.29999999999893, 500.4999999999989]
+Recorded cash and eco values (6561.2,2107.2) at time 499.3
 Advancing game to time 499.4
-Recorded cash and eco values (6294.4,2011.2) at time 499.4
-----------
 Advancing game to time 499.5
-Sent a set of Grouped Pinks at time 499.49999999999943
+Sent a set of Grouped Pinks at time 499.499999999999
 Currently, the send queue looks like this: 
-[499.6999999999994, 499.8999999999994, 500.0999999999994, 500.2999999999994, 500.4999999999994, 500.69999999999936]
-Recorded cash and eco values (6229.4,2013.6) at time 499.5
-----------
+[499.69999999999897, 499.89999999999895, 500.09999999999894, 500.29999999999893, 500.4999999999989, 500.6999999999989]
+Recorded cash and eco values (6496.2,2109.6) at time 499.5
 Advancing game to time 499.6
-Recorded cash and eco values (6229.4,2013.6) at time 499.6
-----------
 Advancing game to time 499.7
-Sent a set of Grouped Pinks at time 499.6999999999994
+Sent a set of Grouped Pinks at time 499.69999999999897
 Currently, the send queue looks like this: 
-[499.8999999999994, 500.0999999999994, 500.2999999999994, 500.4999999999994, 500.69999999999936, 500.89999999999935]
-Recorded cash and eco values (6164.4,2016.0) at time 499.7
-----------
+[499.89999999999895, 500.09999999999894, 500.29999999999893, 500.4999999999989, 500.6999999999989, 500.8999999999989]
+Recorded cash and eco values (6431.2,2112.0) at time 499.7
 Advancing game to time 499.8
-Recorded cash and eco values (6164.4,2016.0) at time 499.8
-----------
 Advancing game to time 499.9
-Sent a set of Grouped Pinks at time 499.8999999999994
+Sent a set of Grouped Pinks at time 499.89999999999895
 Currently, the send queue looks like this: 
-[500.0999999999994, 500.2999999999994, 500.4999999999994, 500.69999999999936, 500.89999999999935, 501.09999999999934]
-Recorded cash and eco values (6099.4,2018.4) at time 499.9
-----------
+[500.09999999999894, 500.29999999999893, 500.4999999999989, 500.6999999999989, 500.8999999999989, 501.0999999999989]
+Recorded cash and eco values (6366.2,2114.4) at time 499.9
 Advancing game to time 500.0
-Recorded cash and eco values (6099.4,2018.4) at time 500.0
-----------
 Advancing game to time 500.1
-Sent a set of Grouped Pinks at time 500.0999999999994
+Sent a set of Grouped Pinks at time 500.09999999999894
 Currently, the send queue looks like this: 
-[500.2999999999994, 500.4999999999994, 500.69999999999936, 500.89999999999935, 501.09999999999934, 501.29999999999933]
-Recorded cash and eco values (6034.4,2020.8) at time 500.1
-----------
+[500.29999999999893, 500.4999999999989, 500.6999999999989, 500.8999999999989, 501.0999999999989, 501.2999999999989]
+Recorded cash and eco values (6301.2,2116.8) at time 500.1
 Advancing game to time 500.2
-Recorded cash and eco values (6034.4,2020.8) at time 500.2
-----------
 Advancing game to time 500.3
-Sent a set of Grouped Pinks at time 500.2999999999994
+Sent a set of Grouped Pinks at time 500.29999999999893
 Currently, the send queue looks like this: 
-[500.4999999999994, 500.69999999999936, 500.89999999999935, 501.09999999999934, 501.29999999999933, 501.4999999999993]
-Recorded cash and eco values (5969.4,2023.2) at time 500.3
-----------
+[500.4999999999989, 500.6999999999989, 500.8999999999989, 501.0999999999989, 501.2999999999989, 501.49999999999886]
+Recorded cash and eco values (6236.2,2119.2) at time 500.3
 Advancing game to time 500.4
-Recorded cash and eco values (5969.4,2023.2) at time 500.4
-----------
 Advancing game to time 500.5
-Sent a set of Grouped Pinks at time 500.4999999999994
+Sent a set of Grouped Pinks at time 500.4999999999989
 Currently, the send queue looks like this: 
-[500.69999999999936, 500.89999999999935, 501.09999999999934, 501.29999999999933, 501.4999999999993, 501.6999999999993]
-Recorded cash and eco values (5904.4,2025.6) at time 500.5
-----------
+[500.6999999999989, 500.8999999999989, 501.0999999999989, 501.2999999999989, 501.49999999999886, 501.69999999999885]
+Recorded cash and eco values (6171.2,2121.6) at time 500.5
 Advancing game to time 500.6
-Recorded cash and eco values (5904.4,2025.6) at time 500.6
-----------
 Advancing game to time 500.7
-Sent a set of Grouped Pinks at time 500.69999999999936
+Sent a set of Grouped Pinks at time 500.6999999999989
 Currently, the send queue looks like this: 
-[500.89999999999935, 501.09999999999934, 501.29999999999933, 501.4999999999993, 501.6999999999993, 501.8999999999993]
-Recorded cash and eco values (5839.4,2028.0) at time 500.7
-----------
+[500.8999999999989, 501.0999999999989, 501.2999999999989, 501.49999999999886, 501.69999999999885, 501.89999999999884]
+Recorded cash and eco values (6106.2,2124.0) at time 500.7
 Advancing game to time 500.8
-Recorded cash and eco values (5839.4,2028.0) at time 500.8
-----------
 Advancing game to time 500.9
-Sent a set of Grouped Pinks at time 500.89999999999935
+Sent a set of Grouped Pinks at time 500.8999999999989
 Currently, the send queue looks like this: 
-[501.09999999999934, 501.29999999999933, 501.4999999999993, 501.6999999999993, 501.8999999999993, 502.0999999999993]
-Recorded cash and eco values (5774.4,2030.4) at time 500.9
-----------
+[501.0999999999989, 501.2999999999989, 501.49999999999886, 501.69999999999885, 501.89999999999884, 502.09999999999883]
+Recorded cash and eco values (6041.2,2126.4) at time 500.9
 Advancing game to time 501.0
-Recorded cash and eco values (5774.4,2030.4) at time 501.0
-----------
 Advancing game to time 501.1
-Sent a set of Grouped Pinks at time 501.09999999999934
+Sent a set of Grouped Pinks at time 501.0999999999989
 Currently, the send queue looks like this: 
-[501.29999999999933, 501.4999999999993, 501.6999999999993, 501.8999999999993, 502.0999999999993, 502.2999999999993]
-Recorded cash and eco values (5709.4,2032.8) at time 501.1
-----------
+[501.2999999999989, 501.49999999999886, 501.69999999999885, 501.89999999999884, 502.09999999999883, 502.2999999999988]
+Recorded cash and eco values (5976.2,2128.8) at time 501.1
 Advancing game to time 501.2
-Recorded cash and eco values (5709.4,2032.8) at time 501.2
-----------
 Advancing game to time 501.3
-Sent a set of Grouped Pinks at time 501.29999999999933
+Sent a set of Grouped Pinks at time 501.2999999999989
 Currently, the send queue looks like this: 
-[501.4999999999993, 501.6999999999993, 501.8999999999993, 502.0999999999993, 502.2999999999993, 502.49999999999926]
-Recorded cash and eco values (5644.4,2035.2) at time 501.3
-----------
+[501.49999999999886, 501.69999999999885, 501.89999999999884, 502.09999999999883, 502.2999999999988, 502.4999999999988]
+Recorded cash and eco values (5911.2,2131.2) at time 501.3
 Advancing game to time 501.4
-Recorded cash and eco values (5644.4,2035.2) at time 501.4
-----------
 Advancing game to time 501.5
-Sent a set of Grouped Pinks at time 501.4999999999993
+Sent a set of Grouped Pinks at time 501.49999999999886
 Currently, the send queue looks like this: 
-[501.6999999999993, 501.8999999999993, 502.0999999999993, 502.2999999999993, 502.49999999999926, 502.69999999999925]
-Recorded cash and eco values (5579.4,2037.6) at time 501.5
-----------
+[501.69999999999885, 501.89999999999884, 502.09999999999883, 502.2999999999988, 502.4999999999988, 502.6999999999988]
+Recorded cash and eco values (5846.2,2133.6) at time 501.5
 Advancing game to time 501.6
-Recorded cash and eco values (5579.4,2037.6) at time 501.6
-----------
 Advancing game to time 501.7
-Sent a set of Grouped Pinks at time 501.6999999999993
+Sent a set of Grouped Pinks at time 501.69999999999885
 Currently, the send queue looks like this: 
-[501.8999999999993, 502.0999999999993, 502.2999999999993, 502.49999999999926, 502.69999999999925, 502.89999999999924]
-Recorded cash and eco values (5514.4,2040.0) at time 501.7
-----------
+[501.89999999999884, 502.09999999999883, 502.2999999999988, 502.4999999999988, 502.6999999999988, 502.8999999999988]
+Recorded cash and eco values (5781.2,2136.0) at time 501.7
 Advancing game to time 501.8
-Recorded cash and eco values (5514.4,2040.0) at time 501.8
-----------
 Advancing game to time 501.9
-Sent a set of Grouped Pinks at time 501.8999999999993
+Sent a set of Grouped Pinks at time 501.89999999999884
 Currently, the send queue looks like this: 
-[502.0999999999993, 502.2999999999993, 502.49999999999926, 502.69999999999925, 502.89999999999924, 503.0999999999992]
-Recorded cash and eco values (5449.4,2042.4) at time 501.9
-----------
+[502.09999999999883, 502.2999999999988, 502.4999999999988, 502.6999999999988, 502.8999999999988, 503.0999999999988]
+Recorded cash and eco values (5716.2,2138.4) at time 501.9
 Advancing game to time 502.0
-Recorded cash and eco values (5449.4,2042.4) at time 502.0
-----------
 Advancing game to time 502.1
-Sent a set of Grouped Pinks at time 502.0999999999993
+Sent a set of Grouped Pinks at time 502.09999999999883
 Currently, the send queue looks like this: 
-[502.2999999999993, 502.49999999999926, 502.69999999999925, 502.89999999999924, 503.0999999999992, 503.2999999999992]
-Recorded cash and eco values (5384.4,2044.8) at time 502.1
-----------
+[502.2999999999988, 502.4999999999988, 502.6999999999988, 502.8999999999988, 503.0999999999988, 503.29999999999876]
+Recorded cash and eco values (5651.2,2140.8) at time 502.1
 Advancing game to time 502.2
-Recorded cash and eco values (5384.4,2044.8) at time 502.2
-----------
 Advancing game to time 502.3
-Sent a set of Grouped Pinks at time 502.2999999999993
+Sent a set of Grouped Pinks at time 502.2999999999988
 Currently, the send queue looks like this: 
-[502.49999999999926, 502.69999999999925, 502.89999999999924, 503.0999999999992, 503.2999999999992, 503.4999999999992]
-Recorded cash and eco values (5319.4,2047.2) at time 502.3
-----------
+[502.4999999999988, 502.6999999999988, 502.8999999999988, 503.0999999999988, 503.29999999999876, 503.49999999999875]
+Recorded cash and eco values (5586.2,2143.2) at time 502.3
 Advancing game to time 502.4
-Recorded cash and eco values (5319.4,2047.2) at time 502.4
-----------
 Advancing game to time 502.5
-Sent a set of Grouped Pinks at time 502.49999999999926
+Sent a set of Grouped Pinks at time 502.4999999999988
 Currently, the send queue looks like this: 
-[502.69999999999925, 502.89999999999924, 503.0999999999992, 503.2999999999992, 503.4999999999992, 503.6999999999992]
-Recorded cash and eco values (5254.4,2049.6) at time 502.5
-----------
+[502.6999999999988, 502.8999999999988, 503.0999999999988, 503.29999999999876, 503.49999999999875, 503.69999999999874]
+Recorded cash and eco values (5521.2,2145.6) at time 502.5
 Advancing game to time 502.6
-Recorded cash and eco values (5254.4,2049.6) at time 502.6
-----------
 Advancing game to time 502.7
-Sent a set of Grouped Pinks at time 502.69999999999925
+Sent a set of Grouped Pinks at time 502.6999999999988
 Currently, the send queue looks like this: 
-[502.89999999999924, 503.0999999999992, 503.2999999999992, 503.4999999999992, 503.6999999999992, 503.8999999999992]
-Recorded cash and eco values (5189.4,2052.0) at time 502.7
-----------
+[502.8999999999988, 503.0999999999988, 503.29999999999876, 503.49999999999875, 503.69999999999874, 503.8999999999987]
+Recorded cash and eco values (5456.2,2148.0) at time 502.7
 Advancing game to time 502.8
-Recorded cash and eco values (5189.4,2052.0) at time 502.8
-----------
 Advancing game to time 502.9
-Sent a set of Grouped Pinks at time 502.89999999999924
+Sent a set of Grouped Pinks at time 502.8999999999988
 Currently, the send queue looks like this: 
-[503.0999999999992, 503.2999999999992, 503.4999999999992, 503.6999999999992, 503.8999999999992, 504.09999999999917]
-Recorded cash and eco values (5124.4,2054.4) at time 502.9
-----------
+[503.0999999999988, 503.29999999999876, 503.49999999999875, 503.69999999999874, 503.8999999999987, 504.0999999999987]
+Recorded cash and eco values (5391.2,2150.4) at time 502.9
 Advancing game to time 503.0
-Recorded cash and eco values (5124.4,2054.4) at time 503.0
-----------
 Advancing game to time 503.1
-Sent a set of Grouped Pinks at time 503.0999999999992
+Sent a set of Grouped Pinks at time 503.0999999999988
 Currently, the send queue looks like this: 
-[503.2999999999992, 503.4999999999992, 503.6999999999992, 503.8999999999992, 504.09999999999917, 504.29999999999916]
-Awarded direct payment 750 at time 503.1
-Recorded cash and eco values (5809.4,2056.8) at time 503.1
-Recorded cash and eco values (5809.4,2056.8) at time 503.1
-----------
+[503.29999999999876, 503.49999999999875, 503.69999999999874, 503.8999999999987, 504.0999999999987, 504.2999999999987]
+Recorded cash and eco values (5326.2,2152.8) at time 503.1
 Advancing game to time 503.2
-Recorded cash and eco values (5809.4,2056.8) at time 503.2
-----------
 Advancing game to time 503.3
-Sent a set of Grouped Pinks at time 503.2999999999992
+Sent a set of Grouped Pinks at time 503.29999999999876
 Currently, the send queue looks like this: 
-[503.4999999999992, 503.6999999999992, 503.8999999999992, 504.09999999999917, 504.29999999999916, 504.49999999999915]
-Recorded cash and eco values (5744.4,2059.2) at time 503.3
-----------
+[503.49999999999875, 503.69999999999874, 503.8999999999987, 504.0999999999987, 504.2999999999987, 504.4999999999987]
+Recorded cash and eco values (5261.2,2155.2) at time 503.3
 Advancing game to time 503.4
-Recorded cash and eco values (5744.4,2059.2) at time 503.4
-----------
 Advancing game to time 503.5
-Sent a set of Grouped Pinks at time 503.4999999999992
+Sent a set of Grouped Pinks at time 503.49999999999875
 Currently, the send queue looks like this: 
-[503.6999999999992, 503.8999999999992, 504.09999999999917, 504.29999999999916, 504.49999999999915, 504.69999999999914]
-Recorded cash and eco values (5679.4,2061.6) at time 503.5
-----------
+[503.69999999999874, 503.8999999999987, 504.0999999999987, 504.2999999999987, 504.4999999999987, 504.6999999999987]
+Recorded cash and eco values (5196.2,2157.6) at time 503.5
 Advancing game to time 503.6
-Recorded cash and eco values (5679.4,2061.6) at time 503.6
-----------
 Advancing game to time 503.7
-Sent a set of Grouped Pinks at time 503.6999999999992
+Sent a set of Grouped Pinks at time 503.69999999999874
 Currently, the send queue looks like this: 
-[503.8999999999992, 504.09999999999917, 504.29999999999916, 504.49999999999915, 504.69999999999914, 504.8999999999991]
-Recorded cash and eco values (5614.4,2064.0) at time 503.7
-----------
+[503.8999999999987, 504.0999999999987, 504.2999999999987, 504.4999999999987, 504.6999999999987, 504.89999999999867]
+Recorded cash and eco values (5131.2,2160.0) at time 503.7
 Advancing game to time 503.8
-Recorded cash and eco values (5614.4,2064.0) at time 503.8
-----------
 Advancing game to time 503.9
-Sent a set of Grouped Pinks at time 503.8999999999992
+Sent a set of Grouped Pinks at time 503.8999999999987
 Currently, the send queue looks like this: 
-[504.09999999999917, 504.29999999999916, 504.49999999999915, 504.69999999999914, 504.8999999999991, 505.0999999999991]
-Recorded cash and eco values (5549.4,2066.4) at time 503.9
-----------
+[504.0999999999987, 504.2999999999987, 504.4999999999987, 504.6999999999987, 504.89999999999867, 505.09999999999866]
+Recorded cash and eco values (5066.2,2162.4) at time 503.9
 Advancing game to time 504.0
-Awarded eco payment 2066.4 at time 504.0
-Recorded cash and eco values (7615.8,2066.4) at time 504.0
-Recorded cash and eco values (7615.8,2066.4) at time 504.0
-----------
+Awarded eco payment 2162.4 at time 504.0
+Recorded cash and eco values (7228.6,2162.4) at time 504.0
 Advancing game to time 504.1
-Sent a set of Grouped Pinks at time 504.09999999999917
+Sent a set of Grouped Pinks at time 504.0999999999987
 Currently, the send queue looks like this: 
-[504.29999999999916, 504.49999999999915, 504.69999999999914, 504.8999999999991, 505.0999999999991, 505.2999999999991]
-Recorded cash and eco values (7550.8,2068.8) at time 504.1
-----------
+[504.2999999999987, 504.4999999999987, 504.6999999999987, 504.89999999999867, 505.09999999999866, 505.29999999999865]
+Recorded cash and eco values (7163.6,2164.8) at time 504.1
 Advancing game to time 504.2
-Recorded cash and eco values (7550.8,2068.8) at time 504.2
-----------
 Advancing game to time 504.3
-Sent a set of Grouped Pinks at time 504.29999999999916
+Sent a set of Grouped Pinks at time 504.2999999999987
 Currently, the send queue looks like this: 
-[504.49999999999915, 504.69999999999914, 504.8999999999991, 505.0999999999991, 505.2999999999991, 505.4999999999991]
-Recorded cash and eco values (7485.8,2071.2) at time 504.3
-----------
+[504.4999999999987, 504.6999999999987, 504.89999999999867, 505.09999999999866, 505.29999999999865, 505.49999999999864]
+Recorded cash and eco values (7098.6,2167.2) at time 504.3
 Advancing game to time 504.4
-Recorded cash and eco values (7485.8,2071.2) at time 504.4
-----------
 Advancing game to time 504.5
-Sent a set of Grouped Pinks at time 504.49999999999915
+Sent a set of Grouped Pinks at time 504.4999999999987
 Currently, the send queue looks like this: 
-[504.69999999999914, 504.8999999999991, 505.0999999999991, 505.2999999999991, 505.4999999999991, 505.6999999999991]
-Recorded cash and eco values (7420.8,2073.6) at time 504.5
-----------
+[504.6999999999987, 504.89999999999867, 505.09999999999866, 505.29999999999865, 505.49999999999864, 505.6999999999986]
+Recorded cash and eco values (7033.6,2169.6) at time 504.5
 Advancing game to time 504.6
-Recorded cash and eco values (7420.8,2073.6) at time 504.6
-----------
 Advancing game to time 504.7
-Sent a set of Grouped Pinks at time 504.69999999999914
+Sent a set of Grouped Pinks at time 504.6999999999987
 Currently, the send queue looks like this: 
-[504.8999999999991, 505.0999999999991, 505.2999999999991, 505.4999999999991, 505.6999999999991, 505.89999999999907]
-Recorded cash and eco values (7355.8,2076.0) at time 504.7
-----------
+[504.89999999999867, 505.09999999999866, 505.29999999999865, 505.49999999999864, 505.6999999999986, 505.8999999999986]
+Recorded cash and eco values (6968.6,2172.0) at time 504.7
 Advancing game to time 504.8
-Recorded cash and eco values (7355.8,2076.0) at time 504.8
-----------
+Awarded direct payment 750 at time 504.75
+Recorded cash and eco values (7718.6,2172.0) at time 504.75
 Advancing game to time 504.9
-Sent a set of Grouped Pinks at time 504.8999999999991
+Sent a set of Grouped Pinks at time 504.89999999999867
 Currently, the send queue looks like this: 
-[505.0999999999991, 505.2999999999991, 505.4999999999991, 505.6999999999991, 505.89999999999907, 506.09999999999906]
-Recorded cash and eco values (7290.8,2078.4) at time 504.9
-----------
+[505.09999999999866, 505.29999999999865, 505.49999999999864, 505.6999999999986, 505.8999999999986, 506.0999999999986]
+Recorded cash and eco values (7653.6,2174.4) at time 504.9
 Advancing game to time 505.0
-Recorded cash and eco values (7290.8,2078.4) at time 505.0
-----------
 Advancing game to time 505.1
-Sent a set of Grouped Pinks at time 505.0999999999991
+Sent a set of Grouped Pinks at time 505.09999999999866
 Currently, the send queue looks like this: 
-[505.2999999999991, 505.4999999999991, 505.6999999999991, 505.89999999999907, 506.09999999999906, 506.29999999999905]
-Recorded cash and eco values (7225.8,2080.8) at time 505.1
-----------
+[505.29999999999865, 505.49999999999864, 505.6999999999986, 505.8999999999986, 506.0999999999986, 506.2999999999986]
+Recorded cash and eco values (7588.6,2176.8) at time 505.1
 Advancing game to time 505.2
-Recorded cash and eco values (7225.8,2080.8) at time 505.2
-----------
 Advancing game to time 505.3
-Sent a set of Grouped Pinks at time 505.2999999999991
+Sent a set of Grouped Pinks at time 505.29999999999865
 Currently, the send queue looks like this: 
-[505.4999999999991, 505.6999999999991, 505.89999999999907, 506.09999999999906, 506.29999999999905, 506.49999999999903]
-Recorded cash and eco values (7160.8,2083.2) at time 505.3
-----------
+[505.49999999999864, 505.6999999999986, 505.8999999999986, 506.0999999999986, 506.2999999999986, 506.4999999999986]
+Recorded cash and eco values (7523.6,2179.2) at time 505.3
 Advancing game to time 505.4
-Recorded cash and eco values (7160.8,2083.2) at time 505.4
-----------
 Advancing game to time 505.5
-Sent a set of Grouped Pinks at time 505.4999999999991
+Sent a set of Grouped Pinks at time 505.49999999999864
 Currently, the send queue looks like this: 
-[505.6999999999991, 505.89999999999907, 506.09999999999906, 506.29999999999905, 506.49999999999903, 506.699999999999]
-Recorded cash and eco values (7095.8,2085.6) at time 505.5
-----------
+[505.6999999999986, 505.8999999999986, 506.0999999999986, 506.2999999999986, 506.4999999999986, 506.69999999999857]
+Recorded cash and eco values (7458.6,2181.6) at time 505.5
 Advancing game to time 505.6
-Recorded cash and eco values (7095.8,2085.6) at time 505.6
-----------
 Advancing game to time 505.7
-Sent a set of Grouped Pinks at time 505.6999999999991
+Sent a set of Grouped Pinks at time 505.6999999999986
 Currently, the send queue looks like this: 
-[505.89999999999907, 506.09999999999906, 506.29999999999905, 506.49999999999903, 506.699999999999, 506.899999999999]
-Recorded cash and eco values (7030.8,2088.0) at time 505.7
-----------
+[505.8999999999986, 506.0999999999986, 506.2999999999986, 506.4999999999986, 506.69999999999857, 506.89999999999856]
+Recorded cash and eco values (7393.6,2184.0) at time 505.7
 Advancing game to time 505.8
-Recorded cash and eco values (7030.8,2088.0) at time 505.8
-----------
 Advancing game to time 505.9
-Sent a set of Grouped Pinks at time 505.89999999999907
+Sent a set of Grouped Pinks at time 505.8999999999986
 Currently, the send queue looks like this: 
-[506.09999999999906, 506.29999999999905, 506.49999999999903, 506.699999999999, 506.899999999999, 507.099999999999]
-Recorded cash and eco values (6965.8,2090.4) at time 505.9
-----------
+[506.0999999999986, 506.2999999999986, 506.4999999999986, 506.69999999999857, 506.89999999999856, 507.09999999999854]
+Recorded cash and eco values (7328.6,2186.4) at time 505.9
 Advancing game to time 506.0
-Recorded cash and eco values (6965.8,2090.4) at time 506.0
-----------
+Awarded direct payment 750 at time 505.95
+Recorded cash and eco values (8078.6,2186.4) at time 505.95
 Advancing game to time 506.1
-Sent a set of Grouped Pinks at time 506.09999999999906
+Sent a set of Grouped Pinks at time 506.0999999999986
 Currently, the send queue looks like this: 
-[506.29999999999905, 506.49999999999903, 506.699999999999, 506.899999999999, 507.099999999999, 507.299999999999]
-Recorded cash and eco values (6900.8,2092.8) at time 506.1
-----------
+[506.2999999999986, 506.4999999999986, 506.69999999999857, 506.89999999999856, 507.09999999999854, 507.29999999999853]
+Recorded cash and eco values (8013.6,2188.8) at time 506.1
 Advancing game to time 506.2
-Recorded cash and eco values (6900.8,2092.8) at time 506.2
-----------
 Advancing game to time 506.3
-Sent a set of Grouped Pinks at time 506.29999999999905
+Sent a set of Grouped Pinks at time 506.2999999999986
 Currently, the send queue looks like this: 
-[506.49999999999903, 506.699999999999, 506.899999999999, 507.099999999999, 507.299999999999, 507.499999999999]
-Recorded cash and eco values (6835.8,2095.2) at time 506.3
-----------
+[506.4999999999986, 506.69999999999857, 506.89999999999856, 507.09999999999854, 507.29999999999853, 507.4999999999985]
+Recorded cash and eco values (7948.6,2191.2) at time 506.3
 Advancing game to time 506.4
-Recorded cash and eco values (6835.8,2095.2) at time 506.4
-----------
 Advancing game to time 506.5
-Sent a set of Grouped Pinks at time 506.49999999999903
+Sent a set of Grouped Pinks at time 506.4999999999986
 Currently, the send queue looks like this: 
-[506.699999999999, 506.899999999999, 507.099999999999, 507.299999999999, 507.499999999999, 507.69999999999897]
-Recorded cash and eco values (6770.8,2097.6) at time 506.5
-----------
+[506.69999999999857, 506.89999999999856, 507.09999999999854, 507.29999999999853, 507.4999999999985, 507.6999999999985]
+Recorded cash and eco values (7883.6,2193.6) at time 506.5
 Advancing game to time 506.6
-Recorded cash and eco values (6770.8,2097.6) at time 506.6
-----------
 Advancing game to time 506.7
-Sent a set of Grouped Pinks at time 506.699999999999
+Sent a set of Grouped Pinks at time 506.69999999999857
 Currently, the send queue looks like this: 
-[506.899999999999, 507.099999999999, 507.299999999999, 507.499999999999, 507.69999999999897, 507.89999999999895]
-Recorded cash and eco values (6705.8,2100.0) at time 506.7
-----------
+[506.89999999999856, 507.09999999999854, 507.29999999999853, 507.4999999999985, 507.6999999999985, 507.8999999999985]
+Recorded cash and eco values (7818.6,2196.0) at time 506.7
 Advancing game to time 506.8
-Recorded cash and eco values (6705.8,2100.0) at time 506.8
-----------
 Advancing game to time 506.9
-Sent a set of Grouped Pinks at time 506.899999999999
+Sent a set of Grouped Pinks at time 506.89999999999856
 Currently, the send queue looks like this: 
-[507.099999999999, 507.299999999999, 507.499999999999, 507.69999999999897, 507.89999999999895, 508.09999999999894]
-Recorded cash and eco values (6640.8,2102.4) at time 506.9
-----------
+[507.09999999999854, 507.29999999999853, 507.4999999999985, 507.6999999999985, 507.8999999999985, 508.0999999999985]
+Recorded cash and eco values (7753.6,2198.4) at time 506.9
 Advancing game to time 507.0
-Recorded cash and eco values (6640.8,2102.4) at time 507.0
-----------
 Advancing game to time 507.1
-Sent a set of Grouped Pinks at time 507.099999999999
+Sent a set of Grouped Pinks at time 507.09999999999854
 Currently, the send queue looks like this: 
-[507.299999999999, 507.499999999999, 507.69999999999897, 507.89999999999895, 508.09999999999894, 508.29999999999893]
-Recorded cash and eco values (6575.8,2104.8) at time 507.1
-----------
+[507.29999999999853, 507.4999999999985, 507.6999999999985, 507.8999999999985, 508.0999999999985, 508.2999999999985]
+Recorded cash and eco values (7688.6,2200.8) at time 507.1
 Advancing game to time 507.2
-Recorded cash and eco values (6575.8,2104.8) at time 507.2
-----------
+Awarded direct payment 750 at time 507.15
+Recorded cash and eco values (8438.6,2200.8) at time 507.15
 Advancing game to time 507.3
-Sent a set of Grouped Pinks at time 507.299999999999
+Sent a set of Grouped Pinks at time 507.29999999999853
 Currently, the send queue looks like this: 
-[507.499999999999, 507.69999999999897, 507.89999999999895, 508.09999999999894, 508.29999999999893, 508.4999999999989]
-Recorded cash and eco values (6510.8,2107.2) at time 507.3
-----------
+[507.4999999999985, 507.6999999999985, 507.8999999999985, 508.0999999999985, 508.2999999999985, 508.49999999999847]
+Recorded cash and eco values (8373.6,2203.2) at time 507.3
 Advancing game to time 507.4
-Recorded cash and eco values (6510.8,2107.2) at time 507.4
-----------
 Advancing game to time 507.5
-Sent a set of Grouped Pinks at time 507.499999999999
+Sent a set of Grouped Pinks at time 507.4999999999985
 Currently, the send queue looks like this: 
-[507.69999999999897, 507.89999999999895, 508.09999999999894, 508.29999999999893, 508.4999999999989, 508.6999999999989]
-Recorded cash and eco values (6445.8,2109.6) at time 507.5
-----------
+[507.6999999999985, 507.8999999999985, 508.0999999999985, 508.2999999999985, 508.49999999999847, 508.69999999999845]
+Recorded cash and eco values (8308.6,2205.6) at time 507.5
 Advancing game to time 507.6
-Recorded cash and eco values (6445.8,2109.6) at time 507.6
-----------
 Advancing game to time 507.7
-Sent a set of Grouped Pinks at time 507.69999999999897
+Sent a set of Grouped Pinks at time 507.6999999999985
 Currently, the send queue looks like this: 
-[507.89999999999895, 508.09999999999894, 508.29999999999893, 508.4999999999989, 508.6999999999989, 508.8999999999989]
-Recorded cash and eco values (6380.8,2112.0) at time 507.7
-----------
+[507.8999999999985, 508.0999999999985, 508.2999999999985, 508.49999999999847, 508.69999999999845, 508.89999999999844]
+Recorded cash and eco values (8243.6,2208.0) at time 507.7
 Advancing game to time 507.8
-Recorded cash and eco values (6380.8,2112.0) at time 507.8
-----------
 Advancing game to time 507.9
-Sent a set of Grouped Pinks at time 507.89999999999895
+Sent a set of Grouped Pinks at time 507.8999999999985
 Currently, the send queue looks like this: 
-[508.09999999999894, 508.29999999999893, 508.4999999999989, 508.6999999999989, 508.8999999999989, 509.0999999999989]
-Recorded cash and eco values (6315.8,2114.4) at time 507.9
-----------
+[508.0999999999985, 508.2999999999985, 508.49999999999847, 508.69999999999845, 508.89999999999844, 509.09999999999843]
+Recorded cash and eco values (8178.6,2210.4) at time 507.9
 Advancing game to time 508.0
-Recorded cash and eco values (6315.8,2114.4) at time 508.0
-----------
 Advancing game to time 508.1
-Sent a set of Grouped Pinks at time 508.09999999999894
+Sent a set of Grouped Pinks at time 508.0999999999985
 Currently, the send queue looks like this: 
-[508.29999999999893, 508.4999999999989, 508.6999999999989, 508.8999999999989, 509.0999999999989, 509.2999999999989]
-Recorded cash and eco values (6250.8,2116.8) at time 508.1
-----------
+[508.2999999999985, 508.49999999999847, 508.69999999999845, 508.89999999999844, 509.09999999999843, 509.2999999999984]
+Recorded cash and eco values (8113.6,2212.8) at time 508.1
 Advancing game to time 508.2
-Recorded cash and eco values (6250.8,2116.8) at time 508.2
-----------
 Advancing game to time 508.3
-Sent a set of Grouped Pinks at time 508.29999999999893
+Sent a set of Grouped Pinks at time 508.2999999999985
 Currently, the send queue looks like this: 
-[508.4999999999989, 508.6999999999989, 508.8999999999989, 509.0999999999989, 509.2999999999989, 509.49999999999886]
-Recorded cash and eco values (6185.8,2119.2) at time 508.3
-----------
+[508.49999999999847, 508.69999999999845, 508.89999999999844, 509.09999999999843, 509.2999999999984, 509.4999999999984]
+Recorded cash and eco values (8048.6,2215.2) at time 508.3
 Advancing game to time 508.4
-Recorded cash and eco values (6185.8,2119.2) at time 508.4
-----------
+Awarded direct payment 750 at time 508.35
+Recorded cash and eco values (8798.6,2215.2) at time 508.35
 Advancing game to time 508.5
-Sent a set of Grouped Pinks at time 508.4999999999989
+Sent a set of Grouped Pinks at time 508.49999999999847
 Currently, the send queue looks like this: 
-[508.6999999999989, 508.8999999999989, 509.0999999999989, 509.2999999999989, 509.49999999999886, 509.69999999999885]
-Recorded cash and eco values (6120.8,2121.6) at time 508.5
-----------
+[508.69999999999845, 508.89999999999844, 509.09999999999843, 509.2999999999984, 509.4999999999984, 509.6999999999984]
+Recorded cash and eco values (8733.6,2217.6) at time 508.5
 Advancing game to time 508.6
-Recorded cash and eco values (6120.8,2121.6) at time 508.6
-----------
 Advancing game to time 508.7
-Sent a set of Grouped Pinks at time 508.6999999999989
+Sent a set of Grouped Pinks at time 508.69999999999845
 Currently, the send queue looks like this: 
-[508.8999999999989, 509.0999999999989, 509.2999999999989, 509.49999999999886, 509.69999999999885, 509.89999999999884]
-Recorded cash and eco values (6055.8,2124.0) at time 508.7
-----------
+[508.89999999999844, 509.09999999999843, 509.2999999999984, 509.4999999999984, 509.6999999999984, 509.8999999999984]
+Recorded cash and eco values (8668.6,2220.0) at time 508.7
 Advancing game to time 508.8
-Recorded cash and eco values (6055.8,2124.0) at time 508.8
-----------
 Advancing game to time 508.9
-Sent a set of Grouped Pinks at time 508.8999999999989
+Sent a set of Grouped Pinks at time 508.89999999999844
 Currently, the send queue looks like this: 
-[509.0999999999989, 509.2999999999989, 509.49999999999886, 509.69999999999885, 509.89999999999884, 510.09999999999883]
-Recorded cash and eco values (5990.8,2126.4) at time 508.9
-----------
+[509.09999999999843, 509.2999999999984, 509.4999999999984, 509.6999999999984, 509.8999999999984, 510.0999999999984]
+Recorded cash and eco values (8603.6,2222.4) at time 508.9
 Advancing game to time 509.0
-Recorded cash and eco values (5990.8,2126.4) at time 509.0
-----------
 Advancing game to time 509.1
-Sent a set of Grouped Pinks at time 509.0999999999989
+Sent a set of Grouped Pinks at time 509.09999999999843
 Currently, the send queue looks like this: 
-[509.2999999999989, 509.49999999999886, 509.69999999999885, 509.89999999999884, 510.09999999999883, 510.2999999999988]
-Recorded cash and eco values (5925.8,2128.8) at time 509.1
-----------
+[509.2999999999984, 509.4999999999984, 509.6999999999984, 509.8999999999984, 510.0999999999984, 510.29999999999836]
+Recorded cash and eco values (8538.6,2224.8) at time 509.1
 Advancing game to time 509.2
-Recorded cash and eco values (5925.8,2128.8) at time 509.2
-----------
 Advancing game to time 509.3
-Sent a set of Grouped Pinks at time 509.2999999999989
+Sent a set of Grouped Pinks at time 509.2999999999984
 Currently, the send queue looks like this: 
-[509.49999999999886, 509.69999999999885, 509.89999999999884, 510.09999999999883, 510.2999999999988, 510.4999999999988]
-Recorded cash and eco values (5860.8,2131.2) at time 509.3
-----------
+[509.4999999999984, 509.6999999999984, 509.8999999999984, 510.0999999999984, 510.29999999999836, 510.49999999999835]
+Recorded cash and eco values (8473.6,2227.2) at time 509.3
 Advancing game to time 509.4
-Recorded cash and eco values (5860.8,2131.2) at time 509.4
-----------
 Advancing game to time 509.5
-Sent a set of Grouped Pinks at time 509.49999999999886
+Sent a set of Grouped Pinks at time 509.4999999999984
 Currently, the send queue looks like this: 
-[509.69999999999885, 509.89999999999884, 510.09999999999883, 510.2999999999988, 510.4999999999988, 510.6999999999988]
-Recorded cash and eco values (5795.8,2133.6) at time 509.5
-----------
+[509.6999999999984, 509.8999999999984, 510.0999999999984, 510.29999999999836, 510.49999999999835, 510.69999999999834]
+Recorded cash and eco values (8408.6,2229.6) at time 509.5
 Advancing game to time 509.6
-Recorded cash and eco values (5795.8,2133.6) at time 509.6
-----------
+Awarded direct payment 750 at time 509.55
+Recorded cash and eco values (9158.6,2229.6) at time 509.55
 Advancing game to time 509.7
-Sent a set of Grouped Pinks at time 509.69999999999885
+Sent a set of Grouped Pinks at time 509.6999999999984
 Currently, the send queue looks like this: 
-[509.89999999999884, 510.09999999999883, 510.2999999999988, 510.4999999999988, 510.6999999999988, 510.8999999999988]
-Recorded cash and eco values (5730.8,2136.0) at time 509.7
-----------
+[509.8999999999984, 510.0999999999984, 510.29999999999836, 510.49999999999835, 510.69999999999834, 510.89999999999833]
+Recorded cash and eco values (9093.6,2232.0) at time 509.7
 Advancing game to time 509.8
-Recorded cash and eco values (5730.8,2136.0) at time 509.8
-----------
 Advancing game to time 509.9
-Sent a set of Grouped Pinks at time 509.89999999999884
+Sent a set of Grouped Pinks at time 509.8999999999984
 Currently, the send queue looks like this: 
-[510.09999999999883, 510.2999999999988, 510.4999999999988, 510.6999999999988, 510.8999999999988, 511.0999999999988]
-Recorded cash and eco values (5665.8,2138.4) at time 509.9
-----------
+[510.0999999999984, 510.29999999999836, 510.49999999999835, 510.69999999999834, 510.89999999999833, 511.0999999999983]
+Recorded cash and eco values (9028.6,2234.4) at time 509.9
 Advancing game to time 510.0
-Awarded eco payment 2138.4 at time 510.0
-Recorded cash and eco values (7804.2,2138.4) at time 510.0
-Recorded cash and eco values (7804.2,2138.4) at time 510.0
-----------
+Awarded eco payment 2234.4 at time 510.0
+Recorded cash and eco values (11263.0,2234.4) at time 510.0
 Advancing game to time 510.1
-Sent a set of Grouped Pinks at time 510.09999999999883
+Sent a set of Grouped Pinks at time 510.0999999999984
 Currently, the send queue looks like this: 
-[510.2999999999988, 510.4999999999988, 510.6999999999988, 510.8999999999988, 511.0999999999988, 511.29999999999876]
-Recorded cash and eco values (7739.2,2140.8) at time 510.1
-----------
+[510.29999999999836, 510.49999999999835, 510.69999999999834, 510.89999999999833, 511.0999999999983, 511.2999999999983]
+Recorded cash and eco values (11198.0,2236.8) at time 510.1
 Advancing game to time 510.2
-Recorded cash and eco values (7739.2,2140.8) at time 510.2
-----------
 Advancing game to time 510.3
-Sent a set of Grouped Pinks at time 510.2999999999988
+Sent a set of Grouped Pinks at time 510.29999999999836
 Currently, the send queue looks like this: 
-[510.4999999999988, 510.6999999999988, 510.8999999999988, 511.0999999999988, 511.29999999999876, 511.49999999999875]
-Recorded cash and eco values (7674.2,2143.2) at time 510.3
-----------
+[510.49999999999835, 510.69999999999834, 510.89999999999833, 511.0999999999983, 511.2999999999983, 511.4999999999983]
+Recorded cash and eco values (11133.0,2239.2) at time 510.3
 Advancing game to time 510.4
-Recorded cash and eco values (7674.2,2143.2) at time 510.4
-----------
 Advancing game to time 510.5
-Sent a set of Grouped Pinks at time 510.4999999999988
+Sent a set of Grouped Pinks at time 510.49999999999835
 Currently, the send queue looks like this: 
-[510.6999999999988, 510.8999999999988, 511.0999999999988, 511.29999999999876, 511.49999999999875, 511.69999999999874]
-Recorded cash and eco values (7609.2,2145.6) at time 510.5
-----------
+[510.69999999999834, 510.89999999999833, 511.0999999999983, 511.2999999999983, 511.4999999999983, 511.6999999999983]
+Recorded cash and eco values (11068.0,2241.6) at time 510.5
 Advancing game to time 510.6
-Recorded cash and eco values (7609.2,2145.6) at time 510.6
-----------
 Advancing game to time 510.7
-Sent a set of Grouped Pinks at time 510.6999999999988
+Sent a set of Grouped Pinks at time 510.69999999999834
 Currently, the send queue looks like this: 
-[510.8999999999988, 511.0999999999988, 511.29999999999876, 511.49999999999875, 511.69999999999874, 511.8999999999987]
-Recorded cash and eco values (7544.2,2148.0) at time 510.7
-----------
+[510.89999999999833, 511.0999999999983, 511.2999999999983, 511.4999999999983, 511.6999999999983, 511.8999999999983]
+Recorded cash and eco values (11003.0,2244.0) at time 510.7
 Advancing game to time 510.8
-Recorded cash and eco values (7544.2,2148.0) at time 510.8
-----------
 Advancing game to time 510.9
-Sent a set of Grouped Pinks at time 510.8999999999988
+Sent a set of Grouped Pinks at time 510.89999999999833
 Currently, the send queue looks like this: 
-[511.0999999999988, 511.29999999999876, 511.49999999999875, 511.69999999999874, 511.8999999999987, 512.0999999999988]
-Recorded cash and eco values (7479.2,2150.4) at time 510.9
-----------
+[511.0999999999983, 511.2999999999983, 511.4999999999983, 511.6999999999983, 511.8999999999983, 512.0999999999983]
+Recorded cash and eco values (10938.0,2246.4) at time 510.9
 Advancing game to time 511.0
-Recorded cash and eco values (7479.2,2150.4) at time 511.0
-----------
 Advancing game to time 511.1
-Sent a set of Grouped Pinks at time 511.0999999999988
+Sent a set of Grouped Pinks at time 511.0999999999983
 Currently, the send queue looks like this: 
-[511.29999999999876, 511.49999999999875, 511.69999999999874, 511.8999999999987, 512.0999999999988, 512.2999999999988]
-Recorded cash and eco values (7414.2,2152.8) at time 511.1
-----------
+[511.2999999999983, 511.4999999999983, 511.6999999999983, 511.8999999999983, 512.0999999999983, 512.2999999999984]
+Recorded cash and eco values (10873.0,2248.8) at time 511.1
 Advancing game to time 511.2
-Recorded cash and eco values (7414.2,2152.8) at time 511.2
-----------
 Advancing game to time 511.3
-Sent a set of Grouped Pinks at time 511.29999999999876
+Sent a set of Grouped Pinks at time 511.2999999999983
 Currently, the send queue looks like this: 
-[511.49999999999875, 511.69999999999874, 511.8999999999987, 512.0999999999988, 512.2999999999988, 512.4999999999989]
-Recorded cash and eco values (7349.2,2155.2) at time 511.3
-----------
+[511.4999999999983, 511.6999999999983, 511.8999999999983, 512.0999999999983, 512.2999999999984, 512.4999999999984]
+Recorded cash and eco values (10808.0,2251.2) at time 511.3
 Advancing game to time 511.4
-Recorded cash and eco values (7349.2,2155.2) at time 511.4
-----------
 Advancing game to time 511.5
-Sent a set of Grouped Pinks at time 511.49999999999875
+Sent a set of Grouped Pinks at time 511.4999999999983
 Currently, the send queue looks like this: 
-[511.69999999999874, 511.8999999999987, 512.0999999999988, 512.2999999999988, 512.4999999999989, 512.6999999999989]
-Recorded cash and eco values (7284.2,2157.6) at time 511.5
-----------
+[511.6999999999983, 511.8999999999983, 512.0999999999983, 512.2999999999984, 512.4999999999984, 512.6999999999985]
+Recorded cash and eco values (10743.0,2253.6) at time 511.5
 Advancing game to time 511.6
-Recorded cash and eco values (7284.2,2157.6) at time 511.6
-----------
 Advancing game to time 511.7
-Sent a set of Grouped Pinks at time 511.69999999999874
+Sent a set of Grouped Pinks at time 511.6999999999983
 Currently, the send queue looks like this: 
-[511.8999999999987, 512.0999999999988, 512.2999999999988, 512.4999999999989, 512.6999999999989, 512.899999999999]
-Recorded cash and eco values (7219.2,2160.0) at time 511.7
-----------
+[511.8999999999983, 512.0999999999983, 512.2999999999984, 512.4999999999984, 512.6999999999985, 512.8999999999985]
+Recorded cash and eco values (10678.0,2256.0) at time 511.7
 Advancing game to time 511.8
-Recorded cash and eco values (7219.2,2160.0) at time 511.8
-----------
 Advancing game to time 511.9
-Sent a set of Grouped Pinks at time 511.8999999999987
+Sent a set of Grouped Pinks at time 511.8999999999983
 Currently, the send queue looks like this: 
-[512.0999999999988, 512.2999999999988, 512.4999999999989, 512.6999999999989, 512.899999999999, 513.099999999999]
-Recorded cash and eco values (7154.2,2162.4) at time 511.9
-----------
+[512.0999999999983, 512.2999999999984, 512.4999999999984, 512.6999999999985, 512.8999999999985, 513.0999999999985]
+Recorded cash and eco values (10613.0,2258.4) at time 511.9
 Advancing game to time 512.0
-Recorded cash and eco values (7154.2,2162.4) at time 512.0
-----------
 Advancing game to time 512.1
-Sent a set of Grouped Pinks at time 512.0999999999988
+Sent a set of Grouped Pinks at time 512.0999999999983
 Currently, the send queue looks like this: 
-[512.2999999999988, 512.4999999999989, 512.6999999999989, 512.899999999999, 513.099999999999, 513.299999999999]
-Recorded cash and eco values (7089.2,2164.8) at time 512.1
-----------
+[512.2999999999984, 512.4999999999984, 512.6999999999985, 512.8999999999985, 513.0999999999985, 513.2999999999986]
+Recorded cash and eco values (10548.0,2260.8) at time 512.1
 Advancing game to time 512.2
-Recorded cash and eco values (7089.2,2164.8) at time 512.2
-----------
 Advancing game to time 512.3
-Sent a set of Grouped Pinks at time 512.2999999999988
+Sent a set of Grouped Pinks at time 512.2999999999984
 Currently, the send queue looks like this: 
-[512.4999999999989, 512.6999999999989, 512.899999999999, 513.099999999999, 513.299999999999, 513.4999999999991]
-Recorded cash and eco values (7024.2,2167.2) at time 512.3
-----------
+[512.4999999999984, 512.6999999999985, 512.8999999999985, 513.0999999999985, 513.2999999999986, 513.4999999999986]
+Recorded cash and eco values (10483.0,2263.2) at time 512.3
 Advancing game to time 512.4
-Recorded cash and eco values (7024.2,2167.2) at time 512.4
-----------
 Advancing game to time 512.45
-Recorded cash and eco values (7024.2,2167.2) at time 512.45
-----------
 Advancing game to time 512.5
-Sent a set of Grouped Pinks at time 512.4999999999989
+Sent a set of Grouped Pinks at time 512.4999999999984
 Currently, the send queue looks like this: 
-[512.6999999999989, 512.899999999999, 513.099999999999, 513.299999999999, 513.4999999999991, 513.6999999999991]
-Recorded cash and eco values (6959.2,2169.6) at time 512.5
-----------
+[512.6999999999985, 512.8999999999985, 513.0999999999985, 513.2999999999986, 513.4999999999986, 513.6999999999987]
+Recorded cash and eco values (10418.0,2265.6) at time 512.5
 Advancing game to time 512.6
-Recorded cash and eco values (6959.2,2169.6) at time 512.6
-----------
 Advancing game to time 512.7
-Sent a set of Grouped Pinks at time 512.6999999999989
+Sent a set of Grouped Pinks at time 512.6999999999985
 Currently, the send queue looks like this: 
-[512.899999999999, 513.099999999999, 513.299999999999, 513.4999999999991, 513.6999999999991, 513.8999999999992]
-Recorded cash and eco values (6894.2,2172.0) at time 512.7
-----------
+[512.8999999999985, 513.0999999999985, 513.2999999999986, 513.4999999999986, 513.6999999999987, 513.8999999999987]
+Recorded cash and eco values (10353.0,2268.0) at time 512.7
 Advancing game to time 512.8
-Recorded cash and eco values (6894.2,2172.0) at time 512.8
-----------
 Advancing game to time 512.9
-Sent a set of Grouped Pinks at time 512.899999999999
+Sent a set of Grouped Pinks at time 512.8999999999985
 Currently, the send queue looks like this: 
-[513.099999999999, 513.299999999999, 513.4999999999991, 513.6999999999991, 513.8999999999992, 514.0999999999992]
-Recorded cash and eco values (6829.2,2174.4) at time 512.9
-----------
+[513.0999999999985, 513.2999999999986, 513.4999999999986, 513.6999999999987, 513.8999999999987, 514.0999999999988]
+Recorded cash and eco values (10288.0,2270.4) at time 512.9
 Advancing game to time 512.95
-Recorded cash and eco values (6829.2,2174.4) at time 512.95
-----------
 Advancing game to time 513.0
-Recorded cash and eco values (6829.2,2174.4) at time 513.0
-----------
 Advancing game to time 513.1
-Sent a set of Grouped Pinks at time 513.099999999999
+Sent a set of Grouped Pinks at time 513.0999999999985
 Currently, the send queue looks like this: 
-[513.299999999999, 513.4999999999991, 513.6999999999991, 513.8999999999992, 514.0999999999992, 514.2999999999993]
-Recorded cash and eco values (6764.2,2176.8) at time 513.1
-----------
+[513.2999999999986, 513.4999999999986, 513.6999999999987, 513.8999999999987, 514.0999999999988, 514.2999999999988]
+Recorded cash and eco values (10223.0,2272.8) at time 513.1
 Advancing game to time 513.2
-Recorded cash and eco values (6764.2,2176.8) at time 513.2
-----------
 Advancing game to time 513.3
-Sent a set of Grouped Pinks at time 513.299999999999
+Sent a set of Grouped Pinks at time 513.2999999999986
 Currently, the send queue looks like this: 
-[513.4999999999991, 513.6999999999991, 513.8999999999992, 514.0999999999992, 514.2999999999993, 514.4999999999993]
-Recorded cash and eco values (6699.2,2179.2) at time 513.3
-----------
+[513.4999999999986, 513.6999999999987, 513.8999999999987, 514.0999999999988, 514.2999999999988, 514.4999999999989]
+Recorded cash and eco values (10158.0,2275.2) at time 513.3
 Advancing game to time 513.4
-Recorded cash and eco values (6699.2,2179.2) at time 513.4
-----------
 Advancing game to time 513.45
-Recorded cash and eco values (6699.2,2179.2) at time 513.45
-----------
 Advancing game to time 513.5
-Sent a set of Grouped Pinks at time 513.4999999999991
+Sent a set of Grouped Pinks at time 513.4999999999986
 Currently, the send queue looks like this: 
-[513.6999999999991, 513.8999999999992, 514.0999999999992, 514.2999999999993, 514.4999999999993, 514.6999999999994]
-Recorded cash and eco values (6634.2,2181.6) at time 513.5
-----------
+[513.6999999999987, 513.8999999999987, 514.0999999999988, 514.2999999999988, 514.4999999999989, 514.6999999999989]
+Recorded cash and eco values (10093.0,2277.6) at time 513.5
 Advancing game to time 513.6
-Recorded cash and eco values (6634.2,2181.6) at time 513.6
-----------
 Advancing game to time 513.7
-Sent a set of Grouped Pinks at time 513.6999999999991
+Sent a set of Grouped Pinks at time 513.6999999999987
 Currently, the send queue looks like this: 
-[513.8999999999992, 514.0999999999992, 514.2999999999993, 514.4999999999993, 514.6999999999994, 514.8999999999994]
-Recorded cash and eco values (6569.2,2184.0) at time 513.7
-----------
+[513.8999999999987, 514.0999999999988, 514.2999999999988, 514.4999999999989, 514.6999999999989, 514.899999999999]
+Recorded cash and eco values (10028.0,2280.0) at time 513.7
 Advancing game to time 513.8
-Recorded cash and eco values (6569.2,2184.0) at time 513.8
-----------
 Advancing game to time 513.9
-Sent a set of Grouped Pinks at time 513.8999999999992
+Sent a set of Grouped Pinks at time 513.8999999999987
 Currently, the send queue looks like this: 
-[514.0999999999992, 514.2999999999993, 514.4999999999993, 514.6999999999994, 514.8999999999994, 515.0999999999995]
-Recorded cash and eco values (6504.2,2186.4) at time 513.9
-----------
+[514.0999999999988, 514.2999999999988, 514.4999999999989, 514.6999999999989, 514.899999999999, 515.099999999999]
+Recorded cash and eco values (9963.0,2282.4) at time 513.9
 Advancing game to time 513.95
-Recorded cash and eco values (6504.2,2186.4) at time 513.95
-----------
 Advancing game to time 514.0
-Recorded cash and eco values (6504.2,2186.4) at time 514.0
-----------
 Advancing game to time 514.1
-Sent a set of Grouped Pinks at time 514.0999999999992
+Sent a set of Grouped Pinks at time 514.0999999999988
 Currently, the send queue looks like this: 
-[514.2999999999993, 514.4999999999993, 514.6999999999994, 514.8999999999994, 515.0999999999995, 515.2999999999995]
-Recorded cash and eco values (6439.2,2188.8) at time 514.1
-----------
+[514.2999999999988, 514.4999999999989, 514.6999999999989, 514.899999999999, 515.099999999999, 515.299999999999]
+Recorded cash and eco values (9898.0,2284.8) at time 514.1
 Advancing game to time 514.2
-Recorded cash and eco values (6439.2,2188.8) at time 514.2
-----------
 Advancing game to time 514.3
-Sent a set of Grouped Pinks at time 514.2999999999993
+Sent a set of Grouped Pinks at time 514.2999999999988
 Currently, the send queue looks like this: 
-[514.4999999999993, 514.6999999999994, 514.8999999999994, 515.0999999999995, 515.2999999999995, 515.4999999999995]
-Recorded cash and eco values (6374.2,2191.2) at time 514.3
-----------
+[514.4999999999989, 514.6999999999989, 514.899999999999, 515.099999999999, 515.299999999999, 515.4999999999991]
+Recorded cash and eco values (9833.0,2287.2) at time 514.3
 Advancing game to time 514.4
-Recorded cash and eco values (6374.2,2191.2) at time 514.4
-----------
 Advancing game to time 514.45
-Recorded cash and eco values (6374.2,2191.2) at time 514.45
-----------
 Advancing game to time 514.5
-Sent a set of Grouped Pinks at time 514.4999999999993
+Sent a set of Grouped Pinks at time 514.4999999999989
 Currently, the send queue looks like this: 
-[514.6999999999994, 514.8999999999994, 515.0999999999995, 515.2999999999995, 515.4999999999995, 515.6999999999996]
-Recorded cash and eco values (6309.2,2193.6) at time 514.5
-----------
+[514.6999999999989, 514.899999999999, 515.099999999999, 515.299999999999, 515.4999999999991, 515.6999999999991]
+Recorded cash and eco values (9768.0,2289.6) at time 514.5
 Advancing game to time 514.6
-Recorded cash and eco values (6309.2,2193.6) at time 514.6
-----------
 Advancing game to time 514.7
-Sent a set of Grouped Pinks at time 514.6999999999994
+Sent a set of Grouped Pinks at time 514.6999999999989
 Currently, the send queue looks like this: 
-[514.8999999999994, 515.0999999999995, 515.2999999999995, 515.4999999999995, 515.6999999999996, 515.8999999999996]
-Recorded cash and eco values (6244.2,2196.0) at time 514.7
-----------
+[514.899999999999, 515.099999999999, 515.299999999999, 515.4999999999991, 515.6999999999991, 515.8999999999992]
+Recorded cash and eco values (9703.0,2292.0) at time 514.7
 Advancing game to time 514.8
-Recorded cash and eco values (6244.2,2196.0) at time 514.8
-----------
 Advancing game to time 514.9
-Sent a set of Grouped Pinks at time 514.8999999999994
+Sent a set of Grouped Pinks at time 514.899999999999
 Currently, the send queue looks like this: 
-[515.0999999999995, 515.2999999999995, 515.4999999999995, 515.6999999999996, 515.8999999999996, 516.0999999999997]
-Recorded cash and eco values (6179.2,2198.4) at time 514.9
-----------
+[515.099999999999, 515.299999999999, 515.4999999999991, 515.6999999999991, 515.8999999999992, 516.0999999999992]
+Recorded cash and eco values (9638.0,2294.4) at time 514.9
 Advancing game to time 514.95
-Recorded cash and eco values (6179.2,2198.4) at time 514.95
-----------
 Advancing game to time 515.0
-Recorded cash and eco values (6179.2,2198.4) at time 515.0
-----------
 Advancing game to time 515.1
-Sent a set of Grouped Pinks at time 515.0999999999995
+Sent a set of Grouped Pinks at time 515.099999999999
 Currently, the send queue looks like this: 
-[515.2999999999995, 515.4999999999995, 515.6999999999996, 515.8999999999996, 516.0999999999997, 516.2999999999997]
-Recorded cash and eco values (6114.2,2200.8) at time 515.1
-----------
+[515.299999999999, 515.4999999999991, 515.6999999999991, 515.8999999999992, 516.0999999999992, 516.2999999999993]
+Recorded cash and eco values (9573.0,2296.8) at time 515.1
 Advancing game to time 515.2
-Recorded cash and eco values (6114.2,2200.8) at time 515.2
-----------
 Advancing game to time 515.3
-Sent a set of Grouped Pinks at time 515.2999999999995
+Sent a set of Grouped Pinks at time 515.299999999999
 Currently, the send queue looks like this: 
-[515.4999999999995, 515.6999999999996, 515.8999999999996, 516.0999999999997, 516.2999999999997, 516.4999999999998]
-Recorded cash and eco values (6049.2,2203.2) at time 515.3
-----------
+[515.4999999999991, 515.6999999999991, 515.8999999999992, 516.0999999999992, 516.2999999999993, 516.4999999999993]
+Recorded cash and eco values (9508.0,2299.2) at time 515.3
 Advancing game to time 515.4
-Recorded cash and eco values (6049.2,2203.2) at time 515.4
-----------
 Advancing game to time 515.45
-Recorded cash and eco values (6049.2,2203.2) at time 515.45
-----------
 Advancing game to time 515.5
-Sent a set of Grouped Pinks at time 515.4999999999995
+Sent a set of Grouped Pinks at time 515.4999999999991
 Currently, the send queue looks like this: 
-[515.6999999999996, 515.8999999999996, 516.0999999999997, 516.2999999999997, 516.4999999999998, 516.6999999999998]
-Recorded cash and eco values (5984.2,2205.6) at time 515.5
-----------
+[515.6999999999991, 515.8999999999992, 516.0999999999992, 516.2999999999993, 516.4999999999993, 516.6999999999994]
+Recorded cash and eco values (9443.0,2301.6) at time 515.5
 Advancing game to time 515.6
-Recorded cash and eco values (5984.2,2205.6) at time 515.6
-----------
 Advancing game to time 515.7
-Sent a set of Grouped Pinks at time 515.6999999999996
+Sent a set of Grouped Pinks at time 515.6999999999991
 Currently, the send queue looks like this: 
-[515.8999999999996, 516.0999999999997, 516.2999999999997, 516.4999999999998, 516.6999999999998, 516.8999999999999]
-Recorded cash and eco values (5919.2,2208.0) at time 515.7
-----------
+[515.8999999999992, 516.0999999999992, 516.2999999999993, 516.4999999999993, 516.6999999999994, 516.8999999999994]
+Recorded cash and eco values (9378.0,2304.0) at time 515.7
 Advancing game to time 515.8
-Recorded cash and eco values (5919.2,2208.0) at time 515.8
-----------
 Advancing game to time 515.9
-Sent a set of Grouped Pinks at time 515.8999999999996
+Sent a set of Grouped Pinks at time 515.8999999999992
 Currently, the send queue looks like this: 
-[516.0999999999997, 516.2999999999997, 516.4999999999998, 516.6999999999998, 516.8999999999999, 517.0999999999999]
-Awarded direct payment 750 at time 515.9
-Recorded cash and eco values (6604.2,2210.4) at time 515.9
-Recorded cash and eco values (6604.2,2210.4) at time 515.9
-----------
+[516.0999999999992, 516.2999999999993, 516.4999999999993, 516.6999999999994, 516.8999999999994, 517.0999999999995]
+Recorded cash and eco values (9313.0,2306.4) at time 515.9
 Advancing game to time 515.95
-Recorded cash and eco values (6604.2,2210.4) at time 515.95
-----------
 Advancing game to time 516.0
-Awarded eco payment 2210.4 at time 516.0
-Recorded cash and eco values (8814.6,2210.4) at time 516.0
-Recorded cash and eco values (8814.6,2210.4) at time 516.0
-----------
+Awarded eco payment 2306.4 at time 516.0
+Recorded cash and eco values (11619.4,2306.4) at time 516.0
 Advancing game to time 516.1
-Sent a set of Grouped Pinks at time 516.0999999999997
+Sent a set of Grouped Pinks at time 516.0999999999992
 Currently, the send queue looks like this: 
-[516.2999999999997, 516.4999999999998, 516.6999999999998, 516.8999999999999, 517.0999999999999, 517.3]
-Recorded cash and eco values (8749.6,2212.8) at time 516.1
-----------
+[516.2999999999993, 516.4999999999993, 516.6999999999994, 516.8999999999994, 517.0999999999995, 517.2999999999995]
+Recorded cash and eco values (11554.4,2308.8) at time 516.1
 Advancing game to time 516.2
-Recorded cash and eco values (8749.6,2212.8) at time 516.2
-----------
 Advancing game to time 516.3
-Sent a set of Grouped Pinks at time 516.2999999999997
+Sent a set of Grouped Pinks at time 516.2999999999993
 Currently, the send queue looks like this: 
-[516.4999999999998, 516.6999999999998, 516.8999999999999, 517.0999999999999, 517.3, 517.5]
-Recorded cash and eco values (8684.6,2215.2) at time 516.3
-----------
+[516.4999999999993, 516.6999999999994, 516.8999999999994, 517.0999999999995, 517.2999999999995, 517.4999999999995]
+Recorded cash and eco values (11489.4,2311.2) at time 516.3
 Advancing game to time 516.4
-Recorded cash and eco values (8684.6,2215.2) at time 516.4
-----------
 Advancing game to time 516.45
-Recorded cash and eco values (8684.6,2215.2) at time 516.45
-----------
 Advancing game to time 516.5
-Sent a set of Grouped Pinks at time 516.4999999999998
+Sent a set of Grouped Pinks at time 516.4999999999993
 Currently, the send queue looks like this: 
-[516.6999999999998, 516.8999999999999, 517.0999999999999, 517.3, 517.5, 517.7]
-Recorded cash and eco values (8619.6,2217.6) at time 516.5
-----------
+[516.6999999999994, 516.8999999999994, 517.0999999999995, 517.2999999999995, 517.4999999999995, 517.6999999999996]
+Recorded cash and eco values (11424.4,2313.6) at time 516.5
 Advancing game to time 516.6
-Recorded cash and eco values (8619.6,2217.6) at time 516.6
-----------
 Advancing game to time 516.7
-Sent a set of Grouped Pinks at time 516.6999999999998
+Sent a set of Grouped Pinks at time 516.6999999999994
 Currently, the send queue looks like this: 
-[516.8999999999999, 517.0999999999999, 517.3, 517.5, 517.7, 517.9000000000001]
-Recorded cash and eco values (8554.6,2220.0) at time 516.7
-----------
+[516.8999999999994, 517.0999999999995, 517.2999999999995, 517.4999999999995, 517.6999999999996, 517.8999999999996]
+Recorded cash and eco values (11359.4,2316.0) at time 516.7
 Advancing game to time 516.8
-Recorded cash and eco values (8554.6,2220.0) at time 516.8
-----------
 Advancing game to time 516.9
-Sent a set of Grouped Pinks at time 516.8999999999999
+Sent a set of Grouped Pinks at time 516.8999999999994
 Currently, the send queue looks like this: 
-[517.0999999999999, 517.3, 517.5, 517.7, 517.9000000000001, 518.1000000000001]
-Recorded cash and eco values (8489.6,2222.4) at time 516.9
-----------
+[517.0999999999995, 517.2999999999995, 517.4999999999995, 517.6999999999996, 517.8999999999996, 518.0999999999997]
+Recorded cash and eco values (11294.4,2318.4) at time 516.9
 Advancing game to time 516.95
-Recorded cash and eco values (8489.6,2222.4) at time 516.95
-----------
 Advancing game to time 517.0
-Recorded cash and eco values (8489.6,2222.4) at time 517.0
-----------
 Advancing game to time 517.1
-Sent a set of Grouped Pinks at time 517.0999999999999
+Sent a set of Grouped Pinks at time 517.0999999999995
 Currently, the send queue looks like this: 
-[517.3, 517.5, 517.7, 517.9000000000001, 518.1000000000001, 518.3000000000002]
-Awarded direct payment 750 at time 517.1
-Recorded cash and eco values (9174.6,2224.8) at time 517.1
-Recorded cash and eco values (9174.6,2224.8) at time 517.1
-----------
+[517.2999999999995, 517.4999999999995, 517.6999999999996, 517.8999999999996, 518.0999999999997, 518.2999999999997]
+Recorded cash and eco values (11229.4,2320.8) at time 517.1
 Advancing game to time 517.2
-Recorded cash and eco values (9174.6,2224.8) at time 517.2
-----------
 Advancing game to time 517.3
-Sent a set of Grouped Pinks at time 517.3
-Currently, the send queue looks like this: 
-[517.5, 517.7, 517.9000000000001, 518.1000000000001, 518.3000000000002, 518.5000000000002]
-Recorded cash and eco values (9109.6,2227.2) at time 517.3
-----------
-Advancing game to time 517.4
-Recorded cash and eco values (9109.6,2227.2) at time 517.4
-----------
-Advancing game to time 517.45
-Recorded cash and eco values (9109.6,2227.2) at time 517.45
-----------
-Advancing game to time 517.5
-Sent a set of Grouped Pinks at time 517.5
-Currently, the send queue looks like this: 
-[517.7, 517.9000000000001, 518.1000000000001, 518.3000000000002, 518.5000000000002, 518.7000000000003]
-Recorded cash and eco values (9044.6,2229.6) at time 517.5
-----------
-Advancing game to time 517.6
-Recorded cash and eco values (9044.6,2229.6) at time 517.6
-----------
-Advancing game to time 517.7
-Sent a set of Grouped Pinks at time 517.7
-Currently, the send queue looks like this: 
-[517.9000000000001, 518.1000000000001, 518.3000000000002, 518.5000000000002, 518.7000000000003, 518.9000000000003]
-Recorded cash and eco values (8979.6,2232.0) at time 517.7
-----------
-Advancing game to time 517.8
-Recorded cash and eco values (8979.6,2232.0) at time 517.8
-----------
-Advancing game to time 517.9
-Recorded cash and eco values (8979.6,2232.0) at time 517.9
-----------
-Advancing game to time 517.95
-Sent a set of Grouped Pinks at time 517.9000000000001
-Currently, the send queue looks like this: 
-[518.1000000000001, 518.3000000000002, 518.5000000000002, 518.7000000000003, 518.9000000000003, 519.1000000000004]
-Recorded cash and eco values (8914.6,2234.4) at time 517.95
-----------
-Advancing game to time 518.0
-Recorded cash and eco values (8914.6,2234.4) at time 518.0
-----------
-Advancing game to time 518.1
-Recorded cash and eco values (8914.6,2234.4) at time 518.1
-----------
-Advancing game to time 518.2
-Sent a set of Grouped Pinks at time 518.1000000000001
-Currently, the send queue looks like this: 
-[518.3000000000002, 518.5000000000002, 518.7000000000003, 518.9000000000003, 519.1000000000004, 519.3000000000004]
-Recorded cash and eco values (8849.6,2236.8) at time 518.2
-----------
-Advancing game to time 518.3
-Awarded direct payment 750 at time 518.3
-Recorded cash and eco values (9599.6,2236.8) at time 518.3
-Recorded cash and eco values (9599.6,2236.8) at time 518.3
-----------
-Advancing game to time 518.4
-Sent a set of Grouped Pinks at time 518.3000000000002
-Currently, the send queue looks like this: 
-[518.5000000000002, 518.7000000000003, 518.9000000000003, 519.1000000000004, 519.3000000000004, 519.5000000000005]
-Recorded cash and eco values (9534.6,2239.2) at time 518.4
-----------
-Advancing game to time 518.45
-Recorded cash and eco values (9534.6,2239.2) at time 518.45
-----------
-Advancing game to time 518.5
-Recorded cash and eco values (9534.6,2239.2) at time 518.5
-----------
-Advancing game to time 518.6
-Sent a set of Grouped Pinks at time 518.5000000000002
-Currently, the send queue looks like this: 
-[518.7000000000003, 518.9000000000003, 519.1000000000004, 519.3000000000004, 519.5000000000005, 519.7000000000005]
-Recorded cash and eco values (9469.6,2241.6) at time 518.6
-----------
-Advancing game to time 518.7
-Recorded cash and eco values (9469.6,2241.6) at time 518.7
-----------
-Advancing game to time 518.8
-Sent a set of Grouped Pinks at time 518.7000000000003
-Currently, the send queue looks like this: 
-[518.9000000000003, 519.1000000000004, 519.3000000000004, 519.5000000000005, 519.7000000000005, 519.9000000000005]
-Recorded cash and eco values (9404.6,2244.0) at time 518.8
-----------
-Advancing game to time 518.9
-Recorded cash and eco values (9404.6,2244.0) at time 518.9
-----------
-Advancing game to time 518.95
-Sent a set of Grouped Pinks at time 518.9000000000003
-Currently, the send queue looks like this: 
-[519.1000000000004, 519.3000000000004, 519.5000000000005, 519.7000000000005, 519.9000000000005, 520.1000000000006]
-Recorded cash and eco values (9339.6,2246.4) at time 518.95
-----------
-Advancing game to time 519.0
-Recorded cash and eco values (9339.6,2246.4) at time 519.0
-----------
-Advancing game to time 519.1
-Recorded cash and eco values (9339.6,2246.4) at time 519.1
-----------
-Advancing game to time 519.2
-Sent a set of Grouped Pinks at time 519.1000000000004
-Currently, the send queue looks like this: 
-[519.3000000000004, 519.5000000000005, 519.7000000000005, 519.9000000000005, 520.1000000000006, 520.3000000000006]
-Recorded cash and eco values (9274.6,2248.8) at time 519.2
-----------
-Advancing game to time 519.3
-Recorded cash and eco values (9274.6,2248.8) at time 519.3
-----------
-Advancing game to time 519.4
-Sent a set of Grouped Pinks at time 519.3000000000004
-Currently, the send queue looks like this: 
-[519.5000000000005, 519.7000000000005, 519.9000000000005, 520.1000000000006, 520.3000000000006, 520.5000000000007]
-Recorded cash and eco values (9209.6,2251.2) at time 519.4
-----------
-Advancing game to time 519.45
-Recorded cash and eco values (9209.6,2251.2) at time 519.45
-----------
-Advancing game to time 519.5
-Awarded direct payment 750 at time 519.5
-Recorded cash and eco values (9959.6,2251.2) at time 519.5
-Recorded cash and eco values (9959.6,2251.2) at time 519.5
-----------
-Advancing game to time 519.6
-Sent a set of Grouped Pinks at time 519.5000000000005
-Currently, the send queue looks like this: 
-[519.7000000000005, 519.9000000000005, 520.1000000000006, 520.3000000000006, 520.5000000000007, 520.7000000000007]
-Recorded cash and eco values (9894.6,2253.6) at time 519.6
-----------
-Advancing game to time 519.7
-Recorded cash and eco values (9894.6,2253.6) at time 519.7
-----------
-Advancing game to time 519.8
-Sent a set of Grouped Pinks at time 519.7000000000005
-Currently, the send queue looks like this: 
-[519.9000000000005, 520.1000000000006, 520.3000000000006, 520.5000000000007, 520.7000000000007, 520.9000000000008]
-Recorded cash and eco values (9829.6,2256.0) at time 519.8
-----------
-Advancing game to time 519.9
-Recorded cash and eco values (9829.6,2256.0) at time 519.9
-----------
-Advancing game to time 519.95
-Sent a set of Grouped Pinks at time 519.9000000000005
-Currently, the send queue looks like this: 
-[520.1000000000006, 520.3000000000006, 520.5000000000007, 520.7000000000007, 520.9000000000008, 521.1000000000008]
-Recorded cash and eco values (9764.6,2258.4) at time 519.95
-----------
-Advancing game to time 520.0
-Recorded cash and eco values (9764.6,2258.4) at time 520.0
-----------
-Advancing game to time 520.1
-Recorded cash and eco values (9764.6,2258.4) at time 520.1
-----------
-Advancing game to time 520.2
-Sent a set of Grouped Pinks at time 520.1000000000006
-Currently, the send queue looks like this: 
-[520.3000000000006, 520.5000000000007, 520.7000000000007, 520.9000000000008, 521.1000000000008, 521.3000000000009]
-Recorded cash and eco values (9699.6,2260.8) at time 520.2
-----------
-Advancing game to time 520.3
-Recorded cash and eco values (9699.6,2260.8) at time 520.3
-----------
-Advancing game to time 520.4
-Sent a set of Grouped Pinks at time 520.3000000000006
-Currently, the send queue looks like this: 
-[520.5000000000007, 520.7000000000007, 520.9000000000008, 521.1000000000008, 521.3000000000009, 521.5000000000009]
-Recorded cash and eco values (9634.6,2263.2) at time 520.4
-----------
-Advancing game to time 520.45
-Recorded cash and eco values (9634.6,2263.2) at time 520.45
-----------
-Advancing game to time 520.5
-Recorded cash and eco values (9634.6,2263.2) at time 520.5
-----------
-Advancing game to time 520.6
-Sent a set of Grouped Pinks at time 520.5000000000007
-Currently, the send queue looks like this: 
-[520.7000000000007, 520.9000000000008, 521.1000000000008, 521.3000000000009, 521.5000000000009, 521.700000000001]
-Recorded cash and eco values (9569.6,2265.6) at time 520.6
-----------
-Advancing game to time 520.7
-Awarded direct payment 750 at time 520.7
-Recorded cash and eco values (10319.6,2265.6) at time 520.7
-Recorded cash and eco values (10319.6,2265.6) at time 520.7
-----------
-Advancing game to time 520.8
-Sent a set of Grouped Pinks at time 520.7000000000007
-Currently, the send queue looks like this: 
-[520.9000000000008, 521.1000000000008, 521.3000000000009, 521.5000000000009, 521.700000000001, 521.900000000001]
-Recorded cash and eco values (10254.6,2268.0) at time 520.8
-----------
-Advancing game to time 520.9
-Recorded cash and eco values (10254.6,2268.0) at time 520.9
-----------
-Advancing game to time 520.95
-Sent a set of Grouped Pinks at time 520.9000000000008
-Currently, the send queue looks like this: 
-[521.1000000000008, 521.3000000000009, 521.5000000000009, 521.700000000001, 521.900000000001, 522.100000000001]
-Recorded cash and eco values (10189.6,2270.4) at time 520.95
-----------
-Advancing game to time 521.0
-Recorded cash and eco values (10189.6,2270.4) at time 521.0
-----------
-Advancing game to time 521.1
-Recorded cash and eco values (10189.6,2270.4) at time 521.1
-----------
-Advancing game to time 521.2
-Sent a set of Grouped Pinks at time 521.1000000000008
-Currently, the send queue looks like this: 
-[521.3000000000009, 521.5000000000009, 521.700000000001, 521.900000000001, 522.100000000001, 522.3000000000011]
-Recorded cash and eco values (10124.6,2272.8) at time 521.2
-----------
-Advancing game to time 521.3
-Recorded cash and eco values (10124.6,2272.8) at time 521.3
-----------
-Advancing game to time 521.4
-Sent a set of Grouped Pinks at time 521.3000000000009
-Currently, the send queue looks like this: 
-[521.5000000000009, 521.700000000001, 521.900000000001, 522.100000000001, 522.3000000000011, 522.5000000000011]
-Recorded cash and eco values (10059.6,2275.2) at time 521.4
-----------
-Advancing game to time 521.45
-Recorded cash and eco values (10059.6,2275.2) at time 521.45
-----------
-Advancing game to time 521.5
-Recorded cash and eco values (10059.6,2275.2) at time 521.5
-----------
-Advancing game to time 521.6
-Sent a set of Grouped Pinks at time 521.5000000000009
-Currently, the send queue looks like this: 
-[521.700000000001, 521.900000000001, 522.100000000001, 522.3000000000011, 522.5000000000011, 522.7000000000012]
-Recorded cash and eco values (9994.6,2277.6) at time 521.6
-----------
-Advancing game to time 521.7
-Recorded cash and eco values (9994.6,2277.6) at time 521.7
-----------
-Advancing game to time 521.8
-Sent a set of Grouped Pinks at time 521.700000000001
-Currently, the send queue looks like this: 
-[521.900000000001, 522.100000000001, 522.3000000000011, 522.5000000000011, 522.7000000000012, 522.9000000000012]
-Recorded cash and eco values (9929.6,2280.0) at time 521.8
-----------
-Advancing game to time 521.9
-Recorded cash and eco values (9929.6,2280.0) at time 521.9
-----------
-Advancing game to time 521.95
-Sent a set of Grouped Pinks at time 521.900000000001
-Currently, the send queue looks like this: 
-[522.100000000001, 522.3000000000011, 522.5000000000011, 522.7000000000012, 522.9000000000012, 523.1000000000013]
-Recorded cash and eco values (9864.6,2282.4) at time 521.95
-----------
-Advancing game to time 522.0
-Awarded eco payment 2282.4 at time 522.0
-Recorded cash and eco values (12147.0,2282.4) at time 522.0
-Recorded cash and eco values (12147.0,2282.4) at time 522.0
-----------
-Advancing game to time 522.1
-Recorded cash and eco values (12147.0,2282.4) at time 522.1
-----------
-Advancing game to time 522.2
-Sent a set of Grouped Pinks at time 522.100000000001
-Currently, the send queue looks like this: 
-[522.3000000000011, 522.5000000000011, 522.7000000000012, 522.9000000000012, 523.1000000000013, 523.3000000000013]
-Recorded cash and eco values (12082.0,2284.8) at time 522.2
-----------
-Advancing game to time 522.3
-Recorded cash and eco values (12082.0,2284.8) at time 522.3
-----------
-Advancing game to time 522.4
-Sent a set of Grouped Pinks at time 522.3000000000011
-Currently, the send queue looks like this: 
-[522.5000000000011, 522.7000000000012, 522.9000000000012, 523.1000000000013, 523.3000000000013, 523.5000000000014]
-Recorded cash and eco values (12017.0,2287.2) at time 522.4
-----------
-Advancing game to time 522.45
-Recorded cash and eco values (12017.0,2287.2) at time 522.45
-----------
-Advancing game to time 522.5
-Recorded cash and eco values (12017.0,2287.2) at time 522.5
-----------
-Advancing game to time 522.6
-Sent a set of Grouped Pinks at time 522.5000000000011
-Currently, the send queue looks like this: 
-[522.7000000000012, 522.9000000000012, 523.1000000000013, 523.3000000000013, 523.5000000000014, 523.7000000000014]
-Recorded cash and eco values (11952.0,2289.6) at time 522.6
-----------
-Advancing game to time 522.7
-Recorded cash and eco values (11952.0,2289.6) at time 522.7
-----------
-Advancing game to time 522.8
-Sent a set of Grouped Pinks at time 522.7000000000012
-Currently, the send queue looks like this: 
-[522.9000000000012, 523.1000000000013, 523.3000000000013, 523.5000000000014, 523.7000000000014, 523.9000000000015]
-Recorded cash and eco values (11887.0,2292.0) at time 522.8
-----------
-Advancing game to time 522.9
-Recorded cash and eco values (11887.0,2292.0) at time 522.9
-----------
-Advancing game to time 522.95
-Sent a set of Grouped Pinks at time 522.9000000000012
-Currently, the send queue looks like this: 
-[523.1000000000013, 523.3000000000013, 523.5000000000014, 523.7000000000014, 523.9000000000015, 524.1000000000015]
-Recorded cash and eco values (11822.0,2294.4) at time 522.95
-----------
-Advancing game to time 523.0
-Recorded cash and eco values (11822.0,2294.4) at time 523.0
-----------
-Advancing game to time 523.1
-Recorded cash and eco values (11822.0,2294.4) at time 523.1
-----------
-Advancing game to time 523.2
-Sent a set of Grouped Pinks at time 523.1000000000013
-Currently, the send queue looks like this: 
-[523.3000000000013, 523.5000000000014, 523.7000000000014, 523.9000000000015, 524.1000000000015, 524.3000000000015]
-Recorded cash and eco values (11757.0,2296.8) at time 523.2
-----------
-Advancing game to time 523.3
-Recorded cash and eco values (11757.0,2296.8) at time 523.3
-----------
-Advancing game to time 523.4
-Sent a set of Grouped Pinks at time 523.3000000000013
-Currently, the send queue looks like this: 
-[523.5000000000014, 523.7000000000014, 523.9000000000015, 524.1000000000015, 524.3000000000015, 524.5000000000016]
-Recorded cash and eco values (11692.0,2299.2) at time 523.4
-----------
-Advancing game to time 523.45
-Recorded cash and eco values (11692.0,2299.2) at time 523.45
-----------
-Advancing game to time 523.5
-Recorded cash and eco values (11692.0,2299.2) at time 523.5
-----------
-Advancing game to time 523.6
-Sent a set of Grouped Pinks at time 523.5000000000014
-Currently, the send queue looks like this: 
-[523.7000000000014, 523.9000000000015, 524.1000000000015, 524.3000000000015, 524.5000000000016, 524.7000000000016]
-Recorded cash and eco values (11627.0,2301.6) at time 523.6
-----------
-Advancing game to time 523.7
-Recorded cash and eco values (11627.0,2301.6) at time 523.7
-----------
-Advancing game to time 523.8
-Sent a set of Grouped Pinks at time 523.7000000000014
-Currently, the send queue looks like this: 
-[523.9000000000015, 524.1000000000015, 524.3000000000015, 524.5000000000016, 524.7000000000016, 524.9000000000017]
-Recorded cash and eco values (11562.0,2304.0) at time 523.8
-----------
-Advancing game to time 523.9
-Recorded cash and eco values (11562.0,2304.0) at time 523.9
-----------
-Advancing game to time 523.95
-Sent a set of Grouped Pinks at time 523.9000000000015
-Currently, the send queue looks like this: 
-[524.1000000000015, 524.3000000000015, 524.5000000000016, 524.7000000000016, 524.9000000000017, 525.1000000000017]
-Recorded cash and eco values (11497.0,2306.4) at time 523.95
-----------
-Advancing game to time 524.0
-Recorded cash and eco values (11497.0,2306.4) at time 524.0
-----------
-Advancing game to time 524.1
-Recorded cash and eco values (11497.0,2306.4) at time 524.1
-----------
-Advancing game to time 524.2
-Sent a set of Grouped Pinks at time 524.1000000000015
-Currently, the send queue looks like this: 
-[524.3000000000015, 524.5000000000016, 524.7000000000016, 524.9000000000017, 525.1000000000017, 525.3000000000018]
-Recorded cash and eco values (11432.0,2308.8) at time 524.2
-----------
-Advancing game to time 524.3
-Recorded cash and eco values (11432.0,2308.8) at time 524.3
-----------
-Advancing game to time 524.4
-Sent a set of Grouped Pinks at time 524.3000000000015
-Currently, the send queue looks like this: 
-[524.5000000000016, 524.7000000000016, 524.9000000000017, 525.1000000000017, 525.3000000000018, 525.5000000000018]
-Recorded cash and eco values (11367.0,2311.2) at time 524.4
-----------
-Advancing game to time 524.45
-Recorded cash and eco values (11367.0,2311.2) at time 524.45
-----------
-Advancing game to time 524.5
-Recorded cash and eco values (11367.0,2311.2) at time 524.5
-----------
-Advancing game to time 524.6
-Sent a set of Grouped Pinks at time 524.5000000000016
-Currently, the send queue looks like this: 
-[524.7000000000016, 524.9000000000017, 525.1000000000017, 525.3000000000018, 525.5000000000018, 525.7000000000019]
-Recorded cash and eco values (11302.0,2313.6) at time 524.6
-----------
-Advancing game to time 524.7
-Recorded cash and eco values (11302.0,2313.6) at time 524.7
-----------
-Advancing game to time 524.8
-Sent a set of Grouped Pinks at time 524.7000000000016
-Currently, the send queue looks like this: 
-[524.9000000000017, 525.1000000000017, 525.3000000000018, 525.5000000000018, 525.7000000000019, 525.9000000000019]
-Recorded cash and eco values (11237.0,2316.0) at time 524.8
-----------
-Advancing game to time 524.9
-Recorded cash and eco values (11237.0,2316.0) at time 524.9
-----------
-Advancing game to time 524.95
-Sent a set of Grouped Pinks at time 524.9000000000017
-Currently, the send queue looks like this: 
-[525.1000000000017, 525.3000000000018, 525.5000000000018, 525.7000000000019, 525.9000000000019, 526.100000000002]
-Recorded cash and eco values (11172.0,2318.4) at time 524.95
-----------
-Advancing game to time 525.0
-Recorded cash and eco values (11172.0,2318.4) at time 525.0
-----------
-Advancing game to time 525.1
-Recorded cash and eco values (11172.0,2318.4) at time 525.1
-----------
-Advancing game to time 525.2
-Sent a set of Grouped Pinks at time 525.1000000000017
-Currently, the send queue looks like this: 
-[525.3000000000018, 525.5000000000018, 525.7000000000019, 525.9000000000019, 526.100000000002, 526.300000000002]
-Recorded cash and eco values (11107.0,2320.8) at time 525.2
-----------
-Advancing game to time 525.3
-Recorded cash and eco values (11107.0,2320.8) at time 525.3
-----------
-Advancing game to time 525.4
-Sent a set of Grouped Pinks at time 525.3000000000018
-Currently, the send queue looks like this: 
-[525.5000000000018, 525.7000000000019, 525.9000000000019, 526.100000000002, 526.300000000002, 526.500000000002]
-Recorded cash and eco values (11042.0,2323.2) at time 525.4
-----------
-Advancing game to time 525.45
-Recorded cash and eco values (11042.0,2323.2) at time 525.45
-----------
-Advancing game to time 525.5
-Recorded cash and eco values (11042.0,2323.2) at time 525.5
-----------
-Advancing game to time 525.6
-Sent a set of Grouped Pinks at time 525.5000000000018
-Currently, the send queue looks like this: 
-[525.7000000000019, 525.9000000000019, 526.100000000002, 526.300000000002, 526.500000000002, 526.7000000000021]
-Recorded cash and eco values (10977.0,2325.6) at time 525.6
-----------
-Advancing game to time 525.7
-Recorded cash and eco values (10977.0,2325.6) at time 525.7
-----------
-Advancing game to time 525.8
-Sent a set of Grouped Pinks at time 525.7000000000019
-Currently, the send queue looks like this: 
-[525.9000000000019, 526.100000000002, 526.300000000002, 526.500000000002, 526.7000000000021, 526.9000000000021]
-Recorded cash and eco values (10912.0,2328.0) at time 525.8
-----------
-Advancing game to time 525.9
-Recorded cash and eco values (10912.0,2328.0) at time 525.9
-----------
-Advancing game to time 525.95
-Sent a set of Grouped Pinks at time 525.9000000000019
-Currently, the send queue looks like this: 
-[526.100000000002, 526.300000000002, 526.500000000002, 526.7000000000021, 526.9000000000021, 527.1000000000022]
-Recorded cash and eco values (10847.0,2330.4) at time 525.95
-----------
-Advancing game to time 526.0
-Recorded cash and eco values (10847.0,2330.4) at time 526.0
-----------
-Advancing game to time 526.1
-Recorded cash and eco values (10847.0,2330.4) at time 526.1
-----------
-Advancing game to time 526.2
-Sent a set of Grouped Pinks at time 526.100000000002
-Currently, the send queue looks like this: 
-[526.300000000002, 526.500000000002, 526.7000000000021, 526.9000000000021, 527.1000000000022, 527.3000000000022]
-Recorded cash and eco values (10782.0,2332.8) at time 526.2
-----------
-Advancing game to time 526.3
-Recorded cash and eco values (10782.0,2332.8) at time 526.3
-----------
-Advancing game to time 526.4
-Sent a set of Grouped Pinks at time 526.300000000002
-Currently, the send queue looks like this: 
-[526.500000000002, 526.7000000000021, 526.9000000000021, 527.1000000000022, 527.3000000000022, 527.5000000000023]
-Recorded cash and eco values (10717.0,2335.2) at time 526.4
-----------
-Advancing game to time 526.45
-Recorded cash and eco values (10717.0,2335.2) at time 526.45
-----------
-Advancing game to time 526.5
-Recorded cash and eco values (10717.0,2335.2) at time 526.5
-----------
-Advancing game to time 526.6
-Sent a set of Grouped Pinks at time 526.500000000002
-Currently, the send queue looks like this: 
-[526.7000000000021, 526.9000000000021, 527.1000000000022, 527.3000000000022, 527.5000000000023, 527.7000000000023]
-Recorded cash and eco values (10652.0,2337.6) at time 526.6
-----------
-Advancing game to time 526.7
-Recorded cash and eco values (10652.0,2337.6) at time 526.7
-----------
-Advancing game to time 526.8
-Sent a set of Grouped Pinks at time 526.7000000000021
-Currently, the send queue looks like this: 
-[526.9000000000021, 527.1000000000022, 527.3000000000022, 527.5000000000023, 527.7000000000023, 527.9000000000024]
-Recorded cash and eco values (10587.0,2340.0) at time 526.8
-----------
-Advancing game to time 526.9
-Recorded cash and eco values (10587.0,2340.0) at time 526.9
-----------
-Advancing game to time 526.95
-Sent a set of Grouped Pinks at time 526.9000000000021
-Currently, the send queue looks like this: 
-[527.1000000000022, 527.3000000000022, 527.5000000000023, 527.7000000000023, 527.9000000000024, 528.1000000000024]
-Recorded cash and eco values (10522.0,2342.4) at time 526.95
-----------
-Advancing game to time 527.0
-Recorded cash and eco values (10522.0,2342.4) at time 527.0
-----------
-Advancing game to time 527.1
-Recorded cash and eco values (10522.0,2342.4) at time 527.1
-----------
-Advancing game to time 527.2
-Sent a set of Grouped Pinks at time 527.1000000000022
-Currently, the send queue looks like this: 
-[527.3000000000022, 527.5000000000023, 527.7000000000023, 527.9000000000024, 528.1000000000024, 528.3000000000025]
-Recorded cash and eco values (10457.0,2344.8) at time 527.2
-----------
-Advancing game to time 527.3
-Recorded cash and eco values (10457.0,2344.8) at time 527.3
-----------
-Advancing game to time 527.4
-Sent a set of Grouped Pinks at time 527.3000000000022
-Currently, the send queue looks like this: 
-[527.5000000000023, 527.7000000000023, 527.9000000000024, 528.1000000000024, 528.3000000000025, 528.5000000000025]
-Recorded cash and eco values (10392.0,2347.2) at time 527.4
-----------
-Advancing game to time 527.45
-Recorded cash and eco values (10392.0,2347.2) at time 527.45
-----------
-Advancing game to time 527.5
-Recorded cash and eco values (10392.0,2347.2) at time 527.5
-----------
-Advancing game to time 527.6
-Sent a set of Grouped Pinks at time 527.5000000000023
-Currently, the send queue looks like this: 
-[527.7000000000023, 527.9000000000024, 528.1000000000024, 528.3000000000025, 528.5000000000025, 528.7000000000025]
-Recorded cash and eco values (10327.0,2349.6) at time 527.6
-----------
-Advancing game to time 527.7
-Recorded cash and eco values (10327.0,2349.6) at time 527.7
-----------
-Advancing game to time 527.8
-Sent a set of Grouped Pinks at time 527.7000000000023
-Currently, the send queue looks like this: 
-[527.9000000000024, 528.1000000000024, 528.3000000000025, 528.5000000000025, 528.7000000000025, 528.9000000000026]
-Recorded cash and eco values (10262.0,2352.0) at time 527.8
-----------
-Advancing game to time 527.9
-Recorded cash and eco values (10262.0,2352.0) at time 527.9
-----------
-Advancing game to time 527.95
-Sent a set of Grouped Pinks at time 527.9000000000024
-Currently, the send queue looks like this: 
-[528.1000000000024, 528.3000000000025, 528.5000000000025, 528.7000000000025, 528.9000000000026, 529.1000000000026]
-Recorded cash and eco values (10197.0,2354.4) at time 527.95
-----------
-Advancing game to time 528.0
-Awarded eco payment 2354.4 at time 528.0
-Recorded cash and eco values (12551.4,2354.4) at time 528.0
-Recorded cash and eco values (12551.4,2354.4) at time 528.0
-----------
-Advancing game to time 528.1
-Recorded cash and eco values (12551.4,2354.4) at time 528.1
-----------
-Advancing game to time 528.2
-Sent a set of Grouped Pinks at time 528.1000000000024
-Currently, the send queue looks like this: 
-[528.3000000000025, 528.5000000000025, 528.7000000000025, 528.9000000000026, 529.1000000000026, 529.3000000000027]
-Recorded cash and eco values (12486.4,2356.8) at time 528.2
-----------
-Advancing game to time 528.3
-Recorded cash and eco values (12486.4,2356.8) at time 528.3
-----------
-Advancing game to time 528.4
-Sent a set of Grouped Pinks at time 528.3000000000025
-Currently, the send queue looks like this: 
-[528.5000000000025, 528.7000000000025, 528.9000000000026, 529.1000000000026, 529.3000000000027, 529.5000000000027]
-Recorded cash and eco values (12421.4,2359.2) at time 528.4
-----------
-Advancing game to time 528.45
-Recorded cash and eco values (12421.4,2359.2) at time 528.45
-----------
-Advancing game to time 528.5
-Recorded cash and eco values (12421.4,2359.2) at time 528.5
-----------
-Advancing game to time 528.6
-Sent a set of Grouped Pinks at time 528.5000000000025
-Currently, the send queue looks like this: 
-[528.7000000000025, 528.9000000000026, 529.1000000000026, 529.3000000000027, 529.5000000000027, 529.7000000000028]
-Recorded cash and eco values (12356.4,2361.6) at time 528.6
-----------
-Advancing game to time 528.7
-Recorded cash and eco values (12356.4,2361.6) at time 528.7
-----------
-Advancing game to time 528.8
-Sent a set of Grouped Pinks at time 528.7000000000025
-Currently, the send queue looks like this: 
-[528.9000000000026, 529.1000000000026, 529.3000000000027, 529.5000000000027, 529.7000000000028, 529.9000000000028]
-Recorded cash and eco values (12291.4,2364.0) at time 528.8
-----------
-Advancing game to time 528.9
-Recorded cash and eco values (12291.4,2364.0) at time 528.9
-----------
-Advancing game to time 528.95
-Sent a set of Grouped Pinks at time 528.9000000000026
-Currently, the send queue looks like this: 
-[529.1000000000026, 529.3000000000027, 529.5000000000027, 529.7000000000028, 529.9000000000028, 530.1000000000029]
-Recorded cash and eco values (12226.4,2366.4) at time 528.95
-----------
-Advancing game to time 529.0
-Recorded cash and eco values (12226.4,2366.4) at time 529.0
-----------
-Advancing game to time 529.1
-Recorded cash and eco values (12226.4,2366.4) at time 529.1
-----------
-Advancing game to time 529.2
-Sent a set of Grouped Pinks at time 529.1000000000026
-Currently, the send queue looks like this: 
-[529.3000000000027, 529.5000000000027, 529.7000000000028, 529.9000000000028, 530.1000000000029, 530.3000000000029]
-Recorded cash and eco values (12161.4,2368.8) at time 529.2
-----------
-Advancing game to time 529.3
-Recorded cash and eco values (12161.4,2368.8) at time 529.3
-----------
-Advancing game to time 529.4
-Sent a set of Grouped Pinks at time 529.3000000000027
-Currently, the send queue looks like this: 
-[529.5000000000027, 529.7000000000028, 529.9000000000028, 530.1000000000029, 530.3000000000029, 530.500000000003]
-Recorded cash and eco values (12096.4,2371.2) at time 529.4
-----------
-Advancing game to time 529.45
-Recorded cash and eco values (12096.4,2371.2) at time 529.45
-----------
-Advancing game to time 529.5
-Recorded cash and eco values (12096.4,2371.2) at time 529.5
-----------
-Advancing game to time 529.6
-Sent a set of Grouped Pinks at time 529.5000000000027
-Currently, the send queue looks like this: 
-[529.7000000000028, 529.9000000000028, 530.1000000000029, 530.3000000000029, 530.500000000003, 530.700000000003]
-Recorded cash and eco values (12031.4,2373.6) at time 529.6
-----------
-Advancing game to time 529.7
-Recorded cash and eco values (12031.4,2373.6) at time 529.7
-----------
-Advancing game to time 529.8
-Sent a set of Grouped Pinks at time 529.7000000000028
-Currently, the send queue looks like this: 
-[529.9000000000028, 530.1000000000029, 530.3000000000029, 530.500000000003, 530.700000000003, 530.900000000003]
-Recorded cash and eco values (11966.4,2376.0) at time 529.8
-----------
-Advancing game to time 529.9
-Recorded cash and eco values (11966.4,2376.0) at time 529.9
-----------
-Advancing game to time 529.95
-Sent a set of Grouped Pinks at time 529.9000000000028
-Currently, the send queue looks like this: 
-[530.1000000000029, 530.3000000000029, 530.500000000003, 530.700000000003, 530.900000000003, 531.1000000000031]
-Recorded cash and eco values (11901.4,2378.4) at time 529.95
-----------
-Advancing game to time 530.0
-Awarded direct payment 750 at time 530.0
-Recorded cash and eco values (12651.4,2378.4) at time 530.0
-Recorded cash and eco values (12651.4,2378.4) at time 530.0
-----------
+Sent a set of Grouped Pinks at time 517.2999999999995
+Currently, the send queue looks like this: 
+[517.4999999999995, 517.6999999999996, 517.8999999999996, 518.0999999999997, 518.2999999999997, 518.4999999999998]
+Awarded direct payment 750 at time 517.3
+Recorded cash and eco values (11914.4,2323.2) at time 517.3
 Advanced game state to round 24
-The current time is 530.0
-The next round starts at time 592.2
-Our new cash and eco is given by (12651.4,2378.4) 
+The current time is 517.3000000000001
+The next round starts at time 577.7500000000001
+Our new cash and eco is given by (11914.4,2323.2) 
 
 MESSAGE FROM GameState.viewCashEcoHistory():
 Graphing history of cash and eco!

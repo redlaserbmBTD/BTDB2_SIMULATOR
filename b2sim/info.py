@@ -141,7 +141,9 @@ farm_globals = {
     'Monkeynomics Payout': 20000,
     'Monkeynomics Initial Cooldown': 20,
     'Monkeynomics Usage Cooldown': 60,
-    'Banana Central Multiplier': 1.25
+    'Banana Central Multiplier': 1.25,
+    'Start of Round Bank Payment': 400,
+    'Start of Round Bank Multiplier': 1.2
 }
 
 # This is admittedly not the cleanest way of organizing this info but
@@ -183,6 +185,14 @@ heli_globals = {
 hero_globals = {
     'Jericho Number of Steals': 10,
     'Jericho Steal Interval': 1
+}
+
+engi_globals = {
+    'Overclock Cost': 15350,
+    'Ultraboost Upgrade Cost': 100000,
+    'Overclock Usage Cooldown': 45, #There is no initial cooldown for the Overclock active
+    'Ultraboost Usage Cooldown': 20,
+    'Overclock Payout Modifier': 1.5
 }
 
 # %%

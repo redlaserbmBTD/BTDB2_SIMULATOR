@@ -1,0 +1,725 @@
+MESSAGE FROM GameState.__init__(): 
+Initialized Game State!
+The current game round is 10
+The current game time is 233.5 seconds
+The game round start times are given by [0, 6.0, 31.375, 55.125, 80.125, 110.375, 138.875, 163.625, 188.625, 211.0, 233.5, 246.625, 262.75, 282.375, 302.375, 316.125, 335.125, 369.0, 409.375, 436.5, 474.125, 486.375, 504.5, 535.875, 550.0, 611.875, 652.75, 684.875, 712.5, 739.375, 788.0, 802.75, 858.918999, 876.323999, 906.948999, 923.2656589999999, 972.282657, 1001.855657, 1092.115657, 1158.911487, 1256.786487, 1275.036487, 1318.5914870000001, 1351.4664870000001, 1380.3414870000001, 1402.766487, 1422.5414870000002, 1465.4164870000002, 1488.2914870000002, 1528.286489, 1566.161489, 1585.011489] 
+
+MESSAGE FROM GameState.fastForward: 
+Advancing game to time 233.6
+Modified the eco send to Zero
+Advancing game to time 233.7
+Advancing game to time 233.8
+Advancing game to time 233.9
+Advancing game to time 234.0
+Awarded eco payment 751.0 at time 234.0
+Recorded cash and eco values (751.0,751.0) at time 234.0
+Advancing game to time 234.1
+Advancing game to time 234.2
+Advancing game to time 234.3
+Advancing game to time 234.4
+Advancing game to time 234.5
+Advancing game to time 234.6
+Advancing game to time 234.7
+Advancing game to time 234.8
+Advancing game to time 234.9
+Advancing game to time 235.0
+Advancing game to time 235.1
+Advancing game to time 235.2
+Advancing game to time 235.3
+Advancing game to time 235.4
+Advancing game to time 235.5
+Advancing game to time 235.6
+Advancing game to time 235.7
+Advancing game to time 235.8
+Advancing game to time 235.9
+Advancing game to time 236.0
+Advancing game to time 236.1
+Advancing game to time 236.2
+Advancing game to time 236.3
+Advancing game to time 236.4
+Advancing game to time 236.5
+Advancing game to time 236.6
+Advancing game to time 236.7
+Advancing game to time 236.8
+Advancing game to time 236.9
+Advancing game to time 237.0
+Advancing game to time 237.1
+Advancing game to time 237.2
+Advancing game to time 237.3
+Advancing game to time 237.4
+Advancing game to time 237.5
+Advancing game to time 237.6
+Advancing game to time 237.7
+Advancing game to time 237.8
+Advancing game to time 237.9
+Advancing game to time 238.0
+Advancing game to time 238.1
+Advancing game to time 238.2
+Advancing game to time 238.3
+Advancing game to time 238.4
+Advancing game to time 238.5
+Advancing game to time 238.6
+Advancing game to time 238.7
+Advancing game to time 238.8
+Advancing game to time 238.9
+Advancing game to time 239.0
+Advancing game to time 239.1
+Advancing game to time 239.2
+Advancing game to time 239.3
+Advancing game to time 239.4
+Advancing game to time 239.5
+Advancing game to time 239.6
+Advancing game to time 239.7
+Advancing game to time 239.8
+Advancing game to time 239.9
+Advancing game to time 240.0
+Awarded eco payment 751.0 at time 240.0
+Recorded cash and eco values (1502.0,751.0) at time 240.0
+Advancing game to time 240.1
+Advancing game to time 240.2
+Advancing game to time 240.3
+Advancing game to time 240.4
+Advancing game to time 240.5
+Advancing game to time 240.6
+Advancing game to time 240.7
+Advancing game to time 240.8
+Advancing game to time 240.9
+Advancing game to time 241.0
+Advancing game to time 241.1
+Advancing game to time 241.2
+Advancing game to time 241.3
+Advancing game to time 241.4
+Advancing game to time 241.5
+Advancing game to time 241.6
+Advancing game to time 241.7
+Advancing game to time 241.8
+Advancing game to time 241.9
+Advancing game to time 242.0
+Advancing game to time 242.1
+Advancing game to time 242.2
+Advancing game to time 242.3
+Advancing game to time 242.4
+Advancing game to time 242.5
+Advancing game to time 242.6
+Advancing game to time 242.7
+Advancing game to time 242.8
+Advancing game to time 242.9
+Advancing game to time 243.0
+Advancing game to time 243.1
+Advancing game to time 243.2
+Advancing game to time 243.3
+Advancing game to time 243.4
+Advancing game to time 243.5
+Advancing game to time 243.6
+Advancing game to time 243.7
+Advancing game to time 243.8
+Advancing game to time 243.9
+Advancing game to time 244.0
+Advancing game to time 244.1
+Advancing game to time 244.2
+Advancing game to time 244.3
+Advancing game to time 244.4
+Advancing game to time 244.5
+Advancing game to time 244.6
+Advancing game to time 244.7
+Advancing game to time 244.8
+Advancing game to time 244.9
+Advancing game to time 245.0
+Advancing game to time 245.1
+Advancing game to time 245.2
+Advancing game to time 245.3
+Advancing game to time 245.4
+Advancing game to time 245.5
+Advancing game to time 245.6
+Advancing game to time 245.7
+Advancing game to time 245.8
+Advancing game to time 245.9
+Advancing game to time 246.0
+Awarded eco payment 751.0 at time 246.0
+Recorded cash and eco values (2253.0,751.0) at time 246.0
+Advancing game to time 246.1
+Advancing game to time 246.2
+Advancing game to time 246.3
+Advancing game to time 246.4
+Advancing game to time 246.5
+Advancing game to time 246.6
+Advancing game to time 246.7
+Awarded direct payment 300.0 at time 246.62
+Recorded cash and eco values (2553.0,751.0) at time 246.62
+Advancing game to time 246.8
+Advancing game to time 246.9
+Advancing game to time 247.0
+Advancing game to time 247.1
+Advancing game to time 247.2
+Advancing game to time 247.3
+Advancing game to time 247.4
+Advancing game to time 247.5
+Advancing game to time 247.6
+Advancing game to time 247.7
+Advancing game to time 247.8
+Advancing game to time 247.9
+Advancing game to time 248.0
+Advancing game to time 248.1
+Advancing game to time 248.2
+Advancing game to time 248.3
+Advancing game to time 248.4
+Advancing game to time 248.5
+Advancing game to time 248.6
+Advancing game to time 248.7
+Advancing game to time 248.8
+Advancing game to time 248.9
+Advancing game to time 249.0
+Advancing game to time 249.1
+Advancing game to time 249.2
+Advancing game to time 249.3
+Advancing game to time 249.4
+Advancing game to time 249.5
+Advancing game to time 249.6
+Advancing game to time 249.7
+Advancing game to time 249.8
+Advancing game to time 249.9
+Advancing game to time 250.0
+Advancing game to time 250.1
+Advancing game to time 250.2
+Advancing game to time 250.3
+Advancing game to time 250.4
+Advancing game to time 250.5
+Advancing game to time 250.6
+Advancing game to time 250.7
+Advancing game to time 250.8
+Advancing game to time 250.9
+Advancing game to time 251.0
+Advancing game to time 251.1
+Advancing game to time 251.2
+Advancing game to time 251.3
+Advancing game to time 251.4
+Advancing game to time 251.5
+Advancing game to time 251.6
+Advancing game to time 251.7
+Advancing game to time 251.8
+Advancing game to time 251.9
+Advancing game to time 252.0
+Awarded eco payment 751.0 at time 252.0
+Recorded cash and eco values (3304.0,751.0) at time 252.0
+Advancing game to time 252.1
+Advancing game to time 252.2
+Advancing game to time 252.3
+Advancing game to time 252.4
+Advancing game to time 252.5
+Advancing game to time 252.6
+Advancing game to time 252.7
+Advancing game to time 252.8
+Advancing game to time 252.9
+Advancing game to time 253.0
+Advancing game to time 253.1
+Advancing game to time 253.2
+Advancing game to time 253.3
+Advancing game to time 253.4
+Advancing game to time 253.5
+Advancing game to time 253.6
+Advancing game to time 253.7
+Advancing game to time 253.8
+Advancing game to time 253.9
+Advancing game to time 254.0
+Advancing game to time 254.1
+Advancing game to time 254.2
+Advancing game to time 254.3
+Advancing game to time 254.4
+Advancing game to time 254.5
+Advancing game to time 254.6
+Advancing game to time 254.7
+Advancing game to time 254.8
+Advancing game to time 254.9
+Advancing game to time 255.0
+Advancing game to time 255.1
+Advancing game to time 255.2
+Advancing game to time 255.3
+Advancing game to time 255.4
+Advancing game to time 255.5
+Advancing game to time 255.6
+Advancing game to time 255.7
+Advancing game to time 255.8
+Advancing game to time 255.9
+Advancing game to time 256.0
+Advancing game to time 256.1
+Advancing game to time 256.2
+Advancing game to time 256.25
+Advancing game to time 256.3
+Advancing game to time 256.4
+Advancing game to time 256.5
+Advancing game to time 256.6
+Advancing game to time 256.7
+Advancing game to time 256.75
+Advancing game to time 256.8
+Advancing game to time 256.9
+Advancing game to time 257.0
+Advancing game to time 257.1
+Advancing game to time 257.2
+Advancing game to time 257.25
+Advancing game to time 257.3
+Advancing game to time 257.4
+Advancing game to time 257.5
+Advancing game to time 257.6
+Advancing game to time 257.7
+Advancing game to time 257.75
+Advancing game to time 257.8
+Advancing game to time 257.9
+Advancing game to time 258.0
+Awarded eco payment 751.0 at time 258.0
+Recorded cash and eco values (4055.0,751.0) at time 258.0
+Advancing game to time 258.1
+Advancing game to time 258.2
+Advancing game to time 258.25
+Advancing game to time 258.3
+Advancing game to time 258.4
+Advancing game to time 258.5
+Advancing game to time 258.6
+Advancing game to time 258.7
+Advancing game to time 258.75
+Advancing game to time 258.8
+Advancing game to time 258.9
+Advancing game to time 259.0
+Advancing game to time 259.1
+Advancing game to time 259.2
+Advancing game to time 259.25
+Advancing game to time 259.3
+Advancing game to time 259.4
+Advancing game to time 259.5
+Advancing game to time 259.6
+Advancing game to time 259.7
+Advancing game to time 259.75
+Advancing game to time 259.8
+Advancing game to time 259.9
+Advancing game to time 260.0
+Advancing game to time 260.1
+Advancing game to time 260.2
+Advancing game to time 260.25
+Advancing game to time 260.3
+Advancing game to time 260.4
+Advancing game to time 260.5
+Advancing game to time 260.6
+Advancing game to time 260.7
+Advancing game to time 260.75
+Advancing game to time 260.8
+Advancing game to time 260.9
+Advancing game to time 261.0
+Advancing game to time 261.1
+Advancing game to time 261.2
+Advancing game to time 261.25
+Advancing game to time 261.3
+Advancing game to time 261.4
+Advancing game to time 261.5
+Advancing game to time 261.6
+Advancing game to time 261.7
+Advancing game to time 261.75
+Advancing game to time 261.8
+Advancing game to time 261.9
+Advancing game to time 262.0
+Advancing game to time 262.1
+Advancing game to time 262.2
+Advancing game to time 262.25
+Advancing game to time 262.3
+Advancing game to time 262.4
+Advancing game to time 262.5
+Advancing game to time 262.6
+Advancing game to time 262.7
+Advancing game to time 262.75
+Awarded direct payment 300.0 at time 262.75
+Recorded cash and eco values (4355.0,751.0) at time 262.75
+Modified the eco send to Spaced Rainbows
+Advancing game to time 262.8
+Sent a set of Spaced Rainbows at time 262.75
+Currently, the send queue looks like this: 
+[263.1]
+Recorded cash and eco values (4285.0,754.0) at time 262.8
+Advancing game to time 262.9
+Sent a set of Spaced Rainbows at time 262.9
+Currently, the send queue looks like this: 
+[263.1, 263.45000000000005]
+Recorded cash and eco values (4215.0,757.0) at time 262.9
+Advancing game to time 263.0
+Advancing game to time 263.1
+Sent a set of Spaced Rainbows at time 263.04999999999995
+Currently, the send queue looks like this: 
+[263.1, 263.45000000000005, 263.80000000000007]
+Recorded cash and eco values (4145.0,760.0) at time 263.1
+Advancing game to time 263.2
+Sent a set of Spaced Rainbows at time 263.19999999999993
+Currently, the send queue looks like this: 
+[263.45000000000005, 263.80000000000007, 264.1500000000001]
+Recorded cash and eco values (4075.0,763.0) at time 263.2
+Advancing game to time 263.25
+Advancing game to time 263.3
+Advancing game to time 263.4
+Sent a set of Spaced Rainbows at time 263.3499999999999
+Currently, the send queue looks like this: 
+[263.45000000000005, 263.80000000000007, 264.1500000000001, 264.5000000000001]
+Recorded cash and eco values (4005.0,766.0) at time 263.4
+Advancing game to time 263.5
+Sent a set of Spaced Rainbows at time 263.4999999999999
+Currently, the send queue looks like this: 
+[263.80000000000007, 264.1500000000001, 264.5000000000001, 264.85000000000014]
+Recorded cash and eco values (3935.0,769.0) at time 263.5
+Advancing game to time 263.6
+Advancing game to time 263.7
+Sent a set of Spaced Rainbows at time 263.64999999999986
+Currently, the send queue looks like this: 
+[263.80000000000007, 264.1500000000001, 264.5000000000001, 264.85000000000014, 265.20000000000016]
+Recorded cash and eco values (3865.0,772.0) at time 263.7
+Advancing game to time 263.75
+Advancing game to time 263.8
+Sent a set of Spaced Rainbows at time 263.79999999999984
+Currently, the send queue looks like this: 
+[263.80000000000007, 264.1500000000001, 264.5000000000001, 264.85000000000014, 265.20000000000016, 265.5500000000002]
+Recorded cash and eco values (3795.0,775.0) at time 263.8
+Advancing game to time 263.9
+Advancing game to time 264.0
+Sent a set of Spaced Rainbows at time 263.9499999999998
+Currently, the send queue looks like this: 
+[264.1500000000001, 264.5000000000001, 264.85000000000014, 265.20000000000016, 265.5500000000002, 265.9000000000002]
+Awarded eco payment 778.0 at time 264.0
+Recorded cash and eco values (4503.0,778.0) at time 264.0
+Advancing game to time 264.1
+Advancing game to time 264.2
+Sent a set of Spaced Rainbows at time 264.1500000000001
+Currently, the send queue looks like this: 
+[264.5000000000001, 264.85000000000014, 265.20000000000016, 265.5500000000002, 265.9000000000002, 266.2500000000002]
+Recorded cash and eco values (4433.0,781.0) at time 264.2
+Advancing game to time 264.25
+Advancing game to time 264.3
+Advancing game to time 264.4
+Advancing game to time 264.5
+Advancing game to time 264.6
+Sent a set of Spaced Rainbows at time 264.5000000000001
+Currently, the send queue looks like this: 
+[264.85000000000014, 265.20000000000016, 265.5500000000002, 265.9000000000002, 266.2500000000002, 266.60000000000025]
+Recorded cash and eco values (4363.0,784.0) at time 264.6
+Advancing game to time 264.7
+Advancing game to time 264.75
+Advancing game to time 264.8
+Advancing game to time 264.9
+Sent a set of Spaced Rainbows at time 264.85000000000014
+Currently, the send queue looks like this: 
+[265.20000000000016, 265.5500000000002, 265.9000000000002, 266.2500000000002, 266.60000000000025, 266.9500000000003]
+Recorded cash and eco values (4293.0,787.0) at time 264.9
+Advancing game to time 265.0
+Advancing game to time 265.1
+Advancing game to time 265.2
+Advancing game to time 265.25
+Sent a set of Spaced Rainbows at time 265.20000000000016
+Currently, the send queue looks like this: 
+[265.5500000000002, 265.9000000000002, 266.2500000000002, 266.60000000000025, 266.9500000000003, 267.3000000000003]
+Recorded cash and eco values (4223.0,790.0) at time 265.25
+Advancing game to time 265.3
+Advancing game to time 265.4
+Advancing game to time 265.5
+Advancing game to time 265.6
+Sent a set of Spaced Rainbows at time 265.5500000000002
+Currently, the send queue looks like this: 
+[265.9000000000002, 266.2500000000002, 266.60000000000025, 266.9500000000003, 267.3000000000003, 267.6500000000003]
+Recorded cash and eco values (4153.0,793.0) at time 265.6
+Advancing game to time 265.7
+Advancing game to time 265.75
+Advancing game to time 265.8
+Advancing game to time 265.9
+Advancing game to time 266.0
+Sent a set of Spaced Rainbows at time 265.9000000000002
+Currently, the send queue looks like this: 
+[266.2500000000002, 266.60000000000025, 266.9500000000003, 267.3000000000003, 267.6500000000003, 268.00000000000034]
+Recorded cash and eco values (4083.0,796.0) at time 266.0
+Advancing game to time 266.1
+Advancing game to time 266.2
+Advancing game to time 266.25
+Advancing game to time 266.3
+Sent a set of Spaced Rainbows at time 266.2500000000002
+Currently, the send queue looks like this: 
+[266.60000000000025, 266.9500000000003, 267.3000000000003, 267.6500000000003, 268.00000000000034, 268.35000000000036]
+Recorded cash and eco values (4013.0,799.0) at time 266.3
+Advancing game to time 266.4
+Advancing game to time 266.5
+Advancing game to time 266.6
+Advancing game to time 266.7
+Sent a set of Spaced Rainbows at time 266.60000000000025
+Currently, the send queue looks like this: 
+[266.9500000000003, 267.3000000000003, 267.6500000000003, 268.00000000000034, 268.35000000000036, 268.7000000000004]
+Recorded cash and eco values (3943.0,802.0) at time 266.7
+Advancing game to time 266.75
+Advancing game to time 266.8
+Advancing game to time 266.9
+Advancing game to time 267.0
+Sent a set of Spaced Rainbows at time 266.9500000000003
+Currently, the send queue looks like this: 
+[267.3000000000003, 267.6500000000003, 268.00000000000034, 268.35000000000036, 268.7000000000004, 269.0500000000004]
+Recorded cash and eco values (3873.0,805.0) at time 267.0
+Advancing game to time 267.1
+Advancing game to time 267.2
+Advancing game to time 267.25
+Advancing game to time 267.3
+Advancing game to time 267.4
+Sent a set of Spaced Rainbows at time 267.3000000000003
+Currently, the send queue looks like this: 
+[267.6500000000003, 268.00000000000034, 268.35000000000036, 268.7000000000004, 269.0500000000004, 269.40000000000043]
+Recorded cash and eco values (3803.0,808.0) at time 267.4
+Advancing game to time 267.5
+Advancing game to time 267.6
+Advancing game to time 267.7
+Sent a set of Spaced Rainbows at time 267.6500000000003
+Currently, the send queue looks like this: 
+[268.00000000000034, 268.35000000000036, 268.7000000000004, 269.0500000000004, 269.40000000000043, 269.75000000000045]
+Recorded cash and eco values (3733.0,811.0) at time 267.7
+Advancing game to time 267.75
+Advancing game to time 267.8
+Advancing game to time 267.9
+Advancing game to time 268.0
+Advancing game to time 268.1
+Sent a set of Spaced Rainbows at time 268.00000000000034
+Currently, the send queue looks like this: 
+[268.35000000000036, 268.7000000000004, 269.0500000000004, 269.40000000000043, 269.75000000000045, 270.1000000000005]
+Recorded cash and eco values (3663.0,814.0) at time 268.1
+Advancing game to time 268.2
+Advancing game to time 268.25
+Advancing game to time 268.3
+Advancing game to time 268.4
+Sent a set of Spaced Rainbows at time 268.35000000000036
+Currently, the send queue looks like this: 
+[268.7000000000004, 269.0500000000004, 269.40000000000043, 269.75000000000045, 270.1000000000005, 270.4500000000005]
+Recorded cash and eco values (3593.0,817.0) at time 268.4
+Advancing game to time 268.5
+Advancing game to time 268.6
+Advancing game to time 268.7
+Advancing game to time 268.75
+Sent a set of Spaced Rainbows at time 268.7000000000004
+Currently, the send queue looks like this: 
+[269.0500000000004, 269.40000000000043, 269.75000000000045, 270.1000000000005, 270.4500000000005, 270.8000000000005]
+Recorded cash and eco values (3523.0,820.0) at time 268.75
+Advancing game to time 268.8
+Advancing game to time 268.9
+Advancing game to time 269.0
+Advancing game to time 269.1
+Sent a set of Spaced Rainbows at time 269.0500000000004
+Currently, the send queue looks like this: 
+[269.40000000000043, 269.75000000000045, 270.1000000000005, 270.4500000000005, 270.8000000000005, 271.15000000000055]
+Recorded cash and eco values (3453.0,823.0) at time 269.1
+Advancing game to time 269.2
+Advancing game to time 269.25
+Advancing game to time 269.3
+Advancing game to time 269.4
+Advancing game to time 269.5
+Sent a set of Spaced Rainbows at time 269.40000000000043
+Currently, the send queue looks like this: 
+[269.75000000000045, 270.1000000000005, 270.4500000000005, 270.8000000000005, 271.15000000000055, 271.50000000000057]
+Recorded cash and eco values (3383.0,826.0) at time 269.5
+Advancing game to time 269.6
+Advancing game to time 269.7
+Advancing game to time 269.75
+Advancing game to time 269.8
+Sent a set of Spaced Rainbows at time 269.75000000000045
+Currently, the send queue looks like this: 
+[270.1000000000005, 270.4500000000005, 270.8000000000005, 271.15000000000055, 271.50000000000057, 271.8500000000006]
+Recorded cash and eco values (3313.0,829.0) at time 269.8
+Advancing game to time 269.9
+Advancing game to time 270.0
+Awarded eco payment 829.0 at time 270.0
+Recorded cash and eco values (4142.0,829.0) at time 270.0
+Advancing game to time 270.1
+Advancing game to time 270.2
+Sent a set of Spaced Rainbows at time 270.1000000000005
+Currently, the send queue looks like this: 
+[270.4500000000005, 270.8000000000005, 271.15000000000055, 271.50000000000057, 271.8500000000006, 272.2000000000006]
+Recorded cash and eco values (4072.0,832.0) at time 270.2
+Advancing game to time 270.25
+Advancing game to time 270.3
+Advancing game to time 270.4
+Advancing game to time 270.5
+Sent a set of Spaced Rainbows at time 270.4500000000005
+Currently, the send queue looks like this: 
+[270.8000000000005, 271.15000000000055, 271.50000000000057, 271.8500000000006, 272.2000000000006, 272.55000000000064]
+Recorded cash and eco values (4002.0,835.0) at time 270.5
+Advancing game to time 270.6
+Advancing game to time 270.7
+Advancing game to time 270.75
+Advancing game to time 270.8
+Advancing game to time 270.9
+Sent a set of Spaced Rainbows at time 270.8000000000005
+Currently, the send queue looks like this: 
+[271.15000000000055, 271.50000000000057, 271.8500000000006, 272.2000000000006, 272.55000000000064, 272.90000000000066]
+Recorded cash and eco values (3932.0,838.0) at time 270.9
+Advancing game to time 271.0
+Advancing game to time 271.1
+Advancing game to time 271.2
+Sent a set of Spaced Rainbows at time 271.15000000000055
+Currently, the send queue looks like this: 
+[271.50000000000057, 271.8500000000006, 272.2000000000006, 272.55000000000064, 272.90000000000066, 273.2500000000007]
+Recorded cash and eco values (3862.0,841.0) at time 271.2
+Advancing game to time 271.25
+Advancing game to time 271.3
+Advancing game to time 271.4
+Advancing game to time 271.5
+Advancing game to time 271.6
+Sent a set of Spaced Rainbows at time 271.50000000000057
+Currently, the send queue looks like this: 
+[271.8500000000006, 272.2000000000006, 272.55000000000064, 272.90000000000066, 273.2500000000007, 273.6000000000007]
+Recorded cash and eco values (3792.0,844.0) at time 271.6
+Advancing game to time 271.7
+Advancing game to time 271.75
+Advancing game to time 271.8
+Advancing game to time 271.9
+Sent a set of Spaced Rainbows at time 271.8500000000006
+Currently, the send queue looks like this: 
+[272.2000000000006, 272.55000000000064, 272.90000000000066, 273.2500000000007, 273.6000000000007, 273.9500000000007]
+Recorded cash and eco values (3722.0,847.0) at time 271.9
+Advancing game to time 272.0
+Advancing game to time 272.1
+Advancing game to time 272.2
+Advancing game to time 272.25
+Sent a set of Spaced Rainbows at time 272.2000000000006
+Currently, the send queue looks like this: 
+[272.55000000000064, 272.90000000000066, 273.2500000000007, 273.6000000000007, 273.9500000000007, 274.30000000000075]
+Recorded cash and eco values (3652.0,850.0) at time 272.25
+Advancing game to time 272.3
+Advancing game to time 272.4
+Advancing game to time 272.5
+Advancing game to time 272.6
+Sent a set of Spaced Rainbows at time 272.55000000000064
+Currently, the send queue looks like this: 
+[272.90000000000066, 273.2500000000007, 273.6000000000007, 273.9500000000007, 274.30000000000075, 274.6500000000008]
+Recorded cash and eco values (3582.0,853.0) at time 272.56
+Modified the eco send to Zero
+Advancing game to time 272.612
+Advancing game to time 272.7
+Advancing game to time 272.75
+Advancing game to time 272.8
+Advancing game to time 272.9
+Advancing game to time 273.0
+Advancing game to time 273.1
+Advancing game to time 273.2
+Advancing game to time 273.25
+Advancing game to time 273.3
+Advancing game to time 273.4
+Advancing game to time 273.5
+Advancing game to time 273.6
+Advancing game to time 273.7
+Advancing game to time 273.75
+Advancing game to time 273.8
+Advancing game to time 273.9
+Advancing game to time 274.0
+Advancing game to time 274.1
+Advancing game to time 274.2
+Advancing game to time 274.25
+Advancing game to time 274.3
+Advancing game to time 274.4
+Advancing game to time 274.5
+Advancing game to time 274.6
+Advancing game to time 274.7
+Advancing game to time 274.75
+Advancing game to time 274.8
+Advancing game to time 274.9
+Advancing game to time 275.0
+Advancing game to time 275.1
+Advancing game to time 275.2
+Advancing game to time 275.25
+Advancing game to time 275.3
+Advancing game to time 275.4
+Advancing game to time 275.5
+Advancing game to time 275.6
+Advancing game to time 275.7
+Advancing game to time 275.75
+Advancing game to time 275.8
+Advancing game to time 275.9
+Advancing game to time 276.0
+Awarded eco payment 853.0 at time 276.0
+Recorded cash and eco values (4435.0,853.0) at time 276.0
+Advancing game to time 276.1
+Advancing game to time 276.2
+Advancing game to time 276.25
+Advancing game to time 276.3
+Advancing game to time 276.4
+Advancing game to time 276.5
+Advancing game to time 276.6
+Advancing game to time 276.7
+Advancing game to time 276.75
+Advancing game to time 276.8
+Advancing game to time 276.9
+Advancing game to time 277.0
+Advancing game to time 277.1
+Advancing game to time 277.2
+Advancing game to time 277.25
+Advancing game to time 277.3
+Advancing game to time 277.4
+Advancing game to time 277.5
+Advancing game to time 277.6
+Advancing game to time 277.7
+Advancing game to time 277.75
+Advancing game to time 277.8
+Advancing game to time 277.9
+Advancing game to time 278.0
+Advancing game to time 278.1
+Advancing game to time 278.2
+Advancing game to time 278.25
+Advancing game to time 278.3
+Advancing game to time 278.4
+Advancing game to time 278.5
+Advancing game to time 278.6
+Advancing game to time 278.7
+Advancing game to time 278.75
+Advancing game to time 278.8
+Advancing game to time 278.9
+Advancing game to time 279.0
+Advancing game to time 279.1
+Advancing game to time 279.2
+Advancing game to time 279.25
+Advancing game to time 279.3
+Advancing game to time 279.4
+Advancing game to time 279.5
+Advancing game to time 279.6
+Advancing game to time 279.7
+Advancing game to time 279.75
+Advancing game to time 279.8
+Advancing game to time 279.9
+Advancing game to time 280.0
+Advancing game to time 280.1
+Advancing game to time 280.2
+Advancing game to time 280.25
+Advancing game to time 280.3
+Advancing game to time 280.4
+Advancing game to time 280.5
+Advancing game to time 280.6
+Advancing game to time 280.7
+Advancing game to time 280.75
+Advancing game to time 280.8
+Advancing game to time 280.9
+Advancing game to time 281.0
+Advancing game to time 281.1
+Advancing game to time 281.2
+Advancing game to time 281.25
+Advancing game to time 281.3
+Advancing game to time 281.4
+Advancing game to time 281.5
+Advancing game to time 281.6
+Advancing game to time 281.7
+Advancing game to time 281.75
+Advancing game to time 281.8
+Advancing game to time 281.9
+Advancing game to time 282.0
+Awarded eco payment 853.0 at time 282.0
+Recorded cash and eco values (5288.0,853.0) at time 282.0
+Advancing game to time 282.1
+Advancing game to time 282.2
+Advancing game to time 282.25
+Advancing game to time 282.3
+Advancing game to time 282.375
+Awarded direct payment 300.0 at time 282.38
+Recorded cash and eco values (5588.0,853.0) at time 282.38
+We have 5588.0 cash! We can do the next buy, which costs 5540.0 and has a buffer of 0 and a minimum buy time of 282.38!
+Selling the boat farm at index 0
+Completed the buy operation! The buy queue now has 0 items remaining in it
+Recorded cash and eco values (48.0,853.0) at time 282.38
+Advanced game state to round 13
+The current time is 282.375
+The next round starts at time 302.375
+Our new cash and eco is given by (48.0,853.0) 
+
+MESSAGE FROM GameState.viewCashEcoHistory():
+Graphing history of cash and eco!
+Successfully generated graph! 
+

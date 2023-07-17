@@ -7,185 +7,65 @@ The game round start times are given by [0, 6.0, 30.5, 53.0, 76.5, 105.0, 131.5,
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 0.1
 Modified the eco send to Zero
-Recorded cash and eco values (650,250) at time 0.1
-----------
 Advancing game to time 0.2
-Recorded cash and eco values (650,250) at time 0.2
-----------
 Advancing game to time 0.3
-Recorded cash and eco values (650,250) at time 0.3
-----------
 Advancing game to time 0.4
-Recorded cash and eco values (650,250) at time 0.4
-----------
 Advancing game to time 0.5
-Recorded cash and eco values (650,250) at time 0.5
-----------
 Advancing game to time 0.6
-Recorded cash and eco values (650,250) at time 0.6
-----------
 Advancing game to time 0.7
-Recorded cash and eco values (650,250) at time 0.7
-----------
 Advancing game to time 0.8
-Recorded cash and eco values (650,250) at time 0.8
-----------
 Advancing game to time 0.9
-Recorded cash and eco values (650,250) at time 0.9
-----------
 Advancing game to time 1.0
-Recorded cash and eco values (650,250) at time 1.0
-----------
 Advancing game to time 1.1
-Recorded cash and eco values (650,250) at time 1.1
-----------
 Advancing game to time 1.2
-Recorded cash and eco values (650,250) at time 1.2
-----------
 Advancing game to time 1.3
-Recorded cash and eco values (650,250) at time 1.3
-----------
 Advancing game to time 1.4
-Recorded cash and eco values (650,250) at time 1.4
-----------
 Advancing game to time 1.5
-Recorded cash and eco values (650,250) at time 1.5
-----------
 Advancing game to time 1.6
-Recorded cash and eco values (650,250) at time 1.6
-----------
 Advancing game to time 1.7
-Recorded cash and eco values (650,250) at time 1.7
-----------
 Advancing game to time 1.8
-Recorded cash and eco values (650,250) at time 1.8
-----------
 Advancing game to time 1.9
-Recorded cash and eco values (650,250) at time 1.9
-----------
 Advancing game to time 2.0
-Recorded cash and eco values (650,250) at time 2.0
-----------
 Advancing game to time 2.1
-Recorded cash and eco values (650,250) at time 2.1
-----------
 Advancing game to time 2.2
-Recorded cash and eco values (650,250) at time 2.2
-----------
 Advancing game to time 2.3
-Recorded cash and eco values (650,250) at time 2.3
-----------
 Advancing game to time 2.4
-Recorded cash and eco values (650,250) at time 2.4
-----------
 Advancing game to time 2.5
-Recorded cash and eco values (650,250) at time 2.5
-----------
 Advancing game to time 2.6
-Recorded cash and eco values (650,250) at time 2.6
-----------
 Advancing game to time 2.7
-Recorded cash and eco values (650,250) at time 2.7
-----------
 Advancing game to time 2.8
-Recorded cash and eco values (650,250) at time 2.8
-----------
 Advancing game to time 2.9
-Recorded cash and eco values (650,250) at time 2.9
-----------
 Advancing game to time 3.0
-Recorded cash and eco values (650,250) at time 3.0
-----------
 Advancing game to time 3.1
-Recorded cash and eco values (650,250) at time 3.1
-----------
 Advancing game to time 3.2
-Recorded cash and eco values (650,250) at time 3.2
-----------
 Advancing game to time 3.3
-Recorded cash and eco values (650,250) at time 3.3
-----------
 Advancing game to time 3.4
-Recorded cash and eco values (650,250) at time 3.4
-----------
 Advancing game to time 3.5
-Recorded cash and eco values (650,250) at time 3.5
-----------
 Advancing game to time 3.6
-Recorded cash and eco values (650,250) at time 3.6
-----------
 Advancing game to time 3.7
-Recorded cash and eco values (650,250) at time 3.7
-----------
 Advancing game to time 3.8
-Recorded cash and eco values (650,250) at time 3.8
-----------
 Advancing game to time 3.9
-Recorded cash and eco values (650,250) at time 3.9
-----------
 Advancing game to time 4.0
-Recorded cash and eco values (650,250) at time 4.0
-----------
 Advancing game to time 4.1
-Recorded cash and eco values (650,250) at time 4.1
-----------
 Advancing game to time 4.2
-Recorded cash and eco values (650,250) at time 4.2
-----------
 Advancing game to time 4.3
-Recorded cash and eco values (650,250) at time 4.3
-----------
 Advancing game to time 4.35
-Recorded cash and eco values (650,250) at time 4.35
-----------
 Advancing game to time 4.4
-Recorded cash and eco values (650,250) at time 4.4
-----------
 Advancing game to time 4.5
-Recorded cash and eco values (650,250) at time 4.5
-----------
 Advancing game to time 4.6
-Recorded cash and eco values (650,250) at time 4.6
-----------
 Advancing game to time 4.7
-Recorded cash and eco values (650,250) at time 4.7
-----------
 Advancing game to time 4.8
-Recorded cash and eco values (650,250) at time 4.8
-----------
 Advancing game to time 4.9
-Recorded cash and eco values (650,250) at time 4.9
-----------
 Advancing game to time 5.0
-Recorded cash and eco values (650,250) at time 5.0
-----------
 Advancing game to time 5.1
-Recorded cash and eco values (650,250) at time 5.1
-----------
 Advancing game to time 5.2
-Recorded cash and eco values (650,250) at time 5.2
-----------
 Advancing game to time 5.3
-Recorded cash and eco values (650,250) at time 5.3
-----------
 Advancing game to time 5.4
-Recorded cash and eco values (650,250) at time 5.4
-----------
 Advancing game to time 5.5
-Recorded cash and eco values (650,250) at time 5.5
-----------
 Advancing game to time 5.6
-Recorded cash and eco values (650,250) at time 5.6
-----------
 Advancing game to time 5.7
-Recorded cash and eco values (650,250) at time 5.7
-----------
 Advancing game to time 5.8
-Recorded cash and eco values (650,250) at time 5.8
-----------
 Advancing game to time 5.9
-Recorded cash and eco values (650,250) at time 5.9
-----------
 Advancing game to time 6.0
 Awarded eco payment 250 at time 6.0
 Recorded cash and eco values (900,250) at time 6.0
@@ -193,854 +73,373 @@ We have 900 cash! We can do the next buy, which costs 605 and has a buffer of 0 
 Completed the buy operation! The buy queue now has 1 items remaining in it
 Recorded cash and eco values (295,250) at time 6.0
 Modified the eco send to Grouped Reds
-----------
 Advancing game to time 6.1
 Sent a set of Grouped Reds at time 6.0
 Currently, the send queue looks like this: 
 [6.8]
 Recorded cash and eco values (275,251.0) at time 6.1
-----------
 Advancing game to time 6.2
 Sent a set of Grouped Reds at time 6.15
 Currently, the send queue looks like this: 
 [6.8, 7.6]
 Recorded cash and eco values (255,252.0) at time 6.2
-----------
 Advancing game to time 6.3
 Sent a set of Grouped Reds at time 6.300000000000001
 Currently, the send queue looks like this: 
 [6.8, 7.6, 8.4]
 Recorded cash and eco values (235,253.0) at time 6.3
-----------
 Advancing game to time 6.4
-Recorded cash and eco values (235,253.0) at time 6.4
-----------
 Advancing game to time 6.5
 Sent a set of Grouped Reds at time 6.450000000000001
 Currently, the send queue looks like this: 
 [6.8, 7.6, 8.4, 9.200000000000001]
 Recorded cash and eco values (215,254.0) at time 6.5
-----------
 Advancing game to time 6.6
-Recorded cash and eco values (215,254.0) at time 6.6
-----------
 Advancing game to time 6.7
 Sent a set of Grouped Reds at time 6.600000000000001
 Currently, the send queue looks like this: 
 [6.8, 7.6, 8.4, 9.200000000000001, 10.000000000000002]
 Recorded cash and eco values (195,255.0) at time 6.7
-----------
 Advancing game to time 6.8
 Sent a set of Grouped Reds at time 6.750000000000002
 Currently, the send queue looks like this: 
 [6.8, 7.6, 8.4, 9.200000000000001, 10.000000000000002, 10.800000000000002]
 Recorded cash and eco values (175,256.0) at time 6.8
-----------
 Advancing game to time 6.9
-Recorded cash and eco values (175,256.0) at time 6.9
-----------
 Advancing game to time 7.0
 Sent a set of Grouped Reds at time 6.900000000000002
 Currently, the send queue looks like this: 
 [7.6, 8.4, 9.200000000000001, 10.000000000000002, 10.800000000000002, 11.600000000000003]
 Recorded cash and eco values (155,257.0) at time 7.0
-----------
 Advancing game to time 7.1
-Recorded cash and eco values (155,257.0) at time 7.1
-----------
 Advancing game to time 7.2
-Recorded cash and eco values (155,257.0) at time 7.2
-----------
 Advancing game to time 7.3
-Recorded cash and eco values (155,257.0) at time 7.3
-----------
 Advancing game to time 7.4
-Recorded cash and eco values (155,257.0) at time 7.4
-----------
 Advancing game to time 7.5
-Recorded cash and eco values (155,257.0) at time 7.5
-----------
 Advancing game to time 7.6
 Sent a set of Grouped Reds at time 7.6
 Currently, the send queue looks like this: 
 [8.4, 9.200000000000001, 10.000000000000002, 10.800000000000002, 11.600000000000003, 12.400000000000004]
 Recorded cash and eco values (135,258.0) at time 7.6
-----------
 Advancing game to time 7.7
-Recorded cash and eco values (135,258.0) at time 7.7
-----------
 Advancing game to time 7.8
-Recorded cash and eco values (135,258.0) at time 7.8
-----------
 Advancing game to time 7.9
-Recorded cash and eco values (135,258.0) at time 7.9
-----------
 Advancing game to time 8.0
-Recorded cash and eco values (135,258.0) at time 8.0
-----------
 Advancing game to time 8.1
-Recorded cash and eco values (135,258.0) at time 8.1
-----------
 Advancing game to time 8.15
-Recorded cash and eco values (135,258.0) at time 8.15
-----------
 Advancing game to time 8.2
-Recorded cash and eco values (135,258.0) at time 8.2
-----------
 Advancing game to time 8.3
-Recorded cash and eco values (135,258.0) at time 8.3
-----------
 Advancing game to time 8.4
 Sent a set of Grouped Reds at time 8.4
 Currently, the send queue looks like this: 
 [9.200000000000001, 10.000000000000002, 10.800000000000002, 11.600000000000003, 12.400000000000004, 13.200000000000005]
 Recorded cash and eco values (115,259.0) at time 8.4
-----------
 Advancing game to time 8.5
-Recorded cash and eco values (115,259.0) at time 8.5
-----------
 Advancing game to time 8.6
-Recorded cash and eco values (115,259.0) at time 8.6
-----------
 Advancing game to time 8.65
-Recorded cash and eco values (115,259.0) at time 8.65
-----------
 Advancing game to time 8.7
-Recorded cash and eco values (115,259.0) at time 8.7
-----------
 Advancing game to time 8.8
-Recorded cash and eco values (115,259.0) at time 8.8
-----------
 Advancing game to time 8.9
-Recorded cash and eco values (115,259.0) at time 8.9
-----------
 Advancing game to time 9.0
-Recorded cash and eco values (115,259.0) at time 9.0
-----------
 Advancing game to time 9.1
-Recorded cash and eco values (115,259.0) at time 9.1
-----------
 Advancing game to time 9.15
-Recorded cash and eco values (115,259.0) at time 9.15
-----------
 Advancing game to time 9.2
 Sent a set of Grouped Reds at time 9.200000000000001
 Currently, the send queue looks like this: 
 [10.000000000000002, 10.800000000000002, 11.600000000000003, 12.400000000000004, 13.200000000000005, 14.000000000000005]
 Recorded cash and eco values (95,260.0) at time 9.2
-----------
 Advancing game to time 9.3
-Recorded cash and eco values (95,260.0) at time 9.3
-----------
 Advancing game to time 9.4
-Recorded cash and eco values (95,260.0) at time 9.4
-----------
 Advancing game to time 9.5
-Recorded cash and eco values (95,260.0) at time 9.5
-----------
 Advancing game to time 9.6
-Recorded cash and eco values (95,260.0) at time 9.6
-----------
 Advancing game to time 9.7
-Recorded cash and eco values (95,260.0) at time 9.7
-----------
 Advancing game to time 9.8
-Recorded cash and eco values (95,260.0) at time 9.8
-----------
 Advancing game to time 9.9
-Recorded cash and eco values (95,260.0) at time 9.9
-----------
 Advancing game to time 10.0
-Recorded cash and eco values (95,260.0) at time 10.0
-----------
 Advancing game to time 10.1
 Sent a set of Grouped Reds at time 10.000000000000002
 Currently, the send queue looks like this: 
 [10.800000000000002, 11.600000000000003, 12.400000000000004, 13.200000000000005, 14.000000000000005, 14.800000000000006]
 Recorded cash and eco values (75,261.0) at time 10.1
-----------
 Advancing game to time 10.2
-Recorded cash and eco values (75,261.0) at time 10.2
-----------
 Advancing game to time 10.3
-Recorded cash and eco values (75,261.0) at time 10.3
-----------
 Advancing game to time 10.4
-Recorded cash and eco values (75,261.0) at time 10.4
-----------
 Advancing game to time 10.5
-Recorded cash and eco values (75,261.0) at time 10.5
-----------
 Advancing game to time 10.6
-Recorded cash and eco values (75,261.0) at time 10.6
-----------
 Advancing game to time 10.7
-Recorded cash and eco values (75,261.0) at time 10.7
-----------
 Advancing game to time 10.8
-Recorded cash and eco values (75,261.0) at time 10.8
-----------
 Advancing game to time 10.9
 Sent a set of Grouped Reds at time 10.800000000000002
 Currently, the send queue looks like this: 
 [11.600000000000003, 12.400000000000004, 13.200000000000005, 14.000000000000005, 14.800000000000006, 15.600000000000007]
 Recorded cash and eco values (55,262.0) at time 10.9
-----------
 Advancing game to time 11.0
-Recorded cash and eco values (55,262.0) at time 11.0
-----------
 Advancing game to time 11.1
-Recorded cash and eco values (55,262.0) at time 11.1
-----------
 Advancing game to time 11.2
-Recorded cash and eco values (55,262.0) at time 11.2
-----------
 Advancing game to time 11.3
-Recorded cash and eco values (55,262.0) at time 11.3
-----------
 Advancing game to time 11.4
-Recorded cash and eco values (55,262.0) at time 11.4
-----------
 Advancing game to time 11.5
-Recorded cash and eco values (55,262.0) at time 11.5
-----------
 Advancing game to time 11.6
-Recorded cash and eco values (55,262.0) at time 11.6
-----------
 Advancing game to time 11.7
 Sent a set of Grouped Reds at time 11.600000000000003
 Currently, the send queue looks like this: 
 [12.400000000000004, 13.200000000000005, 14.000000000000005, 14.800000000000006, 15.600000000000007, 16.400000000000006]
 Recorded cash and eco values (35,263.0) at time 11.7
-----------
 Advancing game to time 11.8
-Recorded cash and eco values (35,263.0) at time 11.8
-----------
 Advancing game to time 11.9
-Recorded cash and eco values (35,263.0) at time 11.9
-----------
 Advancing game to time 12.0
 Awarded eco payment 263.0 at time 12.0
 Recorded cash and eco values (298.0,263.0) at time 12.0
-Recorded cash and eco values (298.0,263.0) at time 12.0
-----------
 Advancing game to time 12.1
-Recorded cash and eco values (298.0,263.0) at time 12.1
-----------
 Advancing game to time 12.2
-Recorded cash and eco values (298.0,263.0) at time 12.2
-----------
 Advancing game to time 12.3
-Recorded cash and eco values (298.0,263.0) at time 12.3
-----------
 Advancing game to time 12.4
-Recorded cash and eco values (298.0,263.0) at time 12.4
-----------
 Advancing game to time 12.5
 Sent a set of Grouped Reds at time 12.400000000000004
 Currently, the send queue looks like this: 
 [13.200000000000005, 14.000000000000005, 14.800000000000006, 15.600000000000007, 16.400000000000006, 17.200000000000006]
 Recorded cash and eco values (278.0,264.0) at time 12.5
-----------
 Advancing game to time 12.6
-Recorded cash and eco values (278.0,264.0) at time 12.6
-----------
 Advancing game to time 12.7
-Recorded cash and eco values (278.0,264.0) at time 12.7
-----------
 Advancing game to time 12.8
-Recorded cash and eco values (278.0,264.0) at time 12.8
-----------
 Advancing game to time 12.9
-Recorded cash and eco values (278.0,264.0) at time 12.9
-----------
 Advancing game to time 13.0
-Recorded cash and eco values (278.0,264.0) at time 13.0
-----------
 Advancing game to time 13.1
-Recorded cash and eco values (278.0,264.0) at time 13.1
-----------
 Advancing game to time 13.2
-Recorded cash and eco values (278.0,264.0) at time 13.2
-----------
 Advancing game to time 13.3
 Sent a set of Grouped Reds at time 13.200000000000005
 Currently, the send queue looks like this: 
 [14.000000000000005, 14.800000000000006, 15.600000000000007, 16.400000000000006, 17.200000000000006, 18.000000000000007]
 Recorded cash and eco values (258.0,265.0) at time 13.3
-----------
 Advancing game to time 13.4
-Recorded cash and eco values (258.0,265.0) at time 13.4
-----------
 Advancing game to time 13.5
-Recorded cash and eco values (258.0,265.0) at time 13.5
-----------
 Advancing game to time 13.6
-Recorded cash and eco values (258.0,265.0) at time 13.6
-----------
 Advancing game to time 13.7
-Recorded cash and eco values (258.0,265.0) at time 13.7
-----------
 Advancing game to time 13.8
-Recorded cash and eco values (258.0,265.0) at time 13.8
-----------
 Advancing game to time 13.9
-Recorded cash and eco values (258.0,265.0) at time 13.9
-----------
 Advancing game to time 14.0
-Recorded cash and eco values (258.0,265.0) at time 14.0
-----------
 Advancing game to time 14.1
 Sent a set of Grouped Reds at time 14.000000000000005
 Currently, the send queue looks like this: 
 [14.800000000000006, 15.600000000000007, 16.400000000000006, 17.200000000000006, 18.000000000000007, 18.800000000000008]
 Recorded cash and eco values (238.0,266.0) at time 14.1
-----------
 Advancing game to time 14.2
-Recorded cash and eco values (238.0,266.0) at time 14.2
-----------
 Advancing game to time 14.3
-Recorded cash and eco values (238.0,266.0) at time 14.3
-----------
 Advancing game to time 14.4
-Recorded cash and eco values (238.0,266.0) at time 14.4
-----------
 Advancing game to time 14.5
-Recorded cash and eco values (238.0,266.0) at time 14.5
-----------
 Advancing game to time 14.6
-Recorded cash and eco values (238.0,266.0) at time 14.6
-----------
 Advancing game to time 14.7
-Recorded cash and eco values (238.0,266.0) at time 14.7
-----------
 Advancing game to time 14.8
-Recorded cash and eco values (238.0,266.0) at time 14.8
-----------
 Advancing game to time 14.9
 Sent a set of Grouped Reds at time 14.800000000000006
 Currently, the send queue looks like this: 
 [15.600000000000007, 16.400000000000006, 17.200000000000006, 18.000000000000007, 18.800000000000008, 19.60000000000001]
 Reached the limit on eco'ing for this send! Moving to the next send in the queue.
 Modified the eco send to Spaced Blues
-----------
 Advancing game to time 15.0
 Recorded cash and eco values (218.0,267.0) at time 15.0
-----------
 Advancing game to time 15.1
-Recorded cash and eco values (218.0,267.0) at time 15.1
-----------
 Advancing game to time 15.2
-Recorded cash and eco values (218.0,267.0) at time 15.2
-----------
 Advancing game to time 15.3
-Recorded cash and eco values (218.0,267.0) at time 15.3
-----------
 Advancing game to time 15.4
-Recorded cash and eco values (218.0,267.0) at time 15.4
-----------
 Advancing game to time 15.5
-Recorded cash and eco values (218.0,267.0) at time 15.5
-----------
 Advancing game to time 15.6
-Recorded cash and eco values (218.0,267.0) at time 15.6
-----------
 Advancing game to time 15.7
 Sent a set of Spaced Blues at time 15.600000000000007
 Currently, the send queue looks like this: 
 [16.400000000000006, 17.200000000000006, 18.000000000000007, 18.800000000000008, 19.60000000000001, 21.10000000000001]
 Recorded cash and eco values (203.0,267.8) at time 15.7
-----------
 Advancing game to time 15.8
-Recorded cash and eco values (203.0,267.8) at time 15.8
-----------
 Advancing game to time 15.9
-Recorded cash and eco values (203.0,267.8) at time 15.9
-----------
 Advancing game to time 16.0
-Recorded cash and eco values (203.0,267.8) at time 16.0
-----------
 Advancing game to time 16.1
-Recorded cash and eco values (203.0,267.8) at time 16.1
-----------
 Advancing game to time 16.2
-Recorded cash and eco values (203.0,267.8) at time 16.2
-----------
 Advancing game to time 16.25
-Recorded cash and eco values (203.0,267.8) at time 16.25
-----------
 Advancing game to time 16.3
-Recorded cash and eco values (203.0,267.8) at time 16.3
-----------
 Advancing game to time 16.4
-Recorded cash and eco values (203.0,267.8) at time 16.4
-----------
 Advancing game to time 16.5
 Sent a set of Spaced Blues at time 16.400000000000006
 Currently, the send queue looks like this: 
 [17.200000000000006, 18.000000000000007, 18.800000000000008, 19.60000000000001, 21.10000000000001, 22.60000000000001]
 Recorded cash and eco values (188.0,268.6) at time 16.5
-----------
 Advancing game to time 16.6
-Recorded cash and eco values (188.0,268.6) at time 16.6
-----------
 Advancing game to time 16.7
-Recorded cash and eco values (188.0,268.6) at time 16.7
-----------
 Advancing game to time 16.75
-Recorded cash and eco values (188.0,268.6) at time 16.75
-----------
 Advancing game to time 16.8
-Recorded cash and eco values (188.0,268.6) at time 16.8
-----------
 Advancing game to time 16.9
-Recorded cash and eco values (188.0,268.6) at time 16.9
-----------
 Advancing game to time 17.0
-Recorded cash and eco values (188.0,268.6) at time 17.0
-----------
 Advancing game to time 17.1
-Recorded cash and eco values (188.0,268.6) at time 17.1
-----------
 Advancing game to time 17.2
-Recorded cash and eco values (188.0,268.6) at time 17.2
-----------
 Advancing game to time 17.25
 Sent a set of Spaced Blues at time 17.200000000000006
 Currently, the send queue looks like this: 
 [18.000000000000007, 18.800000000000008, 19.60000000000001, 21.10000000000001, 22.60000000000001, 24.10000000000001]
 Recorded cash and eco values (173.0,269.4) at time 17.25
-----------
 Advancing game to time 17.3
-Recorded cash and eco values (173.0,269.4) at time 17.3
-----------
 Advancing game to time 17.4
-Recorded cash and eco values (173.0,269.4) at time 17.4
-----------
 Advancing game to time 17.5
-Recorded cash and eco values (173.0,269.4) at time 17.5
-----------
 Advancing game to time 17.6
-Recorded cash and eco values (173.0,269.4) at time 17.6
-----------
 Advancing game to time 17.7
-Recorded cash and eco values (173.0,269.4) at time 17.7
-----------
 Advancing game to time 17.75
-Recorded cash and eco values (173.0,269.4) at time 17.75
-----------
 Advancing game to time 17.8
-Recorded cash and eco values (173.0,269.4) at time 17.8
-----------
 Advancing game to time 17.9
-Recorded cash and eco values (173.0,269.4) at time 17.9
-----------
 Advancing game to time 18.0
 Awarded eco payment 269.4 at time 18.0
 Recorded cash and eco values (442.4,269.4) at time 18.0
-Recorded cash and eco values (442.4,269.4) at time 18.0
-----------
 Advancing game to time 18.1
 Sent a set of Spaced Blues at time 18.000000000000007
 Currently, the send queue looks like this: 
 [18.800000000000008, 19.60000000000001, 21.10000000000001, 22.60000000000001, 24.10000000000001, 25.60000000000001]
 Recorded cash and eco values (427.4,270.2) at time 18.1
-----------
 Advancing game to time 18.2
-Recorded cash and eco values (427.4,270.2) at time 18.2
-----------
 Advancing game to time 18.25
-Recorded cash and eco values (427.4,270.2) at time 18.25
-----------
 Advancing game to time 18.3
-Recorded cash and eco values (427.4,270.2) at time 18.3
-----------
 Advancing game to time 18.4
-Recorded cash and eco values (427.4,270.2) at time 18.4
-----------
 Advancing game to time 18.5
-Recorded cash and eco values (427.4,270.2) at time 18.5
-----------
 Advancing game to time 18.6
-Recorded cash and eco values (427.4,270.2) at time 18.6
-----------
 Advancing game to time 18.7
-Recorded cash and eco values (427.4,270.2) at time 18.7
-----------
 Advancing game to time 18.75
-Recorded cash and eco values (427.4,270.2) at time 18.75
-----------
 Advancing game to time 18.8
-Recorded cash and eco values (427.4,270.2) at time 18.8
-----------
 Advancing game to time 18.9
 Sent a set of Spaced Blues at time 18.800000000000008
 Currently, the send queue looks like this: 
 [19.60000000000001, 21.10000000000001, 22.60000000000001, 24.10000000000001, 25.60000000000001, 27.10000000000001]
 Recorded cash and eco values (412.4,271.0) at time 18.9
-----------
 Advancing game to time 19.0
-Recorded cash and eco values (412.4,271.0) at time 19.0
-----------
 Advancing game to time 19.1
-Recorded cash and eco values (412.4,271.0) at time 19.1
-----------
 Advancing game to time 19.2
-Recorded cash and eco values (412.4,271.0) at time 19.2
-----------
 Advancing game to time 19.3
-Recorded cash and eco values (412.4,271.0) at time 19.3
-----------
 Advancing game to time 19.4
-Recorded cash and eco values (412.4,271.0) at time 19.4
-----------
 Advancing game to time 19.5
-Recorded cash and eco values (412.4,271.0) at time 19.5
-----------
 Advancing game to time 19.6
-Recorded cash and eco values (412.4,271.0) at time 19.6
-----------
 Advancing game to time 19.7
 Sent a set of Spaced Blues at time 19.60000000000001
 Currently, the send queue looks like this: 
 [21.10000000000001, 22.60000000000001, 24.10000000000001, 25.60000000000001, 27.10000000000001, 28.60000000000001]
 Recorded cash and eco values (397.4,271.8) at time 19.7
-----------
 Advancing game to time 19.8
-Recorded cash and eco values (397.4,271.8) at time 19.8
-----------
 Advancing game to time 19.9
-Recorded cash and eco values (397.4,271.8) at time 19.9
-----------
 Advancing game to time 20.0
-Recorded cash and eco values (397.4,271.8) at time 20.0
-----------
 Advancing game to time 20.1
-Recorded cash and eco values (397.4,271.8) at time 20.1
-----------
 Advancing game to time 20.2
-Recorded cash and eco values (397.4,271.8) at time 20.2
-----------
 Advancing game to time 20.3
-Recorded cash and eco values (397.4,271.8) at time 20.3
-----------
 Advancing game to time 20.4
-Recorded cash and eco values (397.4,271.8) at time 20.4
-----------
 Advancing game to time 20.5
-Recorded cash and eco values (397.4,271.8) at time 20.5
-----------
 Advancing game to time 20.6
-Recorded cash and eco values (397.4,271.8) at time 20.6
-----------
 Advancing game to time 20.7
-Recorded cash and eco values (397.4,271.8) at time 20.7
-----------
 Advancing game to time 20.8
-Recorded cash and eco values (397.4,271.8) at time 20.8
-----------
 Advancing game to time 20.9
-Recorded cash and eco values (397.4,271.8) at time 20.9
-----------
 Advancing game to time 21.0
-Recorded cash and eco values (397.4,271.8) at time 21.0
-----------
 Advancing game to time 21.1
-Recorded cash and eco values (397.4,271.8) at time 21.1
-----------
 Advancing game to time 21.2
 Sent a set of Spaced Blues at time 21.10000000000001
 Currently, the send queue looks like this: 
 [22.60000000000001, 24.10000000000001, 25.60000000000001, 27.10000000000001, 28.60000000000001, 30.10000000000001]
 Reached the limit on eco'ing for this send! Moving to the next send in the queue.
 No more sends in the eco queue! Switching to the zero send.
-----------
 Advancing game to time 21.3
 Reached the limit on eco'ing for this send! Moving to the next send in the queue.
 Modified the eco send to Zero
-----------
 Advancing game to time 21.4
 Recorded cash and eco values (382.4,272.6) at time 21.4
-----------
 Advancing game to time 21.5
-Recorded cash and eco values (382.4,272.6) at time 21.5
-----------
 Advancing game to time 21.6
-Recorded cash and eco values (382.4,272.6) at time 21.6
-----------
 Advancing game to time 21.7
-Recorded cash and eco values (382.4,272.6) at time 21.7
-----------
 Advancing game to time 21.8
-Recorded cash and eco values (382.4,272.6) at time 21.8
-----------
 Advancing game to time 21.9
-Recorded cash and eco values (382.4,272.6) at time 21.9
-----------
 Advancing game to time 22.0
-Recorded cash and eco values (382.4,272.6) at time 22.0
-----------
 Advancing game to time 22.1
-Recorded cash and eco values (382.4,272.6) at time 22.1
-----------
 Advancing game to time 22.2
-Recorded cash and eco values (382.4,272.6) at time 22.2
-----------
 Advancing game to time 22.3
-Recorded cash and eco values (382.4,272.6) at time 22.3
-----------
 Advancing game to time 22.4
-Recorded cash and eco values (382.4,272.6) at time 22.4
-----------
 Advancing game to time 22.5
-Recorded cash and eco values (382.4,272.6) at time 22.5
-----------
 Advancing game to time 22.6
-Recorded cash and eco values (382.4,272.6) at time 22.6
-----------
 Advancing game to time 22.7
-Recorded cash and eco values (382.4,272.6) at time 22.7
-----------
 Advancing game to time 22.8
-Recorded cash and eco values (382.4,272.6) at time 22.8
-----------
 Advancing game to time 22.9
-Recorded cash and eco values (382.4,272.6) at time 22.9
-----------
 Advancing game to time 23.0
-Recorded cash and eco values (382.4,272.6) at time 23.0
-----------
 Advancing game to time 23.1
-Recorded cash and eco values (382.4,272.6) at time 23.1
-----------
 Advancing game to time 23.2
-Recorded cash and eco values (382.4,272.6) at time 23.2
-----------
 Advancing game to time 23.3
-Recorded cash and eco values (382.4,272.6) at time 23.3
-----------
 Advancing game to time 23.4
-Recorded cash and eco values (382.4,272.6) at time 23.4
-----------
 Advancing game to time 23.5
-Recorded cash and eco values (382.4,272.6) at time 23.5
-----------
 Advancing game to time 23.6
-Recorded cash and eco values (382.4,272.6) at time 23.6
-----------
 Advancing game to time 23.7
-Recorded cash and eco values (382.4,272.6) at time 23.7
-----------
 Advancing game to time 23.8
-Recorded cash and eco values (382.4,272.6) at time 23.8
-----------
 Advancing game to time 23.9
-Recorded cash and eco values (382.4,272.6) at time 23.9
-----------
 Advancing game to time 24.0
 Awarded eco payment 272.6 at time 24.0
 Recorded cash and eco values (655.0,272.6) at time 24.0
 We have 655.0 cash! We can do the next buy, which costs 650.0 and has a buffer of 0 and a minimum buy time of 18.25!
 Completed the buy operation! The buy queue now has 0 items remaining in it
 Recorded cash and eco values (5.0,272.6) at time 24.0
-----------
 Advancing game to time 24.1
-Recorded cash and eco values (5.0,272.6) at time 24.1
-----------
 Advancing game to time 24.2
-Recorded cash and eco values (5.0,272.6) at time 24.2
-----------
 Advancing game to time 24.3
-Recorded cash and eco values (5.0,272.6) at time 24.3
-----------
 Advancing game to time 24.4
-Recorded cash and eco values (5.0,272.6) at time 24.4
-----------
 Advancing game to time 24.5
-Recorded cash and eco values (5.0,272.6) at time 24.5
-----------
 Advancing game to time 24.6
-Recorded cash and eco values (5.0,272.6) at time 24.6
-----------
 Advancing game to time 24.7
-Recorded cash and eco values (5.0,272.6) at time 24.7
-----------
 Advancing game to time 24.8
-Recorded cash and eco values (5.0,272.6) at time 24.8
-----------
 Advancing game to time 24.9
-Recorded cash and eco values (5.0,272.6) at time 24.9
-----------
 Advancing game to time 25.0
-Recorded cash and eco values (5.0,272.6) at time 25.0
-----------
 Advancing game to time 25.1
-Recorded cash and eco values (5.0,272.6) at time 25.1
-----------
 Advancing game to time 25.2
-Recorded cash and eco values (5.0,272.6) at time 25.2
-----------
 Advancing game to time 25.3
-Recorded cash and eco values (5.0,272.6) at time 25.3
-----------
 Advancing game to time 25.4
-Recorded cash and eco values (5.0,272.6) at time 25.4
-----------
 Advancing game to time 25.5
-Recorded cash and eco values (5.0,272.6) at time 25.5
-----------
 Advancing game to time 25.6
-Recorded cash and eco values (5.0,272.6) at time 25.6
-----------
 Advancing game to time 25.7
-Recorded cash and eco values (5.0,272.6) at time 25.7
-----------
 Advancing game to time 25.8
-Recorded cash and eco values (5.0,272.6) at time 25.8
-----------
 Advancing game to time 25.9
-Recorded cash and eco values (5.0,272.6) at time 25.9
-----------
 Advancing game to time 26.0
-Recorded cash and eco values (5.0,272.6) at time 26.0
-----------
 Advancing game to time 26.1
-Recorded cash and eco values (5.0,272.6) at time 26.1
-----------
 Advancing game to time 26.2
-Recorded cash and eco values (5.0,272.6) at time 26.2
-----------
 Advancing game to time 26.3
-Recorded cash and eco values (5.0,272.6) at time 26.3
-----------
 Advancing game to time 26.4
-Recorded cash and eco values (5.0,272.6) at time 26.4
-----------
 Advancing game to time 26.5
-Recorded cash and eco values (5.0,272.6) at time 26.5
-----------
 Advancing game to time 26.6
-Recorded cash and eco values (5.0,272.6) at time 26.6
-----------
 Advancing game to time 26.7
-Recorded cash and eco values (5.0,272.6) at time 26.7
-----------
 Advancing game to time 26.8
-Recorded cash and eco values (5.0,272.6) at time 26.8
-----------
 Advancing game to time 26.9
-Recorded cash and eco values (5.0,272.6) at time 26.9
-----------
 Advancing game to time 27.0
-Recorded cash and eco values (5.0,272.6) at time 27.0
-----------
 Advancing game to time 27.1
-Recorded cash and eco values (5.0,272.6) at time 27.1
-----------
 Advancing game to time 27.2
-Recorded cash and eco values (5.0,272.6) at time 27.2
-----------
 Advancing game to time 27.3
-Recorded cash and eco values (5.0,272.6) at time 27.3
-----------
 Advancing game to time 27.4
-Recorded cash and eco values (5.0,272.6) at time 27.4
-----------
 Advancing game to time 27.5
-Recorded cash and eco values (5.0,272.6) at time 27.5
-----------
 Advancing game to time 27.6
-Recorded cash and eco values (5.0,272.6) at time 27.6
-----------
 Advancing game to time 27.7
-Recorded cash and eco values (5.0,272.6) at time 27.7
-----------
 Advancing game to time 27.8
-Recorded cash and eco values (5.0,272.6) at time 27.8
-----------
 Advancing game to time 27.9
-Recorded cash and eco values (5.0,272.6) at time 27.9
-----------
 Advancing game to time 28.0
-Recorded cash and eco values (5.0,272.6) at time 28.0
-----------
 Advancing game to time 28.1
-Recorded cash and eco values (5.0,272.6) at time 28.1
-----------
 Advancing game to time 28.2
-Recorded cash and eco values (5.0,272.6) at time 28.2
-----------
 Advancing game to time 28.3
-Recorded cash and eco values (5.0,272.6) at time 28.3
-----------
 Advancing game to time 28.4
-Recorded cash and eco values (5.0,272.6) at time 28.4
-----------
 Advancing game to time 28.5
-Recorded cash and eco values (5.0,272.6) at time 28.5
-----------
 Advancing game to time 28.6
-Recorded cash and eco values (5.0,272.6) at time 28.6
-----------
 Advancing game to time 28.7
-Recorded cash and eco values (5.0,272.6) at time 28.7
-----------
 Advancing game to time 28.8
-Recorded cash and eco values (5.0,272.6) at time 28.8
-----------
 Advancing game to time 28.9
-Recorded cash and eco values (5.0,272.6) at time 28.9
-----------
 Advancing game to time 29.0
-Recorded cash and eco values (5.0,272.6) at time 29.0
-----------
 Advancing game to time 29.1
-Recorded cash and eco values (5.0,272.6) at time 29.1
-----------
 Advancing game to time 29.2
-Recorded cash and eco values (5.0,272.6) at time 29.2
-----------
 Advancing game to time 29.3
-Recorded cash and eco values (5.0,272.6) at time 29.3
-----------
 Advancing game to time 29.4
-Recorded cash and eco values (5.0,272.6) at time 29.4
-----------
 Advancing game to time 29.5
-Recorded cash and eco values (5.0,272.6) at time 29.5
-----------
 Advancing game to time 29.6
-Recorded cash and eco values (5.0,272.6) at time 29.6
-----------
 Advancing game to time 29.7
-Recorded cash and eco values (5.0,272.6) at time 29.7
-----------
 Advancing game to time 29.8
-Recorded cash and eco values (5.0,272.6) at time 29.8
-----------
 Advancing game to time 29.9
-Recorded cash and eco values (5.0,272.6) at time 29.9
-----------
 Advancing game to time 30.0
 Awarded eco payment 272.6 at time 30.0
 Recorded cash and eco values (277.6,272.6) at time 30.0
-Recorded cash and eco values (277.6,272.6) at time 30.0
-----------
 Advancing game to time 30.1
-Recorded cash and eco values (277.6,272.6) at time 30.1
-----------
 Advancing game to time 30.2
-Recorded cash and eco values (277.6,272.6) at time 30.2
-----------
 Advancing game to time 30.3
-Recorded cash and eco values (277.6,272.6) at time 30.3
-----------
 Advancing game to time 30.4
-Recorded cash and eco values (277.6,272.6) at time 30.4
-----------
 Advancing game to time 30.5
-Recorded cash and eco values (277.6,272.6) at time 30.5
-----------
 Advanced game state to round 2
 The current time is 30.5
 The next round starts at time 53.0

@@ -160,6 +160,15 @@ class GameState():
             self.special_poperations = None
             self.heli_key = 0
 
+        # Next, overclocks!
+        overclock_info = initial_state.get('Overclocks')
+        if overclock_info is not None:
+            self.overclocks = overclock_info['Overclocks']
+            self.ultraboost_index = overclock_info['Ultraboost Index']
+        else:
+            self.overclocks = []
+            self.ultraboost_index = None
+
         #~~~~~~~~~~~~
         #HERO SUPPORT
         #~~~~~~~~~~~~
@@ -250,7 +259,7 @@ class GameState():
         self.logs.append("The current game time is %s seconds"%(self.current_time))
         self.logs.append("The game round start times are given by %s \n"%(self.rounds.round_starts))
         
-    def viewCashEcoHistory(self, dim = (15,18), display_farms = True, font_size = 12):
+    def viewCashEcoHistory(self, dim = (12,6), display_farms = True, font_size = 12):
         self.logs.append("MESSAGE FROM GameState.viewCashEcoHistory():")
         self.logs.append("Graphing history of cash and eco!")
 
@@ -565,7 +574,7 @@ class GameState():
             target_time = self.rounds.getTimeFromRound(target_round)
 
         # Append messages to the event messages list showing when each round starts
-        given_round = self.current_round
+        given_round = np.floor(self.rounds.getRoundFromTime(self.current_time, get_frac_part = True) + 1)
         end_round = self.rounds.getRoundFromTime(target_time)
         while given_round <= end_round:
             self.event_messages.append({
@@ -583,7 +592,7 @@ class GameState():
             intermediate_time = min(max(np.floor(self.current_time/interval + 1)*interval,self.current_time + interval/2),target_time)
             self.logs.append("Advancing game to time %s"%(np.round(intermediate_time,3)))
             self.advanceGameState(target_time = intermediate_time)
-            self.logs.append("----------")
+            #self.logs.append("----------")
 
         # Sort the messages in self.event_messages so that they are listed chronologically
         self.event_messages = sorted(self.event_messages, key=lambda x: x['Time']) 
@@ -718,11 +727,11 @@ class GameState():
                     self.logs.append("The bank at index %s reached max capacity! Withdrawing money"%(key))
                 self.logs.append("The bank's new account value is %s"%(farm.account_value))
             elif payout['Payout Type'] == 'Bank Interest':
-                #Identify the bank that we're paying and deposit $400, then give 20% interest
+                #Identify the bank that we're paying and deposit the start of round bank bonus, then give interest
                 key = payout['Index']
                 farm = self.farms[key]
-                farm.account_value += 400
-                farm.account_value *= 1.2
+                farm.account_value += farm.payout(payout['Time'], bank_interest = True)
+                farm.account_value *= farm_globals['Start of Round Bank Multiplier']
                 self.logs.append("Awarded bank interest at time %s to the farm at index %s"%(np.round(payout['Time'],2), key))
                 if farm.account_value >= farm.max_account_value:
                     farm.account_value = 0
@@ -794,7 +803,10 @@ class GameState():
             self.time_states.append(payout['Time'])
             self.cash_states.append(self.cash)
             self.eco_states.append(self.eco)
-            self.logs.append("Recorded cash and eco values (%s,%s) at time %s"%(np.round(self.cash,2),np.round(self.eco,2),np.round(payout['Time'],2)))
+
+            #If either the cash or eco values changed since last time, record this in the log
+            if len(self.cash_states) == 1 or self.cash_states[-1] != self.cash_states[-2] or len(self.eco_states) == 1 or self.eco_states[-1] != self.eco_states[-2]:
+                self.logs.append("Recorded cash and eco values (%s,%s) at time %s"%(np.round(self.cash,2),np.round(self.eco,2),np.round(payout['Time'],2)))
             
             # NOTE: The last payment is a "ghost" payment to be awarded at the target time.
             self.current_time = payout['Time']
@@ -1000,14 +1012,14 @@ class GameState():
                                         'Time': farm_time,
                                         'Payout Type': 'Bank Payment',
                                         'Index': key,
-                                        'Payout': farm.payout_amount,
+                                        'Payout': farm.payout(farm_time),
                                         'Source': 'Farm'
                                     }
                                 elif i == 0 and farm.upgrades[2] == 5 and self.current_round + self.inc > farm_purchase_round:
                                     payout_entry = {
                                         'Time': farm_time,
                                         'Payout Type': 'Direct',
-                                        'Payout': farm.payout_amount + farm_globals['Monkey Wall Street Bonus'],
+                                        'Payout': farm.payout(farm_time, mws_bonus = True),
                                         'Source': 'Farm',
                                         'Index': key
                                     }
@@ -1015,7 +1027,7 @@ class GameState():
                                     payout_entry = {
                                         'Time': farm_time,
                                         'Payout Type': 'Direct',
-                                        'Payout': farm.payout_amount*farm_globals['Banana Central Multplier'],
+                                        'Payout': farm.payout(farm_time, brf_buff = True),
                                         'Source': 'Farm',
                                         'Index': key
                                     }
@@ -1023,7 +1035,7 @@ class GameState():
                                     payout_entry = {
                                         'Time': farm_time,
                                         'Payout Type': 'Direct',
-                                        'Payout': farm.payout_amount,
+                                        'Payout': farm.payout(farm_time),
                                         'Source': 'Farm',
                                         'Index': key
                                     }
@@ -1204,6 +1216,12 @@ class GameState():
                             self.warnings.append(len(self.logs)-1)
                             self.valid_action_flag = False
                             break
+
+                    #If the dict_obj is a Overclock use, force self.min_buy_time to be least the use time of the Overclock
+                    if dict_obj['Type'] == 'Use Overclock':
+                        ind = dict_obj['Engineer Index']
+                        if self.overclocks[ind]['Use Time'] is not None and self.overclocks[ind]['Use Time'] > self.min_buy_time:
+                            self.min_buy_time = self.overclocks[ind]['Use Time']
                     
                 # self.logs.append("Determined the minimum buy time of the next purchase to be %s"%(self.min_buy_time))
                         
@@ -1325,10 +1343,7 @@ class GameState():
                 h_new_cash, h_new_loan = impact(h_cash, h_loan, -1*farm_globals['Farm Cost'])
             else:
                 self.logs.append("Purchasing farm!")
-                farm_info = {
-                    'Purchase Time': self.current_time,
-                    'Upgrades': [0,0,0]
-                }
+                farm_info = initFarm(purchase_time = payout['Time'], upgrades = [0,0,0])
                 farm = MonkeyFarm(farm_info)
                 self.farms.append(farm)
 
@@ -1359,45 +1374,23 @@ class GameState():
                 self.logs.append("Upgrading path %s of the farm at index %s"%(path, ind))
                 farm = self.farms[ind]
 
-                #For expense tracking
-                farm.expenses += farm_upgrades_costs[path][farm.upgrades[path]]
+                farm.upgrade(path, payout['Time'])
 
-                farm.upgrades[path] += 1
-
-                #Update the payout information of the farm
-                farm.payout_amount = farm_payout_values[tuple(farm.upgrades)][0]
-                farm.payout_frequency = farm_payout_values[tuple(farm.upgrades)][1]
-                
-                #So that we can accurately track payments for the farm
-                farm.purchase_time = payout['Time']
-                
-                #Update the sellback value of the farm
-                farm.sell_value = farm_sellback_values[tuple(farm.upgrades)]
-                
                 self.logs.append("The new farm has upgrades (%s,%s,%s)"%(farm.upgrades[0],farm.upgrades[1],farm.upgrades[2]))
-                
-                #If the resulting farm is a Monkey Bank, indicate as such and set its max account value appropriately
-                if farm.upgrades[1] >= 3 and path == 1:
-                    farm.bank = True
-                    farm.max_account_value = farm_bank_capacity[farm.upgrades[1]]
-                    self.logs.append("The new farm is a bank! The bank's max capacity is %s"%(farm.max_account_value))
-                    
-                #If the resulting farm is an IMF Loan or Monkeyopolis, determine the earliest time the loan can be used
-                if farm.upgrades[1] > 3 and path == 1:
-                    farm.min_use_time = payout['Time'] + farm_globals['Monkeynomics Initial Cooldown']
                 
                 #If the resulting farm is a Banana Central, activate the BRF buff, giving them 25% more payment amount
                 if farm.upgrades[0] == 5 and path == 0:
                     self.logs.append("The new farm is a Banana Central!")
                     self.T5_exists[0] = True
                     
-                #If the resutling farm is a Monkeyopolis, mark the x5x_exists flag as true to prevent the user from trying to have multiple of them
-                if farm.upgrades[1] == 5:
+                #If the resutling farm is a Monkeynomics, mark the x5x_exists flag as true to prevent the user from trying to have multiple of them
+                if farm.upgrades[1] == 5 and path == 1:
                     self.T5_exists[1] = True
                 
                 #If the resulting farm is a MWS, mark the MWS_exists flag as true to prevent the user from trying to have multiple of them.
-                if farm.upgrades[2] == 5:
+                if farm.upgrades[2] == 5 and path == 2:
                     self.T5_exists[2] = True
+                
         elif dict_obj['Type'] == 'Sell Farm':
             if stage == 'check':
                 ind = dict_obj['Index']
@@ -1437,6 +1430,7 @@ class GameState():
                 #Mark the farm's sell time. The code checks whether this value is a number or not before trying to compute farm payments
                 farm.sell_time = payout['Time']
         elif dict_obj['Type'] == 'Sell All Farms':
+            withdraw = dict_obj['Withdraw']
             if stage == 'check':
                 for farm in self.farms:
                     if farm.sell_time is None:
@@ -1719,7 +1713,79 @@ class GameState():
                 self.jericho_steal_time = dict_obj['Minimum Buy Time']
                 self.jericho_steal_amount = dict_obj['Steal Amount']
                 self.cash, self.loan = impact(self.cash,self.loan, dict_obj['Steal Amount']) #If this line is not here, the sim would fail to capture the jeri payment that occurs immediately upon activation.
+        # OVERCLOCK RELATED MATTERS
+        elif dict_obj['Type'] == 'Buy Overclock':
+            if stage == 'check':
+                h_cash, h_loan = impact(h_cash, h_loan, -1*engi_globals['Overclock Cost'])
+            else:
+                self.logs.append("Purchasing overclock!")
+                self.overclocks.append({
+                    'Initial Purchase Time': payout['Time'],
+                    'Use Time': payout['Time'],
+                    'Sell Time': None
+                })
+        elif dict_obj['Type'] == 'Use Overclock':
+            ind = dict_obj['Engineer Index']
+            overclock = self.overclocks[ind]
+
+            if stage == 'check':
+                if overclock['Sell Time'] is not None:
+                    self.logs.append("WARNING! Tried to use an overclock that was already sold! Aborting buy queue!")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+            else:
+                # Overclock the farm
+                farm = self.farms[dict_obj['Farm Index']]
+                farm.overclock(payout['Time'])
+
+                # Update the use time of the overclock
+                if self.ultraboost_index is not None and ind == self.ultraboost_index:
+                    #The overclock is in fact an ultraboost
+                    overclock['Use Time'] = payout['Time'] + engi_globals['Ultraboost Usage Cooldown']
+                else:
+                    #The overclock is just a normal overclock
+                    overclock['Use Time'] = payout['Time'] + engi_globals['Overclock Usage Cooldown']
+
+
+        elif dict_obj['Type'] == 'Sell Overclock':
+            ind = dict_obj['Index']
+            overclock = self.overclocks[ind]
+            if stage == 'check':
+                #Check whether the overclock is actually on screen before selling it:
+                if overclock['Sell Time'] is None:
+                    if self.ultraboost_index is not None and ind == self.ultraboost_index:
+                        sell_value = game_globals['Sellback Value']*(engi_globals['Overclock Cost'] + engi_globals['Ultraboost Upgrade Cost'])
+                    else:
+                        sell_value = game_globals['Sellback Value']*engi_globals['Overclock Cost']
+                    h_cash, h_loan = impact(h_cash, h_loan, sell_value)
+                else:
+                    self.logs.append("WARNING! Tried to sell an overclock that is not on screen! Aborting buy queue")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+            else:
+                ind = dict_obj['Index']
+                overclock = self.overclocks[ind]
+                overclock['Sell Time'] = payout['Time']
+
+                #If the overclock being sold is an ultraboost, update the ultraboost index
+                if self.ultraboost_index is not None and ind == self.ultraboost_index:
+                    self.ultraboost_index = None
                 
+                self.logs.append("Selling the overclock at index %s"%(ind))
+        elif dict_obj['Type'] == 'Buy Ultraboost':
+            if stage == 'check':
+                #Do not allow the ultraboost to be purchased if there is already an ultraboost on screen.
+                if self.ultraboost_index is not None:
+                    self.logs.append("WARNING! There is already an Ultraboost on screen! Aborting buy queue")
+                    self.warnings.append(len(self.logs)-1)
+                    self.valid_action_flag = False
+                h_cash, h_loan = impact(h_cash, h_loan, engi_globals['Ultraboost Upgrade Cost'])
+            else:
+                ind = dict_obj['Index']
+                overclock = self.overclocks[ind]
+                overclock['Use Time'] = payout['Time'] #The Ultraboost ability is battle ready.
+                self.ultraboost_index = ind
+
         if stage == 'check':
             return h_cash, h_loan
         elif stage == 'process':
@@ -1766,6 +1832,12 @@ class MonkeyFarm():
         if self.upgrades[1] >= 4:
             self.min_use_time = self.purchase_time + farm_globals['Monkeynomics Initial Cooldown']
 
+        ###################
+        #OVERCLOCK FEATURES
+        ###################
+
+        self.overclock_expiration_time = initial_state.get('Overclock Expiration Time')
+
         ##################
         # REVENUE TRACKING
         ##################
@@ -1780,131 +1852,59 @@ class MonkeyFarm():
         # In general this is necessary because of the impact of Loans on revenue generation.
         self.h_revenue = 0
 
+    def payout(self, time, mws_bonus = False, brf_buff = False, bank_interest = False):
+        #This method should be used over calling self.payout_amount directly because it automatically accounts for overclock & MWS buffs
 
-
-# %% [markdown]
-# The goal of a simulator like this is to compare different strategies and see which one is better. To this end, we define a function capable of simulating multiple game states at once and comparing them.
-
-# %%
-def compareStrategies(initial_state, eco_queues, buy_queues, target_time = None, target_round = 30, display_farms = True, font_size = 12):
-    
-    # Log file in case we need to check outputs
-    logs = []
-    
-    # Given an common initial state and N different tuples of (eco_queue, buy_queue), 
-    # Build N different instances of GameState, advance them to the target_time (or target round if specified)
-    # Finally, graph their cash and eco histories
-    
-    # To begin, let's form the GameState objects we will use in our analysis!
-    game_states = []
-    farm_incomes = []
-    N = len(eco_queues)
-    for i in range(N):
-        init = initial_state
-        init['Eco Queue'] = eco_queues[i]
-        init['Buy Queue'] = buy_queues[i]
-        #print(init['Supply Drops'])
-        game_states.append(GameState(init))
-    
-    #########################
-    # GRAPH CASH & ECO STATES
-    #########################
-    
-    #Now intialize the graphs, one for cash and one for eco
-    fig, ax = plt.subplots(2)
-    fig.set_size_inches(8,12)
-    
-    #For each GameState object, advance the time, and then graph the cash and eco history
-    i = 0
-    cash_min = None
-    if target_round is not None:
-        #Use the target round instead of the target time if specified
-        target_time = game_states[0].rounds.getTimeFromRound(target_round)
-
-    for game_state in game_states:
-        logs.append("Simulating Game State %s"%(i))
-        game_state.fastForward(target_time = target_time)
-        
-        ax[0].plot(game_state.time_states, game_state.cash_states, label = "Cash of Game State %s"%(i))
-        ax[1].plot(game_state.time_states, game_state.eco_states, label = "Eco of Game State %s"%(i))
-        
-        farm_income = 0
-        for key in game_state.farms.keys():
-            #WARNING: This is not a great measure to go by if the player has farms
-            farm = game_state.farms[key]
-            if game_state.T5_exists[0] == True and farm.upgrades[0] == 4:
-                #If the farm is a BRF being buffed by Banana Central
-                farm_income += 1.25*farm.payout_amount*farm.payout_frequency
-            elif farm.upgrades[2] == 5:
-                #If the farm is a Monkey Wall Street
-                farm_income += 10000 + farm.payout_amount*farm.payout_frequency
-            elif farm.upgrades[1] >= 3:
-                #This is an *estimate* based on the impact of one round of bank payments
-                farm_income = farm_income + 1.2*(farm.payout_amount*farm.payout_frequency + 400)
-            else:
-                farm_income += farm.payout_amount*farm.payout_frequency
-        farm_incomes.append(farm_income)
-            
-        
-        if cash_min is None:
-            cash_min = min(game_state.cash_states)
-            eco_min = min(game_state.eco_states)
-            
-            cash_max = max(game_state.cash_states)
-            eco_max = max(game_state.eco_states)
-            
+        if bank_interest:
+            payout_amount = farm_globals['Start of Round Bank Payment']
         else:
-            candidate_cash_min = min(game_state.cash_states)
-            candidate_eco_min = min(game_state.eco_states)
-            
-            if candidate_cash_min < cash_min:
-                cash_min = candidate_cash_min
-            if candidate_eco_min < eco_min:
-                eco_min = candidate_eco_min
-            
-            candidate_cash_max = max(game_state.cash_states)
-            candidate_eco_max = max(game_state.eco_states)
-            
-            if candidate_cash_max > cash_max:
-                cash_max = candidate_cash_max
-            if candidate_eco_max > eco_max:
-                eco_max = candidate_eco_max
+            payout_amount = self.payout_amount
         
-        i += 1
+        # First, apply the MWS bonus if relevant:
+        # Note that the code which ensures the MWS bonus is paid out at only the correct times is handled by the GameState class, not the MonkeyFarm class!
+        if mws_bonus and self.upgrades[2] >= 5:
+            payout_amount += farm_globals['Monkey Wall Street Bonus']
+        
+        # Next, if the farm is being buffed by overclock, apply the overclock buff to the payout:
+        # NOTE: The start of round bank interest payment is NOT eligible to be overclock-buffed.
+        if self.overclock_expiration_time is not None and time < self.overclock_expiration_time and not bank_interest:
+            payout_amount *= engi_globals['Overclock Payout Modifier']
 
-    ####################
-    # GRAPH ROUND STARTS
-    ####################
-    
-    # Also, graph when the rounds start
-    # DEVELOPER'S NOTE: We are dealing with multiple game states where the stall factor in each game state may change
-    # For now, I will just take the round starts from game state 0, but I'll have to adjust this later on down the road.
-    
-    round_to_graph = initial_state['Rounds'].getRoundFromTime(game_states[0].time_states[0]) + 1
-    while initial_state['Rounds'].round_starts[round_to_graph] <= game_states[0].time_states[-1]:
-        logs.append("Graphing round %s, which starts at time %s"%(str(round_to_graph),str(initial_state['Rounds'].round_starts[round_to_graph])))
-        ax[0].plot([initial_state['Rounds'].round_starts[round_to_graph], initial_state['Rounds'].round_starts[round_to_graph]],[cash_min, cash_max], label = "R" + str(round_to_graph) + " start")
-        ax[1].plot([initial_state['Rounds'].round_starts[round_to_graph], initial_state['Rounds'].round_starts[round_to_graph]],[eco_min, eco_max], label = "R" + str(round_to_graph) + " start")
-        round_to_graph += 1
+        # Finally, if the farm is being buffed by Banana Central, apply that buff to this farm's payment
+        if brf_buff and self.upgrades[0] == 4:
+            payout_amount *= farm_globals['Banana Central Multiplier']
 
-    #################
-    # DISPLAY VISUALS
-    #################
+        # Finally, return the payout!
+        return payout_amount
     
-    ax[0].set_title("Cash vs Time")
-    ax[1].set_title("Eco vs Time")
+    def upgrade(self, path, time):
+        #For expense tracking
+        self.expenses += farm_upgrades_costs[path][self.upgrades[path]]
 
-    ax[0].set_ylabel("Cash")
-    ax[1].set_ylabel("Eco")
+        self.upgrades[path] += 1
 
-    ax[1].set_xlabel("Time (seconds)")
+        #Update the payout information of the farm
+        self.payout_amount = farm_payout_values[tuple(self.upgrades)][0]
+        self.payout_frequency = farm_payout_values[tuple(self.upgrades)][1]
+        
+        #So that we can accurately track payments for the farm
+        self.purchase_time = time
+        
+        #Update the sellback value of the farm
+        self.sell_value = farm_sellback_values[tuple(self.upgrades)]
+        
+        #If the resulting farm is a Monkey Bank, indicate as such and set its max account value appropriately
+        if self.upgrades[1] >= 3 and path == 1:
+            self.bank = True
+            self.max_account_value = farm_bank_capacity[self.upgrades[1]]
+            # self.logs.append("The new farm is a bank! The bank's max capacity is %s"%(farm.max_account_value))
+            
+        #If the resulting farm is an IMF Loan or Monkeyopolis, determine the earliest time the loan can be used
+        if self.upgrades[1] > 3 and path == 1:
+            self.min_use_time = time + farm_globals['Monkeynomics Initial Cooldown']
 
-    ax[0].legend(loc='upper left', fontsize = font_size)
-    ax[1].legend(loc='upper left', fontsize = font_size)
-    
-    d = {'Game State': [i for i in range(N)], 'Farm Income': [farm_incomes[i] for i in range(N)]}
-    df = pd.DataFrame(data=d)
-    
-    fig.tight_layout()
-    display(df)
-    logs.append("Successfully generated graph! \n")
+    def overclock(self, time):
+        #What tier of farm do we have right now?
+        tier = max(self.upgrades[0],self.upgrades[1], self.upgrades[2])
+        uptime = 105 - 15*tier
+        self.overclock_expiration_time = time + uptime
