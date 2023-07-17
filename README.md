@@ -40,6 +40,13 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (July 14, 2023 - v1.2.0)
+   - Support for engineer overclocks has been added. You can now buy and sell overclocks and use them on farms. See the tutorial file on farms for an example on how to use this new feature.
+   - New argument `mode` for the `Rounds` class. You can initialize the Rounds class with one of four different modes: Stall Factor, Stall Times, Manual, and Theoretical Stall Factor. The details for initialization of the `Rounds` class is briefly explained in the tutorial files.
+   - New argument `max_send_time` for eco sends. This is essentially the same thing as putting a `time` argument on the next eco send but this second syntax option may prove easier to use than `time` in some cases.
+   - All actions now support the `buffer` argument.
+   - New methods `upgrade` and `payout` and `overclock` for the `MonkeyFarm` class. Previously, the handling of modifiers to farm payouts (such as the BRF buff given by Banana Central) was handled by the the `GameState` class. To improve readability for potential contributors *and* better accomodate for the overclock feature, this responsibility is handled by the `MonkeyFarm` class itself.
+   - Fixed an oversight which caused some actions to not work because they did not have a 'Message' parameter.
 - (July 13, 2023 - v1.1.1)
    - Fixed a bug which caused the sim to behave incorrectly when an eco send was specified but a queue wasn't.
    - You can now specify stall times directly when initializing the `Rounds` class, by doing something like `Rounds([(0,6), (1,8.5), (2,10.5), (3,7), (7,8)], mode = 'Stall Times')`. In a later update I will flesh out the tutorial files so that it is more clear how to operate this new mode.
