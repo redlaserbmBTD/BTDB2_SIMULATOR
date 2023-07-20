@@ -6,7 +6,16 @@ The `b2sim` Python library is an extensive feature-rich library for simulating f
 
 Here's a 20 minute video which walks through installing and operating the code:
 
-[![](https://markdown-videos.vercel.app/youtube/{kvGkgIr-ts8})]([https://youtu.be/{video_id}](https://www.youtube.com/watch?v=kvGkgIr-ts8))
+<center>
+ <iframe width="560" 
+         height="315" 
+         src="https://www.youtube.com/watch?v=kvGkgIr-ts8" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen>
+ </iframe>
+</center>
 
 
 ## For noobs: 
