@@ -685,8 +685,11 @@ class GameState():
                 # In rare cases, we may break from the eco queue on exactly same time that we are slated to receive a payment
                 # In that rare case, we need to award the payment for that time and check the buy queue to ensure that we do not "skip" over anything essential.
                 if self.current_time < payout['Time']:
+                    self.logs.append("The break time does not occur exactly when a payout is scheduled.")
+                    target_time = self.current_time
                     break
                 else:
+                    self.logs.append("The break time does occur exactly when a payout is scheduled.")
                     made_purchase = True
 
             
@@ -1352,33 +1355,65 @@ class GameState():
                 farm.revenue = 0
                 farm.expenses = farm_globals['Farm Cost']
         elif dict_obj['Type'] == 'Upgrade Farm':
+            # There are two ways this function can be used. 
+            ind = dict_obj['Index']
+            path = dict_obj['Path']
+            upgrades = dict_obj['Upgrades']
+            farm = self.farms[ind]
+
             if stage == 'check':
-                ind = dict_obj['Index']
-                path = dict_obj['Path']
-                farm = self.farms[ind]
                 #Do not upgrade a farm that has already been sold!
                 if farm.sell_time is not None:
                     self.logs.append("WARNING! Tried to upgrade a farm that was already sold! Aborting buy queue!")
                     self.warnings.append(len(self.logs)-1)
                     self.valid_action_flag = False
+                
+                #If the user specified for a specific set of upgrades, use that argument
+                if upgrades is not None:
+                    #Prevent the user from upgrading to a T5 farm if that T5 is already in play
+                    for i in range(2):
+                        if upgrades[i] == 5 and self.T5_exists[i]:
+                            self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
+                            self.valid_action_flag = False
 
-                #The following code prevents from the player from having multiple T5's in play
-                if farm.upgrades[path]+1 == 5 and self.T5_exists[path] == True:
-                    self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
-                    self.warnings.append(len(self.logs)-1)
-                    self.valid_action_flag = False
-                h_cash, h_loan = impact(h_cash, h_loan, -1*farm_upgrades_costs[path][farm.upgrades[path]])
+                    #For each of top path, middle path, and bottom path, determine the number of upgrades that need to be made
+                    #Then, determine the cost of those upgrades
+                    upgrades_costs = 0
+                    for i in range(2):
+                        #How many times do we need to upgrade the path?
+                        times_to_upgrade = upgrades[i] - farm.upgrades[i]
+                        if times_to_upgrade < 0:
+                            self.logs.append("WARNING! Tried to downgrade a farm! Aborting buy queue!")
+                            self.warnings.append(len(self.logs)-1)
+                            self.valid_action_flag = False
+
+                        #How much do those upgrades cost?
+                        for j in range(times_to_upgrade):
+                            upgrades_costs += farm_upgrades_costs[i][farm.upgrades[i] + j]
+
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*upgrades_costs)
+
+                elif path is not None:
+                    #If the user specifies a specfic path, 
+                    #Prevent the user from upgrading to a T5 farm if that T5 is already in play
+                    if farm.upgrades[path]+1 == 5 and self.T5_exists[path] == True:
+                        self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
+                        self.warnings.append(len(self.logs)-1)
+                        self.valid_action_flag = False
+                    
+                    h_cash, h_loan = impact(h_cash, h_loan, -1*farm_upgrades_costs[path][farm.upgrades[path]])
             else:
-                ind = dict_obj['Index']
-                path = dict_obj['Path']
-                
-                self.logs.append("Upgrading path %s of the farm at index %s"%(path, ind))
-                farm = self.farms[ind]
+                if upgrades is not None:
+                    farm.upgrade(payout['Time'], upgrades, mode = 'Upgrades')
+                    self.logs.append("Upgraded the farm at index %s to (%s,%s,%s)"%(ind,upgrades[0],upgrades[1],upgrades[2]))
 
-                farm.upgrade(path, payout['Time'])
+                elif path is not None:
+                    self.logs.append("Upgrading path %s of the farm at index %s"%(path, ind))
+                    farm.upgrade(payout['Time'], path, mode = 'Path')
 
-                self.logs.append("The new farm has upgrades (%s,%s,%s)"%(farm.upgrades[0],farm.upgrades[1],farm.upgrades[2]))
-                
+                    self.logs.append("Upgraded the farm at index %s to (%s,%s,%s)"%(ind, farm.upgrades[0],farm.upgrades[1],farm.upgrades[2]))
+                    
                 #If the resulting farm is a Banana Central, activate the BRF buff, giving them 25% more payment amount
                 if farm.upgrades[0] == 5 and path == 0:
                     self.logs.append("The new farm is a Banana Central!")
@@ -1878,31 +1913,49 @@ class MonkeyFarm():
         # Finally, return the payout!
         return payout_amount
     
-    def upgrade(self, path, time):
-        #For expense tracking
-        self.expenses += farm_upgrades_costs[path][self.upgrades[path]]
+    def upgrade(self, time, info, mode = 'Upgrades'):
+        # There are two modes for upgrading:
+        # 'Upgrades': info is a tuple saying the new upgrades for the farm
+        # 'Path': info is an integer 0,1, or 2 specifying the path to upgrade
+        
+        # In order to perform the initilization checks when a farm is upgraded to x3x or higher, 
+        # I need to have both the new and old farm upgrade information on hand at any given point. 
+        upgrades = copy.deepcopy(self.upgrades)
 
-        self.upgrades[path] += 1
+        if mode == 'Upgrades':
+            #Expense tracking
+            self.expenses = farm_total_cost_values[info]
+            #Update the upgrade info
+            for i in range(3):
+                upgrades[i] = info[i]
+
+        elif mode == 'Path':
+            #Expense tracking
+            self.expenses += farm_upgrades_costs[info][self.upgrades[info]]
+            #Update the upgrade info
+            upgrades[info] += 1
 
         #Update the payout information of the farm
-        self.payout_amount = farm_payout_values[tuple(self.upgrades)][0]
-        self.payout_frequency = farm_payout_values[tuple(self.upgrades)][1]
+        self.payout_amount = farm_payout_values[tuple(upgrades)][0]
+        self.payout_frequency = farm_payout_values[tuple(upgrades)][1]
         
         #So that we can accurately track payments for the farm
         self.purchase_time = time
         
         #Update the sellback value of the farm
-        self.sell_value = farm_sellback_values[tuple(self.upgrades)]
+        self.sell_value = farm_sellback_values[tuple(upgrades)]
         
         #If the resulting farm is a Monkey Bank, indicate as such and set its max account value appropriately
-        if self.upgrades[1] >= 3 and path == 1:
+        if upgrades[1] >= 3 and self.upgrades[1] < 3:
             self.bank = True
             self.max_account_value = farm_bank_capacity[self.upgrades[1]]
             # self.logs.append("The new farm is a bank! The bank's max capacity is %s"%(farm.max_account_value))
             
         #If the resulting farm is an IMF Loan or Monkeyopolis, determine the earliest time the loan can be used
-        if self.upgrades[1] > 3 and path == 1:
+        if upgrades[1] >= 4 and self.upgrades[1] < 4:
             self.min_use_time = time + farm_globals['Monkeynomics Initial Cooldown']
+
+        self.upgrades = upgrades
 
     def overclock(self, time):
         #What tier of farm do we have right now?

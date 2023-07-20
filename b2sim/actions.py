@@ -11,11 +11,13 @@ def buyFarm(upgrades = (0,0,0), buffer = 0, min_buy_time = 0):
         'Message': 'Buy Farm'
     }
 
-def upgradeFarm(index, path, buffer = 0, min_buy_time = 0):
+def upgradeFarm(index, path = None, upgrades = None, buffer = 0, min_buy_time = 0):
+    #Note, upgrades should be a tuple. 
     return {
         'Type': 'Upgrade Farm',
         'Index': index,
         'Path': path,
+        'Upgrades': upgrades,
         'Buffer': buffer,
         'Minimum Buy Time': min_buy_time,
         'Message': 'Upgrade farm %s at path %s'%(index, path) 
