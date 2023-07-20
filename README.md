@@ -4,7 +4,13 @@ The `b2sim` Python library is an extensive feature-rich library for simulating f
 
 # Running the Code
 
-## For noobs:
+Here's a 20 minute video which walks through installing and operating the code:
+
+[![](https://markdown-videos.vercel.app/youtube/{kvGkgIr-ts8})]([https://youtu.be/{video_id}](https://www.youtube.com/watch?v=kvGkgIr-ts8))
+
+
+## For noobs: 
+
 1. Install python on your computer here: https://www.anaconda.com/download/
 2. Open the anaconda prompt and type `pip install b2sim`.
 3. Your installation of anaconda came with a program called "Jupyter Notebook", which allows you to create and edit .ipynb files which you will use to operate the code. Open Jupyter, and create a new .ipynb file wherever you wish on your computer.
