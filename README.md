@@ -40,6 +40,9 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (July 18, 2023 - v1.2.2)
+   - You can now use `upgradeFarm(index, upgrades = (i,j,k))` to specify the sim to perform multiple upgrades on a farm simultaneously. This along with the enhanced functionality of `buyFarm` introduced in 1.2.1 resolves a longstanding issue where the sim would behave incorrectly under certain circumstances if asked to perform multiple farm upgrades simultaneously.
+   - Fixed a bug which caused the simulator to sometimes skip over payments if a break condition for the current eco send (such as eco'ing to a certain amount of eco) was triggered.
 - (July 17, 2023 - v1.2.1)
    - Corrected an oversight which caused the simulator to think buying a farm was 0 dollars. Oops.
    - You can now use `buyFarm` to buy more than just 000 farms. Use the `upgrades` argument along with a tuple for the upgrades you want on your farm.
