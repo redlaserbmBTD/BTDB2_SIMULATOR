@@ -40,6 +40,9 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (July 18, 2023 - v1.2.3)
+   - The definition of the `MonkeyFarm` class has been moved to a new file `farms.py`.
+   - The code should not malfunction if a farm is initialized either with upgrades using `[i,j,k]` or `(i,j,k)`.
 - (July 18, 2023 - v1.2.2)
    - You can now use `upgradeFarm(index, upgrades = (i,j,k))` to specify the sim to perform multiple upgrades on a farm simultaneously. This along with the enhanced functionality of `buyFarm` introduced in 1.2.1 resolves a longstanding issue where the sim would behave incorrectly under certain circumstances if asked to perform multiple farm upgrades simultaneously.
    - Fixed a bug which caused the simulator to sometimes skip over payments if a break condition for the current eco send (such as eco'ing to a certain amount of eco) was triggered.
