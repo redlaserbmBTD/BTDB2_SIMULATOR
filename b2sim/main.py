@@ -465,7 +465,7 @@ class GameState():
                                 self.checkProperties()
                                 break_flag = True
             
-            if len(self.eco_queue) > 0 and (self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time):
+            if len(self.eco_queue) > 0 and ((self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time) or self.eco_queue[0]['Time'] is None):
                 self.changeEcoSend()
             else:
                 future_flag = True

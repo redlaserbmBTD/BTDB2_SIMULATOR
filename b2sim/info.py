@@ -133,7 +133,7 @@ game_globals = {
 
 farm_globals = {
     'Farm Cost': 1000,
-    'Farm Upgrade Costs': [[550,550,2600,16000,66000],[200,700,5100,7500,45000],[250,200,2800,13000,46000]],
+    'Farm Upgrade Costs': [[550,550,2600,16000,66000],[200,700,4600,8000,45000],[250,200,2800,13000,46000]],
     'Farm Bank Capacity': [0,0,0,14000,20000,30000],
     'IMF Loan Amount': 20000,
     'IMF Initial Cooldown': 20,
