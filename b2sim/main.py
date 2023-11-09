@@ -1584,10 +1584,10 @@ class GameState():
                 boat_farm['Payout'] = boat_payout_values[boat_farm['Upgrade'] - 3]
                 
                 #So that we can accurately track payments for the boat farm
-                boat['Purchase Time'] = payout['Time']
+                boat_farm['Purchase Time'] = payout['Time']
                 
                 #Update the sellback value of the boat farm
-                boat['Sell Value'] = boat_sell_values[boat_farm['Upgrade'] - 3]
+                boat_farm['Sell Value'] = boat_sell_values[boat_farm['Upgrade'] - 3]
 
                 #If the new boat farm is a Trade Empire, indicate as such
                 if boat_farm['Upgrade'] == 5:

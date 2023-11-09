@@ -1,0 +1,1160 @@
+MESSAGE FROM GameState.__init__(): 
+Initialized Game State!
+The current game round is 6
+The current game time is 133.45 seconds
+The game round start times are given by [0, 6.0, 29.849999999999998, 52.849999999999994, 76.94999999999999, 106.14999999999999, 133.45, 156.85, 180.35, 201.6, 222.29999999999998, 233.85, 248.4, 266.15, 284.95, 297.05, 313.35, 346.40000000000003, 385.65000000000003, 411.8, 448.15000000000003, 456.95000000000005, 473.50000000000006, 503.75000000000006, 516.3000000000001, 576.7500000000001, 614.4000000000001, 643.1500000000001, 668.3000000000001, 692.5500000000001, 739.3000000000001, 749.1, 803.843999, 819.8239990000001, 849.0239990000001, 863.9156590000001, 911.5076570000001, 939.6556570000001, 1028.490657, 1093.8614870000001, 1190.3114870000002, 1202.1114870000001, 1244.2414870000002, 1275.6914870000003, 1303.1414870000003, 1324.1414870000003, 1342.4914870000002, 1383.9414870000003, 1405.3914870000003, 1443.9614890000003, 1480.4114890000003, 1491.3114890000004] 
+
+MESSAGE FROM GameState.fastForward: 
+Advancing game to time 133.5
+Modified the eco send to Spaced Whites
+Sent a set of Spaced Whites at time 133.45
+Currently, the send queue looks like this: 
+[134.29]
+Recorded cash and eco values (170,451.5) at time 133.5
+Advancing game to time 133.6
+Sent a set of Spaced Whites at time 133.6
+Currently, the send queue looks like this: 
+[134.29, 135.13]
+Recorded cash and eco values (140,453.0) at time 133.6
+Advancing game to time 133.65
+Advancing game to time 133.7
+Advancing game to time 133.8
+Sent a set of Spaced Whites at time 133.75
+Currently, the send queue looks like this: 
+[134.29, 135.13, 135.97]
+Recorded cash and eco values (110,454.5) at time 133.8
+Advancing game to time 133.9
+Sent a set of Spaced Whites at time 133.9
+Currently, the send queue looks like this: 
+[134.29, 135.13, 135.97, 136.81]
+Recorded cash and eco values (80,456.0) at time 133.9
+Advancing game to time 134.0
+Advancing game to time 134.1
+Sent a set of Spaced Whites at time 134.05
+Currently, the send queue looks like this: 
+[134.29, 135.13, 135.97, 136.81, 137.65]
+Recorded cash and eco values (50,457.5) at time 134.1
+Advancing game to time 134.15
+Advancing game to time 134.2
+Sent a set of Spaced Whites at time 134.20000000000002
+Currently, the send queue looks like this: 
+[134.29, 135.13, 135.97, 136.81, 137.65, 138.49]
+Recorded cash and eco values (20,459.0) at time 134.2
+Advancing game to time 134.3
+Advancing game to time 134.4
+Advancing game to time 134.5
+Advancing game to time 134.6
+Advancing game to time 134.65
+Advancing game to time 134.7
+Advancing game to time 134.8
+Advancing game to time 134.9
+Advancing game to time 135.0
+Advancing game to time 135.1
+Advancing game to time 135.15
+Advancing game to time 135.2
+Advancing game to time 135.3
+Advancing game to time 135.4
+Advancing game to time 135.5
+Advancing game to time 135.6
+Advancing game to time 135.65
+Advancing game to time 135.7
+Advancing game to time 135.8
+Advancing game to time 135.9
+Awarded direct payment 40 at time 135.88
+Recorded cash and eco values (60,459.0) at time 135.88
+Advancing game to time 136.0
+Sent a set of Spaced Whites at time 135.9535714285714
+Currently, the send queue looks like this: 
+[135.97, 136.81, 137.65, 138.49, 139.33]
+Recorded cash and eco values (30,460.5) at time 136.0
+Advancing game to time 136.1
+Advancing game to time 136.15
+Sent a set of Spaced Whites at time 136.1035714285714
+Currently, the send queue looks like this: 
+[136.81, 137.65, 138.49, 139.33, 140.17000000000002]
+Recorded cash and eco values (0,462.0) at time 136.15
+Advancing game to time 136.2
+Advancing game to time 136.3
+Advancing game to time 136.4
+Advancing game to time 136.5
+Advancing game to time 136.6
+Advancing game to time 136.65
+Advancing game to time 136.7
+Advancing game to time 136.8
+Advancing game to time 136.9
+Advancing game to time 137.0
+Advancing game to time 137.1
+Advancing game to time 137.15
+Advancing game to time 137.2
+Advancing game to time 137.3
+Advancing game to time 137.4
+Advancing game to time 137.5
+Advancing game to time 137.6
+Advancing game to time 137.65
+Advancing game to time 137.7
+Advancing game to time 137.8
+Advancing game to time 137.9
+Advancing game to time 138.0
+Awarded eco payment 462.0 at time 138.0
+Recorded cash and eco values (462.0,462.0) at time 138.0
+Advancing game to time 138.1
+Sent a set of Spaced Whites at time 138.075
+Currently, the send queue looks like this: 
+[138.49, 139.33, 140.17000000000002, 141.01000000000002]
+Recorded cash and eco values (432.0,463.5) at time 138.1
+Advancing game to time 138.15
+Advancing game to time 138.2
+Advancing game to time 138.3
+Sent a set of Spaced Whites at time 138.225
+Currently, the send queue looks like this: 
+[138.49, 139.33, 140.17000000000002, 141.01000000000002, 141.85000000000002]
+Recorded cash and eco values (402.0,465.0) at time 138.3
+Advancing game to time 138.4
+Awarded direct payment 40 at time 138.31
+Recorded cash and eco values (442.0,465.0) at time 138.31
+Sent a set of Spaced Whites at time 138.375
+Currently, the send queue looks like this: 
+[138.49, 139.33, 140.17000000000002, 141.01000000000002, 141.85000000000002, 142.69000000000003]
+Recorded cash and eco values (412.0,466.5) at time 138.4
+Advancing game to time 138.5
+Advancing game to time 138.6
+Sent a set of Spaced Whites at time 138.525
+Currently, the send queue looks like this: 
+[139.33, 140.17000000000002, 141.01000000000002, 141.85000000000002, 142.69000000000003, 143.53000000000003]
+Recorded cash and eco values (382.0,468.0) at time 138.6
+Advancing game to time 138.65
+Advancing game to time 138.7
+Advancing game to time 138.8
+Advancing game to time 138.9
+Advancing game to time 139.0
+Advancing game to time 139.1
+Advancing game to time 139.15
+Advancing game to time 139.2
+Advancing game to time 139.3
+Advancing game to time 139.4
+Sent a set of Spaced Whites at time 139.33
+Currently, the send queue looks like this: 
+[140.17000000000002, 141.01000000000002, 141.85000000000002, 142.69000000000003, 143.53000000000003, 144.37000000000003]
+Recorded cash and eco values (352.0,469.5) at time 139.4
+Advancing game to time 139.5
+Advancing game to time 139.6
+Advancing game to time 139.65
+Advancing game to time 139.7
+Advancing game to time 139.8
+Advancing game to time 139.9
+Advancing game to time 140.0
+Advancing game to time 140.1
+Advancing game to time 140.15
+Advancing game to time 140.2
+Sent a set of Spaced Whites at time 140.17000000000002
+Currently, the send queue looks like this: 
+[141.01000000000002, 141.85000000000002, 142.69000000000003, 143.53000000000003, 144.37000000000003, 145.21000000000004]
+Recorded cash and eco values (322.0,471.0) at time 140.2
+Advancing game to time 140.3
+Advancing game to time 140.4
+Advancing game to time 140.5
+Advancing game to time 140.6
+Advancing game to time 140.65
+Advancing game to time 140.7
+Advancing game to time 140.8
+Awarded direct payment 40 at time 140.74
+Recorded cash and eco values (362.0,471.0) at time 140.74
+Advancing game to time 140.9
+Advancing game to time 141.0
+Advancing game to time 141.1
+Sent a set of Spaced Whites at time 141.01000000000002
+Currently, the send queue looks like this: 
+[141.85000000000002, 142.69000000000003, 143.53000000000003, 144.37000000000003, 145.21000000000004, 146.05000000000004]
+Recorded cash and eco values (332.0,472.5) at time 141.1
+Advancing game to time 141.15
+Advancing game to time 141.2
+Advancing game to time 141.3
+Advancing game to time 141.4
+Advancing game to time 141.5
+Advancing game to time 141.6
+Advancing game to time 141.65
+Advancing game to time 141.7
+Advancing game to time 141.8
+Advancing game to time 141.9
+Sent a set of Spaced Whites at time 141.85000000000002
+Currently, the send queue looks like this: 
+[142.69000000000003, 143.53000000000003, 144.37000000000003, 145.21000000000004, 146.05000000000004, 146.89000000000004]
+Recorded cash and eco values (302.0,474.0) at time 141.9
+Advancing game to time 142.0
+Advancing game to time 142.1
+Advancing game to time 142.15
+Advancing game to time 142.2
+Advancing game to time 142.3
+Advancing game to time 142.4
+Advancing game to time 142.5
+Advancing game to time 142.6
+Advancing game to time 142.65
+Advancing game to time 142.7
+Sent a set of Spaced Whites at time 142.69000000000003
+Currently, the send queue looks like this: 
+[143.53000000000003, 144.37000000000003, 145.21000000000004, 146.05000000000004, 146.89000000000004, 147.73000000000005]
+Recorded cash and eco values (272.0,475.5) at time 142.7
+Advancing game to time 142.8
+Advancing game to time 142.9
+Advancing game to time 143.0
+Advancing game to time 143.1
+Advancing game to time 143.15
+Advancing game to time 143.2
+Awarded direct payment 40 at time 143.16
+Recorded cash and eco values (312.0,475.5) at time 143.16
+Advancing game to time 143.3
+Advancing game to time 143.4
+Advancing game to time 143.5
+Advancing game to time 143.6
+Sent a set of Spaced Whites at time 143.53000000000003
+Currently, the send queue looks like this: 
+[144.37000000000003, 145.21000000000004, 146.05000000000004, 146.89000000000004, 147.73000000000005, 148.57000000000005]
+Recorded cash and eco values (282.0,477.0) at time 143.6
+Advancing game to time 143.65
+Advancing game to time 143.7
+Advancing game to time 143.8
+Advancing game to time 143.9
+Advancing game to time 144.0
+Awarded eco payment 477.0 at time 144.0
+Recorded cash and eco values (759.0,477.0) at time 144.0
+Advancing game to time 144.1
+Advancing game to time 144.15
+Advancing game to time 144.2
+Advancing game to time 144.3
+Advancing game to time 144.4
+Sent a set of Spaced Whites at time 144.37000000000003
+Currently, the send queue looks like this: 
+[145.21000000000004, 146.05000000000004, 146.89000000000004, 147.73000000000005, 148.57000000000005, 149.41000000000005]
+Recorded cash and eco values (729.0,478.5) at time 144.4
+Advancing game to time 144.5
+Advancing game to time 144.6
+Advancing game to time 144.65
+Advancing game to time 144.7
+Advancing game to time 144.8
+Advancing game to time 144.9
+Advancing game to time 145.0
+Advancing game to time 145.1
+Advancing game to time 145.15
+Advancing game to time 145.2
+Advancing game to time 145.3
+Sent a set of Spaced Whites at time 145.21000000000004
+Currently, the send queue looks like this: 
+[146.05000000000004, 146.89000000000004, 147.73000000000005, 148.57000000000005, 149.41000000000005, 150.25000000000006]
+Recorded cash and eco values (699.0,480.0) at time 145.3
+Advancing game to time 145.4
+Advancing game to time 145.5
+Advancing game to time 145.6
+Awarded direct payment 40 at time 145.59
+Recorded cash and eco values (739.0,480.0) at time 145.59
+Advancing game to time 145.65
+Advancing game to time 145.7
+Advancing game to time 145.8
+Advancing game to time 145.9
+Advancing game to time 146.0
+Advancing game to time 146.1
+Sent a set of Spaced Whites at time 146.05000000000004
+Currently, the send queue looks like this: 
+[146.89000000000004, 147.73000000000005, 148.57000000000005, 149.41000000000005, 150.25000000000006, 151.09000000000006]
+Recorded cash and eco values (709.0,481.5) at time 146.1
+Advancing game to time 146.15
+Advancing game to time 146.2
+Advancing game to time 146.3
+Advancing game to time 146.4
+Advancing game to time 146.5
+Advancing game to time 146.6
+Advancing game to time 146.65
+Advancing game to time 146.7
+Advancing game to time 146.8
+Advancing game to time 146.9
+Sent a set of Spaced Whites at time 146.89000000000004
+Currently, the send queue looks like this: 
+[147.73000000000005, 148.57000000000005, 149.41000000000005, 150.25000000000006, 151.09000000000006, 151.93000000000006]
+Recorded cash and eco values (679.0,483.0) at time 146.9
+Advancing game to time 147.0
+Advancing game to time 147.1
+Advancing game to time 147.15
+Advancing game to time 147.2
+Advancing game to time 147.3
+Advancing game to time 147.4
+Advancing game to time 147.5
+Advancing game to time 147.6
+Advancing game to time 147.65
+Advancing game to time 147.7
+Advancing game to time 147.8
+Sent a set of Spaced Whites at time 147.73000000000005
+Currently, the send queue looks like this: 
+[148.57000000000005, 149.41000000000005, 150.25000000000006, 151.09000000000006, 151.93000000000006, 152.77000000000007]
+Recorded cash and eco values (649.0,484.5) at time 147.8
+Advancing game to time 147.9
+Advancing game to time 148.0
+Advancing game to time 148.1
+Awarded direct payment 40 at time 148.02
+Recorded cash and eco values (689.0,484.5) at time 148.02
+Advancing game to time 148.15
+Advancing game to time 148.2
+Advancing game to time 148.3
+Advancing game to time 148.4
+Advancing game to time 148.5
+Advancing game to time 148.6
+Sent a set of Spaced Whites at time 148.57000000000005
+Currently, the send queue looks like this: 
+[149.41000000000005, 150.25000000000006, 151.09000000000006, 151.93000000000006, 152.77000000000007, 153.61000000000007]
+Recorded cash and eco values (659.0,486.0) at time 148.6
+Advancing game to time 148.65
+Advancing game to time 148.7
+Advancing game to time 148.8
+Advancing game to time 148.9
+Advancing game to time 149.0
+Advancing game to time 149.1
+Advancing game to time 149.15
+Advancing game to time 149.2
+Advancing game to time 149.3
+Advancing game to time 149.4
+Advancing game to time 149.5
+Sent a set of Spaced Whites at time 149.41000000000005
+Currently, the send queue looks like this: 
+[150.25000000000006, 151.09000000000006, 151.93000000000006, 152.77000000000007, 153.61000000000007, 154.45000000000007]
+Recorded cash and eco values (629.0,487.5) at time 149.5
+Advancing game to time 149.6
+Advancing game to time 149.65
+Advancing game to time 149.7
+Advancing game to time 149.8
+Advancing game to time 149.9
+Advancing game to time 150.0
+Awarded eco payment 487.5 at time 150.0
+Recorded cash and eco values (1116.5,487.5) at time 150.0
+We have 1116.5 cash! We can do the next buy, which costs 900.0 and has a buffer of 0 and a minimum buy time of 133.45!
+Completed the buy operation! The buy queue now has 2 items remaining in it
+Recorded cash and eco values (216.5,487.5) at time 150.0
+Advancing game to time 150.1
+Advancing game to time 150.15
+Advancing game to time 150.2
+Advancing game to time 150.3
+Sent a set of Spaced Whites at time 150.25000000000006
+Currently, the send queue looks like this: 
+[151.09000000000006, 151.93000000000006, 152.77000000000007, 153.61000000000007, 154.45000000000007, 155.29000000000008]
+Recorded cash and eco values (186.5,489.0) at time 150.3
+Advancing game to time 150.4
+Advancing game to time 150.5
+Advancing game to time 150.6
+Advancing game to time 150.65
+Advancing game to time 150.7
+Advancing game to time 150.8
+Advancing game to time 150.9
+Advancing game to time 151.0
+Advancing game to time 151.1
+Sent a set of Spaced Whites at time 151.09000000000006
+Currently, the send queue looks like this: 
+[151.93000000000006, 152.77000000000007, 153.61000000000007, 154.45000000000007, 155.29000000000008, 156.13000000000008]
+Recorded cash and eco values (156.5,490.5) at time 151.1
+Advancing game to time 151.15
+Advancing game to time 151.2
+Advancing game to time 151.3
+Advancing game to time 151.4
+Advancing game to time 151.5
+Advancing game to time 151.6
+Advancing game to time 151.65
+Advancing game to time 151.7
+Advancing game to time 151.8
+Advancing game to time 151.9
+Advancing game to time 152.0
+Sent a set of Spaced Whites at time 151.93000000000006
+Currently, the send queue looks like this: 
+[152.77000000000007, 153.61000000000007, 154.45000000000007, 155.29000000000008, 156.13000000000008, 156.97000000000008]
+Recorded cash and eco values (126.5,492.0) at time 152.0
+Advancing game to time 152.1
+Advancing game to time 152.15
+Advancing game to time 152.2
+Advancing game to time 152.3
+Advancing game to time 152.4
+Advancing game to time 152.5
+Advancing game to time 152.6
+Advancing game to time 152.65
+Advancing game to time 152.7
+Advancing game to time 152.8
+Sent a set of Spaced Whites at time 152.77000000000007
+Currently, the send queue looks like this: 
+[153.61000000000007, 154.45000000000007, 155.29000000000008, 156.13000000000008, 156.97000000000008, 157.8100000000001]
+Recorded cash and eco values (96.5,493.5) at time 152.8
+Advancing game to time 152.9
+Advancing game to time 153.0
+Advancing game to time 153.1
+Advancing game to time 153.15
+Advancing game to time 153.2
+Advancing game to time 153.3
+Advancing game to time 153.4
+Advancing game to time 153.5
+Advancing game to time 153.6
+Advancing game to time 153.7
+Sent a set of Spaced Whites at time 153.61000000000007
+Currently, the send queue looks like this: 
+[154.45000000000007, 155.29000000000008, 156.13000000000008, 156.97000000000008, 157.8100000000001, 158.6500000000001]
+Recorded cash and eco values (66.5,495.0) at time 153.7
+Advancing game to time 153.8
+Advancing game to time 153.9
+Advancing game to time 154.0
+Advancing game to time 154.1
+Advancing game to time 154.2
+Advancing game to time 154.3
+Advancing game to time 154.4
+Advancing game to time 154.5
+Sent a set of Spaced Whites at time 154.45000000000007
+Currently, the send queue looks like this: 
+[155.29000000000008, 156.13000000000008, 156.97000000000008, 157.8100000000001, 158.6500000000001, 159.4900000000001]
+Recorded cash and eco values (36.5,496.5) at time 154.5
+Advancing game to time 154.6
+Advancing game to time 154.7
+Advancing game to time 154.8
+Advancing game to time 154.9
+Advancing game to time 155.0
+Advancing game to time 155.1
+Advancing game to time 155.2
+Advancing game to time 155.3
+Sent a set of Spaced Whites at time 155.29000000000008
+Currently, the send queue looks like this: 
+[156.13000000000008, 156.97000000000008, 157.8100000000001, 158.6500000000001, 159.4900000000001, 160.3300000000001]
+Recorded cash and eco values (6.5,498.0) at time 155.3
+Advancing game to time 155.4
+Advancing game to time 155.5
+Advancing game to time 155.6
+Advancing game to time 155.7
+Advancing game to time 155.8
+Advancing game to time 155.9
+Advancing game to time 156.0
+Awarded eco payment 498.0 at time 156.0
+Recorded cash and eco values (504.5,498.0) at time 156.0
+Advancing game to time 156.1
+Advancing game to time 156.2
+Sent a set of Spaced Whites at time 156.13000000000008
+Currently, the send queue looks like this: 
+[156.97000000000008, 157.8100000000001, 158.6500000000001, 159.4900000000001, 160.3300000000001, 161.1700000000001]
+Recorded cash and eco values (474.5,499.5) at time 156.2
+Advancing game to time 156.3
+Advancing game to time 156.4
+Advancing game to time 156.5
+Advancing game to time 156.6
+Advancing game to time 156.7
+Advancing game to time 156.8
+Advancing game to time 156.9
+Awarded direct payment 40 at time 156.85
+Recorded cash and eco values (514.5,499.5) at time 156.85
+Advancing game to time 157.0
+Sent a set of Spaced Whites at time 156.97000000000008
+Currently, the send queue looks like this: 
+[157.8100000000001, 158.6500000000001, 159.4900000000001, 160.3300000000001, 161.1700000000001, 162.0100000000001]
+Recorded cash and eco values (484.5,501.0) at time 157.0
+Advancing game to time 157.1
+Advancing game to time 157.2
+Advancing game to time 157.3
+Advancing game to time 157.4
+Advancing game to time 157.5
+Advancing game to time 157.6
+Advancing game to time 157.7
+Advancing game to time 157.8
+Advancing game to time 157.9
+Sent a set of Spaced Whites at time 157.8100000000001
+Currently, the send queue looks like this: 
+[158.6500000000001, 159.4900000000001, 160.3300000000001, 161.1700000000001, 162.0100000000001, 162.8500000000001]
+Recorded cash and eco values (454.5,502.5) at time 157.9
+Advancing game to time 158.0
+Advancing game to time 158.1
+Advancing game to time 158.2
+Advancing game to time 158.3
+Advancing game to time 158.4
+Advancing game to time 158.5
+Advancing game to time 158.6
+Advancing game to time 158.7
+Sent a set of Spaced Whites at time 158.6500000000001
+Currently, the send queue looks like this: 
+[159.4900000000001, 160.3300000000001, 161.1700000000001, 162.0100000000001, 162.8500000000001, 163.6900000000001]
+Recorded cash and eco values (424.5,504.0) at time 158.7
+Advancing game to time 158.8
+Advancing game to time 158.9
+Advancing game to time 159.0
+Advancing game to time 159.1
+Advancing game to time 159.2
+Advancing game to time 159.3
+Awarded direct payment 40 at time 159.28
+Recorded cash and eco values (464.5,504.0) at time 159.28
+Advancing game to time 159.4
+Advancing game to time 159.5
+Sent a set of Spaced Whites at time 159.4900000000001
+Currently, the send queue looks like this: 
+[160.3300000000001, 161.1700000000001, 162.0100000000001, 162.8500000000001, 163.6900000000001, 164.53000000000011]
+Recorded cash and eco values (434.5,505.5) at time 159.5
+Advancing game to time 159.6
+Advancing game to time 159.7
+Advancing game to time 159.8
+Advancing game to time 159.9
+Advancing game to time 160.0
+Advancing game to time 160.1
+Advancing game to time 160.2
+Advancing game to time 160.3
+Advancing game to time 160.4
+Sent a set of Spaced Whites at time 160.3300000000001
+Currently, the send queue looks like this: 
+[161.1700000000001, 162.0100000000001, 162.8500000000001, 163.6900000000001, 164.53000000000011, 165.37000000000012]
+Recorded cash and eco values (404.5,507.0) at time 160.4
+Advancing game to time 160.5
+Advancing game to time 160.6
+Advancing game to time 160.7
+Advancing game to time 160.8
+Advancing game to time 160.9
+Advancing game to time 161.0
+Advancing game to time 161.1
+Advancing game to time 161.2
+Sent a set of Spaced Whites at time 161.1700000000001
+Currently, the send queue looks like this: 
+[162.0100000000001, 162.8500000000001, 163.6900000000001, 164.53000000000011, 165.37000000000012, 166.21000000000012]
+Recorded cash and eco values (374.5,508.5) at time 161.2
+Advancing game to time 161.3
+Advancing game to time 161.4
+Advancing game to time 161.5
+Advancing game to time 161.6
+Advancing game to time 161.7
+Advancing game to time 161.8
+Awarded direct payment 40 at time 161.71
+Recorded cash and eco values (414.5,508.5) at time 161.71
+Advancing game to time 161.9
+Advancing game to time 162.0
+Awarded eco payment 508.5 at time 162.0
+Recorded cash and eco values (923.0,508.5) at time 162.0
+Advancing game to time 162.1
+Sent a set of Spaced Whites at time 162.0100000000001
+Currently, the send queue looks like this: 
+[162.8500000000001, 163.6900000000001, 164.53000000000011, 165.37000000000012, 166.21000000000012, 167.05000000000013]
+Recorded cash and eco values (893.0,510.0) at time 162.1
+Advancing game to time 162.2
+Advancing game to time 162.3
+Advancing game to time 162.4
+Advancing game to time 162.5
+Advancing game to time 162.6
+Advancing game to time 162.7
+Advancing game to time 162.8
+Advancing game to time 162.9
+Sent a set of Spaced Whites at time 162.8500000000001
+Currently, the send queue looks like this: 
+[163.6900000000001, 164.53000000000011, 165.37000000000012, 166.21000000000012, 167.05000000000013, 167.89000000000013]
+Recorded cash and eco values (863.0,511.5) at time 162.9
+Advancing game to time 163.0
+Advancing game to time 163.1
+Advancing game to time 163.2
+Advancing game to time 163.3
+Advancing game to time 163.4
+Advancing game to time 163.5
+Advancing game to time 163.6
+Advancing game to time 163.7
+Sent a set of Spaced Whites at time 163.6900000000001
+Currently, the send queue looks like this: 
+[164.53000000000011, 165.37000000000012, 166.21000000000012, 167.05000000000013, 167.89000000000013, 168.73000000000013]
+Recorded cash and eco values (833.0,513.0) at time 163.7
+Advancing game to time 163.8
+Advancing game to time 163.9
+Advancing game to time 164.0
+Advancing game to time 164.1
+Advancing game to time 164.2
+Awarded direct payment 40 at time 164.14
+Recorded cash and eco values (873.0,513.0) at time 164.14
+Advancing game to time 164.3
+Advancing game to time 164.4
+Advancing game to time 164.5
+Advancing game to time 164.6
+Sent a set of Spaced Whites at time 164.53000000000011
+Currently, the send queue looks like this: 
+[165.37000000000012, 166.21000000000012, 167.05000000000013, 167.89000000000013, 168.73000000000013, 169.57000000000014]
+Recorded cash and eco values (843.0,514.5) at time 164.6
+Advancing game to time 164.7
+Advancing game to time 164.8
+Advancing game to time 164.9
+Advancing game to time 165.0
+Advancing game to time 165.1
+Advancing game to time 165.2
+Advancing game to time 165.3
+Advancing game to time 165.4
+Sent a set of Spaced Whites at time 165.37000000000012
+Currently, the send queue looks like this: 
+[166.21000000000012, 167.05000000000013, 167.89000000000013, 168.73000000000013, 169.57000000000014, 170.41000000000014]
+Recorded cash and eco values (813.0,516.0) at time 165.4
+Advancing game to time 165.5
+Advancing game to time 165.6
+Advancing game to time 165.7
+Advancing game to time 165.8
+Advancing game to time 165.9
+Advancing game to time 166.0
+Advancing game to time 166.1
+Advancing game to time 166.2
+Advancing game to time 166.3
+Sent a set of Spaced Whites at time 166.21000000000012
+Currently, the send queue looks like this: 
+[167.05000000000013, 167.89000000000013, 168.73000000000013, 169.57000000000014, 170.41000000000014, 171.25000000000014]
+Recorded cash and eco values (783.0,517.5) at time 166.3
+Advancing game to time 166.4
+Advancing game to time 166.5
+Advancing game to time 166.6
+Awarded direct payment 40 at time 166.56
+Recorded cash and eco values (823.0,517.5) at time 166.56
+Advancing game to time 166.7
+Advancing game to time 166.8
+Advancing game to time 166.9
+Advancing game to time 167.0
+Advancing game to time 167.1
+Sent a set of Spaced Whites at time 167.05000000000013
+Currently, the send queue looks like this: 
+[167.89000000000013, 168.73000000000013, 169.57000000000014, 170.41000000000014, 171.25000000000014, 172.09000000000015]
+Recorded cash and eco values (793.0,519.0) at time 167.1
+Advancing game to time 167.2
+Advancing game to time 167.3
+Advancing game to time 167.4
+Advancing game to time 167.5
+Advancing game to time 167.6
+Advancing game to time 167.7
+Advancing game to time 167.8
+Advancing game to time 167.9
+Sent a set of Spaced Whites at time 167.89000000000013
+Currently, the send queue looks like this: 
+[168.73000000000013, 169.57000000000014, 170.41000000000014, 171.25000000000014, 172.09000000000015, 172.93000000000015]
+Recorded cash and eco values (763.0,520.5) at time 167.9
+Advancing game to time 168.0
+Awarded eco payment 520.5 at time 168.0
+Recorded cash and eco values (1283.5,520.5) at time 168.0
+Advancing game to time 168.1
+Advancing game to time 168.2
+Advancing game to time 168.3
+Advancing game to time 168.4
+Advancing game to time 168.5
+Advancing game to time 168.6
+Advancing game to time 168.7
+Advancing game to time 168.8
+Sent a set of Spaced Whites at time 168.73000000000013
+Currently, the send queue looks like this: 
+[169.57000000000014, 170.41000000000014, 171.25000000000014, 172.09000000000015, 172.93000000000015, 173.77000000000015]
+Recorded cash and eco values (1253.5,522.0) at time 168.8
+Advancing game to time 168.9
+Advancing game to time 169.0
+Awarded direct payment 40 at time 168.99
+Recorded cash and eco values (1293.5,522.0) at time 168.99
+Advancing game to time 169.1
+Advancing game to time 169.2
+Advancing game to time 169.3
+Advancing game to time 169.4
+Advancing game to time 169.5
+Advancing game to time 169.6
+Sent a set of Spaced Whites at time 169.57000000000014
+Currently, the send queue looks like this: 
+[170.41000000000014, 171.25000000000014, 172.09000000000015, 172.93000000000015, 173.77000000000015, 174.61000000000016]
+Recorded cash and eco values (1263.5,523.5) at time 169.6
+Advancing game to time 169.7
+Advancing game to time 169.8
+Advancing game to time 169.9
+Advancing game to time 170.0
+Advancing game to time 170.1
+Advancing game to time 170.2
+Advancing game to time 170.3
+Advancing game to time 170.4
+Advancing game to time 170.5
+Sent a set of Spaced Whites at time 170.41000000000014
+Currently, the send queue looks like this: 
+[171.25000000000014, 172.09000000000015, 172.93000000000015, 173.77000000000015, 174.61000000000016, 175.45000000000016]
+Recorded cash and eco values (1233.5,525.0) at time 170.5
+Advancing game to time 170.6
+Advancing game to time 170.7
+Advancing game to time 170.8
+Advancing game to time 170.9
+Advancing game to time 171.0
+Advancing game to time 171.1
+Advancing game to time 171.2
+Advancing game to time 171.3
+Sent a set of Spaced Whites at time 171.25000000000014
+Currently, the send queue looks like this: 
+[172.09000000000015, 172.93000000000015, 173.77000000000015, 174.61000000000016, 175.45000000000016, 176.29000000000016]
+Recorded cash and eco values (1203.5,526.5) at time 171.3
+Advancing game to time 171.4
+Advancing game to time 171.5
+Awarded direct payment 40 at time 171.42
+Recorded cash and eco values (1243.5,526.5) at time 171.42
+Advancing game to time 171.6
+Advancing game to time 171.7
+Advancing game to time 171.8
+Advancing game to time 171.9
+Advancing game to time 172.0
+Advancing game to time 172.1
+Sent a set of Spaced Whites at time 172.09000000000015
+Currently, the send queue looks like this: 
+[172.93000000000015, 173.77000000000015, 174.61000000000016, 175.45000000000016, 176.29000000000016, 177.13000000000017]
+Recorded cash and eco values (1213.5,528.0) at time 172.1
+Advancing game to time 172.2
+Advancing game to time 172.3
+Advancing game to time 172.4
+Advancing game to time 172.5
+Advancing game to time 172.6
+Advancing game to time 172.7
+Advancing game to time 172.8
+Advancing game to time 172.9
+Advancing game to time 173.0
+Sent a set of Spaced Whites at time 172.93000000000015
+Currently, the send queue looks like this: 
+[173.77000000000015, 174.61000000000016, 175.45000000000016, 176.29000000000016, 177.13000000000017, 177.97000000000017]
+Recorded cash and eco values (1183.5,529.5) at time 173.0
+Advancing game to time 173.1
+Advancing game to time 173.2
+Advancing game to time 173.3
+Advancing game to time 173.4
+Advancing game to time 173.5
+Advancing game to time 173.6
+Advancing game to time 173.7
+Advancing game to time 173.8
+Sent a set of Spaced Whites at time 173.77000000000015
+Currently, the send queue looks like this: 
+[174.61000000000016, 175.45000000000016, 176.29000000000016, 177.13000000000017, 177.97000000000017, 178.81000000000017]
+Recorded cash and eco values (1153.5,531.0) at time 173.8
+Advancing game to time 173.9
+Advancing game to time 174.0
+Awarded eco payment 531.0 at time 174.0
+Recorded cash and eco values (1684.5,531.0) at time 174.0
+Advancing game to time 174.1
+Advancing game to time 174.2
+Advancing game to time 174.3
+Advancing game to time 174.4
+Advancing game to time 174.5
+Advancing game to time 174.6
+Advancing game to time 174.7
+Sent a set of Spaced Whites at time 174.61000000000016
+Currently, the send queue looks like this: 
+[175.45000000000016, 176.29000000000016, 177.13000000000017, 177.97000000000017, 178.81000000000017, 179.65000000000018]
+Recorded cash and eco values (1654.5,532.5) at time 174.7
+Advancing game to time 174.8
+Advancing game to time 174.9
+Advancing game to time 175.0
+Advancing game to time 175.1
+Advancing game to time 175.2
+Advancing game to time 175.3
+Advancing game to time 175.4
+Advancing game to time 175.5
+Sent a set of Spaced Whites at time 175.45000000000016
+Currently, the send queue looks like this: 
+[176.29000000000016, 177.13000000000017, 177.97000000000017, 178.81000000000017, 179.65000000000018, 180.49000000000018]
+Recorded cash and eco values (1624.5,534.0) at time 175.5
+Advancing game to time 175.6
+Advancing game to time 175.7
+Advancing game to time 175.8
+Advancing game to time 175.9
+Advancing game to time 176.0
+Advancing game to time 176.1
+Advancing game to time 176.2
+Advancing game to time 176.3
+Sent a set of Spaced Whites at time 176.29000000000016
+Currently, the send queue looks like this: 
+[177.13000000000017, 177.97000000000017, 178.81000000000017, 179.65000000000018, 180.49000000000018, 181.33000000000018]
+Recorded cash and eco values (1594.5,535.5) at time 176.3
+Advancing game to time 176.4
+Advancing game to time 176.5
+Advancing game to time 176.6
+Advancing game to time 176.7
+Advancing game to time 176.8
+Advancing game to time 176.9
+Advancing game to time 177.0
+Advancing game to time 177.1
+Advancing game to time 177.2
+Sent a set of Spaced Whites at time 177.13000000000017
+Currently, the send queue looks like this: 
+[177.97000000000017, 178.81000000000017, 179.65000000000018, 180.49000000000018, 181.33000000000018, 182.1700000000002]
+Recorded cash and eco values (1564.5,537.0) at time 177.2
+Advancing game to time 177.3
+Advancing game to time 177.4
+Advancing game to time 177.5
+Advancing game to time 177.6
+Advancing game to time 177.7
+Advancing game to time 177.8
+Advancing game to time 177.9
+Advancing game to time 178.0
+Sent a set of Spaced Whites at time 177.97000000000017
+Currently, the send queue looks like this: 
+[178.81000000000017, 179.65000000000018, 180.49000000000018, 181.33000000000018, 182.1700000000002, 183.0100000000002]
+Recorded cash and eco values (1534.5,538.5) at time 178.0
+Advancing game to time 178.1
+Advancing game to time 178.2
+Advancing game to time 178.3
+Advancing game to time 178.4
+Advancing game to time 178.5
+Advancing game to time 178.6
+Advancing game to time 178.7
+Advancing game to time 178.8
+Advancing game to time 178.9
+Sent a set of Spaced Whites at time 178.81000000000017
+Currently, the send queue looks like this: 
+[179.65000000000018, 180.49000000000018, 181.33000000000018, 182.1700000000002, 183.0100000000002, 183.8500000000002]
+Recorded cash and eco values (1504.5,540.0) at time 178.9
+Advancing game to time 179.0
+Advancing game to time 179.1
+Advancing game to time 179.2
+Advancing game to time 179.3
+Advancing game to time 179.4
+Advancing game to time 179.5
+Advancing game to time 179.6
+Advancing game to time 179.7
+Sent a set of Spaced Whites at time 179.65000000000018
+Currently, the send queue looks like this: 
+[180.49000000000018, 181.33000000000018, 182.1700000000002, 183.0100000000002, 183.8500000000002, 184.6900000000002]
+Recorded cash and eco values (1474.5,541.5) at time 179.7
+Advancing game to time 179.8
+Advancing game to time 179.9
+Advancing game to time 180.0
+Awarded eco payment 541.5 at time 180.0
+Recorded cash and eco values (2016.0,541.5) at time 180.0
+Advancing game to time 180.1
+Advancing game to time 180.2
+Advancing game to time 180.3
+Advancing game to time 180.4
+Awarded direct payment 40 at time 180.35
+Recorded cash and eco values (2056.0,541.5) at time 180.35
+Advancing game to time 180.5
+Sent a set of Spaced Whites at time 180.49000000000018
+Currently, the send queue looks like this: 
+[181.33000000000018, 182.1700000000002, 183.0100000000002, 183.8500000000002, 184.6900000000002, 185.5300000000002]
+Recorded cash and eco values (2026.0,543.0) at time 180.5
+Advancing game to time 180.6
+Advancing game to time 180.7
+Advancing game to time 180.8
+Advancing game to time 180.9
+Advancing game to time 181.0
+Advancing game to time 181.1
+Advancing game to time 181.2
+Advancing game to time 181.3
+Advancing game to time 181.4
+Sent a set of Spaced Whites at time 181.33000000000018
+Currently, the send queue looks like this: 
+[182.1700000000002, 183.0100000000002, 183.8500000000002, 184.6900000000002, 185.5300000000002, 186.3700000000002]
+Recorded cash and eco values (1996.0,544.5) at time 181.4
+Advancing game to time 181.5
+Advancing game to time 181.6
+Advancing game to time 181.7
+Advancing game to time 181.8
+Advancing game to time 181.9
+Advancing game to time 182.0
+Advancing game to time 182.1
+Advancing game to time 182.2
+Sent a set of Spaced Whites at time 182.1700000000002
+Currently, the send queue looks like this: 
+[183.0100000000002, 183.8500000000002, 184.6900000000002, 185.5300000000002, 186.3700000000002, 187.2100000000002]
+Recorded cash and eco values (1966.0,546.0) at time 182.2
+Advancing game to time 182.3
+Advancing game to time 182.4
+Advancing game to time 182.5
+Awarded direct payment 40 at time 182.49
+Recorded cash and eco values (2006.0,546.0) at time 182.49
+Advancing game to time 182.6
+Advancing game to time 182.7
+Advancing game to time 182.8
+Advancing game to time 182.9
+Advancing game to time 183.0
+Advancing game to time 183.1
+Sent a set of Spaced Whites at time 183.0100000000002
+Currently, the send queue looks like this: 
+[183.8500000000002, 184.6900000000002, 185.5300000000002, 186.3700000000002, 187.2100000000002, 188.0500000000002]
+Recorded cash and eco values (1976.0,547.5) at time 183.1
+Advancing game to time 183.2
+Advancing game to time 183.3
+Advancing game to time 183.4
+Advancing game to time 183.5
+Advancing game to time 183.6
+Advancing game to time 183.7
+Advancing game to time 183.8
+Advancing game to time 183.9
+Sent a set of Spaced Whites at time 183.8500000000002
+Currently, the send queue looks like this: 
+[184.6900000000002, 185.5300000000002, 186.3700000000002, 187.2100000000002, 188.0500000000002, 188.8900000000002]
+Recorded cash and eco values (1946.0,549.0) at time 183.9
+Advancing game to time 184.0
+Advancing game to time 184.1
+Advancing game to time 184.2
+Advancing game to time 184.3
+Advancing game to time 184.4
+Advancing game to time 184.5
+Advancing game to time 184.6
+Advancing game to time 184.7
+Awarded direct payment 40 at time 184.64
+Recorded cash and eco values (1986.0,549.0) at time 184.64
+Sent a set of Spaced Whites at time 184.6900000000002
+Currently, the send queue looks like this: 
+[185.5300000000002, 186.3700000000002, 187.2100000000002, 188.0500000000002, 188.8900000000002, 189.73000000000022]
+Recorded cash and eco values (1956.0,550.5) at time 184.7
+Advancing game to time 184.8
+Advancing game to time 184.9
+Advancing game to time 185.0
+Advancing game to time 185.1
+Advancing game to time 185.2
+Advancing game to time 185.3
+Advancing game to time 185.4
+Advancing game to time 185.5
+Advancing game to time 185.6
+Sent a set of Spaced Whites at time 185.5300000000002
+Currently, the send queue looks like this: 
+[186.3700000000002, 187.2100000000002, 188.0500000000002, 188.8900000000002, 189.73000000000022, 190.57000000000022]
+Recorded cash and eco values (1926.0,552.0) at time 185.6
+Advancing game to time 185.7
+Advancing game to time 185.8
+Advancing game to time 185.9
+Advancing game to time 186.0
+Awarded eco payment 552.0 at time 186.0
+Recorded cash and eco values (2478.0,552.0) at time 186.0
+Advancing game to time 186.1
+Advancing game to time 186.2
+Advancing game to time 186.3
+Advancing game to time 186.4
+Sent a set of Spaced Whites at time 186.3700000000002
+Currently, the send queue looks like this: 
+[187.2100000000002, 188.0500000000002, 188.8900000000002, 189.73000000000022, 190.57000000000022, 191.41000000000022]
+Recorded cash and eco values (2448.0,553.5) at time 186.4
+Advancing game to time 186.5
+Advancing game to time 186.6
+Advancing game to time 186.7
+Advancing game to time 186.8
+Awarded direct payment 40 at time 186.78
+Recorded cash and eco values (2488.0,553.5) at time 186.78
+Advancing game to time 186.9
+Advancing game to time 187.0
+Advancing game to time 187.1
+Advancing game to time 187.2
+Advancing game to time 187.3
+Sent a set of Spaced Whites at time 187.2100000000002
+Currently, the send queue looks like this: 
+[188.0500000000002, 188.8900000000002, 189.73000000000022, 190.57000000000022, 191.41000000000022, 192.25000000000023]
+Recorded cash and eco values (2458.0,555.0) at time 187.3
+Advancing game to time 187.4
+Advancing game to time 187.5
+Advancing game to time 187.6
+Advancing game to time 187.7
+Advancing game to time 187.8
+Advancing game to time 187.9
+Advancing game to time 188.0
+Advancing game to time 188.1
+Sent a set of Spaced Whites at time 188.0500000000002
+Currently, the send queue looks like this: 
+[188.8900000000002, 189.73000000000022, 190.57000000000022, 191.41000000000022, 192.25000000000023, 193.09000000000023]
+Recorded cash and eco values (2428.0,556.5) at time 188.1
+Advancing game to time 188.2
+Advancing game to time 188.3
+Advancing game to time 188.4
+Advancing game to time 188.5
+Advancing game to time 188.6
+Advancing game to time 188.7
+Advancing game to time 188.8
+Advancing game to time 188.9
+Sent a set of Spaced Whites at time 188.8900000000002
+Currently, the send queue looks like this: 
+[189.73000000000022, 190.57000000000022, 191.41000000000022, 192.25000000000023, 193.09000000000023, 193.93000000000023]
+Recorded cash and eco values (2398.0,558.0) at time 188.9
+Advancing game to time 189.0
+Awarded direct payment 40 at time 188.92
+Recorded cash and eco values (2438.0,558.0) at time 188.92
+Advancing game to time 189.1
+Advancing game to time 189.2
+Advancing game to time 189.3
+Advancing game to time 189.4
+Advancing game to time 189.5
+Advancing game to time 189.6
+Advancing game to time 189.7
+Advancing game to time 189.8
+Sent a set of Spaced Whites at time 189.73000000000022
+Currently, the send queue looks like this: 
+[190.57000000000022, 191.41000000000022, 192.25000000000023, 193.09000000000023, 193.93000000000023, 194.77000000000024]
+Recorded cash and eco values (2408.0,559.5) at time 189.8
+Advancing game to time 189.9
+Advancing game to time 190.0
+Advancing game to time 190.1
+Advancing game to time 190.2
+Advancing game to time 190.3
+Advancing game to time 190.4
+Advancing game to time 190.5
+Advancing game to time 190.6
+Sent a set of Spaced Whites at time 190.57000000000022
+Currently, the send queue looks like this: 
+[191.41000000000022, 192.25000000000023, 193.09000000000023, 193.93000000000023, 194.77000000000024, 195.61000000000024]
+Recorded cash and eco values (2378.0,561.0) at time 190.6
+Advancing game to time 190.7
+Advancing game to time 190.8
+Advancing game to time 190.9
+Advancing game to time 191.0
+Advancing game to time 191.1
+Awarded direct payment 40 at time 191.06
+Recorded cash and eco values (2418.0,561.0) at time 191.06
+Advancing game to time 191.2
+Advancing game to time 191.3
+Advancing game to time 191.4
+Advancing game to time 191.5
+Sent a set of Spaced Whites at time 191.41000000000022
+Currently, the send queue looks like this: 
+[192.25000000000023, 193.09000000000023, 193.93000000000023, 194.77000000000024, 195.61000000000024, 196.45000000000024]
+Recorded cash and eco values (2388.0,562.5) at time 191.5
+Advancing game to time 191.6
+Advancing game to time 191.7
+Advancing game to time 191.8
+Advancing game to time 191.9
+Advancing game to time 192.0
+Awarded eco payment 562.5 at time 192.0
+Recorded cash and eco values (2950.5,562.5) at time 192.0
+We have 2950.5 cash! We can do the next buy, which costs 2600.0 and has a buffer of 0 and a minimum buy time of 0!
+Upgraded the farm at index 0 to (3,0,0)
+Completed the buy operation! The buy queue now has 1 items remaining in it
+Recorded cash and eco values (350.5,562.5) at time 192.0
+Advancing game to time 192.1
+Advancing game to time 192.2
+Advancing game to time 192.3
+Sent a set of Spaced Whites at time 192.25000000000023
+Currently, the send queue looks like this: 
+[193.09000000000023, 193.93000000000023, 194.77000000000024, 195.61000000000024, 196.45000000000024, 197.29000000000025]
+Recorded cash and eco values (320.5,564.0) at time 192.3
+Advancing game to time 192.4
+Advancing game to time 192.5
+Advancing game to time 192.6
+Advancing game to time 192.7
+Advancing game to time 192.8
+Advancing game to time 192.9
+Advancing game to time 193.0
+Awarded direct payment 40 at time 192.94
+Recorded cash and eco values (360.5,564.0) at time 192.94
+Advancing game to time 193.1
+Sent a set of Spaced Whites at time 193.09000000000023
+Currently, the send queue looks like this: 
+[193.93000000000023, 194.77000000000024, 195.61000000000024, 196.45000000000024, 197.29000000000025, 198.13000000000025]
+Recorded cash and eco values (330.5,565.5) at time 193.1
+Advancing game to time 193.2
+Advancing game to time 193.3
+Advancing game to time 193.4
+Advancing game to time 193.5
+Advancing game to time 193.6
+Advancing game to time 193.7
+Advancing game to time 193.8
+Advancing game to time 193.9
+Awarded direct payment 40 at time 193.88
+Recorded cash and eco values (370.5,565.5) at time 193.88
+Advancing game to time 194.0
+Sent a set of Spaced Whites at time 193.93000000000023
+Currently, the send queue looks like this: 
+[194.77000000000024, 195.61000000000024, 196.45000000000024, 197.29000000000025, 198.13000000000025, 198.97000000000025]
+Recorded cash and eco values (340.5,567.0) at time 194.0
+Advancing game to time 194.1
+Advancing game to time 194.2
+Advancing game to time 194.3
+Advancing game to time 194.4
+Advancing game to time 194.5
+Advancing game to time 194.6
+Advancing game to time 194.7
+Advancing game to time 194.8
+Sent a set of Spaced Whites at time 194.77000000000024
+Currently, the send queue looks like this: 
+[195.61000000000024, 196.45000000000024, 197.29000000000025, 198.13000000000025, 198.97000000000025, 199.81000000000026]
+Recorded cash and eco values (310.5,568.5) at time 194.8
+Advancing game to time 194.9
+Advancing game to time 195.0
+Advancing game to time 195.1
+Advancing game to time 195.2
+Advancing game to time 195.3
+Advancing game to time 195.4
+Advancing game to time 195.5
+Advancing game to time 195.6
+Advancing game to time 195.7
+Sent a set of Spaced Whites at time 195.61000000000024
+Currently, the send queue looks like this: 
+[196.45000000000024, 197.29000000000025, 198.13000000000025, 198.97000000000025, 199.81000000000026, 200.65000000000026]
+Recorded cash and eco values (280.5,570.0) at time 195.7
+Advancing game to time 195.8
+Advancing game to time 195.9
+Advancing game to time 196.0
+Advancing game to time 196.1
+Advancing game to time 196.2
+Advancing game to time 196.3
+Advancing game to time 196.4
+Advancing game to time 196.5
+Sent a set of Spaced Whites at time 196.45000000000024
+Currently, the send queue looks like this: 
+[197.29000000000025, 198.13000000000025, 198.97000000000025, 199.81000000000026, 200.65000000000026, 201.49000000000026]
+Recorded cash and eco values (250.5,571.5) at time 196.5
+Advancing game to time 196.6
+Advancing game to time 196.7
+Advancing game to time 196.8
+Advancing game to time 196.9
+Advancing game to time 197.0
+Advancing game to time 197.1
+Advancing game to time 197.2
+Advancing game to time 197.3
+Sent a set of Spaced Whites at time 197.29000000000025
+Currently, the send queue looks like this: 
+[198.13000000000025, 198.97000000000025, 199.81000000000026, 200.65000000000026, 201.49000000000026, 202.33000000000027]
+Recorded cash and eco values (220.5,573.0) at time 197.3
+Advancing game to time 197.4
+Advancing game to time 197.5
+Advancing game to time 197.6
+Advancing game to time 197.7
+Advancing game to time 197.8
+Advancing game to time 197.9
+Advancing game to time 198.0
+Awarded eco payment 573.0 at time 198.0
+Recorded cash and eco values (793.5,573.0) at time 198.0
+Advancing game to time 198.1
+Advancing game to time 198.2
+Sent a set of Spaced Whites at time 198.13000000000025
+Currently, the send queue looks like this: 
+[198.97000000000025, 199.81000000000026, 200.65000000000026, 201.49000000000026, 202.33000000000027, 203.17000000000027]
+Recorded cash and eco values (763.5,574.5) at time 198.2
+Advancing game to time 198.3
+Advancing game to time 198.4
+Advancing game to time 198.5
+Advancing game to time 198.6
+Advancing game to time 198.7
+Advancing game to time 198.8
+Advancing game to time 198.9
+Advancing game to time 199.0
+Sent a set of Spaced Whites at time 198.97000000000025
+Currently, the send queue looks like this: 
+[199.81000000000026, 200.65000000000026, 201.49000000000026, 202.33000000000027, 203.17000000000027, 204.01000000000028]
+Recorded cash and eco values (733.5,576.0) at time 199.0
+Advancing game to time 199.1
+Advancing game to time 199.2
+Advancing game to time 199.3
+Advancing game to time 199.4
+Advancing game to time 199.5
+Advancing game to time 199.6
+Advancing game to time 199.7
+Advancing game to time 199.8
+Advancing game to time 199.9
+Sent a set of Spaced Whites at time 199.81000000000026
+Currently, the send queue looks like this: 
+[200.65000000000026, 201.49000000000026, 202.33000000000027, 203.17000000000027, 204.01000000000028, 204.85000000000028]
+Recorded cash and eco values (703.5,577.5) at time 199.9
+Advancing game to time 200.0
+Advancing game to time 200.1
+Advancing game to time 200.2
+Advancing game to time 200.3
+Advancing game to time 200.4
+Advancing game to time 200.5
+Advancing game to time 200.6
+Advancing game to time 200.7
+Sent a set of Spaced Whites at time 200.65000000000026
+Currently, the send queue looks like this: 
+[201.49000000000026, 202.33000000000027, 203.17000000000027, 204.01000000000028, 204.85000000000028, 205.69000000000028]
+Recorded cash and eco values (673.5,579.0) at time 200.7
+Advancing game to time 200.8
+Advancing game to time 200.9
+Advancing game to time 201.0
+Advancing game to time 201.1
+Advancing game to time 201.2
+Advancing game to time 201.3
+Advancing game to time 201.4
+Advancing game to time 201.5
+Sent a set of Spaced Whites at time 201.49000000000026
+Currently, the send queue looks like this: 
+[202.33000000000027, 203.17000000000027, 204.01000000000028, 204.85000000000028, 205.69000000000028, 206.53000000000029]
+Recorded cash and eco values (643.5,580.5) at time 201.5
+Advancing game to time 201.6
+Awarded direct payment 40 at time 201.6
+Recorded cash and eco values (683.5,580.5) at time 201.6
+Advanced game state to round 9
+The current time is 201.6
+The next round starts at time 222.29999999999998
+Our new cash and eco is given by (683.5,580.5) 
+
+MESSAGE FROM GameState.viewCashEcoHistory():
+Graphing history of cash and eco!
+Successfully generated graph! 
+
