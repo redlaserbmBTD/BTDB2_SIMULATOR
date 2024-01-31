@@ -166,7 +166,7 @@ druid_globals = {
 }
 
 sniper_globals = {
-    'Supply Drop Cost': 9650,
+    'Supply Drop Cost': 9550,
     'Supply Drop Initial Cooldown': 15,
     'Supply Drop Usage Cooldown': 40,
     'Supply Drop Payout': 2000,
