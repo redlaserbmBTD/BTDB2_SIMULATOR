@@ -133,17 +133,17 @@ game_globals = {
 
 farm_globals = {
     'Farm Cost': 1000,
-    'Farm Upgrade Costs': [[550,550,2600,16000,66000],[200,700,4600,8000,45000],[250,200,2800,13000,46000]],
+    'Farm Upgrade Costs': [[550,550,2750,16000,66000],[200,700,4600,8000,45000],[250,200,2800,13000,46000]],
     'Farm Bank Capacity': [0,0,0,14000,20000,30000],
     'IMF Loan Amount': 20000,
     'IMF Initial Cooldown': 20,
     'IMF Usage Cooldown': 90,
     'Monkey Wall Street Bonus': 10000,
     'Monkeynomics Payout': 20000,
-    'Monkeynomics Initial Cooldown': 20,
-    'Monkeynomics Usage Cooldown': 60,
+    'Monkeynomics Initial Cooldown': 25,
+    'Monkeynomics Usage Cooldown': 50,
     'Banana Central Multiplier': 1.25,
-    'Start of Round Bank Payment': 400,
+    'Start of Round Bank Payment': 550,
     'Start of Round Bank Multiplier': 1.2
 }
 
