@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
    name='b2sim',
-   version='1.2.6',
+   version='1.2.7',
    description='A module to simulate the generation of eco and farms in Bloons TD Battles 2',
    long_description='TODO',
    author='redlaserbm',
