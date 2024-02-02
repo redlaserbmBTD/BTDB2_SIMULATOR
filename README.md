@@ -45,6 +45,8 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (February 2, 2024 - v1.2.8)
+   - Removed numpy as a dependency.
 - (February 1, 2024 - v1.2.7)
    - Updated costs of some upgrades so that they are in line with the latest version (JazzyJonah)
 - (July 18, 2023 - v1.2.3)
