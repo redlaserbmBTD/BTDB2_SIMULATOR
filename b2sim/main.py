@@ -1,5 +1,5 @@
 # %%
-import numpy as np
+from math import floor, ceil
 import pandas as pd
 import matplotlib.pyplot as plt
 from b2sim.info import *
@@ -11,7 +11,7 @@ import copy
 
 
 # %%
-def impact(cash, loan, amount):
+def impact(cash: float, loan: float, amount: float):
     #If the amount is positive (like a payment), half of the payment should be directed to the outstanding loan
     #If the amount is negative (like a purchase), then we can treat it "normally"
     if amount > 0:
@@ -34,7 +34,7 @@ def writeLog(lines, filename = 'log', path = 'logs/'):
 # %%
 class GameState():
 
-    def __init__(self, initial_state):
+    def __init__(self, initial_state: dict):
         
         ############################
         #INITIALIZING THE GAME STATE
@@ -60,7 +60,7 @@ class GameState():
         if initial_state.get('Game Round') is not None:
             starting_round = initial_state.get('Game Round')
             self.current_time = self.rounds.getTimeFromRound(starting_round)
-            self.current_round = int(np.floor(starting_round))
+            self.current_round = int(starting_round)
         else:
             self.current_time = initial_state.get('Game Time')
             self.current_round = self.rounds.getRoundFromTime(self.current_time)
@@ -261,6 +261,13 @@ class GameState():
         self.logs.append("The game round start times are given by %s \n"%(self.rounds.round_starts))
         
     def viewCashEcoHistory(self, dim = (12,6), display_farms = True, font_size = 12):
+        '''
+        Method for generating line graphs tracking the history of cash and eco over the course of the simulation
+
+        Returns: 
+        None
+
+        '''
         self.logs.append("MESSAGE FROM GameState.viewCashEcoHistory():")
         self.logs.append("Graphing history of cash and eco!")
 
@@ -386,6 +393,12 @@ class GameState():
         self.rounds.changeStallFactor(stall_factor,self.current_time)
 
     def checkProperties(self):
+        '''
+        Helper method for self.ecoQueueCorrection. 
+
+        Looks at the first send in the eco queue and modifies properties of that send if those properties are not available to the eco send.
+
+        '''
         # Helper method for ecoQueueCorrection.
 
         #Do not apply modifiers to eco sends if the modifiers are not available
@@ -405,22 +418,30 @@ class GameState():
             self.eco_queue[0]['Regrow'] = False
 
     def ecoQueueCorrection(self):
-        # This method automatically adjusts the game state's given eco queue so that it contains valid sends.
+        ''' 
+        Automatically adjusts the eco queue so that the first send in the queue is valid
 
-        # Essentially, the code works like this:
-        # Look at the first send in the queue and decide if the time currently indicated is too early or late, or if we have exceeded the maximum permissible amount of eco for this send (self.max_eco_amount).
-        # # If it's too late (we are beyond the last round which we would use the send), remove the send from the queue
-        # # If it's too early, adjust the time to earliest available time we can use the send
-        # If the process above results in the first send in the queue being slated to be used after the second, *remove* the first send.
-        # The process above repeats until either the queue is empty or the first send in the queue is valid.
-        # Once it is determined that the first send in the queue is valid, check for and remove any properties from the eco which cannot be applied to said send.
+        Essentially, the code works like this:
+        Look at the first send in the queue and decide if the time to use the send is too early or late, or if there is otherwise no circumstance under which the send will be used during simulation.
+        - If it's too late (we are beyond the last round which we would use the send), remove the send from the queue
+        - If it's too early, adjust the time to earliest available time we can use the send
+        
+        If the process above results in the first send in the queue being slated to be used after the second, *remove* the first send.
+        The process above repeats until either the queue is empty or the first send in the queue is valid.
 
-        # When the process above is complete, we must check whether we should change to first send in the queue right now or not.
-        # # If the answer is no, we can exit the process.
-        # # If the answer is yes, switch to said send, and then (if there are still items in the eco queue) check whether the next item in the send is valid (This entails repeating the *entire* process above!)
+        Once it is determined that the first send in the queue is valid, check for and remove any properties from the eco which cannot be applied to said send.
 
+        When the process above is complete, we must check whether we should change to first send in the queue right now or not.
+        - If the answer is no, we can exit the process.
+        - If the answer is yes, switch to said send, and then rerun the queue correction process so that the *new* first eco send in the queue is valid (if necessary).
+        ''' 
+
+        # This flag is set to true when the first send in the queue is known to be valid AND it is not possible to change to that send right now.
+        # The code is finished then this flag is set to True OR the eco queue is empty
         future_flag = False
+
         while len(self.eco_queue) > 0 and future_flag == False:
+            # This flag is set to true as soon as it is known that the first send in the queue is valid.
             break_flag = False
             while len(self.eco_queue) > 0 and break_flag == False:
                 #print("length of queue: %s"%(len(self.eco_queue)))
@@ -471,7 +492,14 @@ class GameState():
                 future_flag = True
         
     def changeEcoSend(self):
-        # Attempt to change to the first send available in the eco queue
+        '''
+        Attempt to change to the first send available in the eco queue. 
+        If the send is not yet available, switch to the zero send and reinsert the send in question back into the queue at a later time.
+        If the send is no longer available, switch to the zero send and remove the send from the queue entirely.
+
+        Contributors/Pracitioners: As a best practice, please avoid writing code or running simulations which may trigger the fail-safes in this method.
+        '''
+        
         # This method is triggered either when reaching the specified time for the next send in the eco queue OR when a break condition (such as max_eco_amount) is satisfied for the current send
         # Note that if this method is called as a consequence of a break condition being satisfied, it is possible that the safeguard for switching to a send before it becomes available could be triggered.
 
@@ -520,7 +548,7 @@ class GameState():
             send_info['Send Name'] = 'Zero'
 
 
-        # First, check if the send has any fortied, camo, or regrow characteristics
+        # First, check if the send has any fortifed, camo, or regrow characteristics
         eco_cost_multiplier = 1
         if send_info['Fortified'] == True:
             eco_cost_multiplier *= game_globals['Fortified Multiplier']
@@ -566,6 +594,18 @@ class GameState():
             print(self.logs[index])
         
     def fastForward(self, target_time = None, target_round = None, interval = 0.1):
+        '''
+        Simulates the game state over the time period (self.current_time, target_time].
+
+        Parameters:
+        target_time: The time the simulation should end at
+        target_round: The round the simulation should end at. If both a target_time and a target_round are given, the code will prioritize the target_round
+        interval: Determines how frequently the code will record cash and eco values.
+
+        Returns:
+        None
+        '''
+
         self.logs.append("MESSAGE FROM GameState.fastForward: ")
         self.valid_action_flag = True #To prevent the code from repeatedly trying to perform a transaction that obviously can't happen
         self.simulation_start_time = self.current_time
@@ -575,7 +615,7 @@ class GameState():
             target_time = self.rounds.getTimeFromRound(target_round)
 
         # Append messages to the event messages list showing when each round starts
-        given_round = np.floor(self.rounds.getRoundFromTime(self.current_time, get_frac_part = True) + 1)
+        given_round = floor(self.rounds.getRoundFromTime(self.current_time, get_frac_part = True) + 1)
         end_round = self.rounds.getRoundFromTime(target_time)
         while given_round <= end_round:
             self.event_messages.append({
@@ -590,8 +630,8 @@ class GameState():
             target_time = self.current_time
         
         while self.current_time < target_time:
-            intermediate_time = min(max(np.floor(self.current_time/interval + 1)*interval,self.current_time + interval/2),target_time)
-            self.logs.append("Advancing game to time %s"%(np.round(intermediate_time,3)))
+            intermediate_time = min(max(floor(self.current_time/interval + 1)*interval,self.current_time + interval/2),target_time)
+            self.logs.append("Advancing game to time %s"%(round(intermediate_time,3)))
             self.advanceGameState(target_time = intermediate_time)
             #self.logs.append("----------")
 
@@ -604,15 +644,16 @@ class GameState():
         self.logs.append("Advanced game state to round " + str(self.current_round))
         self.logs.append("The current time is " + str(self.current_time))
         self.logs.append("The next round starts at time " + str(self.rounds.round_starts[self.current_round+1]))
-        self.logs.append("Our new cash and eco is given by (%s,%s) \n"%(np.round(self.cash,2),np.round(self.eco,2)))
+        self.logs.append("Our new cash and eco is given by (%s,%s) \n"%(round(self.cash,2),round(self.eco,2)))
 
     def advanceGameState(self, target_time = None, target_round = None):
-        # self.logs.append("MESSAGE FROM GameState.advanceGameState: ")
-        # Advance the game to the time target_time, 
-        # computing the new money and eco amounts at target_time
+        '''
+        Helper method for self.fastForward, attempts to simulate the game state to target_time but terminates early if:
+        - The code needs to change eco sends
+        - A purchase is made in the buy queue
 
-        # NOTE: This function only works so long as nothing about the player's income sources changes.
-        # Thus, if the player makes a purchase or changes eco sends, we will terminate prematurely.
+        In order to simulate to the desired target time, fastForward *repeatedly* runs this method until the game state finally reachs the target time.
+        '''
 
         ###################
         #PART 0: FAIL-SAFES
@@ -712,7 +753,7 @@ class GameState():
                         farm.revenue += new_cash - self.cash
 
                     self.cash, self.loan = new_cash, new_loan
-                    self.logs.append("Awarded direct payment %s at time %s"%(np.round(payout['Payout'],2),np.round(payout['Time'],2)))
+                    self.logs.append("Awarded direct payment %s at time %s"%(round(payout['Payout'],2),round(payout['Time'],2)))
                 
                 
             elif payout['Payout Type'] == 'Bank Payment':
@@ -721,7 +762,7 @@ class GameState():
                 key = payout['Index']
                 farm = self.farms[key]
                 farm.account_value += payout['Payout']
-                self.logs.append("Awarded bank payment %s at time %s to farm at index %s"%(np.round(payout['Payout'],2),np.round(payout['Time'],2), key))
+                self.logs.append("Awarded bank payment %s at time %s to farm at index %s"%(round(payout['Payout'],2),round(payout['Time'],2), key))
                 if farm.account_value >= farm.max_account_value:
                     #At this point, the player should withdraw from the bank.
                     farm.account_value = 0
@@ -736,7 +777,7 @@ class GameState():
                 farm = self.farms[key]
                 farm.account_value += farm.payout(payout['Time'], bank_interest = True)
                 farm.account_value *= farm_globals['Start of Round Bank Multiplier']
-                self.logs.append("Awarded bank interest at time %s to the farm at index %s"%(np.round(payout['Time'],2), key))
+                self.logs.append("Awarded bank interest at time %s to the farm at index %s"%(round(payout['Time'],2), key))
                 if farm.account_value >= farm.max_account_value:
                     farm.account_value = 0
                     new_cash, new_loan = impact(self.cash,self.loan,farm.max_account_value)
@@ -746,7 +787,7 @@ class GameState():
                 self.logs.append("The bank's new account value is %s"%(farm.account_value))
             elif payout['Payout Type'] == 'Eco':
                 self.cash, self.loan = impact(self.cash,self.loan, self.eco)
-                self.logs.append("Awarded eco payment %s at time %s"%(np.round(self.eco,2),np.round(payout['Time'],2)))
+                self.logs.append("Awarded eco payment %s at time %s"%(round(self.eco,2),round(payout['Time'],2)))
             
             #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             #Now, check whether we can perform the next buy in the buy queue
@@ -803,14 +844,14 @@ class GameState():
             #Record the cash & eco history and advance the game time
             #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             
-            #print("New cash and eco is (%s,%s)"%(np.round(self.cash,2), np.round(self.eco,2)))
+            #print("New cash and eco is (%s,%s)"%(round(self.cash,2), round(self.eco,2)))
             self.time_states.append(payout['Time'])
             self.cash_states.append(self.cash)
             self.eco_states.append(self.eco)
 
             #If either the cash or eco values changed since last time, record this in the log
             if len(self.cash_states) == 1 or self.cash_states[-1] != self.cash_states[-2] or len(self.eco_states) == 1 or self.eco_states[-1] != self.eco_states[-2]:
-                self.logs.append("Recorded cash and eco values (%s,%s) at time %s"%(np.round(self.cash,2),np.round(self.eco,2),np.round(payout['Time'],2)))
+                self.logs.append("Recorded cash and eco values (%s,%s) at time %s"%(round(self.cash,2),round(self.eco,2),round(payout['Time'],2)))
             
             # NOTE: The last payment is a "ghost" payment to be awarded at the target time.
             self.current_time = payout['Time']
@@ -843,17 +884,27 @@ class GameState():
         #self.logs.append("Advanced game state to round " + str(self.current_round))
         #self.logs.append("The current time is " + str(self.current_time))
         #self.logs.append("The next round starts at time " + str(self.rounds.round_starts[self.current_round+1]))
-        #self.logs.append("Our new cash and eco is given by (%s,%s) \n"%(np.round(self.cash,2),np.round(self.eco,2)))
+        #self.logs.append("Our new cash and eco is given by (%s,%s) \n"%(round(self.cash,2),round(self.eco,2)))
            
-    def computePayoutSchedule(self, target_time):
-        # Helper method for advanceGameState
-        # Given a target time target_time, return an order list of all payouts to occur from the game state's current time until the designated target time.
-        # Each entry in the returned array is a dictionary detailing the time the payment is to occur and either the payment to give or instructions to compute that payment (necessary for eco for banks)
+    def computePayoutSchedule(self, target_time: float):
+        '''
+        Helper method for advanceGameState
 
+        Given a target time target_time, return an ordered list of all payouts to occur from the game state's current time until the designated target time.
+        
+        Parameters:
+        target_time (float): the latest time (inclusive) of any payment to be included in the payout schedule.
+
+        Returns:
+        payout_times (List[dict]): a list of dictionaries, each of which represents a payment.
+
+        '''
+        
+        
         payout_times = []
         
         #ECO PAYOUTS
-        eco_time = 6*(np.floor(self.current_time/6)+1)
+        eco_time = 6*(floor(self.current_time/6)+1)
         while eco_time <= target_time:
             payout_entry = {
                 'Time': eco_time,
@@ -868,7 +919,7 @@ class GameState():
                 druid_farm = self.druid_farms[key]
 
                 #Determine the earliest druid farm activation that could occur within the interval of interest (self.current_time,target_time]
-                use_index = max(1,np.floor(1 + (self.current_time - druid_farm - druid_globals['Druid Farm Initial Cooldown'])/druid_globals['Druid Farm Usage Cooldown'])+1)
+                use_index = max(1,floor(1 + (self.current_time - druid_farm - druid_globals['Druid Farm Initial Cooldown'])/druid_globals['Druid Farm Usage Cooldown'])+1)
                 druid_farm_time = druid_farm + druid_globals['Druid Farm Initial Cooldown'] + druid_globals['Druid Farm Usage Cooldown']*(use_index-1)
                 while druid_farm_time <= target_time:
                     payout_entry = {
@@ -905,7 +956,7 @@ class GameState():
                     payout_amount = sniper_globals['Supply Drop Payout']
 
                 #Determine the earliest supply drop activation that could occur within the interval of interest (self.current_time,target_time]
-                drop_index = max(1,np.floor(1 + (self.current_time - supply_drop - sniper_globals['Supply Drop Initial Cooldown'])/sniper_globals['Supply Drop Usage Cooldown'])+1)
+                drop_index = max(1,floor(1 + (self.current_time - supply_drop - sniper_globals['Supply Drop Initial Cooldown'])/sniper_globals['Supply Drop Usage Cooldown'])+1)
                 supply_drop_time = supply_drop + sniper_globals['Supply Drop Initial Cooldown'] + sniper_globals['Supply Drop Usage Cooldown']*(drop_index-1)
                 while supply_drop_time <= target_time:
                     
@@ -928,7 +979,7 @@ class GameState():
                     payout_amount = heli_globals['Heli Farm Payout']
 
                 #Determine the earliest heli farm usage that could occur within the interval of interest (self.current_time,target_time]
-                drop_index = max(1,np.floor(1 + (self.current_time - heli_farm - heli_globals['Heli Farm Initial Cooldown'])/heli_globals['Heli Farm Usage Cooldown'])+1)
+                drop_index = max(1,floor(1 + (self.current_time - heli_farm - heli_globals['Heli Farm Initial Cooldown'])/heli_globals['Heli Farm Usage Cooldown'])+1)
                 heli_farm_time = heli_farm + heli_globals['Heli Farm Initial Cooldown'] + heli_globals['Heli Farm Usage Cooldown']*(drop_index-1)
                 while heli_farm_time <= target_time:
                     
@@ -971,12 +1022,12 @@ class GameState():
                             if self.current_round > farm_purchase_round:
                                 #When the farm was purchased on a previous round
                                 round_time = self.current_time - self.rounds.round_starts[self.current_round]
-                                loop_start = int(np.floor(farm.payout_frequency*round_time/self.rounds.nat_send_lens[self.current_round]) + 1)
+                                loop_start = int(floor(farm.payout_frequency*round_time/self.rounds.nat_send_lens[self.current_round]) + 1)
                                 loop_end = farm.payout_frequency
                             else: #self.current_round == farm_purhcase_round
                                 #When the farm was purchased on the same round as we are currently on
-                                loop_start = int(np.floor(farm.payout_frequency*(self.current_time - farm.purchase_time)/self.rounds.nat_send_lens[self.current_round]-1)+1)
-                                loop_end = int(np.ceil(farm.payout_frequency*(1 - (farm.purchase_time - self.rounds.round_starts[self.current_round])/self.rounds.nat_send_lens[self.current_round])-1)-1)
+                                loop_start = int(floor(farm.payout_frequency*(self.current_time - farm.purchase_time)/self.rounds.nat_send_lens[self.current_round]-1)+1)
+                                loop_end = int(ceil(farm.payout_frequency*(1 - (farm.purchase_time - self.rounds.round_starts[self.current_round])/self.rounds.nat_send_lens[self.current_round])-1)-1)
                         else:
                             loop_start = 0
                             loop_end = farm.payout_frequency
@@ -1118,7 +1169,19 @@ class GameState():
         return payout_times
 
     def updateEco(self, target_time):
-        # Helper method which updates eco from the current game time to the specified target_time.
+        '''
+        Helper method which simulates eco *only* in the game state from the current game time to the specified target_time.
+        The general purpose of this method is to compute the amount of cash and eco gained/lost in between payouts from other sources.
+
+        Contributors, do NOT write code which asks this function to operate over a time period during which a different income source may award a payment.
+
+        Parameters:
+        target_time (float): The time to simulate to.
+
+        Returns:
+        None
+        '''
+        
         # self.logs.append("Running updateEco!")
 
         # DEVELOPER'S NOTE: Because of a shortcoming in the code, if the player runs out of cash in the simulator while eco'ing, 
@@ -1173,7 +1236,16 @@ class GameState():
                 self.attack_queue_unlock_time = target_time + self.eco_delay/2
 
     def processBuyQueue(self, payout):
-        # Helper function for advanceGameState
+        '''
+        Helper function for advanceGameState. Examine the buy queue and determine if any purchases can be made within said queue.
+        Generally, this method is called every time a payout is received in the simulator.
+
+        Parameters:
+        payout (dict): The payout just received before looking at the buy queue
+
+        Returns:
+        None
+        '''
         
         made_purchase = False
         buy_message_list = []
@@ -1277,11 +1349,11 @@ class GameState():
             # Note at this point we have already checked whether we have reached the minimum time for the buy and also
             # we have already checked whether the buy item is valid. We now just need to check whether we have enough money!
             
-            #self.logs.append("We have %s cash, but the next buy costs %s and has a buffer of %s and needs to be made on or after time %s!"%(np.round(self.cash,2), np.round(self.cash - h_cash,2),np.round(self.buffer,2), self.min_buy_time))
+            #self.logs.append("We have %s cash, but the next buy costs %s and has a buffer of %s and needs to be made on or after time %s!"%(round(self.cash,2), round(self.cash - h_cash,2),round(self.buffer,2), self.min_buy_time))
             if h_cash >= self.buffer:
                 #If we do, perform the buy!
                 made_purchase = True
-                self.logs.append("We have %s cash! We can do the next buy, which costs %s and has a buffer of %s and a minimum buy time of %s!"%(np.round(self.cash,2), np.round(self.cash - h_cash,2),np.round(self.buffer,2),np.round(self.min_buy_time,2)))
+                self.logs.append("We have %s cash! We can do the next buy, which costs %s and has a buffer of %s and a minimum buy time of %s!"%(round(self.cash,2), round(self.cash - h_cash,2),round(self.buffer,2),round(self.min_buy_time,2)))
 
                 # Make the adjustments to the cash and loan amounts
                 self.cash = h_cash
@@ -1654,7 +1726,7 @@ class GameState():
                 self.sotf = ind
                 self.logs.append("Upgrading the druid farm at index %s into a Spirit of the Forest!"%(ind))
                 #Determine the minimum time that the SOTF active could be used
-                i = np.floor((20 + payout['Time'] - self.druid_farms[ind])/40) + 1
+                i = floor((20 + payout['Time'] - self.druid_farms[ind])/40) + 1
                 self.sotf_min_use_time = payout['Time'] + 20 + 40*(i-1)
         elif dict_obj['Type'] == 'Repeatedly Buy Druid Farms':
             #Note, there is no "checking" stage for this action.

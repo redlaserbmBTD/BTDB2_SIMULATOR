@@ -167,8 +167,8 @@ Currently, the send queue looks like this:
 [516.0750000000004, 516.2750000000004, 516.4750000000005]
 Recorded cash and eco values (1150,2019.2) at time 515.95
 Advancing game to time 516.0
-Awarded eco payment 2019.2 at time 516.0
-Recorded cash and eco values (3169.2,2019.2) at time 516.0
+Awarded eco payment 2019.2 at time 516
+Recorded cash and eco values (3169.2,2019.2) at time 516
 We have 3169.2 cash! We can do the next buy, which costs 2800.0 and has a buffer of 250 and a minimum buy time of 0!
 Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,3)
@@ -266,8 +266,8 @@ Advancing game to time 521.8
 Advancing game to time 521.9
 Advancing game to time 521.95
 Advancing game to time 522.0
-Awarded eco payment 2031.2 at time 522.0
-Recorded cash and eco values (2075.4,2031.2) at time 522.0
+Awarded eco payment 2031.2 at time 522
+Recorded cash and eco values (2075.4,2031.2) at time 522
 Advancing game to time 522.1
 Sent a set of Grouped Pinks at time 522.075
 Currently, the send queue looks like this: 
@@ -496,8 +496,8 @@ Currently, the send queue looks like this:
 Recorded cash and eco values (400.4,2115.2) at time 527.9
 Advancing game to time 527.95
 Advancing game to time 528.0
-Awarded eco payment 2115.2 at time 528.0
-Recorded cash and eco values (2515.6,2115.2) at time 528.0
+Awarded eco payment 2115.2 at time 528
+Recorded cash and eco values (2515.6,2115.2) at time 528
 Advancing game to time 528.1
 Sent a set of Grouped Pinks at time 528.0750000000014
 Currently, the send queue looks like this: 
@@ -772,8 +772,8 @@ Currently, the send queue looks like this:
 Recorded cash and eco values (3765.6,2187.2) at time 533.9
 Advancing game to time 533.95
 Advancing game to time 534.0
-Awarded eco payment 2187.2 at time 534.0
-Recorded cash and eco values (5952.8,2187.2) at time 534.0
+Awarded eco payment 2187.2 at time 534
+Recorded cash and eco values (5952.8,2187.2) at time 534
 Advancing game to time 534.1
 Sent a set of Grouped Pinks at time 534.0750000000028
 Currently, the send queue looks like this: 
@@ -1000,8 +1000,8 @@ Currently, the send queue looks like this:
 Recorded cash and eco values (5402.8,2259.2) at time 539.9
 Advancing game to time 539.95
 Advancing game to time 540.0
-Awarded eco payment 2259.2 at time 540.0
-Recorded cash and eco values (7662.0,2259.2) at time 540.0
+Awarded eco payment 2259.2 at time 540
+Recorded cash and eco values (7662.0,2259.2) at time 540
 Advancing game to time 540.1
 Sent a set of Grouped Pinks at time 540.0750000000041
 Currently, the send queue looks like this: 
@@ -1194,8 +1194,8 @@ Currently, the send queue looks like this:
 Recorded cash and eco values (5712.0,2331.2) at time 545.9
 Advancing game to time 545.95
 Advancing game to time 546.0
-Awarded eco payment 2331.2 at time 546.0
-Recorded cash and eco values (8043.2,2331.2) at time 546.0
+Awarded eco payment 2331.2 at time 546
+Recorded cash and eco values (8043.2,2331.2) at time 546
 Advancing game to time 546.1
 Sent a set of Grouped Pinks at time 546.0750000000055
 Currently, the send queue looks like this: 
@@ -1415,8 +1415,8 @@ Currently, the send queue looks like this:
 Recorded cash and eco values (7193.2,2403.2) at time 551.9
 Advancing game to time 551.95
 Advancing game to time 552.0
-Awarded eco payment 2403.2 at time 552.0
-Recorded cash and eco values (9596.4,2403.2) at time 552.0
+Awarded eco payment 2403.2 at time 552
+Recorded cash and eco values (9596.4,2403.2) at time 552
 Advancing game to time 552.1
 Sent a set of Grouped Pinks at time 552.0750000000069
 Currently, the send queue looks like this: 
@@ -1639,8 +1639,8 @@ Currently, the send queue looks like this:
 Recorded cash and eco values (8846.4,2475.2) at time 557.9
 Advancing game to time 557.95
 Advancing game to time 558.0
-Awarded eco payment 2475.2 at time 558.0
-Recorded cash and eco values (11321.6,2475.2) at time 558.0
+Awarded eco payment 2475.2 at time 558
+Recorded cash and eco values (11321.6,2475.2) at time 558
 Advancing game to time 558.1
 Sent a set of Grouped Pinks at time 558.0750000000082
 Currently, the send queue looks like this: 
@@ -1811,8 +1811,8 @@ Recorded cash and eco values (11746.6,2511.2) at time 563.75
 Advancing game to time 563.9
 Advancing game to time 563.95
 Advancing game to time 564.0
-Awarded eco payment 2511.2 at time 564.0
-Recorded cash and eco values (14257.8,2511.2) at time 564.0
+Awarded eco payment 2511.2 at time 564
+Recorded cash and eco values (14257.8,2511.2) at time 564
 We have 14257.8 cash! We can do the next buy, which costs 13000.0 and has a buffer of 250 and a minimum buy time of 0!
 Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,4)
@@ -1922,8 +1922,8 @@ Advancing game to time 569.8
 Advancing game to time 569.9
 Advancing game to time 569.95
 Advancing game to time 570.0
-Awarded eco payment 2511.2 at time 570.0
-Recorded cash and eco values (5449.0,2511.2) at time 570.0
+Awarded eco payment 2511.2 at time 570
+Recorded cash and eco values (5449.0,2511.2) at time 570
 Advancing game to time 570.1
 Advancing game to time 570.2
 Advancing game to time 570.3
@@ -2002,8 +2002,8 @@ Advancing game to time 575.8
 Advancing game to time 575.9
 Advancing game to time 575.95
 Advancing game to time 576.0
-Awarded eco payment 2511.2 at time 576.0
-Recorded cash and eco values (8220.2,2511.2) at time 576.0
+Awarded eco payment 2511.2 at time 576
+Recorded cash and eco values (8220.2,2511.2) at time 576
 Advancing game to time 576.1
 Advancing game to time 576.2
 Advancing game to time 576.3
@@ -2100,8 +2100,8 @@ Recorded cash and eco values (9480.2,2511.2) at time 581.75
 Advancing game to time 581.9
 Advancing game to time 581.95
 Advancing game to time 582.0
-Awarded eco payment 2511.2 at time 582.0
-Recorded cash and eco values (11991.4,2511.2) at time 582.0
+Awarded eco payment 2511.2 at time 582
+Recorded cash and eco values (11991.4,2511.2) at time 582
 Awarded direct payment 160 at time 582.0
 Recorded cash and eco values (12151.4,2511.2) at time 582.0
 Awarded direct payment 160 at time 582.0
@@ -2286,8 +2286,8 @@ Advancing game to time 587.8
 Advancing game to time 587.9
 Advancing game to time 587.95
 Advancing game to time 588.0
-Awarded eco payment 2511.2 at time 588.0
-Recorded cash and eco values (20602.6,2511.2) at time 588.0
+Awarded eco payment 2511.2 at time 588
+Recorded cash and eco values (20602.6,2511.2) at time 588
 Advancing game to time 588.1
 Advancing game to time 588.2
 Advancing game to time 588.3
@@ -2360,8 +2360,8 @@ Advancing game to time 593.8
 Advancing game to time 593.9
 Advancing game to time 593.95
 Advancing game to time 594.0
-Awarded eco payment 2511.2 at time 594.0
-Recorded cash and eco values (23113.8,2511.2) at time 594.0
+Awarded eco payment 2511.2 at time 594
+Recorded cash and eco values (23113.8,2511.2) at time 594
 Advancing game to time 594.1
 Advancing game to time 594.2
 Advancing game to time 594.3
@@ -2415,18 +2415,18 @@ Awarded direct payment 160 at time 597.75
 Recorded cash and eco values (23373.8,2511.2) at time 597.75
 Awarded direct payment 160 at time 597.75
 Recorded cash and eco values (23533.8,2511.2) at time 597.75
-We have 23533.8 cash! We can do the next buy, which costs 23480.0 and has a buffer of 0 and a minimum buy time of 596.75!
+We have 23533.8 cash! We can do the next buy, which costs 23270.0 and has a buffer of 0 and a minimum buy time of 596.75!
 Selling the farm at index 0
 Selling the farm at index 1
 Selling the farm at index 2
 Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,5)
 Completed the buy operation! The buy queue now has 0 items remaining in it
-Recorded cash and eco values (53.8,2511.2) at time 597.75
+Recorded cash and eco values (263.8,2511.2) at time 597.75
 Advanced game state to round 24
 The current time is 597.75
 The next round starts at time 662.0
-Our new cash and eco is given by (53.8,2511.2) 
+Our new cash and eco is given by (263.8,2511.2) 
 
 MESSAGE FROM GameState.viewCashEcoHistory():
 Graphing history of cash and eco!
