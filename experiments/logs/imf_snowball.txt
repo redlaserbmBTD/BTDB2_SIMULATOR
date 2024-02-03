@@ -1,0 +1,645 @@
+MESSAGE FROM GameState.__init__(): 
+Initialized Game State!
+The current game round is 14
+The current game time is 284.95 seconds
+The game round start times are given by [0, 6.0, 29.849999999999998, 52.849999999999994, 76.94999999999999, 106.14999999999999, 133.45, 156.85, 180.35, 201.6, 222.29999999999998, 233.85, 248.4, 266.15, 284.95, 297.05, 313.35, 346.40000000000003, 385.65000000000003, 411.8, 448.15000000000003, 456.95000000000005, 473.50000000000006, 503.75000000000006, 516.3000000000001, 576.7500000000001, 614.4000000000001, 643.1500000000001, 668.3000000000001, 692.5500000000001, 739.3000000000001, 749.1, 803.843999, 819.8239990000001, 849.0239990000001, 863.9156590000001, 911.5076570000001, 939.6556570000001, 1028.490657, 1093.8614870000001, 1190.3114870000002, 1202.1114870000001, 1244.2414870000002, 1275.6914870000003, 1303.1414870000003, 1324.1414870000003, 1342.4914870000002, 1383.9414870000003, 1405.3914870000003, 1443.9614890000003, 1480.4114890000003, 1491.3114890000004] 
+
+MESSAGE FROM GameState.fastForward: 
+Advancing game to time 285.0
+Modified the eco send to Zero
+Advancing game to time 285.1
+Advancing game to time 285.2
+Advancing game to time 285.25
+Advancing game to time 285.3
+Advancing game to time 285.4
+Advancing game to time 285.5
+Advancing game to time 285.6
+Advancing game to time 285.7
+Advancing game to time 285.75
+Awarded bank payment 50 at time 285.74 to farm at index 0
+The bank's new account value is 50
+Advancing game to time 285.8
+Advancing game to time 285.9
+Advancing game to time 286.0
+Advancing game to time 286.1
+Advancing game to time 286.2
+Advancing game to time 286.25
+Advancing game to time 286.3
+Advancing game to time 286.4
+Advancing game to time 286.5
+Advancing game to time 286.6
+Awarded bank payment 50 at time 286.52 to farm at index 0
+The bank's new account value is 100
+Advancing game to time 286.7
+Advancing game to time 286.75
+Advancing game to time 286.8
+Advancing game to time 286.9
+Advancing game to time 287.0
+Advancing game to time 287.1
+Advancing game to time 287.2
+Advancing game to time 287.25
+Advancing game to time 287.3
+Advancing game to time 287.4
+Awarded bank payment 50 at time 287.31 to farm at index 0
+The bank's new account value is 150
+Advancing game to time 287.5
+Advancing game to time 287.6
+Advancing game to time 287.7
+Advancing game to time 287.75
+Advancing game to time 287.8
+Advancing game to time 287.9
+Advancing game to time 288.0
+Awarded eco payment 600 at time 288
+Recorded cash and eco values (600,600) at time 288
+Advancing game to time 288.1
+Awarded bank payment 50 at time 288.09 to farm at index 0
+The bank's new account value is 200
+Advancing game to time 288.2
+Advancing game to time 288.25
+Advancing game to time 288.3
+Advancing game to time 288.4
+Advancing game to time 288.5
+Advancing game to time 288.6
+Advancing game to time 288.7
+Advancing game to time 288.75
+Advancing game to time 288.8
+Advancing game to time 288.9
+Awarded bank payment 50 at time 288.88 to farm at index 0
+The bank's new account value is 250
+Advancing game to time 289.0
+Advancing game to time 289.1
+Advancing game to time 289.2
+Advancing game to time 289.25
+Advancing game to time 289.3
+Advancing game to time 289.4
+Advancing game to time 289.5
+Advancing game to time 289.6
+Advancing game to time 289.7
+Awarded bank payment 50 at time 289.66 to farm at index 0
+The bank's new account value is 300
+Advancing game to time 289.75
+Advancing game to time 289.8
+Advancing game to time 289.9
+Advancing game to time 290.0
+Advancing game to time 290.1
+Advancing game to time 290.2
+Advancing game to time 290.25
+Advancing game to time 290.3
+Advancing game to time 290.4
+Advancing game to time 290.5
+Advancing game to time 290.6
+Advancing game to time 290.7
+Advancing game to time 290.75
+Advancing game to time 290.8
+Advancing game to time 290.9
+Advancing game to time 291.0
+Advancing game to time 291.1
+Advancing game to time 291.2
+Advancing game to time 291.25
+Advancing game to time 291.3
+Advancing game to time 291.4
+Advancing game to time 291.5
+Advancing game to time 291.6
+Advancing game to time 291.7
+Advancing game to time 291.75
+Advancing game to time 291.8
+Advancing game to time 291.9
+Advancing game to time 292.0
+Advancing game to time 292.1
+Advancing game to time 292.2
+Advancing game to time 292.25
+Advancing game to time 292.3
+Advancing game to time 292.4
+Advancing game to time 292.5
+Advancing game to time 292.6
+Advancing game to time 292.7
+Advancing game to time 292.75
+Advancing game to time 292.8
+Advancing game to time 292.9
+Advancing game to time 293.0
+Advancing game to time 293.1
+Advancing game to time 293.2
+Advancing game to time 293.25
+Advancing game to time 293.3
+Advancing game to time 293.4
+Advancing game to time 293.5
+Advancing game to time 293.6
+Advancing game to time 293.7
+Advancing game to time 293.75
+Advancing game to time 293.8
+Advancing game to time 293.9
+Advancing game to time 294.0
+Awarded eco payment 600 at time 294
+Recorded cash and eco values (1200,600) at time 294
+Advancing game to time 294.1
+Advancing game to time 294.2
+Advancing game to time 294.25
+Advancing game to time 294.3
+Advancing game to time 294.4
+Advancing game to time 294.5
+Advancing game to time 294.6
+Advancing game to time 294.7
+Advancing game to time 294.75
+Advancing game to time 294.8
+Advancing game to time 294.9
+Advancing game to time 295.0
+Advancing game to time 295.1
+Advancing game to time 295.2
+Advancing game to time 295.25
+Advancing game to time 295.3
+Advancing game to time 295.4
+Advancing game to time 295.5
+Advancing game to time 295.6
+Advancing game to time 295.7
+Advancing game to time 295.75
+Advancing game to time 295.8
+Advancing game to time 295.9
+Advancing game to time 296.0
+Advancing game to time 296.1
+Advancing game to time 296.2
+Advancing game to time 296.25
+Advancing game to time 296.3
+Advancing game to time 296.4
+Advancing game to time 296.5
+Advancing game to time 296.6
+Advancing game to time 296.7
+Advancing game to time 296.75
+Advancing game to time 296.8
+Advancing game to time 296.9
+Advancing game to time 297.0
+Advancing game to time 297.1
+Awarded bank interest at time 297.05 to the farm at index 0
+The bank's new account value is 1020.0
+Awarded bank payment 50 at time 297.05 to farm at index 0
+The bank's new account value is 1070.0
+Advancing game to time 297.2
+Advancing game to time 297.25
+Advancing game to time 297.3
+Advancing game to time 297.4
+Advancing game to time 297.5
+Advancing game to time 297.6
+Advancing game to time 297.7
+Advancing game to time 297.75
+Advancing game to time 297.8
+Advancing game to time 297.9
+Advancing game to time 298.0
+Advancing game to time 298.1
+Advancing game to time 298.2
+Advancing game to time 298.25
+Advancing game to time 298.3
+Advancing game to time 298.4
+Awarded bank payment 50 at time 298.34 to farm at index 0
+The bank's new account value is 1120.0
+Advancing game to time 298.5
+Advancing game to time 298.6
+Advancing game to time 298.7
+Advancing game to time 298.75
+Advancing game to time 298.8
+Advancing game to time 298.9
+Advancing game to time 299.0
+Advancing game to time 299.1
+Advancing game to time 299.2
+Advancing game to time 299.25
+Advancing game to time 299.3
+Advancing game to time 299.4
+Advancing game to time 299.5
+Advancing game to time 299.6
+Advancing game to time 299.7
+Awarded bank payment 50 at time 299.62 to farm at index 0
+The bank's new account value is 1170.0
+Advancing game to time 299.75
+Advancing game to time 299.8
+Advancing game to time 299.9
+Advancing game to time 300.0
+Awarded eco payment 600 at time 300
+Recorded cash and eco values (1800,600) at time 300
+Advancing game to time 300.1
+Advancing game to time 300.2
+Advancing game to time 300.25
+Advancing game to time 300.3
+Advancing game to time 300.4
+Advancing game to time 300.5
+Advancing game to time 300.6
+Advancing game to time 300.7
+Advancing game to time 300.75
+Advancing game to time 300.8
+Advancing game to time 300.9
+Advancing game to time 301.0
+Awarded bank payment 50 at time 300.91 to farm at index 0
+The bank's new account value is 1220.0
+Advancing game to time 301.1
+Advancing game to time 301.2
+Advancing game to time 301.25
+Advancing game to time 301.3
+Advancing game to time 301.4
+Advancing game to time 301.5
+Advancing game to time 301.6
+Advancing game to time 301.7
+Advancing game to time 301.75
+Advancing game to time 301.8
+Advancing game to time 301.9
+Advancing game to time 302.0
+Advancing game to time 302.1
+Advancing game to time 302.2
+Awarded bank payment 50 at time 302.19 to farm at index 0
+The bank's new account value is 1270.0
+Advancing game to time 302.25
+Advancing game to time 302.3
+Advancing game to time 302.4
+Advancing game to time 302.5
+Advancing game to time 302.6
+Advancing game to time 302.7
+Advancing game to time 302.75
+Advancing game to time 302.8
+Advancing game to time 302.9
+Advancing game to time 303.0
+Advancing game to time 303.1
+Advancing game to time 303.2
+Advancing game to time 303.25
+Advancing game to time 303.3
+Advancing game to time 303.4
+Advancing game to time 303.5
+Awarded bank payment 50 at time 303.48 to farm at index 0
+The bank's new account value is 1320.0
+Advancing game to time 303.6
+Advancing game to time 303.7
+Advancing game to time 303.75
+Advancing game to time 303.8
+Advancing game to time 303.9
+Advancing game to time 304.0
+Advancing game to time 304.1
+Advancing game to time 304.2
+Advancing game to time 304.25
+Advancing game to time 304.3
+Advancing game to time 304.4
+Advancing game to time 304.5
+Advancing game to time 304.6
+Advancing game to time 304.7
+Advancing game to time 304.75
+Advancing game to time 304.8
+Awarded bank payment 50 at time 304.76 to farm at index 0
+The bank's new account value is 1370.0
+Advancing game to time 304.9
+Advancing game to time 305.0
+Advancing game to time 305.1
+Advancing game to time 305.2
+Advancing game to time 305.25
+Advancing game to time 305.3
+Advancing game to time 305.4
+Advancing game to time 305.5
+Advancing game to time 305.6
+Advancing game to time 305.7
+Advancing game to time 305.75
+Advancing game to time 305.8
+Advancing game to time 305.9
+Advancing game to time 306.0
+Awarded eco payment 600 at time 306
+Recorded cash and eco values (2400,600) at time 306
+Advancing game to time 306.1
+Advancing game to time 306.2
+Advancing game to time 306.25
+Advancing game to time 306.3
+Advancing game to time 306.4
+Advancing game to time 306.5
+Advancing game to time 306.6
+Advancing game to time 306.7
+Advancing game to time 306.75
+Advancing game to time 306.8
+Advancing game to time 306.9
+Advancing game to time 307.0
+Advancing game to time 307.1
+Advancing game to time 307.2
+Advancing game to time 307.3
+Advancing game to time 307.4
+Advancing game to time 307.5
+Advancing game to time 307.6
+Advancing game to time 307.7
+Advancing game to time 307.8
+Advancing game to time 307.9
+Advancing game to time 308.0
+Advancing game to time 308.1
+Advancing game to time 308.2
+Advancing game to time 308.3
+Advancing game to time 308.4
+Advancing game to time 308.5
+Advancing game to time 308.6
+Advancing game to time 308.7
+Advancing game to time 308.8
+Advancing game to time 308.9
+Advancing game to time 309.0
+Advancing game to time 309.1
+Advancing game to time 309.2
+Advancing game to time 309.3
+Advancing game to time 309.4
+Advancing game to time 309.5
+Advancing game to time 309.6
+Advancing game to time 309.7
+Advancing game to time 309.8
+We have 2400 cash! We can do the next buy, which costs -20000 and has a buffer of 0 and a minimum buy time of 309.76!
+Taking out a loan from the IMF at index 0
+Completed the buy operation! The buy queue now has 3 items remaining in it
+We have 22400 cash! We can do the next buy, which costs 15600 and has a buffer of 0 and a minimum buy time of 0!
+Purchasing farm!
+Completed the buy operation! The buy queue now has 2 items remaining in it
+Recorded cash and eco values (6800,600) at time 309.8
+Advancing game to time 309.9
+Advancing game to time 310.0
+Advancing game to time 310.1
+Advancing game to time 310.2
+Advancing game to time 310.3
+Advancing game to time 310.4
+Advancing game to time 310.5
+Advancing game to time 310.6
+Advancing game to time 310.7
+Advancing game to time 310.8
+Advancing game to time 310.9
+Advancing game to time 311.0
+Advancing game to time 311.1
+Advancing game to time 311.2
+Advancing game to time 311.3
+Advancing game to time 311.4
+Advancing game to time 311.5
+Advancing game to time 311.6
+Advancing game to time 311.7
+Advancing game to time 311.8
+Advancing game to time 311.9
+Advancing game to time 312.0
+Awarded eco payment 600 at time 312
+Recorded cash and eco values (7100.0,600) at time 312
+Advancing game to time 312.1
+Advancing game to time 312.2
+Advancing game to time 312.3
+Advancing game to time 312.4
+Advancing game to time 312.5
+Advancing game to time 312.6
+Advancing game to time 312.7
+Advancing game to time 312.8
+Advancing game to time 312.9
+Advancing game to time 313.0
+Advancing game to time 313.1
+Advancing game to time 313.2
+Advancing game to time 313.3
+Advancing game to time 313.4
+Awarded bank interest at time 313.35 to the farm at index 0
+The bank's new account value is 2304.0
+Awarded bank payment 50 at time 313.35 to farm at index 0
+The bank's new account value is 2354.0
+Awarded bank interest at time 313.35 to the farm at index 1
+The bank's new account value is 660.0
+Awarded bank payment 50 at time 313.35 to farm at index 1
+The bank's new account value is 710.0
+Advancing game to time 313.5
+Advancing game to time 313.6
+Advancing game to time 313.7
+Advancing game to time 313.8
+Advancing game to time 313.9
+Advancing game to time 314.0
+Advancing game to time 314.1
+Advancing game to time 314.2
+Advancing game to time 314.3
+Advancing game to time 314.4
+Advancing game to time 314.5
+Advancing game to time 314.6
+Advancing game to time 314.7
+Advancing game to time 314.8
+Advancing game to time 314.9
+Advancing game to time 315.0
+Advancing game to time 315.1
+Advancing game to time 315.2
+Advancing game to time 315.3
+Advancing game to time 315.4
+Advancing game to time 315.5
+Advancing game to time 315.6
+Advancing game to time 315.7
+Advancing game to time 315.8
+Advancing game to time 315.9
+Advancing game to time 316.0
+Advancing game to time 316.1
+Advancing game to time 316.2
+Advancing game to time 316.3
+Advancing game to time 316.4
+Advancing game to time 316.5
+Advancing game to time 316.6
+Advancing game to time 316.7
+Advancing game to time 316.8
+Advancing game to time 316.9
+Advancing game to time 317.0
+Advancing game to time 317.1
+Advancing game to time 317.2
+Advancing game to time 317.3
+Awarded bank payment 50 at time 317.21 to farm at index 0
+The bank's new account value is 2404.0
+Awarded bank payment 50 at time 317.21 to farm at index 1
+The bank's new account value is 760.0
+Advancing game to time 317.4
+Advancing game to time 317.5
+Advancing game to time 317.6
+Advancing game to time 317.7
+Advancing game to time 317.8
+Advancing game to time 317.9
+Advancing game to time 318.0
+Awarded eco payment 600 at time 318
+Recorded cash and eco values (7400.0,600) at time 318
+Advancing game to time 318.1
+Advancing game to time 318.2
+Advancing game to time 318.3
+Advancing game to time 318.4
+Advancing game to time 318.5
+Advancing game to time 318.6
+Advancing game to time 318.7
+Advancing game to time 318.8
+Advancing game to time 318.9
+Advancing game to time 319.0
+Advancing game to time 319.1
+Advancing game to time 319.2
+Advancing game to time 319.3
+Advancing game to time 319.4
+Advancing game to time 319.5
+Advancing game to time 319.6
+Advancing game to time 319.7
+Advancing game to time 319.8
+Advancing game to time 319.9
+Advancing game to time 320.0
+Advancing game to time 320.1
+Advancing game to time 320.2
+Advancing game to time 320.3
+Advancing game to time 320.4
+Advancing game to time 320.5
+Advancing game to time 320.6
+Advancing game to time 320.7
+Advancing game to time 320.8
+Advancing game to time 320.9
+Advancing game to time 321.0
+Advancing game to time 321.1
+Awarded bank payment 50 at time 321.06 to farm at index 0
+The bank's new account value is 2454.0
+Awarded bank payment 50 at time 321.06 to farm at index 1
+The bank's new account value is 810.0
+Advancing game to time 321.2
+Advancing game to time 321.3
+Advancing game to time 321.4
+Advancing game to time 321.5
+Advancing game to time 321.6
+Advancing game to time 321.7
+Advancing game to time 321.8
+Advancing game to time 321.9
+Advancing game to time 322.0
+Advancing game to time 322.1
+Advancing game to time 322.2
+Advancing game to time 322.3
+Advancing game to time 322.4
+Advancing game to time 322.5
+Advancing game to time 322.6
+Advancing game to time 322.7
+Advancing game to time 322.8
+Advancing game to time 322.9
+Advancing game to time 323.0
+Advancing game to time 323.1
+Advancing game to time 323.2
+Advancing game to time 323.3
+Advancing game to time 323.4
+Advancing game to time 323.5
+Advancing game to time 323.6
+Advancing game to time 323.7
+Advancing game to time 323.8
+Advancing game to time 323.9
+Advancing game to time 324.0
+Awarded eco payment 600 at time 324
+Recorded cash and eco values (7700.0,600) at time 324
+Advancing game to time 324.1
+Advancing game to time 324.2
+Advancing game to time 324.3
+Advancing game to time 324.4
+Advancing game to time 324.5
+Advancing game to time 324.6
+Advancing game to time 324.7
+Advancing game to time 324.8
+Advancing game to time 324.9
+Advancing game to time 325.0
+Awarded bank payment 50 at time 324.92 to farm at index 0
+The bank's new account value is 2504.0
+Awarded bank payment 50 at time 324.92 to farm at index 1
+The bank's new account value is 860.0
+Advancing game to time 325.1
+Advancing game to time 325.2
+Advancing game to time 325.3
+Advancing game to time 325.4
+Advancing game to time 325.5
+Advancing game to time 325.6
+Advancing game to time 325.7
+Advancing game to time 325.8
+Advancing game to time 325.9
+Advancing game to time 326.0
+Advancing game to time 326.1
+Advancing game to time 326.2
+Advancing game to time 326.3
+Advancing game to time 326.4
+Advancing game to time 326.5
+Advancing game to time 326.6
+Advancing game to time 326.7
+Advancing game to time 326.8
+Advancing game to time 326.9
+Advancing game to time 327.0
+Advancing game to time 327.1
+Advancing game to time 327.2
+Advancing game to time 327.3
+Advancing game to time 327.4
+Advancing game to time 327.5
+Advancing game to time 327.6
+Advancing game to time 327.7
+Advancing game to time 327.8
+Advancing game to time 327.9
+Advancing game to time 328.0
+Advancing game to time 328.1
+Advancing game to time 328.2
+Advancing game to time 328.3
+Advancing game to time 328.4
+Advancing game to time 328.5
+Advancing game to time 328.6
+Advancing game to time 328.7
+Advancing game to time 328.8
+Awarded bank payment 50 at time 328.78 to farm at index 0
+The bank's new account value is 2554.0
+Awarded bank payment 50 at time 328.78 to farm at index 1
+The bank's new account value is 910.0
+Advancing game to time 328.9
+Advancing game to time 329.0
+Advancing game to time 329.1
+Advancing game to time 329.2
+Advancing game to time 329.3
+Advancing game to time 329.4
+Advancing game to time 329.5
+Advancing game to time 329.6
+Advancing game to time 329.7
+Advancing game to time 329.8
+Advancing game to time 329.9
+Advancing game to time 330.0
+Awarded eco payment 600 at time 330
+Recorded cash and eco values (8000.0,600) at time 330
+Advancing game to time 330.1
+Advancing game to time 330.2
+Advancing game to time 330.3
+Advancing game to time 330.4
+Advancing game to time 330.5
+Advancing game to time 330.6
+Advancing game to time 330.7
+Advancing game to time 330.8
+Advancing game to time 330.9
+Advancing game to time 331.0
+Advancing game to time 331.1
+Advancing game to time 331.2
+Advancing game to time 331.3
+Advancing game to time 331.4
+Advancing game to time 331.5
+Advancing game to time 331.6
+Advancing game to time 331.7
+Advancing game to time 331.8
+Advancing game to time 331.9
+Advancing game to time 332.0
+Advancing game to time 332.1
+Advancing game to time 332.2
+Advancing game to time 332.3
+Advancing game to time 332.4
+Advancing game to time 332.5
+Advancing game to time 332.6
+Advancing game to time 332.7
+Awarded bank payment 50 at time 332.64 to farm at index 0
+The bank's new account value is 2604.0
+Awarded bank payment 50 at time 332.64 to farm at index 1
+The bank's new account value is 960.0
+Advancing game to time 332.8
+Advancing game to time 332.9
+Advancing game to time 333.0
+Advancing game to time 333.1
+Advancing game to time 333.2
+Advancing game to time 333.3
+Advancing game to time 333.4
+Advancing game to time 333.5
+Advancing game to time 333.6
+Advancing game to time 333.7
+Advancing game to time 333.8
+Advancing game to time 333.9
+Advancing game to time 334.0
+Advancing game to time 334.1
+Advancing game to time 334.2
+Advancing game to time 334.3
+Advancing game to time 334.4
+Advancing game to time 334.5
+Advancing game to time 334.6
+Advancing game to time 334.7
+Advancing game to time 334.8
+We have 8000.0 cash! We can do the next buy, which costs -10000.0 and has a buffer of 0 and a minimum buy time of 334.8!
+Taking out a loan from the IMF at index 1
+Completed the buy operation! The buy queue now has 1 items remaining in it
+Recorded cash and eco values (18000.0,600) at time 334.8
+Advancing game to time 334.9
+Advancing game to time 335.0
+Advanced game state to round 16
+The current time is 335.0
+The next round starts at time 346.40000000000003
+Our new cash and eco is given by (18000.0,600) 
+
+MESSAGE FROM GameState.viewCashEcoHistory():
+Graphing history of cash and eco!
+Successfully generated graph! 
+

@@ -1426,7 +1426,7 @@ class GameState():
 
                 #For revenue and expense tracking
                 farm.revenue = 0
-                farm.expenses = farm_globals['Farm Cost']
+                farm.expenses = farm_total_cost_values[dict_obj['Upgrades']]
         elif dict_obj['Type'] == 'Upgrade Farm':
             # There are two ways this function can be used. 
             ind = dict_obj['Index']

@@ -1,7 +1,6 @@
 #IMPORT NECESSARY LIBRARIES
-import numpy as np
 import pandas as pd
-
+from math import floor, ceil
 import os
 
 nat_dirname = os.path.dirname(__file__)
@@ -77,8 +76,8 @@ class Rounds():
         return ind - 1
     
     def getTimeFromRound(self, round_val):
-        frac_part = round_val - np.floor(round_val)
-        time = (1-frac_part)*self.round_starts[int(min(np.floor(round_val),50))] + frac_part*self.round_starts[int(min(np.ceil(round_val),50))]
+        frac_part = round_val - floor(round_val)
+        time = (1-frac_part)*self.round_starts[int(min(floor(round_val),50))] + frac_part*self.round_starts[int(min(ceil(round_val),50))]
         #self.logs.append("Mapped round %s to time %s"%(round_val,time))
         return time
     
