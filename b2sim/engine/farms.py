@@ -1,6 +1,6 @@
 #DEFINITIONS OF THE 
 import copy
-from b2sim.info import *
+from b2sim.engine.info import *
 
 class MonkeyFarm():
     def __init__(self, initial_state):

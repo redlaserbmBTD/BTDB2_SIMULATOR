@@ -4,7 +4,7 @@ from math import floor, ceil
 import os
 
 nat_dirname = os.path.dirname(__file__)
-nat_filename = os.path.join(nat_dirname, "templates/nat_send_lengths.csv")
+nat_filename = os.path.join(nat_dirname, "../templates/nat_send_lengths.csv")
 
 #DEFINITION OF THE ROUNDS CLASS
 

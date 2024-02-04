@@ -285,7 +285,7 @@ farm_total_cost_values, farm_sellback_values = computeSellbackValues(farm_upgrad
 # %%
 
 dirname = os.path.dirname(__file__)
-filename = os.path.join(dirname, "templates/eco_send_info.csv")
+filename = os.path.join(dirname, "../templates/eco_send_info.csv")
 
 eco_send_table = pd.read_csv(filename)
 eco_send_info = {}

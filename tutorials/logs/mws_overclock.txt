@@ -1744,7 +1744,3 @@ The current time is 670.3000000000001
 The next round starts at time 697.1
 Our new cash and eco is given by (79880.0,2500) 
 
-MESSAGE FROM GameState.viewCashEcoHistory():
-Graphing history of cash and eco!
-Successfully generated graph! 
-

@@ -1,10 +1,8 @@
 # %%
 from math import floor, ceil
-import pandas as pd
-import matplotlib.pyplot as plt
-from b2sim.info import *
-from b2sim.actions import *
-from b2sim.farms import *
+from b2sim.engine.info import *
+from b2sim.engine.actions import *
+from b2sim.engine.farms import *
 import copy
 
 # %%
@@ -259,138 +257,6 @@ class GameState():
         self.logs.append("The current game round is %s"%(self.current_round))
         self.logs.append("The current game time is %s seconds"%(self.current_time))
         self.logs.append("The game round start times are given by %s \n"%(self.rounds.round_starts))
-        
-    def viewCashEcoHistory(self, dim = (12,6), display_farms = True, font_size = 12):
-        '''
-        Method for generating line graphs tracking the history of cash and eco over the course of the simulation
-
-        Returns: 
-        None
-
-        '''
-        self.logs.append("MESSAGE FROM GameState.viewCashEcoHistory():")
-        self.logs.append("Graphing history of cash and eco!")
-
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        #Create a table that shows when each significant event in simulation occurs
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-        event_df = pd.DataFrame(self.event_messages)
-        event_df = event_df.round(1)
-        display(event_df)
-
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        #Graph the cash and eco values over time
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-        #Graphing cash
-        fig, ax1 = plt.subplots()
-        fig.set_size_inches(dim[0],dim[1])
-
-        color = 'tab:blue'
-        ax1.set_xlabel('Time (seconds)')
-        ax1.set_ylabel('Cash', color = color)
-        ax1.plot(self.time_states, self.cash_states, label = "Cash", color = color)
-        ax1.tick_params(axis ='y', labelcolor = color)
-
-        #Graphing eco
-        color = 'tab:orange'
-        ax2 = ax1.twinx()
-        ax2.set_ylabel('Eco', color = color)
-        ax2.plot(self.time_states, self.eco_states, label = "Eco", color = color)
-        ax2.tick_params(axis ='y', labelcolor = color)
-
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        #Mark on the graph messages in self.event_messages
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        
-        cash_min = min(self.cash_states)
-        eco_min = min(self.eco_states)
-        
-        cash_max = max(self.cash_states)
-        eco_max = max(self.eco_states)
-
-        for message in self.event_messages:
-
-            # Set different line properties for each message type
-            if message['Type'] == 'Eco':
-                line_style = ':'
-                line_color = 'b'
-            elif message['Type'] == 'Buy':
-                line_style = ':'
-                line_color = 'r'
-            elif message['Type'] == 'Round':
-                line_style = ':'
-                line_color = 'k'
-
-            # If the given message is too long, truncate it.
-            if len(message['Message']) > 30:
-                thing_to_say = message['Message'][0:22] + '...'
-            else:
-                thing_to_say = message['Message']
-
-            #On both the cash and eco history graphs
-            ax1.plot([message['Time'],message['Time']],[cash_min-1, cash_max+1], label = thing_to_say, linestyle = line_style, color = line_color)
-
-        #~~~~~~~~~~~~~~~~
-        #Label the graphs
-        #~~~~~~~~~~~~~~~~
-
-        ax1.set_title("Cash & Eco vs Time")
-        ax1.legend(bbox_to_anchor = (1.1, 1), fontsize = font_size)
-        fig.tight_layout()
-
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        #Create a table that displays the revenue/expenses of each farm
-        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        
-        #Create a list of revenues and expenses for every farm
-        self.farm_revenues = []
-        self.farm_expenses = []
-        self.farm_profits = []
-        self.farm_eis = []
-        self.farm_starts = []
-        self.farm_ends = []
-
-        for farm in self.farms:
-            self.farm_revenues.append(farm.revenue)
-            self.farm_expenses.append(farm.expenses)
-            self.farm_profits.append(farm.revenue - farm.expenses)
-
-            #Also, measure the equivalent eco impact of the farm
-            start_time = max(farm.init_purchase_time, self.simulation_start_time)
-            if farm.sell_time == None:
-                end_time = self.current_time
-            else:
-                end_time = farm.sell_time
-
-            self.farm_starts.append(start_time)
-            self.farm_ends.append(end_time)
-
-            self.farm_eis.append(6*farm.revenue/(end_time - start_time))
-
-        # dictionary of lists 
-        if display_farms and len(self.farms) > 0:
-            farm_table = {
-                'Farm Index': [int(i) for i in range(len(self.farms))], 
-                'Revenue': self.farm_revenues, 
-                'Expenses': self.farm_expenses, 
-                'Profit': self.farm_profits, 
-                'Eco Impact': self.farm_eis, 
-                'Start Time': self.farm_starts, 
-                'End Time': self.farm_ends
-            } 
-            df = pd.DataFrame(farm_table)
-            df = df.set_index('Farm Index')
-            df = df.round(0)
-            display(df)
-
-        
-        self.logs.append("Successfully generated graph! \n")
-    
-    def changeStallFactor(self,stall_factor):
-        #NOTE: This method currently does not see use at all. It may be removed in a future update.
-        self.rounds.changeStallFactor(stall_factor,self.current_time)
 
     def checkProperties(self):
         '''
@@ -486,10 +352,44 @@ class GameState():
                                 self.checkProperties()
                                 break_flag = True
             
-            if len(self.eco_queue) > 0 and ((self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time) or self.eco_queue[0]['Time'] is None):
+            if self.changeNow():
                 self.changeEcoSend()
             else:
                 future_flag = True
+
+    def changeNow(self):
+        '''
+        Helper method for ecoQueueCorrection. 
+        Determines during the queue correction process whether it is necessary to change to the next send in the queue or not
+
+        Returns:
+        Boolean
+        '''
+
+        # Do NOT change if there is not a send in the queue to change to
+        if not len(self.eco_queue) > 0:
+            return False
+        
+        # Do change if there is a given time to use that send and we are beyond that given time
+        if (self.eco_queue[0]['Time'] is not None and self.eco_queue[0]['Time'] <= self.current_time):
+            return True
+
+        max_flag, eco_flag, time_flag = False, False, False
+        
+        if self.max_send_amount is None or (self.max_send_amount and self.number_of_sends >= self.max_send_amount):
+            max_flag = True
+        
+        if self.max_eco_amount is None or (self.max_eco_amount and self.eco >= self.max_eco_amount):
+            eco_flag = True
+
+        if self.max_send_time is None or (self.max_send_time and self.current_time > self.max_send_time):
+            time_flag = True
+        
+        # If there is no given time, check whether we have exhausted the break conditions on the existing send. 
+        if self.eco_queue[0]['Time'] is None and max_flag and eco_flag and time_flag:
+            return True
+        
+        return False
         
     def changeEcoSend(self):
         '''

@@ -1,189 +1,223 @@
 MESSAGE FROM GameState.__init__(): 
 Initialized Game State!
 The current game round is 13
-The current game time is 267.15 seconds
-The game round start times are given by [0, 6.0, 30.849999999999998, 53.849999999999994, 77.94999999999999, 107.14999999999999, 134.45, 157.85, 181.35, 202.6, 223.29999999999998, 234.85, 249.4, 267.15, 285.95, 298.05, 314.35, 347.40000000000003, 386.65000000000003, 412.8, 449.15000000000003, 457.95000000000005, 474.50000000000006, 504.75000000000006, 517.3000000000001, 577.7500000000001, 615.4000000000001, 644.1500000000001, 669.3000000000001, 693.5500000000001, 740.3000000000001, 750.1, 804.843999, 820.8239990000001, 850.0239990000001, 864.9156590000001, 912.5076570000001, 940.6556570000001, 1029.490657, 1094.8614870000001, 1191.3114870000002, 1203.1114870000001, 1245.2414870000002, 1276.6914870000003, 1304.1414870000003, 1325.1414870000003, 1343.4914870000002, 1384.9414870000003, 1406.3914870000003, 1444.9614890000003, 1481.4114890000003, 1492.3114890000004] 
+The current game time is 266.15 seconds
+The game round start times are given by [0, 6.0, 29.849999999999998, 52.849999999999994, 76.94999999999999, 106.14999999999999, 133.45, 156.85, 180.35, 201.6, 222.29999999999998, 233.85, 248.4, 266.15, 284.95, 297.05, 313.35, 346.40000000000003, 385.65000000000003, 411.8, 448.15000000000003, 456.95000000000005, 473.50000000000006, 503.75000000000006, 516.3000000000001, 576.7500000000001, 614.4000000000001, 643.1500000000001, 668.3000000000001, 692.5500000000001, 739.3000000000001, 749.1, 803.843999, 819.8239990000001, 849.0239990000001, 863.9156590000001, 911.5076570000001, 939.6556570000001, 1028.490657, 1093.8614870000001, 1190.3114870000002, 1202.1114870000001, 1244.2414870000002, 1275.6914870000003, 1303.1414870000003, 1324.1414870000003, 1342.4914870000002, 1383.9414870000003, 1405.3914870000003, 1443.9614890000003, 1480.4114890000003, 1491.3114890000004] 
 
 MESSAGE FROM GameState.fastForward: 
-Advancing game to time 267.2
+Advancing game to time 266.2
 Modified the eco send to Grouped Leads
-Sent a set of Grouped Leads at time 267.15
+Sent a set of Grouped Leads at time 266.15
 Currently, the send queue looks like this: 
-[267.75]
-Recorded cash and eco values (3350,704.5) at time 267.2
+[266.75]
+Recorded cash and eco values (3350,704.5) at time 266.2
+Advancing game to time 266.25
+Advancing game to time 266.3
+Sent a set of Grouped Leads at time 266.29999999999995
+Currently, the send queue looks like this: 
+[266.75, 267.35]
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
+The break time does not occur exactly when a payout is scheduled.
+Modified the eco send to Grouped Rainbows
+Advancing game to time 266.35
+Recorded cash and eco values (3200,709.0) at time 266.35
+Advancing game to time 266.4
+Advancing game to time 266.5
+Sent a set of Grouped Rainbows at time 266.44999999999993
+Currently, the send queue looks like this: 
+[266.75, 267.35, 267.75]
+Recorded cash and eco values (2800.0,715.0) at time 266.5
+Advancing game to time 266.6
+Sent a set of Grouped Rainbows at time 266.5999999999999
+Currently, the send queue looks like this: 
+[266.75, 267.35, 267.75, 268.15]
+Recorded cash and eco values (2400.0,721.0) at time 266.6
+Advancing game to time 266.7
+Advancing game to time 266.75
+Sent a set of Grouped Rainbows at time 266.7499999999999
+Currently, the send queue looks like this: 
+[266.75, 267.35, 267.75, 268.15, 268.54999999999995]
+Recorded cash and eco values (2000.0,727.0) at time 266.75
+Advancing game to time 266.8
+Advancing game to time 266.9
+Sent a set of Grouped Rainbows at time 266.89999999999986
+Currently, the send queue looks like this: 
+[267.35, 267.75, 268.15, 268.54999999999995, 268.94999999999993]
+Recorded cash and eco values (1600.0,733.0) at time 266.9
+Advancing game to time 267.0
+Awarded direct payment 50 at time 266.93
+Recorded cash and eco values (1650.0,733.0) at time 266.93
+Advancing game to time 267.1
+Sent a set of Grouped Rainbows at time 267.04999999999984
+Currently, the send queue looks like this: 
+[267.35, 267.75, 268.15, 268.54999999999995, 268.94999999999993, 269.3499999999999]
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
+The break time does not occur exactly when a payout is scheduled.
+Modified the eco send to Grouped Zebras
+Advancing game to time 267.1
+Recorded cash and eco values (1250.0,739.0) at time 267.1
+Advancing game to time 267.2
 Advancing game to time 267.25
 Advancing game to time 267.3
-Sent a set of Grouped Leads at time 267.29999999999995
-Currently, the send queue looks like this: 
-[267.75, 268.35]
-Reached the limit on eco'ing for this send! Moving to the next send in the queue.
-Modified the eco send to Grouped Rainbows
 Advancing game to time 267.4
-Recorded cash and eco values (3200,709.0) at time 267.4
+Sent a set of Grouped Zebras at time 267.35
+Currently, the send queue looks like this: 
+[267.75, 268.15, 268.54999999999995, 268.94999999999993, 269.3499999999999, 269.5899999999999]
+Recorded cash and eco values (1130.0,742.5) at time 267.4
 Advancing game to time 267.5
-Sent a set of Grouped Rainbows at time 267.44999999999993
-Currently, the send queue looks like this: 
-[267.75, 268.35, 268.75]
-Recorded cash and eco values (2800.0,715.0) at time 267.5
 Advancing game to time 267.6
-Sent a set of Grouped Rainbows at time 267.5999999999999
-Currently, the send queue looks like this: 
-[267.75, 268.35, 268.75, 269.15]
-Recorded cash and eco values (2400.0,721.0) at time 267.6
 Advancing game to time 267.7
 Advancing game to time 267.75
-Sent a set of Grouped Rainbows at time 267.7499999999999
+Awarded direct payment 50 at time 267.71
+Recorded cash and eco values (1180.0,742.5) at time 267.71
+Sent a set of Grouped Zebras at time 267.75
 Currently, the send queue looks like this: 
-[267.75, 268.35, 268.75, 269.15, 269.54999999999995]
-Recorded cash and eco values (2000.0,727.0) at time 267.75
+[268.15, 268.54999999999995, 268.94999999999993, 269.3499999999999, 269.5899999999999, 269.8299999999999]
+Recorded cash and eco values (1060.0,746.0) at time 267.75
 Advancing game to time 267.8
 Advancing game to time 267.9
-Sent a set of Grouped Rainbows at time 267.89999999999986
-Currently, the send queue looks like this: 
-[268.35, 268.75, 269.15, 269.54999999999995, 269.94999999999993]
-Recorded cash and eco values (1600.0,733.0) at time 267.9
 Advancing game to time 268.0
-Awarded direct payment 50 at time 267.93
-Recorded cash and eco values (1650.0,733.0) at time 267.93
 Advancing game to time 268.1
-Sent a set of Grouped Rainbows at time 268.04999999999984
-Currently, the send queue looks like this: 
-[268.35, 268.75, 269.15, 269.54999999999995, 269.94999999999993, 270.3499999999999]
-Reached the limit on eco'ing for this send! Moving to the next send in the queue.
-Modified the eco send to Grouped Zebras
 Advancing game to time 268.2
-Recorded cash and eco values (1250.0,739.0) at time 268.2
+Sent a set of Grouped Zebras at time 268.15
+Currently, the send queue looks like this: 
+[268.54999999999995, 268.94999999999993, 269.3499999999999, 269.5899999999999, 269.8299999999999, 270.06999999999994]
+Recorded cash and eco values (940.0,749.5) at time 268.2
 Advancing game to time 268.25
 Advancing game to time 268.3
 Advancing game to time 268.4
-Sent a set of Grouped Zebras at time 268.35
-Currently, the send queue looks like this: 
-[268.75, 269.15, 269.54999999999995, 269.94999999999993, 270.3499999999999, 270.5899999999999]
-Recorded cash and eco values (1130.0,742.5) at time 268.4
 Advancing game to time 268.5
+Awarded direct payment 50 at time 268.49
+Recorded cash and eco values (990.0,749.5) at time 268.49
 Advancing game to time 268.6
+Sent a set of Grouped Zebras at time 268.54999999999995
+Currently, the send queue looks like this: 
+[268.94999999999993, 269.3499999999999, 269.5899999999999, 269.8299999999999, 270.06999999999994, 270.30999999999995]
+Recorded cash and eco values (870.0,753.0) at time 268.6
 Advancing game to time 268.7
 Advancing game to time 268.75
-Awarded direct payment 50 at time 268.71
-Recorded cash and eco values (1180.0,742.5) at time 268.71
-Sent a set of Grouped Zebras at time 268.75
-Currently, the send queue looks like this: 
-[269.15, 269.54999999999995, 269.94999999999993, 270.3499999999999, 270.5899999999999, 270.8299999999999]
-Recorded cash and eco values (1060.0,746.0) at time 268.75
 Advancing game to time 268.8
 Advancing game to time 268.9
 Advancing game to time 269.0
+Sent a set of Grouped Zebras at time 268.94999999999993
+Currently, the send queue looks like this: 
+[269.3499999999999, 269.5899999999999, 269.8299999999999, 270.06999999999994, 270.30999999999995, 270.54999999999995]
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
+The break time does not occur exactly when a payout is scheduled.
+Modified the eco send to Grouped Purples
+Advancing game to time 269.0
+Recorded cash and eco values (750.0,756.5) at time 269.0
 Advancing game to time 269.1
 Advancing game to time 269.2
-Sent a set of Grouped Zebras at time 269.15
-Currently, the send queue looks like this: 
-[269.54999999999995, 269.94999999999993, 270.3499999999999, 270.5899999999999, 270.8299999999999, 271.06999999999994]
-Recorded cash and eco values (940.0,749.5) at time 269.2
 Advancing game to time 269.25
 Advancing game to time 269.3
+Awarded direct payment 50 at time 269.27
+Recorded cash and eco values (800.0,756.5) at time 269.27
 Advancing game to time 269.4
-Advancing game to time 269.5
-Awarded direct payment 50 at time 269.49
-Recorded cash and eco values (990.0,749.5) at time 269.49
-Advancing game to time 269.6
-Sent a set of Grouped Zebras at time 269.54999999999995
+Sent a set of Grouped Purples at time 269.3499999999999
 Currently, the send queue looks like this: 
-[269.94999999999993, 270.3499999999999, 270.5899999999999, 270.8299999999999, 271.06999999999994, 271.30999999999995]
-Recorded cash and eco values (870.0,753.0) at time 269.6
+[269.5899999999999, 269.8299999999999, 270.06999999999994, 270.30999999999995, 270.54999999999995, 270.72499999999997]
+Recorded cash and eco values (685.0,759.2) at time 269.4
+Advancing game to time 269.5
+Advancing game to time 269.6
+Sent a set of Grouped Purples at time 269.5899999999999
+Currently, the send queue looks like this: 
+[269.8299999999999, 270.06999999999994, 270.30999999999995, 270.54999999999995, 270.72499999999997, 270.9]
+Recorded cash and eco values (570.0,761.9) at time 269.6
 Advancing game to time 269.7
 Advancing game to time 269.75
 Advancing game to time 269.8
 Advancing game to time 269.9
-Advancing game to time 270.0
-Sent a set of Grouped Zebras at time 269.94999999999993
+Sent a set of Grouped Purples at time 269.8299999999999
 Currently, the send queue looks like this: 
-[270.3499999999999, 270.5899999999999, 270.8299999999999, 271.06999999999994, 271.30999999999995, 271.54999999999995]
-Reached the limit on eco'ing for this send! Moving to the next send in the queue.
-Modified the eco send to Grouped Purples
+[270.06999999999994, 270.30999999999995, 270.54999999999995, 270.72499999999997, 270.9, 271.075]
+Recorded cash and eco values (455.0,764.6) at time 269.9
+Advancing game to time 270.0
+Awarded eco payment 764.6 at time 270
+Recorded cash and eco values (1219.6,764.6) at time 270
 Advancing game to time 270.1
-Recorded cash and eco values (750.0,756.5) at time 270.1
+Awarded direct payment 50 at time 270.06
+Recorded cash and eco values (1269.6,764.6) at time 270.06
+Sent a set of Grouped Purples at time 270.06999999999994
+Currently, the send queue looks like this: 
+[270.30999999999995, 270.54999999999995, 270.72499999999997, 270.9, 271.075, 271.25]
+Recorded cash and eco values (1154.6,767.3) at time 270.1
 Advancing game to time 270.2
 Advancing game to time 270.25
 Advancing game to time 270.3
-Awarded direct payment 50 at time 270.27
-Recorded cash and eco values (800.0,756.5) at time 270.27
 Advancing game to time 270.4
-Sent a set of Grouped Purples at time 270.3499999999999
+Sent a set of Grouped Purples at time 270.30999999999995
 Currently, the send queue looks like this: 
-[270.5899999999999, 270.8299999999999, 271.06999999999994, 271.30999999999995, 271.54999999999995, 271.72499999999997]
-Recorded cash and eco values (685.0,759.2) at time 270.4
+[270.54999999999995, 270.72499999999997, 270.9, 271.075, 271.25, 271.425]
+Recorded cash and eco values (1039.6,770.0) at time 270.4
 Advancing game to time 270.5
 Advancing game to time 270.6
-Sent a set of Grouped Purples at time 270.5899999999999
+Sent a set of Grouped Purples at time 270.54999999999995
 Currently, the send queue looks like this: 
-[270.8299999999999, 271.06999999999994, 271.30999999999995, 271.54999999999995, 271.72499999999997, 271.9]
-Recorded cash and eco values (570.0,761.9) at time 270.6
+[270.72499999999997, 270.9, 271.075, 271.25, 271.425, 271.6]
+Recorded cash and eco values (924.6,772.7) at time 270.6
 Advancing game to time 270.7
 Advancing game to time 270.75
+Sent a set of Grouped Purples at time 270.72499999999997
+Currently, the send queue looks like this: 
+[270.9, 271.075, 271.25, 271.425, 271.6, 271.77500000000003]
+Recorded cash and eco values (809.6,775.4) at time 270.75
 Advancing game to time 270.8
 Advancing game to time 270.9
-Sent a set of Grouped Purples at time 270.8299999999999
+Awarded direct payment 50 at time 270.84
+Recorded cash and eco values (859.6,775.4) at time 270.84
+Sent a set of Grouped Purples at time 270.9
 Currently, the send queue looks like this: 
-[271.06999999999994, 271.30999999999995, 271.54999999999995, 271.72499999999997, 271.9, 272.075]
-Recorded cash and eco values (455.0,764.6) at time 270.9
+[271.075, 271.25, 271.425, 271.6, 271.77500000000003, 271.95000000000005]
+Recorded cash and eco values (744.6,778.1) at time 270.9
 Advancing game to time 271.0
 Advancing game to time 271.1
-Awarded direct payment 50 at time 271.06
-Recorded cash and eco values (505.0,764.6) at time 271.06
-Sent a set of Grouped Purples at time 271.06999999999994
+Sent a set of Grouped Purples at time 271.075
 Currently, the send queue looks like this: 
-[271.30999999999995, 271.54999999999995, 271.72499999999997, 271.9, 272.075, 272.25]
-Recorded cash and eco values (390.0,767.3) at time 271.1
+[271.25, 271.425, 271.6, 271.77500000000003, 271.95000000000005, 272.12500000000006]
+Recorded cash and eco values (629.6,780.8) at time 271.1
 Advancing game to time 271.2
 Advancing game to time 271.25
-Advancing game to time 271.3
-Advancing game to time 271.4
-Sent a set of Grouped Purples at time 271.30999999999995
+Sent a set of Grouped Purples at time 271.25
 Currently, the send queue looks like this: 
-[271.54999999999995, 271.72499999999997, 271.9, 272.075, 272.25, 272.425]
-Recorded cash and eco values (275.0,770.0) at time 271.4
+[271.425, 271.6, 271.77500000000003, 271.95000000000005, 272.12500000000006, 272.30000000000007]
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
+No more sends in the eco queue! Switching to the zero send.
+The break time does occur exactly when a payout is scheduled.
+Recorded cash and eco values (514.6,783.5) at time 271.25
+Advancing game to time 271.3
+Modified the eco send to Zero
+Advancing game to time 271.4
 Advancing game to time 271.5
 Advancing game to time 271.6
-Sent a set of Grouped Purples at time 271.54999999999995
-Currently, the send queue looks like this: 
-[271.72499999999997, 271.9, 272.075, 272.25, 272.425, 272.6]
-Recorded cash and eco values (160.0,772.7) at time 271.6
 Advancing game to time 271.7
+Awarded direct payment 50 at time 271.62
+Recorded cash and eco values (564.6,783.5) at time 271.62
 Advancing game to time 271.75
-Sent a set of Grouped Purples at time 271.72499999999997
-Currently, the send queue looks like this: 
-[271.9, 272.075, 272.25, 272.425, 272.6, 272.77500000000003]
-Recorded cash and eco values (45.0,775.4) at time 271.75
 Advancing game to time 271.8
 Advancing game to time 271.9
-Awarded direct payment 50 at time 271.84
-Recorded cash and eco values (95.0,775.4) at time 271.84
 Advancing game to time 272.0
 Advancing game to time 272.1
 Advancing game to time 272.2
 Advancing game to time 272.25
 Advancing game to time 272.3
 Advancing game to time 272.4
+Awarded direct payment 50 at time 272.4
+Recorded cash and eco values (614.6,783.5) at time 272.4
 Advancing game to time 272.5
 Advancing game to time 272.6
 Advancing game to time 272.7
-Awarded direct payment 50 at time 272.62
-Recorded cash and eco values (145.0,775.4) at time 272.62
-Sent a set of Grouped Purples at time 272.675
-Currently, the send queue looks like this: 
-[272.77500000000003, 272.95000000000005]
-Recorded cash and eco values (30.0,778.1) at time 272.7
 Advancing game to time 272.75
 Advancing game to time 272.8
 Advancing game to time 272.9
 Advancing game to time 273.0
 Advancing game to time 273.1
 Advancing game to time 273.2
+Awarded direct payment 50 at time 273.18
+Recorded cash and eco values (664.6,783.5) at time 273.18
 Advancing game to time 273.25
 Advancing game to time 273.3
 Advancing game to time 273.4
-Awarded direct payment 50 at time 273.4
-Recorded cash and eco values (80.0,778.1) at time 273.4
 Advancing game to time 273.5
 Advancing game to time 273.6
 Advancing game to time 273.7
@@ -191,26 +225,22 @@ Advancing game to time 273.75
 Advancing game to time 273.8
 Advancing game to time 273.9
 Advancing game to time 274.0
+Awarded direct payment 50 at time 273.96
+Recorded cash and eco values (714.6,783.5) at time 273.96
 Advancing game to time 274.1
 Advancing game to time 274.2
-Awarded direct payment 50 at time 274.18
-Recorded cash and eco values (130.0,778.1) at time 274.18
 Advancing game to time 274.25
 Advancing game to time 274.3
-Sent a set of Grouped Purples at time 274.25624999999997
-Currently, the send queue looks like this: 
-[274.43125]
-Recorded cash and eco values (15.0,780.8) at time 274.3
 Advancing game to time 274.4
 Advancing game to time 274.5
 Advancing game to time 274.6
 Advancing game to time 274.7
 Advancing game to time 274.75
+Awarded direct payment 50 at time 274.74
+Recorded cash and eco values (764.6,783.5) at time 274.74
 Advancing game to time 274.8
 Advancing game to time 274.9
 Advancing game to time 275.0
-Awarded direct payment 50 at time 274.96
-Recorded cash and eco values (65.0,780.8) at time 274.96
 Advancing game to time 275.1
 Advancing game to time 275.2
 Advancing game to time 275.25
@@ -218,53 +248,46 @@ Advancing game to time 275.3
 Advancing game to time 275.4
 Advancing game to time 275.5
 Advancing game to time 275.6
+Awarded direct payment 50 at time 275.52
+Recorded cash and eco values (814.6,783.5) at time 275.52
 Advancing game to time 275.7
 Advancing game to time 275.75
-Awarded direct payment 50 at time 275.74
-Recorded cash and eco values (115.0,780.8) at time 275.74
 Advancing game to time 275.8
-Sent a set of Grouped Purples at time 275.775
-Currently, the send queue looks like this: 
-[275.95]
-Reached the limit on eco'ing for this send! Moving to the next send in the queue.
-No more sends in the eco queue! Switching to the zero send.
 Advancing game to time 275.9
-Reached the limit on eco'ing for this send! Moving to the next send in the queue.
-Modified the eco send to Zero
 Advancing game to time 276.0
-Awarded eco payment 783.5 at time 276.0
-Recorded cash and eco values (783.5,783.5) at time 276.0
+Awarded eco payment 783.5 at time 276
+Recorded cash and eco values (1598.1,783.5) at time 276
 Advancing game to time 276.1
 Advancing game to time 276.2
 Advancing game to time 276.25
 Advancing game to time 276.3
 Advancing game to time 276.4
+Awarded direct payment 50 at time 276.31
+Recorded cash and eco values (1648.1,783.5) at time 276.31
 Advancing game to time 276.5
 Advancing game to time 276.6
-Awarded direct payment 50 at time 276.52
-Recorded cash and eco values (833.5,783.5) at time 276.52
 Advancing game to time 276.7
 Advancing game to time 276.75
 Advancing game to time 276.8
 Advancing game to time 276.9
 Advancing game to time 277.0
 Advancing game to time 277.1
+Awarded direct payment 50 at time 277.09
+Recorded cash and eco values (1698.1,783.5) at time 277.09
 Advancing game to time 277.2
 Advancing game to time 277.25
 Advancing game to time 277.3
 Advancing game to time 277.4
-Awarded direct payment 50 at time 277.31
-Recorded cash and eco values (883.5,783.5) at time 277.31
 Advancing game to time 277.5
 Advancing game to time 277.6
 Advancing game to time 277.7
 Advancing game to time 277.75
 Advancing game to time 277.8
 Advancing game to time 277.9
+Awarded direct payment 50 at time 277.87
+Recorded cash and eco values (1748.1,783.5) at time 277.87
 Advancing game to time 278.0
 Advancing game to time 278.1
-Awarded direct payment 50 at time 278.09
-Recorded cash and eco values (933.5,783.5) at time 278.09
 Advancing game to time 278.2
 Advancing game to time 278.25
 Advancing game to time 278.3
@@ -275,8 +298,6 @@ Advancing game to time 278.7
 Advancing game to time 278.75
 Advancing game to time 278.8
 Advancing game to time 278.9
-Awarded direct payment 50 at time 278.87
-Recorded cash and eco values (983.5,783.5) at time 278.87
 Advancing game to time 279.0
 Advancing game to time 279.1
 Advancing game to time 279.2
@@ -314,8 +335,8 @@ Advancing game to time 281.75
 Advancing game to time 281.8
 Advancing game to time 281.9
 Advancing game to time 282.0
-Awarded eco payment 783.5 at time 282.0
-Recorded cash and eco values (1767.0,783.5) at time 282.0
+Awarded eco payment 783.5 at time 282
+Recorded cash and eco values (2531.6,783.5) at time 282
 Advancing game to time 282.1
 Advancing game to time 282.2
 Advancing game to time 282.25
@@ -351,27 +372,11 @@ Advancing game to time 284.7
 Advancing game to time 284.75
 Advancing game to time 284.8
 Advancing game to time 284.9
-Advancing game to time 285.0
-Advancing game to time 285.1
-Advancing game to time 285.2
-Advancing game to time 285.25
-Advancing game to time 285.3
-Advancing game to time 285.4
-Advancing game to time 285.5
-Advancing game to time 285.6
-Advancing game to time 285.7
-Advancing game to time 285.75
-Advancing game to time 285.8
-Advancing game to time 285.9
-Advancing game to time 285.95
-Awarded direct payment 50 at time 285.95
-Recorded cash and eco values (1817.0,783.5) at time 285.95
+Advancing game to time 284.95
+Awarded direct payment 50 at time 284.95
+Recorded cash and eco values (2581.6,783.5) at time 284.95
 Advanced game state to round 14
-The current time is 285.95
-The next round starts at time 298.05
-Our new cash and eco is given by (1817.0,783.5) 
-
-MESSAGE FROM GameState.viewCashEcoHistory():
-Graphing history of cash and eco!
-Successfully generated graph! 
+The current time is 284.95
+The next round starts at time 297.05
+Our new cash and eco is given by (2581.6,783.5) 
 
