@@ -1,11 +1,11 @@
 #IMPORT NECESSARY LIBRARIES
-import pandas as pd
+import csv
 from math import floor, ceil
 import os
 
-nat_dirname = os.path.dirname(__file__)
-nat_filename = os.path.join(nat_dirname, "../templates/nat_send_lengths.csv")
 
+nat_send = [0.5,18,17,18,23,21,17,17,15,14,5,8,11,12.5,5.5,9,27,33,20,30,1,10,24,6,54,30,21,18,17,40,1,48.294,9.53,22.75,8.44166,41.142,21.698,82.385,58.92083,90,2,35.68,25,21,14.55,11.9,35,15,32.12,30,0.1]
+nat_stall = [5.5,9,10.5,11.5,12.5,13.5,14.5,15.5,13,17.5,16,16,18,13.5,16.5,23.5,11,13,12,14,28.5,16,13,16,15,27,28,22,23,18,38.5,15,15,15,15,15,15,15,15,15,48.5,15,15,15,15,15,15,15,15,15,58.5]
 #DEFINITION OF THE ROUNDS CLASS
 
 # There are different ways to set round times in the Rounds class:
@@ -23,12 +23,11 @@ class Rounds():
             return None
 
         #Determine natural send lengths, max stall times, and max anti-stall times
-        df = pd.read_csv(nat_filename)
-        self.nat_send_lens = list(df['Nat Send Len'])
+        self.nat_send_lens = nat_send
 
         max_antistall_time = 5.5
         if mode == 'Stall Factor':
-            max_stall_times = list(df['Nat Stall Len'])
+            max_stall_times = nat_stall
         else:
             #If using the Theoretical Stall Factor or Stall Times modes, use the round timer to determine maximum stall times
             max_stall_times = [8.5 + i for i in range(51)]

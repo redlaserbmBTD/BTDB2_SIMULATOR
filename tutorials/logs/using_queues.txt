@@ -2,7 +2,7 @@ MESSAGE FROM GameState.__init__():
 Initialized Game State!
 The current game round is 10
 The current game time is 231.5 seconds
-The game round start times are given by [0, 6.0, 33.5, 57.5, 82.5, 112.5, 140.5, 164.5, 188.5, 210.5, 231.5, 242.25, 256.0, 272.75, 291.0, 302.25, 317.0, 349.75, 388.5, 414.25, 450.0, 456.75, 472.5, 502.25, 514.0, 573.75, 609.5, 636.25, 660.0, 682.75, 728.5, 735.25, 789.293999, 804.573999, 833.073999, 847.2656589999999, 894.157657, 921.605657, 1009.7406569999999, 1074.4114869999999, 1170.1614869999999, 1177.9114869999999, 1219.341487, 1250.091487, 1276.841487, 1297.1414869999999, 1314.791487, 1355.541487, 1376.291487, 1414.161489, 1449.911489, 1455.761489] 
+The game round start times are given by [0, 6.0, 33.5, 57.5, 82.5, 112.5, 140.5, 164.5, 188.5, 210.5, 231.5, 242.25, 256.0, 272.75, 291.0, 302.25, 317.0, 349.75, 388.5, 414.25, 450.0, 456.75, 472.5, 502.25, 514.0, 573.75, 609.5, 636.25, 660.0, 682.75, 728.5, 735.25, 789.294, 804.574, 833.074, 847.2656599999999, 894.15766, 921.60566, 1009.7406599999999, 1074.41149, 1170.16149, 1177.91149, 1219.34149, 1250.09149, 1276.84149, 1297.14149, 1314.79149, 1355.54149, 1376.29149, 1414.16149, 1449.91149, 1455.7614899999999] 
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 231.6
@@ -10,40 +10,40 @@ Modified the eco send to Grouped Reds
 Sent a set of Grouped Reds at time 231.5
 Currently, the send queue looks like this: 
 [232.3]
-Recorded cash and eco values (2780,701.0) at time 231.6
+Recorded cash and eco values (2780.0,701.0) at time 231.6
 Advancing game to time 231.7
 Sent a set of Grouped Reds at time 231.65
 Currently, the send queue looks like this: 
 [232.3, 233.10000000000002]
-Recorded cash and eco values (2760,702.0) at time 231.7
+Recorded cash and eco values (2760.0,702.0) at time 231.7
 Advancing game to time 231.8
 Sent a set of Grouped Reds at time 231.8
 Currently, the send queue looks like this: 
 [232.3, 233.10000000000002, 233.90000000000003]
-Recorded cash and eco values (2740,703.0) at time 231.8
+Recorded cash and eco values (2740.0,703.0) at time 231.8
 Advancing game to time 231.9
 Advancing game to time 232.0
 Sent a set of Grouped Reds at time 231.95000000000002
 Currently, the send queue looks like this: 
 [232.3, 233.10000000000002, 233.90000000000003, 234.70000000000005]
-Recorded cash and eco values (2720,704.0) at time 232.0
+Recorded cash and eco values (2720.0,704.0) at time 232.0
 Advancing game to time 232.1
 Sent a set of Grouped Reds at time 232.10000000000002
 Currently, the send queue looks like this: 
 [232.3, 233.10000000000002, 233.90000000000003, 234.70000000000005, 235.50000000000006]
-Recorded cash and eco values (2700,705.0) at time 232.1
+Recorded cash and eco values (2700.0,705.0) at time 232.1
 Advancing game to time 232.2
 Advancing game to time 232.3
 Sent a set of Grouped Reds at time 232.25000000000003
 Currently, the send queue looks like this: 
 [232.3, 233.10000000000002, 233.90000000000003, 234.70000000000005, 235.50000000000006, 236.30000000000007]
-Recorded cash and eco values (2680,706.0) at time 232.3
+Recorded cash and eco values (2680.0,706.0) at time 232.3
 Advancing game to time 232.4
 Advancing game to time 232.5
 Sent a set of Grouped Reds at time 232.40000000000003
 Currently, the send queue looks like this: 
 [233.10000000000002, 233.90000000000003, 234.70000000000005, 235.50000000000006, 236.30000000000007, 237.10000000000008]
-Recorded cash and eco values (2660,707.0) at time 232.5
+Recorded cash and eco values (2660.0,707.0) at time 232.5
 Advancing game to time 232.6
 Advancing game to time 232.7
 Advancing game to time 232.8
@@ -53,7 +53,7 @@ Advancing game to time 233.1
 Sent a set of Grouped Reds at time 233.10000000000002
 Currently, the send queue looks like this: 
 [233.90000000000003, 234.70000000000005, 235.50000000000006, 236.30000000000007, 237.10000000000008, 237.9000000000001]
-Recorded cash and eco values (2640,708.0) at time 233.1
+Recorded cash and eco values (2640.0,708.0) at time 233.1
 Advancing game to time 233.2
 Advancing game to time 233.3
 Advancing game to time 233.4

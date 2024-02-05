@@ -2,7 +2,7 @@ MESSAGE FROM GameState.__init__():
 Initialized Game State!
 The current game round is 0
 The current game time is 0 seconds
-The game round start times are given by [0, 6.0, 31.075, 55.825, 82.025, 113.67500000000001, 143.775, 170.325, 197.325, 221.2, 246.1, 261.325, 279.55, 301.675, 323.27500000000003, 339.225, 361.82500000000005, 396.80000000000007, 438.67500000000007, 467.1000000000001, 506.42500000000007, 523.2750000000001, 543.5000000000001, 576.3750000000001, 592.6000000000001, 656.3750000000001, 701.5500000000001, 738.1750000000001, 769.1, 799.475, 850.6, 871.95, 930.018999, 949.323999, 981.8489989999999, 1000.065659, 1050.982657, 1082.455657, 1174.615657, 1243.311487, 1343.086487, 1369.936487, 1415.3914869999999, 1450.166487, 1480.941487, 1505.266487, 1526.941487, 1571.7164870000001, 1596.4914870000002, 1638.3864890000002, 1678.1614890000003, 1707.6114890000003] 
+The game round start times are given by [0, 6.0, 31.075, 55.825, 82.025, 113.67500000000001, 143.775, 170.325, 197.325, 221.2, 246.1, 261.325, 279.55, 301.675, 323.27500000000003, 339.225, 361.82500000000005, 396.80000000000007, 438.67500000000007, 467.1000000000001, 506.42500000000007, 523.2750000000001, 543.5000000000001, 576.3750000000001, 592.6000000000001, 656.3750000000001, 701.5500000000001, 738.1750000000001, 769.1, 799.475, 850.6, 871.95, 930.019, 949.324, 981.8489999999999, 1000.06566, 1050.98266, 1082.4556599999999, 1174.61566, 1243.31149, 1343.0864900000001, 1369.93649, 1415.39149, 1450.16649, 1480.9414900000002, 1505.2664900000002, 1526.9414900000002, 1571.7164900000002, 1596.4914900000003, 1638.3864900000003, 1678.1614900000004, 1707.6114900000005] 
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 0.1
@@ -82,40 +82,40 @@ Advancing game to time 6.6
 Sent a set of Grouped Reds at time 6.5
 Currently, the send queue looks like this: 
 [7.3]
-Recorded cash and eco values (275,251.0) at time 6.6
+Recorded cash and eco values (275.0,251.0) at time 6.6
 Advancing game to time 6.7
 Sent a set of Grouped Reds at time 6.65
 Currently, the send queue looks like this: 
 [7.3, 8.1]
-Recorded cash and eco values (255,252.0) at time 6.7
+Recorded cash and eco values (255.0,252.0) at time 6.7
 Advancing game to time 6.8
 Sent a set of Grouped Reds at time 6.800000000000001
 Currently, the send queue looks like this: 
 [7.3, 8.1, 8.9]
-Recorded cash and eco values (235,253.0) at time 6.8
+Recorded cash and eco values (235.0,253.0) at time 6.8
 Advancing game to time 6.9
 Advancing game to time 7.0
 Sent a set of Grouped Reds at time 6.950000000000001
 Currently, the send queue looks like this: 
 [7.3, 8.1, 8.9, 9.700000000000001]
-Recorded cash and eco values (215,254.0) at time 7.0
+Recorded cash and eco values (215.0,254.0) at time 7.0
 Advancing game to time 7.1
 Advancing game to time 7.2
 Sent a set of Grouped Reds at time 7.100000000000001
 Currently, the send queue looks like this: 
 [7.3, 8.1, 8.9, 9.700000000000001, 10.500000000000002]
-Recorded cash and eco values (195,255.0) at time 7.2
+Recorded cash and eco values (195.0,255.0) at time 7.2
 Advancing game to time 7.3
 Sent a set of Grouped Reds at time 7.250000000000002
 Currently, the send queue looks like this: 
 [7.3, 8.1, 8.9, 9.700000000000001, 10.500000000000002, 11.300000000000002]
-Recorded cash and eco values (175,256.0) at time 7.3
+Recorded cash and eco values (175.0,256.0) at time 7.3
 Advancing game to time 7.4
 Advancing game to time 7.5
 Sent a set of Grouped Reds at time 7.400000000000002
 Currently, the send queue looks like this: 
 [8.1, 8.9, 9.700000000000001, 10.500000000000002, 11.300000000000002, 12.100000000000003]
-Recorded cash and eco values (155,257.0) at time 7.5
+Recorded cash and eco values (155.0,257.0) at time 7.5
 Advancing game to time 7.6
 Advancing game to time 7.7
 Advancing game to time 7.8
@@ -125,7 +125,7 @@ Advancing game to time 8.1
 Sent a set of Grouped Reds at time 8.1
 Currently, the send queue looks like this: 
 [8.9, 9.700000000000001, 10.500000000000002, 11.300000000000002, 12.100000000000003, 12.900000000000004]
-Recorded cash and eco values (135,258.0) at time 8.1
+Recorded cash and eco values (135.0,258.0) at time 8.1
 Advancing game to time 8.15
 Advancing game to time 8.2
 Advancing game to time 8.3
@@ -139,7 +139,7 @@ Advancing game to time 8.9
 Sent a set of Grouped Reds at time 8.9
 Currently, the send queue looks like this: 
 [9.700000000000001, 10.500000000000002, 11.300000000000002, 12.100000000000003, 12.900000000000004, 13.700000000000005]
-Recorded cash and eco values (115,259.0) at time 8.9
+Recorded cash and eco values (115.0,259.0) at time 8.9
 Advancing game to time 9.0
 Advancing game to time 9.1
 Advancing game to time 9.15
@@ -152,7 +152,7 @@ Advancing game to time 9.7
 Sent a set of Grouped Reds at time 9.700000000000001
 Currently, the send queue looks like this: 
 [10.500000000000002, 11.300000000000002, 12.100000000000003, 12.900000000000004, 13.700000000000005, 14.500000000000005]
-Recorded cash and eco values (95,260.0) at time 9.7
+Recorded cash and eco values (95.0,260.0) at time 9.7
 Advancing game to time 9.8
 Advancing game to time 9.9
 Advancing game to time 10.0
@@ -165,7 +165,7 @@ Advancing game to time 10.6
 Sent a set of Grouped Reds at time 10.500000000000002
 Currently, the send queue looks like this: 
 [11.300000000000002, 12.100000000000003, 12.900000000000004, 13.700000000000005, 14.500000000000005, 15.300000000000006]
-Recorded cash and eco values (75,261.0) at time 10.6
+Recorded cash and eco values (75.0,261.0) at time 10.6
 Advancing game to time 10.7
 Advancing game to time 10.8
 Advancing game to time 10.9
@@ -177,7 +177,7 @@ Advancing game to time 11.4
 Sent a set of Grouped Reds at time 11.300000000000002
 Currently, the send queue looks like this: 
 [12.100000000000003, 12.900000000000004, 13.700000000000005, 14.500000000000005, 15.300000000000006, 16.100000000000005]
-Recorded cash and eco values (55,262.0) at time 11.4
+Recorded cash and eco values (55.0,262.0) at time 11.4
 Advancing game to time 11.5
 Advancing game to time 11.6
 Advancing game to time 11.7

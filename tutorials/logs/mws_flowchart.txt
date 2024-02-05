@@ -2,7 +2,7 @@ MESSAGE FROM GameState.__init__():
 Initialized Game State!
 The current game round is 20
 The current game time is 514.75 seconds
-The game round start times are given by [0, 6.0, 31.25, 56.25, 82.75, 114.75, 145.25, 172.25, 199.75, 224.0, 249.5, 265.25, 284.0, 306.75, 328.75, 345.25, 368.75, 404.0, 446.25, 475.0, 514.75, 527.0, 547.75, 581.0, 597.75, 662.0, 708.25, 746.0, 777.75, 809.0, 860.75, 883.75, 942.293999, 962.073999, 995.073999, 1013.7656589999999, 1065.157657, 1097.105657, 1189.740657, 1258.911487, 1359.161487, 1388.161487, 1434.0914870000001, 1469.3414870000001, 1500.5914870000001, 1525.391487, 1547.5414870000002, 1592.7914870000002, 1618.0414870000002, 1660.411489, 1700.661489, 1732.761489] 
+The game round start times are given by [0, 6.0, 31.25, 56.25, 82.75, 114.75, 145.25, 172.25, 199.75, 224.0, 249.5, 265.25, 284.0, 306.75, 328.75, 345.25, 368.75, 404.0, 446.25, 475.0, 514.75, 527.0, 547.75, 581.0, 597.75, 662.0, 708.25, 746.0, 777.75, 809.0, 860.75, 883.75, 942.294, 962.074, 995.074, 1013.7656599999999, 1065.1576599999999, 1097.10566, 1189.74066, 1258.91149, 1359.16149, 1388.16149, 1434.09149, 1469.34149, 1500.59149, 1525.39149, 1547.54149, 1592.79149, 1618.04149, 1660.41149, 1700.66149, 1732.7614899999999] 
 
 MESSAGE FROM GameState.fastForward: 
 Advancing game to time 514.8
@@ -24,148 +24,148 @@ Recorded cash and eco values (520,2000) at time 514.88
 Sent a set of Grouped Pinks at time 514.8750000000001
 Currently, the send queue looks like this: 
 [515.0750000000002]
-Recorded cash and eco values (455,2002.4) at time 514.9
+Recorded cash and eco values (455.0,2002.4) at time 514.9
 Advancing game to time 514.95
 Awarded direct payment 160 at time 514.92
-Recorded cash and eco values (615,2002.4) at time 514.92
+Recorded cash and eco values (615.0,2002.4) at time 514.92
 Awarded direct payment 50 at time 514.94
-Recorded cash and eco values (665,2002.4) at time 514.94
+Recorded cash and eco values (665.0,2002.4) at time 514.94
 Awarded direct payment 50 at time 514.94
-Recorded cash and eco values (715,2002.4) at time 514.94
+Recorded cash and eco values (715.0,2002.4) at time 514.94
 Advancing game to time 515.0
 Awarded direct payment 160 at time 514.97
-Recorded cash and eco values (875,2002.4) at time 514.97
+Recorded cash and eco values (875.0,2002.4) at time 514.97
 Awarded direct payment 50 at time 515.0
-Recorded cash and eco values (925,2002.4) at time 515.0
+Recorded cash and eco values (925.0,2002.4) at time 515.0
 Awarded direct payment 50 at time 515.0
-Recorded cash and eco values (975,2002.4) at time 515.0
+Recorded cash and eco values (975.0,2002.4) at time 515.0
 Advancing game to time 515.1
 Sent a set of Grouped Pinks at time 515.0250000000001
 Currently, the send queue looks like this: 
 [515.0750000000002, 515.2750000000002]
 Awarded direct payment 160 at time 515.03
-Recorded cash and eco values (1070,2004.8) at time 515.03
+Recorded cash and eco values (1070.0,2004.8) at time 515.03
 Awarded direct payment 50 at time 515.06
-Recorded cash and eco values (1120,2004.8) at time 515.06
+Recorded cash and eco values (1120.0,2004.8) at time 515.06
 Awarded direct payment 50 at time 515.06
-Recorded cash and eco values (1170,2004.8) at time 515.06
+Recorded cash and eco values (1170.0,2004.8) at time 515.06
 Awarded direct payment 160 at time 515.08
-We have 1330 cash! We can do the next buy, which costs 1000 and has a buffer of 250 and a minimum buy time of 0!
+We have 1330.0 cash! We can do the next buy, which costs 1000.0 and has a buffer of 250 and a minimum buy time of 0!
 Purchasing farm!
 Completed the buy operation! The buy queue now has 7 items remaining in it
-Recorded cash and eco values (330,2004.8) at time 515.08
+Recorded cash and eco values (330.0,2004.8) at time 515.08
 Advancing game to time 515.133
 Awarded direct payment 50 at time 515.12
-Recorded cash and eco values (380,2004.8) at time 515.12
+Recorded cash and eco values (380.0,2004.8) at time 515.12
 Awarded direct payment 50 at time 515.12
-Recorded cash and eco values (430,2004.8) at time 515.12
+Recorded cash and eco values (430.0,2004.8) at time 515.12
 Advancing game to time 515.2
 Awarded direct payment 160 at time 515.14
-Recorded cash and eco values (590,2004.8) at time 515.14
+Recorded cash and eco values (590.0,2004.8) at time 515.14
 Sent a set of Grouped Pinks at time 515.1750000000001
 Currently, the send queue looks like this: 
 [515.2750000000002, 515.4750000000003]
 Awarded direct payment 50 at time 515.19
-Recorded cash and eco values (575,2007.2) at time 515.19
+Recorded cash and eco values (575.0,2007.2) at time 515.19
 Awarded direct payment 50 at time 515.19
-Recorded cash and eco values (625,2007.2) at time 515.19
+Recorded cash and eco values (625.0,2007.2) at time 515.19
 Awarded direct payment 160 at time 515.19
-Recorded cash and eco values (785,2007.2) at time 515.19
+Recorded cash and eco values (785.0,2007.2) at time 515.19
 Advancing game to time 515.3
 Awarded direct payment 50 at time 515.25
-Recorded cash and eco values (835,2007.2) at time 515.25
+Recorded cash and eco values (835.0,2007.2) at time 515.25
 Awarded direct payment 50 at time 515.25
-Recorded cash and eco values (885,2007.2) at time 515.25
+Recorded cash and eco values (885.0,2007.2) at time 515.25
 Awarded direct payment 160 at time 515.25
-We have 1045 cash! We can do the next buy, which costs 550 and has a buffer of 250 and a minimum buy time of 0!
+We have 1045.0 cash! We can do the next buy, which costs 550.0 and has a buffer of 250 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 3
 Upgraded the farm at index 3 to (1,0,0)
 Completed the buy operation! The buy queue now has 6 items remaining in it
-Recorded cash and eco values (495,2007.2) at time 515.25
+Recorded cash and eco values (495.0,2007.2) at time 515.25
 Advancing game to time 515.3
 Advancing game to time 515.4
 Awarded direct payment 160 at time 515.31
-Recorded cash and eco values (655,2007.2) at time 515.31
+Recorded cash and eco values (655.0,2007.2) at time 515.31
 Awarded direct payment 50 at time 515.31
-Recorded cash and eco values (705,2007.2) at time 515.31
+Recorded cash and eco values (705.0,2007.2) at time 515.31
 Awarded direct payment 50 at time 515.31
-Recorded cash and eco values (755,2007.2) at time 515.31
+Recorded cash and eco values (755.0,2007.2) at time 515.31
 Sent a set of Grouped Pinks at time 515.325
 Currently, the send queue looks like this: 
 [515.4750000000003, 515.6750000000003]
 Awarded direct payment 160 at time 515.36
-We have 850 cash! We can do the next buy, which costs 550 and has a buffer of 250 and a minimum buy time of 0!
+We have 850.0 cash! We can do the next buy, which costs 550.0 and has a buffer of 250 and a minimum buy time of 0!
 Upgrading path 0 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,0)
 Completed the buy operation! The buy queue now has 5 items remaining in it
-Recorded cash and eco values (300,2009.6) at time 515.36
+Recorded cash and eco values (300.0,2009.6) at time 515.36
 Advancing game to time 515.411
 Awarded direct payment 50 at time 515.38
-Recorded cash and eco values (350,2009.6) at time 515.38
+Recorded cash and eco values (350.0,2009.6) at time 515.38
 Awarded direct payment 50 at time 515.38
-Recorded cash and eco values (400,2009.6) at time 515.38
+Recorded cash and eco values (400.0,2009.6) at time 515.38
 Advancing game to time 515.5
 Awarded direct payment 160 at time 515.42
-We have 560 cash! We can do the next buy, which costs 250 and has a buffer of 250 and a minimum buy time of 0!
+We have 560.0 cash! We can do the next buy, which costs 250.0 and has a buffer of 250 and a minimum buy time of 0!
 Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,1)
 Completed the buy operation! The buy queue now has 4 items remaining in it
-Recorded cash and eco values (310,2009.6) at time 515.42
+Recorded cash and eco values (310.0,2009.6) at time 515.42
 Advancing game to time 515.5
 Awarded direct payment 50 at time 515.44
-Recorded cash and eco values (360,2009.6) at time 515.44
+Recorded cash and eco values (360.0,2009.6) at time 515.44
 Awarded direct payment 50 at time 515.44
-Recorded cash and eco values (410,2009.6) at time 515.44
+Recorded cash and eco values (410.0,2009.6) at time 515.44
 Awarded direct payment 160 at time 515.47
-We have 570 cash! We can do the next buy, which costs 200 and has a buffer of 250 and a minimum buy time of 0!
+We have 570.0 cash! We can do the next buy, which costs 200.0 and has a buffer of 250 and a minimum buy time of 0!
 Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,2)
 Completed the buy operation! The buy queue now has 3 items remaining in it
-Recorded cash and eco values (370,2009.6) at time 515.47
+Recorded cash and eco values (370.0,2009.6) at time 515.47
 Advancing game to time 515.522
 Sent a set of Grouped Pinks at time 515.475
 Currently, the send queue looks like this: 
 [515.4750000000003, 515.6750000000003, 515.8750000000003]
 Awarded direct payment 50 at time 515.5
-Recorded cash and eco values (355,2012.0) at time 515.5
+Recorded cash and eco values (355.0,2012.0) at time 515.5
 Awarded direct payment 50 at time 515.5
-Recorded cash and eco values (405,2012.0) at time 515.5
+Recorded cash and eco values (405.0,2012.0) at time 515.5
 Advancing game to time 515.6
 Awarded direct payment 160 at time 515.53
-Recorded cash and eco values (565,2012.0) at time 515.53
+Recorded cash and eco values (565.0,2012.0) at time 515.53
 Awarded direct payment 50 at time 515.56
-Recorded cash and eco values (615,2012.0) at time 515.56
+Recorded cash and eco values (615.0,2012.0) at time 515.56
 Awarded direct payment 50 at time 515.56
-Recorded cash and eco values (665,2012.0) at time 515.56
+Recorded cash and eco values (665.0,2012.0) at time 515.56
 Awarded direct payment 160 at time 515.58
-Recorded cash and eco values (825,2012.0) at time 515.58
+Recorded cash and eco values (825.0,2012.0) at time 515.58
 Advancing game to time 515.7
 Sent a set of Grouped Pinks at time 515.625
 Currently, the send queue looks like this: 
 [515.6750000000003, 515.8750000000003, 516.0750000000004]
 Awarded direct payment 50 at time 515.62
-Recorded cash and eco values (810,2014.4) at time 515.62
+Recorded cash and eco values (810.0,2014.4) at time 515.62
 Awarded direct payment 50 at time 515.62
-Recorded cash and eco values (860,2014.4) at time 515.62
+Recorded cash and eco values (860.0,2014.4) at time 515.62
 Awarded direct payment 160 at time 515.64
-Recorded cash and eco values (1020,2014.4) at time 515.64
+Recorded cash and eco values (1020.0,2014.4) at time 515.64
 Awarded direct payment 50 at time 515.69
-Recorded cash and eco values (1070,2014.4) at time 515.69
+Recorded cash and eco values (1070.0,2014.4) at time 515.69
 Awarded direct payment 50 at time 515.69
-Recorded cash and eco values (1120,2014.4) at time 515.69
+Recorded cash and eco values (1120.0,2014.4) at time 515.69
 Awarded direct payment 160 at time 515.69
-Recorded cash and eco values (1280,2014.4) at time 515.69
+Recorded cash and eco values (1280.0,2014.4) at time 515.69
 Advancing game to time 515.8
 Sent a set of Grouped Pinks at time 515.775
 Currently, the send queue looks like this: 
 [515.8750000000003, 516.0750000000004, 516.2750000000004]
-Recorded cash and eco values (1215,2016.8) at time 515.8
+Recorded cash and eco values (1215.0,2016.8) at time 515.8
 Advancing game to time 515.9
 Advancing game to time 515.95
 Sent a set of Grouped Pinks at time 515.925
 Currently, the send queue looks like this: 
 [516.0750000000004, 516.2750000000004, 516.4750000000005]
-Recorded cash and eco values (1150,2019.2) at time 515.95
+Recorded cash and eco values (1150.0,2019.2) at time 515.95
 Advancing game to time 516.0
 Awarded eco payment 2019.2 at time 516
 Recorded cash and eco values (3169.2,2019.2) at time 516

@@ -1,5 +1,5 @@
 # %%
-import pandas as pd
+import csv
 import os
 from copy import deepcopy as dc
 
@@ -287,21 +287,34 @@ farm_total_cost_values, farm_sellback_values = computeSellbackValues(farm_upgrad
 dirname = os.path.dirname(__file__)
 filename = os.path.join(dirname, "../templates/eco_send_info.csv")
 
-eco_send_table = pd.read_csv(filename)
 eco_send_info = {}
 
-for index, row in eco_send_table.iterrows():
-    eco_send_info[row['send_name']] = {
-        'Price': row['price'],
-        'Eco': row['eco'],
-        'Start Round': row['start_round'],
-        'End Round': row['end_round'],
-        'Send Duration': row['send_duration'],
-        'Fortified': row['fortified'],
-        'Camoflauge': row['camo'],
-        'Regrow': row['regrow'],
-        'MOAB Class': row['moab_class']
-    }
+def boolConvert(word):
+    if word == 'TRUE':
+        return True
+    elif word == 'FALSE':
+        return False
+    else:
+        return None
+
+with open(filename, newline='') as csvfile:
+    first_row = True
+    rows = csv.reader(csvfile)
+    for row in rows:
+        if first_row:
+            first_row = False
+        else:
+            eco_send_info[row[0]] = {
+                'Price': float(row[1]),
+                'Eco': float(row[2]),
+                'Start Round': int(row[3]),
+                'End Round': int(row[4]),
+                'Send Duration': float(row[5]),
+                'Fortified': boolConvert(row[6]),
+                'Camoflauge': boolConvert(row[7]),
+                'Regrow': boolConvert(row[8]),
+                'MOAB Class': boolConvert(row[9])
+            }
 
 # %%
 
