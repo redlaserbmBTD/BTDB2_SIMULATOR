@@ -46,7 +46,7 @@ If it's your first time ever contributing to the code, follow these steps to mad
 
 # Update Log
 - (February 4, 2024 - v1.3.0)
-   - The package has now been split into two subpackages, b2.engine for simulation and b2.analysis for visualizing the results of simulations. `GameState.viewCashEcoHistory()` has been removed and its functionality is replaced by b2.analysis.viewHistory(game_state)
+   - The package has now been split into two subpackages, `b2sim.engine` for simulation and `b2sim.analysis` for visualizing the results of simulations. `GameState.viewCashEcoHistory()` has been removed and its functionality is replaced by b2.analysis.viewHistory(game_state)
    - `GameState.changeStallFactor()` has been removed.
    - Fixed an oversight introduced in 1.2.5 where the simulator would automatically switch to an eco send in the queue without a specified time before checking if break conditions on the existing eco send were satisfied first.
    - Updated some of the tutorials files. Please note that the new update induced a change in notation, and not all tutorials files were updated.
