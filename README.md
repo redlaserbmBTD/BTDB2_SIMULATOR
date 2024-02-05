@@ -45,6 +45,11 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (February 4, 2024 - v1.3.0)
+   - The package has now been split into two subpackages, b2.engine for simulation and b2.analysis for visualizing the results of simulations. `GameState.viewCashEcoHistory()` has been removed and its functionality is replaced by b2.analysis.viewHistory(game_state)
+   - `GameState.changeStallFactor()` has been removed.
+   - Fixed an oversight introduced in 1.2.5 where the simulator would automatically switch to an eco send in the queue without a specified time before checking if break conditions on the existing eco send were satisfied first.
+   - Updated some of the tutorials files. Please note that the new update induced a change in notation, and not all tutorials files were updated.
 - (February 2, 2024 - v1.2.8)
    - Removed numpy as a dependency.
 - (February 1, 2024 - v1.2.7)
