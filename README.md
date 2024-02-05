@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=kvGkgIr-ts8
 1. Install python on your computer here: https://www.anaconda.com/download/
 2. Open the anaconda prompt and type `pip install b2sim`.
 3. Your installation of anaconda came with a program called "Jupyter Notebook", which allows you to create and edit .ipynb files which you will use to operate the code. Open Jupyter, and create a new .ipynb file wherever you wish on your computer.
-4. In the first cell of this new .ipynb file you've created, type `import b2sim as b2` and hit enter. 
+4. In the first cell of this new .ipynb file you've created, type `import b2sim.engine as b2` and hit enter. 
 5. Congratulations, you now have a file which you can use to generate simulations! Check out the tutorial files in this repo (examples folder) for more info on how to operate the library.
 6. (Bonus step) Instead of Jupyter Notebook, I recommend using [Visual Studio Code](https://code.visualstudio.com/) to operate the code. VS Code comes with a number of bells and whistles and QOL features that can speed up the code-writing process.
 
