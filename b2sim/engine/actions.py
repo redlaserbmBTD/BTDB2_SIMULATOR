@@ -52,6 +52,14 @@ def withdrawBank(index, min_buy_time = 0, buffer = 0):
         'Message': 'Withdraw from farm %s'%(index)
     }
 
+def withdrawAllBanks(min_buy_time = 0, buffer = 0):
+    return {
+        'Type': 'Withdraw All Banks',
+        'Minimum Buy Time': min_buy_time, # The earliest time this action may be commenced
+        'Buffer': buffer, # In case you wanted to wait until you had a certain amount of money to do this
+        'Message': 'Withdraw from all banks'
+    }
+
 def activateIMF(index, min_buy_time = 0):
     return {
         'Type': 'Activate IMF',

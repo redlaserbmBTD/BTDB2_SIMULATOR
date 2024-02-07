@@ -313,7 +313,11 @@ with open(filename, newline='') as csvfile:
                 'Fortified': boolConvert(row[6]),
                 'Camoflauge': boolConvert(row[7]),
                 'Regrow': boolConvert(row[8]),
-                'MOAB Class': boolConvert(row[9])
+                'MOAB Class': boolConvert(row[9]),
+                
+                # Additional Parameters for the AI
+                'Eco Intensity': float(row[2])/float(row[5]) if float(row[5]) > 0 else 0,
+                'Cost Intensity': float(row[1])/float(row[5]) if float(row[5]) > 0 else 0
             }
 
 # %%

@@ -204,9 +204,12 @@ class GameState():
             eco_send['Time'] = 0
             self.eco_queue.insert(0,eco_send)
 
-        if len(self.eco_queue) == 0: #I'm gonna be honest, I'm not proud of myself for writing code like this, but it works so fuck you.
+        if len(self.eco_queue) == 0: # In case there's no specified sends at all
             self.eco_queue = [ecoSend(time = 0, send_name = 'Zero')]
-        
+
+        self.available_sends = [] # Tracks the available eco sends at a given point in time.
+        self.last_checked_round = None # Tracks the last round in which the above list was updated
+
         #Upgrade queue
         self.buy_queue = initial_state.get('Buy Queue')
         self.buy_cost = None
@@ -219,6 +222,9 @@ class GameState():
         self.eco_delay = game_globals['Eco Delay']
         self.max_queue_length = game_globals['Max Queue Length']
         self.attack_queue_threshold = game_globals['Max Queue Length']
+
+        #For the AI
+        self.save = 0 # When eco'ing, we will not let our cash dip below this amount.
 
         #For repeated supply drop buys
         self.supply_drop_max_buy_time = -1
@@ -285,7 +291,8 @@ class GameState():
 
     def ecoQueueCorrection(self):
         ''' 
-        Automatically adjusts the eco queue so that the first send in the queue is valid
+        Automatically adjusts the eco queue so that the first send in the queue is valid.
+        Automatically adjust the list of available eco sends.
 
         Essentially, the code works like this:
         Look at the first send in the queue and decide if the time to use the send is too early or late, or if there is otherwise no circumstance under which the send will be used during simulation.
@@ -301,6 +308,15 @@ class GameState():
         - If the answer is no, we can exit the process.
         - If the answer is yes, switch to said send, and then rerun the queue correction process so that the *new* first eco send in the queue is valid (if necessary).
         ''' 
+
+        # To begin, if necessary, update the list of available eco sends to use.
+        if self.last_checked_round is None or self.last_checked_round < self.current_round:
+            # If we have yet to form the list of available eco sends...
+            self.available_sends = []
+            for send_name in eco_send_info.keys():
+                if eco_send_info[send_name]['Start Round'] <= self.current_round <= eco_send_info[send_name]['End Round']:
+                    self.available_sends.append(send_name)
+            self.last_checked_round = self.current_round
 
         # This flag is set to true when the first send in the queue is known to be valid AND it is not possible to change to that send right now.
         # The code is finished then this flag is set to True OR the eco queue is empty
@@ -538,7 +554,7 @@ class GameState():
         # Sort the messages in self.event_messages so that they are listed chronologically
         self.event_messages = sorted(self.event_messages, key=lambda x: x['Time']) 
 
-        #FOR SPOONOIL: Show warning messages for fail-safes triggered during simulation
+        # Show warning messages for fail-safes triggered during simulation
         self.showWarnings(self.warnings)
         
         self.logs.append("Advanced game state to round " + str(self.current_round))
@@ -1104,7 +1120,7 @@ class GameState():
             
             # Next, try to add an attack to the attack_queue.
             # Can we send an attack?
-            if self.cash >= self.eco_cost and len(self.attack_queue) < min(6, self.attack_queue_threshold):
+            if self.cash >= max(self.eco_cost, self.save) and len(self.attack_queue) < min(6, self.attack_queue_threshold):
                 # Yes, the queue is empty and we have enough cash
                 if len(self.attack_queue) == 0:
                     self.attack_queue.append(self.current_time + self.eco_time)
@@ -1482,6 +1498,18 @@ class GameState():
                 self.logs.append("Withdrawing money from the bank at index %s"%(ind))
                 farm = self.farms[ind]
                 farm.account_value = 0
+        elif dict_obj['Type'] == 'Withdraw All Banks':
+            if stage == 'check':
+                for farm in self.farms:
+                    if farm.bank:
+                        h_new_cash, h_new_loan = impact(h_cash, h_loan, farm.account_value)
+                        farm.h_revenue += h_new_cash - h_cash
+                        h_cash, h_loan = h_new_cash, h_new_loan
+            else:
+                self.logs.append("Withdrawing money from all banks!")
+                for farm in self.farms:
+                    if farm.bank:
+                        farm.account_value = 0
         elif dict_obj['Type'] == 'Activate IMF':
             if stage == 'check':
                 #WARNING: The farm in question must actually be an IMF Loan for us to use this ability!
