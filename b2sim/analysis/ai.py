@@ -1,10 +1,14 @@
 import neat
 import b2sim.analysis.visualize as viz
+from b2sim.analysis.graphs import viewHistory
 import b2sim.engine as b2
 from copy import deepcopy as dc
 from bisect import bisect_left
+import multiprocessing
+import os
+import math
 
-def processGenome(genome, config, game_state, target_time, increment_value = 1):
+def processGenome(genome, config, initial_state_game, target_time, increment_value = 1, show_results = False):
     '''
     Determine the fitness of a given genome.
 
@@ -12,24 +16,32 @@ def processGenome(genome, config, game_state, target_time, increment_value = 1):
     fitness (float): A rating of how well the genome performed
     '''
 
+    game_state = b2.GameState(dc(initial_state_game))
     # For now, we can place this function here, but only for now...
-    ai_farms_list = pruneFarms(b2.farm_total_cost_values.keys())
+    
 
     net = neat.nn.FeedForwardNetwork.create(genome, config)
+
+    fitness_value = 0
+    capture_start = False
+    capture_end = False
 
     while game_state.current_time < target_time:
         # Pass the current game info through the genome, giving it the chance to process and spit out an output
         output = net.activate((game_state.cash, game_state.eco, game_state.current_time, farmIncome(game_state)))
-        output = output[0]
-        eco_intensity, amount_to_save, buy_farms = output[0],100*output[1],output[2]
+        eco_intensity, buy_farms = 20*output[0],output[1]
+
+        # if show_results:
+        #     print(output[0],output[1],output[2])
 
         # What eco send should we use next?
         available_sends = efficientFrontier(game_state.available_sends)
         eco_send = ecoIntensity(eco_intensity, available_sends)
-        game_state.eco_queue.append(b2.ecoSend(send_name = eco_send))
+        if game_state.send_name != eco_send:
+            game_state.eco_queue.append(b2.ecoSend(send_name = eco_send))
 
         # How much money should we save?
-        game_state.save += amount_to_save
+        # game_state.save += amount_to_save
 
         # Determine if we should purchase farms or not.
         if buy_farms >= 0.9:
@@ -39,49 +51,34 @@ def processGenome(genome, config, game_state, target_time, increment_value = 1):
                 game_state.buy_queue.append([b2.buyFarm(upgrades=upgrade_tuple)])
 
             # Reset the save counter
-            game_state.save = 0
+            # game_state.save = 0
             
         # Finally, run the simulation for some time
         game_state.fastForward(target_time = min(game_state.current_time + increment_value, target_time))
 
     # We want to rate how good the income config for the AI is. Run the simulation for one further round and record the change in cash
     current_cash = game_state.cash
-    current_round = game_state.rounds.getRoundFromTime(game_state.current_time, get_frac_part = True)
-    game_state.fastForward(target_round = current_round + 1)
-    return game_state.cash - current_cash
+    current_eco = game_state.eco
 
-def evalGenomes(genomes, config, increment_value = 1):
+    if current_eco < 1200:
+        return 0
     
-    ###########################################################################
-    # Construct the sample simulation that we will evaluate the simulation over
-    ###########################################################################
+    current_round = game_state.rounds.getRoundFromTime(game_state.current_time, get_frac_part = True)
+    game_state.fastForward(target_round = current_round + 3)
+    if show_results:
+        viewHistory(game_state)
+        print("Listing all farms: ")
+        for farm in game_state.farms:
+            print(farm.upgrades)
 
-    rounds = b2.Rounds(0.1)
+    return game_state.cash - current_cash 
 
-    farms = [
-        b2.initFarm(rounds.getTimeFromRound(7), upgrades = [3,2,0])
-    ]
-
-    initial_state_game = {
-        'Cash': 3000,
-        'Eco': 800,
-        'Eco Send': b2.ecoSend(send_name = 'Zero'),
-        'Rounds': rounds, #Determines the lengths of the rounds in the game state
-        'Farms': farms,
-        'Game Round': 13
-    }
-
-    target_time = rounds.getTimeFromRound(20)
-
-    #####################################################
-    #Evaluate each genome and assign them a fitness score
-    #####################################################
-
+def evalGenomes(genomes, config, initial_state_game, target_time, increment_value = 30):
     for genome_id, genome in genomes:
-        game_state = b2.GameState(initial_state_game)
-        genome.fitness = processGenome(genome, config, game_state, target_time, increment_value = increment_value)
+        genome.fitness = processGenome(genome, config, initial_state_game, target_time, increment_value = increment_value)
+        # print("Genome %s achieved fitness %s"%(genome_id, genome.fitness))
 
-def run(config_file, game_state, target_time, increment_value=1):
+def run(config_file, initial_state_game, target_time, increment_value=6, num_generations = 50):
     # Load configuration.
     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                          neat.DefaultSpeciesSet, neat.DefaultStagnation,
@@ -96,8 +93,13 @@ def run(config_file, game_state, target_time, increment_value=1):
     p.add_reporter(stats)
     p.add_reporter(neat.Checkpointer(5))
 
+    def eval(genomes, config):
+        evalGenomes(genomes, config, initial_state_game, target_time, increment_value)
+    
+
     # Run for up to 300 generations.
-    winner = p.run(evalGenomes, 300)
+    pe = neat.ThreadedEvaluator(4, eval)
+    winner = p.run(eval, num_generations)
 
     # Display the winning genome.
     print('\nBest genome:\n{!s}'.format(winner))
@@ -107,16 +109,16 @@ def run(config_file, game_state, target_time, increment_value=1):
     winner_net = neat.nn.FeedForwardNetwork.create(winner, config)
     
     # How much fitness did the winning genome achieve?
-    winner_fitness = processGenome(winner_net, config, game_state, target_time, increment_value = increment_value)
-    print("The winning network achieved a fitness of %s"(winner_fitness))
+    winner_fitness = processGenome(winner, config, initial_state_game, target_time, increment_value = increment_value, show_results = True)
+    print("The winning network achieved a fitness of %s"%(winner_fitness))
 
-    viz.draw_net(config, winner, True)
+    # viz.draw_net(config, winner, True)
     viz.draw_net(config, winner, True, prune_unused=True)
-    viz.plot_stats(stats, ylog=False, view=True)
-    viz.plot_species(stats, view=True)
+    # viz.plot_stats(stats, ylog=False, view=True)
+    # viz.plot_species(stats, view=True)
 
     p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-4')
-    p.run(evalGenomes, 10)
+    p.run(eval, max(1,int(num_generations/10)))
 
 def pruneFarms(farms_list):
     '''
@@ -167,7 +169,7 @@ def efficientFrontier(eco_sends):
 
     # Now determine the indices that correspond to eef sends
     i = 0
-    eef = []
+    eef = [0]
     while i < len(eco_sends)-1:
         
         #Test remaining eco sends to determine which ones belong on the EEF
@@ -206,7 +208,7 @@ def ecoIntensity(intensity: float, eco_sends):
     Returns:
     eco_send (str): A string which names an eco send and corresponds to an entry in the eco_send_info dictionary
     '''
-    ind = bisect_left(eco_sends, intensity, key = lambda send_name: b2.eco_send_info[send_name]['Cost Intensity']) - 1
+    ind = bisect_left(eco_sends, intensity, key = lambda send_name: b2.eco_send_info[send_name]['Eco Intensity']) - 1
     if ind >= 0:
         return eco_sends[ind]
     else:
@@ -242,28 +244,23 @@ def farmIncome(gs):
     Returns:
     (float): How much money the farms will generate 
     '''
-    starting_round = gs.rounds.getRoundFromTime(gs.current_time) + 1
-    starting_cash = gs.cash
 
-    starting_account_values = [farm.account_value for farm in gs.farms]
+    round_income = 0
+    for farm in gs.farms:
+        ppr = b2.farm_payout_values[tuple(farm.upgrades)][0]*b2.farm_payout_values[tuple(farm.upgrades)][1]
+        if gs.T5_exists[0] and farm.upgrades[0] == 4:
+            ppr = ppr*b2.farm_globals['Banana Central Multiplier']
 
-    initial_state_game = {
-        'Cash': starting_cash,
-        'Eco': 0,
-        'Loan': 0,
-        'Eco Send': b2.ecoSend(send_name = 'Zero'),
-        'Rounds': gs.rounds, #Determines the lengths of the rounds in the game state
-        'Game Round': starting_round
-    }
-    game_state = b2.GameState(initial_state_game)
-    game_state.farms = dc(gs.farms)
-    game_state.fastForward(target_round = starting_round+1)
-    # viewHistory(game_state)
-
-    ending_account_values = [farm.account_value for farm in game_state.farms]
-
-    round_income = game_state.cash - starting_cash
-    for i in range(len(starting_account_values)):
-        round_income += ending_account_values[i] - starting_account_values[i]
+        round_income += ppr
+        if farm.upgrades[2] == 5:
+            round_income += 10000
 
     return round_income 
+
+ai_farms_list = pruneFarms(b2.farm_total_cost_values.keys())
+# Determine path to configuration file. This path manipulation is
+# here so that the script will run successfully regardless of the
+# current working directory.
+local_dir = os.path.dirname(__file__)
+config_path = os.path.join(local_dir, '..')
+config_path = os.path.join(config_path, 'templates/config.txt')

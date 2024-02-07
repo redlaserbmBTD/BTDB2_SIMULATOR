@@ -200,15 +200,20 @@ class GameState():
         self.number_of_sends = 0
 
         eco_send = initial_state.get('Eco Send')
+        self.send_name = None
         if eco_send is not None:
             eco_send['Time'] = 0
+            self.send_name = eco_send['Send Name']
             self.eco_queue.insert(0,eco_send)
 
         if len(self.eco_queue) == 0: # In case there's no specified sends at all
             self.eco_queue = [ecoSend(time = 0, send_name = 'Zero')]
 
         self.available_sends = [] # Tracks the available eco sends at a given point in time.
-        self.last_checked_round = None # Tracks the last round in which the above list was updated
+        for send_name in eco_send_info.keys():
+            if eco_send_info[send_name]['Start Round'] <= self.current_round <= eco_send_info[send_name]['End Round']:
+                self.available_sends.append(send_name)
+        self.last_checked_round = self.current_round
 
         #Upgrade queue
         self.buy_queue = initial_state.get('Buy Queue')
@@ -355,6 +360,7 @@ class GameState():
                                 self.logs.append("Warning! Time %s is too early to call %s. Adjusting the queue time to %s"%(self.eco_queue[0]['Time'],self.eco_queue[0]['Send Name'], candidate_time))
                                 self.eco_queue[0]['Time'] = candidate_time
                                 #Is the adjusted time still valid?
+                                print(self.eco_queue)
                                 if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
                                     #Yes, it's still valid
                                     self.checkProperties()
@@ -1147,7 +1153,7 @@ class GameState():
                 # NOTE: This block of code won't get reached unless the game state is initalized with a full attack queue.
                 self.attack_queue_unlock_time = self.attack_queue[0]
             
-            elif self.cash < self.eco_cost:
+            elif self.cash < max(self.eco_cost, self.save):
                 # No, we don't have money!
                 self.attack_queue_unlock_time = target_time + self.eco_delay/2
 
