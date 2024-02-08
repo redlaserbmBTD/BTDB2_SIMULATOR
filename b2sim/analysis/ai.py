@@ -4,35 +4,58 @@ from b2sim.analysis.graphs import viewHistory
 import b2sim.engine as b2
 from copy import deepcopy as dc
 from bisect import bisect_left
-import multiprocessing
 import os
-import math
 
-def processGenome(genome, config, initial_state_game, target_time, increment_value = 1, show_results = False):
-    '''
-    Determine the fitness of a given genome.
+# To begin, form a list of all AI farm actions
+# I'll *also* form a dictionary that points upgrade tuples to per round incomes
 
-    Returns:
-    fitness (float): A rating of how well the genome performed
-    '''
-
-    game_state = b2.GameState(dc(initial_state_game))
-    # For now, we can place this function here, but only for now...
+ai_actions_base = []
+farm_incomes = {}
+for key in b2.farm_payout_values.keys():
+    ppr = b2.farm_payout_values[key][0]*b2.farm_payout_values[key][1]
+    if key[2] == 5:
+        #Accounting for the MWS bonus
+        ppr += 10000
     
+    if key[1] >= 3:
+        #Accounting for banks in particular
+        ppr = b2.farm_globals['Start of Round Bank Multiplier']*(ppr + b2.farm_globals['Start of Round Bank Payment'])
+    
+    entry = {
+        'Type': 'Purchase',
+        'Upgrades': key,
+        'Income': ppr,
+        'Cost': b2.farm_total_cost_values[key]
+    }
+    ai_actions_base.append(entry)
+    farm_incomes[key] = ppr
 
-    net = neat.nn.FeedForwardNetwork.create(genome, config)
+# Some of these farms are inefficient, let's wipe those entries corresponding to inefficient farms
+def pruneActions(arr):
+    arr.sort(key=lambda x: x['Cost'])
+    payout_to_beat = 0
+    i = 0
+    while i < len(arr):
+        if arr[i]['Income'] <= payout_to_beat:
+            arr.pop(i)
+        else:
+            payout_to_beat = arr[i]['Income']
+            i += 1
 
-    fitness_value = 0
-    capture_start = False
-    capture_end = False
+    return arr
 
+ai_actions_base = dc(pruneActions(ai_actions_base))
+
+def simulate(neural_net, game_state, target_time, increment_value = 6, max_farms = 5):
+    '''
+    Simulate a GameState from its current time to the target time by having a neural network automatically
+    determine what actions to take during the simulation.
+    '''
+    
     while game_state.current_time < target_time:
         # Pass the current game info through the genome, giving it the chance to process and spit out an output
-        output = net.activate((game_state.cash, game_state.eco, game_state.current_time, farmIncome(game_state)))
+        output = neural_net.activate((game_state.cash, game_state.eco, game_state.current_time, farmIncome(game_state)))
         eco_intensity, buy_farms = 20*output[0],output[1]
-
-        # if show_results:
-        #     print(output[0],output[1],output[2])
 
         # What eco send should we use next?
         available_sends = efficientFrontier(game_state.available_sends)
@@ -40,40 +63,58 @@ def processGenome(genome, config, initial_state_game, target_time, increment_val
         if game_state.send_name != eco_send:
             game_state.eco_queue.append(b2.ecoSend(send_name = eco_send))
 
-        # How much money should we save?
-        # game_state.save += amount_to_save
-
         # Determine if we should purchase farms or not.
         if buy_farms >= 0.9:
             cash_to_spend = game_state.cash*buy_farms
-            upgrade_tuple = aiBuyFarm(cash_to_spend, ai_farms_list)
-            if upgrade_tuple is not None:
-                game_state.buy_queue.append([b2.buyFarm(upgrades=upgrade_tuple)])
+            if len(game_state.farms) < max_farms:
+                ai_actions = aiGetActions(game_state.farms, ai_actions_base)
+            else:
+                ai_actions = aiGetActions(game_state.farms, [])
 
-            # Reset the save counter
-            # game_state.save = 0
+            action_dict = aiBuyFarm(cash_to_spend, ai_actions)
+            if action_dict is not None:
+                # Unwrap the action dict to determine what action the AI should take next
+                # if 'Index' in action_dict.keys() and action_dict['Index'] >= len(game_state.farms):
+                #     print("Stats before failure: ")
+                #     print("Number of farms: %s"%(len(game_state.farms)))
+                #     print("List of actions: ")
+                #     print(aiGetActions(game_state.farms, ai_actions_base, debug=True))
+                #     print("Predicted action:")
+                #     print(aiBuyFarm(cash_to_spend, ai_actions, debug=True))
+
+                if action_dict['Type'] == 'Purchase':
+                    # Identify the type of farm we intend to purchase and amend that to the queue
+                    game_state.buy_queue.append([b2.buyFarm(upgrades=tuple(action_dict['Upgrades']))])
+                else:
+                    # The action type is an upgrade. Identify which farm is to be upgraded, then append the action to the queue
+                    game_state.buy_queue.append([b2.upgradeFarm(index=action_dict['Index'], upgrades=tuple(action_dict['Upgrades']))])
             
         # Finally, run the simulation for some time
         game_state.fastForward(target_time = min(game_state.current_time + increment_value, target_time))
 
-    # We want to rate how good the income config for the AI is. Run the simulation for one further round and record the change in cash
-    current_cash = game_state.cash
-    current_eco = game_state.eco
+    return game_state
 
-    if current_eco < 1200:
-        return 0
+def processGenome(genome, config, initial_state_game, target_time, increment_value = 6):
+    '''
+    Determine the fitness of a given genome.
+
+    Returns:
+    fitness (float): A rating of how well the genome performed
+    '''
+
+    # Form the GameState object from the initial state info
+    game_state = b2.GameState(dc(initial_state_game))
     
-    current_round = game_state.rounds.getRoundFromTime(game_state.current_time, get_frac_part = True)
-    game_state.fastForward(target_round = current_round + 3)
-    if show_results:
-        viewHistory(game_state)
-        print("Listing all farms: ")
-        for farm in game_state.farms:
-            print(farm.upgrades)
+    # From the neural network we'll use to simulate from the genome and config info
+    net = neat.nn.FeedForwardNetwork.create(genome, config)
 
-    return game_state.cash - current_cash 
+    # Run a simulation to the target time using the neural network
+    game_state = simulate(net, game_state, target_time, increment_value = increment_value)
 
-def evalGenomes(genomes, config, initial_state_game, target_time, increment_value = 30):
+    # Use the cashGen function to assign a fitness score to the AI
+    return cashGen(game_state, units_to_measure = 3, unit_type = 'Rounds', eco_threshold = 0)
+
+def evalGenomes(genomes, config, initial_state_game, target_time, increment_value = 6):
     for genome_id, genome in genomes:
         genome.fitness = processGenome(genome, config, initial_state_game, target_time, increment_value = increment_value)
         # print("Genome %s achieved fitness %s"%(genome_id, genome.fitness))
@@ -96,9 +137,7 @@ def run(config_file, initial_state_game, target_time, increment_value=6, num_gen
     def eval(genomes, config):
         evalGenomes(genomes, config, initial_state_game, target_time, increment_value)
     
-
     # Run for up to 300 generations.
-    pe = neat.ThreadedEvaluator(4, eval)
     winner = p.run(eval, num_generations)
 
     # Display the winning genome.
@@ -109,49 +148,15 @@ def run(config_file, initial_state_game, target_time, increment_value=6, num_gen
     winner_net = neat.nn.FeedForwardNetwork.create(winner, config)
     
     # How much fitness did the winning genome achieve?
-    winner_fitness = processGenome(winner, config, initial_state_game, target_time, increment_value = increment_value, show_results = True)
+    winner_fitness = processGenome(winner, config, initial_state_game, target_time, increment_value = increment_value)
     print("The winning network achieved a fitness of %s"%(winner_fitness))
 
     # viz.draw_net(config, winner, True)
-    viz.draw_net(config, winner, True, prune_unused=True)
+    # viz.draw_net(config, winner, True, prune_unused=True)
     # viz.plot_stats(stats, ylog=False, view=True)
     # viz.plot_species(stats, view=True)
 
-    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-4')
-    p.run(eval, max(1,int(num_generations/10)))
-
-def pruneFarms(farms_list):
-    '''
-    Given a list of farms, determine which farms are dominated and remove them to return to a list of non-dominated farms.
-    A farm is considered dominated if there exists a cheaper farm that pays the same or greater.
-    This function is intended to help the AI make decisions on what farms to purchase
-
-    Parameters:
-    farms_list (List[tuple]): A list of farms identified by their upgrades (e.g. (0,1,0), (2,3,0), ...)
-
-    Returns:
-    List[tuple]: A list of nondominated farms
-    '''
-
-    farm_info = []
-    for key in farms_list:
-        if key[1] < 3:
-            ppr = b2.farm_payout_values[key][0]*b2.farm_payout_values[key][1]
-            if key[2] == 5:
-                ppr += 10000
-            farm_info.append((key,b2.farm_total_cost_values[key],ppr))
-    farm_info.sort(key=lambda x: x[1])
-
-    i = 0
-    payout_to_beat = 0
-    while i < len(farm_info):
-        if farm_info[i][2] <= payout_to_beat:
-            farm_info.pop(i)
-        else:
-            payout_to_beat = farm_info[i][2]
-            i += 1
-
-    return [farm_info[i][0] for i in range(len(farm_info))]
+    return winner_net
 
 def efficientFrontier(eco_sends):
     '''
@@ -213,8 +218,57 @@ def ecoIntensity(intensity: float, eco_sends):
         return eco_sends[ind]
     else:
         return eco_sends[0]
+    
+def aiGetActions(farms, arr, debug = False):
+    '''
+    Given a list of MonkeyFarm objects, return a list of non-dominated farm actions suitable for use by aiBuyFarm
+    '''
+    arr = dc(arr)
 
-def aiBuyFarm(cash, farms_list):
+    for h in range(len(farms)):
+        if debug:
+            print("Considering farm %s"%(h))
+        farm = farms[h]
+        for i in range(3):
+            # Check if the AI has the option to upgrade the ith crosspath of the given farm or not.
+            # If they do, create a new farm action and append it to arr
+
+            # Is the farm a T4 or less farm?
+            if farm.upgrades[i] < 5:
+                # Yes, it is!
+                
+                # Is it a T3 elsewhere?
+                # Are BOTH the other paths upgraded?
+                T3_elsewhere = False
+                both_upgraded = True
+                for j in range(3):
+                    if j != i and farm.upgrades[j] >= 3:
+                        T3_elsewhere = True
+                        break
+                    if j != i and farm.upgrades[j] == 0:
+                        both_upgraded = False
+                
+                if (not T3_elsewhere) and (not both_upgraded):
+                    # Build the entry and append it to AI actions_base
+                    new_upgrades = dc(farm.upgrades)
+                    new_upgrades[i] += 1
+                    ppr = farm_incomes[tuple(new_upgrades)] - farm_incomes[tuple(farm.upgrades)] 
+                    entry = {
+                        'Type': 'Upgrade',
+                        'Index': h,
+                        'Upgrades': tuple(new_upgrades),
+                        'Income': ppr,
+                        'Cost': b2.farm_upgrades_costs[i][farm.upgrades[i]]
+                    }
+                    if debug:
+                        print("Appended entry:")
+                        print(entry)
+                    arr.append(entry)
+
+    arr = pruneActions(arr)
+    return arr
+
+def aiBuyFarm(cash, ai_actions, debug = False):
     '''
     Given an amount of a cash and a sorted list of non-dominated farms, purchase the most expensive farm in the list that does
     not exceed the given cash level. Returns none if none of the farms can be afforded
@@ -227,9 +281,9 @@ def aiBuyFarm(cash, farms_list):
     Tuple or None
     '''
 
-    ind = bisect_left(farms_list, cash, key = lambda upgrades: b2.farm_total_cost_values[upgrades]) - 1
+    ind = bisect_left(ai_actions, cash, key = lambda entry: entry['Cost']) - 1
     if ind >= 0:
-        return farms_list[ind]
+        return ai_actions[ind]
     else:
         return None
     
@@ -255,9 +309,29 @@ def farmIncome(gs):
         if farm.upgrades[2] == 5:
             round_income += 10000
 
-    return round_income 
+    return round_income
 
-ai_farms_list = pruneFarms(b2.farm_total_cost_values.keys())
+def cashGen(game_state, units_to_measure = 1, unit_type = 'Rounds', eco_threshold = 0):
+    '''
+    Evaluates the income of a GameState object by determining the amount of cash it generates over the next number of specified rounds or seconds.
+    By default the function evaluates over *rounds*.
+    This function is intended to be used in conjunction with the AI features to evaluate the effectiveness of the AI.
+    '''
+
+    if game_state.eco < eco_threshold:
+        return 0
+
+    current_cash = game_state.cash
+    game_state.eco_queue.append(b2.ecoSend(send_name = 'Zero'))
+
+    if unit_type == 'Rounds':
+        current_round = game_state.rounds.getRoundFromTime(game_state.current_time, get_frac_part = True)
+        game_state.fastForward(target_round = current_round + units_to_measure)
+    else:
+        game_state.fastForward(target_time = game_state.current_time + units_to_measure)
+
+    return max(game_state.cash - current_cash,0)
+
 # Determine path to configuration file. This path manipulation is
 # here so that the script will run successfully regardless of the
 # current working directory.

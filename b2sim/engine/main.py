@@ -361,7 +361,7 @@ class GameState():
                                 self.eco_queue[0]['Time'] = candidate_time
                                 #Is the adjusted time still valid?
                                 print(self.eco_queue)
-                                if len(self.eco_queue) < 2 or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']:
+                                if len(self.eco_queue) < 2 or (self.eco_queue[1]['Time'] is None or self.eco_queue[0]['Time'] < self.eco_queue[1]['Time']):
                                     #Yes, it's still valid
                                     self.checkProperties()
                                     break_flag = True
@@ -1244,14 +1244,15 @@ class GameState():
             
             for dict_obj in purchase_info:
 
+                h_loan_before = h_loan
                 h_cash, h_loan = self.processAction(dict_obj, payout, h_cash = h_cash, h_loan = h_loan, stage = 'check')
 
                 #Immediately abort attempting the purchase if we try to process an action that is not possible:
                 if not self.valid_action_flag:
                     break
                     
-                #If at any point while performing these operations our cash becomes negative, then prevent the transaction from occurring:
-                if h_cash < 0:
+                #If at any point while performing these operations our cash becomes negative OR if we took on more debt while still in debt, then prevent the transaction from occurring:
+                if h_cash < 0 or h_loan > h_loan_before:
                     # self.logs.append("WARNING! Reached negative cash while attempting the transaction!")
                     break
 
