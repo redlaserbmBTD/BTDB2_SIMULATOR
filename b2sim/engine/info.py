@@ -281,6 +281,7 @@ def computeSellbackValues(farm_upgrades_costs, farm_cost):
     return farm_total_cost_values, farm_sellback_values
 
 farm_total_cost_values, farm_sellback_values = computeSellbackValues(farm_upgrades_costs, farm_cost)
+farm_total_cost_values[(0,0,0)] = farm_cost
 
 # %%
 

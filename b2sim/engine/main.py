@@ -269,6 +269,29 @@ class GameState():
         self.logs.append("The current game time is %s seconds"%(self.current_time))
         self.logs.append("The game round start times are given by %s \n"%(self.rounds.round_starts))
 
+    def sortFarms(self, debug = False):
+        '''
+        Sorts farms by the following criteria:
+        1. Active vs. inactive farms (active farms go first)
+        2. Increasing cost.
+        '''
+
+        if len(self.farms) > 0:
+            # print(self.farms)
+            def crit(farm):
+                val = farm_total_cost_values[tuple(farm.upgrades)]
+                # print("val: %s"%(val))
+                if farm.sell_time:
+                    # Since no single farm costs $200,000 or more, this causes all inactive farms to be sorted *last* when we sort in increasing order
+                    val += 200000
+                return val
+            
+            self.farms.sort(key=crit)
+        
+        if debug:
+            print(self.farms)
+
+
     def checkProperties(self):
         '''
         Helper method for self.ecoQueueCorrection. 
@@ -1367,7 +1390,7 @@ class GameState():
                 #If the user specified for a specific set of upgrades, use that argument
                 if upgrades is not None:
                     #Prevent the user from upgrading to a T5 farm if that T5 is already in play
-                    for i in range(2):
+                    for i in range(3):
                         if upgrades[i] == 5 and self.T5_exists[i]:
                             self.logs.append("WARNING! Tried to purchase a T5 farm when one of the same kind already existed! Aborting buy queue!")
                             self.warnings.append(len(self.logs)-1)
@@ -1376,12 +1399,20 @@ class GameState():
                     #For each of top path, middle path, and bottom path, determine the number of upgrades that need to be made
                     #Then, determine the cost of those upgrades
                     upgrades_costs = 0
-                    for i in range(2):
+                    for i in range(3):
                         #How many times do we need to upgrade the path?
                         times_to_upgrade = upgrades[i] - farm.upgrades[i]
                         if times_to_upgrade < 0:
+                            self.logs.append("----")
                             self.logs.append("WARNING! Tried to downgrade a farm! Aborting buy queue!")
-                            self.warnings.append(len(self.logs)-1)
+                            self.logs.append("The farm at index %s was a (%s,%s,%s) farm"%(ind, farm.upgrades[0], farm.upgrades[1], farm.upgrades[2]))
+                            self.logs.append("We tried to upgrade it to a (%s,%s,%s) farm"%(upgrades[0],upgrades[1],upgrades[2]))
+                            self.logs.append("The current list of farms is given by:")
+                            self.logs.append(self.farms)
+                            self.logs.append("The current buy queue looks like: ")
+                            self.logs.append(self.buy_queue)
+                            for i in range(8,0,-1):
+                                self.warnings.append(len(self.logs)-i)
                             self.valid_action_flag = False
 
                         #How much do those upgrades cost?

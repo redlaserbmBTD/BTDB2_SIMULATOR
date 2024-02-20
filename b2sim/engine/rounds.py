@@ -2,7 +2,7 @@
 import csv
 from math import floor, ceil
 import os
-
+from bisect import bisect_right
 
 nat_send = [0.5,18,17,18,23,21,17,17,15,14,5,8,11,12.5,5.5,9,27,33,20,30,1,10,24,6,54,30,21,18,17,40,1,48.294,9.53,22.75,8.44166,41.142,21.698,82.385,58.92083,90,2,35.68,25,21,14.55,11.9,35,15,32.12,30,0.1]
 nat_stall = [5.5,9,10.5,11.5,12.5,13.5,14.5,15.5,13,17.5,16,16,18,13.5,16.5,23.5,11,13,12,14,28.5,16,13,16,15,27,28,22,23,18,38.5,15,15,15,15,15,15,15,15,15,48.5,15,15,15,15,15,15,15,15,15,58.5]
@@ -64,9 +64,7 @@ class Rounds():
             self.round_starts.append(val)
             
     def getRoundFromTime(self, time, get_frac_part = False):
-        ind = 0
-        while self.round_starts[ind] <= time and ind < 50:
-            ind += 1
+        ind = bisect_right(self.round_starts, time)
         
         if get_frac_part:
             frac_part = (time - self.round_starts[ind-1])/(self.round_starts[ind] - self.round_starts[ind-1])

@@ -133,3 +133,22 @@ class MonkeyFarm():
         tier = max(self.upgrades[0],self.upgrades[1], self.upgrades[2])
         uptime = 105 - 15*tier
         self.overclock_expiration_time = time + uptime
+
+    def __eq__(self, other):
+        if not isinstance(other, self.__class__):
+            return False
+
+        if self.sell_time and other.sell_time:
+            #Two farms that are sold are considered equal
+            return True
+        
+        # Two active farms are considered the same if their upgrades are the same
+        return self.upgrades == other.upgrades
+    
+    def __repr__(self):
+        if self.sell_time:
+            end_str = "INACTIVE"
+        else:
+            end_str = "ACTIVE"
+
+        return "(%s,%s,%s) Farm %s"%(self.upgrades[0], self.upgrades[1], self.upgrades[2],end_str)

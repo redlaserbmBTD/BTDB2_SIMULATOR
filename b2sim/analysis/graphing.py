@@ -1,7 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import b2sim.engine as b2
-from copy import deepcopy as dc
 
 def viewHistory(gs, dim = (12,6), display_farms = True, font_size = 12):
         '''
