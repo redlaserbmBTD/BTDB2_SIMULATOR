@@ -45,6 +45,10 @@ If it's your first time ever contributing to the code, follow these steps to mad
 3. When you're ready to make changes after working on the code, [create a pull request](https://www.nexmo.com/legacy-blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop).
 
 # Update Log
+- (Feburary 20, 2024 - v2.0.0)
+   - A new class called **AI** is available from the `b2sim.analysis` subpackage. This class allows you to determine an optimal flowchart over arbitrary game states using the NEAT algorithm. 
+   - As a heads up, the AI has some known shortcomings and should be used in conjunction with human flowchart optimization methods. 
+   - A tutorial file on how to operate the AI is available in the tutorials file in the github repo.
 - (February 4, 2024 - v1.3.0)
    - The package has now been split into two subpackages, `b2sim.engine` for simulation and `b2sim.analysis` for visualizing the results of simulations. `GameState.viewCashEcoHistory()` has been removed and its functionality is replaced by b2.analysis.viewHistory(game_state)
    - `GameState.changeStallFactor()` has been removed.
