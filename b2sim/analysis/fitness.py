@@ -29,7 +29,12 @@ def cashGen(game_state, parameters = {'Units To Measure': 3, 'Unit Type': 'Round
     elif lim_eco < game_state.eco < min_eco:
         fitness_multiplier = (game_state.eco - lim_eco)/(min_eco - lim_eco)
 
+    # Record the current cash on hand and also what's currently held in banks
     current_cash = game_state.cash
+    for farm in game_state.farms:
+        if farm.upgrades[1] >= 3:
+            current_cash += farm.account_value
+    
     game_state.eco_queue.append(b2.ecoSend(send_name = 'Zero'))
 
     if unit_type == 'Rounds':
@@ -38,7 +43,12 @@ def cashGen(game_state, parameters = {'Units To Measure': 3, 'Unit Type': 'Round
     else:
         game_state.fastForward(target_time = game_state.current_time + units_to_measure)
 
-    return fitness_multiplier*max(game_state.cash - current_cash,0)
+    end_cash = game_state.cash
+    for farm in game_state.farms:
+        if farm.upgrades[1] >= 3:
+            end_cash += farm.account_value
+
+    return fitness_multiplier*max(end_cash - current_cash,0)
 
 def terminalCash(game_state, parameters = {'Target Time': None}):
     '''
