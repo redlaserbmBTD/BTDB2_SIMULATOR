@@ -52,7 +52,7 @@ Recorded cash and eco values (1170.0,2004.8) at time 515.06
 Awarded direct payment 160 at time 515.08
 We have 1330.0 cash! We can do the next buy, which costs 1000.0 and has a buffer of 250 and a minimum buy time of 0!
 Purchasing farm!
-Completed the buy operation! The buy queue now has 7 items remaining in it
+Completed the buy operation! The buy queue now has 2 items remaining in it
 Recorded cash and eco values (330.0,2004.8) at time 515.08
 Advancing game to time 515.133
 Awarded direct payment 50 at time 515.12
@@ -78,7 +78,6 @@ Awarded direct payment 50 at time 515.25
 Recorded cash and eco values (885.0,2007.2) at time 515.25
 Awarded direct payment 160 at time 515.25
 We have 1045.0 cash! We can do the next buy, which costs 550.0 and has a buffer of 250 and a minimum buy time of 0!
-Upgrading path 0 of the farm at index 3
 Upgraded the farm at index 3 to (1,0,0)
 Completed the buy operation! The buy queue now has 6 items remaining in it
 Recorded cash and eco values (495.0,2007.2) at time 515.25
@@ -95,7 +94,6 @@ Currently, the send queue looks like this:
 [515.4750000000003, 515.6750000000003]
 Awarded direct payment 160 at time 515.36
 We have 850.0 cash! We can do the next buy, which costs 550.0 and has a buffer of 250 and a minimum buy time of 0!
-Upgrading path 0 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,0)
 Completed the buy operation! The buy queue now has 5 items remaining in it
 Recorded cash and eco values (300.0,2009.6) at time 515.36
@@ -107,7 +105,6 @@ Recorded cash and eco values (400.0,2009.6) at time 515.38
 Advancing game to time 515.5
 Awarded direct payment 160 at time 515.42
 We have 560.0 cash! We can do the next buy, which costs 250.0 and has a buffer of 250 and a minimum buy time of 0!
-Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,1)
 Completed the buy operation! The buy queue now has 4 items remaining in it
 Recorded cash and eco values (310.0,2009.6) at time 515.42
@@ -118,7 +115,6 @@ Awarded direct payment 50 at time 515.44
 Recorded cash and eco values (410.0,2009.6) at time 515.44
 Awarded direct payment 160 at time 515.47
 We have 570.0 cash! We can do the next buy, which costs 200.0 and has a buffer of 250 and a minimum buy time of 0!
-Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,2)
 Completed the buy operation! The buy queue now has 3 items remaining in it
 Recorded cash and eco values (370.0,2009.6) at time 515.47
@@ -170,7 +166,6 @@ Advancing game to time 516.0
 Awarded eco payment 2019.2 at time 516
 Recorded cash and eco values (3169.2,2019.2) at time 516
 We have 3169.2 cash! We can do the next buy, which costs 2800.0 and has a buffer of 250 and a minimum buy time of 0!
-Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,3)
 Completed the buy operation! The buy queue now has 2 items remaining in it
 Recorded cash and eco values (369.2,2019.2) at time 516.0
@@ -1814,7 +1809,6 @@ Advancing game to time 564.0
 Awarded eco payment 2511.2 at time 564
 Recorded cash and eco values (14257.8,2511.2) at time 564
 We have 14257.8 cash! We can do the next buy, which costs 13000.0 and has a buffer of 250 and a minimum buy time of 0!
-Upgrading path 2 of the farm at index 3
 Upgraded the farm at index 3 to (2,0,4)
 Completed the buy operation! The buy queue now has 1 items remaining in it
 Recorded cash and eco values (1257.8,2511.2) at time 564.0

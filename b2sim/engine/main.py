@@ -3,7 +3,7 @@ from math import floor, ceil
 from b2sim.engine.info import *
 from b2sim.engine.actions import *
 from b2sim.engine.farms import *
-import copy
+from copy import deepcopy as dc
 
 # %%
 
@@ -291,6 +291,30 @@ class GameState():
         if debug:
             print(self.farms)
 
+    def argsortFarms(self):
+        '''
+        Returns a list of indices corresponding to farms sorted by the following criteria:
+        1. Active vs. inactive farms (active farms go first)
+        2. Increasing sellback value
+
+        Returns None if no farms (active or inactive) are present
+        '''
+        # print("RUNNING ARGSORT")
+        if len(self.farms) > 0:
+            def crit(n):
+                farm = self.farms[n]
+                val = farm_sellback_values[tuple(farm.upgrades)]
+                if farm.sell_time:
+                    val = val + 200000
+                return val
+            
+            arg_list = [i for i in range(len(self.farms))]
+            arg_list.sort(key=crit)
+            # print("RESULT: %s"%(arg_list))
+            return arg_list
+        else:
+            # print("WARNING! No farms to sort!")
+            return None
 
     def checkProperties(self):
         '''
@@ -478,7 +502,7 @@ class GameState():
             send_info['Time'] = self.rounds.getTimeFromRound(eco_send_info[send_info['Send Name']]['Start Round'])
             self.logs.append("We are about to insert the following send into the eco queue: ")
             self.logs.append(str(send_info))
-            self.eco_queue.insert(0,copy.deepcopy(send_info))
+            self.eco_queue.insert(0,dc(send_info))
             send_info['Send Name'] = 'Zero'
             self.logs.append("The next item in the eco queue now looks like this: ")
             self.logs.append(str(self.eco_queue[0]))
@@ -1250,6 +1274,97 @@ class GameState():
             # We will check this condition again later:
             if payout['Time'] < self.min_buy_time:
                 break
+
+            # If the purchase info requires us to upgrade a farm more than once...
+            new_actions = []
+            for i in range(len(purchase_info)):
+                if purchase_info[i]['Type'] == 'Upgrade Farm' and purchase_info[i]['Upgrades'] is not None:
+                    upgrades = list(purchase_info[i]['Upgrades'])
+                    ind = purchase_info[i]['Index']
+                    farm = self.farms[ind]
+                    current_upgrades = dc(farm.upgrades)
+
+                    # How many times do we have to upgrade the farm in order for it to reach it's desired path?
+                    num_upgrades = sum([upgrades[j] - current_upgrades[j] for j in range(3)])
+                    # print("num_upgrades: %s"%(num_upgrades))
+
+                    if num_upgrades > 1:
+                        # Which path would be the farm's primary path?
+                        arr = [0,1,2]
+                        arr.sort(key = lambda n: upgrades[n])
+                        primary_path = arr[-1]
+                        secondary_path = arr[-2]
+
+                        # Amend the buy queue by adding items which upgrade the farm in a certain order
+                        # First, if necessary, build the 200 farm
+                        while current_upgrades[0] < min(2, upgrades[0]):
+                            current_upgrades[0] += 1
+                            new_actions.append([upgradeFarm(ind, upgrades=tuple(current_upgrades))])
+                        
+                        # Next, build the farm's *primary* path to T3
+                        while current_upgrades[primary_path] < min(3, upgrades[primary_path]):
+                            current_upgrades[primary_path] += 1
+                            new_actions.append([upgradeFarm(ind, upgrades=tuple(current_upgrades))])
+
+                        # Next, build the farm's crosspath up twice
+                        while current_upgrades[secondary_path] < min(2,upgrades[secondary_path]):
+                            current_upgrades[secondary_path] += 1
+                            new_actions.append([upgradeFarm(ind, upgrades=tuple(current_upgrades))])
+
+                        # Finally, build the primary path up completely
+                        while current_upgrades[primary_path] < min(5, upgrades[primary_path]):
+                            current_upgrades[primary_path] += 1
+                            new_actions.append([upgradeFarm(ind, upgrades=tuple(current_upgrades))])
+
+                        # If the original compound action *also* involved automatic farm selling, tack this on to the *final* element in new actions
+                        if len(new_actions) > 0:
+                            new_actions[-1][0]['Auto Sell'] = purchase_info[i]['Auto Sell']
+
+                        # Carryovers
+                        for action in new_actions:
+                            action[0]['Buffer'] = purchase_info[i]['Buffer']
+                            action[0]['Minimum Buy Time'] = purchase_info[i]['Minimum Buy Time']
+                        break
+            
+            # Break up multiple farm upgrades into different actions
+            if len(new_actions) > 0:
+                self.buy_queue.pop(0)
+                self.buy_queue = new_actions + self.buy_queue
+                # self.logs.append("Warning! Automatically splitting a farm upgrade action into multiple actions! The new buy queue is %s"%(self.buy_queue))
+                # self.warnings.append(len(self.logs)-1)
+                purchase_info = new_actions[0]
+                
+            # If the purchase info includes an action for automated selling into more complicated purchases
+            # print("Checking for compound purchase:")
+            for i in range(len(purchase_info)):
+                # print(purchase_info[i]['Type'] + ' ' + str(purchase_info[i].get('Auto Sell')))
+                if purchase_info[i]['Type'] == 'Upgrade Farm' and purchase_info[i]['Auto Sell'] is not None:
+                    arg_list = self.argsortFarms()
+                    new_purchase_info = dc(purchase_info[0:i])
+                    
+                    try:
+                        arg_list.remove(purchase_info[i]['Index'])
+                    except:
+                        pass
+                    
+                    j = 0
+                    while (arg_list is not None) and (j < min(len(arg_list), purchase_info[i]['Auto Sell'])) and (self.farms[arg_list[j]].sell_time is None):
+                        # self.logs.append("GOT TO HERE!")
+                        # self.warnings.append(len(self.logs)-1)
+                        new_purchase_info.append(sellFarm(arg_list[j]))
+                        j += 1
+                            
+
+                    purchase_info[i]['Auto Sell'] = None
+                    new_purchase_info.extend(purchase_info[i:])
+                    purchase_info = dc(new_purchase_info)
+                    self.buy_queue[0] = dc(new_purchase_info)
+
+                    # self.logs.append("Warning! Automatically determining farms to sell for a compound upgrade! The new buy queue is %s"%(self.buy_queue))
+                    # self.warnings.append(len(self.logs)-1)
+                    break
+
+                
             
             # Next, let's compute the cash and loan values we would have if the transaction was performed
             # We will compute the hypothetical revenues each farm would have if the transactions were carried out

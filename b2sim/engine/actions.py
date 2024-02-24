@@ -11,7 +11,7 @@ def buyFarm(upgrades = (0,0,0), buffer = 0, min_buy_time = 0):
         'Message': 'Buy Farm'
     }
 
-def upgradeFarm(index, path = None, upgrades = None, buffer = 0, min_buy_time = 0):
+def upgradeFarm(index, path = None, upgrades = None, buffer = 0, min_buy_time = 0, auto_sell = None):
     #Note, upgrades should be a tuple. 
     if path is not None:
         message = 'Upgrade farm %s at path %s'%(index, path)
@@ -27,7 +27,8 @@ def upgradeFarm(index, path = None, upgrades = None, buffer = 0, min_buy_time = 
         'Upgrades': upgrades,
         'Buffer': buffer,
         'Minimum Buy Time': min_buy_time,
-        'Message': message
+        'Message': message,
+        'Auto Sell': auto_sell
     }
 
 def sellFarm(index, min_buy_time = 0, withdraw = False, buffer = 0):

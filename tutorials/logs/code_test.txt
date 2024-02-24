@@ -1,0 +1,1005 @@
+MESSAGE FROM GameState.__init__(): 
+Initialized Game State!
+The current game round is 13
+The current game time is 326.55 seconds
+The game round start times are given by [0, 6.0, 31.25, 56.25, 82.75, 114.75, 145.25, 172.25, 199.75, 224.0, 249.5, 265.25, 284.0, 306.75, 328.75, 345.25, 368.75, 404.0, 446.25, 475.0, 514.75, 527.0, 547.75, 581.0, 597.75, 662.0, 708.25, 746.0, 777.75, 809.0, 860.75, 883.75, 942.294, 962.074, 995.074, 1013.7656599999999, 1065.1576599999999, 1097.10566, 1189.74066, 1258.91149, 1359.16149, 1388.16149, 1434.09149, 1469.34149, 1500.59149, 1525.39149, 1547.54149, 1592.79149, 1618.04149, 1660.41149, 1700.66149, 1732.7614899999999] 
+
+MESSAGE FROM GameState.fastForward: 
+Advancing game to time 326.6
+Modified the eco send to Zero
+Advancing game to time 326.7
+Advancing game to time 326.8
+Advancing game to time 326.9
+Advancing game to time 327.0
+Advancing game to time 327.1
+Advancing game to time 327.2
+Advancing game to time 327.3
+Advancing game to time 327.4
+Advancing game to time 327.5
+Advancing game to time 327.6
+Advancing game to time 327.7
+Advancing game to time 327.8
+Advancing game to time 327.9
+Advancing game to time 328.0
+Advancing game to time 328.1
+Advancing game to time 328.2
+Advancing game to time 328.3
+Advancing game to time 328.4
+Advancing game to time 328.5
+Advancing game to time 328.6
+Advancing game to time 328.7
+Advancing game to time 328.8
+Awarded direct payment 50 at time 328.75
+Recorded cash and eco values (50,2000) at time 328.75
+Awarded direct payment 40 at time 328.75
+Recorded cash and eco values (90,2000) at time 328.75
+Advancing game to time 328.9
+Advancing game to time 329.0
+Advancing game to time 329.1
+Awarded direct payment 50 at time 329.09
+Recorded cash and eco values (140,2000) at time 329.09
+Advancing game to time 329.2
+Advancing game to time 329.3
+Advancing game to time 329.4
+Advancing game to time 329.5
+Awarded direct payment 50 at time 329.44
+Recorded cash and eco values (190,2000) at time 329.44
+Advancing game to time 329.6
+Advancing game to time 329.7
+Advancing game to time 329.8
+Awarded direct payment 50 at time 329.78
+Recorded cash and eco values (240,2000) at time 329.78
+Advancing game to time 329.9
+Advancing game to time 330.0
+Awarded eco payment 2000 at time 330
+Recorded cash and eco values (2240,2000) at time 330
+We have 2240 cash! We can do the next buy, which costs 550 and has a buffer of 0 and a minimum buy time of 0!
+Upgraded the farm at index 1 to (1,0,0)
+Completed the buy operation! The buy queue now has 4 items remaining in it
+We have 1690 cash! We can do the next buy, which costs 550 and has a buffer of 0 and a minimum buy time of 0!
+Upgraded the farm at index 1 to (2,0,0)
+Completed the buy operation! The buy queue now has 3 items remaining in it
+Recorded cash and eco values (1140,2000) at time 330.0
+Advancing game to time 330.1
+Advancing game to time 330.2
+Awarded direct payment 50 at time 330.12
+Recorded cash and eco values (1190,2000) at time 330.12
+Advancing game to time 330.3
+Advancing game to time 330.4
+Advancing game to time 330.5
+Awarded direct payment 50 at time 330.47
+Recorded cash and eco values (1240,2000) at time 330.47
+Advancing game to time 330.6
+Advancing game to time 330.7
+Advancing game to time 330.8
+Awarded direct payment 40 at time 330.79
+Recorded cash and eco values (1280,2000) at time 330.79
+Advancing game to time 330.9
+Awarded direct payment 50 at time 330.81
+Recorded cash and eco values (1330,2000) at time 330.81
+Advancing game to time 331.0
+Advancing game to time 331.1
+Advancing game to time 331.2
+Awarded direct payment 50 at time 331.16
+Recorded cash and eco values (1380,2000) at time 331.16
+Advancing game to time 331.3
+Advancing game to time 331.4
+Advancing game to time 331.5
+Awarded direct payment 50 at time 331.5
+Recorded cash and eco values (1430,2000) at time 331.5
+Advancing game to time 331.6
+Awarded direct payment 40 at time 331.57
+Recorded cash and eco values (1470,2000) at time 331.57
+Advancing game to time 331.7
+Advancing game to time 331.8
+Advancing game to time 331.9
+Awarded direct payment 50 at time 331.84
+Recorded cash and eco values (1520,2000) at time 331.84
+Advancing game to time 332.0
+Advancing game to time 332.1
+Advancing game to time 332.2
+Awarded direct payment 50 at time 332.19
+Recorded cash and eco values (1570,2000) at time 332.19
+Advancing game to time 332.3
+Advancing game to time 332.4
+Awarded direct payment 40 at time 332.36
+Recorded cash and eco values (1610,2000) at time 332.36
+Advancing game to time 332.5
+Advancing game to time 332.6
+Awarded direct payment 50 at time 332.53
+Recorded cash and eco values (1660,2000) at time 332.53
+Advancing game to time 332.7
+Advancing game to time 332.8
+Advancing game to time 332.9
+Awarded direct payment 50 at time 332.88
+Recorded cash and eco values (1710,2000) at time 332.88
+Advancing game to time 333.0
+Advancing game to time 333.1
+Advancing game to time 333.2
+Awarded direct payment 40 at time 333.14
+Recorded cash and eco values (1750,2000) at time 333.14
+Advancing game to time 333.3
+Awarded direct payment 50 at time 333.22
+Recorded cash and eco values (1800,2000) at time 333.22
+Advancing game to time 333.4
+Advancing game to time 333.5
+Advancing game to time 333.6
+Awarded direct payment 50 at time 333.56
+Recorded cash and eco values (1850,2000) at time 333.56
+Advancing game to time 333.7
+Advancing game to time 333.8
+Advancing game to time 333.9
+Advancing game to time 334.0
+Awarded direct payment 50 at time 333.91
+Recorded cash and eco values (1900,2000) at time 333.91
+Advancing game to time 334.1
+Advancing game to time 334.2
+Advancing game to time 334.3
+Advancing game to time 334.4
+Advancing game to time 334.5
+Advancing game to time 334.6
+Advancing game to time 334.7
+Advancing game to time 334.8
+Advancing game to time 334.9
+Advancing game to time 335.0
+Advancing game to time 335.1
+Advancing game to time 335.2
+Advancing game to time 335.3
+Advancing game to time 335.4
+Advancing game to time 335.5
+Advancing game to time 335.6
+Advancing game to time 335.7
+Advancing game to time 335.8
+Advancing game to time 335.9
+Advancing game to time 336.0
+Awarded eco payment 2000 at time 336
+Recorded cash and eco values (3900,2000) at time 336
+We have 3900 cash! We can do the next buy, which costs 2750 and has a buffer of 0 and a minimum buy time of 0!
+Upgraded the farm at index 1 to (3,0,0)
+Completed the buy operation! The buy queue now has 2 items remaining in it
+We have 1150 cash! We can do the next buy, which costs 200 and has a buffer of 0 and a minimum buy time of 0!
+Upgraded the farm at index 1 to (3,1,0)
+Completed the buy operation! The buy queue now has 1 items remaining in it
+We have 950 cash! We can do the next buy, which costs 700 and has a buffer of 0 and a minimum buy time of 0!
+Upgraded the farm at index 1 to (3,2,0)
+Completed the buy operation! The buy queue now has 0 items remaining in it
+Recorded cash and eco values (250,2000) at time 336.0
+Advancing game to time 336.1
+Advancing game to time 336.2
+Advancing game to time 336.3
+Advancing game to time 336.4
+Advancing game to time 336.5
+Advancing game to time 336.6
+Advancing game to time 336.7
+Advancing game to time 336.8
+Advancing game to time 336.9
+Advancing game to time 337.0
+Advancing game to time 337.1
+Advancing game to time 337.2
+Advancing game to time 337.3
+Advancing game to time 337.4
+Advancing game to time 337.5
+Advancing game to time 337.6
+Advancing game to time 337.7
+Advancing game to time 337.8
+Advancing game to time 337.9
+Advancing game to time 338.0
+Advancing game to time 338.1
+Advancing game to time 338.2
+Advancing game to time 338.3
+Advancing game to time 338.4
+Advancing game to time 338.5
+Advancing game to time 338.6
+Advancing game to time 338.7
+Advancing game to time 338.8
+Advancing game to time 338.9
+Advancing game to time 339.0
+Advancing game to time 339.1
+Advancing game to time 339.2
+Advancing game to time 339.3
+Advancing game to time 339.4
+Advancing game to time 339.5
+Advancing game to time 339.6
+Advancing game to time 339.7
+Advancing game to time 339.8
+Advancing game to time 339.9
+Advancing game to time 340.0
+Advancing game to time 340.1
+Advancing game to time 340.2
+Advancing game to time 340.3
+Advancing game to time 340.4
+Advancing game to time 340.5
+Advancing game to time 340.6
+Advancing game to time 340.7
+Advancing game to time 340.8
+Advancing game to time 340.9
+Advancing game to time 341.0
+Advancing game to time 341.1
+Advancing game to time 341.2
+Advancing game to time 341.3
+Advancing game to time 341.4
+Advancing game to time 341.5
+Advancing game to time 341.6
+Advancing game to time 341.7
+Advancing game to time 341.8
+Advancing game to time 341.9
+Advancing game to time 342.0
+Awarded eco payment 2000 at time 342
+Recorded cash and eco values (2250,2000) at time 342
+Advancing game to time 342.1
+Advancing game to time 342.2
+Advancing game to time 342.3
+Advancing game to time 342.4
+Advancing game to time 342.5
+Advancing game to time 342.6
+Advancing game to time 342.7
+Advancing game to time 342.8
+Advancing game to time 342.9
+Advancing game to time 343.0
+Advancing game to time 343.1
+Advancing game to time 343.2
+Advancing game to time 343.3
+Advancing game to time 343.4
+Advancing game to time 343.5
+Advancing game to time 343.6
+Advancing game to time 343.7
+Advancing game to time 343.8
+Advancing game to time 343.9
+Advancing game to time 344.0
+Advancing game to time 344.1
+Advancing game to time 344.2
+Advancing game to time 344.3
+Advancing game to time 344.4
+Advancing game to time 344.5
+Advancing game to time 344.6
+Advancing game to time 344.7
+Advancing game to time 344.8
+Advancing game to time 344.9
+Advancing game to time 345.0
+Advancing game to time 345.1
+Advancing game to time 345.2
+Advancing game to time 345.3
+Awarded direct payment 50 at time 345.25
+Recorded cash and eco values (2300,2000) at time 345.25
+Awarded direct payment 50 at time 345.25
+Recorded cash and eco values (2350,2000) at time 345.25
+Advancing game to time 345.4
+Advancing game to time 345.5
+Advancing game to time 345.6
+Advancing game to time 345.7
+Advancing game to time 345.8
+Advancing game to time 345.9
+Awarded direct payment 50 at time 345.81
+Recorded cash and eco values (2400,2000) at time 345.81
+Awarded direct payment 50 at time 345.81
+Recorded cash and eco values (2450,2000) at time 345.81
+Advancing game to time 346.0
+Advancing game to time 346.1
+Advancing game to time 346.2
+Advancing game to time 346.3
+Advancing game to time 346.4
+Awarded direct payment 50 at time 346.38
+Recorded cash and eco values (2500,2000) at time 346.38
+Awarded direct payment 50 at time 346.38
+Recorded cash and eco values (2550,2000) at time 346.38
+Advancing game to time 346.5
+Advancing game to time 346.6
+Advancing game to time 346.7
+Advancing game to time 346.8
+Advancing game to time 346.9
+Advancing game to time 347.0
+Awarded direct payment 50 at time 346.94
+Recorded cash and eco values (2600,2000) at time 346.94
+Awarded direct payment 50 at time 346.94
+Recorded cash and eco values (2650,2000) at time 346.94
+Advancing game to time 347.1
+Advancing game to time 347.2
+Advancing game to time 347.3
+Advancing game to time 347.4
+Advancing game to time 347.5
+Awarded direct payment 50 at time 347.5
+Recorded cash and eco values (2700,2000) at time 347.5
+Awarded direct payment 50 at time 347.5
+Recorded cash and eco values (2750,2000) at time 347.5
+Advancing game to time 347.6
+Advancing game to time 347.7
+Advancing game to time 347.8
+Advancing game to time 347.9
+Advancing game to time 348.0
+Awarded eco payment 2000 at time 348
+Recorded cash and eco values (4750,2000) at time 348
+Advancing game to time 348.1
+Awarded direct payment 50 at time 348.06
+Recorded cash and eco values (4800,2000) at time 348.06
+Awarded direct payment 50 at time 348.06
+Recorded cash and eco values (4850,2000) at time 348.06
+Advancing game to time 348.2
+Advancing game to time 348.3
+Advancing game to time 348.4
+Advancing game to time 348.5
+Advancing game to time 348.6
+Advancing game to time 348.7
+Awarded direct payment 50 at time 348.62
+Recorded cash and eco values (4900,2000) at time 348.62
+Awarded direct payment 50 at time 348.62
+Recorded cash and eco values (4950,2000) at time 348.62
+Advancing game to time 348.8
+Advancing game to time 348.9
+Advancing game to time 349.0
+Advancing game to time 349.1
+Advancing game to time 349.2
+Awarded direct payment 50 at time 349.19
+Recorded cash and eco values (5000,2000) at time 349.19
+Awarded direct payment 50 at time 349.19
+Recorded cash and eco values (5050,2000) at time 349.19
+Advancing game to time 349.3
+Advancing game to time 349.4
+Advancing game to time 349.5
+Advancing game to time 349.6
+Advancing game to time 349.7
+Advancing game to time 349.8
+Awarded direct payment 50 at time 349.75
+Recorded cash and eco values (5100,2000) at time 349.75
+Awarded direct payment 50 at time 349.75
+Recorded cash and eco values (5150,2000) at time 349.75
+Advancing game to time 349.9
+Advancing game to time 350.0
+Advancing game to time 350.1
+Advancing game to time 350.2
+Advancing game to time 350.3
+Advancing game to time 350.4
+Awarded direct payment 50 at time 350.31
+Recorded cash and eco values (5200,2000) at time 350.31
+Awarded direct payment 50 at time 350.31
+Recorded cash and eco values (5250,2000) at time 350.31
+Advancing game to time 350.5
+Advancing game to time 350.6
+Advancing game to time 350.7
+Advancing game to time 350.8
+Advancing game to time 350.9
+Awarded direct payment 50 at time 350.88
+Recorded cash and eco values (5300,2000) at time 350.88
+Awarded direct payment 50 at time 350.88
+Recorded cash and eco values (5350,2000) at time 350.88
+Advancing game to time 351.0
+Advancing game to time 351.1
+Advancing game to time 351.2
+Advancing game to time 351.3
+Advancing game to time 351.4
+Advancing game to time 351.5
+Awarded direct payment 50 at time 351.44
+Recorded cash and eco values (5400,2000) at time 351.44
+Awarded direct payment 50 at time 351.44
+Recorded cash and eco values (5450,2000) at time 351.44
+Advancing game to time 351.6
+Advancing game to time 351.7
+Advancing game to time 351.8
+Advancing game to time 351.9
+Advancing game to time 352.0
+Awarded direct payment 50 at time 352.0
+Recorded cash and eco values (5500,2000) at time 352.0
+Awarded direct payment 50 at time 352.0
+Recorded cash and eco values (5550,2000) at time 352.0
+Advancing game to time 352.1
+Advancing game to time 352.2
+Advancing game to time 352.3
+Advancing game to time 352.4
+Advancing game to time 352.5
+Advancing game to time 352.6
+Awarded direct payment 50 at time 352.56
+Recorded cash and eco values (5600,2000) at time 352.56
+Awarded direct payment 50 at time 352.56
+Recorded cash and eco values (5650,2000) at time 352.56
+Advancing game to time 352.7
+Advancing game to time 352.8
+Advancing game to time 352.9
+Advancing game to time 353.0
+Advancing game to time 353.1
+Advancing game to time 353.2
+Awarded direct payment 50 at time 353.12
+Recorded cash and eco values (5700,2000) at time 353.12
+Awarded direct payment 50 at time 353.12
+Recorded cash and eco values (5750,2000) at time 353.12
+Advancing game to time 353.3
+Advancing game to time 353.4
+Advancing game to time 353.5
+Advancing game to time 353.6
+Advancing game to time 353.7
+Awarded direct payment 50 at time 353.69
+Recorded cash and eco values (5800,2000) at time 353.69
+Awarded direct payment 50 at time 353.69
+Recorded cash and eco values (5850,2000) at time 353.69
+Advancing game to time 353.8
+Advancing game to time 353.9
+Advancing game to time 354.0
+Awarded eco payment 2000 at time 354
+Recorded cash and eco values (7850,2000) at time 354
+Advancing game to time 354.1
+Advancing game to time 354.2
+Advancing game to time 354.3
+Advancing game to time 354.4
+Advancing game to time 354.5
+Advancing game to time 354.6
+Advancing game to time 354.7
+Advancing game to time 354.8
+Advancing game to time 354.9
+Advancing game to time 355.0
+Advancing game to time 355.1
+Advancing game to time 355.2
+Advancing game to time 355.3
+Advancing game to time 355.4
+Advancing game to time 355.5
+Advancing game to time 355.6
+Advancing game to time 355.7
+Advancing game to time 355.8
+Advancing game to time 355.9
+Advancing game to time 356.0
+Advancing game to time 356.1
+Advancing game to time 356.2
+Advancing game to time 356.3
+Advancing game to time 356.4
+Advancing game to time 356.5
+Advancing game to time 356.6
+Advancing game to time 356.7
+Advancing game to time 356.8
+Advancing game to time 356.9
+Advancing game to time 357.0
+Advancing game to time 357.1
+Advancing game to time 357.2
+Advancing game to time 357.3
+Advancing game to time 357.4
+Advancing game to time 357.5
+Advancing game to time 357.6
+Advancing game to time 357.7
+Advancing game to time 357.8
+Advancing game to time 357.9
+Advancing game to time 358.0
+Advancing game to time 358.1
+Advancing game to time 358.2
+Advancing game to time 358.3
+Advancing game to time 358.4
+Advancing game to time 358.5
+Advancing game to time 358.6
+Advancing game to time 358.7
+Advancing game to time 358.8
+Advancing game to time 358.9
+Advancing game to time 359.0
+Advancing game to time 359.1
+Advancing game to time 359.2
+Advancing game to time 359.3
+Advancing game to time 359.4
+Advancing game to time 359.5
+Advancing game to time 359.6
+Advancing game to time 359.7
+Advancing game to time 359.8
+Advancing game to time 359.9
+Advancing game to time 360.0
+Awarded eco payment 2000 at time 360
+Recorded cash and eco values (9850,2000) at time 360
+Advancing game to time 360.1
+Advancing game to time 360.2
+Advancing game to time 360.3
+Advancing game to time 360.4
+Advancing game to time 360.5
+Advancing game to time 360.6
+Advancing game to time 360.7
+Advancing game to time 360.8
+Advancing game to time 360.9
+Advancing game to time 361.0
+Advancing game to time 361.1
+Advancing game to time 361.2
+Advancing game to time 361.3
+Advancing game to time 361.4
+Advancing game to time 361.5
+Advancing game to time 361.6
+Advancing game to time 361.7
+Advancing game to time 361.8
+Advancing game to time 361.9
+Advancing game to time 362.0
+Advancing game to time 362.1
+Advancing game to time 362.2
+Advancing game to time 362.3
+Advancing game to time 362.4
+Advancing game to time 362.5
+Advancing game to time 362.6
+Advancing game to time 362.7
+Advancing game to time 362.8
+Advancing game to time 362.9
+Advancing game to time 363.0
+Advancing game to time 363.1
+Advancing game to time 363.2
+Advancing game to time 363.3
+Advancing game to time 363.4
+Advancing game to time 363.5
+Advancing game to time 363.6
+Advancing game to time 363.7
+Advancing game to time 363.8
+Advancing game to time 363.9
+Advancing game to time 364.0
+Advancing game to time 364.1
+Advancing game to time 364.2
+Advancing game to time 364.3
+Advancing game to time 364.4
+Advancing game to time 364.5
+Advancing game to time 364.6
+Advancing game to time 364.7
+Advancing game to time 364.8
+Advancing game to time 364.9
+Advancing game to time 365.0
+Advancing game to time 365.1
+Advancing game to time 365.2
+Advancing game to time 365.3
+Advancing game to time 365.4
+Advancing game to time 365.5
+Advancing game to time 365.6
+Advancing game to time 365.7
+Advancing game to time 365.8
+Advancing game to time 365.9
+Advancing game to time 366.0
+Awarded eco payment 2000 at time 366
+Recorded cash and eco values (11850,2000) at time 366
+Advancing game to time 366.1
+Advancing game to time 366.2
+Advancing game to time 366.3
+Advancing game to time 366.4
+Advancing game to time 366.5
+Advancing game to time 366.6
+Advancing game to time 366.7
+Advancing game to time 366.8
+Advancing game to time 366.9
+Advancing game to time 367.0
+Advancing game to time 367.1
+Advancing game to time 367.2
+Advancing game to time 367.3
+Advancing game to time 367.4
+Advancing game to time 367.5
+Advancing game to time 367.6
+Advancing game to time 367.7
+Advancing game to time 367.8
+Advancing game to time 367.9
+Advancing game to time 368.0
+Advancing game to time 368.1
+Advancing game to time 368.2
+Advancing game to time 368.3
+Advancing game to time 368.4
+Advancing game to time 368.5
+Advancing game to time 368.6
+Advancing game to time 368.7
+Advancing game to time 368.8
+Awarded direct payment 50 at time 368.75
+Recorded cash and eco values (11900,2000) at time 368.75
+Awarded direct payment 50 at time 368.75
+Recorded cash and eco values (11950,2000) at time 368.75
+Advancing game to time 368.9
+Advancing game to time 369.0
+Advancing game to time 369.1
+Advancing game to time 369.2
+Advancing game to time 369.3
+Advancing game to time 369.4
+Advancing game to time 369.5
+Advancing game to time 369.6
+Advancing game to time 369.7
+Advancing game to time 369.8
+Advancing game to time 369.9
+Advancing game to time 370.0
+Advancing game to time 370.1
+Advancing game to time 370.2
+Advancing game to time 370.3
+Advancing game to time 370.4
+Advancing game to time 370.5
+Awarded direct payment 50 at time 370.44
+Recorded cash and eco values (12000,2000) at time 370.44
+Awarded direct payment 50 at time 370.44
+Recorded cash and eco values (12050,2000) at time 370.44
+Advancing game to time 370.6
+Advancing game to time 370.7
+Advancing game to time 370.8
+Advancing game to time 370.9
+Advancing game to time 371.0
+Advancing game to time 371.1
+Advancing game to time 371.2
+Advancing game to time 371.3
+Advancing game to time 371.4
+Advancing game to time 371.5
+Advancing game to time 371.6
+Advancing game to time 371.7
+Advancing game to time 371.8
+Advancing game to time 371.9
+Advancing game to time 372.0
+Awarded eco payment 2000 at time 372
+Recorded cash and eco values (14050,2000) at time 372
+Advancing game to time 372.1
+Advancing game to time 372.2
+Awarded direct payment 50 at time 372.12
+Recorded cash and eco values (14100,2000) at time 372.12
+Awarded direct payment 50 at time 372.12
+Recorded cash and eco values (14150,2000) at time 372.12
+Advancing game to time 372.3
+Advancing game to time 372.4
+Advancing game to time 372.5
+Advancing game to time 372.6
+Advancing game to time 372.7
+Advancing game to time 372.8
+Advancing game to time 372.9
+Advancing game to time 373.0
+Advancing game to time 373.1
+Advancing game to time 373.2
+Advancing game to time 373.3
+Advancing game to time 373.4
+Advancing game to time 373.5
+Advancing game to time 373.6
+Advancing game to time 373.7
+Advancing game to time 373.8
+Advancing game to time 373.9
+Awarded direct payment 50 at time 373.81
+Recorded cash and eco values (14200,2000) at time 373.81
+Awarded direct payment 50 at time 373.81
+Recorded cash and eco values (14250,2000) at time 373.81
+Advancing game to time 374.0
+Advancing game to time 374.1
+Advancing game to time 374.2
+Advancing game to time 374.3
+Advancing game to time 374.4
+Advancing game to time 374.5
+Advancing game to time 374.6
+Advancing game to time 374.7
+Advancing game to time 374.8
+Advancing game to time 374.9
+Advancing game to time 375.0
+Advancing game to time 375.1
+Advancing game to time 375.2
+Advancing game to time 375.3
+Advancing game to time 375.4
+Advancing game to time 375.5
+Awarded direct payment 50 at time 375.5
+Recorded cash and eco values (14300,2000) at time 375.5
+Awarded direct payment 50 at time 375.5
+Recorded cash and eco values (14350,2000) at time 375.5
+Advancing game to time 375.6
+Advancing game to time 375.7
+Advancing game to time 375.8
+Advancing game to time 375.9
+Advancing game to time 376.0
+Advancing game to time 376.1
+Advancing game to time 376.2
+Advancing game to time 376.3
+Advancing game to time 376.4
+Advancing game to time 376.5
+Advancing game to time 376.6
+Advancing game to time 376.7
+Advancing game to time 376.8
+Advancing game to time 376.9
+Advancing game to time 377.0
+Advancing game to time 377.1
+Advancing game to time 377.2
+Awarded direct payment 50 at time 377.19
+Recorded cash and eco values (14400,2000) at time 377.19
+Awarded direct payment 50 at time 377.19
+Recorded cash and eco values (14450,2000) at time 377.19
+Advancing game to time 377.3
+Advancing game to time 377.4
+Advancing game to time 377.5
+Advancing game to time 377.6
+Advancing game to time 377.7
+Advancing game to time 377.8
+Advancing game to time 377.9
+Advancing game to time 378.0
+Awarded eco payment 2000 at time 378
+Recorded cash and eco values (16450,2000) at time 378
+Advancing game to time 378.1
+Advancing game to time 378.2
+Advancing game to time 378.3
+Advancing game to time 378.4
+Advancing game to time 378.5
+Advancing game to time 378.6
+Advancing game to time 378.7
+Advancing game to time 378.8
+Advancing game to time 378.9
+Awarded direct payment 50 at time 378.88
+Recorded cash and eco values (16500,2000) at time 378.88
+Awarded direct payment 50 at time 378.88
+Recorded cash and eco values (16550,2000) at time 378.88
+Advancing game to time 379.0
+Advancing game to time 379.1
+Advancing game to time 379.2
+Advancing game to time 379.3
+Advancing game to time 379.4
+Advancing game to time 379.5
+Advancing game to time 379.6
+Advancing game to time 379.7
+Advancing game to time 379.8
+Advancing game to time 379.9
+Advancing game to time 380.0
+Advancing game to time 380.1
+Advancing game to time 380.2
+Advancing game to time 380.3
+Advancing game to time 380.4
+Advancing game to time 380.5
+Advancing game to time 380.6
+Awarded direct payment 50 at time 380.56
+Recorded cash and eco values (16600,2000) at time 380.56
+Awarded direct payment 50 at time 380.56
+Recorded cash and eco values (16650,2000) at time 380.56
+Advancing game to time 380.7
+Advancing game to time 380.8
+Advancing game to time 380.9
+Advancing game to time 381.0
+Advancing game to time 381.1
+Advancing game to time 381.2
+Advancing game to time 381.3
+Advancing game to time 381.4
+Advancing game to time 381.5
+Advancing game to time 381.6
+Advancing game to time 381.7
+Advancing game to time 381.8
+Advancing game to time 381.9
+Advancing game to time 382.0
+Advancing game to time 382.1
+Advancing game to time 382.2
+Advancing game to time 382.3
+Awarded direct payment 50 at time 382.25
+Recorded cash and eco values (16700,2000) at time 382.25
+Awarded direct payment 50 at time 382.25
+Recorded cash and eco values (16750,2000) at time 382.25
+Advancing game to time 382.4
+Advancing game to time 382.5
+Advancing game to time 382.6
+Advancing game to time 382.7
+Advancing game to time 382.8
+Advancing game to time 382.9
+Advancing game to time 383.0
+Advancing game to time 383.1
+Advancing game to time 383.2
+Advancing game to time 383.3
+Advancing game to time 383.4
+Advancing game to time 383.5
+Advancing game to time 383.6
+Advancing game to time 383.7
+Advancing game to time 383.8
+Advancing game to time 383.9
+Advancing game to time 384.0
+Awarded direct payment 50 at time 383.94
+Recorded cash and eco values (16800,2000) at time 383.94
+Awarded direct payment 50 at time 383.94
+Recorded cash and eco values (16850,2000) at time 383.94
+Awarded eco payment 2000 at time 384
+Recorded cash and eco values (18850,2000) at time 384
+Advancing game to time 384.1
+Advancing game to time 384.2
+Advancing game to time 384.3
+Advancing game to time 384.4
+Advancing game to time 384.5
+Advancing game to time 384.6
+Advancing game to time 384.7
+Advancing game to time 384.8
+Advancing game to time 384.9
+Advancing game to time 385.0
+Advancing game to time 385.1
+Advancing game to time 385.2
+Advancing game to time 385.3
+Advancing game to time 385.4
+Advancing game to time 385.5
+Advancing game to time 385.6
+Advancing game to time 385.7
+Awarded direct payment 50 at time 385.62
+Recorded cash and eco values (18900,2000) at time 385.62
+Awarded direct payment 50 at time 385.62
+Recorded cash and eco values (18950,2000) at time 385.62
+Advancing game to time 385.8
+Advancing game to time 385.9
+Advancing game to time 386.0
+Advancing game to time 386.1
+Advancing game to time 386.2
+Advancing game to time 386.3
+Advancing game to time 386.4
+Advancing game to time 386.5
+Advancing game to time 386.6
+Advancing game to time 386.7
+Advancing game to time 386.8
+Advancing game to time 386.9
+Advancing game to time 387.0
+Advancing game to time 387.1
+Advancing game to time 387.2
+Advancing game to time 387.3
+Advancing game to time 387.4
+Awarded direct payment 50 at time 387.31
+Recorded cash and eco values (19000,2000) at time 387.31
+Awarded direct payment 50 at time 387.31
+Recorded cash and eco values (19050,2000) at time 387.31
+Advancing game to time 387.5
+Advancing game to time 387.6
+Advancing game to time 387.7
+Advancing game to time 387.8
+Advancing game to time 387.9
+Advancing game to time 388.0
+Advancing game to time 388.1
+Advancing game to time 388.2
+Advancing game to time 388.3
+Advancing game to time 388.4
+Advancing game to time 388.5
+Advancing game to time 388.6
+Advancing game to time 388.7
+Advancing game to time 388.8
+Advancing game to time 388.9
+Advancing game to time 389.0
+Awarded direct payment 50 at time 389.0
+Recorded cash and eco values (19100,2000) at time 389.0
+Awarded direct payment 50 at time 389.0
+Recorded cash and eco values (19150,2000) at time 389.0
+Advancing game to time 389.1
+Advancing game to time 389.2
+Advancing game to time 389.3
+Advancing game to time 389.4
+Advancing game to time 389.5
+Advancing game to time 389.6
+Advancing game to time 389.7
+Advancing game to time 389.8
+Advancing game to time 389.9
+Advancing game to time 390.0
+Awarded eco payment 2000 at time 390
+Recorded cash and eco values (21150,2000) at time 390
+Advancing game to time 390.1
+Advancing game to time 390.2
+Advancing game to time 390.3
+Advancing game to time 390.4
+Advancing game to time 390.5
+Advancing game to time 390.6
+Advancing game to time 390.7
+Awarded direct payment 50 at time 390.69
+Recorded cash and eco values (21200,2000) at time 390.69
+Awarded direct payment 50 at time 390.69
+Recorded cash and eco values (21250,2000) at time 390.69
+Advancing game to time 390.8
+Advancing game to time 390.9
+Advancing game to time 391.0
+Advancing game to time 391.1
+Advancing game to time 391.2
+Advancing game to time 391.3
+Advancing game to time 391.4
+Advancing game to time 391.5
+Advancing game to time 391.6
+Advancing game to time 391.7
+Advancing game to time 391.8
+Advancing game to time 391.9
+Advancing game to time 392.0
+Advancing game to time 392.1
+Advancing game to time 392.2
+Advancing game to time 392.3
+Advancing game to time 392.4
+Awarded direct payment 50 at time 392.38
+Recorded cash and eco values (21300,2000) at time 392.38
+Awarded direct payment 50 at time 392.38
+Recorded cash and eco values (21350,2000) at time 392.38
+Advancing game to time 392.5
+Advancing game to time 392.6
+Advancing game to time 392.7
+Advancing game to time 392.8
+Advancing game to time 392.9
+Advancing game to time 393.0
+Advancing game to time 393.1
+Advancing game to time 393.2
+Advancing game to time 393.3
+Advancing game to time 393.4
+Advancing game to time 393.5
+Advancing game to time 393.6
+Advancing game to time 393.7
+Advancing game to time 393.8
+Advancing game to time 393.9
+Advancing game to time 394.0
+Advancing game to time 394.1
+Awarded direct payment 50 at time 394.06
+Recorded cash and eco values (21400,2000) at time 394.06
+Awarded direct payment 50 at time 394.06
+Recorded cash and eco values (21450,2000) at time 394.06
+Advancing game to time 394.2
+Advancing game to time 394.3
+Advancing game to time 394.4
+Advancing game to time 394.5
+Advancing game to time 394.6
+Advancing game to time 394.7
+Advancing game to time 394.8
+Advancing game to time 394.9
+Advancing game to time 395.0
+Advancing game to time 395.1
+Advancing game to time 395.2
+Advancing game to time 395.3
+Advancing game to time 395.4
+Advancing game to time 395.5
+Advancing game to time 395.6
+Advancing game to time 395.7
+Advancing game to time 395.8
+Advancing game to time 395.9
+Advancing game to time 396.0
+Awarded eco payment 2000 at time 396
+Recorded cash and eco values (23450,2000) at time 396
+Advancing game to time 396.1
+Advancing game to time 396.2
+Advancing game to time 396.3
+Advancing game to time 396.4
+Advancing game to time 396.5
+Advancing game to time 396.6
+Advancing game to time 396.7
+Advancing game to time 396.8
+Advancing game to time 396.9
+Advancing game to time 397.0
+Advancing game to time 397.1
+Advancing game to time 397.2
+Advancing game to time 397.3
+Advancing game to time 397.4
+Advancing game to time 397.5
+Advancing game to time 397.6
+Advancing game to time 397.7
+Advancing game to time 397.8
+Advancing game to time 397.9
+Advancing game to time 398.0
+Advancing game to time 398.1
+Advancing game to time 398.2
+Advancing game to time 398.3
+Advancing game to time 398.4
+Advancing game to time 398.5
+Advancing game to time 398.6
+Advancing game to time 398.7
+Advancing game to time 398.8
+Advancing game to time 398.9
+Advancing game to time 399.0
+Advancing game to time 399.1
+Advancing game to time 399.2
+Advancing game to time 399.3
+Advancing game to time 399.4
+Advancing game to time 399.5
+Advancing game to time 399.6
+Advancing game to time 399.7
+Advancing game to time 399.8
+Advancing game to time 399.9
+Advancing game to time 400.0
+Advancing game to time 400.1
+Advancing game to time 400.2
+Advancing game to time 400.3
+Advancing game to time 400.4
+Advancing game to time 400.5
+Advancing game to time 400.6
+Advancing game to time 400.7
+Advancing game to time 400.8
+Advancing game to time 400.9
+Advancing game to time 401.0
+Advancing game to time 401.1
+Advancing game to time 401.2
+Advancing game to time 401.3
+Advancing game to time 401.4
+Advancing game to time 401.5
+Advancing game to time 401.6
+Advancing game to time 401.7
+Advancing game to time 401.8
+Advancing game to time 401.9
+Advancing game to time 402.0
+Awarded eco payment 2000 at time 402
+Recorded cash and eco values (25450,2000) at time 402
+Advancing game to time 402.1
+Advancing game to time 402.2
+Advancing game to time 402.3
+Advancing game to time 402.4
+Advancing game to time 402.5
+Advancing game to time 402.6
+Advancing game to time 402.7
+Advancing game to time 402.8
+Advancing game to time 402.9
+Advancing game to time 403.0
+Advancing game to time 403.1
+Advancing game to time 403.2
+Advancing game to time 403.3
+Advancing game to time 403.4
+Advancing game to time 403.5
+Advancing game to time 403.6
+Advancing game to time 403.7
+Advancing game to time 403.8
+Advancing game to time 403.9
+Advancing game to time 404.0
+Awarded direct payment 50 at time 404.0
+Recorded cash and eco values (25500,2000) at time 404.0
+Awarded direct payment 50 at time 404.0
+Recorded cash and eco values (25550,2000) at time 404.0
+Advanced game state to round 17
+The current time is 404.0
+The next round starts at time 446.25
+Our new cash and eco is given by (25550,2000) 
+
