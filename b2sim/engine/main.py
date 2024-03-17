@@ -814,9 +814,10 @@ class GameState():
             #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             
             #print("New cash and eco is (%s,%s)"%(round(self.cash,2), round(self.eco,2)))
-            self.time_states.append(payout['Time'])
-            self.cash_states.append(self.cash)
-            self.eco_states.append(self.eco)
+            if i == len(payout_times)-1 or payout_times[i]['Time'] < payout_times[i+1]['Time']:
+                self.time_states.append(payout['Time'])
+                self.cash_states.append(self.cash)
+                self.eco_states.append(self.eco)
 
             #If either the cash or eco values changed since last time, record this in the log
             if len(self.cash_states) == 1 or self.cash_states[-1] != self.cash_states[-2] or len(self.eco_states) == 1 or self.eco_states[-1] != self.eco_states[-2]:

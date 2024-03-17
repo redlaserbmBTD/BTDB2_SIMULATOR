@@ -11,7 +11,6 @@ Modified the eco send to Grouped Blacks
 Advancing game to time 284.9
 Advancing game to time 285.0
 Awarded direct payment 50 at time 284.95
-Recorded cash and eco values (50,800) at time 284.95
 Awarded direct payment 50 at time 284.95
 Recorded cash and eco values (100,800) at time 284.95
 Sent a set of Grouped Blacks at time 284.975
@@ -23,7 +22,6 @@ Advancing game to time 285.2
 Advancing game to time 285.25
 Advancing game to time 285.3
 Awarded direct payment 50 at time 285.29
-Recorded cash and eco values (75.0,803.0) at time 285.29
 Awarded direct payment 50 at time 285.29
 Recorded cash and eco values (125.0,803.0) at time 285.29
 Advancing game to time 285.4
@@ -35,7 +33,6 @@ Advancing game to time 285.5
 Advancing game to time 285.6
 Advancing game to time 285.7
 Awarded direct payment 50 at time 285.64
-Recorded cash and eco values (100.0,806.0) at time 285.64
 Awarded direct payment 50 at time 285.64
 Recorded cash and eco values (150.0,806.0) at time 285.64
 Sent a set of Grouped Blacks at time 285.675
@@ -64,7 +61,6 @@ Advancing game to time 286.25
 Advancing game to time 286.3
 Advancing game to time 286.4
 Awarded direct payment 50 at time 286.32
-Recorded cash and eco values (75.0,815.0) at time 286.32
 Awarded direct payment 50 at time 286.32
 Recorded cash and eco values (125.0,815.0) at time 286.32
 Sent a set of Grouped Blacks at time 286.4
@@ -75,7 +71,6 @@ Advancing game to time 286.5
 Advancing game to time 286.6
 Advancing game to time 286.7
 Awarded direct payment 50 at time 286.67
-Recorded cash and eco values (100.0,818.0) at time 286.67
 Awarded direct payment 50 at time 286.67
 Recorded cash and eco values (150.0,818.0) at time 286.67
 Sent a set of Grouped Blacks at time 286.675
@@ -92,7 +87,6 @@ Recorded cash and eco values (0.0,824.0) at time 286.9
 Advancing game to time 287.0
 Advancing game to time 287.1
 Awarded direct payment 50 at time 287.01
-Recorded cash and eco values (50.0,824.0) at time 287.01
 Awarded direct payment 50 at time 287.01
 Recorded cash and eco values (100.0,824.0) at time 287.01
 Sent a set of Grouped Blacks at time 287.075
@@ -104,7 +98,6 @@ Advancing game to time 287.25
 Advancing game to time 287.3
 Advancing game to time 287.4
 Awarded direct payment 50 at time 287.36
-Recorded cash and eco values (75.0,827.0) at time 287.36
 Awarded direct payment 50 at time 287.36
 Recorded cash and eco values (125.0,827.0) at time 287.36
 Advancing game to time 287.5
@@ -115,7 +108,6 @@ Recorded cash and eco values (50.0,830.0) at time 287.5
 Advancing game to time 287.6
 Advancing game to time 287.7
 Awarded direct payment 50 at time 287.7
-Recorded cash and eco values (100.0,830.0) at time 287.7
 Awarded direct payment 50 at time 287.7
 Recorded cash and eco values (150.0,830.0) at time 287.7
 Advancing game to time 287.75
@@ -130,7 +122,7 @@ Sent a set of Grouped Blacks at time 287.92499999999995
 Currently, the send queue looks like this: 
 [287.9287499999999, 288.2487499999999, 288.5687499999999, 288.8887499999999]
 Awarded eco payment 836.0 at time 288
-Recorded cash and eco values (836.0,836.0) at time 288
+Recorded cash and eco values (836.0,836.0) at time 288.0
 Advancing game to time 288.1
 Awarded direct payment 50 at time 288.04
 Recorded cash and eco values (886.0,836.0) at time 288.04
@@ -152,7 +144,6 @@ Sent a set of Grouped Blacks at time 288.3749999999999
 Currently, the send queue looks like this: 
 [288.5687499999999, 288.8887499999999, 289.2087499999999, 289.5287499999999, 289.8487499999999]
 Awarded direct payment 50 at time 288.39
-Recorded cash and eco values (761.0,845.0) at time 288.39
 Awarded direct payment 50 at time 288.39
 Recorded cash and eco values (811.0,845.0) at time 288.39
 Advancing game to time 288.5
@@ -180,7 +171,6 @@ Recorded cash and eco values (686.0,854.0) at time 288.9
 Advancing game to time 289.0
 Advancing game to time 289.1
 Awarded direct payment 50 at time 289.07
-Recorded cash and eco values (736.0,854.0) at time 289.07
 Awarded direct payment 50 at time 289.07
 Recorded cash and eco values (786.0,854.0) at time 289.07
 Advancing game to time 289.2
@@ -193,7 +183,6 @@ Advancing game to time 289.3
 Advancing game to time 289.4
 Advancing game to time 289.5
 Awarded direct payment 50 at time 289.42
-Recorded cash and eco values (761.0,857.0) at time 289.42
 Awarded direct payment 50 at time 289.42
 Recorded cash and eco values (811.0,857.0) at time 289.42
 Advancing game to time 289.6
@@ -205,7 +194,6 @@ Advancing game to time 289.7
 Advancing game to time 289.75
 Advancing game to time 289.8
 Awarded direct payment 50 at time 289.76
-Recorded cash and eco values (786.0,860.0) at time 289.76
 Awarded direct payment 50 at time 289.76
 Recorded cash and eco values (836.0,860.0) at time 289.76
 Advancing game to time 289.9
@@ -217,7 +205,6 @@ Advancing game to time 290.0
 Advancing game to time 290.1
 Advancing game to time 290.2
 Awarded direct payment 50 at time 290.11
-Recorded cash and eco values (811.0,863.0) at time 290.11
 Awarded direct payment 50 at time 290.11
 Recorded cash and eco values (861.0,863.0) at time 290.11
 Sent a set of Grouped Blacks at time 290.1687499999999
@@ -311,7 +298,7 @@ Advancing game to time 293.8
 Advancing game to time 293.9
 Advancing game to time 294.0
 Awarded eco payment 896.0 at time 294
-Recorded cash and eco values (932.0,896.0) at time 294
+Recorded cash and eco values (932.0,896.0) at time 294.0
 Advancing game to time 294.1
 Sent a set of Grouped Blacks at time 294.075
 Currently, the send queue looks like this: 
@@ -394,7 +381,6 @@ Recorded cash and eco values (107.0,929.0) at time 296.9
 Advancing game to time 297.0
 Advancing game to time 297.1
 Awarded direct payment 50 at time 297.05
-Recorded cash and eco values (157.0,929.0) at time 297.05
 Awarded direct payment 50 at time 297.05
 Recorded cash and eco values (207.0,929.0) at time 297.05
 Advancing game to time 297.2
@@ -430,7 +416,6 @@ Sent a set of Grouped Blacks at time 298.1687499999997
 Currently, the send queue looks like this: 
 [298.4887499999997, 298.8087499999997, 299.1287499999997, 299.4487499999997, 299.76874999999967, 300.08874999999966]
 Awarded direct payment 50 at time 298.18
-Recorded cash and eco values (57.0,941.0) at time 298.18
 Awarded direct payment 50 at time 298.18
 Recorded cash and eco values (107.0,941.0) at time 298.18
 Advancing game to time 298.25
@@ -445,7 +430,6 @@ Advancing game to time 298.6
 Advancing game to time 298.7
 Advancing game to time 298.75
 Awarded direct payment 50 at time 298.74
-Recorded cash and eco values (82.0,944.0) at time 298.74
 Awarded direct payment 50 at time 298.74
 Recorded cash and eco values (132.0,944.0) at time 298.74
 Advancing game to time 298.8
@@ -460,7 +444,6 @@ Advancing game to time 299.2
 Advancing game to time 299.25
 Advancing game to time 299.3
 Awarded direct payment 50 at time 299.3
-Recorded cash and eco values (107.0,947.0) at time 299.3
 Awarded direct payment 50 at time 299.3
 Recorded cash and eco values (157.0,947.0) at time 299.3
 Advancing game to time 299.4
@@ -479,7 +462,6 @@ Advancing game to time 299.75
 Advancing game to time 299.8
 Advancing game to time 299.9
 Awarded direct payment 50 at time 299.86
-Recorded cash and eco values (57.0,953.0) at time 299.86
 Awarded direct payment 50 at time 299.86
 Recorded cash and eco values (107.0,953.0) at time 299.86
 Sent a set of Grouped Blacks at time 299.875
@@ -489,6 +471,7 @@ Recorded cash and eco values (32.0,956.0) at time 299.9
 Advancing game to time 300.0
 Awarded eco payment 956.0 at time 300
 Recorded cash and eco values (988.0,956.0) at time 300
+Recorded cash and eco values (988.0,956.0) at time 300.0
 Advancing game to time 300.1
 Sent a set of Grouped Blacks at time 300.08874999999966
 Currently, the send queue looks like this: 
@@ -503,7 +486,6 @@ Sent a set of Grouped Blacks at time 300.40874999999966
 Currently, the send queue looks like this: 
 [300.72874999999965, 301.04874999999964, 301.36874999999964, 301.68874999999963, 302.0087499999996, 302.3287499999996]
 Awarded direct payment 50 at time 300.43
-Recorded cash and eco values (888.0,962.0) at time 300.43
 Awarded direct payment 50 at time 300.43
 Recorded cash and eco values (938.0,962.0) at time 300.43
 Advancing game to time 300.6
@@ -517,7 +499,6 @@ Advancing game to time 300.8
 Advancing game to time 300.9
 Advancing game to time 301.0
 Awarded direct payment 50 at time 300.99
-Recorded cash and eco values (913.0,965.0) at time 300.99
 Awarded direct payment 50 at time 300.99
 Recorded cash and eco values (963.0,965.0) at time 300.99
 Advancing game to time 301.1
@@ -536,7 +517,6 @@ Recorded cash and eco values (813.0,971.0) at time 301.4
 Advancing game to time 301.5
 Advancing game to time 301.6
 Awarded direct payment 50 at time 301.55
-Recorded cash and eco values (863.0,971.0) at time 301.55
 Awarded direct payment 50 at time 301.55
 Recorded cash and eco values (913.0,971.0) at time 301.55
 Advancing game to time 301.7
@@ -572,7 +552,6 @@ Sent a set of Grouped Blacks at time 302.6487499999996
 Currently, the send queue looks like this: 
 [302.9687499999996, 303.2887499999996, 303.6087499999996, 303.9287499999996, 304.2487499999996, 304.56874999999957]
 Awarded direct payment 50 at time 302.68
-Recorded cash and eco values (763.0,983.0) at time 302.68
 Awarded direct payment 50 at time 302.68
 Recorded cash and eco values (813.0,983.0) at time 302.68
 Advancing game to time 302.75
@@ -587,7 +566,6 @@ Advancing game to time 303.1
 Advancing game to time 303.2
 Advancing game to time 303.25
 Awarded direct payment 50 at time 303.24
-Recorded cash and eco values (788.0,986.0) at time 303.24
 Awarded direct payment 50 at time 303.24
 Recorded cash and eco values (838.0,986.0) at time 303.24
 Advancing game to time 303.3
@@ -606,7 +584,6 @@ Recorded cash and eco values (688.0,992.0) at time 303.7
 Advancing game to time 303.75
 Advancing game to time 303.8
 Awarded direct payment 50 at time 303.8
-Recorded cash and eco values (738.0,992.0) at time 303.8
 Awarded direct payment 50 at time 303.8
 Recorded cash and eco values (788.0,992.0) at time 303.8
 Advancing game to time 303.9
@@ -625,7 +602,6 @@ Recorded cash and eco values (638.0,998.0) at time 304.25
 Advancing game to time 304.3
 Advancing game to time 304.4
 Awarded direct payment 50 at time 304.36
-Recorded cash and eco values (688.0,998.0) at time 304.36
 Awarded direct payment 50 at time 304.36
 Recorded cash and eco values (738.0,998.0) at time 304.36
 Advancing game to time 304.5
@@ -658,7 +634,6 @@ Advancing game to time 305.3
 Advancing game to time 305.4
 Advancing game to time 305.5
 Awarded direct payment 50 at time 305.49
-Recorded cash and eco values (663.0,1007.0) at time 305.49
 Awarded direct payment 50 at time 305.49
 Recorded cash and eco values (713.0,1007.0) at time 305.49
 Advancing game to time 305.6
@@ -677,6 +652,7 @@ Recorded cash and eco values (563.0,1013.0) at time 305.9
 Advancing game to time 306.0
 Awarded eco payment 1013.0 at time 306
 Recorded cash and eco values (1576.0,1013.0) at time 306
+Recorded cash and eco values (1576.0,1013.0) at time 306.0
 Advancing game to time 306.1
 Advancing game to time 306.2
 Sent a set of Grouped Blacks at time 306.16874999999953
@@ -815,7 +791,7 @@ Sent a set of Grouped Blacks at time 311.9287499999994
 Currently, the send queue looks like this: 
 [312.2487499999994, 312.5687499999994, 312.8887499999994, 313.2087499999994, 313.5287499999994, 313.84874999999937]
 Awarded eco payment 1070.0 at time 312
-Recorded cash and eco values (1221.0,1070.0) at time 312
+Recorded cash and eco values (1221.0,1070.0) at time 312.0
 Advancing game to time 312.1
 Advancing game to time 312.2
 Advancing game to time 312.3
@@ -888,7 +864,6 @@ Recorded cash and eco values (646.0,1097.0) at time 314.9
 Advancing game to time 315.0
 Advancing game to time 315.1
 Awarded direct payment 50 at time 315.04
-Recorded cash and eco values (696.0,1097.0) at time 315.04
 Awarded direct payment 50 at time 315.04
 Recorded cash and eco values (746.0,1097.0) at time 315.04
 Advancing game to time 315.2
@@ -929,7 +904,6 @@ Advancing game to time 316.6
 Advancing game to time 316.7
 Advancing game to time 316.8
 Awarded direct payment 50 at time 316.73
-Recorded cash and eco values (421.0,1112.0) at time 316.73
 Awarded direct payment 50 at time 316.73
 Recorded cash and eco values (471.0,1112.0) at time 316.73
 Sent a set of Grouped Blacks at time 316.7287499999993
@@ -961,7 +935,7 @@ Advancing game to time 317.8
 Advancing game to time 317.9
 Advancing game to time 318.0
 Awarded eco payment 1124.0 at time 318
-Recorded cash and eco values (1295.0,1124.0) at time 318
+Recorded cash and eco values (1295.0,1124.0) at time 318.0
 Advancing game to time 318.1
 Sent a set of Grouped Blacks at time 318.0087499999993
 Currently, the send queue looks like this: 
@@ -1019,6 +993,7 @@ Awarded direct payment 50 at time 320.1
 Recorded cash and eco values (920.0,1145.0) at time 320.1
 Awarded direct payment 50 at time 320.1
 Recorded cash and eco values (970.0,1145.0) at time 320.1
+Recorded cash and eco values (970.0,1145.0) at time 320.1
 Advancing game to time 320.2
 Advancing game to time 320.3
 Sent a set of Grouped Blacks at time 320.24874999999923
@@ -1057,7 +1032,6 @@ Recorded cash and eco values (595.0,1160.0) at time 321.6
 Advancing game to time 321.7
 Advancing game to time 321.8
 Awarded direct payment 50 at time 321.79
-Recorded cash and eco values (645.0,1160.0) at time 321.79
 Awarded direct payment 50 at time 321.79
 Recorded cash and eco values (695.0,1160.0) at time 321.79
 Advancing game to time 321.9
@@ -1101,7 +1075,6 @@ Sent a set of Grouped Blacks at time 323.44874999999917
 Currently, the send queue looks like this: 
 [323.76874999999916, 324.08874999999915, 324.40874999999915, 324.72874999999914, 325.04874999999913, 325.3687499999991]
 Awarded direct payment 50 at time 323.48
-Recorded cash and eco values (295.0,1178.0) at time 323.48
 Awarded direct payment 50 at time 323.48
 Recorded cash and eco values (345.0,1178.0) at time 323.48
 Advancing game to time 323.6
@@ -1114,7 +1087,7 @@ Recorded cash and eco values (270.0,1181.0) at time 323.8
 Advancing game to time 323.9
 Advancing game to time 324.0
 Awarded eco payment 1181.0 at time 324
-Recorded cash and eco values (1451.0,1181.0) at time 324
+Recorded cash and eco values (1451.0,1181.0) at time 324.0
 Advancing game to time 324.1
 Sent a set of Grouped Blacks at time 324.08874999999915
 Currently, the send queue looks like this: 
@@ -1185,7 +1158,6 @@ Recorded cash and eco values (876.0,1208.0) at time 326.7
 Advancing game to time 326.8
 Advancing game to time 326.9
 Awarded direct payment 50 at time 326.85
-Recorded cash and eco values (926.0,1208.0) at time 326.85
 Awarded direct payment 50 at time 326.85
 Recorded cash and eco values (976.0,1208.0) at time 326.85
 Advancing game to time 327.0
@@ -1226,7 +1198,6 @@ Advancing game to time 328.4
 Advancing game to time 328.5
 Advancing game to time 328.6
 Awarded direct payment 50 at time 328.54
-Recorded cash and eco values (651.0,1223.0) at time 328.54
 Awarded direct payment 50 at time 328.54
 Recorded cash and eco values (701.0,1223.0) at time 328.54
 Sent a set of Grouped Blacks at time 328.56874999999906
@@ -1265,6 +1236,7 @@ Recorded cash and eco values (326.0,1238.0) at time 329.9
 Advancing game to time 330.0
 Awarded eco payment 1238.0 at time 330
 Recorded cash and eco values (1564.0,1238.0) at time 330
+Recorded cash and eco values (1564.0,1238.0) at time 330.0
 Advancing game to time 330.1
 Advancing game to time 330.2
 Sent a set of Grouped Blacks at time 330.168749999999
@@ -1314,7 +1286,6 @@ Recorded cash and eco values (1214.0,1256.0) at time 331.8
 Advancing game to time 331.9
 Advancing game to time 332.0
 Awarded direct payment 50 at time 331.91
-Recorded cash and eco values (1264.0,1256.0) at time 331.91
 Awarded direct payment 50 at time 331.91
 Recorded cash and eco values (1314.0,1256.0) at time 331.91
 Advancing game to time 332.1
@@ -1354,7 +1325,6 @@ Recorded cash and eco values (939.0,1271.0) at time 333.4
 Advancing game to time 333.5
 Advancing game to time 333.6
 Awarded direct payment 50 at time 333.6
-Recorded cash and eco values (989.0,1271.0) at time 333.6
 Awarded direct payment 50 at time 333.6
 Recorded cash and eco values (1039.0,1271.0) at time 333.6
 Advancing game to time 333.7
@@ -1395,7 +1365,6 @@ Advancing game to time 335.1
 Advancing game to time 335.2
 Advancing game to time 335.3
 Awarded direct payment 50 at time 335.29
-Recorded cash and eco values (714.0,1286.0) at time 335.29
 Awarded direct payment 50 at time 335.29
 Recorded cash and eco values (764.0,1286.0) at time 335.29
 Sent a set of Grouped Blacks at time 335.2887499999989
@@ -1417,7 +1386,7 @@ Sent a set of Grouped Blacks at time 335.9287499999989
 Currently, the send queue looks like this: 
 [336.2487499999989, 336.5687499999989, 336.8887499999989, 337.2087499999989, 337.52874999999887, 337.84874999999886]
 Awarded eco payment 1295.0 at time 336
-Recorded cash and eco values (1834.0,1295.0) at time 336
+Recorded cash and eco values (1834.0,1295.0) at time 336.0
 Advancing game to time 336.1
 Advancing game to time 336.2
 Advancing game to time 336.3
@@ -1482,7 +1451,6 @@ Recorded cash and eco values (1334.0,1319.0) at time 338.5
 Advancing game to time 338.6
 Advancing game to time 338.7
 Awarded direct payment 50 at time 338.66
-Recorded cash and eco values (1384.0,1319.0) at time 338.66
 Awarded direct payment 50 at time 338.66
 Recorded cash and eco values (1434.0,1319.0) at time 338.66
 Advancing game to time 338.8
@@ -1559,7 +1527,7 @@ Advancing game to time 341.8
 Advancing game to time 341.9
 Advancing game to time 342.0
 Awarded eco payment 1349.0 at time 342
-Recorded cash and eco values (2033.0,1349.0) at time 342
+Recorded cash and eco values (2033.0,1349.0) at time 342.0
 Advancing game to time 342.1
 Sent a set of Grouped Blacks at time 342.00874999999877
 Currently, the send queue looks like this: 
@@ -1661,7 +1629,6 @@ Recorded cash and eco values (983.0,1391.0) at time 346.2
 Advancing game to time 346.3
 Advancing game to time 346.4
 Awarded direct payment 50 at time 346.4
-Recorded cash and eco values (1033.0,1391.0) at time 346.4
 Awarded direct payment 50 at time 346.4
 Recorded cash and eco values (1083.0,1391.0) at time 346.4
 Advanced game state to round 17
