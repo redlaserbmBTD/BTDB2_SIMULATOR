@@ -1,5 +1,6 @@
 #DEFINITIONS OF THE 
 import copy
+from math import floor, ceil
 from b2sim.engine.info import *
 
 class MonkeyFarm():
@@ -83,6 +84,122 @@ class MonkeyFarm():
 
         # Finally, return the payout!
         return payout_amount
+    
+    def computePayoutSchedule(self, start_time, target_time, rounds, BC_exists = False):
+        '''
+        Determines all payments the farm will give between the start_time and target_time (left-open interval)
+        assuming round lengths equal to rounds.
+        '''
+        payout_times = []
+        # print("calling computePayoutSchedule with start and target times %s and %s"%(start_time, target_time))
+        if self.sell_time is not None:
+            return payout_times
+
+        #If this farm is a monkeynomics, determine the payout times of the active ability
+        if self.upgrades[1] == 5:
+            while self.min_use_time <= start_time:
+                self.min_use_time += farm_globals['Monkeynomics Payout']
+
+            farm_time = self.min_use_time
+
+            while farm_time <= target_time:
+                if farm_time > start_time:
+                    payout_entry = {
+                        'Time': farm_time,
+                        'Payout Type': 'Direct',
+                        'Payout': farm_globals['Monkeynomics Payout'],
+                        'Source': 'Farm',
+                    }
+                    payout_times.append(payout_entry)
+                farm_time += farm_globals['Monkeynomics Usage Cooldown']
+
+        farm_purchase_round = rounds.getRoundFromTime(self.purchase_time)
+        current_round = rounds.getRoundFromTime(start_time)
+        inc = 0
+        flag = False
+        while flag == False:
+            #If computing farm payments on the same round as we are currently on, precompute the indices the for loop should go through.
+            #NOTE: This is not necessary at the end because the for loop terminates when a "future" payment is reached.
+            if inc == 0:
+                if current_round > farm_purchase_round:
+                    #When the farm was purchased on a previous round
+                    round_time = start_time - rounds.round_starts[current_round]
+                    loop_start = int(floor(self.payout_frequency*round_time/rounds.nat_send_lens[current_round]) + 1)
+                    loop_end = self.payout_frequency
+                else: #self.current_round == farm_purhcase_round
+                    #When the farm was purchased on the same round as we are currently on
+                    loop_start = int(floor(self.payout_frequency*(start_time - self.purchase_time)/rounds.nat_send_lens[current_round]-1)+1)
+                    loop_end = int(ceil(self.payout_frequency*(1 - (self.purchase_time - rounds.round_starts[current_round])/rounds.nat_send_lens[current_round])-1)-1)
+            else:
+                loop_start = 0
+                loop_end = self.payout_frequency
+            
+            #self.logs.append("Precomputed the loop indices to be (%s,%s)"%(loop_start,loop_end))
+            #self.logs.append("Now computing payments at round %s"%(self.current_round + self.inc))
+            
+            for i in range(loop_start, loop_end):
+                #Precompute the value i that this for loop should start at (as opposed to always starting at 0) to avoid redundant computations
+                #Farm payout rules are different for the round the farm is bought on versus subsequent rounds
+                if current_round + inc == farm_purchase_round:
+                    farm_time = self.purchase_time + (i+1)*rounds.nat_send_lens[current_round + inc]/self.payout_frequency
+                else:
+                    # print("Current round + inc: %s"%(current_round+inc))
+                    farm_time = rounds.round_starts[current_round + inc] + i*rounds.nat_send_lens[current_round + inc]/self.payout_frequency
+                    # print("Set time to %s"%(farm_time))
+                
+                #Check if the payment time occurs within our update window. If it does, add it to the payout times list
+                if farm_time <= target_time and farm_time > start_time:
+                    
+                    #Farm payouts will either immediately be added to the player's cash or added to the monkey bank's account value
+                    #This depends of course on whether the farm is a bank or not.
+                    
+                    #WARNING: If the farm we are dealing with is a bank, we must direct the payment into the bank rather than the player.
+                    #WARNING: If the farm we are dealing with is a MWS, we must check whether we are awarding the MWS bonus payment!
+                    #WARNING: If the farm we are dealing with is a BRF, we must check whether the BRF buff is being applied or not!
+                    
+                    if self.upgrades[1] >= 3:
+                        if i == 0 and current_round + inc > farm_purchase_round:
+                            #At the start of every round, every bank gets a $400 payment and then is awarded 20% interest.
+                            payout_entry = {
+                                'Time': farm_time,
+                                'Payout Type': 'Bank Interest',
+                                'Source': 'Farm'
+                            }
+                            payout_times.append(payout_entry)
+                        payout_entry = {
+                            'Time': farm_time,
+                            'Payout Type': 'Bank Payment',
+                            'Payout': self.payout(farm_time),
+                            'Source': 'Farm'
+                        }
+                    elif i == 0 and self.upgrades[2] == 5 and current_round + inc > farm_purchase_round:
+                        payout_entry = {
+                            'Time': farm_time,
+                            'Payout Type': 'Direct',
+                            'Payout': self.payout(farm_time, mws_bonus = True),
+                            'Source': 'Farm',
+                        }
+                    elif self.upgrades[0] == 4 and BC_exists == True:
+                        payout_entry = {
+                            'Time': farm_time,
+                            'Payout Type': 'Direct',
+                            'Payout': self.payout(farm_time, brf_buff = True),
+                            'Source': 'Farm'
+                        }
+                    else:
+                        payout_entry = {
+                            'Time': farm_time,
+                            'Payout Type': 'Direct',
+                            'Payout': self.payout(farm_time),
+                            'Source': 'Farm',
+                        }
+                    payout_times.append(payout_entry)
+                elif farm_time > target_time:
+                    #self.logs.append("The payout time of %s is too late! Excluding payout time!"%(farm_time))
+                    flag = True
+                    break
+            inc += 1
+        return payout_times
     
     def upgrade(self, time, info, mode = 'Upgrades'):
         # There are two modes for upgrading:

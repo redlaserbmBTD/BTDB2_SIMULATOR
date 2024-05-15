@@ -963,113 +963,11 @@ class GameState():
                     heli_farm_time += heli_globals['Heli Farm Usage Cooldown']
 
         #FARMS
-        if len(self.farms) > 0:
-            for key, farm in enumerate(self.farms):
-                if farm.sell_time is None:
-                    #If the farm is a monkeynomics, determine the payout times of the active ability
-                    if farm.upgrades[1] == 5:
-                        farm_time = farm.min_use_time
-                        while farm_time <= target_time:
-                            if farm_time > self.current_time:
-                                payout_entry = {
-                                    'Time': farm_time,
-                                    'Payout Type': 'Direct',
-                                    'Payout': farm_globals['Monkeynomics Payout'],
-                                    'Source': 'Farm',
-                                    'Index': key
-                                }
-                                payout_times.append(payout_entry)
-                            farm_time += farm_globals['Monkeynomics Usage Cooldown']
-                        farm.min_use_time = farm_time
-                    
-                    farm_purchase_round = self.rounds.getRoundFromTime(farm.purchase_time)
-                    self.inc = 0
-                    self.flag = False
-                    while self.flag == False:
-                        #If computing farm payments on the same round as we are currently on, precompute the indices the for loop should go through.
-                        #NOTE: This is not necessary at the end because the for loop terminates when a "future" payment is reached.
-                        if self.inc == 0:
-                            if self.current_round > farm_purchase_round:
-                                #When the farm was purchased on a previous round
-                                round_time = self.current_time - self.rounds.round_starts[self.current_round]
-                                loop_start = int(floor(farm.payout_frequency*round_time/self.rounds.nat_send_lens[self.current_round]) + 1)
-                                loop_end = farm.payout_frequency
-                            else: #self.current_round == farm_purhcase_round
-                                #When the farm was purchased on the same round as we are currently on
-                                loop_start = int(floor(farm.payout_frequency*(self.current_time - farm.purchase_time)/self.rounds.nat_send_lens[self.current_round]-1)+1)
-                                loop_end = int(ceil(farm.payout_frequency*(1 - (farm.purchase_time - self.rounds.round_starts[self.current_round])/self.rounds.nat_send_lens[self.current_round])-1)-1)
-                        else:
-                            loop_start = 0
-                            loop_end = farm.payout_frequency
-                        
-                        #self.logs.append("Precomputed the loop indices to be (%s,%s)"%(loop_start,loop_end))
-                        #self.logs.append("Now computing payments at round %s"%(self.current_round + self.inc))
-                        
-                        for i in range(loop_start, loop_end):
-                            #Precompute the value i that this for loop should start at (as opposed to always starting at 0) to avoid redundant computations
-                            #Farm payout rules are different for the round the farm is bought on versus subsequent rounds
-                            if self.current_round + self.inc == farm_purchase_round:
-                                farm_time = farm.purchase_time + (i+1)*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
-                            else:
-                                farm_time = self.rounds.round_starts[self.current_round + self.inc] + i*self.rounds.nat_send_lens[self.current_round + self.inc]/farm.payout_frequency
-                            
-                            #Check if the payment time occurs within our update window. If it does, add it to the payout times list
-                            if farm_time <= target_time and farm_time > self.current_time:
-                                
-                                #Farm payouts will either immediately be added to the player's cash or added to the monkey bank's account value
-                                #This depends of course on whether the farm is a bank or not.
-                                
-                                #WARNING: If the farm we are dealing with is a bank, we must direct the payment into the bank rather than the player.
-                                #WARNING: If the farm we are dealing with is a MWS, we must check whether we are awarding the MWS bonus payment!
-                                #WARNING: If the farm we are dealing with is a BRF, we must check whether the BRF buff is being applied or not!
-                                
-                                if farm.upgrades[1] >= 3:
-                                    if i == 0 and self.current_round + self.inc > farm_purchase_round:
-                                        #At the start of every round, every bank gets a $400 payment and then is awarded 20% interest.
-                                        payout_entry = {
-                                            'Time': farm_time,
-                                            'Payout Type': 'Bank Interest',
-                                            'Index': key,
-                                            'Source': 'Farm'
-                                        }
-                                        payout_times.append(payout_entry)
-                                    payout_entry = {
-                                        'Time': farm_time,
-                                        'Payout Type': 'Bank Payment',
-                                        'Index': key,
-                                        'Payout': farm.payout(farm_time),
-                                        'Source': 'Farm'
-                                    }
-                                elif i == 0 and farm.upgrades[2] == 5 and self.current_round + self.inc > farm_purchase_round:
-                                    payout_entry = {
-                                        'Time': farm_time,
-                                        'Payout Type': 'Direct',
-                                        'Payout': farm.payout(farm_time, mws_bonus = True),
-                                        'Source': 'Farm',
-                                        'Index': key
-                                    }
-                                elif farm.upgrades[0] == 4 and self.T5_exists[0] == True:
-                                    payout_entry = {
-                                        'Time': farm_time,
-                                        'Payout Type': 'Direct',
-                                        'Payout': farm.payout(farm_time, brf_buff = True),
-                                        'Source': 'Farm',
-                                        'Index': key
-                                    }
-                                else:
-                                    payout_entry = {
-                                        'Time': farm_time,
-                                        'Payout Type': 'Direct',
-                                        'Payout': farm.payout(farm_time),
-                                        'Source': 'Farm',
-                                        'Index': key
-                                    }
-                                payout_times.append(payout_entry)
-                            elif farm_time > target_time:
-                                #self.logs.append("The payout time of %s is too late! Excluding payout time!"%(farm_time))
-                                self.flag = True
-                                break
-                        self.inc += 1
+        for key, farm in enumerate(self.farms):
+            farm_payout_times = farm.computePayoutSchedule(self.current_time, target_time, self.rounds, self.T5_exists[0])
+            for farm_payout_entry in farm_payout_times:
+                farm_payout_entry['Index'] = key
+            payout_times.extend(farm_payout_times)
         
         #BOAT FARMS
         if len(self.boat_farms) > 0:
