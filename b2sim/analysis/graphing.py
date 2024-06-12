@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def viewHistory(gs, dim = (12,6), display_farms = True, font_size = 12):
+def viewHistory(gs, dim = (12,6), display_farms = True, display_snipers = True, font_size = 12):
         '''
         Given an instance of an GameState on which a simulation has been run, graph the history of cash and eco over the course of that simulation.
 
@@ -130,4 +130,43 @@ def viewHistory(gs, dim = (12,6), display_farms = True, font_size = 12):
             display(df)
 
         
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        #Create a table that displays the revenue/expenses of each sniper farm
+        #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        gs.sniper_revenues = []
+        gs.sniper_expenses = []
+        gs.sniper_profits = []
+        gs.sniper_starts = []
+        gs.sniper_ends = []
+
+        for sniper in gs.supply_drops:
+            gs.sniper_revenues.append(sniper.revenue)
+            gs.sniper_expenses.append(sniper.expenses)
+            gs.sniper_profits.append(sniper.revenue - sniper.expenses)
+
+            start_time = max(sniper.purchase_time, gs.simulation_start_time)
+            if sniper.sell_time == None:
+                end_time = gs.current_time
+            else:
+                end_time = sniper.sell_time
+
+            gs.sniper_starts.append(start_time)
+            gs.sniper_ends.append(end_time)
+        
+        # dictionary of lists 
+        if display_snipers and len(gs.supply_drops) > 0:
+            sniper_table = {
+                'Sniper Index': [int(i) for i in range(len(gs.supply_drops))], 
+                'Revenue': gs.sniper_revenues, 
+                'Expenses': gs.sniper_expenses, 
+                'Profit': gs.sniper_profits,
+                'Start Time': gs.sniper_starts, 
+                'End Time': gs.sniper_ends
+            } 
+            df = pd.DataFrame(sniper_table)
+            df = df.set_index('Sniper Index')
+            df = df.round(0)
+            display(df)
+
         # gs.logs.append("Successfully generated graph! \n")

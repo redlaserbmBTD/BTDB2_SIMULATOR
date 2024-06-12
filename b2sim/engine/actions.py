@@ -395,34 +395,35 @@ def initOverclocks(purchase_times, ultraboost_index = None):
 # ECO QUEUE
 ###########
 
-def ecoSend(time = None, send_name = 'Zero', property = 'Normal', max_send_amount = None, max_eco_amount = None, max_send_time = None, queue_threshold = 6):
+def ecoSend(time = None, send_name = 'Zero', fortified = False, camo = False, regrow = False, property = None, max_send_amount = None, max_eco_amount = None, max_send_time = None, queue_threshold = 6):
     
-    fortified = False
-    camo = False
-    regrow = False
+    if property is not None:
+        fortified = False
+        camo = False
+        regrow = False 
 
-    if property == 'Fortified':
-        fortified = True
-    elif property == 'Camo':
-        camo = True
-    elif property == 'Regrow':
-        regrow = True
-    
+        if property == 'Fortified':
+            fortified = True
+        elif property == 'Camo':
+            camo = True
+        elif property == 'Regrow':
+            regrow = True
+        
 
-    elif property == 'Fortified Camo':
-        fortified = True
-        camo = True
-    elif property == 'Fortified Regrow':
-        fortified = True
-        regrow = True
-    elif property == 'Camo Regrow':
-        camo = True
-        regrow = True
-    
-    elif property == 'Fortified Camo Regrow':
-        fortified = True
-        camo = True
-        regrow = True
+        elif property == 'Fortified Camo':
+            fortified = True
+            camo = True
+        elif property == 'Fortified Regrow':
+            fortified = True
+            regrow = True
+        elif property == 'Camo Regrow':
+            camo = True
+            regrow = True
+        
+        elif property == 'Fortified Camo Regrow':
+            fortified = True
+            camo = True
+            regrow = True
 
     return {
         'Time': time,

@@ -1,0 +1,2505 @@
+MESSAGE FROM GameState.__init__(): 
+Initialized Game State!
+The current game round is 0
+The current game time is 0 seconds
+The game round start times are given by [0, 6.0, 31.25, 54.25, 78.35, 107.55, 134.85, 158.25, 181.75, 203.0, 223.7, 235.25, 249.8, 267.55, 286.35, 298.45000000000005, 314.75000000000006, 347.80000000000007, 387.05000000000007, 413.20000000000005, 449.55000000000007, 458.3500000000001, 474.9000000000001, 505.1500000000001, 517.7, 578.1500000000001, 615.8000000000001, 644.5500000000001, 669.7, 693.95, 740.7, 750.5, 805.244, 821.224, 850.4240000000001, 865.3156600000001, 912.9076600000001, 941.0556600000001, 1029.89066, 1095.26149, 1191.7114900000001, 1203.51149, 1245.6414900000002, 1277.0914900000002, 1304.5414900000003, 1325.5414900000003, 1343.8914900000002, 1385.3414900000002, 1406.7914900000003, 1445.3614900000002, 1481.8114900000003, 1492.7114900000004] 
+
+MESSAGE FROM GameState.fastForward: 
+Advancing game to time 0.1
+Modified the eco send to Zero
+Warning! The eco send Grouped Reds is not available yet! Switching to the zero send for now, we will attempt to use this send later.
+We are about to insert the following send into the eco queue: 
+{'Time': 6.0, 'Send Name': 'Grouped Reds', 'Max Send Amount': None, 'Fortified': False, 'Camoflauge': False, 'Regrow': False, 'Max Eco Amount': 274, 'Max Send Time': None, 'Queue Threshold': 6}
+The next item in the eco queue now looks like this: 
+{'Time': 6.0, 'Send Name': 'Grouped Reds', 'Max Send Amount': None, 'Fortified': False, 'Camoflauge': False, 'Regrow': False, 'Max Eco Amount': 274, 'Max Send Time': None, 'Queue Threshold': 6}
+Modified the eco send to Zero
+self.changeNow returned False!
+Advancing game to time 0.2
+self.changeNow returned False!
+Advancing game to time 0.3
+self.changeNow returned False!
+Advancing game to time 0.4
+self.changeNow returned False!
+Advancing game to time 0.5
+self.changeNow returned False!
+Advancing game to time 0.6
+self.changeNow returned False!
+Advancing game to time 0.7
+self.changeNow returned False!
+Advancing game to time 0.8
+self.changeNow returned False!
+Advancing game to time 0.9
+self.changeNow returned False!
+Advancing game to time 1.0
+self.changeNow returned False!
+Advancing game to time 1.1
+self.changeNow returned False!
+Advancing game to time 1.2
+self.changeNow returned False!
+Advancing game to time 1.3
+self.changeNow returned False!
+Advancing game to time 1.4
+self.changeNow returned False!
+Advancing game to time 1.5
+self.changeNow returned False!
+Advancing game to time 1.6
+self.changeNow returned False!
+Advancing game to time 1.7
+self.changeNow returned False!
+Advancing game to time 1.8
+self.changeNow returned False!
+Advancing game to time 1.9
+self.changeNow returned False!
+Advancing game to time 2.0
+self.changeNow returned False!
+Advancing game to time 2.1
+self.changeNow returned False!
+Advancing game to time 2.2
+self.changeNow returned False!
+Advancing game to time 2.3
+self.changeNow returned False!
+Advancing game to time 2.4
+self.changeNow returned False!
+Advancing game to time 2.5
+self.changeNow returned False!
+Advancing game to time 2.6
+self.changeNow returned False!
+Advancing game to time 2.7
+self.changeNow returned False!
+Advancing game to time 2.8
+self.changeNow returned False!
+Advancing game to time 2.9
+self.changeNow returned False!
+Advancing game to time 3.0
+self.changeNow returned False!
+Advancing game to time 3.1
+self.changeNow returned False!
+Advancing game to time 3.2
+self.changeNow returned False!
+Advancing game to time 3.3
+self.changeNow returned False!
+Advancing game to time 3.4
+self.changeNow returned False!
+Advancing game to time 3.5
+self.changeNow returned False!
+Advancing game to time 3.6
+self.changeNow returned False!
+Advancing game to time 3.7
+self.changeNow returned False!
+Advancing game to time 3.8
+self.changeNow returned False!
+Advancing game to time 3.9
+self.changeNow returned False!
+Advancing game to time 4.0
+self.changeNow returned False!
+Advancing game to time 4.1
+self.changeNow returned False!
+Advancing game to time 4.2
+self.changeNow returned False!
+Advancing game to time 4.3
+self.changeNow returned False!
+Advancing game to time 4.35
+self.changeNow returned False!
+Advancing game to time 4.4
+self.changeNow returned False!
+Advancing game to time 4.5
+self.changeNow returned False!
+Advancing game to time 4.6
+self.changeNow returned False!
+Advancing game to time 4.7
+self.changeNow returned False!
+Advancing game to time 4.8
+self.changeNow returned False!
+Advancing game to time 4.9
+self.changeNow returned False!
+Advancing game to time 5.0
+self.changeNow returned False!
+Advancing game to time 5.1
+self.changeNow returned False!
+Advancing game to time 5.2
+self.changeNow returned False!
+Advancing game to time 5.3
+self.changeNow returned False!
+Advancing game to time 5.4
+self.changeNow returned False!
+Advancing game to time 5.5
+self.changeNow returned False!
+Advancing game to time 5.6
+self.changeNow returned False!
+Advancing game to time 5.7
+self.changeNow returned False!
+Advancing game to time 5.8
+self.changeNow returned False!
+Advancing game to time 5.9
+self.changeNow returned False!
+Advancing game to time 6.0
+self.changeNow returned False!
+Awarded eco payment 250 at time 6
+We have 900 cash! We can do the next buy, which costs 650 and has a buffer of 0 and a minimum buy time of 6.0!
+Completed the buy operation! The buy queue now has 7 items remaining in it
+Recorded cash and eco values (250,250) at time 6.0
+Modified the eco send to Grouped Reds
+Advancing game to time 6.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 6.0
+Currently, the send queue looks like this: 
+[6.8]
+Recorded cash and eco values (230.0,251.0) at time 6.1
+Advancing game to time 6.2
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 6.15
+Currently, the send queue looks like this: 
+[6.8, 7.6]
+Recorded cash and eco values (210.0,252.0) at time 6.2
+Advancing game to time 6.3
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 6.300000000000001
+Currently, the send queue looks like this: 
+[6.8, 7.6, 8.4]
+Recorded cash and eco values (190.0,253.0) at time 6.3
+Advancing game to time 6.4
+self.changeNow returned False!
+Advancing game to time 6.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 6.450000000000001
+Currently, the send queue looks like this: 
+[6.8, 7.6, 8.4, 9.200000000000001]
+Recorded cash and eco values (170.0,254.0) at time 6.5
+Advancing game to time 6.6
+self.changeNow returned False!
+Advancing game to time 6.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 6.600000000000001
+Currently, the send queue looks like this: 
+[6.8, 7.6, 8.4, 9.200000000000001, 10.000000000000002]
+Recorded cash and eco values (150.0,255.0) at time 6.7
+Advancing game to time 6.8
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 6.750000000000002
+Currently, the send queue looks like this: 
+[6.8, 7.6, 8.4, 9.200000000000001, 10.000000000000002, 10.800000000000002]
+Recorded cash and eco values (130.0,256.0) at time 6.8
+Advancing game to time 6.9
+self.changeNow returned False!
+Advancing game to time 7.0
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 6.900000000000002
+Currently, the send queue looks like this: 
+[7.6, 8.4, 9.200000000000001, 10.000000000000002, 10.800000000000002, 11.600000000000003]
+Recorded cash and eco values (110.0,257.0) at time 7.0
+Advancing game to time 7.1
+self.changeNow returned False!
+Advancing game to time 7.2
+self.changeNow returned False!
+Advancing game to time 7.3
+self.changeNow returned False!
+Advancing game to time 7.4
+self.changeNow returned False!
+Advancing game to time 7.5
+self.changeNow returned False!
+Advancing game to time 7.6
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 7.6
+Currently, the send queue looks like this: 
+[8.4, 9.200000000000001, 10.000000000000002, 10.800000000000002, 11.600000000000003, 12.400000000000004]
+Recorded cash and eco values (90.0,258.0) at time 7.6
+Advancing game to time 7.7
+self.changeNow returned False!
+Advancing game to time 7.8
+self.changeNow returned False!
+Advancing game to time 7.9
+self.changeNow returned False!
+Advancing game to time 8.0
+self.changeNow returned False!
+Advancing game to time 8.1
+self.changeNow returned False!
+Advancing game to time 8.15
+self.changeNow returned False!
+Advancing game to time 8.2
+self.changeNow returned False!
+Advancing game to time 8.3
+self.changeNow returned False!
+Advancing game to time 8.4
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 8.4
+Currently, the send queue looks like this: 
+[9.200000000000001, 10.000000000000002, 10.800000000000002, 11.600000000000003, 12.400000000000004, 13.200000000000005]
+Recorded cash and eco values (70.0,259.0) at time 8.4
+Advancing game to time 8.5
+self.changeNow returned False!
+Advancing game to time 8.6
+self.changeNow returned False!
+Advancing game to time 8.65
+self.changeNow returned False!
+Advancing game to time 8.7
+self.changeNow returned False!
+Advancing game to time 8.8
+self.changeNow returned False!
+Advancing game to time 8.9
+self.changeNow returned False!
+Advancing game to time 9.0
+self.changeNow returned False!
+Advancing game to time 9.1
+self.changeNow returned False!
+Advancing game to time 9.15
+self.changeNow returned False!
+Advancing game to time 9.2
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 9.200000000000001
+Currently, the send queue looks like this: 
+[10.000000000000002, 10.800000000000002, 11.600000000000003, 12.400000000000004, 13.200000000000005, 14.000000000000005]
+Recorded cash and eco values (50.0,260.0) at time 9.2
+Advancing game to time 9.3
+self.changeNow returned False!
+Advancing game to time 9.4
+self.changeNow returned False!
+Advancing game to time 9.5
+self.changeNow returned False!
+Advancing game to time 9.6
+self.changeNow returned False!
+Advancing game to time 9.7
+self.changeNow returned False!
+Advancing game to time 9.8
+self.changeNow returned False!
+Advancing game to time 9.9
+self.changeNow returned False!
+Advancing game to time 10.0
+self.changeNow returned False!
+Advancing game to time 10.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 10.000000000000002
+Currently, the send queue looks like this: 
+[10.800000000000002, 11.600000000000003, 12.400000000000004, 13.200000000000005, 14.000000000000005, 14.800000000000006]
+Recorded cash and eco values (30.0,261.0) at time 10.1
+Advancing game to time 10.2
+self.changeNow returned False!
+Advancing game to time 10.3
+self.changeNow returned False!
+Advancing game to time 10.4
+self.changeNow returned False!
+Advancing game to time 10.5
+self.changeNow returned False!
+Advancing game to time 10.6
+self.changeNow returned False!
+Advancing game to time 10.7
+self.changeNow returned False!
+Advancing game to time 10.8
+self.changeNow returned False!
+Advancing game to time 10.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 10.800000000000002
+Currently, the send queue looks like this: 
+[11.600000000000003, 12.400000000000004, 13.200000000000005, 14.000000000000005, 14.800000000000006, 15.600000000000007]
+Recorded cash and eco values (10.0,262.0) at time 10.9
+Advancing game to time 11.0
+self.changeNow returned False!
+Advancing game to time 11.1
+self.changeNow returned False!
+Advancing game to time 11.2
+self.changeNow returned False!
+Advancing game to time 11.3
+self.changeNow returned False!
+Advancing game to time 11.4
+self.changeNow returned False!
+Advancing game to time 11.5
+self.changeNow returned False!
+Advancing game to time 11.6
+self.changeNow returned False!
+Advancing game to time 11.7
+self.changeNow returned False!
+Advancing game to time 11.8
+self.changeNow returned False!
+Advancing game to time 11.9
+self.changeNow returned False!
+Advancing game to time 12.0
+self.changeNow returned False!
+Awarded eco payment 262.0 at time 12
+Recorded cash and eco values (272.0,262.0) at time 12.0
+Advancing game to time 12.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 12.075
+Currently, the send queue looks like this: 
+[12.400000000000004, 13.200000000000005, 14.000000000000005, 14.800000000000006, 15.600000000000007, 16.400000000000006]
+Recorded cash and eco values (252.0,263.0) at time 12.1
+Advancing game to time 12.2
+self.changeNow returned False!
+Advancing game to time 12.3
+self.changeNow returned False!
+Advancing game to time 12.4
+self.changeNow returned False!
+We have 252.0 cash! We can do the next buy, which costs 100.0 and has a buffer of 0 and a minimum buy time of 12.31!
+Completed the buy operation! The buy queue now has 6 items remaining in it
+Recorded cash and eco values (152.0,263.0) at time 12.4
+Advancing game to time 12.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 12.400000000000004
+Currently, the send queue looks like this: 
+[13.200000000000005, 14.000000000000005, 14.800000000000006, 15.600000000000007, 16.400000000000006, 17.200000000000006]
+Recorded cash and eco values (132.0,264.0) at time 12.5
+Advancing game to time 12.6
+self.changeNow returned False!
+Advancing game to time 12.7
+self.changeNow returned False!
+Advancing game to time 12.8
+self.changeNow returned False!
+Advancing game to time 12.9
+self.changeNow returned False!
+Advancing game to time 13.0
+self.changeNow returned False!
+Advancing game to time 13.1
+self.changeNow returned False!
+Advancing game to time 13.2
+self.changeNow returned False!
+Advancing game to time 13.3
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 13.200000000000005
+Currently, the send queue looks like this: 
+[14.000000000000005, 14.800000000000006, 15.600000000000007, 16.400000000000006, 17.200000000000006, 18.000000000000007]
+Recorded cash and eco values (112.0,265.0) at time 13.3
+Advancing game to time 13.4
+self.changeNow returned False!
+Advancing game to time 13.5
+self.changeNow returned False!
+Advancing game to time 13.6
+self.changeNow returned False!
+Advancing game to time 13.7
+self.changeNow returned False!
+Advancing game to time 13.8
+self.changeNow returned False!
+Advancing game to time 13.9
+self.changeNow returned False!
+Advancing game to time 14.0
+self.changeNow returned False!
+Advancing game to time 14.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 14.000000000000005
+Currently, the send queue looks like this: 
+[14.800000000000006, 15.600000000000007, 16.400000000000006, 17.200000000000006, 18.000000000000007, 18.800000000000008]
+Recorded cash and eco values (92.0,266.0) at time 14.1
+Advancing game to time 14.2
+self.changeNow returned False!
+Advancing game to time 14.3
+self.changeNow returned False!
+Advancing game to time 14.4
+self.changeNow returned False!
+Advancing game to time 14.5
+self.changeNow returned False!
+Advancing game to time 14.6
+self.changeNow returned False!
+Advancing game to time 14.7
+self.changeNow returned False!
+Advancing game to time 14.8
+self.changeNow returned False!
+Advancing game to time 14.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 14.800000000000006
+Currently, the send queue looks like this: 
+[15.600000000000007, 16.400000000000006, 17.200000000000006, 18.000000000000007, 18.800000000000008, 19.60000000000001]
+Recorded cash and eco values (72.0,267.0) at time 14.9
+Advancing game to time 15.0
+self.changeNow returned False!
+Advancing game to time 15.1
+self.changeNow returned False!
+Advancing game to time 15.2
+self.changeNow returned False!
+Advancing game to time 15.3
+self.changeNow returned False!
+Advancing game to time 15.4
+self.changeNow returned False!
+Advancing game to time 15.5
+self.changeNow returned False!
+Advancing game to time 15.6
+self.changeNow returned False!
+Advancing game to time 15.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 15.600000000000007
+Currently, the send queue looks like this: 
+[16.400000000000006, 17.200000000000006, 18.000000000000007, 18.800000000000008, 19.60000000000001, 20.40000000000001]
+Recorded cash and eco values (52.0,268.0) at time 15.7
+Advancing game to time 15.8
+self.changeNow returned False!
+Advancing game to time 15.9
+self.changeNow returned False!
+Advancing game to time 16.0
+self.changeNow returned False!
+Advancing game to time 16.1
+self.changeNow returned False!
+Advancing game to time 16.2
+self.changeNow returned False!
+Advancing game to time 16.25
+self.changeNow returned False!
+Advancing game to time 16.3
+self.changeNow returned False!
+Advancing game to time 16.4
+self.changeNow returned False!
+Advancing game to time 16.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 16.400000000000006
+Currently, the send queue looks like this: 
+[17.200000000000006, 18.000000000000007, 18.800000000000008, 19.60000000000001, 20.40000000000001, 21.20000000000001]
+Recorded cash and eco values (32.0,269.0) at time 16.5
+Advancing game to time 16.6
+self.changeNow returned False!
+Advancing game to time 16.7
+self.changeNow returned False!
+Advancing game to time 16.75
+self.changeNow returned False!
+Advancing game to time 16.8
+self.changeNow returned False!
+Advancing game to time 16.9
+self.changeNow returned False!
+Advancing game to time 17.0
+self.changeNow returned False!
+Advancing game to time 17.1
+self.changeNow returned False!
+Advancing game to time 17.2
+self.changeNow returned False!
+Advancing game to time 17.25
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 17.200000000000006
+Currently, the send queue looks like this: 
+[18.000000000000007, 18.800000000000008, 19.60000000000001, 20.40000000000001, 21.20000000000001, 22.00000000000001]
+Recorded cash and eco values (12.0,270.0) at time 17.25
+Advancing game to time 17.3
+self.changeNow returned False!
+Advancing game to time 17.4
+self.changeNow returned False!
+Advancing game to time 17.5
+self.changeNow returned False!
+Advancing game to time 17.6
+self.changeNow returned False!
+Advancing game to time 17.7
+self.changeNow returned False!
+Advancing game to time 17.75
+self.changeNow returned False!
+Advancing game to time 17.8
+self.changeNow returned False!
+Advancing game to time 17.9
+self.changeNow returned False!
+Advancing game to time 18.0
+self.changeNow returned False!
+Awarded eco payment 270.0 at time 18
+Recorded cash and eco values (282.0,270.0) at time 18.0
+Advancing game to time 18.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 18.000000000000007
+Currently, the send queue looks like this: 
+[18.800000000000008, 19.60000000000001, 20.40000000000001, 21.20000000000001, 22.00000000000001, 22.80000000000001]
+Recorded cash and eco values (262.0,271.0) at time 18.1
+Advancing game to time 18.2
+self.changeNow returned False!
+Advancing game to time 18.25
+self.changeNow returned False!
+Advancing game to time 18.3
+self.changeNow returned False!
+Advancing game to time 18.4
+self.changeNow returned False!
+Advancing game to time 18.5
+self.changeNow returned False!
+Advancing game to time 18.6
+self.changeNow returned False!
+Advancing game to time 18.7
+self.changeNow returned False!
+Advancing game to time 18.75
+self.changeNow returned False!
+Advancing game to time 18.8
+self.changeNow returned False!
+Advancing game to time 18.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 18.800000000000008
+Currently, the send queue looks like this: 
+[19.60000000000001, 20.40000000000001, 21.20000000000001, 22.00000000000001, 22.80000000000001, 23.600000000000012]
+Recorded cash and eco values (242.0,272.0) at time 18.9
+Advancing game to time 19.0
+self.changeNow returned False!
+Advancing game to time 19.1
+self.changeNow returned False!
+Advancing game to time 19.2
+self.changeNow returned False!
+Advancing game to time 19.3
+self.changeNow returned False!
+Advancing game to time 19.4
+self.changeNow returned False!
+Advancing game to time 19.5
+self.changeNow returned False!
+Advancing game to time 19.6
+self.changeNow returned False!
+Advancing game to time 19.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 19.60000000000001
+Currently, the send queue looks like this: 
+[20.40000000000001, 21.20000000000001, 22.00000000000001, 22.80000000000001, 23.600000000000012, 24.400000000000013]
+Recorded cash and eco values (222.0,273.0) at time 19.7
+Advancing game to time 19.8
+self.changeNow returned False!
+Advancing game to time 19.9
+self.changeNow returned False!
+Advancing game to time 20.0
+self.changeNow returned False!
+Advancing game to time 20.1
+self.changeNow returned False!
+Advancing game to time 20.2
+self.changeNow returned False!
+Advancing game to time 20.3
+self.changeNow returned False!
+Advancing game to time 20.4
+self.changeNow returned False!
+Advancing game to time 20.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 20.40000000000001
+Currently, the send queue looks like this: 
+[21.20000000000001, 22.00000000000001, 22.80000000000001, 23.600000000000012, 24.400000000000013, 25.200000000000014]
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
+The break time does not occur exactly when a payout is scheduled.
+Modified the eco send to Spaced Blues
+Advancing game to time 20.5
+self.changeNow returned False!
+Recorded cash and eco values (202.0,274.0) at time 20.5
+Advancing game to time 20.6
+self.changeNow returned False!
+Advancing game to time 20.7
+self.changeNow returned False!
+Advancing game to time 20.8
+self.changeNow returned False!
+Advancing game to time 20.9
+self.changeNow returned False!
+Advancing game to time 21.0
+self.changeNow returned False!
+Advancing game to time 21.1
+self.changeNow returned False!
+Advancing game to time 21.2
+self.changeNow returned False!
+Advancing game to time 21.3
+self.changeNow returned False!
+Sent a set of Spaced Blues at time 21.20000000000001
+Currently, the send queue looks like this: 
+[22.00000000000001, 22.80000000000001, 23.600000000000012, 24.400000000000013, 25.200000000000014, 26.700000000000014]
+Recorded cash and eco values (187.0,274.8) at time 21.3
+Advancing game to time 21.4
+self.changeNow returned False!
+Advancing game to time 21.5
+self.changeNow returned False!
+Advancing game to time 21.6
+self.changeNow returned False!
+Advancing game to time 21.7
+self.changeNow returned False!
+Advancing game to time 21.8
+self.changeNow returned False!
+Advancing game to time 21.9
+self.changeNow returned False!
+Advancing game to time 22.0
+self.changeNow returned False!
+Advancing game to time 22.1
+self.changeNow returned False!
+Sent a set of Spaced Blues at time 22.00000000000001
+Currently, the send queue looks like this: 
+[22.80000000000001, 23.600000000000012, 24.400000000000013, 25.200000000000014, 26.700000000000014, 28.200000000000014]
+Recorded cash and eco values (172.0,275.6) at time 22.1
+Advancing game to time 22.2
+self.changeNow returned False!
+Advancing game to time 22.3
+self.changeNow returned False!
+Advancing game to time 22.4
+self.changeNow returned False!
+Advancing game to time 22.5
+self.changeNow returned False!
+Advancing game to time 22.6
+self.changeNow returned False!
+Advancing game to time 22.7
+self.changeNow returned False!
+Advancing game to time 22.8
+self.changeNow returned False!
+Advancing game to time 22.9
+self.changeNow returned False!
+Sent a set of Spaced Blues at time 22.80000000000001
+Currently, the send queue looks like this: 
+[23.600000000000012, 24.400000000000013, 25.200000000000014, 26.700000000000014, 28.200000000000014, 29.700000000000014]
+Recorded cash and eco values (157.0,276.4) at time 22.9
+Advancing game to time 23.0
+self.changeNow returned False!
+Advancing game to time 23.1
+self.changeNow returned False!
+Advancing game to time 23.2
+self.changeNow returned False!
+Advancing game to time 23.3
+self.changeNow returned False!
+Advancing game to time 23.4
+self.changeNow returned False!
+Advancing game to time 23.5
+self.changeNow returned False!
+Advancing game to time 23.6
+self.changeNow returned False!
+Advancing game to time 23.7
+self.changeNow returned False!
+Sent a set of Spaced Blues at time 23.600000000000012
+Currently, the send queue looks like this: 
+[24.400000000000013, 25.200000000000014, 26.700000000000014, 28.200000000000014, 29.700000000000014, 31.200000000000014]
+Recorded cash and eco values (142.0,277.2) at time 23.7
+Advancing game to time 23.8
+self.changeNow returned False!
+Advancing game to time 23.9
+self.changeNow returned False!
+Advancing game to time 24.0
+self.changeNow returned False!
+Awarded eco payment 277.2 at time 24
+Recorded cash and eco values (419.2,277.2) at time 24.0
+Advancing game to time 24.1
+self.changeNow returned False!
+Advancing game to time 24.2
+self.changeNow returned False!
+Advancing game to time 24.3
+self.changeNow returned False!
+Advancing game to time 24.4
+self.changeNow returned False!
+Advancing game to time 24.5
+self.changeNow returned False!
+Sent a set of Spaced Blues at time 24.400000000000013
+Currently, the send queue looks like this: 
+[25.200000000000014, 26.700000000000014, 28.200000000000014, 29.700000000000014, 31.200000000000014, 32.70000000000002]
+Recorded cash and eco values (404.2,278.0) at time 24.5
+Advancing game to time 24.6
+self.changeNow returned False!
+Advancing game to time 24.7
+self.changeNow returned False!
+Advancing game to time 24.8
+self.changeNow returned False!
+Advancing game to time 24.9
+self.changeNow returned False!
+Advancing game to time 25.0
+self.changeNow returned False!
+Advancing game to time 25.1
+self.changeNow returned False!
+Advancing game to time 25.2
+self.changeNow returned False!
+Advancing game to time 25.3
+self.changeNow returned False!
+Sent a set of Spaced Blues at time 25.200000000000014
+Currently, the send queue looks like this: 
+[26.700000000000014, 28.200000000000014, 29.700000000000014, 31.200000000000014, 32.70000000000002, 34.20000000000002]
+Recorded cash and eco values (389.2,278.8) at time 25.3
+Advancing game to time 25.4
+self.changeNow returned False!
+Advancing game to time 25.5
+self.changeNow returned False!
+Advancing game to time 25.6
+self.changeNow returned False!
+Advancing game to time 25.7
+self.changeNow returned False!
+Advancing game to time 25.8
+self.changeNow returned False!
+Advancing game to time 25.9
+self.changeNow returned False!
+Advancing game to time 26.0
+self.changeNow returned False!
+Advancing game to time 26.1
+self.changeNow returned False!
+Advancing game to time 26.2
+self.changeNow returned False!
+Advancing game to time 26.3
+self.changeNow returned False!
+Advancing game to time 26.4
+self.changeNow returned False!
+Advancing game to time 26.5
+self.changeNow returned False!
+Advancing game to time 26.6
+self.changeNow returned False!
+Advancing game to time 26.7
+self.changeNow returned False!
+Advancing game to time 26.8
+self.changeNow returned False!
+Sent a set of Spaced Blues at time 26.700000000000014
+Currently, the send queue looks like this: 
+[28.200000000000014, 29.700000000000014, 31.200000000000014, 32.70000000000002, 34.20000000000002, 35.70000000000002]
+Reached the limit on eco'ing for this send! Moving to the next send in the queue.
+The break time does not occur exactly when a payout is scheduled.
+Modified the eco send to Zero
+Advancing game to time 26.8
+self.changeNow returned False!
+Recorded cash and eco values (374.2,279.6) at time 26.8
+Advancing game to time 26.9
+self.changeNow returned False!
+Advancing game to time 27.0
+self.changeNow returned False!
+Advancing game to time 27.1
+self.changeNow returned False!
+Advancing game to time 27.2
+self.changeNow returned False!
+Advancing game to time 27.3
+self.changeNow returned False!
+Advancing game to time 27.4
+self.changeNow returned False!
+Advancing game to time 27.5
+self.changeNow returned False!
+Advancing game to time 27.6
+self.changeNow returned False!
+Advancing game to time 27.7
+self.changeNow returned False!
+Advancing game to time 27.8
+self.changeNow returned False!
+Advancing game to time 27.9
+self.changeNow returned False!
+Advancing game to time 28.0
+self.changeNow returned False!
+Advancing game to time 28.1
+self.changeNow returned False!
+Advancing game to time 28.2
+self.changeNow returned False!
+Advancing game to time 28.3
+self.changeNow returned False!
+Advancing game to time 28.4
+self.changeNow returned False!
+Advancing game to time 28.5
+self.changeNow returned False!
+Advancing game to time 28.6
+self.changeNow returned False!
+Advancing game to time 28.7
+self.changeNow returned False!
+Advancing game to time 28.8
+self.changeNow returned False!
+Advancing game to time 28.9
+self.changeNow returned False!
+Advancing game to time 29.0
+self.changeNow returned False!
+Advancing game to time 29.1
+self.changeNow returned False!
+Advancing game to time 29.2
+self.changeNow returned False!
+Advancing game to time 29.3
+self.changeNow returned False!
+Advancing game to time 29.4
+self.changeNow returned False!
+Advancing game to time 29.5
+self.changeNow returned False!
+Advancing game to time 29.6
+self.changeNow returned False!
+Advancing game to time 29.7
+self.changeNow returned False!
+Advancing game to time 29.8
+self.changeNow returned False!
+Advancing game to time 29.9
+self.changeNow returned False!
+Advancing game to time 30.0
+self.changeNow returned False!
+Awarded eco payment 279.6 at time 30
+We have 653.8 cash! We can do the next buy, which costs 650.0 and has a buffer of 0 and a minimum buy time of 0!
+Completed the buy operation! The buy queue now has 5 items remaining in it
+Recorded cash and eco values (3.8,279.6) at time 30.0
+Advancing game to time 30.1
+self.changeNow returned False!
+Advancing game to time 30.2
+self.changeNow returned False!
+Advancing game to time 30.3
+self.changeNow returned False!
+Advancing game to time 30.4
+self.changeNow returned False!
+Advancing game to time 30.5
+self.changeNow returned False!
+Advancing game to time 30.6
+self.changeNow returned False!
+Advancing game to time 30.7
+self.changeNow returned False!
+Advancing game to time 30.8
+self.changeNow returned False!
+Advancing game to time 30.9
+self.changeNow returned False!
+Advancing game to time 31.0
+self.changeNow returned False!
+Advancing game to time 31.1
+self.changeNow returned False!
+Advancing game to time 31.2
+self.changeNow returned False!
+Advancing game to time 31.3
+self.changeNow returned False!
+Modified the eco send to Grouped Reds
+Advancing game to time 31.3
+self.changeNow returned False!
+Advancing game to time 31.4
+self.changeNow returned False!
+Advancing game to time 31.5
+self.changeNow returned False!
+Advancing game to time 31.6
+self.changeNow returned False!
+Advancing game to time 31.7
+self.changeNow returned False!
+Advancing game to time 31.8
+self.changeNow returned False!
+Advancing game to time 31.9
+self.changeNow returned False!
+Advancing game to time 32.0
+self.changeNow returned False!
+Advancing game to time 32.1
+self.changeNow returned False!
+Advancing game to time 32.2
+self.changeNow returned False!
+Advancing game to time 32.3
+self.changeNow returned False!
+Advancing game to time 32.4
+self.changeNow returned False!
+Advancing game to time 32.45
+self.changeNow returned False!
+Advancing game to time 32.5
+self.changeNow returned False!
+Advancing game to time 32.6
+self.changeNow returned False!
+Advancing game to time 32.7
+self.changeNow returned False!
+Advancing game to time 32.8
+self.changeNow returned False!
+Advancing game to time 32.9
+self.changeNow returned False!
+Advancing game to time 32.95
+self.changeNow returned False!
+Advancing game to time 33.0
+self.changeNow returned False!
+Advancing game to time 33.1
+self.changeNow returned False!
+Advancing game to time 33.2
+self.changeNow returned False!
+Advancing game to time 33.3
+self.changeNow returned False!
+Advancing game to time 33.4
+self.changeNow returned False!
+Advancing game to time 33.45
+self.changeNow returned False!
+Advancing game to time 33.5
+self.changeNow returned False!
+Advancing game to time 33.6
+self.changeNow returned False!
+Advancing game to time 33.7
+self.changeNow returned False!
+Advancing game to time 33.8
+self.changeNow returned False!
+Advancing game to time 33.9
+self.changeNow returned False!
+Advancing game to time 33.95
+self.changeNow returned False!
+Advancing game to time 34.0
+self.changeNow returned False!
+Advancing game to time 34.1
+self.changeNow returned False!
+Advancing game to time 34.2
+self.changeNow returned False!
+Advancing game to time 34.3
+self.changeNow returned False!
+Advancing game to time 34.4
+self.changeNow returned False!
+Advancing game to time 34.45
+self.changeNow returned False!
+Advancing game to time 34.5
+self.changeNow returned False!
+Advancing game to time 34.6
+self.changeNow returned False!
+Advancing game to time 34.7
+self.changeNow returned False!
+Advancing game to time 34.8
+self.changeNow returned False!
+Advancing game to time 34.9
+self.changeNow returned False!
+Advancing game to time 34.95
+self.changeNow returned False!
+Advancing game to time 35.0
+self.changeNow returned False!
+Advancing game to time 35.1
+self.changeNow returned False!
+Advancing game to time 35.2
+self.changeNow returned False!
+Advancing game to time 35.3
+self.changeNow returned False!
+Advancing game to time 35.4
+self.changeNow returned False!
+Advancing game to time 35.45
+self.changeNow returned False!
+Advancing game to time 35.5
+self.changeNow returned False!
+Advancing game to time 35.6
+self.changeNow returned False!
+Advancing game to time 35.7
+self.changeNow returned False!
+Advancing game to time 35.8
+self.changeNow returned False!
+Advancing game to time 35.9
+self.changeNow returned False!
+Advancing game to time 35.95
+self.changeNow returned False!
+Advancing game to time 36.0
+self.changeNow returned False!
+Awarded eco payment 279.6 at time 36
+Recorded cash and eco values (283.4,279.6) at time 36.0
+Advancing game to time 36.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 36.075
+Currently, the send queue looks like this: 
+[36.875]
+Recorded cash and eco values (263.4,280.6) at time 36.1
+Advancing game to time 36.2
+self.changeNow returned False!
+Advancing game to time 36.3
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 36.225
+Currently, the send queue looks like this: 
+[36.875, 37.675]
+Recorded cash and eco values (243.4,281.6) at time 36.3
+Advancing game to time 36.4
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 36.375
+Currently, the send queue looks like this: 
+[36.875, 37.675, 38.474999999999994]
+Recorded cash and eco values (223.4,282.6) at time 36.4
+Advancing game to time 36.45
+self.changeNow returned False!
+Advancing game to time 36.5
+self.changeNow returned False!
+Advancing game to time 36.6
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 36.525
+Currently, the send queue looks like this: 
+[36.875, 37.675, 38.474999999999994, 39.27499999999999]
+Recorded cash and eco values (203.4,283.6) at time 36.6
+Advancing game to time 36.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 36.675
+Currently, the send queue looks like this: 
+[36.875, 37.675, 38.474999999999994, 39.27499999999999, 40.07499999999999]
+Recorded cash and eco values (183.4,284.6) at time 36.7
+Advancing game to time 36.8
+self.changeNow returned False!
+Advancing game to time 36.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 36.824999999999996
+Currently, the send queue looks like this: 
+[36.875, 37.675, 38.474999999999994, 39.27499999999999, 40.07499999999999, 40.874999999999986]
+Recorded cash and eco values (163.4,285.6) at time 36.9
+Advancing game to time 36.95
+self.changeNow returned False!
+Advancing game to time 37.0
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 36.974999999999994
+Currently, the send queue looks like this: 
+[37.675, 38.474999999999994, 39.27499999999999, 40.07499999999999, 40.874999999999986, 41.67499999999998]
+Recorded cash and eco values (143.4,286.6) at time 37.0
+Advancing game to time 37.1
+self.changeNow returned False!
+Advancing game to time 37.2
+self.changeNow returned False!
+Advancing game to time 37.3
+self.changeNow returned False!
+Advancing game to time 37.4
+self.changeNow returned False!
+Advancing game to time 37.45
+self.changeNow returned False!
+Advancing game to time 37.5
+self.changeNow returned False!
+Advancing game to time 37.6
+self.changeNow returned False!
+Advancing game to time 37.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 37.675
+Currently, the send queue looks like this: 
+[38.474999999999994, 39.27499999999999, 40.07499999999999, 40.874999999999986, 41.67499999999998, 42.47499999999998]
+Recorded cash and eco values (123.4,287.6) at time 37.7
+Advancing game to time 37.8
+self.changeNow returned False!
+Advancing game to time 37.9
+self.changeNow returned False!
+Advancing game to time 37.95
+self.changeNow returned False!
+Advancing game to time 38.0
+self.changeNow returned False!
+Advancing game to time 38.1
+self.changeNow returned False!
+Advancing game to time 38.2
+self.changeNow returned False!
+Advancing game to time 38.3
+self.changeNow returned False!
+Advancing game to time 38.4
+self.changeNow returned False!
+Advancing game to time 38.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 38.474999999999994
+Currently, the send queue looks like this: 
+[39.27499999999999, 40.07499999999999, 40.874999999999986, 41.67499999999998, 42.47499999999998, 43.27499999999998]
+Recorded cash and eco values (103.4,288.6) at time 38.5
+Advancing game to time 38.6
+self.changeNow returned False!
+Advancing game to time 38.7
+self.changeNow returned False!
+Advancing game to time 38.8
+self.changeNow returned False!
+Advancing game to time 38.9
+self.changeNow returned False!
+Advancing game to time 39.0
+self.changeNow returned False!
+Advancing game to time 39.1
+self.changeNow returned False!
+Advancing game to time 39.2
+self.changeNow returned False!
+Advancing game to time 39.3
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 39.27499999999999
+Currently, the send queue looks like this: 
+[40.07499999999999, 40.874999999999986, 41.67499999999998, 42.47499999999998, 43.27499999999998, 44.074999999999974]
+Recorded cash and eco values (83.4,289.6) at time 39.3
+Advancing game to time 39.4
+self.changeNow returned False!
+Advancing game to time 39.5
+self.changeNow returned False!
+Advancing game to time 39.6
+self.changeNow returned False!
+Advancing game to time 39.7
+self.changeNow returned False!
+Advancing game to time 39.8
+self.changeNow returned False!
+Advancing game to time 39.9
+self.changeNow returned False!
+Advancing game to time 40.0
+self.changeNow returned False!
+Advancing game to time 40.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 40.07499999999999
+Currently, the send queue looks like this: 
+[40.874999999999986, 41.67499999999998, 42.47499999999998, 43.27499999999998, 44.074999999999974, 44.87499999999997]
+Recorded cash and eco values (63.4,290.6) at time 40.1
+Advancing game to time 40.2
+self.changeNow returned False!
+Advancing game to time 40.3
+self.changeNow returned False!
+Advancing game to time 40.4
+self.changeNow returned False!
+Advancing game to time 40.5
+self.changeNow returned False!
+Advancing game to time 40.6
+self.changeNow returned False!
+Advancing game to time 40.7
+self.changeNow returned False!
+Advancing game to time 40.8
+self.changeNow returned False!
+Advancing game to time 40.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 40.874999999999986
+Currently, the send queue looks like this: 
+[41.67499999999998, 42.47499999999998, 43.27499999999998, 44.074999999999974, 44.87499999999997, 45.67499999999997]
+Recorded cash and eco values (43.4,291.6) at time 40.9
+Advancing game to time 41.0
+self.changeNow returned False!
+Advancing game to time 41.1
+self.changeNow returned False!
+Advancing game to time 41.2
+self.changeNow returned False!
+Advancing game to time 41.3
+self.changeNow returned False!
+Advancing game to time 41.4
+self.changeNow returned False!
+Advancing game to time 41.5
+self.changeNow returned False!
+Advancing game to time 41.6
+self.changeNow returned False!
+Advancing game to time 41.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 41.67499999999998
+Currently, the send queue looks like this: 
+[42.47499999999998, 43.27499999999998, 44.074999999999974, 44.87499999999997, 45.67499999999997, 46.474999999999966]
+Recorded cash and eco values (23.4,292.6) at time 41.7
+Advancing game to time 41.8
+self.changeNow returned False!
+Advancing game to time 41.9
+self.changeNow returned False!
+Advancing game to time 42.0
+self.changeNow returned False!
+Awarded eco payment 292.6 at time 42
+We have 316.0 cash! We can do the next buy, which costs 150.0 and has a buffer of 0 and a minimum buy time of 37.0!
+Completed the buy operation! The buy queue now has 4 items remaining in it
+Recorded cash and eco values (166.0,292.6) at time 42.0
+Advancing game to time 42.1
+self.changeNow returned False!
+Advancing game to time 42.2
+self.changeNow returned False!
+Advancing game to time 42.3
+self.changeNow returned False!
+Advancing game to time 42.4
+self.changeNow returned False!
+Advancing game to time 42.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 42.47499999999998
+Currently, the send queue looks like this: 
+[43.27499999999998, 44.074999999999974, 44.87499999999997, 45.67499999999997, 46.474999999999966, 47.27499999999996]
+Recorded cash and eco values (146.0,293.6) at time 42.5
+Advancing game to time 42.6
+self.changeNow returned False!
+Advancing game to time 42.7
+self.changeNow returned False!
+Advancing game to time 42.8
+self.changeNow returned False!
+Advancing game to time 42.9
+self.changeNow returned False!
+Advancing game to time 43.0
+self.changeNow returned False!
+Advancing game to time 43.1
+self.changeNow returned False!
+Advancing game to time 43.2
+self.changeNow returned False!
+Advancing game to time 43.3
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 43.27499999999998
+Currently, the send queue looks like this: 
+[44.074999999999974, 44.87499999999997, 45.67499999999997, 46.474999999999966, 47.27499999999996, 48.07499999999996]
+Recorded cash and eco values (126.0,294.6) at time 43.3
+Advancing game to time 43.4
+self.changeNow returned False!
+Advancing game to time 43.5
+self.changeNow returned False!
+Advancing game to time 43.6
+self.changeNow returned False!
+Advancing game to time 43.7
+self.changeNow returned False!
+Advancing game to time 43.8
+self.changeNow returned False!
+Advancing game to time 43.9
+self.changeNow returned False!
+Advancing game to time 44.0
+self.changeNow returned False!
+Advancing game to time 44.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 44.074999999999974
+Currently, the send queue looks like this: 
+[44.87499999999997, 45.67499999999997, 46.474999999999966, 47.27499999999996, 48.07499999999996, 48.87499999999996]
+Recorded cash and eco values (106.0,295.6) at time 44.1
+Advancing game to time 44.2
+self.changeNow returned False!
+Advancing game to time 44.3
+self.changeNow returned False!
+Advancing game to time 44.4
+self.changeNow returned False!
+Advancing game to time 44.5
+self.changeNow returned False!
+Advancing game to time 44.6
+self.changeNow returned False!
+Advancing game to time 44.7
+self.changeNow returned False!
+Advancing game to time 44.8
+self.changeNow returned False!
+Advancing game to time 44.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 44.87499999999997
+Currently, the send queue looks like this: 
+[45.67499999999997, 46.474999999999966, 47.27499999999996, 48.07499999999996, 48.87499999999996, 49.674999999999955]
+Recorded cash and eco values (86.0,296.6) at time 44.9
+Advancing game to time 45.0
+self.changeNow returned False!
+Advancing game to time 45.1
+self.changeNow returned False!
+Advancing game to time 45.2
+self.changeNow returned False!
+Advancing game to time 45.3
+self.changeNow returned False!
+Advancing game to time 45.4
+self.changeNow returned False!
+Advancing game to time 45.5
+self.changeNow returned False!
+Advancing game to time 45.6
+self.changeNow returned False!
+Advancing game to time 45.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 45.67499999999997
+Currently, the send queue looks like this: 
+[46.474999999999966, 47.27499999999996, 48.07499999999996, 48.87499999999996, 49.674999999999955, 50.47499999999995]
+Recorded cash and eco values (66.0,297.6) at time 45.7
+Advancing game to time 45.8
+self.changeNow returned False!
+Advancing game to time 45.9
+self.changeNow returned False!
+Advancing game to time 46.0
+self.changeNow returned False!
+Advancing game to time 46.1
+self.changeNow returned False!
+Advancing game to time 46.2
+self.changeNow returned False!
+Advancing game to time 46.3
+self.changeNow returned False!
+Advancing game to time 46.4
+self.changeNow returned False!
+Advancing game to time 46.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 46.474999999999966
+Currently, the send queue looks like this: 
+[47.27499999999996, 48.07499999999996, 48.87499999999996, 49.674999999999955, 50.47499999999995, 51.27499999999995]
+Recorded cash and eco values (46.0,298.6) at time 46.5
+Advancing game to time 46.6
+self.changeNow returned False!
+Advancing game to time 46.7
+self.changeNow returned False!
+Advancing game to time 46.8
+self.changeNow returned False!
+Advancing game to time 46.9
+self.changeNow returned False!
+Advancing game to time 47.0
+self.changeNow returned False!
+Advancing game to time 47.1
+self.changeNow returned False!
+Advancing game to time 47.2
+self.changeNow returned False!
+Advancing game to time 47.3
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 47.27499999999996
+Currently, the send queue looks like this: 
+[48.07499999999996, 48.87499999999996, 49.674999999999955, 50.47499999999995, 51.27499999999995, 52.074999999999946]
+Recorded cash and eco values (26.0,299.6) at time 47.3
+Advancing game to time 47.4
+self.changeNow returned False!
+Advancing game to time 47.5
+self.changeNow returned False!
+Advancing game to time 47.6
+self.changeNow returned False!
+Advancing game to time 47.7
+self.changeNow returned False!
+Advancing game to time 47.8
+self.changeNow returned False!
+Advancing game to time 47.9
+self.changeNow returned False!
+Advancing game to time 48.0
+self.changeNow returned False!
+Awarded eco payment 299.6 at time 48
+Recorded cash and eco values (325.6,299.6) at time 48.0
+Advancing game to time 48.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 48.07499999999996
+Currently, the send queue looks like this: 
+[48.87499999999996, 49.674999999999955, 50.47499999999995, 51.27499999999995, 52.074999999999946, 52.87499999999994]
+Recorded cash and eco values (305.6,300.6) at time 48.1
+Advancing game to time 48.2
+self.changeNow returned False!
+Advancing game to time 48.3
+self.changeNow returned False!
+Advancing game to time 48.4
+self.changeNow returned False!
+Advancing game to time 48.5
+self.changeNow returned False!
+Advancing game to time 48.6
+self.changeNow returned False!
+Advancing game to time 48.7
+self.changeNow returned False!
+Advancing game to time 48.8
+self.changeNow returned False!
+Advancing game to time 48.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 48.87499999999996
+Currently, the send queue looks like this: 
+[49.674999999999955, 50.47499999999995, 51.27499999999995, 52.074999999999946, 52.87499999999994, 53.67499999999994]
+Recorded cash and eco values (285.6,301.6) at time 48.9
+Advancing game to time 49.0
+self.changeNow returned False!
+Advancing game to time 49.1
+self.changeNow returned False!
+Advancing game to time 49.2
+self.changeNow returned False!
+Advancing game to time 49.3
+self.changeNow returned False!
+Advancing game to time 49.4
+self.changeNow returned False!
+Advancing game to time 49.5
+self.changeNow returned False!
+Advancing game to time 49.6
+self.changeNow returned False!
+Advancing game to time 49.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 49.674999999999955
+Currently, the send queue looks like this: 
+[50.47499999999995, 51.27499999999995, 52.074999999999946, 52.87499999999994, 53.67499999999994, 54.47499999999994]
+Recorded cash and eco values (265.6,302.6) at time 49.7
+Advancing game to time 49.8
+self.changeNow returned False!
+Advancing game to time 49.9
+self.changeNow returned False!
+Advancing game to time 50.0
+self.changeNow returned False!
+Advancing game to time 50.1
+self.changeNow returned False!
+Advancing game to time 50.2
+self.changeNow returned False!
+Advancing game to time 50.3
+self.changeNow returned False!
+Advancing game to time 50.4
+self.changeNow returned False!
+Advancing game to time 50.5
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 50.47499999999995
+Currently, the send queue looks like this: 
+[51.27499999999995, 52.074999999999946, 52.87499999999994, 53.67499999999994, 54.47499999999994, 55.274999999999935]
+Recorded cash and eco values (245.6,303.6) at time 50.5
+Advancing game to time 50.6
+self.changeNow returned False!
+Advancing game to time 50.7
+self.changeNow returned False!
+Advancing game to time 50.8
+self.changeNow returned False!
+Advancing game to time 50.9
+self.changeNow returned False!
+Advancing game to time 51.0
+self.changeNow returned False!
+Advancing game to time 51.1
+self.changeNow returned False!
+Advancing game to time 51.2
+self.changeNow returned False!
+Advancing game to time 51.3
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 51.27499999999995
+Currently, the send queue looks like this: 
+[52.074999999999946, 52.87499999999994, 53.67499999999994, 54.47499999999994, 55.274999999999935, 56.07499999999993]
+Recorded cash and eco values (225.6,304.6) at time 51.3
+Advancing game to time 51.4
+self.changeNow returned False!
+Advancing game to time 51.5
+self.changeNow returned False!
+Advancing game to time 51.6
+self.changeNow returned False!
+Advancing game to time 51.7
+self.changeNow returned False!
+Advancing game to time 51.8
+self.changeNow returned False!
+Advancing game to time 51.9
+self.changeNow returned False!
+Advancing game to time 52.0
+self.changeNow returned False!
+Advancing game to time 52.1
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 52.074999999999946
+Currently, the send queue looks like this: 
+[52.87499999999994, 53.67499999999994, 54.47499999999994, 55.274999999999935, 56.07499999999993, 56.87499999999993]
+Recorded cash and eco values (205.6,305.6) at time 52.1
+Advancing game to time 52.2
+self.changeNow returned False!
+Advancing game to time 52.3
+self.changeNow returned False!
+Advancing game to time 52.4
+self.changeNow returned False!
+Advancing game to time 52.5
+self.changeNow returned False!
+Advancing game to time 52.6
+self.changeNow returned False!
+Advancing game to time 52.7
+self.changeNow returned False!
+Advancing game to time 52.8
+self.changeNow returned False!
+Advancing game to time 52.9
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 52.87499999999994
+Currently, the send queue looks like this: 
+[53.67499999999994, 54.47499999999994, 55.274999999999935, 56.07499999999993, 56.87499999999993, 57.674999999999926]
+Recorded cash and eco values (185.6,306.6) at time 52.9
+Advancing game to time 53.0
+self.changeNow returned False!
+Advancing game to time 53.1
+self.changeNow returned False!
+Advancing game to time 53.2
+self.changeNow returned False!
+Advancing game to time 53.3
+self.changeNow returned False!
+Advancing game to time 53.4
+self.changeNow returned False!
+Advancing game to time 53.5
+self.changeNow returned False!
+Advancing game to time 53.6
+self.changeNow returned False!
+Advancing game to time 53.7
+self.changeNow returned False!
+Sent a set of Grouped Reds at time 53.67499999999994
+Currently, the send queue looks like this: 
+[54.47499999999994, 55.274999999999935, 56.07499999999993, 56.87499999999993, 57.674999999999926, 58.47499999999992]
+Recorded cash and eco values (165.6,307.6) at time 53.7
+Advancing game to time 53.8
+self.changeNow returned False!
+Advancing game to time 53.9
+self.changeNow returned False!
+Advancing game to time 54.0
+self.changeNow returned False!
+Awarded eco payment 307.6 at time 54
+Recorded cash and eco values (473.2,307.6) at time 54.0
+Advancing game to time 54.1
+self.changeNow returned False!
+Advancing game to time 54.2
+self.changeNow returned False!
+Advancing game to time 54.3
+self.changeNow returned False!
+Modified the eco send to Spaced Yellows
+Advancing game to time 54.3
+self.changeNow returned False!
+Advancing game to time 54.4
+self.changeNow returned False!
+Advancing game to time 54.5
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 54.47499999999994
+Currently, the send queue looks like this: 
+[55.274999999999935, 56.07499999999993, 56.87499999999993, 57.674999999999926, 58.47499999999992, 59.62499999999992]
+Recorded cash and eco values (449.2,308.8) at time 54.5
+Advancing game to time 54.6
+self.changeNow returned False!
+Advancing game to time 54.7
+self.changeNow returned False!
+Advancing game to time 54.8
+self.changeNow returned False!
+Advancing game to time 54.9
+self.changeNow returned False!
+Advancing game to time 55.0
+self.changeNow returned False!
+Advancing game to time 55.1
+self.changeNow returned False!
+Advancing game to time 55.2
+self.changeNow returned False!
+Advancing game to time 55.3
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 55.274999999999935
+Currently, the send queue looks like this: 
+[56.07499999999993, 56.87499999999993, 57.674999999999926, 58.47499999999992, 59.62499999999992, 60.77499999999992]
+Recorded cash and eco values (425.2,310.0) at time 55.3
+Advancing game to time 55.4
+self.changeNow returned False!
+Advancing game to time 55.5
+self.changeNow returned False!
+Advancing game to time 55.6
+self.changeNow returned False!
+Advancing game to time 55.7
+self.changeNow returned False!
+Advancing game to time 55.8
+self.changeNow returned False!
+Advancing game to time 55.9
+self.changeNow returned False!
+Advancing game to time 56.0
+self.changeNow returned False!
+Advancing game to time 56.1
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 56.07499999999993
+Currently, the send queue looks like this: 
+[56.87499999999993, 57.674999999999926, 58.47499999999992, 59.62499999999992, 60.77499999999992, 61.92499999999992]
+Recorded cash and eco values (401.2,311.2) at time 56.1
+Advancing game to time 56.2
+self.changeNow returned False!
+Advancing game to time 56.3
+self.changeNow returned False!
+Advancing game to time 56.4
+self.changeNow returned False!
+Advancing game to time 56.5
+self.changeNow returned False!
+Advancing game to time 56.6
+self.changeNow returned False!
+Advancing game to time 56.7
+self.changeNow returned False!
+Advancing game to time 56.8
+self.changeNow returned False!
+Advancing game to time 56.9
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 56.87499999999993
+Currently, the send queue looks like this: 
+[57.674999999999926, 58.47499999999992, 59.62499999999992, 60.77499999999992, 61.92499999999992, 63.07499999999992]
+Recorded cash and eco values (377.2,312.4) at time 56.9
+Advancing game to time 57.0
+self.changeNow returned False!
+Advancing game to time 57.1
+self.changeNow returned False!
+Advancing game to time 57.2
+self.changeNow returned False!
+Advancing game to time 57.3
+self.changeNow returned False!
+Advancing game to time 57.4
+self.changeNow returned False!
+Advancing game to time 57.5
+self.changeNow returned False!
+Advancing game to time 57.6
+self.changeNow returned False!
+Advancing game to time 57.7
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 57.674999999999926
+Currently, the send queue looks like this: 
+[58.47499999999992, 59.62499999999992, 60.77499999999992, 61.92499999999992, 63.07499999999992, 64.22499999999992]
+Recorded cash and eco values (353.2,313.6) at time 57.7
+Advancing game to time 57.8
+self.changeNow returned False!
+Advancing game to time 57.9
+self.changeNow returned False!
+Advancing game to time 58.0
+self.changeNow returned False!
+Advancing game to time 58.1
+self.changeNow returned False!
+Advancing game to time 58.2
+self.changeNow returned False!
+Advancing game to time 58.3
+self.changeNow returned False!
+Advancing game to time 58.4
+self.changeNow returned False!
+Advancing game to time 58.5
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 58.47499999999992
+Currently, the send queue looks like this: 
+[59.62499999999992, 60.77499999999992, 61.92499999999992, 63.07499999999992, 64.22499999999992, 65.37499999999993]
+Recorded cash and eco values (329.2,314.8) at time 58.5
+Advancing game to time 58.6
+self.changeNow returned False!
+Advancing game to time 58.7
+self.changeNow returned False!
+Advancing game to time 58.8
+self.changeNow returned False!
+Advancing game to time 58.9
+self.changeNow returned False!
+Advancing game to time 59.0
+self.changeNow returned False!
+Advancing game to time 59.1
+self.changeNow returned False!
+Advancing game to time 59.2
+self.changeNow returned False!
+Advancing game to time 59.3
+self.changeNow returned False!
+Advancing game to time 59.4
+self.changeNow returned False!
+Advancing game to time 59.5
+self.changeNow returned False!
+Advancing game to time 59.6
+self.changeNow returned False!
+Advancing game to time 59.7
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 59.62499999999992
+Currently, the send queue looks like this: 
+[60.77499999999992, 61.92499999999992, 63.07499999999992, 64.22499999999992, 65.37499999999993, 66.52499999999993]
+Recorded cash and eco values (305.2,316.0) at time 59.7
+Advancing game to time 59.8
+self.changeNow returned False!
+Advancing game to time 59.9
+self.changeNow returned False!
+Advancing game to time 60.0
+self.changeNow returned False!
+Awarded eco payment 316.0 at time 60
+Recorded cash and eco values (621.2,316.0) at time 60.0
+Advancing game to time 60.1
+self.changeNow returned False!
+Advancing game to time 60.2
+self.changeNow returned False!
+Advancing game to time 60.3
+self.changeNow returned False!
+Advancing game to time 60.4
+self.changeNow returned False!
+Advancing game to time 60.5
+self.changeNow returned False!
+Advancing game to time 60.6
+self.changeNow returned False!
+Advancing game to time 60.7
+self.changeNow returned False!
+Advancing game to time 60.8
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 60.77499999999992
+Currently, the send queue looks like this: 
+[61.92499999999992, 63.07499999999992, 64.22499999999992, 65.37499999999993, 66.52499999999993, 67.67499999999994]
+Recorded cash and eco values (597.2,317.2) at time 60.8
+Advancing game to time 60.9
+self.changeNow returned False!
+Advancing game to time 61.0
+self.changeNow returned False!
+Advancing game to time 61.1
+self.changeNow returned False!
+Advancing game to time 61.2
+self.changeNow returned False!
+Advancing game to time 61.3
+self.changeNow returned False!
+Advancing game to time 61.4
+self.changeNow returned False!
+Advancing game to time 61.5
+self.changeNow returned False!
+Advancing game to time 61.6
+self.changeNow returned False!
+Advancing game to time 61.7
+self.changeNow returned False!
+Advancing game to time 61.8
+self.changeNow returned False!
+Advancing game to time 61.9
+self.changeNow returned False!
+Advancing game to time 62.0
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 61.92499999999992
+Currently, the send queue looks like this: 
+[63.07499999999992, 64.22499999999992, 65.37499999999993, 66.52499999999993, 67.67499999999994, 68.82499999999995]
+Recorded cash and eco values (573.2,318.4) at time 62.0
+Advancing game to time 62.1
+self.changeNow returned False!
+Advancing game to time 62.2
+self.changeNow returned False!
+Advancing game to time 62.3
+self.changeNow returned False!
+Advancing game to time 62.4
+self.changeNow returned False!
+Advancing game to time 62.5
+self.changeNow returned False!
+Advancing game to time 62.6
+self.changeNow returned False!
+Advancing game to time 62.7
+self.changeNow returned False!
+Advancing game to time 62.8
+self.changeNow returned False!
+Advancing game to time 62.9
+self.changeNow returned False!
+Advancing game to time 63.0
+self.changeNow returned False!
+Advancing game to time 63.1
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 63.07499999999992
+Currently, the send queue looks like this: 
+[64.22499999999992, 65.37499999999993, 66.52499999999993, 67.67499999999994, 68.82499999999995, 69.97499999999995]
+Recorded cash and eco values (549.2,319.6) at time 63.1
+Advancing game to time 63.2
+self.changeNow returned False!
+Advancing game to time 63.3
+self.changeNow returned False!
+Advancing game to time 63.4
+self.changeNow returned False!
+Advancing game to time 63.5
+self.changeNow returned False!
+Advancing game to time 63.6
+self.changeNow returned False!
+Advancing game to time 63.7
+self.changeNow returned False!
+Advancing game to time 63.8
+self.changeNow returned False!
+Advancing game to time 63.9
+self.changeNow returned False!
+Advancing game to time 64.0
+self.changeNow returned False!
+Advancing game to time 64.1
+self.changeNow returned False!
+Advancing game to time 64.2
+self.changeNow returned False!
+Advancing game to time 64.3
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 64.22499999999992
+Currently, the send queue looks like this: 
+[65.37499999999993, 66.52499999999993, 67.67499999999994, 68.82499999999995, 69.97499999999995, 71.12499999999996]
+Recorded cash and eco values (525.2,320.8) at time 64.3
+Advancing game to time 64.35
+self.changeNow returned False!
+Advancing game to time 64.4
+self.changeNow returned False!
+Advancing game to time 64.5
+self.changeNow returned False!
+Advancing game to time 64.6
+self.changeNow returned False!
+Advancing game to time 64.7
+self.changeNow returned False!
+Advancing game to time 64.8
+self.changeNow returned False!
+Advancing game to time 64.85
+self.changeNow returned False!
+Advancing game to time 64.9
+self.changeNow returned False!
+Advancing game to time 65.0
+self.changeNow returned False!
+Advancing game to time 65.1
+self.changeNow returned False!
+Advancing game to time 65.2
+self.changeNow returned False!
+Advancing game to time 65.3
+self.changeNow returned False!
+Advancing game to time 65.35
+self.changeNow returned False!
+Advancing game to time 65.4
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 65.37499999999993
+Currently, the send queue looks like this: 
+[66.52499999999993, 67.67499999999994, 68.82499999999995, 69.97499999999995, 71.12499999999996, 72.27499999999996]
+Recorded cash and eco values (501.2,322.0) at time 65.4
+Advancing game to time 65.5
+self.changeNow returned False!
+Advancing game to time 65.6
+self.changeNow returned False!
+Advancing game to time 65.7
+self.changeNow returned False!
+Advancing game to time 65.8
+self.changeNow returned False!
+Advancing game to time 65.85
+self.changeNow returned False!
+Advancing game to time 65.9
+self.changeNow returned False!
+Advancing game to time 66.0
+self.changeNow returned False!
+Awarded eco payment 322.0 at time 66
+Recorded cash and eco values (823.2,322.0) at time 66.0
+Advancing game to time 66.1
+self.changeNow returned False!
+Advancing game to time 66.2
+self.changeNow returned False!
+Advancing game to time 66.3
+self.changeNow returned False!
+Advancing game to time 66.35
+self.changeNow returned False!
+Advancing game to time 66.4
+self.changeNow returned False!
+Advancing game to time 66.5
+self.changeNow returned False!
+Advancing game to time 66.6
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 66.52499999999993
+Currently, the send queue looks like this: 
+[67.67499999999994, 68.82499999999995, 69.97499999999995, 71.12499999999996, 72.27499999999996, 73.42499999999997]
+Recorded cash and eco values (799.2,323.2) at time 66.6
+Advancing game to time 66.7
+self.changeNow returned False!
+Advancing game to time 66.8
+self.changeNow returned False!
+Advancing game to time 66.85
+self.changeNow returned False!
+Advancing game to time 66.9
+self.changeNow returned False!
+Advancing game to time 67.0
+self.changeNow returned False!
+Advancing game to time 67.1
+self.changeNow returned False!
+Advancing game to time 67.2
+self.changeNow returned False!
+Advancing game to time 67.3
+self.changeNow returned False!
+Advancing game to time 67.35
+self.changeNow returned False!
+Advancing game to time 67.4
+self.changeNow returned False!
+Advancing game to time 67.5
+self.changeNow returned False!
+Advancing game to time 67.6
+self.changeNow returned False!
+Advancing game to time 67.7
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 67.67499999999994
+Currently, the send queue looks like this: 
+[68.82499999999995, 69.97499999999995, 71.12499999999996, 72.27499999999996, 73.42499999999997, 74.57499999999997]
+Recorded cash and eco values (775.2,324.4) at time 67.7
+Advancing game to time 67.8
+self.changeNow returned False!
+Advancing game to time 67.85
+self.changeNow returned False!
+Advancing game to time 67.9
+self.changeNow returned False!
+Advancing game to time 68.0
+self.changeNow returned False!
+Advancing game to time 68.1
+self.changeNow returned False!
+Advancing game to time 68.2
+self.changeNow returned False!
+Advancing game to time 68.3
+self.changeNow returned False!
+Advancing game to time 68.35
+self.changeNow returned False!
+Advancing game to time 68.4
+self.changeNow returned False!
+Advancing game to time 68.5
+self.changeNow returned False!
+Advancing game to time 68.6
+self.changeNow returned False!
+Advancing game to time 68.7
+self.changeNow returned False!
+Advancing game to time 68.8
+self.changeNow returned False!
+Advancing game to time 68.85
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 68.82499999999995
+Currently, the send queue looks like this: 
+[69.97499999999995, 71.12499999999996, 72.27499999999996, 73.42499999999997, 74.57499999999997, 75.72499999999998]
+Recorded cash and eco values (751.2,325.6) at time 68.85
+Advancing game to time 68.9
+self.changeNow returned False!
+Advancing game to time 69.0
+self.changeNow returned False!
+Advancing game to time 69.1
+self.changeNow returned False!
+Advancing game to time 69.2
+self.changeNow returned False!
+Advancing game to time 69.3
+self.changeNow returned False!
+Advancing game to time 69.35
+self.changeNow returned False!
+Advancing game to time 69.4
+self.changeNow returned False!
+Advancing game to time 69.5
+self.changeNow returned False!
+Advancing game to time 69.6
+self.changeNow returned False!
+Advancing game to time 69.7
+self.changeNow returned False!
+Advancing game to time 69.8
+self.changeNow returned False!
+Advancing game to time 69.85
+self.changeNow returned False!
+Advancing game to time 69.9
+self.changeNow returned False!
+Advancing game to time 70.0
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 69.97499999999995
+Currently, the send queue looks like this: 
+[71.12499999999996, 72.27499999999996, 73.42499999999997, 74.57499999999997, 75.72499999999998, 76.87499999999999]
+Recorded cash and eco values (727.2,326.8) at time 70.0
+Advancing game to time 70.1
+self.changeNow returned False!
+Advancing game to time 70.2
+self.changeNow returned False!
+Advancing game to time 70.3
+self.changeNow returned False!
+Advancing game to time 70.35
+self.changeNow returned False!
+Advancing game to time 70.4
+self.changeNow returned False!
+Advancing game to time 70.5
+self.changeNow returned False!
+Advancing game to time 70.6
+self.changeNow returned False!
+Advancing game to time 70.7
+self.changeNow returned False!
+Advancing game to time 70.8
+self.changeNow returned False!
+Advancing game to time 70.85
+self.changeNow returned False!
+Advancing game to time 70.9
+self.changeNow returned False!
+Advancing game to time 71.0
+self.changeNow returned False!
+Advancing game to time 71.1
+self.changeNow returned False!
+Advancing game to time 71.2
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 71.12499999999996
+Currently, the send queue looks like this: 
+[72.27499999999996, 73.42499999999997, 74.57499999999997, 75.72499999999998, 76.87499999999999, 78.02499999999999]
+Recorded cash and eco values (703.2,328.0) at time 71.2
+Advancing game to time 71.3
+self.changeNow returned False!
+Advancing game to time 71.35
+self.changeNow returned False!
+Advancing game to time 71.4
+self.changeNow returned False!
+Advancing game to time 71.5
+self.changeNow returned False!
+Advancing game to time 71.6
+self.changeNow returned False!
+Advancing game to time 71.7
+self.changeNow returned False!
+Advancing game to time 71.8
+self.changeNow returned False!
+Advancing game to time 71.85
+self.changeNow returned False!
+Advancing game to time 71.9
+self.changeNow returned False!
+Advancing game to time 72.0
+self.changeNow returned False!
+Awarded eco payment 328.0 at time 72
+We have 1031.2 cash! We can do the next buy, which costs 1000.0 and has a buffer of 0 and a minimum buy time of 54.25!
+Purchasing farm!
+Completed the buy operation! The buy queue now has 3 items remaining in it
+Recorded cash and eco values (31.2,328.0) at time 72.0
+Advancing game to time 72.1
+self.changeNow returned False!
+Advancing game to time 72.2
+self.changeNow returned False!
+Advancing game to time 72.3
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 72.27499999999996
+Currently, the send queue looks like this: 
+[73.42499999999997, 74.57499999999997, 75.72499999999998, 76.87499999999999, 78.02499999999999, 79.175]
+Recorded cash and eco values (7.2,329.2) at time 72.3
+Advancing game to time 72.35
+self.changeNow returned False!
+Advancing game to time 72.4
+self.changeNow returned False!
+Advancing game to time 72.5
+self.changeNow returned False!
+Advancing game to time 72.6
+self.changeNow returned False!
+Advancing game to time 72.7
+self.changeNow returned False!
+Advancing game to time 72.8
+self.changeNow returned False!
+Advancing game to time 72.85
+self.changeNow returned False!
+Advancing game to time 72.9
+self.changeNow returned False!
+Advancing game to time 73.0
+self.changeNow returned False!
+Advancing game to time 73.1
+self.changeNow returned False!
+Advancing game to time 73.2
+self.changeNow returned False!
+Advancing game to time 73.3
+self.changeNow returned False!
+Advancing game to time 73.35
+self.changeNow returned False!
+Advancing game to time 73.4
+self.changeNow returned False!
+Advancing game to time 73.5
+self.changeNow returned False!
+Advancing game to time 73.6
+self.changeNow returned False!
+Advancing game to time 73.7
+self.changeNow returned False!
+Advancing game to time 73.8
+self.changeNow returned False!
+Advancing game to time 73.85
+self.changeNow returned False!
+Advancing game to time 73.9
+self.changeNow returned False!
+Advancing game to time 74.0
+self.changeNow returned False!
+Advancing game to time 74.1
+self.changeNow returned False!
+Advancing game to time 74.2
+self.changeNow returned False!
+Advancing game to time 74.3
+self.changeNow returned False!
+Advancing game to time 74.35
+self.changeNow returned False!
+Advancing game to time 74.4
+self.changeNow returned False!
+Advancing game to time 74.5
+self.changeNow returned False!
+Advancing game to time 74.6
+self.changeNow returned False!
+Advancing game to time 74.7
+self.changeNow returned False!
+Advancing game to time 74.8
+self.changeNow returned False!
+Advancing game to time 74.85
+self.changeNow returned False!
+Advancing game to time 74.9
+self.changeNow returned False!
+Advancing game to time 75.0
+self.changeNow returned False!
+Advancing game to time 75.1
+self.changeNow returned False!
+Advancing game to time 75.2
+self.changeNow returned False!
+Advancing game to time 75.3
+self.changeNow returned False!
+Advancing game to time 75.35
+self.changeNow returned False!
+Advancing game to time 75.4
+self.changeNow returned False!
+Advancing game to time 75.5
+self.changeNow returned False!
+Advancing game to time 75.6
+self.changeNow returned False!
+Advancing game to time 75.7
+self.changeNow returned False!
+Advancing game to time 75.8
+self.changeNow returned False!
+Advancing game to time 75.85
+self.changeNow returned False!
+Advancing game to time 75.9
+self.changeNow returned False!
+Advancing game to time 76.0
+self.changeNow returned False!
+Advancing game to time 76.1
+self.changeNow returned False!
+Advancing game to time 76.2
+self.changeNow returned False!
+Advancing game to time 76.3
+self.changeNow returned False!
+Advancing game to time 76.35
+self.changeNow returned False!
+Advancing game to time 76.4
+self.changeNow returned False!
+Advancing game to time 76.5
+self.changeNow returned False!
+Advancing game to time 76.6
+self.changeNow returned False!
+Advancing game to time 76.7
+self.changeNow returned False!
+Advancing game to time 76.8
+self.changeNow returned False!
+Advancing game to time 76.9
+self.changeNow returned False!
+Advancing game to time 77.0
+self.changeNow returned False!
+Advancing game to time 77.1
+self.changeNow returned False!
+Advancing game to time 77.2
+self.changeNow returned False!
+Advancing game to time 77.3
+self.changeNow returned False!
+Advancing game to time 77.4
+self.changeNow returned False!
+Advancing game to time 77.5
+self.changeNow returned False!
+Advancing game to time 77.6
+self.changeNow returned False!
+Advancing game to time 77.7
+self.changeNow returned False!
+Advancing game to time 77.8
+self.changeNow returned False!
+Advancing game to time 77.9
+self.changeNow returned False!
+Advancing game to time 78.0
+self.changeNow returned False!
+Awarded eco payment 329.2 at time 78
+We have 336.4 cash! We can do the next buy, which costs 250.0 and has a buffer of 0 and a minimum buy time of 31.25!
+Completed the buy operation! The buy queue now has 2 items remaining in it
+Recorded cash and eco values (86.4,329.2) at time 78.0
+Advancing game to time 78.1
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 78.075
+Currently, the send queue looks like this: 
+[79.175, 80.325]
+Recorded cash and eco values (62.4,330.4) at time 78.1
+Advancing game to time 78.2
+self.changeNow returned False!
+Advancing game to time 78.3
+self.changeNow returned False!
+Sent a set of Spaced Yellows at time 78.22500000000001
+Currently, the send queue looks like this: 
+[79.175, 80.325, 81.47500000000001]
+Recorded cash and eco values (38.4,331.6) at time 78.3
+Advancing game to time 78.4
+self.changeNow returned False!
+Awarded direct payment 40 at time 78.35
+Recorded cash and eco values (78.4,331.6) at time 78.35
+Recorded cash and eco values (78.4,331.6) at time 78.35
+Modified the eco send to Spaced Pinks
+Advancing game to time 78.4
+Sent a set of Spaced Pinks at time 78.37500000000001
+Currently, the send queue looks like this: 
+[79.175, 80.325, 81.47500000000001, 82.37500000000001]
+Recorded cash and eco values (50.4,333.0) at time 78.4
+Advancing game to time 78.5
+Advancing game to time 78.6
+Sent a set of Spaced Pinks at time 78.52500000000002
+Currently, the send queue looks like this: 
+[79.175, 80.325, 81.47500000000001, 82.37500000000001, 83.27500000000002]
+Recorded cash and eco values (22.4,334.4) at time 78.6
+Advancing game to time 78.7
+Advancing game to time 78.8
+Advancing game to time 78.9
+Advancing game to time 79.0
+Advancing game to time 79.1
+Advancing game to time 79.2
+Advancing game to time 79.3
+Advancing game to time 79.4
+Advancing game to time 79.5
+Advancing game to time 79.6
+Advancing game to time 79.7
+Advancing game to time 79.8
+Advancing game to time 79.9
+Advancing game to time 80.0
+Advancing game to time 80.1
+Advancing game to time 80.2
+Advancing game to time 80.3
+Advancing game to time 80.4
+Advancing game to time 80.5
+Advancing game to time 80.6
+Advancing game to time 80.7
+Advancing game to time 80.8
+Advancing game to time 80.9
+Advancing game to time 81.0
+Advancing game to time 81.1
+Advancing game to time 81.2
+Advancing game to time 81.3
+Advancing game to time 81.4
+Advancing game to time 81.5
+Advancing game to time 81.6
+Advancing game to time 81.7
+Advancing game to time 81.8
+Advancing game to time 81.9
+Advancing game to time 82.0
+Advancing game to time 82.1
+Advancing game to time 82.2
+Advancing game to time 82.3
+Advancing game to time 82.4
+Advancing game to time 82.5
+Advancing game to time 82.6
+Advancing game to time 82.7
+Advancing game to time 82.8
+Advancing game to time 82.9
+Advancing game to time 83.0
+Advancing game to time 83.1
+Advancing game to time 83.2
+Advancing game to time 83.3
+Advancing game to time 83.4
+Advancing game to time 83.5
+Advancing game to time 83.6
+Advancing game to time 83.7
+Advancing game to time 83.8
+Advancing game to time 83.9
+Advancing game to time 84.0
+Awarded eco payment 334.4 at time 84
+Recorded cash and eco values (356.8,334.4) at time 84.0
+Advancing game to time 84.1
+Sent a set of Spaced Pinks at time 84.075
+Currently, the send queue looks like this: 
+[84.97500000000001]
+Recorded cash and eco values (328.8,335.8) at time 84.1
+Advancing game to time 84.2
+Advancing game to time 84.3
+Sent a set of Spaced Pinks at time 84.22500000000001
+Currently, the send queue looks like this: 
+[84.97500000000001, 85.87500000000001]
+Recorded cash and eco values (300.8,337.2) at time 84.3
+Advancing game to time 84.4
+Sent a set of Spaced Pinks at time 84.37500000000001
+Currently, the send queue looks like this: 
+[84.97500000000001, 85.87500000000001, 86.77500000000002]
+Recorded cash and eco values (272.8,338.6) at time 84.4
+Advancing game to time 84.5
+Advancing game to time 84.6
+Sent a set of Spaced Pinks at time 84.52500000000002
+Currently, the send queue looks like this: 
+[84.97500000000001, 85.87500000000001, 86.77500000000002, 87.67500000000003]
+Recorded cash and eco values (244.8,340.0) at time 84.6
+Advancing game to time 84.7
+Sent a set of Spaced Pinks at time 84.67500000000003
+Currently, the send queue looks like this: 
+[84.97500000000001, 85.87500000000001, 86.77500000000002, 87.67500000000003, 88.57500000000003]
+Recorded cash and eco values (216.8,341.4) at time 84.7
+Advancing game to time 84.8
+Advancing game to time 84.9
+Sent a set of Spaced Pinks at time 84.82500000000003
+Currently, the send queue looks like this: 
+[84.97500000000001, 85.87500000000001, 86.77500000000002, 87.67500000000003, 88.57500000000003, 89.47500000000004]
+Recorded cash and eco values (188.8,342.8) at time 84.9
+Advancing game to time 85.0
+Sent a set of Spaced Pinks at time 84.97500000000004
+Currently, the send queue looks like this: 
+[85.87500000000001, 86.77500000000002, 87.67500000000003, 88.57500000000003, 89.47500000000004, 90.37500000000004]
+Recorded cash and eco values (160.8,344.2) at time 85.0
+Advancing game to time 85.1
+Advancing game to time 85.2
+Advancing game to time 85.3
+Advancing game to time 85.4
+Advancing game to time 85.5
+Advancing game to time 85.6
+Advancing game to time 85.7
+Advancing game to time 85.8
+Advancing game to time 85.9
+Sent a set of Spaced Pinks at time 85.87500000000001
+Currently, the send queue looks like this: 
+[86.77500000000002, 87.67500000000003, 88.57500000000003, 89.47500000000004, 90.37500000000004, 91.27500000000005]
+Recorded cash and eco values (132.8,345.6) at time 85.9
+Advancing game to time 86.0
+Advancing game to time 86.1
+Awarded direct payment 40 at time 86.02
+Recorded cash and eco values (172.8,345.6) at time 86.02
+Advancing game to time 86.2
+Advancing game to time 86.3
+Advancing game to time 86.4
+Advancing game to time 86.5
+Advancing game to time 86.6
+Advancing game to time 86.7
+Advancing game to time 86.8
+Sent a set of Spaced Pinks at time 86.77500000000002
+Currently, the send queue looks like this: 
+[87.67500000000003, 88.57500000000003, 89.47500000000004, 90.37500000000004, 91.27500000000005, 92.17500000000005]
+Recorded cash and eco values (144.8,347.0) at time 86.8
+Advancing game to time 86.9
+Advancing game to time 87.0
+Advancing game to time 87.1
+Advancing game to time 87.2
+Advancing game to time 87.3
+Advancing game to time 87.4
+Advancing game to time 87.5
+Advancing game to time 87.6
+Advancing game to time 87.7
+Sent a set of Spaced Pinks at time 87.67500000000003
+Currently, the send queue looks like this: 
+[88.57500000000003, 89.47500000000004, 90.37500000000004, 91.27500000000005, 92.17500000000005, 93.07500000000006]
+Recorded cash and eco values (116.8,348.4) at time 87.7
+Advancing game to time 87.8
+Advancing game to time 87.9
+Advancing game to time 88.0
+Advancing game to time 88.1
+Advancing game to time 88.2
+Advancing game to time 88.3
+Advancing game to time 88.4
+Advancing game to time 88.5
+Advancing game to time 88.6
+Sent a set of Spaced Pinks at time 88.57500000000003
+Currently, the send queue looks like this: 
+[89.47500000000004, 90.37500000000004, 91.27500000000005, 92.17500000000005, 93.07500000000006, 93.97500000000007]
+Recorded cash and eco values (88.8,349.8) at time 88.6
+Advancing game to time 88.7
+Advancing game to time 88.8
+Advancing game to time 88.9
+Advancing game to time 89.0
+Advancing game to time 89.1
+Advancing game to time 89.2
+Advancing game to time 89.3
+Advancing game to time 89.4
+Advancing game to time 89.5
+Sent a set of Spaced Pinks at time 89.47500000000004
+Currently, the send queue looks like this: 
+[90.37500000000004, 91.27500000000005, 92.17500000000005, 93.07500000000006, 93.97500000000007, 94.87500000000007]
+Recorded cash and eco values (60.8,351.2) at time 89.5
+Advancing game to time 89.6
+Advancing game to time 89.7
+Advancing game to time 89.8
+Advancing game to time 89.9
+Advancing game to time 90.0
+Awarded eco payment 351.2 at time 90
+Recorded cash and eco values (412.0,351.2) at time 90.0
+Advancing game to time 90.1
+Advancing game to time 90.2
+Advancing game to time 90.3
+Advancing game to time 90.4
+Sent a set of Spaced Pinks at time 90.37500000000004
+Currently, the send queue looks like this: 
+[91.27500000000005, 92.17500000000005, 93.07500000000006, 93.97500000000007, 94.87500000000007, 95.77500000000008]
+Recorded cash and eco values (384.0,352.6) at time 90.4
+Advancing game to time 90.5
+Advancing game to time 90.6
+Advancing game to time 90.7
+Advancing game to time 90.8
+Advancing game to time 90.9
+Advancing game to time 91.0
+Advancing game to time 91.1
+Advancing game to time 91.2
+Advancing game to time 91.3
+Sent a set of Spaced Pinks at time 91.27500000000005
+Currently, the send queue looks like this: 
+[92.17500000000005, 93.07500000000006, 93.97500000000007, 94.87500000000007, 95.77500000000008, 96.67500000000008]
+Recorded cash and eco values (356.0,354.0) at time 91.3
+Advancing game to time 91.4
+Advancing game to time 91.5
+Advancing game to time 91.6
+Advancing game to time 91.7
+Advancing game to time 91.8
+Advancing game to time 91.9
+Advancing game to time 92.0
+Advancing game to time 92.1
+Advancing game to time 92.2
+Sent a set of Spaced Pinks at time 92.17500000000005
+Currently, the send queue looks like this: 
+[93.07500000000006, 93.97500000000007, 94.87500000000007, 95.77500000000008, 96.67500000000008, 97.57500000000009]
+Recorded cash and eco values (328.0,355.4) at time 92.2
+Advancing game to time 92.3
+Advancing game to time 92.4
+Advancing game to time 92.5
+Advancing game to time 92.6
+Advancing game to time 92.7
+Advancing game to time 92.8
+Advancing game to time 92.9
+Advancing game to time 93.0
+Advancing game to time 93.1
+Sent a set of Spaced Pinks at time 93.07500000000006
+Currently, the send queue looks like this: 
+[93.97500000000007, 94.87500000000007, 95.77500000000008, 96.67500000000008, 97.57500000000009, 98.4750000000001]
+Recorded cash and eco values (300.0,356.8) at time 93.1
+Advancing game to time 93.2
+Advancing game to time 93.3
+Advancing game to time 93.4
+Advancing game to time 93.5
+Advancing game to time 93.6
+Advancing game to time 93.7
+Awarded direct payment 40 at time 93.68
+Recorded cash and eco values (340.0,356.8) at time 93.68
+Advancing game to time 93.8
+Advancing game to time 93.9
+Advancing game to time 94.0
+Sent a set of Spaced Pinks at time 93.97500000000007
+Currently, the send queue looks like this: 
+[94.87500000000007, 95.77500000000008, 96.67500000000008, 97.57500000000009, 98.4750000000001, 99.3750000000001]
+Recorded cash and eco values (312.0,358.2) at time 94.0
+Advancing game to time 94.1
+Advancing game to time 94.2
+Advancing game to time 94.3
+Advancing game to time 94.4
+Advancing game to time 94.5
+Advancing game to time 94.6
+Advancing game to time 94.7
+Advancing game to time 94.8
+Advancing game to time 94.9
+Sent a set of Spaced Pinks at time 94.87500000000007
+Currently, the send queue looks like this: 
+[95.77500000000008, 96.67500000000008, 97.57500000000009, 98.4750000000001, 99.3750000000001, 100.2750000000001]
+Recorded cash and eco values (284.0,359.6) at time 94.9
+Advancing game to time 95.0
+Advancing game to time 95.1
+Advancing game to time 95.2
+Advancing game to time 95.3
+Advancing game to time 95.4
+Advancing game to time 95.5
+Advancing game to time 95.6
+Advancing game to time 95.7
+Advancing game to time 95.8
+Sent a set of Spaced Pinks at time 95.77500000000008
+Currently, the send queue looks like this: 
+[96.67500000000008, 97.57500000000009, 98.4750000000001, 99.3750000000001, 100.2750000000001, 101.17500000000011]
+Recorded cash and eco values (256.0,361.0) at time 95.8
+Advancing game to time 95.9
+Advancing game to time 96.0
+Awarded eco payment 361.0 at time 96
+We have 617.0 cash! We can do the next buy, which costs 550.0 and has a buffer of 0 and a minimum buy time of 0!
+Upgraded the farm at index 0 to (1,0,0)
+Completed the buy operation! The buy queue now has 1 items remaining in it
+Recorded cash and eco values (67.0,361.0) at time 96.0
+Advancing game to time 96.1
+Advancing game to time 96.2
+Advancing game to time 96.3
+Advancing game to time 96.4
+Advancing game to time 96.5
+Advancing game to time 96.6
+Advancing game to time 96.7
+Sent a set of Spaced Pinks at time 96.67500000000008
+Currently, the send queue looks like this: 
+[97.57500000000009, 98.4750000000001, 99.3750000000001, 100.2750000000001, 101.17500000000011, 102.07500000000012]
+Recorded cash and eco values (39.0,362.4) at time 96.7
+Advancing game to time 96.8
+Advancing game to time 96.9
+Advancing game to time 97.0
+Advancing game to time 97.1
+Advancing game to time 97.2
+Advancing game to time 97.3
+Advancing game to time 97.4
+Advancing game to time 97.5
+Advancing game to time 97.6
+Sent a set of Spaced Pinks at time 97.57500000000009
+Currently, the send queue looks like this: 
+[98.4750000000001, 99.3750000000001, 100.2750000000001, 101.17500000000011, 102.07500000000012, 102.97500000000012]
+Recorded cash and eco values (11.0,363.8) at time 97.6
+Advancing game to time 97.7
+Advancing game to time 97.8
+Advancing game to time 97.9
+Advancing game to time 98.0
+Advancing game to time 98.1
+Advancing game to time 98.2
+Advancing game to time 98.3
+Advancing game to time 98.4
+Advancing game to time 98.5
+Advancing game to time 98.6
+Advancing game to time 98.7
+Advancing game to time 98.8
+Advancing game to time 98.9
+Advancing game to time 99.0
+Advancing game to time 99.1
+Advancing game to time 99.2
+Advancing game to time 99.3
+Advancing game to time 99.4
+Advancing game to time 99.5
+Advancing game to time 99.6
+Advancing game to time 99.7
+Advancing game to time 99.8
+Advancing game to time 99.9
+Advancing game to time 100.0
+Advancing game to time 100.1
+Advancing game to time 100.2
+Advancing game to time 100.3
+Advancing game to time 100.4
+Advancing game to time 100.5
+Advancing game to time 100.6
+Advancing game to time 100.7
+Advancing game to time 100.8
+Advancing game to time 100.9
+Advancing game to time 101.0
+Advancing game to time 101.1
+Advancing game to time 101.2
+Advancing game to time 101.3
+Advancing game to time 101.4
+Advancing game to time 101.5
+Advancing game to time 101.6
+Advancing game to time 101.7
+Advancing game to time 101.8
+Advancing game to time 101.9
+Advancing game to time 102.0
+Awarded eco payment 363.8 at time 102
+Recorded cash and eco values (374.8,363.8) at time 102.0
+Advancing game to time 102.1
+Sent a set of Spaced Pinks at time 102.075
+Currently, the send queue looks like this: 
+[102.07500000000012, 102.97500000000012, 103.87500000000013]
+Recorded cash and eco values (346.8,365.2) at time 102.1
+Advancing game to time 102.2
+Advancing game to time 102.3
+Sent a set of Spaced Pinks at time 102.22500000000001
+Currently, the send queue looks like this: 
+[102.97500000000012, 103.87500000000013, 104.77500000000013]
+Recorded cash and eco values (318.8,366.6) at time 102.3
+Advancing game to time 102.4
+Sent a set of Spaced Pinks at time 102.37500000000001
+Currently, the send queue looks like this: 
+[102.97500000000012, 103.87500000000013, 104.77500000000013, 105.67500000000014]
+Recorded cash and eco values (290.8,368.0) at time 102.4
+Advancing game to time 102.5
+Advancing game to time 102.6
+Sent a set of Spaced Pinks at time 102.52500000000002
+Currently, the send queue looks like this: 
+[102.97500000000012, 103.87500000000013, 104.77500000000013, 105.67500000000014, 106.57500000000014]
+Recorded cash and eco values (262.8,369.4) at time 102.6
+Advancing game to time 102.7
+Sent a set of Spaced Pinks at time 102.67500000000003
+Currently, the send queue looks like this: 
+[102.97500000000012, 103.87500000000013, 104.77500000000013, 105.67500000000014, 106.57500000000014, 107.47500000000015]
+Recorded cash and eco values (234.8,370.8) at time 102.7
+Advancing game to time 102.8
+Advancing game to time 102.9
+Advancing game to time 103.0
+Sent a set of Spaced Pinks at time 102.97500000000012
+Currently, the send queue looks like this: 
+[103.87500000000013, 104.77500000000013, 105.67500000000014, 106.57500000000014, 107.47500000000015, 108.37500000000016]
+Recorded cash and eco values (206.8,372.2) at time 103.0
+Advancing game to time 103.1
+Advancing game to time 103.2
+Advancing game to time 103.3
+Advancing game to time 103.4
+Advancing game to time 103.5
+Advancing game to time 103.6
+Advancing game to time 103.7
+Advancing game to time 103.8
+Advancing game to time 103.9
+Sent a set of Spaced Pinks at time 103.87500000000013
+Currently, the send queue looks like this: 
+[104.77500000000013, 105.67500000000014, 106.57500000000014, 107.47500000000015, 108.37500000000016, 109.27500000000016]
+Recorded cash and eco values (178.8,373.6) at time 103.9
+Advancing game to time 104.0
+Advancing game to time 104.1
+Advancing game to time 104.2
+Advancing game to time 104.3
+Advancing game to time 104.4
+Advancing game to time 104.5
+Advancing game to time 104.6
+Advancing game to time 104.7
+Advancing game to time 104.8
+Sent a set of Spaced Pinks at time 104.77500000000013
+Currently, the send queue looks like this: 
+[105.67500000000014, 106.57500000000014, 107.47500000000015, 108.37500000000016, 109.27500000000016, 110.17500000000017]
+Recorded cash and eco values (150.8,375.0) at time 104.8
+Advancing game to time 104.9
+Advancing game to time 105.0
+Advancing game to time 105.1
+Advancing game to time 105.2
+Advancing game to time 105.3
+Advancing game to time 105.4
+Advancing game to time 105.5
+Advancing game to time 105.6
+Advancing game to time 105.7
+Sent a set of Spaced Pinks at time 105.67500000000014
+Currently, the send queue looks like this: 
+[106.57500000000014, 107.47500000000015, 108.37500000000016, 109.27500000000016, 110.17500000000017, 111.07500000000017]
+Recorded cash and eco values (122.8,376.4) at time 105.7
+Advancing game to time 105.8
+Advancing game to time 105.9
+Advancing game to time 106.0
+Advancing game to time 106.1
+Advancing game to time 106.2
+Advancing game to time 106.3
+Advancing game to time 106.4
+Advancing game to time 106.5
+Advancing game to time 106.6
+Sent a set of Spaced Pinks at time 106.57500000000014
+Currently, the send queue looks like this: 
+[107.47500000000015, 108.37500000000016, 109.27500000000016, 110.17500000000017, 111.07500000000017, 111.97500000000018]
+Recorded cash and eco values (94.8,377.8) at time 106.6
+Advancing game to time 106.7
+Advancing game to time 106.8
+Advancing game to time 106.9
+Advancing game to time 107.0
+Advancing game to time 107.1
+Advancing game to time 107.2
+Advancing game to time 107.3
+Advancing game to time 107.4
+Advancing game to time 107.5
+Sent a set of Spaced Pinks at time 107.47500000000015
+Currently, the send queue looks like this: 
+[108.37500000000016, 109.27500000000016, 110.17500000000017, 111.07500000000017, 111.97500000000018, 112.87500000000018]
+Recorded cash and eco values (66.8,379.2) at time 107.5
+Advancing game to time 107.55
+Awarded direct payment 40 at time 107.55
+Recorded cash and eco values (106.8,379.2) at time 107.55
+Recorded cash and eco values (106.8,379.2) at time 107.55
+Advanced game state to round 5
+The current time is 107.55
+The next round starts at time 134.85
+Our new cash and eco is given by (106.8,379.2) 
+
